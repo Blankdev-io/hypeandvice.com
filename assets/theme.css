@@ -9851,7 +9851,7 @@ input:checked + .popover__choice-label::after,
 }
 
 .header--bordered .mega-menu {
-  margin-top: 1px; /* Prevent overlapping the border */
+  /*margin-top: 1px;  Prevent overlapping the border */
 }
 
 .mega-menu__inner {
