@@ -9873,11 +9873,20 @@ input:checked + .popover__choice-label::after,
   grid-auto-flow: row;
 }
 
-.mega-menu__columns-wrapper {
+.mega-menu__columns-wrapper { /* Modified to display schools in vertical order instead of horizontal */
   display: flex;
+  flex-direction: column; 
+  align-content: flex-start;
   flex-wrap: wrap;
+  height: 37vw;
   margin: calc(-1 * var(--mega-menu-column-gap) / 2);
   /* gap: var(--mega-menu-column-gap); NOT YET FULLY SUPPORTED */
+}
+
+@media only screen and (min-width: 1736px) { 
+  .mega-menu__columns-wrapper {
+    height: 595px; /* So all elements are displayed when resolution is higher than 1736px */
+  }
 }
 
 .mega-menu__column {
