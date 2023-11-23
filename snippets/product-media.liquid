@@ -1,0 +1,138 @@
+{%- if product.media.size > 0 -%}
+  {%- assign selected_media = product.selected_variant.featured_media | default: product.featured_media -%}
+
+  {%- comment -%}
+    IMPLEMENTATION NOTE: Shopify does not natively offers a way to create a set of images per variant. This is often
+    pretty limited when you have a lot of colors and would like to only see the images specific to a given color. To
+    goes around that, Focal offers a hack using alt tags whose usage is described here: https://support.maestrooo.com/article/187-product-creating-variant-image-set
+    The implementation is rather complex and inefficient due to lot of string parsings, but it is, unfortunately, the
+    only way to do it on Shopify right now.
+  {%- endcomment -%}{% assign filtered_media_ids = '' %}
+
+  {%- for media in product.media -%}
+    {%- if media.alt contains '#' -%}
+      {%- assign alt_parts = media.alt | split: '#' -%}
+
+      {%- assign media_group_parts = alt_parts.last | split: '_' -%}
+      {%- assign option = product.options_by_name[media_group_parts.first] -%}
+      {%- assign option_value = option.selected_value | downcase -%}
+
+      {%- assign downcase_group_value = media_group_parts.last | strip | downcase -%}
+
+      {%- if option_value != downcase_group_value and media != selected_media -%}
+        {%- assign filtered_media_ids = filtered_media_ids | append: media.id | append: ',' -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- assign filtered_media_ids = filtered_media_ids | split: ',' | compact -%}
+
+  {%- assign max_width = 0 -%}
+  {%- assign largest_image_aspect_ratio = 999 -%}
+
+  {%- for media in product.media -%}
+    {%- assign max_width = max_width | at_least: media.preview_image.width -%}
+    {%- assign largest_image_aspect_ratio = largest_image_aspect_ratio | at_most: media.preview_image.aspect_ratio -%}
+  {%- endfor -%}
+
+  <product-media
+    form-id="product-form-{{ section.id }}-{{ product.id }}"
+    {% if section.settings.enable_video_autoplay %}autoplay-video{% endif %}
+    thumbnails-position="{{ section.settings.desktop_thumbnails_position }}"
+    {% if settings.reveal_product_media %}reveal-on-scroll{% endif %}
+    product-handle="{{ product.handle }}"
+    class="product__media"
+    style="--largest-image-aspect-ratio: {{ largest_image_aspect_ratio }}">
+    <div
+      id="product-media"
+      class="product__media-list-wrapper"
+      style="max-width: {{ max_width }}px">
+      <div>
+
+        <div class="swiffy-slider slider-item-helper"  id="pgallery">
+          <ul class="slider-container">
+            <template v-for="(media, index) in current_media" :key="media.id">
+              <li :index-r="`${index}`">
+                <img
+                  class="img-product"
+                  :src="media.src"
+                  :id="`cell-${index+1}`"
+                  alt="">
+              </li>
+            </template>
+          </ul>
+
+          <button
+            type="button"
+            id="previousBtn"
+            class="slider-nav"></button>
+          <button
+            type="button"
+            id="nextBtn"
+            class="slider-nav slider-nav-next"></button>
+
+          <ul class="slider-indicators">
+            <template v-for="(media,index) in current_media">
+              <li v-if="index == 0" class="active"></li>
+              <li v-else class=""></li>
+            </template>
+          </ul>
+        </div>
+        <div id="pgallery_thumb" class="swiffy-slider slider-nav-dark slider-nav-sm slider-nav-chevron slider-item-show4 slider-item-snapstart slider-item-ratio slider-item-ratio-1x1 slider-nav-visible slider-nav-page slider-nav-outside-expand pt-3 mt-4">
+          <ul class="slider-container gallery-responsive" style="cursor:pointer">
+            <template v-for="(media, index) in current_media" :key="media.id">
+              <li :index-r="`${index}`">
+                <img
+                  :src="media.src"
+                  :id="`gallery-${index+1}`"
+                  alt=""
+                  :onclick="`clickEvent(${index})`">
+              </li>
+            </template>
+          </ul>
+
+          <button
+            type="button"
+            class="slider-nav"
+            aria-label="Go previous"></button>
+          <button
+            type="button"
+            class="slider-nav slider-nav-next"
+            aria-label="Go next"></button>
+        </div>
+      </div>
+    </div>
+    <script>
+      function clickEvent(imageNumber) {
+
+        // Find the slider element
+        const sliderElement = document.getElementById('pgallery');
+
+        // Slide to he right image
+        swiffyslider.slideTo(sliderElement, imageNumber)
+      }
+    </script>
+
+    {%- comment -%}Add the "view in your space" button, which allows to show the product in customer's environment (if the device supports it){%- endcomment -%}
+    {%- assign first_3d_model = product.media | where: 'media_type', 'model' | first -%}
+
+    {%- if first_3d_model -%}
+      <button
+        class="product__view-in-space button button--ternary button--full"
+        data-shopify-xr
+        data-shopify-model3d-id="{{ first_3d_model.id }}"
+        data-shopify-model3d-default-id="{{ first_3d_model.id }}"
+        data-shopify-title="{{ product.title | escape }}"
+        data-shopify-xr-hidden>
+        {%- render 'icon', icon: 'media-view-in-space' -%} {{- 'product.general.view_in_space' | t -}}
+      </button>
+    {%- endif -%}
+
+    {%- if product.media.size > 1 -%}{%- endif -%}
+
+    {%- if section.settings.enable_image_zoom -%}
+      {%- comment -%}This code MUST NOT be changed, and is part of the PhotoSwipe required interface{%- endcomment -%}
+
+    {%- endif -%}
+  </product-media>
+{%- endif -%}

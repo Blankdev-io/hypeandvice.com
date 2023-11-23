@@ -1,0 +1,114 @@
+<div id="apply-discount" check-apply="{{ section.settings.discount_apply }}"></div>
+<script>
+
+  console.log("page is fully loaded");
+  let product_id = {{ section.settings.product_id }}
+  let discount_amount = {{ section.settings.discount_amount | append: '00' }}
+  let discount_apply = {{ section.settings.discount_apply }}
+  getData()
+  
+  async function getData() {
+    if(discount_apply) {
+      const response = await fetch('/cart.js', {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      const data = await response.json()
+      const cart_items = data.items
+      var checkedProduct = false
+      var checkProduct = cart_items.find(item => item.id == product_id)
+      var total_price = data.total_price
+      
+      if(!checkProduct){
+        if(total_price >= discount_amount){
+          console.log('Free Bucket Hat are available')
+          let formData = {
+          'items': [{
+            'id': product_id,
+            'quantity': 1
+            }]
+          };
+          checkedProduct = true
+          const freeHatButton = document.createElement("div");
+          freeHatButton.innerHTML = 
+          `
+            <free-shipping-bar threshold="10000" class="shipping-bar" style="--progress: 1">
+              <span class="shipping-bar__text text--small">You got a free Bucket Hat! Click the button to claim it.</span>
+              <button class="free-product-btn" onclick="addDiscountProduct()">Add Product</button>
+            </free-shipping-bar>
+          `
+          const divContainer = document.getElementById('drawer__content')
+          divContainer.append(freeHatButton)
+        }
+      }
+    }
+  }
+
+  async function addDiscountProduct() {
+
+    if(discount_apply) {
+      let formData = {
+        'items': [{
+          'id': product_id,
+          'quantity': 1
+          }]
+      };
+      fetch('/cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
+      .then(response => {
+        return response.json();
+      })
+      .then(data => {
+        console.log(data)
+        console.log("Free Bucket Hat Discount applied")
+        setTimeout(()=>{
+
+          window.location.reload();
+        },1000)
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+    }
+
+  }
+  </script>
+{% schema %}
+{
+  "name": "Buy X get Y discount",
+  "class": "shopify-section--discount-data",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "discount_apply",
+      "label": "Apply Discount",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "discount_amount",
+      "label": "Discount Amount",
+      "info": "Input the amount (just numbers) of money the customer needs to spend to get the free item, must be the same amount set in the Shopify discount menu."
+    },
+    {
+      "type": "text",
+      "id": "product_id",
+      "label": "Product ID",
+      "info": "Input the ID of the free product the customer will get. You can find this by going into the 'Products' menu in the admin panel, opening the desired product. The ID is the string of numbers at the end of the url.For Example: https://hype-and-vice.myshopify.com/admin/products/4550196625513"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Buy X get Y discount"
+    }
+  ]
+
+}
+{% endschema %}
