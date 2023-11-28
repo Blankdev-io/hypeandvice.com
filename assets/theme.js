@@ -4559,7 +4559,7 @@ window.onload = (() => {
               transform: ["translateY(20px)", "translateY(0)"]
             }, {
               duration: 250,
-              delay: 0, //removed animation delate 11/23/23, used to be: `100 + 60 * index`
+              delay: 0, //removed animation delay 11/23/23, used to be: `100 + 60 * index`
               easing: "cubic-bezier(0.65, 0, 0.35, 1)"
             });
           })));
