@@ -177,10 +177,43 @@
               "image_6_text": "",
               "image_6_link": ""
             }
+          },
+          "92c7f845-9eb2-496a-b5d6-44af9fa4d13e": {
+            "type": "mobile_mega_menu",
+            "settings": {
+              "mobile_menu_item": "Find Your School",
+              "mobile_collection_list": [
+
+              ],
+              "mobile_collection_list2": [
+
+              ],
+              "mobile_images_position": "right",
+              "mobile_items_length": 10,
+              "mobile_image_1_heading": "",
+              "mobile_image_1_text": "",
+              "mobile_image_1_link": "",
+              "mobile_image_2_heading": "",
+              "mobile_image_2_text": "",
+              "mobile_image_2_link": "",
+              "mobile_image_3_heading": "",
+              "mobile_image_3_text": "",
+              "mobile_image_3_link": "",
+              "mobile_image_4_heading": "",
+              "mobile_image_4_text": "",
+              "mobile_image_4_link": "",
+              "mobile_image_5_heading": "",
+              "mobile_image_5_text": "",
+              "mobile_image_5_link": "",
+              "mobile_image_6_heading": "",
+              "mobile_image_6_text": "",
+              "mobile_image_6_link": ""
+            }
           }
         },
         "block_order": [
-          "2f8fdde7-f4c6-4891-a807-d35b26267ebc"
+          "2f8fdde7-f4c6-4891-a807-d35b26267ebc",
+          "92c7f845-9eb2-496a-b5d6-44af9fa4d13e"
         ],
         "settings": {
           "enable_sticky_header": true,
