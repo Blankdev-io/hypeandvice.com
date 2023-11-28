@@ -28,7 +28,7 @@
         {%- assign mega_menu_images = '' -%}
 
         {%- for block in section.blocks -%}
-          {%- assign menu_item_downcase = block.settings.menu_item | strip | downcase -%}
+          {%- assign menu_item_downcase = block.settings.mobile_menu_item | strip | downcase -%}
 
           {%- if menu_item_downcase == link_title_downcase -%}
             {%- assign mega_menu_block = block -%}
@@ -46,9 +46,9 @@
               {%- if mega_menu_block.settings[image_setting] != blank -%}
                 {%- assign images_count = images_count | plus: 1 -%}
 
-                {%- capture image_heading_setting -%}image_{{ i }}_heading{%- endcapture -%}
-                {%- capture image_text_setting -%}image_{{ i }}_text{%- endcapture -%}
-                {%- capture image_link_setting -%}image_{{ i }}_link{%- endcapture -%}
+                {%- capture image_heading_setting -%}mobile_image_{{ i }}_heading{%- endcapture -%}
+                {%- capture image_text_setting -%}mobile_image_{{ i }}_text{%- endcapture -%}
+                {%- capture image_link_setting -%}mobile_image_{{ i }}_link{%- endcapture -%}
 
                 {%- capture image_push -%}
                   <img
@@ -92,11 +92,11 @@
             </button>
 
             <collapsible-content id="mobile-menu-{{ forloop.index }}" class="collapsible">
-              {% if mega_menu_block.settings.collection_list != blank %}
+              {% if mega_menu_block.settings.mobile_collection_list != blank %}
                 <a href="{{ link.url }}" class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %} show-more-button button button--secondary">SHOW ALL SCHOOLS</a>
                 {% assign index_collection = 0 %}
-                {% assign items_length = mega_menu_block.settings.items_length |  times: 1 %}
-                {%- for collection in mega_menu_block.settings.collection_list -%}
+                {% assign items_length = mega_menu_block.settings.mobile_items_length |  times: 1 %}
+                {%- for collection in mega_menu_block.settings.mobile_collection_list -%}
                   {% if index_collection < items_length %}
                     {% assign index_collection = index_collection | plus: 1 %}
                     <a href="{{ collection.url }}" class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %} mobile-images">
@@ -111,7 +111,7 @@
                   {% endif %}
                 {% endfor %}
 
-                {%- for collection in mega_menu_block.settings.collection_list2 -%}
+                {%- for collection in mega_menu_block.settings.mobile_collection_list2 -%}
                   {% if index_collection < items_length %}
                     {% assign index_collection = index_collection | plus: 1 %}
                     <a href="{{ collection.url }}" class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %} mobile-images">
