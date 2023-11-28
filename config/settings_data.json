@@ -157,7 +157,6 @@
                 "vanderbilt-university"
               ],
               "images_position": "right",
-              "items_length": 20,
               "image_1_heading": "",
               "image_1_text": "",
               "image_1_link": "",
@@ -178,68 +177,15 @@
               "image_6_link": ""
             }
           },
-          "92c7f845-9eb2-496a-b5d6-44af9fa4d13e": {
+          "d24a15a2-2c8a-45e4-a356-3c5d50191b8c": {
             "type": "mobile_mega_menu",
             "settings": {
               "mobile_menu_item": "Find Your School",
               "mobile_collection_list": [
-                "university-of-alabama",
-                "university-of-arizona",
-                "arizona-state-university",
-                "university-of-arkansas-fayetteville",
-                "auburn-university",
-                "boise-state",
-                "university-of-california-berkeley",
-                "university-of-california-los-angeles-ucla",
-                "university-of-central-florida",
-                "university-of-cincinnati",
-                "university-of-colorado-boulder",
-                "u-conn",
-                "cornell-university",
-                "university-of-florida-uf",
-                "florida-state-university",
-                "university-of-georgia",
-                "harvard-university",
-                "howard-university",
-                "university-of-illinois",
-                "indiana-university",
-                "university-of-iowa",
-                "iowa-state-university",
-                "james-madison-university",
-                "university-of-kansas",
-                "university-of-kentucky",
-                "louisiana-state-university-lsu",
-                "university-of-maryland",
-                "university-of-miami",
-                "university-of-michigan",
-                "michigan-state-university",
-                "university-of-mississippi-ole-miss",
-                "university-of-notre-dame",
-                "ohio-state-university-osu",
-                "university-of-oregon",
-                "penn-state",
-                "university-of-pittsburgh",
-                "purdue",
-                "rutgers-university",
-                "san-diego-state-university",
-                "university-of-southern-california",
-                "university-of-south-carolina",
-                "stanford-university",
-                "syracuse-university-cute-apparel",
-                "university-of-tennessee",
-                "university-of-nebraska"
+                "arizona-state-university"
               ],
               "mobile_collection_list2": [
-                "university-of-texas-at-austin-1",
-                "texas-a-m",
-                "texas-christian-university",
-                "texas-tech",
-                "tulane-university",
-                "university-of-utah",
-                "university-of-washington",
-                "west-virginia-university",
-                "university-of-wisconsin",
-                "vanderbilt-university"
+                "texas-a-m"
               ],
               "mobile_images_position": "right",
               "mobile_items_length": 55,
@@ -266,7 +212,7 @@
         },
         "block_order": [
           "2f8fdde7-f4c6-4891-a807-d35b26267ebc",
-          "92c7f845-9eb2-496a-b5d6-44af9fa4d13e"
+          "d24a15a2-2c8a-45e4-a356-3c5d50191b8c"
         ],
         "settings": {
           "enable_sticky_header": true,
