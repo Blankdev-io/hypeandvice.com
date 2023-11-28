@@ -9885,7 +9885,7 @@ input:checked + .popover__choice-label::after,
 
 @media only screen and (min-width: 1736px) { 
   .mega-menu__columns-wrapper {
-    height: 595px; /* So all elements are displayed when resolution is higher than 1736px */
+    height: 590px; /* So all elements are displayed when resolution is higher than 1736px */
   }
 }
 
