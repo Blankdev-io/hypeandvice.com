@@ -125,6 +125,8 @@
                     {% break %}
                   {% endif %}
                 {% endfor %}
+
+                <a href="{{ link.url }}" class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %} show-more-button button button--secondary">SHOW ALL SCHOOLS</a>
                 
               {%- else -%}
                 {%- if link.links.size > 0 -%}
@@ -156,7 +158,6 @@
                       </li>
                     {%- endfor -%}
                   </ul>
-                  <a href="{{ link.url }}" class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %} show-more-button button button--secondary">SHOW ALL SCHOOLS</a>
                 {%- endif -%}
               {%- endif -%}
               {%- if mega_menu_images != blank -%}
