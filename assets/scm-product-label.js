@@ -306,7 +306,7 @@ if ((typeof SECOMAPP) == 'undefined') {
                 SECOMAPP.pl.search[json.query] = true;
                 for (var page = 2; page <= Math.floor((json.results_count + 49) / 50); page++) {
                     var query = json.query.split('&quot;').join('"');
-                    jQuery.getScript('/search.js?page=' + page + '&q=' + query + '&view=scm.products.handle.js&_sc=1&design_theme_id=124417048681&app=pl');
+                    jQuery.getScript('/search.js?page=' + page + '&q=' + query + '&view=scm.products.handle.js&_sc=1&design_theme_id=124616441961&app=pl');
                 }
             }
         };
@@ -337,13 +337,13 @@ if ((typeof SECOMAPP) == 'undefined') {
             fullQuery += "handle:\"" + handle + "\"";
             h++;
             if (h >= 50) {
-                jQuery.getScript('/search.js?q=' + fullQuery + '&view=scm.products.handle.js&_sc=1&design_theme_id=124417048681&app=pl');
+                jQuery.getScript('/search.js?q=' + fullQuery + '&view=scm.products.handle.js&_sc=1&design_theme_id=124616441961&app=pl');
                 fullQuery = "";
                 h = 0;
             }
         }
         if (h > 0) {
-            jQuery.getScript('/search.js?q=' + fullQuery + '&view=scm.products.handle.js&_sc=1&design_theme_id=124417048681&app=pl');
+            jQuery.getScript('/search.js?q=' + fullQuery + '&view=scm.products.handle.js&_sc=1&design_theme_id=124616441961&app=pl');
         }
     };
 
