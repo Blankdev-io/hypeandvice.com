@@ -1,0 +1,173 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_title": true,
+        "page_width": "large"
+      }
+    },
+    "a4db4088-4352-4504-9bd4-07d9e65c77a7": {
+      "type": "faq",
+      "blocks": {
+        "template--14935444062313__a4db4088-4352-4504-9bd4-07d9e65c77a7-question-3": {
+          "type": "question",
+          "settings": {
+            "title": "Contact us!",
+            "answer": "<p>Shoot us an email: customerservice@hypeandvice.com<\/p><p>Give us a call: (213) 819-0466<\/p><p>Please understand messages are responded during working hours.<\/p>"
+          }
+        },
+        "template--14935444062313__a4db4088-4352-4504-9bd4-07d9e65c77a7-question-1": {
+          "type": "question",
+          "settings": {
+            "title": "Where's my order?",
+            "answer": "<p>Hype and Vice products are made to order especially for you!  Please allow up to 10 days to receive an email with a tracking number.  If it's been more than 10 days, please note that production times can be delayed during high volume sales times.  <strong>Don't worry!  Your order is still in production and you WILL receive that tracking email very soon. <\/strong><\/p><p>We do this as an effort to reduce waste and offer more styles that will fit you best. Please take this into consideration when ordering ♡<\/p><p>Orders must be canceled within 24 hours of ordering to receive a full refund. If your order has been fulfilled we are unable to cancel it.<\/p>"
+          }
+        },
+        "template--14935444062313__a4db4088-4352-4504-9bd4-07d9e65c77a7-question-2": {
+          "type": "question",
+          "settings": {
+            "title": "How long will it take to get my order?",
+            "answer": "<p>All orders are made to order in-house within 3-5 business days of your order date and then shipped via UPS\/USPS. Domestic shipping times are currently within 3-7 business days. The shipping time does not account for our processing time. Production and delivery times may increase during holidays and other times of high sales volumes.  <\/p><p>Please note that once the package has left the building, we have no control over carrier delays. <\/p>"
+          }
+        },
+        "971a648d-5d67-4148-8dc2-05f5c237da24": {
+          "type": "question",
+          "settings": {
+            "title": "Can You Expedite My Order?",
+            "answer": "<p>Our apologies, but we cannot expedite orders at this time. They are made to order especially for you and are produced in the order we receive them. They are shipped via UPS or USPS. Domestic shipping times are currently within 3-7 business days. Times may vary during holidays and when we are receiving large order volumes.  Please note that once the package has left the building, we have no control over carrier delays.<\/p>"
+          }
+        },
+        "4c0142c8-7512-4991-9ec8-a5e36070ece2": {
+          "type": "question",
+          "settings": {
+            "title": "Why isn't my tracking showing any updates?",
+            "answer": "<p>We send you a tracking number as soon as your order is shipped out, but sometimes it takes a day or two for UPS\/USPS to scan your order into their system and for the updates to show on their website.  Please allow some time for this to happen. <\/p><p>If your order has been showing progress and then progress stopped, please keep in mind that the postal services are overwhelmed due to Covid and understaffed.  Please allow a few days for the tracking to update again and it will likely show considerable movement after that. <\/p><p>If it's been more than 7 days without movement, please reach out to us at customerservice@hypeandvice.com<\/p>"
+          }
+        },
+        "c194064f-7fcf-4f5e-8216-e811c62934f7": {
+          "type": "question",
+          "settings": {
+            "title": "How can I change my order?",
+            "answer": "<p>We can surely help you make changes to your order if we have not shipped it yet. Please email us at customerservice@hypeandvice.com so we can help you. If we have already shipped your order you will have to process and exchange or return once you receive it. <\/p>"
+          }
+        },
+        "91c3fc9d-bd61-4ed2-a7a4-720680fa8dca": {
+          "type": "question",
+          "settings": {
+            "title": "My order was wrong or defective",
+            "answer": "<p>We're so sorry to hear about this error on your order! We will be happy to replace this for you. <\/p><p>Email us at customerservice@hypeandvice.com with a description of the problem and pictures of the product. <\/p><p>Your order will be eligible for replacement if the error was our fault and it has been less than 30 days since delivery. <\/p>"
+          }
+        },
+        "7796fc92-002a-421d-ae2d-84c2d6598f19": {
+          "type": "question",
+          "settings": {
+            "title": "How can I process a return\/exchange?",
+            "answer": "<p>Please visit our <a href=\"https:\/\/hypeandvice.happyreturns.com\/\" target=\"_blank\" title=\"Return Policy\">Returns<\/a> page!<\/p><p>*Orders placed November 7th through December 28th have an extended return window until January 21st<\/p>"
+          }
+        },
+        "2ac271c2-0631-42c4-be9d-5f7b8c1926d6": {
+          "type": "question",
+          "settings": {
+            "title": "How do sizes run? ",
+            "answer": "<p><a href=\"\/pages\/size-chart\" title=\"Size Chart\">Click for Size Chart<\/a><\/p><p>We've continuously been working on improving our sizing. Our styles are pretty true to size, but if you are in the border line of size you can consider going a size up. <\/p>"
+          }
+        },
+        "08bb13a7-c183-4099-8053-549012b6e24d": {
+          "type": "question",
+          "settings": {
+            "title": "How long does it take to restock an item?",
+            "answer": "<p>We try to restock our best-sellers often. Stay updated on our social media @hypeandvice where we usually announce when our items are back in stock.<\/p>"
+          }
+        },
+        "55c60644-36cc-4db3-8a6f-cccec49e0a86": {
+          "type": "question",
+          "settings": {
+            "title": "Why is my school not on your website? ",
+            "answer": "<p>At this time we only have the licenses (school's permission) to sell and distribute for the above schools. Trust us that we are working extremely hard to get to all of the schools as fast as possible - but it's a work in process. We are launching new schools very soon 😉 ! But for now you can shop our <em>Shop Hype and Vice<\/em> section.<\/p>"
+          }
+        },
+        "a42b0eea-e498-4727-aae5-0089c51b0d4d": {
+          "type": "question",
+          "settings": {
+            "title": "Do you do custom orders? ",
+            "answer": "<p>Yes, we do custom orders! Email us at management@hypeandvice.com for inquiries (minimum is 48 pieces per style)<\/p>"
+          }
+        },
+        "d97f8056-aca8-4681-913d-57dcfc46cc18": {
+          "type": "question",
+          "settings": {
+            "title": "Do you guys sell wholesale? ",
+            "answer": "<p>Yes, please visit our <a href=\"\/pages\/wholesale\" title=\"Wholesale\">wholesale page<\/a>!<\/p>"
+          }
+        },
+        "ed933f40-54db-49f3-85f2-065cdba6033d": {
+          "type": "question",
+          "settings": {
+            "title": "Do you do group discounts? ",
+            "answer": "<p>Yes, email us and we'll be happy to give you a discount (minimum of 30 pieces).<\/p>"
+          }
+        },
+        "6360cd55-74bf-47f1-90dc-c9f086720729": {
+          "type": "question",
+          "settings": {
+            "title": "How can I be featured in your website or Instagram? ",
+            "answer": "<p>We love to feature our gamebaes! Please tag us on your pictures to be reposted.<\/p>"
+          }
+        },
+        "a7456572-e478-47eb-b08b-880c368f450d": {
+          "type": "question",
+          "settings": {
+            "title": "Do you do collaborations with brands or influencers? ",
+            "answer": "<p>Yes, we love to collaborate with a brands or influencers that fit our style. Send us an email at social@hypeandvice.com<\/p>"
+          }
+        },
+        "bf7c640b-7a70-4498-bbfc-1928d7528f2d": {
+          "type": "question",
+          "settings": {
+            "title": "Press inquiries? ",
+            "answer": "<p>Contact us at social@hypeandvice.com.<\/p>"
+          }
+        },
+        "a551001d-19e1-447a-9825-58883f637bb1": {
+          "type": "question",
+          "settings": {
+            "title": "Other Questions? ",
+            "answer": "<p>Email us: customerservice@hypeandvice.com<\/p><p>We would love to help you with anything you need! We usually take 1 business day to respond so we appreciate your patience. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14935444062313__a4db4088-4352-4504-9bd4-07d9e65c77a7-question-3",
+        "template--14935444062313__a4db4088-4352-4504-9bd4-07d9e65c77a7-question-1",
+        "template--14935444062313__a4db4088-4352-4504-9bd4-07d9e65c77a7-question-2",
+        "971a648d-5d67-4148-8dc2-05f5c237da24",
+        "4c0142c8-7512-4991-9ec8-a5e36070ece2",
+        "c194064f-7fcf-4f5e-8216-e811c62934f7",
+        "91c3fc9d-bd61-4ed2-a7a4-720680fa8dca",
+        "7796fc92-002a-421d-ae2d-84c2d6598f19",
+        "2ac271c2-0631-42c4-be9d-5f7b8c1926d6",
+        "08bb13a7-c183-4099-8053-549012b6e24d",
+        "55c60644-36cc-4db3-8a6f-cccec49e0a86",
+        "a42b0eea-e498-4727-aae5-0089c51b0d4d",
+        "d97f8056-aca8-4681-913d-57dcfc46cc18",
+        "ed933f40-54db-49f3-85f2-065cdba6033d",
+        "6360cd55-74bf-47f1-90dc-c9f086720729",
+        "a7456572-e478-47eb-b08b-880c368f450d",
+        "bf7c640b-7a70-4498-bbfc-1928d7528f2d",
+        "a551001d-19e1-447a-9825-58883f637bb1"
+      ],
+      "settings": {
+        "show_navigation": false,
+        "title": "",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "a4db4088-4352-4504-9bd4-07d9e65c77a7"
+  ]
+}
