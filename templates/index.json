@@ -7,6 +7,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/7CD81E62-48B8-4D61-A3D1-AA94A9BDDB60.gif",
+            "split_image": "shopify:\/\/shop_images\/60B53778-B515-4ED7-AC52-C38C3DF39AFB_d21dbfe7-7b7b-43aa-93c9-0da1fcd4c259.jpg",
             "show_videos": false,
             "autoplay": true,
             "loop": true,
