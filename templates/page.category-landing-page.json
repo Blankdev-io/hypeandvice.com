@@ -11,6 +11,13 @@
     "category-banner": {
       "type": "category-banner",
       "settings": {
+        "image": "shopify:\/\/shop_images\/404927665_870959851429259_5626080355653779250_n.jpg",
+        "section_height": "small",
+        "text_width": "medium",
+        "image_text_color": "#ffffff",
+        "image_overlay_color": "#000000",
+        "image_overlay_opacity": 30,
+        "quick_links": ""
       }
     }
   },
