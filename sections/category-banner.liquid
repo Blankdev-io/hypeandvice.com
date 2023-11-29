@@ -52,12 +52,12 @@
       <div class="image-overlay__image-wrapper">
         {%- comment -%}Performance note: this image must not be lazyloaded as it contributes to the LCP{%- endcomment -%}
         <picture>
-          <source media="(max-width: 740px)" {% render 'image-attributes', image: section.settings.image, banner: true, sizes: '400,500,600,700,800,900,1000', height_constraint: 600, crop: 'center', ignore_src: true %}>
+          <source media="(max-width: 740px)" {% render 'image-attributes', image: section.settings.image, sizes: '400,500,600,700,800,900,1000', height_constraint: 600, crop: 'center', ignore_src: true %}>
           <img
             class="image-overlay__image"
             reveal
             {% if section.settings.image != blank %}
-            {% render 'image-attributes', image: section.settings.image, banner: true, sizes: '600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600' %}>
+            {% render 'image-attributes', image: section.settings.image, sizes: '600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600' %}>
             {% endif %}
         </picture>
       </div>
