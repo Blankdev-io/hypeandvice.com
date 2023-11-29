@@ -7,9 +7,15 @@
         "show_title": true,
         "page_width": "large"
       }
+    },
+    "category-banner": {
+      "type": "category-banner",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "category-banner"
   ]
 }
