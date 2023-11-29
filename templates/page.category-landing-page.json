@@ -11,6 +11,8 @@
     "category-banner": {
       "type": "category-banner",
       "settings": {
+        "heading": "",
+        "subheading": "",
         "image": "shopify:\/\/shop_images\/404927665_870959851429259_5626080355653779250_n.jpg",
         "section_height": "small",
         "text_width": "medium",
