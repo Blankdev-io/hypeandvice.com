@@ -48,7 +48,7 @@
       reveal-on-scroll
       parallax
       class="image-overlay image-overlay--{{ section.settings.section_height }}"
-      style="max-height: 300px;{% if section.settings.section_height == 'auto' %}--image-aspect-ratio: {{ collection.image.aspect_ratio }}{% endif %}">
+      style="max-height: 300px;{% if section.settings.section_height == 'auto' %}--image-aspect-ratio: {{ section.settings.image.aspect_ratio }}{% endif %}">
       <div class="image-overlay__image-wrapper">
         {%- comment -%}Performance note: this image must not be lazyloaded as it contributes to the LCP{%- endcomment -%}
         <picture>
