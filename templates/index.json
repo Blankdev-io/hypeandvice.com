@@ -313,40 +313,6 @@
         "background": "rgba(0,0,0,0)"
       }
     },
-    "2612faf2-8324-468d-8706-b0d50055d1a4": {
-      "type": "slideshow",
-      "blocks": {
-        "template--14401296793705__2612faf2-8324-468d-8706-b0d50055d1a4-16678596118958e80f-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/H_V_MYSTERY-BOXES_1920x1920px_v2.jpg",
-            "split_image": "shopify:\/\/shop_images\/DD0A8E03-519D-47BA-A8E9-BFC58F72A441.jpg",
-            "text_position": "middle_center",
-            "subheading": "",
-            "title": "",
-            "button_1_text": "Shop mystery boxes",
-            "button_1_link": "https:\/\/www.hypeandvice.com\/collections\/mystery-boxes",
-            "button_2_text": "",
-            "button_2_link": "https:\/\/www.hypeandvice.com\/collections\/mystery-boxes",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 8
-          }
-        }
-      },
-      "block_order": [
-        "template--14401296793705__2612faf2-8324-468d-8706-b0d50055d1a4-16678596118958e80f-0"
-      ],
-      "settings": {
-        "section_height": "medium",
-        "transition_type": "fade",
-        "autoplay": false,
-        "cycle_speed": 4,
-        "background": "rgba(0,0,0,0)"
-      }
-    },
     "16492381491d455b02": {
       "type": "collection-list",
       "blocks": {
@@ -359,6 +325,20 @@
             "title": "",
             "link_text": "Color Block Sweats",
             "link_url": "shopify:\/\/collections\/color-block-sweats",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "164923814910707c7f-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/D715BAA5-172B-45F1-B7D4-8EFF988DBEBE.jpg",
+            "subheading": "",
+            "title": "",
+            "link_text": "Rugby Polo",
+            "link_url": "shopify:\/\/collections\/rugby-polo",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -561,21 +541,6 @@
             "overlay_opacity": 0
           }
         },
-        "164923814910707c7f-1": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/WhatsApp_Image_2022-03-30_at_9.08.34_PM_d1ffe128-65b7-4e73-883c-fd457720ca9d.jpg",
-            "subheading": "",
-            "title": "",
-            "link_text": "Slam Dunk Top",
-            "link_url": "https:\/\/www.hypeandvice.com\/products\/mto-slam-dunk-top",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
         "778e5ab6-5b0c-495c-9ff8-7a0317a8cdf3": {
           "type": "collection",
           "settings": {
@@ -623,6 +588,7 @@
       },
       "block_order": [
         "367cd815-1eda-4612-ad56-625c3c75669d",
+        "164923814910707c7f-1",
         "5daa3627-9642-4998-835f-154a7711b15a",
         "0cd61f93-8dc4-45ee-879f-87315be84f6d",
         "8d27afca-0e13-42ad-a15f-fd0a33e4395a",
@@ -637,7 +603,6 @@
         "6d0d0724-d126-49c3-861a-f49dd2e79486",
         "d2384025-18df-48fa-9d37-9267543da1d5",
         "a9f6d656-1588-43d7-9c35-a48efeabb65f",
-        "164923814910707c7f-1",
         "778e5ab6-5b0c-495c-9ff8-7a0317a8cdf3",
         "ecf90d37-a849-4316-9452-f72e600e0939",
         "f238ee0f-8ad9-4e00-8905-e8b360057f39"
@@ -649,6 +614,40 @@
         "title": "SHOP BY STYLE",
         "background": "#ffffff",
         "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "2612faf2-8324-468d-8706-b0d50055d1a4": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14401296793705__2612faf2-8324-468d-8706-b0d50055d1a4-16678596118958e80f-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/H_V_MYSTERY-BOXES_1920x1920px_v2.jpg",
+            "split_image": "shopify:\/\/shop_images\/DD0A8E03-519D-47BA-A8E9-BFC58F72A441.jpg",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "Shop mystery boxes",
+            "button_1_link": "https:\/\/www.hypeandvice.com\/collections\/mystery-boxes",
+            "button_2_text": "",
+            "button_2_link": "https:\/\/www.hypeandvice.com\/collections\/mystery-boxes",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 8
+          }
+        }
+      },
+      "block_order": [
+        "template--14401296793705__2612faf2-8324-468d-8706-b0d50055d1a4-16678596118958e80f-0"
+      ],
+      "settings": {
+        "section_height": "medium",
+        "transition_type": "fade",
+        "autoplay": false,
+        "cycle_speed": 4,
+        "background": "rgba(0,0,0,0)"
       }
     },
     "16506544520a12bd2c": {
@@ -1057,8 +1056,8 @@
     "165065000576ab84e7",
     "165065396872bf5f8b",
     "2cd6223b-dc18-4eda-91cc-768082b54a6a",
-    "2612faf2-8324-468d-8706-b0d50055d1a4",
     "16492381491d455b02",
+    "2612faf2-8324-468d-8706-b0d50055d1a4",
     "16506544520a12bd2c",
     "1655412672f035473e",
     "165065640506142d5c",
