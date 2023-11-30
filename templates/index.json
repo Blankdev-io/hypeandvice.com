@@ -358,6 +358,20 @@
             "overlay_opacity": 0
           }
         },
+        "ecf90d37-a849-4316-9452-f72e600e0939": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/HVWJ3SAD3-5FILM.jpg",
+            "subheading": "",
+            "title": "",
+            "link_text": "Puffer Jacket",
+            "link_url": "shopify:\/\/collections\/college-puffers",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
         "0cd61f93-8dc4-45ee-879f-87315be84f6d": {
           "type": "collection",
           "settings": {
@@ -555,21 +569,6 @@
             "overlay_opacity": 0
           }
         },
-        "ecf90d37-a849-4316-9452-f72e600e0939": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/IMG_9240_2.jpg",
-            "subheading": "",
-            "title": "",
-            "link_text": "Homecoming Crew",
-            "link_url": "shopify:\/\/collections\/homecoming-crew",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
         "f238ee0f-8ad9-4e00-8905-e8b360057f39": {
           "type": "collection",
           "disabled": true,
@@ -590,6 +589,7 @@
         "367cd815-1eda-4612-ad56-625c3c75669d",
         "164923814910707c7f-1",
         "5daa3627-9642-4998-835f-154a7711b15a",
+        "ecf90d37-a849-4316-9452-f72e600e0939",
         "0cd61f93-8dc4-45ee-879f-87315be84f6d",
         "8d27afca-0e13-42ad-a15f-fd0a33e4395a",
         "92bfec38-a1c4-4489-bc92-860db9956b25",
@@ -604,7 +604,6 @@
         "d2384025-18df-48fa-9d37-9267543da1d5",
         "a9f6d656-1588-43d7-9c35-a48efeabb65f",
         "778e5ab6-5b0c-495c-9ff8-7a0317a8cdf3",
-        "ecf90d37-a849-4316-9452-f72e600e0939",
         "f238ee0f-8ad9-4e00-8905-e8b360057f39"
       ],
       "settings": {
