@@ -6,7 +6,7 @@
         "16506500057f8bc64d-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/7CD81E62-48B8-4D61-A3D1-AA94A9BDDB60.gif",
+            "image": "shopify:\/\/shop_images\/4596BA31-9916-414C-AA0B-8994C22434DF.jpg",
             "split_image": "shopify:\/\/shop_images\/60B53778-B515-4ED7-AC52-C38C3DF39AFB_d21dbfe7-7b7b-43aa-93c9-0da1fcd4c259.jpg",
             "show_videos": false,
             "autoplay": true,
@@ -19,9 +19,9 @@
             "mobile_video_webm": "",
             "mobile_video_mp4": "",
             "text_position": "middle_center",
-            "subheading": "",
-            "title": "",
-            "button_1_text": "",
+            "subheading": "Gift School Spirit This Holiday!",
+            "title": "SPREAD THE CHEER WITH COLLEGE GEAR",
+            "button_1_text": "Find your school",
             "button_1_link": "https:\/\/www.hypeandvice.com\/pages\/our-schools",
             "button_2_text": "",
             "button_2_link": "",
@@ -29,7 +29,7 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#282828",
-            "overlay_opacity": 15
+            "overlay_opacity": 23
           }
         }
       },
