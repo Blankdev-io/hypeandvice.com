@@ -2669,6 +2669,11 @@ p + .button-group,
   color: rgb(var(--product-custom-label-2-text-color));
 }
 
+.label--custom3 {
+  background: red;
+  color: white;
+}
+
 .label-list {
   display: flex;
   flex-direction: column;
