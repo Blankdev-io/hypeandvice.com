@@ -12,7 +12,7 @@
   {%- capture product_labels -%}
     {%- for tag in product.tags -%}
       {%- if tag contains '__label' -%}
-        <span class="label label--custom{% if tag contains '__label2' %}2{% endif %}">{{ tag | split: ':' | last }}</span>
+        <span class="label label--custom{% if tag contains '__label2' %}2{% endif %}{% if tag contains '__label3' %}3{% endif %}">{{ tag | split: ':' | last }}</span>
       {%- endif -%}
     {%- endfor -%}
 
