@@ -362,7 +362,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/HVWJ3SAD3-5FILM.jpg",
+            "image": "shopify:\/\/shop_images\/USD16.jpg",
             "subheading": "Puffer Jacket",
             "title": "",
             "link_text": "",
@@ -397,7 +397,7 @@
             "link_url": "shopify:\/\/collections\/gameday-romper",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "92bfec38-a1c4-4489-bc92-860db9956b25": {
