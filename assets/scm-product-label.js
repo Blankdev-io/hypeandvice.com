@@ -140,7 +140,7 @@ if ((typeof SECOMAPP) == 'undefined') {
                                 'variant_apply': 'variants',
                                 
                 'exclude_variants': '',
-                'include_variants': '40052947714153,40052947746921,40052947779689,40052947812457,40052947845225,40052947877993,40052947910761,40052947943529,40052947976297,40052948009065,40052948041833,40052948074601,40052948107369,40052948140137,40052948172905,40052948205673,40052948238441,40052948271209,40052948303977,40052948336745,40052948369513,40052948402281,40052948435049,40052948467817',
+                'include_variants': '40120095539305,40120095572073,40120095604841,40120095637609,40120095670377,40120095703145',
                                                                 'is_new': 'any',
                                                 'is_on_sale': 'any',
                                                                                                                 'stock_status': 'any',
@@ -152,7 +152,22 @@ if ((typeof SECOMAPP) == 'undefined') {
                                                     'product_stock_computation': 'per_variant',
                             },
             'design': {
-                                                                                                                                                                            },
+                                                'border': {
+                    'size' : 0,
+                    'color' : '#FFFFFF',
+                    'style' : 'none'
+                },
+                                                'shape_color': '#B9B9B9',
+                                                'text_color': '#5E5873',
+                                                'font_family': 'Arial',
+                                                'font_size': 12,
+                                                'font_style': {
+                    'style': 'normal',
+                    'weight': 'normal',
+                    'decoration': 'none',
+                },
+                                                                'shape_class': 'pl-text-rectangle',
+                                            },
             'group_ids': '',
         },
             ];
