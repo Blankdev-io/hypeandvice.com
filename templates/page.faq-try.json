@@ -140,7 +140,7 @@
           "type": "question",
           "settings": {
             "title": "Do you have an affiliate program?",
-            "answer": "<p>Yes, please visit our affiliate page<\/p>"
+            "answer": "<p>Yes, please visit our <a href=\"\/pages\/affiliate\" title=\"Affiliate Program\">affiliate page<\/a><\/p>"
           }
         },
         "a7456572-e478-47eb-b08b-880c368f450d": {
