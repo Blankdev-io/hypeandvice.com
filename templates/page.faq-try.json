@@ -35,7 +35,7 @@
           "type": "question",
           "settings": {
             "title": "Can You Expedite My Order?",
-            "answer": "<p>Our apologies, but we cannot expedite orders at this time. They are made to order especially for you and are produced in the order we receive them. They are shipped via UPS or USPS. Domestic shipping times are currently within 3-7 business days. Times may vary during holidays and when we are receiving large order volumes.  Please note that once the package has left the building, we have no control over carrier delays.<\/p>"
+            "answer": "<p>Unfortunately, we cannot expedite orders at this time. They are made to order especially for you and are produced in the order we receive them. They are shipped via UPS or USPS. Domestic shipping times are currently within 3-7 business days. Processing and shipping times may fluctuate during holidays and periods of high order volumes. Please note that once the package has left the warehouse, we have no control over carrier delays.<\/p>"
           }
         },
         "4c0142c8-7512-4991-9ec8-a5e36070ece2": {
