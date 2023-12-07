@@ -136,6 +136,13 @@
             "answer": "<p>We love to feature our community! Please tag us on your pictures to be reposted.<\/p>"
           }
         },
+        "600c05fa-61b4-4412-ae69-1979b1dbbb40": {
+          "type": "question",
+          "settings": {
+            "title": "Do you have an affiliate program?",
+            "answer": "<p>Yes, please visit our affiliate page<\/p>"
+          }
+        },
         "a7456572-e478-47eb-b08b-880c368f450d": {
           "type": "question",
           "settings": {
@@ -155,13 +162,6 @@
           "settings": {
             "title": "Other Questions? ",
             "answer": "<p>Email us: customerservice@hypeandvice.com<\/p><p>We would love to help you with anything you need! We usually take 1 business day to respond so we appreciate your patience. <\/p>"
-          }
-        },
-        "600c05fa-61b4-4412-ae69-1979b1dbbb40": {
-          "type": "question",
-          "settings": {
-            "title": "Do you have an affiliate program?",
-            "answer": "<p>Yes, please visit our affiliate page<\/p>"
           }
         }
       },
@@ -184,10 +184,10 @@
         "d97f8056-aca8-4681-913d-57dcfc46cc18",
         "ed933f40-54db-49f3-85f2-065cdba6033d",
         "6360cd55-74bf-47f1-90dc-c9f086720729",
+        "600c05fa-61b4-4412-ae69-1979b1dbbb40",
         "a7456572-e478-47eb-b08b-880c368f450d",
         "bf7c640b-7a70-4498-bbfc-1928d7528f2d",
-        "a551001d-19e1-447a-9825-58883f637bb1",
-        "600c05fa-61b4-4412-ae69-1979b1dbbb40"
+        "a551001d-19e1-447a-9825-58883f637bb1"
       ],
       "settings": {
         "show_navigation": false,
