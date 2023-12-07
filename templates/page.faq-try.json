@@ -34,7 +34,7 @@
         "971a648d-5d67-4148-8dc2-05f5c237da24": {
           "type": "question",
           "settings": {
-            "title": "Can You Expedite My Order?",
+            "title": "Can you expedite my order?",
             "answer": "<p>Unfortunately, we cannot expedite orders at this time. They are made to order especially for you and are produced in the order we receive them. They are shipped via UPS or USPS. Domestic shipping times are currently within 3-7 business days. Processing and shipping times may fluctuate during holidays and periods of high order volumes. Please note that once the package has left the warehouse, we have no control over carrier delays.<\/p>"
           }
         },
@@ -45,11 +45,25 @@
             "answer": "<p>We send you a tracking number as soon as your order is shipped, but it may take 1-2 business days for the carrier to scan your order into their system and for updates to appear on their website. Please allow 2 business days for this process.<\/p><p>In case your order has shown progress and then stopped, please note that carrier services are currently experiencing high volumes and understaffing. Allow a few days for the tracking to update, and you'll likely see movement after that.<\/p><p>If there's been no movement for more than 7 days, please email us at customerservice@hypeandvice.com<\/p>"
           }
         },
+        "4c2fe851-57f2-4a5a-a862-de01cdf8b70f": {
+          "type": "question",
+          "settings": {
+            "title": "Can I cancel my order?",
+            "answer": "<p>Orders must be canceled within 24 hours of ordering to receive a full refund. If your order has been fulfilled we are unable to cancel it.<\/p>"
+          }
+        },
         "c194064f-7fcf-4f5e-8216-e811c62934f7": {
           "type": "question",
           "settings": {
-            "title": "How can I change my order?",
+            "title": "Can I change my order?",
             "answer": "<p>We can help you make changes to your order if we have not shipped it yet. If you wish to change or remove an item, please notify us within 24 hours of placing the order. Please email us at customerservice@hypeandvice.com so we can help you. If we have already shipped your order you may process an exchange or return once you receive it. <\/p>"
+          }
+        },
+        "7159269e-bcda-44fe-aeb2-2811b823c8c0": {
+          "type": "question",
+          "settings": {
+            "title": "Can I change my shipping address?",
+            "answer": "<p>Please provide the accurate delivery address and delivery instructions when placing your order. Hype and Vice is not obligated to resend orders to the correct address at our expense if an incorrect address is entered. If your order has not been shipped yet, email us ASAP at customerservice@hypeandvice.com<\/p>"
           }
         },
         "91c3fc9d-bd61-4ed2-a7a4-720680fa8dca": {
@@ -57,6 +71,13 @@
           "settings": {
             "title": "My order was wrong or defective",
             "answer": "<p>We apologize for any issues with your order! Please email us at customerservice@hypeandvice.com with a description of the problem and photos of the product and we would be happy to help you with a resolution. <\/p>"
+          }
+        },
+        "10140e45-afc2-45cc-bd95-9bbe3aa8ad99": {
+          "type": "question",
+          "settings": {
+            "title": "My order was delivered but I didn't receive it",
+            "answer": "<p>Packages can occasionally be scanned incorrectly by the carrier or experience delays, but in the majority of cases, they do show up a few days later. For this reason, we must wait for 6 business days after the delivery date before filing a claim with the carrier.<\/p><p>If, after this 6-day period, you still haven't received your order, please email us at customerservice@hypeandvice.com, and we'll assist you with the next steps.<\/p>"
           }
         },
         "7796fc92-002a-421d-ae2d-84c2d6598f19": {
@@ -135,6 +156,13 @@
             "title": "Other Questions? ",
             "answer": "<p>Email us: customerservice@hypeandvice.com<\/p><p>We would love to help you with anything you need! We usually take 1 business day to respond so we appreciate your patience. <\/p>"
           }
+        },
+        "600c05fa-61b4-4412-ae69-1979b1dbbb40": {
+          "type": "question",
+          "settings": {
+            "title": "Do you have an affiliate program?",
+            "answer": "<p>Yes, please visit our affiliate page<\/p>"
+          }
         }
       },
       "block_order": [
@@ -143,8 +171,11 @@
         "template--14935444062313__a4db4088-4352-4504-9bd4-07d9e65c77a7-question-2",
         "971a648d-5d67-4148-8dc2-05f5c237da24",
         "4c0142c8-7512-4991-9ec8-a5e36070ece2",
+        "4c2fe851-57f2-4a5a-a862-de01cdf8b70f",
         "c194064f-7fcf-4f5e-8216-e811c62934f7",
+        "7159269e-bcda-44fe-aeb2-2811b823c8c0",
         "91c3fc9d-bd61-4ed2-a7a4-720680fa8dca",
+        "10140e45-afc2-45cc-bd95-9bbe3aa8ad99",
         "7796fc92-002a-421d-ae2d-84c2d6598f19",
         "2ac271c2-0631-42c4-be9d-5f7b8c1926d6",
         "08bb13a7-c183-4099-8053-549012b6e24d",
@@ -155,7 +186,8 @@
         "6360cd55-74bf-47f1-90dc-c9f086720729",
         "a7456572-e478-47eb-b08b-880c368f450d",
         "bf7c640b-7a70-4498-bbfc-1928d7528f2d",
-        "a551001d-19e1-447a-9825-58883f637bb1"
+        "a551001d-19e1-447a-9825-58883f637bb1",
+        "600c05fa-61b4-4412-ae69-1979b1dbbb40"
       ],
       "settings": {
         "show_navigation": false,
