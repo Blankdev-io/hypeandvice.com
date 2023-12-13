@@ -175,6 +175,7 @@
       ],
       "settings": {
         "reveal_on_scroll": false,
+        "metafield_collections": true,
         "layout": "carousel",
         "subheading": "Subheading",
         "title": "Collection list",
