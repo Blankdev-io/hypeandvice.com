@@ -34,6 +34,8 @@
                 <a class="breadcrumb__link" href="{{collections[school_collection_formated].url}}">{{ school_collection }}</a>
                 <span>/</span>
                 <span>{{ cloth_collection }}</span>
+              {% elsif collection.metafields.custom.h1_heading != blank %}
+                {{ collection.metafields.custom.h1_heading }}
               {% else %}
                 {{- collection.title -}}
               {% endif %}
