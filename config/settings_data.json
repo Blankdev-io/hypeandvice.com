@@ -510,14 +510,14 @@
         "settings": {
         }
       },
-      "10714188220973388145": {
-        "type": "shopify:\/\/apps\/bss-product-labels-badges\/blocks\/bss-pl\/91bfe765-b604-49a1-805e-3599fa600b24",
+      "uppromote-affiliate-referral-customer-referral-26678-64c32457-930d-4cb9-9641-e24c0d9cf1f4": {
+        "type": "shopify:\/\/apps\/uppromote-affiliate\/blocks\/customer-referral\/64c32457-930d-4cb9-9641-e24c0d9cf1f4",
         "disabled": false,
         "settings": {
         }
       },
-      "uppromote-affiliate-referral-customer-referral-26678-64c32457-930d-4cb9-9641-e24c0d9cf1f4": {
-        "type": "shopify:\/\/apps\/uppromote-affiliate\/blocks\/customer-referral\/64c32457-930d-4cb9-9641-e24c0d9cf1f4",
+      "16216491870256628967": {
+        "type": "shopify:\/\/apps\/bss-product-labels-badges\/blocks\/bss-pl-config-data\/91bfe765-b604-49a1-805e-3599fa600b24",
         "disabled": false,
         "settings": {
         }
