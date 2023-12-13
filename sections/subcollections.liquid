@@ -54,7 +54,6 @@
   {% for collection_handle in collection_handles %}
     {% assign collection = collections[collection_handle] %}
     {% if collection %}
-      <!-- You can access your 'collection' variable here and do what you need with it -->
       {% render 'collection-list', collection: collection %}
     {% endif %}
   {% endfor %}
