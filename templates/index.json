@@ -316,6 +316,20 @@
     "16492381491d455b02": {
       "type": "collection-list",
       "blocks": {
+        "2d460212-53fd-4802-8d36-f722c01ea345": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/8D0A1E6E-795E-4202-A32E-9FC4206FF1A7.jpg",
+            "subheading": "COLLEGE JERSEYS",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
         "367cd815-1eda-4612-ad56-625c3c75669d": {
           "type": "collection",
           "settings": {
@@ -386,20 +400,6 @@
             "overlay_opacity": 0
           }
         },
-        "e0d3cbe5-4ffd-47ce-a121-665bb5361c49": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/ColorBlockPatchSweat-Group-2.jpg",
-            "subheading": "Patched Pants",
-            "title": "",
-            "link_text": "",
-            "link_url": "shopify:\/\/collections\/patched-pants",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
         "8d27afca-0e13-42ad-a15f-fd0a33e4395a": {
           "type": "collection",
           "settings": {
@@ -409,6 +409,20 @@
             "title": "",
             "link_text": "",
             "link_url": "shopify:\/\/collections\/gameday-romper",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "e0d3cbe5-4ffd-47ce-a121-665bb5361c49": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/ColorBlockPatchSweat-Group-2.jpg",
+            "subheading": "Patched Pants",
+            "title": "",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/patched-pants",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -585,13 +599,14 @@
         }
       },
       "block_order": [
+        "2d460212-53fd-4802-8d36-f722c01ea345",
         "367cd815-1eda-4612-ad56-625c3c75669d",
         "164923814910707c7f-1",
         "5daa3627-9642-4998-835f-154a7711b15a",
         "ecf90d37-a849-4316-9452-f72e600e0939",
         "0cd61f93-8dc4-45ee-879f-87315be84f6d",
-        "e0d3cbe5-4ffd-47ce-a121-665bb5361c49",
         "8d27afca-0e13-42ad-a15f-fd0a33e4395a",
+        "e0d3cbe5-4ffd-47ce-a121-665bb5361c49",
         "92bfec38-a1c4-4489-bc92-860db9956b25",
         "240327c7-14d6-43e6-be83-870e2dd50d29",
         "7b5a764d-1c1a-4c9b-9573-0c404665608e",
