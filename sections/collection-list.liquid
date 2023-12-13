@@ -82,7 +82,6 @@
           {% if section.settings.metafield_collections %}
             {%- for collection_id in recommended_collections -%}
               {%- assign collection = collections[collection_id] -%}
-              {%- capture collection_content -%}
               {%- if collection.subheading != blank -%}
                 <p class="heading heading--small" {% if section.settings.reveal_on_scroll %}reveal{% endif %}>{{ collection.subheading | escape }}</p>
               {%- endif -%}
@@ -94,7 +93,6 @@
               {%- if collection.link_text != blank -%}
                 <span class="heading heading--small link" {% if section.settings.reveal_on_scroll %}reveal{% endif %}>{{ collection.link_text | escape }}</span>
               {%- endif -%}
-            {%- endcapture -%}
 
             {%- if section.settings.layout == 'collage' -%}
               {%- comment -%}
