@@ -1,3 +1,4 @@
+{% comment %}
 <style>
   .collections-main {
     display: flex;
@@ -44,6 +45,19 @@
       {% endfor %}
     </div>
   </div>
+{% endif %}{% endcomment %}
+
+{% assign collections_metafield = collection.metafields.custom.collections_recomended %}
+
+{% if collections_metafield %}
+  {% assign collection_handles = collections_metafield | split: ',' %}
+  {% for collection_handle in collection_handles %}
+    {% assign collection = collections[collection_handle] %}
+    {% if collection %}
+      <!-- You can access your 'collection' variable here and do what you need with it -->
+      {% render 'collection-list', collection: collection %}
+    {% endif %}
+  {% endfor %}
 {% endif %}
 
 
