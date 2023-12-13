@@ -89,7 +89,7 @@
         "template--15026220040297__6cedc5e1-55f7-44c9-8239-b746ec2b6b5b-collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "{{ collection.metafields.custom.recommended_collection_1.value }}",
             "subheading": "",
             "title": "",
             "link_text": "",
@@ -99,10 +99,10 @@
             "overlay_opacity": 30
           }
         },
-        "template--15026220040297__6cedc5e1-55f7-44c9-8239-b746ec2b6b5b-collection-2": {
+        "58e8240a-a342-4933-bd62-8ed17cd37409": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "{{ collection.metafields.custom.recommended_collection_2.value }}",
             "subheading": "",
             "title": "",
             "link_text": "",
@@ -112,49 +112,10 @@
             "overlay_opacity": 30
           }
         },
-        "template--15026220040297__6cedc5e1-55f7-44c9-8239-b746ec2b6b5b-collection-3": {
+        "5730b2e3-2154-474e-b070-8b56c7add27f": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "template--15026220040297__6cedc5e1-55f7-44c9-8239-b746ec2b6b5b-collection-4": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "template--15026220040297__6cedc5e1-55f7-44c9-8239-b746ec2b6b5b-collection-5": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "template--15026220040297__6cedc5e1-55f7-44c9-8239-b746ec2b6b5b-collection-6": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
+            "collection": "{{ collection.metafields.custom.recommended_collection_3.value }}",
             "subheading": "",
             "title": "",
             "link_text": "",
@@ -167,15 +128,11 @@
       },
       "block_order": [
         "template--15026220040297__6cedc5e1-55f7-44c9-8239-b746ec2b6b5b-collection-1",
-        "template--15026220040297__6cedc5e1-55f7-44c9-8239-b746ec2b6b5b-collection-2",
-        "template--15026220040297__6cedc5e1-55f7-44c9-8239-b746ec2b6b5b-collection-3",
-        "template--15026220040297__6cedc5e1-55f7-44c9-8239-b746ec2b6b5b-collection-4",
-        "template--15026220040297__6cedc5e1-55f7-44c9-8239-b746ec2b6b5b-collection-5",
-        "template--15026220040297__6cedc5e1-55f7-44c9-8239-b746ec2b6b5b-collection-6"
+        "58e8240a-a342-4933-bd62-8ed17cd37409",
+        "5730b2e3-2154-474e-b070-8b56c7add27f"
       ],
       "settings": {
         "reveal_on_scroll": false,
-        "metafield_collections": true,
         "layout": "carousel",
         "subheading": "Subheading",
         "title": "Collection list",
