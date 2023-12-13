@@ -16,8 +16,7 @@
   {% endfor %}
   {% assign recommended_collections = recommended_collections | split: ',' %}
 {% endif %}
-
-  <script>console.log('recommended collections: {{ recommended_collections }}')</script>
+  
 
 <style>
   #shopify-section-{{ section.id }} {
@@ -81,7 +80,8 @@
       {%- capture section_content -%}
         <div class="list-collections__item-list">
           {% if section.settings.metafield_collections %}
-            {%- for collection in recommended_collections -%}
+            {%- for collection_id in recommended_collections -%}
+              {%- assign collection = collections[collection_id] -%}
               {%- capture collection_content -%}
               {%- if collection.subheading != blank -%}
                 <p class="heading heading--small" {% if section.settings.reveal_on_scroll %}reveal{% endif %}>{{ collection.subheading | escape }}</p>
@@ -169,7 +169,7 @@
                     <img class="list-collections__item-image" {% if section.settings.reveal_on_scroll %}reveal{% endif %} loading="lazy" sizes="{{ image_sizes }}" {% render 'image-attributes', image: collection_image, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400', height_constraint: height_constraint, crop: 'center' %}>
                   {%- else -%}
                     {% if forloop.index == 1 %}
-                    <img class="list-collections__item-image" src="{{ block.settings.image | img_url: '500x' }}">
+                    <img class="list-collections__item-image" src="{{ collection.image | img_url: '500x' }}">
                     {% else %}
                     <img class="list-collections__item-image" {% if section.settings.reveal_on_scroll %}reveal{% endif %} loading="lazy" sizes="{{ image_sizes }}" {% render 'image-attributes', image: collection_image, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800' %}>
                     {% endif %}  
@@ -192,6 +192,7 @@
               {%- endif -%}
             </a>
           {%- endfor -%}
+              
           {% else %}
           {%- for block in section.blocks -%}
             {%- capture collection_content -%}
