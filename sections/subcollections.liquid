@@ -80,7 +80,7 @@
             <div class="list-collections__item-info text-container">
               {% assign parts = collection.title | split: '-' %}
               {% assign last_part = parts | last %}
-              <p class="heading h3">{{ last_part | escape | capitalize }}</p>
+              <p class="heading h3">{{ last_part | capitalize }}</p>
             </div>
           </a>
         {%- endfor -%}
