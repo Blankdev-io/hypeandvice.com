@@ -59,6 +59,12 @@
     width: 100%;
     height: 100%;
   }
+
+  @media screen and (min-width: 1000px) {
+    .list-collections--carousel .grid-auto-columns-auto {
+      grid-auto-columns: auto !important;
+    }
+  }
 </style>
 
 <section class="section {% unless blends_with_background %}section--flush{% endunless %}">
@@ -76,7 +82,7 @@
         </header>
       {%- endif -%}
         {%- capture section_content -%}
-      <div class="list-collections__item-list">
+      <div class="list-collections__item-list grid-auto-columns-auto">
         {% for collection in collection.metafields.custom.collections_recomended.value %}
           <a href="{{ collection.url }}" class="list-collections__item image-zoom">
             <div class="list-collections__item-image-wrapper">
