@@ -82,7 +82,7 @@
       "type": "subcollections",
       "settings": {
         "reveal_on_scroll": false,
-        "layout": "grid",
+        "layout": "carousel",
         "subheading": "Subheading",
         "title": "Collection list",
         "background": "rgba(0,0,0,0)",
