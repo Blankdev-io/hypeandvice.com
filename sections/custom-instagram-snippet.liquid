@@ -1,12 +1,17 @@
+{% if collection.metafields.custom.instagram_code_snippet %}
+  {{ collection.metafields.custom.instagram_code_snippet }}
+{% endif %}
+
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Custom Instagram Snippet",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Custom Instagram Snippet"
+      }
+    ]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
