@@ -69,8 +69,8 @@
         {%- for recommended_collection in recommended_collections.value -%}
           <a href="{{ recommended_collection.url }}" class="list-collections__item image-zoom">
             <div class="list-collections__item-image-wrapper">
-              {%- if recommended_collection.metafields.custom.subcollection_featured_image != blank -%}
-                <img class="list-collections__item-image" src="{{ recommended_collection.metafields.custom.subcollection_featured_image | img_url: '500x' }}" alt="{{ recommended_collection.title | escape }}">
+              {%- if collection.metafields.custom.subcollection_featured_image != blank -%}
+                <img class="list-collections__item-image" src="{{ collection.metafields.custom.subcollection_featured_image | img_url: '500x' }}" alt="{{ recommended_collection.title | escape }}">
               {%- elsif recommended_collection.image -%}
                 <img class="list-collections__item-image" src="{{ recommended_collection.featured_image | img_url: '500x' }}" alt="{{ recommended_collection.title | escape }}">
               {%- endif -%}
