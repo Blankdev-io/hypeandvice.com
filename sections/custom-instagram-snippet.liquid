@@ -1,3 +1,13 @@
+  <div class="section__header text-container">
+    {% if collection.metafields.my_fields.tag_us_to_be_feautured != blank %}
+           <h2 class="heading heading--small">{{ collection.metafields.my_fields.tag_us_to_be_feautured.value }}</h2>
+    {% endif %}
+  
+     {% if collection.metafields.my_fields.specified_instagram_feed_name != blank %}
+      <h3 class="heading h2">{{ collection.metafields.my_fields.specified_instagram_feed_name.value }} </h3>
+    {% endif %}
+   </div>  
+
 {% if collection.metafields.custom.instagram_code_snippet %}
   {{ collection.metafields.custom.instagram_code_snippet }}
 {% endif %}
