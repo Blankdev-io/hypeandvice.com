@@ -70,7 +70,8 @@
           <a href="{{ recommended_collection.url }}" class="list-collections__item image-zoom">
             <div class="list-collections__item-image-wrapper">
               {%- if recommended_collection.metafields.custom.subcollection_featured_image.value != blank -%}
-                <img class="list-collections__item-image" src="{{ recommended_collection.metafields.custom.subcollection_featured_image.value | img_url: '500x' }}" alt="{{ recommended_collection.title | escape }}">
+                {% assign subcollection_image = recommended_collection.metafields.custom.subcollection_featured_image.value %}
+                <img class="list-collections__item-image" src="{{ subcollection_image | img_url: '500x' }}" alt="{{ recommended_collection.title | escape }}">
               {%- elsif recommended_collection.image -%}
                 <img class="list-collections__item-image" src="{{ recommended_collection.featured_image | img_url: '500x' }}" alt="{{ recommended_collection.title | escape }}">
               {%- endif -%}
