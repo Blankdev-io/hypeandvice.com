@@ -78,7 +78,9 @@
               {%- endif -%}
             </div>
             <div class="list-collections__item-info text-container">
-              <p class="heading h3">{{ collection.title | escape }}</p>
+              {% assign parts = collection.title | split: '-' %}
+              {% assign last_part = parts | last %}
+              <p class="heading h3">{{ last_part | escape }}</p>
             </div>
           </a>
         {%- endfor -%}
