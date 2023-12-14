@@ -65,11 +65,6 @@
       "settings": {
       }
     },
-    "b63ebeb3-0d62-43f8-9a16-e4090c66a393": {
-      "type": "subcollections",
-      "settings": {
-      }
-    },
     "16493474777271ec59": {
       "type": "custom-html",
       "disabled": true,
@@ -83,57 +78,11 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
-    "6cedc5e1-55f7-44c9-8239-b746ec2b6b5b": {
-      "type": "collection-list",
-      "blocks": {
-        "template--15026220040297__6cedc5e1-55f7-44c9-8239-b746ec2b6b5b-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "{{ collection.metafields.custom.recommended_collection_1.value }}",
-            "subheading": "",
-            "title": "",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "58e8240a-a342-4933-bd62-8ed17cd37409": {
-          "type": "collection",
-          "settings": {
-            "collection": "{{ collection.metafields.custom.recommended_collection_2.value }}",
-            "subheading": "",
-            "title": "",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "5730b2e3-2154-474e-b070-8b56c7add27f": {
-          "type": "collection",
-          "settings": {
-            "collection": "{{ collection.metafields.custom.recommended_collection_3.value }}",
-            "subheading": "",
-            "title": "",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        }
-      },
-      "block_order": [
-        "template--15026220040297__6cedc5e1-55f7-44c9-8239-b746ec2b6b5b-collection-1",
-        "58e8240a-a342-4933-bd62-8ed17cd37409",
-        "5730b2e3-2154-474e-b070-8b56c7add27f"
-      ],
+    "1f12149e-3df1-48e1-817d-8f644d4d2b0b": {
+      "type": "subcollections",
       "settings": {
         "reveal_on_scroll": false,
-        "layout": "carousel",
+        "layout": "grid",
         "subheading": "Subheading",
         "title": "Collection list",
         "background": "rgba(0,0,0,0)",
@@ -147,8 +96,7 @@
     "collection-banner",
     "main",
     "shogun-below",
-    "b63ebeb3-0d62-43f8-9a16-e4090c66a393",
     "16493474777271ec59",
-    "6cedc5e1-55f7-44c9-8239-b746ec2b6b5b"
+    "1f12149e-3df1-48e1-817d-8f644d4d2b0b"
   ]
 }
