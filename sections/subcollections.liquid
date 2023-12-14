@@ -69,19 +69,19 @@
 
       {%- capture section_content -%}
         <div class="list-collections__item-list">
-    {%- for recommended_collection in recommended_collections.value -%}
-        <a href="{{ recommended_collection.url }}" class="list-collections__item image-zoom">
-          <div class="list-collections__item-image-wrapper">
-            {%- if recommended_collection.image -%}
-              <img class="list-collections__item-image" src="{{ recommended_collection.image | img_url: '500x' }}" alt="{{ recommended_collection.title | escape }}">
-            {%- endif -%}
-          </div>
-          <div class="list-collections__item-info text-container">
-            <p class="heading h3">{{ recommended_collection.title | escape }}</p>
-          </div>
-        </a>
-    {%- endfor -%}
-  </div>
+          {%- for recommended_collection in recommended_collections.value -%}
+            <a href="{{ recommended_collection.url }}" class="list-collections__item image-zoom">
+              <div class="list-collections__item-image-wrapper">
+                {%- if recommended_collection.image -%}
+                  <img class="list-collections__item-image" src="{{ recommended_collection.image | img_url: '500x' }}" alt="{{ recommended_collection.title | escape }}">
+                {%- endif -%}
+              </div>
+              <div class="list-collections__item-info text-container">
+                <p class="heading h3">{{ recommended_collection.title | escape }}</p>
+              </div>
+            </a>
+          {%- endfor -%}
+        </div>
       {%- endcapture -%}
 
       {%- if section.settings.layout == 'grid' or section.settings.layout == 'collage' -%}
