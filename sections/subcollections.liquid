@@ -46,6 +46,11 @@
       --section-block-overlay-opacity: {{ block.settings.overlay_opacity | divided_by: 100.0 }};
     }
   {%- endfor -%}
+
+  .list-collections__item-image-wrapper > img {
+    width: 200px;
+    height: auto;
+  }
 </style>
 
 <section class="section {% unless blends_with_background %}section--flush{% endunless %}">
