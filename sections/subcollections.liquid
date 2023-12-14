@@ -86,13 +86,7 @@
         </div>
  
 
-      {%- if section.settings.layout == 'grid' or section.settings.layout == 'collage' -%}
-        <collection-list {% if section.settings.reveal_on_scroll %}reveal-on-scroll{% endif %} class="list-collections list-collections--{{ section.settings.layout }}">
-          <div class="container">
-            {{- section_content -}}
-          </div>
-        </collection-list>
-      {%- elsif section.settings.layout == 'carousel' -%}
+
         <collection-list scrollable {% if section.settings.reveal_on_scroll %}reveal-on-scroll{% endif %} class="list-collections list-collections--carousel">
           <scrollable-content class="list-collections__scroller hide-scrollbar">
             {{- section_content -}}
@@ -110,7 +104,7 @@
             </button>
           </prev-next-buttons>
         </collection-list>
-      {%- endif -%}
+
     </div>
   </div>
 </section>
