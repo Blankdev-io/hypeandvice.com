@@ -64,7 +64,7 @@
           {%- endif -%}
         </header>
       {%- endif -%}
-
+        {%- capture section_content -%}
       <div class="list-collections__item-list">
         {%- for recommended_collection in recommended_collections.value -%}
           <a href="{{ recommended_collection.url }}" class="list-collections__item image-zoom">
@@ -81,6 +81,7 @@
           </a>
         {%- endfor -%}
       </div>
+    {%- endcapture -%}
 
       <collection-list scrollable {% if section.settings.reveal_on_scroll %}reveal-on-scroll{% endif %} class="list-collections list-collections--carousel">
         <scrollable-content class="list-collections__scroller hide-scrollbar">
@@ -101,6 +102,7 @@
       </collection-list>
     </div>
   </div>
+  
 </section>
 
 
