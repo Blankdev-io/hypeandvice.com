@@ -88,6 +88,11 @@
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
+    },
+    "3c6d059e-4a5a-40c3-90c3-69672c6e79d0": {
+      "type": "custom-instagram-snippet",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -97,6 +102,7 @@
     "main",
     "shogun-below",
     "16493474777271ec59",
-    "1f12149e-3df1-48e1-817d-8f644d4d2b0b"
+    "1f12149e-3df1-48e1-817d-8f644d4d2b0b",
+    "3c6d059e-4a5a-40c3-90c3-69672c6e79d0"
   ]
 }
