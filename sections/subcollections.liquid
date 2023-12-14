@@ -70,19 +70,16 @@
       {%- capture section_content -%}
         <div class="list-collections__item-list">
     {%- for recommended_collection in recommended_collections.value -%}
-      {%- assign collection = collections[recommended_collection] -%}
-      {%- if collection -%}
-        <a href="{{ collection.url }}" class="list-collections__item image-zoom">
+        <a href="{{ recommended_collection.url }}" class="list-collections__item image-zoom">
           <div class="list-collections__item-image-wrapper">
-            {%- if collection.image -%}
-              <img class="list-collections__item-image" src="{{ collection.image | img_url: '500x' }}" alt="{{ collection.title | escape }}">
+            {%- if recommended_collection.image -%}
+              <img class="list-collections__item-image" src="{{ recommended_collection.image | img_url: '500x' }}" alt="{{ recommended_collection.title | escape }}">
             {%- endif -%}
           </div>
           <div class="list-collections__item-info text-container">
-            <p class="heading h3">{{ collection.title | escape }}</p>
+            <p class="heading h3">{{ recommended_collection.title | escape }}</p>
           </div>
         </a>
-      {%- endif -%}
     {%- endfor -%}
   </div>
       {%- endcapture -%}
