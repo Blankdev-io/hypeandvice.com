@@ -69,7 +69,7 @@
 
       {%- capture section_content -%}
         <div class="list-collections__item-list">
-    {%- for recommended_collection in recommended_collections -%}
+    {%- for recommended_collection in recommended_collections.value -%}
       {%- assign collection = collections[recommended_collection] -%}
       {%- if collection -%}
         <a href="{{ collection.url }}" class="list-collections__item image-zoom">
