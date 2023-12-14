@@ -47,7 +47,7 @@
     }
   {%- endfor -%}
 
-  .collection-container > img {
+  .test > img {
     width: 300px;
     height: auto;
     object-fit: contain;
@@ -72,9 +72,9 @@
       <div class="list-collections__item-list">
         {% for collection in collection.metafields.custom.collections_recomended.value %}
           <a href="{{ collection.url }}" class="list-collections__item image-zoom">
-            <div class="collection-container">
+            <div class="list-collections__item-image-wrapper">
               {% if collection.metafields.custom.subcollection_featured_image != blank %}
-                <img src="{{ collection.metafields.custom.subcollection_featured_image }}" alt="{{ collection.title | escape }}">
+                <img class="list-collections__item-image" src="{{ collection.metafields.custom.subcollection_featured_image }}" alt="{{ collection.title | escape }}">
               {%- elsif collection.image -%}
                 <img class="list-collections__item-image" src="{{ collection.featured_image | img_url: '500x' }}" alt="{{ collection.title | escape }}">
               {%- endif -%}
