@@ -86,6 +86,7 @@
     },
     "1f12149e-3df1-48e1-817d-8f644d4d2b0b": {
       "type": "subcollections",
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "layout": "carousel",
