@@ -650,143 +650,6 @@
           "type": "collection_list",
           "id": "collection_list2",
           "label": "Collection List 2"
-        },
-        {
-          "type": "select",
-          "id": "images_position",
-          "label": "Images position",
-          "info": "When featuring 4 images or more, we recommend to not use any dropdown links to keep the navigation easy to use.",
-          "options": [
-            {
-              "value": "left",
-              "label": "Left"
-            }, {
-              "value": "right",
-              "label": "Right"
-            }
-          ],
-          "default": "right"
-        },
-        {
-          "type": "header",
-          "content": "Image 1"
-        }, {
-          "type": "image_picker",
-          "id": "image_1",
-          "label": "Image",
-          "info": "560 x 420px .jpg recommended"
-        }, {
-          "type": "text",
-          "id": "image_1_heading",
-          "label": "Heading"
-        }, {
-          "type": "text",
-          "id": "image_1_text",
-          "label": "Text"
-        }, {
-          "type": "url",
-          "id": "image_1_link",
-          "label": "Link"
-        }, {
-          "type": "header",
-          "content": "Image 2"
-        }, {
-          "type": "image_picker",
-          "id": "image_2",
-          "label": "Image",
-          "info": "560 x 420px .jpg recommended"
-        }, {
-          "type": "text",
-          "id": "image_2_heading",
-          "label": "Heading"
-        }, {
-          "type": "text",
-          "id": "image_2_text",
-          "label": "Text"
-        }, {
-          "type": "url",
-          "id": "image_2_link",
-          "label": "Link"
-        }, {
-          "type": "header",
-          "content": "Image 3"
-        }, {
-          "type": "image_picker",
-          "id": "image_3",
-          "label": "Image",
-          "info": "560 x 420px .jpg recommended"
-        }, {
-          "type": "text",
-          "id": "image_3_heading",
-          "label": "Heading"
-        }, {
-          "type": "text",
-          "id": "image_3_text",
-          "label": "Text"
-        }, {
-          "type": "url",
-          "id": "image_3_link",
-          "label": "Link"
-        }, {
-          "type": "header",
-          "content": "Image 4"
-        }, {
-          "type": "image_picker",
-          "id": "image_4",
-          "label": "Image",
-          "info": "560 x 420px .jpg recommended"
-        }, {
-          "type": "text",
-          "id": "image_4_heading",
-          "label": "Heading"
-        }, {
-          "type": "text",
-          "id": "image_4_text",
-          "label": "Text"
-        }, {
-          "type": "url",
-          "id": "image_4_link",
-          "label": "Link"
-        }, {
-          "type": "header",
-          "content": "Image 5"
-        }, {
-          "type": "image_picker",
-          "id": "image_5",
-          "label": "Image",
-          "info": "560 x 420px .jpg recommended"
-        }, {
-          "type": "text",
-          "id": "image_5_heading",
-          "label": "Heading"
-        }, {
-          "type": "text",
-          "id": "image_5_text",
-          "label": "Text"
-        }, {
-          "type": "url",
-          "id": "image_5_link",
-          "label": "Link"
-        }, {
-          "type": "header",
-          "content": "Image 6"
-        }, {
-          "type": "image_picker",
-          "id": "image_6",
-          "label": "Image",
-          "info": "560 x 420px .jpg recommended"
-        }, {
-          "type": "text",
-          "id": "image_6_heading",
-          "label": "Heading"
-        }, {
-          "type": "text",
-          "id": "image_6_text",
-          "label": "Text"
-        }, {
-          "type": "url",
-          "id": "image_6_link",
-          "label": "Link"
         }
       ]
     },
@@ -811,22 +674,6 @@
           "label": "Collection List 2"
         },
         {
-          "type": "select",
-          "id": "mobile_images_position",
-          "label": "Images position",
-          "info": "When featuring 4 images or more, we recommend to not use any dropdown links to keep the navigation easy to use.",
-          "options": [
-            {
-              "value": "left",
-              "label": "Left"
-            }, {
-              "value": "right",
-              "label": "Right"
-            }
-          ],
-          "default": "right"
-        },
-        {
           "type": "range",
           "id": "mobile_items_length",
           "label": "Mobile Items Showed",
@@ -834,127 +681,68 @@
           "max": 55,
           "step": 1,
           "default": 10
+        }
+      ]
+    },
+    {
+      "type": "nba_mega_menu",
+      "name": "NBA Mega menu",
+      "settings": [
+        {
+          "type": "text",
+          "id": "nba_menu_item",
+          "label": "Menu item",
+          "info": "Enter menu item to apply a mega menu dropdown. [Learn more](https://support.maestrooo.com/article/180-navigation-enabling-and-configuring-mega-navigation)."
         },
         {
-          "type": "header",
-          "content": "Image 1"
-        }, {
-          "type": "image_picker",
-          "id": "mobile_image_1",
-          "label": "Image",
-          "info": "560 x 420px .jpg recommended"
-        }, {
+          "type": "collection_list",
+          "id": "nba_collection_list",
+          "label": "Collection List"
+        },
+        {
+          "type": "collection_list",
+          "id": "nba_collection_list2",
+          "label": "Collection List 2"
+        },
+        {
+          "type": "range",
+          "id": "nba_items_length",
+          "label": "Mobile Items Showed",
+          "min": 2,
+          "max": 55,
+          "step": 1,
+          "default": 10
+        }
+      ]
+    },
+    {
+      "type": "mls_mega_menu",
+      "name": "MLS Mega menu",
+      "settings": [
+        {
           "type": "text",
-          "id": "mobile_image_1_heading",
-          "label": "Heading"
-        }, {
-          "type": "text",
-          "id": "mobile_image_1_text",
-          "label": "Text"
-        }, {
-          "type": "url",
-          "id": "mobile_image_1_link",
-          "label": "Link"
-        }, {
-          "type": "header",
-          "content": "Image 2"
-        }, {
-          "type": "image_picker",
-          "id": "mobile_image_2",
-          "label": "Image",
-          "info": "560 x 420px .jpg recommended"
-        }, {
-          "type": "text",
-          "id": "mobile_image_2_heading",
-          "label": "Heading"
-        }, {
-          "type": "text",
-          "id": "mobile_image_2_text",
-          "label": "Text"
-        }, {
-          "type": "url",
-          "id": "mobile_image_2_link",
-          "label": "Link"
-        }, {
-          "type": "header",
-          "content": "Image 3"
-        }, {
-          "type": "image_picker",
-          "id": "mobile_image_3",
-          "label": "Image",
-          "info": "560 x 420px .jpg recommended"
-        }, {
-          "type": "text",
-          "id": "mobile_image_3_heading",
-          "label": "Heading"
-        }, {
-          "type": "text",
-          "id": "mobile_image_3_text",
-          "label": "Text"
-        }, {
-          "type": "url",
-          "id": "mobile_image_3_link",
-          "label": "Link"
-        }, {
-          "type": "header",
-          "content": "Image 4"
-        }, {
-          "type": "image_picker",
-          "id": "mobile_image_4",
-          "label": "Image",
-          "info": "560 x 420px .jpg recommended"
-        }, {
-          "type": "text",
-          "id": "mobile_image_4_heading",
-          "label": "Heading"
-        }, {
-          "type": "text",
-          "id": "mobile_image_4_text",
-          "label": "Text"
-        }, {
-          "type": "url",
-          "id": "mobile_image_4_link",
-          "label": "Link"
-        }, {
-          "type": "header",
-          "content": "Image 5"
-        }, {
-          "type": "image_picker",
-          "id": "mobile_image_5",
-          "label": "Image",
-          "info": "560 x 420px .jpg recommended"
-        }, {
-          "type": "text",
-          "id": "mobile_image_5_heading",
-          "label": "Heading"
-        }, {
-          "type": "text",
-          "id": "mobile_image_5_text",
-          "label": "Text"
-        }, {
-          "type": "url",
-          "id": "mobile_image_5_link",
-          "label": "Link"
-        }, {
-          "type": "header",
-          "content": "Image 6"
-        }, {
-          "type": "image_picker",
-          "id": "mobile_image_6",
-          "label": "Image",
-          "info": "560 x 420px .jpg recommended"
-        }, {
-          "type": "text",
-          "id": "mobile_image_6_heading",
-          "label": "Heading"
-        }, {
-          "type": "text",
-          "id": "mobile_image_6_text",
-          "label": "Text"
-        }, {
-          "type": "url",
-          "id": "mobile_image_6_link",
-          "label": "Link"
+          "id": "mls_menu_item",
+          "label": "Menu item",
+          "info": "Enter menu item to apply a mega menu dropdown. [Learn more](https://support.maestrooo.com/article/180-navigation-enabling-and-configuring-mega-navigation)."
+        },
+        {
+          "type": "collection_list",
+          "id": "mls_collection_list",
+          "label": "Collection List"
+        },
+        {
+          "type": "collection_list",
+          "id": "mls_collection_list2",
+          "label": "Collection List 2"
+        },
+        {
+          "type": "range",
+          "id": "mls_items_length",
+          "label": "Mobile Items Showed",
+          "min": 2,
+          "max": 55,
+          "step": 1,
+          "default": 10
         }
       ]
     }
