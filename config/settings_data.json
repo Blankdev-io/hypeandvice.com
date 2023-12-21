@@ -155,26 +155,7 @@
                 "west-virginia-university",
                 "university-of-wisconsin",
                 "vanderbilt-university"
-              ],
-              "images_position": "right",
-              "image_1_heading": "",
-              "image_1_text": "",
-              "image_1_link": "",
-              "image_2_heading": "",
-              "image_2_text": "",
-              "image_2_link": "",
-              "image_3_heading": "",
-              "image_3_text": "",
-              "image_3_link": "",
-              "image_4_heading": "",
-              "image_4_text": "",
-              "image_4_link": "",
-              "image_5_heading": "",
-              "image_5_text": "",
-              "image_5_link": "",
-              "image_6_heading": "",
-              "image_6_text": "",
-              "image_6_link": ""
+              ]
             }
           },
           "d24a15a2-2c8a-45e4-a356-3c5d50191b8c": {
@@ -240,32 +221,41 @@
                 "university-of-wisconsin",
                 "vanderbilt-university"
               ],
-              "mobile_images_position": "right",
-              "mobile_items_length": 55,
-              "mobile_image_1_heading": "",
-              "mobile_image_1_text": "",
-              "mobile_image_1_link": "",
-              "mobile_image_2_heading": "",
-              "mobile_image_2_text": "",
-              "mobile_image_2_link": "",
-              "mobile_image_3_heading": "",
-              "mobile_image_3_text": "",
-              "mobile_image_3_link": "",
-              "mobile_image_4_heading": "",
-              "mobile_image_4_text": "",
-              "mobile_image_4_link": "",
-              "mobile_image_5_heading": "",
-              "mobile_image_5_text": "",
-              "mobile_image_5_link": "",
-              "mobile_image_6_heading": "",
-              "mobile_image_6_text": "",
-              "mobile_image_6_link": ""
+              "mobile_items_length": 55
+            }
+          },
+          "25e3eae6-e8df-42b8-ac1d-c8e3812bdd22": {
+            "type": "nba_mega_menu",
+            "settings": {
+              "nba_menu_item": "",
+              "nba_collection_list": [
+
+              ],
+              "nba_collection_list2": [
+
+              ],
+              "nba_items_length": 10
+            }
+          },
+          "ebf0f17f-ec41-4633-8d3a-900ce5c1f349": {
+            "type": "mls_mega_menu",
+            "settings": {
+              "mls_menu_item": "",
+              "mls_collection_list": [
+
+              ],
+              "mls_collection_list2": [
+
+              ],
+              "mls_items_length": 10
             }
           }
         },
         "block_order": [
           "2f8fdde7-f4c6-4891-a807-d35b26267ebc",
-          "d24a15a2-2c8a-45e4-a356-3c5d50191b8c"
+          "d24a15a2-2c8a-45e4-a356-3c5d50191b8c",
+          "25e3eae6-e8df-42b8-ac1d-c8e3812bdd22",
+          "ebf0f17f-ec41-4633-8d3a-900ce5c1f349"
         ],
         "settings": {
           "enable_sticky_header": true,
