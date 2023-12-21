@@ -70,18 +70,20 @@
 <section class="section {% unless blends_with_background %}section--flush{% endunless %}">
   <div class="section__color-wrapper">
     <div class="{% unless blends_with_background %}vertical-breather{% endunless %}">
+        {% unless collection.title contains '-' %}
         <header class="section__header container text-container">
-            <h3 class="heading h3">      {% if collection.metafields.custom.colections_title %}
+            <h3 class="heading h3">
+        {% if collection.metafields.custom.colections_title %}
         {{ collection.metafields.custom.colections_title }}
       {% else %}
         Explore {{ collection.title }} Clothing
       {% endif %}</h3>
         </header>
+        {% endunless %}
         {%- capture section_content -%}
       <div class="list-collections__item-list grid-auto-columns-auto">
         {% for collection in collection.metafields.custom.collections_recomended.value %}
           <a href="{{ collection.url }}" class="list-collections__item image-zoom">
-            {% unless collection.title contains '-' %}
               <div class="list-collections__item-image-wrapper">
                 {% if collection.metafields.custom.subcollection_featured_image != blank %}
                   <img class="list-collections__item-image" src="{{ collection.metafields.custom.subcollection_featured_image }}" alt="{{ collection.title | escape }}">
@@ -89,7 +91,6 @@
                   <img class="list-collections__item-image" src="{{ collection.featured_image | img_url: '500x' }}" alt="{{ collection.title | escape }}">
                 {%- endif -%}
               </div>
-            {% endunless %}
             <div class="list-collections__item-info text-container text-container-background">
               {% assign parts = collection.title | split: '-' %}
                 {% if parts.size > 2 %}
