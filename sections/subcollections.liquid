@@ -81,13 +81,15 @@
       <div class="list-collections__item-list grid-auto-columns-auto">
         {% for collection in collection.metafields.custom.collections_recomended.value %}
           <a href="{{ collection.url }}" class="list-collections__item image-zoom">
-            <div class="list-collections__item-image-wrapper">
-              {% if collection.metafields.custom.subcollection_featured_image != blank %}
-                <img class="list-collections__item-image" src="{{ collection.metafields.custom.subcollection_featured_image }}" alt="{{ collection.title | escape }}">
-              {%- elsif collection.image -%}
-                <img class="list-collections__item-image" src="{{ collection.featured_image | img_url: '500x' }}" alt="{{ collection.title | escape }}">
-              {%- endif -%}
-            </div>
+            {% if collection.title contains '-' %}
+              <div class="list-collections__item-image-wrapper">
+                {% if collection.metafields.custom.subcollection_featured_image != blank %}
+                  <img class="list-collections__item-image" src="{{ collection.metafields.custom.subcollection_featured_image }}" alt="{{ collection.title | escape }}">
+                {%- elsif collection.image -%}
+                  <img class="list-collections__item-image" src="{{ collection.featured_image | img_url: '500x' }}" alt="{{ collection.title | escape }}">
+                {%- endif -%}
+              </div>
+            {% endif %}
             <div class="list-collections__item-info text-container text-container-background">
               {% assign parts = collection.title | split: '-' %}
                 {% if parts.size > 2 %}
