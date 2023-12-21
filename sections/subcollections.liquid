@@ -1,0 +1,198 @@
+{%- if section.settings.background != settings.background and section.settings.background != 'rgba(0,0,0,0)' -%}
+  {%- assign blends_with_background = false -%}
+{%- else -%}
+  {%- assign blends_with_background = true -%}
+{%- endif -%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    {%- if section.settings.background == 'rgba(0,0,0,0)' -%}
+      {%- assign section_background = settings.background -%}
+    {%- else -%}
+      {%- assign section_background = section.settings.background -%}
+    {%- endif -%}
+
+    {%- if section.settings.text_color == 'rgba(0,0,0,0)' -%}
+      {%- assign heading_color = settings.heading_color -%}
+      {%- assign text_color = settings.text_color -%}
+    {%- else -%}
+      {%- assign heading_color = section.settings.text_color -%}
+      {%- assign text_color = section.settings.text_color -%}
+    {%- endif -%}
+
+    --heading-color: {{ heading_color.red }}, {{ heading_color.green }}, {{ heading_color.blue }};
+    --text-color: {{ text_color.red }}, {{ text_color.green }}, {{ text_color.blue }};
+    --prev-next-button-background: var(--text-color);
+    --prev-next-button-color: var(--section-background);
+
+    --section-background: {{ section_background.red }}, {{ section_background.green }}, {{ section_background.blue }};
+
+    {%- if section.settings.layout == 'collage' -%}
+      --section-collage-column: {{ section.blocks.size | at_most: 2 }};
+    {%- endif -%}
+  }
+
+  {%- for block in section.blocks -%}
+    #block-{{ section.id }}-{{ block.id }} {
+      {% if block.settings.text_color == 'rgba(0,0,0,0)' %}
+        {%- assign text_color_rgb = '255, 255, 255' -%}
+      {%- else -%}
+        {%- capture text_color_rgb -%}{{ block.settings.text_color.red }}, {{ block.settings.text_color.green }}, {{ block.settings.text_color.blue }}{%- endcapture -%}
+      {%- endif -%}
+
+      --heading-color: {{ text_color_rgb }};
+      --text-color: {{ text_color_rgb }};
+      --section-block-overlay: {{ block.settings.overlay_color.red }}, {{ block.settings.overlay_color.green }}, {{ block.settings.overlay_color.blue }};
+      --section-block-overlay-opacity: {{ block.settings.overlay_opacity | divided_by: 100.0 }};
+    }
+  {%- endfor -%}
+
+  .list-collections__item {
+      width: 300px;
+  }
+
+  .text-container-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (min-width: 1000px) {
+    .list-collections--carousel .grid-auto-columns-auto {
+      grid-auto-columns: auto !important;
+    }
+  }
+</style>
+
+<section class="section {% unless blends_with_background %}section--flush{% endunless %}">
+  <div class="section__color-wrapper">
+    <div class="{% unless blends_with_background %}vertical-breather{% endunless %}">
+        <header class="section__header container text-container">
+            <h3 class="heading h3">      {% if collection.metafields.custom.colections_title %}
+        {{ collection.metafields.custom.colections_title }}
+      {% else %}
+        Explore {{ collection.title }} Clothing
+      {% endif %}</h3>
+        </header>
+        {%- capture section_content -%}
+      <div class="list-collections__item-list grid-auto-columns-auto">
+        {% for collection in collection.metafields.custom.collections_recomended.value %}
+          <a href="{{ collection.url }}" class="list-collections__item image-zoom">
+            <div class="list-collections__item-image-wrapper">
+              {% if collection.metafields.custom.subcollection_featured_image != blank %}
+                <img class="list-collections__item-image" src="{{ collection.metafields.custom.subcollection_featured_image }}" alt="{{ collection.title | escape }}">
+              {%- elsif collection.image -%}
+                <img class="list-collections__item-image" src="{{ collection.featured_image | img_url: '500x' }}" alt="{{ collection.title | escape }}">
+              {%- endif -%}
+            </div>
+            <div class="list-collections__item-info text-container text-container-background">
+              {% assign parts = collection.title | split: '-' %}
+                {% if parts.size > 2 %}
+                  {% assign parts1 = parts[1] | strip %}
+                  {% assign parts2 = parts[2] | strip %}
+                  {% assign last_part = parts1 | append: '-' | append: parts2 %}
+                {% else %}
+                  {% assign last_part = parts | last %}
+                {% endif %}
+              <p class="heading h3 capitalize">{{ last_part | escape }}</p>
+            </div>
+          </a>
+        {%- endfor -%}
+      </div>
+    {%- endcapture -%}
+
+      <collection-list scrollable {% if section.settings.reveal_on_scroll %}reveal-on-scroll{% endif %} class="list-collections list-collections--carousel">
+        <scrollable-content class="list-collections__scroller hide-scrollbar">
+          {{- section_content -}}
+        </scrollable-content>
+
+        <prev-next-buttons class="list-collections__prev-next prev-next-buttons hidden-pocket">
+          <button class="list-collections__arrow prev-next-button prev-next-button--prev">
+            <span class="visually-hidden">{{ 'general.accessibility.previous' | t }}</span>
+            {%- include 'icon' with 'nav-arrow-left', block: true, direction_aware: true -%}
+          </button>
+
+          <button class="list-collections__arrow prev-next-button prev-next-button--next">
+            <span class="visually-hidden">{{ 'general.accessibility.next' | t }}</span>
+            {%- include 'icon' with 'nav-arrow-right', block: true, direction_aware: true -%}
+          </button>
+        </prev-next-buttons>
+      </collection-list>
+    </div>
+  </div>
+  
+</section>
+
+
+{% schema %}
+{
+  "name": "Subcollections",
+  "class": "shopify-section--collection-list",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "reveal_on_scroll",
+      "label": "Reveal on scroll",
+      "info": "Show animation when section becomes visible.",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Layout",
+      "info": "Collage mode only affects desktop, and will adapt based on number of items.",
+      "options": [
+        {
+          "value": "grid",
+          "label": "Grid"
+        },
+        {
+          "value": "collage",
+          "label": "Collage"
+        },
+        {
+          "value": "carousel",
+          "label": "Carousel"
+        }
+      ],
+      "default": "grid"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Subheading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Collection list"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "rgba(0,0,0,0)"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Subcollections"
+    }
+  ]
+}
+{% endschema %}

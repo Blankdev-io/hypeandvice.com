@@ -2958,3 +2958,6 @@ details-disclosure > details {
   }
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
