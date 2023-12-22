@@ -233,6 +233,7 @@
         "4eaadb0c-4fe6-4985-91bc-a05ca4a34632": {
           "type": "logo",
           "settings": {
+            "logo": "shopify:\/\/shop_images\/KGS.png",
             "link": ""
           }
         }
