@@ -219,6 +219,7 @@
         "f42633c8-28b0-4bcc-b87c-46866a280391": {
           "type": "logo",
           "settings": {
+            "logo": "shopify:\/\/shop_images\/SUN.png",
             "link": ""
           }
         }
