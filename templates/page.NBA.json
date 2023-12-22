@@ -159,6 +159,20 @@
             "logo": "shopify:\/\/shop_images\/GRZ_49eb49f0-1f66-4951-a96a-cea6d0a47614.png",
             "link": ""
           }
+        },
+        "a4cd2e22-6fba-4ca3-87a6-0725940a10a2": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/HEA.png",
+            "link": ""
+          }
+        },
+        "fcb4d984-670b-44f0-81ff-0d02902f7626": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/BKS.png",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -176,7 +190,9 @@
         "0d94e334-d4dd-4315-aac8-ee8576ec3e03",
         "f76823f0-c904-4c4c-baf8-b5393f66e7a8",
         "dc0106df-bb4d-4f36-9284-b4cefd98791f",
-        "dd39cd53-dba4-4592-9d03-0dc72bfafc74"
+        "dd39cd53-dba4-4592-9d03-0dc72bfafc74",
+        "a4cd2e22-6fba-4ca3-87a6-0725940a10a2",
+        "fcb4d984-670b-44f0-81ff-0d02902f7626"
       ],
       "settings": {
         "reveal_on_scroll": false,
