@@ -227,14 +227,43 @@
           "25e3eae6-e8df-42b8-ac1d-c8e3812bdd22": {
             "type": "nba_mega_menu",
             "settings": {
-              "nba_menu_item": "",
+              "nba_menu_item": "Find Your Team",
               "nba_collection_list": [
-
+                "atlanta-hawks",
+                "boston-celtics",
+                "brooklyn-nets",
+                "charlotte-hornets",
+                "chicago-bulls",
+                "cleveland-cavaliers",
+                "dallas-mavericks",
+                "denver-nuggets",
+                "detroit-pistons",
+                "golden-state-warriors",
+                "houston-rockets",
+                "indiana-pacers",
+                "los-angeles-clippers",
+                "los-angeles-lakers",
+                "memphis-grizzlies",
+                "miami-heat",
+                "milwaukee-bucks",
+                "minnesota-timberwolves",
+                "new-orleans-pelicans",
+                "new-york-knicks",
+                "oklahoma-city-thunder",
+                "orlando-magic",
+                "philadelphia-76ers",
+                "phoenix-suns",
+                "portland-trail-blazers",
+                "sacramento-kings",
+                "san-antonio-spurs",
+                "toronto-raptors",
+                "utah-jazz",
+                "washington-wizards"
               ],
               "nba_collection_list2": [
 
               ],
-              "nba_items_length": 10
+              "nba_items_length": 30
             }
           },
           "ebf0f17f-ec41-4633-8d3a-900ce5c1f349": {
