@@ -212,6 +212,7 @@
         "e1f2ffc3-005c-4834-af4b-bf7e616bd656": {
           "type": "logo",
           "settings": {
+            "logo": "shopify:\/\/shop_images\/PHI.png",
             "link": ""
           }
         },
