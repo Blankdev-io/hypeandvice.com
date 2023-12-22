@@ -96,6 +96,43 @@
             "logo": "shopify:\/\/shop_images\/CAV.png",
             "link": ""
           }
+        },
+        "60c35fc9-3b94-45aa-9dd8-4756faee611e": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/MVR.png",
+            "link": ""
+          }
+        },
+        "9487ced5-afac-483c-8054-734c993c6852": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "24bdb134-42e8-440a-91da-5b0eb159a29a": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "5c34d369-5a2d-41c0-a6a2-1df26f04e407": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "b831f7b8-0f9b-4313-a00d-b837a3396981": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "0d94e334-d4dd-4315-aac8-ee8576ec3e03": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -104,12 +141,18 @@
         "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-3",
         "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-4",
         "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-5",
-        "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-6"
+        "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-6",
+        "60c35fc9-3b94-45aa-9dd8-4756faee611e",
+        "9487ced5-afac-483c-8054-734c993c6852",
+        "24bdb134-42e8-440a-91da-5b0eb159a29a",
+        "5c34d369-5a2d-41c0-a6a2-1df26f04e407",
+        "b831f7b8-0f9b-4313-a00d-b837a3396981",
+        "0d94e334-d4dd-4315-aac8-ee8576ec3e03"
       ],
       "settings": {
         "reveal_on_scroll": true,
         "subheading": "",
-        "title": "NEW NEW NEW",
+        "title": "SHOP BY TEAM",
         "button_text": "",
         "button_link": "",
         "stack_logos": false,
