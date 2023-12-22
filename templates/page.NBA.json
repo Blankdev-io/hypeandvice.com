@@ -173,6 +173,25 @@
             "logo": "shopify:\/\/shop_images\/BKS.png",
             "link": ""
           }
+        },
+        "f041d70b-9382-4477-8ddc-8f92e2108713": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/TRW.png",
+            "link": ""
+          }
+        },
+        "deb313f0-b0d7-4a46-aa32-46288b94994d": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "3bfa8c4a-cb5e-4f5f-aac8-298ac1f0000b": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -192,7 +211,10 @@
         "dc0106df-bb4d-4f36-9284-b4cefd98791f",
         "dd39cd53-dba4-4592-9d03-0dc72bfafc74",
         "a4cd2e22-6fba-4ca3-87a6-0725940a10a2",
-        "fcb4d984-670b-44f0-81ff-0d02902f7626"
+        "fcb4d984-670b-44f0-81ff-0d02902f7626",
+        "f041d70b-9382-4477-8ddc-8f92e2108713",
+        "deb313f0-b0d7-4a46-aa32-46288b94994d",
+        "3bfa8c4a-cb5e-4f5f-aac8-298ac1f0000b"
       ],
       "settings": {
         "reveal_on_scroll": false,
