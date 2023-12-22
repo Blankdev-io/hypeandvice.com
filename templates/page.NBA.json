@@ -201,6 +201,25 @@
             "logo": "shopify:\/\/shop_images\/THU.png",
             "link": ""
           }
+        },
+        "e378019e-7e14-4503-aff6-9534eb2a8eec": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/MGC.png",
+            "link": ""
+          }
+        },
+        "e1f2ffc3-005c-4834-af4b-bf7e616bd656": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "f42633c8-28b0-4bcc-b87c-46866a280391": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -224,7 +243,10 @@
         "f041d70b-9382-4477-8ddc-8f92e2108713",
         "deb313f0-b0d7-4a46-aa32-46288b94994d",
         "3bfa8c4a-cb5e-4f5f-aac8-298ac1f0000b",
-        "3407b722-c5e7-40c5-ba1b-149f1eec2271"
+        "3407b722-c5e7-40c5-ba1b-149f1eec2271",
+        "e378019e-7e14-4503-aff6-9534eb2a8eec",
+        "e1f2ffc3-005c-4834-af4b-bf7e616bd656",
+        "f42633c8-28b0-4bcc-b87c-46866a280391"
       ],
       "settings": {
         "reveal_on_scroll": false,
