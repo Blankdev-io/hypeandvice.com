@@ -247,6 +247,21 @@
         "1d22efa8-7070-4c00-89ac-8307ce3a8e9a": {
           "type": "logo",
           "settings": {
+            "logo": "shopify:\/\/shop_images\/RPT.png",
+            "link": ""
+          }
+        },
+        "b68e61ae-744a-4908-98b1-91402840a993": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/JAZ.png",
+            "link": ""
+          }
+        },
+        "59ebf1af-eae5-4d81-a36b-3ab9c4d6d91a": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/WIZ.png",
             "link": ""
           }
         }
@@ -279,7 +294,9 @@
         "f5019177-925d-4470-a644-74fcfa33294f",
         "4eaadb0c-4fe6-4985-91bc-a05ca4a34632",
         "7b29d206-0520-4060-bab9-c695f06541ef",
-        "1d22efa8-7070-4c00-89ac-8307ce3a8e9a"
+        "1d22efa8-7070-4c00-89ac-8307ce3a8e9a",
+        "b68e61ae-744a-4908-98b1-91402840a993",
+        "59ebf1af-eae5-4d81-a36b-3ab9c4d6d91a"
       ],
       "settings": {
         "reveal_on_scroll": false,
