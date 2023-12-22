@@ -149,6 +149,7 @@
         "dc0106df-bb4d-4f36-9284-b4cefd98791f": {
           "type": "logo",
           "settings": {
+            "logo": "shopify:\/\/shop_images\/LAK.png",
             "link": ""
           }
         },
