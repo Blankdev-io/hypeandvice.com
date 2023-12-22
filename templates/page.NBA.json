@@ -114,12 +114,14 @@
         "24bdb134-42e8-440a-91da-5b0eb159a29a": {
           "type": "logo",
           "settings": {
+            "logo": "shopify:\/\/shop_images\/PIS.png",
             "link": ""
           }
         },
         "5c34d369-5a2d-41c0-a6a2-1df26f04e407": {
           "type": "logo",
           "settings": {
+            "logo": "shopify:\/\/shop_images\/WRS.png",
             "link": ""
           }
         },
