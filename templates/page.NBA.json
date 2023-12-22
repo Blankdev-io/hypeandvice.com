@@ -184,12 +184,14 @@
         "deb313f0-b0d7-4a46-aa32-46288b94994d": {
           "type": "logo",
           "settings": {
+            "logo": "shopify:\/\/shop_images\/PEL.png",
             "link": ""
           }
         },
         "3bfa8c4a-cb5e-4f5f-aac8-298ac1f0000b": {
           "type": "logo",
           "settings": {
+            "logo": "shopify:\/\/shop_images\/KNS.png",
             "link": ""
           }
         }
