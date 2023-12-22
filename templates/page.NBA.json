@@ -194,6 +194,13 @@
             "logo": "shopify:\/\/shop_images\/KNS.png",
             "link": ""
           }
+        },
+        "3407b722-c5e7-40c5-ba1b-149f1eec2271": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/THU.png",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -216,7 +223,8 @@
         "fcb4d984-670b-44f0-81ff-0d02902f7626",
         "f041d70b-9382-4477-8ddc-8f92e2108713",
         "deb313f0-b0d7-4a46-aa32-46288b94994d",
-        "3bfa8c4a-cb5e-4f5f-aac8-298ac1f0000b"
+        "3bfa8c4a-cb5e-4f5f-aac8-298ac1f0000b",
+        "3407b722-c5e7-40c5-ba1b-149f1eec2271"
       ],
       "settings": {
         "reveal_on_scroll": false,
