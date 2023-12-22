@@ -222,6 +222,19 @@
             "logo": "shopify:\/\/shop_images\/SUN.png",
             "link": ""
           }
+        },
+        "f5019177-925d-4470-a644-74fcfa33294f": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/TBL_35b7ddc9-0a0d-449a-9802-972f4440fe67.png",
+            "link": ""
+          }
+        },
+        "4eaadb0c-4fe6-4985-91bc-a05ca4a34632": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -248,7 +261,9 @@
         "3407b722-c5e7-40c5-ba1b-149f1eec2271",
         "e378019e-7e14-4503-aff6-9534eb2a8eec",
         "e1f2ffc3-005c-4834-af4b-bf7e616bd656",
-        "f42633c8-28b0-4bcc-b87c-46866a280391"
+        "f42633c8-28b0-4bcc-b87c-46866a280391",
+        "f5019177-925d-4470-a644-74fcfa33294f",
+        "4eaadb0c-4fe6-4985-91bc-a05ca4a34632"
       ],
       "settings": {
         "reveal_on_scroll": false,
