@@ -269,14 +269,42 @@
           "ebf0f17f-ec41-4633-8d3a-900ce5c1f349": {
             "type": "mls_mega_menu",
             "settings": {
-              "mls_menu_item": "",
+              "mls_menu_item": "Find Your Team",
               "mls_collection_list": [
-
+                "atlanta-united",
+                "austin-fc",
+                "charlotte-fc",
+                "chicago-fire-fc",
+                "fc-cincinnati",
+                "colorado-rapids",
+                "columbus-crew",
+                "d-c-united",
+                "fc-dallas",
+                "houston-dynamo-fc",
+                "sporting-kansas-city",
+                "la-galaxy",
+                "los-angeles-fc",
+                "inter-miami-cf",
+                "minnesota-united",
+                "cf-montreal",
+                "nashville-sc",
+                "new-england-revolution",
+                "new-york-red-bulls",
+                "new-york-city-fc",
+                "orlando-city",
+                "philadelphia-union",
+                "portland-timbers",
+                "real-salt-lake",
+                "san-jose-earthquakes",
+                "seattle-sounders-fc",
+                "st-louis-city-sc",
+                "toronto-fc",
+                "vancouver-whitecaps-fc"
               ],
               "mls_collection_list2": [
 
               ],
-              "mls_items_length": 10
+              "mls_items_length": 29
             }
           }
         },
