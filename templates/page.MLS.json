@@ -101,12 +101,12 @@
         "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-6"
       ],
       "settings": {
-        "reveal_on_scroll": true,
+        "reveal_on_scroll": false,
         "subheading": "",
-        "title": "NEW NEW NEW",
+        "title": "SHOP BY TEAM",
         "button_text": "",
         "button_link": "",
-        "stack_logos": true,
+        "stack_logos": false,
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
