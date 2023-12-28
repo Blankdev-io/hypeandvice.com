@@ -22,7 +22,7 @@
           {% endif %}
         {% endfor %}
 
-        {% if current_collection %}
+        {% if menu_item_downcase == link_title_downcase and current_collection %}
           {% assign mega_menu_block = block %}
           {% break %}
         {% elsif menu_item_downcase == link_title_downcase and is_nba or is_mls %}
