@@ -8,10 +8,10 @@
       {% assign is_mls = false %} 
       {% assign current_collection_handle = collection.handle %}
 
-      {% if template.name contains 'NBA' %}
+      {% if template.suffix contains 'NBA' %}
         {% assign is_nba = true %}
         <script>alert("NBA = TRUE");</script>
-      {% elsif template.name contains 'MLS' %}
+      {% elsif template.suffix contains 'MLS' %}
         {% assign is_mls = true %} 
         <script>alert("MLS = TRUE")</script>
       {% endif %}
@@ -215,5 +215,3 @@
     {% if current_collection %}
       <script>alert("CURRENT COLLECTION = TRUE")</script>
     {% endif %}
-
-    <script>alert("Template name: '{{ template.suffix }}'");</script>
