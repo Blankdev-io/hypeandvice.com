@@ -36,10 +36,6 @@
           {% break %}
         {% endif %}
       {% endfor %}
-
-    {% if current_collection %}
-      <script>alert("CURRENT COLLECTION = TRUE")</script>
-    {% endif %}
     
       <li class="header__linklist-item {% if link.links.size > 0 or mega_menu_block != '' %}has-dropdown{% endif %}" data-item-title="{{ link.title | escape }}">
         <a
@@ -215,3 +211,7 @@
     {%- endfor -%}
   </ul>
 </desktop-navigation>
+
+    {% if current_collection %}
+      <script>alert("CURRENT COLLECTION = TRUE")</script>
+    {% endif %}
