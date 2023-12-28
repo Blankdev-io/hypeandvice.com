@@ -1,20 +1,21 @@
+{% assign is_nba = false %}
+{% assign is_mls = false %} 
+{% assign current_collection_handle = collection.handle %}
+
+{% if template.suffix contains 'NBA' %}
+  {% assign is_nba = true %}
+  <script>console.log("NBA = TRUE");</script>
+{% elsif template.suffix contains 'MLS' %}
+  {% assign is_mls = true %} 
+  <script>console.log("MLS = TRUE")</script>
+{% endif %}
+
 <desktop-navigation>
   <ul class="header__linklist list--unstyled {% unless bottom_navigation %}hidden-pocket hidden-lap{% endunless %}" role="list">
     {%- for link in menu.links -%}
       {% assign link_title_downcase = link.title | strip | downcase %}
       {% assign mega_menu_block = '' %}
       {% assign mega_menu_images = '' %}
-      {% assign is_nba = false %}
-      {% assign is_mls = false %} 
-      {% assign current_collection_handle = collection.handle %}
-
-      {% if template.suffix contains 'NBA' %}
-        {% assign is_nba = true %}
-        <script>console.log("NBA = TRUE");</script>
-      {% elsif template.suffix contains 'MLS' %}
-        {% assign is_mls = true %} 
-        <script>console.log("MLS = TRUE")</script>
-      {% endif %}
 
       {% for block in section.blocks %}
         {% assign menu_item_downcase = block.settings.menu_item | strip | downcase %}
