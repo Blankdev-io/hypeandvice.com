@@ -1,57 +1,29 @@
-{% assign is_nba = false %}
-{% assign is_mls = false %} 
-{% assign current_collection_handle = collection.handle %}
-
-{% if template.suffix contains 'NBA' %}
-  {% assign is_nba = true %}
-{% elsif template.suffix contains 'MLS' %}
-  {% assign is_mls = true %} 
-{% endif %}
+{% for block in section.blocks %}
+  {% if block.type == 'nba_mega_menu' or block.type == 'mls_mega_menu' %}
+    {% for collection in block.settings.collection_list %}
+      {% if collection.handle == current_collection_handle %}
+        {% assign mega_menu_block_league = block %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
 
 <desktop-navigation>
   <ul class="header__linklist list--unstyled {% unless bottom_navigation %}hidden-pocket hidden-lap{% endunless %}" role="list">
     {%- for link in menu.links -%}
-      {% assign link_title_downcase = link.title | strip | downcase %}
-      {% assign mega_menu_block = '' %}
-      {% assign mega_menu_images = '' %}
-      {% assign current_collection = false %}
-      {% assign menu_item_match = false %}
+      {%- assign link_title_downcase = link.title | strip | downcase -%}
+      {%- assign mega_menu_block = '' -%}
+      {%- assign mega_menu_images = '' -%}
 
-      {% for block in section.blocks %}
-        {% assign menu_item_downcase = block.settings.menu_item | strip | downcase %}
-        {% for collection in block.settings.collection_list %}
-          {% if collection.handle == current_collection_handle %}
-            {% assign current_collection = true %}
-            {% break %}
-          {% endif %}
-        {% endfor %}
+      {%- for block in section.blocks -%}
+        {%- assign menu_item_downcase = block.settings.menu_item | strip | downcase -%}
 
-         {% if menu_item_downcase == link_title_downcase %}
-           {% assign menu_item_match = true %}
-         {% endif %}
+        {%- if menu_item_downcase == link_title_downcase -%}
+          {%- assign mega_menu_block = block -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
 
-        {% if menu_item_match and current_collection %}
-          {% assign mega_menu_block_league = block %}
-          {% break %}
-        {% elsif menu_item_match and is_nba %}
-          {% assign mega_menu_block_league = block %}
-          {% break %}
-        {% elsif menu_item_match and is_mls %}
-          {% assign mega_menu_block_league = block %}
-          {% break %}
-        {% endif %}
-          
-        {% if menu_item_match %}
-          {% assign mega_menu_block_university = block %}
-        {% endif %}
-      {% endfor %}
-
-    {% if mega_menu_block_league %}
-      {% assign mega_menu_block = mega_menu_block_league %}
-    {% else %}
-      {% assign mega_menu_block = mega_menu_block_university %}
-    {% endif %}
-    
       <li class="header__linklist-item {% if link.links.size > 0 or mega_menu_block != '' %}has-dropdown{% endif %}" data-item-title="{{ link.title | escape }}">
         <a
           class="header__linklist-link link--animated"
@@ -122,15 +94,14 @@
                           </a>
                         </div>
                       {% endfor %}
-                      {%- if mega_menu_block.settings.collection_list2 -%}
-                        {%- for collection in mega_menu_block.settings.collection_list2 -%}
-                          <div class="mega-menu__column menu-image">
-                            <a href="{{ collection.url }}" class="mega-menu__title heading heading--small">
-                              <img class="" src="{{ collection.metafields.custom.header_image | img_url: '400x' }}">
-                            </a>
-                          </div>
-                        {% endfor %}
-                      {% endif %}
+                      {%- for collection in mega_menu_block.settings.collection_list2 -%}
+                        <div class="mega-menu__column menu-image">
+                          <a href="{{ collection.url }}" class="mega-menu__title heading heading--small">
+                            <img class="" src="{{ collection.metafields.custom.header_image | img_url: '400x' }}">
+                          </a>
+                        </div>
+                      {% endfor %}
+
                     </div>
                     <div class="show-more-container">
                       <a href="{{ link.url }}" class="show-more-button button button--secondary">SHOW ALL SCHOOLS</button>
