@@ -25,10 +25,6 @@
           {% endif %}
         {% endfor %}
 
-    {% if current_collection %}
-      <script>alert("CURRENT COLLECTION = TRUE")</script>
-    {% endif %}
-
         {% if menu_item_downcase == link_title_downcase and current_collection %}
           {% assign mega_menu_block = block %}
           {% break %}
@@ -41,6 +37,10 @@
         {% endif %}
       {% endfor %}
 
+    {% if current_collection %}
+      <script>alert("CURRENT COLLECTION = TRUE")</script>
+    {% endif %}
+    
       <li class="header__linklist-item {% if link.links.size > 0 or mega_menu_block != '' %}has-dropdown{% endif %}" data-item-title="{{ link.title | escape }}">
         <a
           class="header__linklist-link link--animated"
