@@ -32,7 +32,10 @@
         {% if menu_item_match and current_collection %}
           {% assign mega_menu_block_league = block %}
           {% break %}
-        {% elsif menu_item_match and is_nba or is_mls %}
+        {% elsif menu_item_match and is_nba %}
+          {% assign mega_menu_block_league = block %}
+          {% break %}
+        {% elsif menu_item_match and is_mls %}
           {% assign mega_menu_block_league = block %}
           {% break %}
         {% endif %}
