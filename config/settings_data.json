@@ -227,84 +227,28 @@
           "25e3eae6-e8df-42b8-ac1d-c8e3812bdd22": {
             "type": "nba_mega_menu",
             "settings": {
-              "nba_menu_item": "Find Your Team",
-              "nba_collection_list": [
-                "atlanta-hawks",
-                "boston-celtics",
-                "brooklyn-nets",
-                "charlotte-hornets",
-                "chicago-bulls",
-                "cleveland-cavaliers",
-                "dallas-mavericks",
-                "denver-nuggets",
-                "detroit-pistons",
-                "golden-state-warriors",
-                "houston-rockets",
-                "indiana-pacers",
-                "los-angeles-clippers",
-                "los-angeles-lakers",
-                "memphis-grizzlies",
-                "miami-heat",
-                "milwaukee-bucks",
-                "minnesota-timberwolves",
-                "new-orleans-pelicans",
-                "new-york-knicks",
-                "oklahoma-city-thunder",
-                "orlando-magic",
-                "philadelphia-76ers",
-                "phoenix-suns",
-                "portland-trail-blazers",
-                "sacramento-kings",
-                "san-antonio-spurs",
-                "toronto-raptors",
-                "utah-jazz",
-                "washington-wizards"
-              ],
-              "nba_collection_list2": [
-
-              ],
-              "nba_items_length": 30
+              "menu_item": "",
+              "collection_list": [
+                "university-of-southern-california",
+                "alabama-a-m-university",
+                "alma-college",
+                "appalachian-state-university",
+                "arizona-state-university"
+              ]
             }
           },
           "ebf0f17f-ec41-4633-8d3a-900ce5c1f349": {
             "type": "mls_mega_menu",
             "settings": {
-              "mls_menu_item": "Find Your Team",
-              "mls_collection_list": [
+              "menu_item": "",
+              "collection_list": [
+                "atlanta-hawks",
                 "atlanta-united",
+                "auburn-university",
                 "austin-fc",
-                "charlotte-fc",
-                "chicago-fire-fc",
-                "fc-cincinnati",
-                "colorado-rapids",
-                "columbus-crew",
-                "d-c-united",
-                "fc-dallas",
-                "houston-dynamo-fc",
-                "sporting-kansas-city",
-                "la-galaxy",
-                "los-angeles-fc",
-                "inter-miami-cf",
-                "minnesota-united",
-                "cf-montreal",
-                "nashville-sc",
-                "new-england-revolution",
-                "new-york-red-bulls",
-                "new-york-city-fc",
-                "orlando-city",
-                "philadelphia-union",
-                "portland-timbers",
-                "real-salt-lake",
-                "san-jose-earthquakes",
-                "seattle-sounders-fc",
-                "st-louis-city-sc",
-                "toronto-fc",
-                "vancouver-whitecaps-fc"
-              ],
-              "mls_collection_list2": [
-
-              ],
-              "mls_items_length": 29
+                "baylor-university",
+                "ball-state"
+              ]
             }
           }
         },
