@@ -10,10 +10,10 @@
 
       {% if template.suffix contains 'NBA' %}
         {% assign is_nba = true %}
-        <script>alert("NBA = TRUE");</script>
+        <script>console.log("NBA = TRUE");</script>
       {% elsif template.suffix contains 'MLS' %}
         {% assign is_mls = true %} 
-        <script>alert("MLS = TRUE")</script>
+        <script>console.log("MLS = TRUE")</script>
       {% endif %}
 
       {% for block in section.blocks %}
