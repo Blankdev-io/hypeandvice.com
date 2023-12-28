@@ -6,16 +6,18 @@
   {% assign is_mls = true %} 
 {% endif %}
 
-{% for block in section.blocks %}
-  {% if block.type == 'nba_mega_menu' or block.type == 'mls_mega_menu' %}
-    {% for collection in block.settings.collection_list %}
-      {% if collection.handle == current_collection_handle %}
-        {#- Do something here if the current collection matches -#}
-        {% assign mega_menu_block_league = block %}
-      {% endif %}
-    {% endfor %}
-  {% endif %}
-{% endfor %}
+{% if template.name == 'collection' %}
+  {% for block in section.blocks %}
+    {% if block.type == 'nba_mega_menu' or block.type == 'mls_mega_menu' %}
+      {% for collection in block.settings.collection_list %}
+        {% if collection.handle == current_collection_handle %}
+          {#- Do something here if the current collection matches -#}
+          {% assign mega_menu_block_league = block %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
 
 {% for block in section.blocks %}
   {% if block.type == 'nba_mega_menu' and is_nba %}
