@@ -22,8 +22,8 @@
           {% if collection.handle == current_collection_handle %}
             {% assign current_collection = true %}
             <script>alert("CURRENT COLLECTION = TRUE")</script>
+            {% break %}
           {% endif %}
-        {% break %}
         {% endfor %}
 
         {% if menu_item_downcase == link_title_downcase and current_collection %}
