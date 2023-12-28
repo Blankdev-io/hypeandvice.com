@@ -20,6 +20,7 @@
         {% for collection in block.settings.collection_list %}
           {% if collection.handle == current_collection_handle %}
             {% assign current_collection = true %}
+            <script>console.log('CURRENT COLLECTION = TRUE')</script>
           {% endif %}
         {% endfor %}
 
