@@ -22,6 +22,7 @@
           {% if collection.handle == current_collection_handle %}
             {% assign current_collection = true %}
             <script>alert("CURRENT COLLECTION = TRUE")</script>
+            {% break %}
           {% endif %}
         {% endfor %}
 
