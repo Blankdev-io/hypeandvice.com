@@ -14,6 +14,8 @@
       {% assign link_title_downcase = link.title | strip | downcase %}
       {% assign mega_menu_block = '' %}
       {% assign mega_menu_images = '' %}
+      {% assign current_collection = false %}
+      {% assign menu_item_match = false %}
 
       {% for block in section.blocks %}
         {% assign menu_item_downcase = block.settings.menu_item | strip | downcase %}
