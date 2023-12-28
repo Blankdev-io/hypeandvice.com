@@ -10,10 +10,10 @@
 
       {% if template.name contains 'NBA' %}
         {% assign is_nba = true %}
-        <script>console.log('NBA = TRUE')</script>
+        <script>alert("NBA = TRUE");</script>
       {% elsif template.name contains 'MLS' %}
         {% assign is_mls = true %} 
-        <script>console.log('MLS = TRUE')</script>
+        <script>alert("MLS = TRUE")</script>
       {% endif %}
 
       {% for block in section.blocks %}
@@ -22,7 +22,7 @@
         {% for collection in block.settings.collection_list %}
           {% if collection.handle == current_collection_handle %}
             {% assign current_collection = true %}
-            <script>console.log('CURRENT COLLECTION = TRUE')</script>
+            <script>alert("CURRENT COLLECTION = TRUE")</script>
           {% endif %}
         {% endfor %}
 
