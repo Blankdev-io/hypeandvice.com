@@ -1,11 +1,6 @@
-<desktop-navigation>
-  <ul class="header__linklist list--unstyled {% unless bottom_navigation %}hidden-pocket hidden-lap{% endunless %}" role="list">
-    {%- for link in menu.links -%}
       {% assign link_title_downcase = link.title | strip | downcase %}
       {% assign mega_menu_block = '' %}
       {% assign mega_menu_images = '' %}
-      {% assign is_nba = false %}
-      {% assign is_mls = false %} 
       {% assign current_collection_handle = collection.handle %}
 
       {% if template.suffix contains 'NBA' %}
@@ -47,6 +42,12 @@
     {% else %}
       {% assign mega_menu_block = mega_menu_block_university %}
     {% endif %}
+
+
+
+<desktop-navigation>
+  <ul class="header__linklist list--unstyled {% unless bottom_navigation %}hidden-pocket hidden-lap{% endunless %}" role="list">
+    {%- for link in menu.links -%}
     
       <li class="header__linklist-item {% if link.links.size > 0 or mega_menu_block != '' %}has-dropdown{% endif %}" data-item-title="{{ link.title | escape }}">
         <a
