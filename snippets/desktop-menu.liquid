@@ -11,7 +11,6 @@
     {% if block.type == 'nba_mega_menu' or block.type == 'mls_mega_menu' %}
       {% for collection in block.settings.collection_list %}
         {% if collection.handle == current_collection_handle %}
-          {#- Do something here if the current collection matches -#}
           {% assign mega_menu_block_league = block %}
         {% endif %}
       {% endfor %}
