@@ -4,6 +4,8 @@
       {% assign link_title_downcase = link.title | strip | downcase %}
       {% assign mega_menu_block = '' %}
       {% assign mega_menu_images = '' %}
+      {% assign is_nba = false %}
+      {% assign is_mls = false %} 
       {% assign current_collection_handle = collection.handle %}
 
       {% if template.suffix contains 'NBA' %}
@@ -29,8 +31,10 @@
 
         {% if menu_item_match and current_collection %}
           {% assign mega_menu_block_league = block %}
+          {% break %}
         {% elsif menu_item_match and is_nba or is_mls %}
           {% assign mega_menu_block_league = block %}
+          {% break %}
         {% endif %}
           
         {% if menu_item_match %}
