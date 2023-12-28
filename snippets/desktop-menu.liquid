@@ -17,7 +17,6 @@
       {% endif %}
 
       {% for block in section.blocks %}
-        {% assign current_collection = false %}
         {% assign menu_item_downcase = block.settings.menu_item | strip | downcase %}
         {% for collection in block.settings.collection_list %}
           {% if collection.handle == current_collection_handle %}
