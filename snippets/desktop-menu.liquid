@@ -25,15 +25,18 @@
           {% endif %}
         {% endfor %}
 
-        {% if menu_item_downcase == link_title_downcase and current_collection %}
+         {% if menu_item_downcase == link_title_downcase %}
+           {% assign menu_item_match = true %}
+         {% endif %}
+
+        {% if menu_item_match and current_collection %}
           {% assign mega_menu_block = block %}
           {% break %}
-        {% elsif menu_item_downcase == link_title_downcase and is_nba or is_mls %}
+        {% elsif menu_item_match and is_nba or is_mls %}
           {% assign mega_menu_block = block %}
           {% break %}
-        {% elsif menu_item_downcase == link_title_downcase %}
+        {% elsif menu_item_match %}
           {% assign mega_menu_block = block %}
-          {% break %}
         {% endif %}
       {% endfor %}
     
