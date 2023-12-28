@@ -44,8 +44,10 @@
 
     {% if mega_menu_block_league %}
       {% assign mega_menu_block = mega_menu_block_league %}
+      {% break %}
     {% else %}
       {% assign mega_menu_block = mega_menu_block_university %}
+      {% break %}
     {% endif %}
     
       <li class="header__linklist-item {% if link.links.size > 0 or mega_menu_block != '' %}has-dropdown{% endif %}" data-item-title="{{ link.title | escape }}">
