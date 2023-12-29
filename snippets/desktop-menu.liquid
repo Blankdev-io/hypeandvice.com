@@ -1,46 +1,12 @@
-{% assign current_collection_handle = collection.handle %}
-
-{% if template.suffix contains 'NBA' %}
-  {% assign is_nba = true %}
-{% elsif template.suffix contains 'MLS' %}
-  {% assign is_mls = true %} 
-{% endif %}
-
-{% if template.name == 'collection' %}
-  
-  {% for block in section.blocks %}
-    {% if block.type == 'nba_mega_menu' %}
-      {% for collection in block.settings.collection_list %}
-        {% if collection.handle == current_collection_handle %}
-          {% assign mega_menu_block_league = block %}
-          {% assign is_nba = true %}
-        {% endif %}
-      {% endfor %}
-    {% endif %}
-  {% endfor %}
-
-  {% for block in section.blocks %}
-    {% if block.type == 'mls_mega_menu' %}
-      {% for collection in block.settings.collection_list %}
-        {% if collection.handle == current_collection_handle %}
-          {% assign mega_menu_block_league = block %}
-          {% assign is_mls = true %} 
-        {% endif %}
-      {% endfor %}
-    {% endif %}
-  {% endfor %}
-
-{% else %}
-
-  {% for block in section.blocks %}
-    {% if block.type == 'nba_mega_menu' and is_nba %}
-      {% assign mega_menu_block_league = block %}
-    {% elsif block.type == 'mls_mega_menu' and is_mls %}
-      {% assign mega_menu_block_league = block %}
-    {% endif %}
-  {% endfor %}
-
-{% endif %}
+{% for block in section.blocks %}
+  {% if block.type == 'ncaa_mega_menu' and league = 'NCAA' %}
+    {% assign mega_menu_block_league = block %}
+  {% elsif block.type == 'nba_mega_menu' and league = 'NBA' %}
+    {% assign mega_menu_block_league = block %}
+  {% elsif block.type == 'mls_mega_menu' and league = 'MLS' %}
+    {% assign mega_menu_block_league = block %}
+  {% endif %}
+{% endfor %}
 
 <desktop-navigation>
   <ul class="header__linklist list--unstyled {% unless bottom_navigation %}hidden-pocket hidden-lap{% endunless %}" role="list">
