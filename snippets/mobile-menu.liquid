@@ -53,7 +53,7 @@
         {%- assign mega_menu_images = '' -%}
 
         {%- for block in section.blocks -%}
-          {%- assign menu_item_downcase = block.settings.mobile_menu_item | strip | downcase -%}
+          {%- assign menu_item_downcase = block.settings.menu_item | strip | downcase -%}
 
         {%- if menu_item_downcase == link_title_downcase -%}
           {% if mega_menu_block_league %}
