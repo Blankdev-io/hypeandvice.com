@@ -3,8 +3,10 @@
     {% assign mega_menu_block_league = block %}
   {% elsif block.type == 'nba_mega_menu' and league == 'NBA' %}
     {% assign mega_menu_block_league = block %}
+    <script>alert("NBA")</script>
   {% elsif block.type == 'mls_mega_menu' and league == 'MLS' %}
     {% assign mega_menu_block_league = block %}
+    <script>alert("MLS")</script>
   {% endif %}
 {% endfor %}
 
