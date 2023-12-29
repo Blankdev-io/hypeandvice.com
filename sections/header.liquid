@@ -1,3 +1,18 @@
+{% assign league = '' %}
+{% if template contains 'collection' %}
+  {% assign league = collection.metafields.custom.league %}
+{% elsif template contains 'product' %}
+  {% assign league = product.metafields.custom.league %}
+{% elsif template contains 'page' %}
+  {% if page.content contains 'NCAA' %}
+    {% assign league = 'NCAA' %}
+  {% elsif page.content contains 'NBA' %}
+    {% assign league = 'NBA' %}
+  {% elsif page.content contains 'MLS' %}
+    {% assign league = 'MLS' %}
+  {% endif %}
+{% endif %}
+
 {%- comment -%}
   IMPLEMENTATION NOTE: the header in Focal is pretty complex as it allows a lot of different layouts. In order to make
   this code as efficient as possible and avoid as many reflows, we are using a lot of different CSS variables. If you
@@ -114,8 +129,19 @@
   {% if request.page_type == 'index' and section.settings.enable_transparent_header %}transparent{% endif %}
   class="header {% if settings.background == settings.header_background %}header--bordered{% endif %} {% if request.page_type == 'index' and section.settings.enable_transparent_header %}header--transparent{% endif %}"
   role="banner">
-{%- assign menu = section.settings.navigation_menu -%}
 
+  {% assign menu = section.settings.navigation_menu %}
+  {% case league %}
+    {% when 'NCAA' %}
+      {% assign menu = section.settings.navigation_menu_ncaa %}
+    {% when 'NBA' %}
+      {% assign menu = section.settings.navigation_menu_nba %}
+    {% when 'MLS' %}
+      {% assign menu = section.settings.navigation_menu_mls %}
+    {% else %}
+      {% assign menu = section.settings.navigation_menu %}
+  {% endcase %}
+  
 <div class="container">
   <div class="header__wrapper">
     <!-- LEFT PART -->
