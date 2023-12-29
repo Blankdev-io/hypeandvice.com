@@ -225,7 +225,11 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
 
 
           
-      <div class="league-tabs" style="height: 30px; background-color: red;"></div>
+      <div class="league-tabs" style="height: 50px; display: flex; justify-content: center; background-color: #f4f4f4;">
+        <div class="NCAA-tab" style="{% if league = 'NCAA' %}background-color: white;{% else %}background-color: transparent;{% endif %}"></div>
+        <div class="NBA-tab" style="{% if league = 'NBA' %}background-color: white;{% else %}background-color: transparent;{% endif %}"></div>
+        <div class="MLS-tab" style="{% if league = 'MLS' %}background-color: white;{% else %}background-color: transparent;{% endif %}"></div>
+      </div>
 
 
           
