@@ -227,7 +227,7 @@
           "25e3eae6-e8df-42b8-ac1d-c8e3812bdd22": {
             "type": "nba_mega_menu",
             "settings": {
-              "menu_item": "TEST",
+              "menu_item": "Test",
               "collection_list": [
                 "atlanta-hawks",
                 "boston-celtics",
