@@ -13,23 +13,15 @@
   {% endif %}
 {% endif %}
 
-{% assign menu = section.settings.navigation_menu %}
-{% case league %}
-  {% when 'NCAA' %}
-    {% assign menu = section.settings.navigation_menu_ncaa %}
-  {% when 'NBA' %}
-    {% assign menu = section.settings.navigation_menu_nba %}
-  {% when 'MLS' %}
-    {% assign menu = section.settings.navigation_menu_mls %}
-  {% else %}
-    {% assign menu = section.settings.navigation_menu %}
-{% endcase %}
-
 {% for block in section.blocks %}
-  {% if block.type == 'nba_mega_menu' and league == 'NBA' %}
+  {% if block.type == 'mega_menu' and league == 'NCAA' %}
     {% assign mega_menu_block_league = block %}
+  {% elsif block.type == 'nba_mega_menu' and league == 'NBA' %}
+    {% assign mega_menu_block_league = block %}
+    <script>alert("NBA")</script>
   {% elsif block.type == 'mls_mega_menu' and league == 'MLS' %}
     {% assign mega_menu_block_league = block %}
+    <script>alert("MLS")</script>
   {% endif %}
 {% endfor %}
 
@@ -44,9 +36,12 @@
         {%- assign menu_item_downcase = block.settings.menu_item | strip | downcase -%}
 
         {%- if menu_item_downcase == link_title_downcase -%}
-
+          {% if mega_menu_block_league %}
+            {% assign mega_menu_block = mega_menu_block_league %}
+          {% else %}
             {%- assign mega_menu_block = block -%}
-
+          {% endif %}
+          {%- break -%}
         {%- endif -%}
       {%- endfor -%}
 
