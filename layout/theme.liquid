@@ -223,7 +223,20 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
       </style>
       <!--   End FSB app announcement bar   -->
 
-
+      {% assign league = '' %}
+      {% if template contains 'collection' %}
+        {% assign league = collection.metafields.custom.league %}
+      {% elsif template contains 'product' %}
+        {% assign league = product.metafields.custom.league %}
+      {% elsif template contains 'page' %}
+        {% if page.title contains 'NCAA' %}
+          {% assign league = 'NCAA' %}
+        {% elsif page.title contains 'NBA' %}
+          {% assign league = 'NBA' %}
+        {% elsif page.title contains 'MLS' %}
+          {% assign league = 'MLS' %}
+        {% endif %}
+      {% endif %}
           
       <div class="league-tabs" style="display: flex; width: 500px; height: 50px; display: flex; justify-content: center; background-color: #f4f4f4;">
         <div class="NCAA-tab" style="width: 30%; justify-content: center;{% if league = 'NCAA' %} background-color: white;{% else %} background-color: transparent;{% endif %}">NCAA</div>
