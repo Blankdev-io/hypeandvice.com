@@ -4,11 +4,11 @@
 {% elsif template contains 'product' %}
   {% assign league = product.metafields.custom.league %}
 {% elsif template contains 'page' %}
-  {% if page.content contains 'NCAA' %}
+  {% if page.title contains 'NCAA' %}
     {% assign league = 'NCAA' %}
-  {% elsif page.content contains 'NBA' %}
+  {% elsif page.title contains 'NBA' %}
     {% assign league = 'NBA' %}
-  {% elsif page.content contains 'MLS' %}
+  {% elsif page.title contains 'MLS' %}
     {% assign league = 'MLS' %}
   {% endif %}
 {% endif %}
