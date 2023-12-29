@@ -124,7 +124,7 @@
               {% if mega_menu_block.settings.mobile_collection_list != blank %}
                 <a href="{{ link.url }}" class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %} show-more-button button button--secondary">SHOW ALL SCHOOLS</a>
                 {% assign index_collection = 0 %}
-                {% assign items_length = mega_menu_block.settings.mobile_items_length |  times: 1 %}
+                {% assign items_length = mega_menu_block.settings.collection_list.size %}
                 {%- for collection in mega_menu_block.settings.mobile_collection_list -%}
                   {% if index_collection < items_length %}
                     {% assign index_collection = index_collection | plus: 1 %}
