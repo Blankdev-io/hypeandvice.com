@@ -34,16 +34,21 @@
       {%- assign mega_menu_images = '' -%}
 
       {%- for block in section.blocks -%}
-        {%- assign menu_item_downcase = block.settings.menu_item | strip | downcase -%}
+        {% if block.type == 'mega_menu' and league == 'NCAA' %}
+          {%- assign menu_item_downcase = block.settings.menu_item | strip | downcase -%}
+        {% elsif block.type == 'nba_mega_menu' and league == 'NBA' %}
+          {%- assign menu_item_downcase = block.settings.menu_item | strip | downcase -%}
+        {% elsif block.type == 'mls_mega_menu' and league == 'MLS' %}
+          {%- assign menu_item_downcase = block.settings.menu_item | strip | downcase -%}
+        {% else %}
+          {%- assign menu_item_downcase = block.settings.menu_item | strip | downcase -%}
+        {% endif %}
 
+        
         {%- if menu_item_downcase == link_title_downcase -%}
-          {% if mega_menu_block_league %}
-            {% assign mega_menu_block = mega_menu_block_league %}
-          {% else %}
             {%- assign mega_menu_block = block -%}
-          {% endif %}
-          {%- break -%}
-        {%- endif -%}
+        {% endif %}
+        {%- break -%}
       {%- endfor -%}
 
       <li class="header__linklist-item {% if link.links.size > 0 or mega_menu_block != '' %}has-dropdown{% endif %}" data-item-title="{{ link.title | escape }}">
