@@ -34,7 +34,11 @@
         {%- assign menu_item_downcase = block.settings.menu_item | strip | downcase -%}
 
         {%- if menu_item_downcase == link_title_downcase -%}
+          {% if mega_menu_block_league %}
+            {% assign mega_menu_block = mega_menu_block_league %}
+          {% else %}
             {%- assign mega_menu_block = block -%}
+          {% endif %}
           {%- break -%}
         {%- endif -%}
       {%- endfor -%}
