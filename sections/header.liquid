@@ -1,3 +1,18 @@
+      {% assign league = '' %}
+      {% if template contains 'collection' %}
+        {% assign league = collection.metafields.custom.league %}
+      {% elsif template contains 'product' %}
+        {% assign league = product.metafields.custom.league %}
+      {% elsif template contains 'page' %}
+        {% if page.title contains 'NCAA' %}
+          {% assign league = 'NCAA' %}
+        {% elsif page.title contains 'NBA' %}
+          {% assign league = 'NBA' %}
+        {% elsif page.title contains 'MLS' %}
+          {% assign league = 'MLS' %}
+        {% endif %}
+      {% endif %}
+
 {%- comment -%}
   IMPLEMENTATION NOTE: the header in Focal is pretty complex as it allows a lot of different layouts. In order to make
   this code as efficient as possible and avoid as many reflows, we are using a lot of different CSS variables. If you
