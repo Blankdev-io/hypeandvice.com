@@ -237,11 +237,31 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
           {% assign league = 'MLS' %}
         {% endif %}
       {% endif %}
+
+      <style>
+      .league-tab-container {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        background-color: #f4f4f4;
+      }
+
+      .league {
+        display: flex;
+        width: min-content;
+        padding: 0 30px;
+        justify-content: center;
+        align-items: center;
+      }
+      </style>
+
           
-      <div class="league-tabs" style="display: flex; width: 500px; height: 50px; display: flex; justify-content: center; background-color: #f4f4f4;">
-        <a href="/pages/ncaa" style="width: 30%; display: flex; justify-content: center; align-items: center;{% if league == 'NCAA' %} background-color: white;{% else %} background-color: transparent;{% endif %}"><div class="NCAA-tab">NCAA</div></a>
-        <a href="/pages/nba" style="width: 30%; display: flex; justify-content: center; align-items: center;{% if league == 'NBA' %} background-color: white;{% else %} background-color: transparent;{% endif %}"><div class="NBA-tab">NBA</div></a>
-        <a href="/pages/mls" style="width: 30%; display: flex; justify-content: center; align-items: center;{% if league == 'MLS' %} background-color: white;{% else %} background-color: transparent;{% endif %}"><div class="MLS-tab">MLS</div></a>
+      <div class="league-tab-container">
+        <a href="/pages/ncaa" class="league-tab" style="{% if league == 'NCAA' %} background-color: white;{% else %} background-color: transparent;{% endif %}"><div class="NCAA-tab">NCAA</div></a>
+        <a href="/pages/nba" class="league-tab" style="{% if league == 'NBA' %} background-color: white;{% else %} background-color: transparent;{% endif %}"><div class="NBA-tab">NBA</div></a>
+        <a href="/pages/mls" class="league-tab" style="{% if league == 'MLS' %} background-color: white;{% else %} background-color: transparent;{% endif %}"><div class="MLS-tab">MLS</div></a>
       </div>
 
 
