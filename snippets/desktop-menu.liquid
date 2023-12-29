@@ -1,26 +1,3 @@
-{% assign league = '' %}
-{% if template contains 'collection' %}
-  {% assign league = collection.metafields.custom.league %}
-{% elsif template contains 'product' %}
-  {% assign league = product.metafields.custom.league %}
-{% elsif template contains 'page' %}
-  {% if page.title contains 'NCAA' %}
-    {% assign league = 'NCAA' %}
-  {% elsif page.title contains 'NBA' %}
-    {% assign league = 'NBA' %}
-  {% elsif page.title contains 'MLS' %}
-    {% assign league = 'MLS' %}
-  {% endif %}
-{% endif %}
-
-{% for block in section.blocks %}
-  {% if block.type == 'nba_mega_menu' and league == 'NBA' %}
-    {% assign mega_menu_block_league = block %}
-  {% elsif block.type == 'mls_mega_menu' and league == 'MLS' %}
-    {% assign mega_menu_block_league = block %}
-  {% endif %}
-{% endfor %}
-
 <desktop-navigation>
   <ul class="header__linklist list--unstyled {% unless bottom_navigation %}hidden-pocket hidden-lap{% endunless %}" role="list">
     {%- for link in menu.links -%}
@@ -32,11 +9,7 @@
         {%- assign menu_item_downcase = block.settings.menu_item | strip | downcase -%}
 
         {%- if menu_item_downcase == link_title_downcase -%}
-          {% if mega_menu_block_league %}
-            {% assign mega_menu_block = mega_menu_block_league %}
-          {% else %}
-            {%- assign mega_menu_block = block -%}
-          {% endif %}
+          {%- assign mega_menu_block = block -%}
           {%- break -%}
         {%- endif -%}
       {%- endfor -%}
