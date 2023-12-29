@@ -116,7 +116,6 @@
   class="header {% if settings.background == settings.header_background %}header--bordered{% endif %} {% if request.page_type == 'index' and section.settings.enable_transparent_header %}header--transparent{% endif %}"
   role="banner">
 
-  {% assign menu = section.settings.navigation_menu %}
   {% case league %}
     {% when 'NCAA' %}
       {% assign menu = section.settings.navigation_menu_ncaa %}
