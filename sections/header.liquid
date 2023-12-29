@@ -480,8 +480,8 @@
   class="cart-notification {% unless section.settings.enable_sticky_header %}cart-notification--fixed{% endunless %}"></cart-notification>{%- comment -%}
       ------------------------------------------------------------------------------------
       MOBILE MENU DRAWER
-      ------------------------------------------------------------------------------------
-    {%- assign menu = section.settings.sidebar_navigation_menu | default: section.settings.navigation_menu -%}{%- endcomment -%}{%- render 'mobile-menu', menu: menu -%}{%- comment -%}
+      ------------------------------------------------------------------------------------{%- endcomment -%}
+    {%- assign menu = section.settings.sidebar_navigation_menu | default: section.settings.navigation_menu -%}{%- render 'mobile-menu', menu: menu -%}{%- comment -%}
       ------------------------------------------------------------------------------------
       SEARCH DRAWER
       ------------------------------------------------------------------------------------
