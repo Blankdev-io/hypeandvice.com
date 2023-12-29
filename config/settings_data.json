@@ -533,6 +533,12 @@
           "button_vertical_position": "lowest",
           "greeting_message": "👋 Hi! Message us if you have questions, or give an idea of what you’re looking for. We’re happy to make recommendations :)"
         }
+      },
+      "15216558432548357557": {
+        "type": "shopify:\/\/apps\/deco-product-labels-badges\/blocks\/deco-pl\/fd2caeda-48fd-4076-b5f9-8dfada7253f1",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
