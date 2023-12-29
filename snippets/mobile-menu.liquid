@@ -122,7 +122,7 @@
 
             <collapsible-content id="mobile-menu-{{ forloop.index }}" class="collapsible">
               {% if mega_menu_block.settings.collection_list != blank %}
-                <a href="{{ link.url }}" class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %} show-more-button button button--secondary">SHOW ALL {% if league = 'NCAA' %}SCHOOLS{% else %}TEAMS{% endif %}</a>
+                <a href="{{ link.url }}" class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %} show-more-button button button--secondary">SHOW ALL {% if league == 'NCAA' %}SCHOOLS{% else %}TEAMS{% endif %}</a>
 
                 {%- for collection in mega_menu_block.settings.collection_list -%}
                     {% assign index_collection = index_collection | plus: 1 %}
@@ -146,7 +146,7 @@
                     </a>
                 {% endfor %}
 
-                <a href="{{ link.url }}" class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %} show-more-button button button--secondary">SHOW ALL {% if league = 'NCAA' %}SCHOOLS{% else %}TEAMS{% endif %}</a>
+                <a href="{{ link.url }}" class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %} show-more-button button button--secondary">SHOW ALL {% if league == 'NCAA' %}SCHOOLS{% else %}TEAMS{% endif %}</a>
                 
               {%- else -%}
                 {%- if link.links.size > 0 -%}
