@@ -140,7 +140,7 @@
                   {% endif %}
                 {% endfor %}
 
-                {%- for collection in mega_menu_block.settings.mobile_collection_list2 -%}
+                {%- for collection in mega_menu_block.settings.collection_list2 -%}
                   {% if index_collection < items_length %}
                     {% assign index_collection = index_collection | plus: 1 %}
                     <a href="{{ collection.url }}" class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %} mobile-images">
