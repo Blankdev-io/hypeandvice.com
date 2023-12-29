@@ -23,8 +23,6 @@
   {% endif %}
 {% endfor %}
 
-
-
 <desktop-navigation>
   <ul class="header__linklist list--unstyled {% unless bottom_navigation %}hidden-pocket hidden-lap{% endunless %}" role="list">
     {%- for link in menu.links -%}
@@ -34,19 +32,17 @@
 
       {%- for block in section.blocks -%}
         {% if mega_menu_block_league %}
-          {%- assign menu_item_downcase = mega_menu_block_league.settings.menu_item | strip | downcase -%}
+          {%- assign menu_item_downcase_league = mega_menu_block_league.settings.menu_item | strip | downcase -%}
         {% else %}
           {%- assign menu_item_downcase = block.settings.menu_item | strip | downcase -%}
         {% endif %}
 
-        {%- if menu_item_downcase == link_title_downcase -%}
-          {% if mega_menu_block_league %}
+        {%- if menu_item_downcase_league == link_title_downcase -%}
             {% assign mega_menu_block = mega_menu_block_league %}
-          {% else %}
+        {% endif %}
+          {% if menu_item_downcase == link_title_downcase %}
             {%- assign mega_menu_block = block -%}
           {% endif %}
-          {%- break -%}
-        {%- endif -%}
       {%- endfor -%}
 
       <li class="header__linklist-item {% if link.links.size > 0 or mega_menu_block != '' %}has-dropdown{% endif %}" data-item-title="{{ link.title | escape }}">
