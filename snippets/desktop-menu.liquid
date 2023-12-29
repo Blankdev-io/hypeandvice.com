@@ -36,7 +36,6 @@
           {%- assign mega_menu_block = block -%}
         {% endif %}
         {%- assign mega_menu_counter = mega_menu_counter | plus: 1 -%}
-        {%- break -%}
       {% endif %}
 
       <li class="header__linklist-item {% if link.links.size > 0 or mega_menu_block != '' %}has-dropdown{% endif %}" data-item-title="{{ link.title | escape }}">
