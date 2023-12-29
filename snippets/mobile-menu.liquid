@@ -121,7 +121,7 @@
             </button>
 
             <collapsible-content id="mobile-menu-{{ forloop.index }}" class="collapsible">
-              {% if mega_menu_block.settings.mobile_collection_list != blank %}
+              {% if mega_menu_block.settings.collection_list != blank %}
                 <a href="{{ link.url }}" class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %} show-more-button button button--secondary">SHOW ALL SCHOOLS</a>
                 {% assign index_collection = 0 %}
                 {% assign items_length = mega_menu_block.settings.collection_list.size %}
