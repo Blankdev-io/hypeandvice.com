@@ -4,6 +4,31 @@
   {%- assign direction = 'rtl' -%}
 {%- endcase -%}
 
+{% assign league = '' %}
+{% if template contains 'collection' %}
+  {% assign league = collection.metafields.custom.league %}
+{% elsif template contains 'product' %}
+  {% assign league = product.metafields.custom.league %}
+{% elsif template contains 'page' %}
+  {% if page.title contains 'NCAA' %}
+    {% assign league = 'NCAA' %}
+  {% elsif page.title contains 'NBA' %}
+    {% assign league = 'NBA' %}
+  {% elsif page.title contains 'MLS' %}
+    {% assign league = 'MLS' %}
+  {% endif %}
+{% endif %}
+
+{% for block in section.blocks %}
+  {% if block.type == 'mega_menu' and league == 'NCAA' %}
+    {% assign mega_menu_block_league = block %}
+  {% elsif block.type == 'nba_mega_menu' and league == 'NBA' %}
+    {% assign mega_menu_block_league = block %}
+  {% elsif block.type == 'mls_mega_menu' and league == 'MLS' %}
+    {% assign mega_menu_block_league = block %}
+  {% endif %}
+{% endfor %}
+
 <mobile-navigation
   append-body
   id="mobile-menu-drawer"
@@ -30,11 +55,15 @@
         {%- for block in section.blocks -%}
           {%- assign menu_item_downcase = block.settings.mobile_menu_item | strip | downcase -%}
 
-          {%- if menu_item_downcase == link_title_downcase -%}
+        {%- if menu_item_downcase == link_title_downcase -%}
+          {% if mega_menu_block_league %}
+            {% assign mega_menu_block = mega_menu_block_league %}
+          {% else %}
             {%- assign mega_menu_block = block -%}
-            {%- break -%}
-          {%- endif -%}
-        {%- endfor -%}
+          {% endif %}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
 
         {%- if mega_menu_block != '' -%}
           {%- assign images_count = 0 -%}
