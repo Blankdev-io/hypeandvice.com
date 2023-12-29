@@ -123,10 +123,8 @@
             <collapsible-content id="mobile-menu-{{ forloop.index }}" class="collapsible">
               {% if mega_menu_block.settings.collection_list != blank %}
                 <a href="{{ link.url }}" class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %} show-more-button button button--secondary">SHOW ALL SCHOOLS</a>
-                {% assign index_collection = 0 %}
-                {% assign items_length = mega_menu_block.settings.collection_list.size %}
+
                 {%- for collection in mega_menu_block.settings.collection_list -%}
-                  {% if index_collection < items_length %}
                     {% assign index_collection = index_collection | plus: 1 %}
                     <a href="{{ collection.url }}" class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %} mobile-images">
                       {% if collection.metafields.custom.header_image != blank %}
@@ -135,13 +133,9 @@
                         {{ collection.title }}
                       {% endif %}
                     </a>
-                  {% else %}
-                    {% break %}
-                  {% endif %}
                 {% endfor %}
 
                 {%- for collection in mega_menu_block.settings.collection_list2 -%}
-                  {% if index_collection < items_length %}
                     {% assign index_collection = index_collection | plus: 1 %}
                     <a href="{{ collection.url }}" class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %} mobile-images">
                       {% if collection.metafields.custom.header_image != blank %}
@@ -150,9 +144,6 @@
                         {{ collection.title }}
                       {% endif %}
                     </a>
-                  {% else %}
-                    {% break %}
-                  {% endif %}
                 {% endfor %}
 
                 <a href="{{ link.url }}" class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %} show-more-button button button--secondary">SHOW ALL SCHOOLS</a>
