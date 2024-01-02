@@ -15157,6 +15157,12 @@ shopify-payment-terms {
   margin: 0px;
 }
 
+.menu-wrapper-image-league {
+  width: 100%;
+  justify-content: flex-start;
+  margin: 0px;
+}
+
 @media screen and (max-width: 768px) {
   .show-more-button{
     padding: 0px;
