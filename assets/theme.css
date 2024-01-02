@@ -9888,20 +9888,23 @@ input:checked + .popover__choice-label::after,
   /* gap: var(--mega-menu-column-gap); NOT YET FULLY SUPPORTED */
 }
 
-@media only screen and (min-width: 1694px) { 
-  .mega-menu__columns-wrapper {
-    height: 590px; /* So all elements are displayed when resolution is higher than 1736px */
-  }
-}
-
-.mega-menu__columns-wrapper-league { /* Modified to display schools in vertical order instead of horizontal */
+.mega-menu__columns-wrapper-league { 
   display: flex;
   flex-direction: column; 
   align-content: flex-start;
   flex-wrap: wrap;
-  height: 500px;
+  height: 30vw;
   margin: calc(-1 * var(--mega-menu-column-gap) / 2);
-  /* gap: var(--mega-menu-column-gap); NOT YET FULLY SUPPORTED */
+}
+
+@media only screen and (min-width: 1694px) { 
+  .mega-menu__columns-wrapper {
+    height: 590px;
+  }
+
+  .mega-menu__columns-wrapper-league { 
+    height: 500px;
+  }
 }
 
 .mega-menu__column {
@@ -15128,7 +15131,6 @@ shopify-payment-terms {
   display: block !important;
   visibility: visible !important;
 }
-
 
 .show-more-button {
   display: block;
