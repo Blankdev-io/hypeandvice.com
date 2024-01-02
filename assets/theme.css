@@ -9894,6 +9894,16 @@ input:checked + .popover__choice-label::after,
   }
 }
 
+.mega-menu__columns-wrapper-league { /* Modified to display schools in vertical order instead of horizontal */
+  display: flex;
+  flex-direction: column; 
+  align-content: flex-start;
+  flex-wrap: wrap;
+  height: 500px;
+  margin: calc(-1 * var(--mega-menu-column-gap) / 2);
+  /* gap: var(--mega-menu-column-gap); NOT YET FULLY SUPPORTED */
+}
+
 .mega-menu__column {
   margin: calc(var(--mega-menu-column-gap) / 2);
 }
