@@ -255,13 +255,17 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
         justify-content: center;
         align-items: center;
       }
+
+      .league-tab-image {
+        height: 80%;
+      }
       </style>
 
           
       <div class="league-tab-container">
-        <a href="/pages/ncaa" class="league-tab" style="{% if league == 'NCAA' %} background-color: white;{% else %} background-color: transparent;{% endif %}"><img src="https://cdn.shopify.com/s/files/1/0061/4167/3590/files/1704220066-trimmy-ncaa-4-logo-png-transparent.png?v=1704220389" alt="NCAA Logo"><div class="league-tab-text">Colleges</div></a>
-        <a href="/pages/nba" class="league-tab" style="{% if league == 'NBA' %} background-color: white;{% else %} background-color: transparent;{% endif %}"><img src="https://cdn.shopify.com/s/files/1/0061/4167/3590/files/1704220066-trimmy-nba-logo_2x_e216494b-383a-4dfe-9429-8a666a47eaf3.png?v=1704220388" alt="NBA Logo"><div class="league-tab-text">Basketball</div></a>
-        <a href="/pages/mls" class="league-tab" style="{% if league == 'MLS' %} background-color: white;{% else %} background-color: transparent;{% endif %}"><img src="https://cdn.shopify.com/s/files/1/0061/4167/3590/files/1938px-MLS_crest_logo_RGB_gradient_svg.png?v=1704220388" alt="MLS Logo"><div class="league-tab-text">Soccer</div></a>
+        <a href="/pages/ncaa" class="league-tab" style="{% if league == 'NCAA' %} background-color: white;{% else %} background-color: transparent;{% endif %}"><img class="league-tab-image" src="https://cdn.shopify.com/s/files/1/0061/4167/3590/files/1704220066-trimmy-ncaa-4-logo-png-transparent.png?v=1704220389" alt="NCAA Logo"><div class="league-tab-text">Colleges</div></a>
+        <a href="/pages/nba" class="league-tab" style="{% if league == 'NBA' %} background-color: white;{% else %} background-color: transparent;{% endif %}"><img class="league-tab-image" src="https://cdn.shopify.com/s/files/1/0061/4167/3590/files/1704220066-trimmy-nba-logo_2x_e216494b-383a-4dfe-9429-8a666a47eaf3.png?v=1704220388" alt="NBA Logo"><div class="league-tab-text">Basketball</div></a>
+        <a href="/pages/mls" class="league-tab" style="{% if league == 'MLS' %} background-color: white;{% else %} background-color: transparent;{% endif %}"><img class="league-tab-image" src="https://cdn.shopify.com/s/files/1/0061/4167/3590/files/1938px-MLS_crest_logo_RGB_gradient_svg.png?v=1704220388" alt="MLS Logo"><div class="league-tab-text">Soccer</div></a>
       </div>
 
 
