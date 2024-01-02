@@ -105,7 +105,7 @@
                 {{ mega_menu_block.shopify_attributes }}>
                 <div class="container">
                   <div class="mega-menu__inner mega-menu__inner-collection">
-                    <div class="mega-menu__columns-wrapper menu-wrapper-image">
+                    <div class="mega-menu__columns-wrapper{% if league != 'NCAA' %}-league{% endif %} menu-wrapper-image">
                       {%- for collection in mega_menu_block.settings.collection_list -%}
                         <div class="mega-menu__column menu-image{% if league != 'NCAA' %}-league{% endif %}">
                           <a href="{{ collection.url }}" class="mega-menu__title heading heading--small">
@@ -137,7 +137,7 @@
                 <div class="container">
                   <div class="mega-menu__inner">
                     {%- if mega_menu_block.settings.images_position == 'left' and mega_menu_images != blank -%}
-                      <div class="mega-menu__images-wrapper{% if league != 'NCAA' %}-league{% endif %} {% if images_count >= 3 %}mega-menu__images-wrapper--tight{% endif %}">
+                      <div class="mega-menu__images-wrapper {% if images_count >= 3 %}mega-menu__images-wrapper--tight{% endif %}">
                         {{- mega_menu_images -}}
                       </div>
                     {%- endif -%}
