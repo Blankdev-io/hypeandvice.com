@@ -107,7 +107,7 @@
                   <div class="mega-menu__inner mega-menu__inner-collection">
                     <div class="mega-menu__columns-wrapper menu-wrapper-image">
                       {%- for collection in mega_menu_block.settings.collection_list -%}
-                        <div class="mega-menu__column menu-image">
+                        <div class="mega-menu__column menu-image{% if league != 'NCAA' %}-league{% endif %}">
                           <a href="{{ collection.url }}" class="mega-menu__title heading heading--small">
                             <img class="" src="{{ collection.metafields.custom.header_image | img_url: '400x' }}">
                           </a>
