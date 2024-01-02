@@ -113,6 +113,7 @@
                           </a>
                         </div>
                       {% endfor %}
+              
                       {%- for collection in mega_menu_block.settings.collection_list2 -%}
                         <div class="mega-menu__column menu-image">
                           <a href="{{ collection.url }}" class="mega-menu__title heading heading--small">
@@ -123,7 +124,7 @@
 
                     </div>
                     <div class="show-more-container">
-                      <a href="{{ link.url }}" class="show-more-button button button--secondary">SHOW ALL {% if league == 'NCAA' %}SCHOOLS{% else %}TEAMS{% endif %}</button>
+                      <a href="{{ link.url }}" class="show-more-button button button--secondary">SHOW ALL {% if league == 'NCAA' %}SCHOOLS{% else %}TEAMS{% endif %}</a>
                     </div>
                   </div>
                 </div>
