@@ -158,72 +158,6 @@
               ]
             }
           },
-          "d24a15a2-2c8a-45e4-a356-3c5d50191b8c": {
-            "type": "mobile_mega_menu",
-            "settings": {
-              "mobile_menu_item": "Find Your School",
-              "mobile_collection_list": [
-                "university-of-alabama",
-                "university-of-arizona",
-                "arizona-state-university",
-                "university-of-arkansas-fayetteville",
-                "auburn-university",
-                "boise-state",
-                "university-of-california-berkeley",
-                "university-of-california-los-angeles-ucla",
-                "university-of-central-florida",
-                "university-of-cincinnati",
-                "university-of-colorado-boulder",
-                "u-conn",
-                "cornell-university",
-                "university-of-florida-uf",
-                "florida-state-university",
-                "university-of-georgia",
-                "harvard-university",
-                "howard-university",
-                "university-of-illinois",
-                "indiana-university",
-                "university-of-iowa",
-                "iowa-state-university",
-                "james-madison-university",
-                "university-of-kansas",
-                "university-of-kentucky",
-                "louisiana-state-university-lsu",
-                "university-of-maryland",
-                "university-of-miami",
-                "university-of-michigan",
-                "michigan-state-university",
-                "university-of-mississippi-ole-miss",
-                "university-of-notre-dame",
-                "ohio-state-university-osu",
-                "university-of-oregon",
-                "penn-state",
-                "university-of-pittsburgh",
-                "purdue",
-                "rutgers-university",
-                "san-diego-state-university",
-                "university-of-southern-california",
-                "university-of-south-carolina",
-                "stanford-university",
-                "syracuse-university-cute-apparel",
-                "university-of-tennessee",
-                "university-of-nebraska"
-              ],
-              "mobile_collection_list2": [
-                "university-of-texas-at-austin-1",
-                "texas-a-m",
-                "texas-christian-university",
-                "texas-tech",
-                "tulane-university",
-                "university-of-utah",
-                "university-of-washington",
-                "west-virginia-university",
-                "university-of-wisconsin",
-                "vanderbilt-university"
-              ],
-              "mobile_items_length": 55
-            }
-          },
           "25e3eae6-e8df-42b8-ac1d-c8e3812bdd22": {
             "type": "nba_mega_menu",
             "settings": {
@@ -302,7 +236,6 @@
         },
         "block_order": [
           "2f8fdde7-f4c6-4891-a807-d35b26267ebc",
-          "d24a15a2-2c8a-45e4-a356-3c5d50191b8c",
           "25e3eae6-e8df-42b8-ac1d-c8e3812bdd22",
           "ebf0f17f-ec41-4633-8d3a-900ce5c1f349"
         ],
