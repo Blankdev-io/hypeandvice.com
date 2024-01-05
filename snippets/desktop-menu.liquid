@@ -5,10 +5,13 @@
   {% for tag in product.tags %}
     {% if tag == 'NCAA' %}
       {% assign league = 'NCAA' %}
+      {% break %}
     {% elsif tag == 'NBA' %}
       {% assign league = 'NBA' %}
+      {% break %}
     {% elsif tag == 'MLS' %}
       {% assign league = 'MLS' %}
+      {% break %}
     {% endif %}
   {% endfor %}
 {% elsif template contains 'page' %}
