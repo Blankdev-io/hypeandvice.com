@@ -2,7 +2,15 @@
 {% if template contains 'collection' %}
   {% assign league = collection.metafields.custom.league %}
 {% elsif template contains 'product' %}
-  {% assign league = product.metafields.custom.league %}
+  {% for tag in product.tags %}
+    {% if tag == 'NCAA' %}
+      {% assign league = 'NCAA' %}
+    {% elsif tag == 'NBA' %}
+      {% assign league = 'NBA' %}
+    {% elsif tag == 'MLS' %}
+      {% assign league = 'MLS' %}
+    {% endif %}
+  {% endfor %}
 {% elsif template contains 'page' %}
   {% if page.title contains 'NCAA' %}
     {% assign league = 'NCAA' %}
