@@ -147,12 +147,13 @@
                   {%- endif -%}
                 {%- endif -%}
               </div>
-            </a>
-          {%- if collection_content != blank -%}
+
+              {%- if collection_content != blank -%}
                 <div class="list-collections__item-info text-container">
                   {{- collection_content -}}
                 </div>
-          {%- endif -%}
+              {%- endif -%}
+            </a>
           {%- endfor -%}
         </div>
       {%- endcapture -%}
