@@ -260,6 +260,7 @@
         "838a195b-8ca3-45a2-bfde-b2d018a8444e": {
           "type": "logo",
           "settings": {
+            "logo": "shopify:\/\/shop_images\/IOW.png",
             "link": ""
           }
         }
