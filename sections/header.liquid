@@ -2,7 +2,18 @@
 {% if template contains 'collection' %}
   {% assign league = collection.metafields.custom.league %}
 {% elsif template contains 'product' %}
-  {% assign league = product.metafields.custom.league %}
+  {% for tag in product.tags %}
+    {% if tag == 'NCAA' %}
+      {% assign league = 'NCAA' %}
+      {% break %}
+    {% elsif tag == 'NBA' %}
+      {% assign league = 'NBA' %}
+      {% break %}
+    {% elsif tag == 'MLS' %}
+      {% assign league = 'MLS' %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
 {% elsif template contains 'page' %}
   {% if page.title contains 'NCAA' %}
     {% assign league = 'NCAA' %}
@@ -41,7 +52,7 @@
       position: relative;
     {%- endif -%}
 
-    top: {% if section.settings.enable_sticky_header %}calc(var(--enable-sticky-announcement-bar) * var(--announcement-bar-height, 0px)){% else %}0{% endif %};
+    top: -1px; {% comment %} Commented to fix an issue where header had a 1px gap above {% if section.settings.enable_sticky_header %}calc(var(--enable-sticky-announcement-bar) * var(--announcement-bar-height, 0px)){% else %}0{% endif %};{% endcomment %}
     z-index: 4;
   }
 
