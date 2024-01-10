@@ -75,6 +75,13 @@
             "link": ""
           }
         },
+        "9609e586-a4c3-496f-a2b1-fa77e64d96fb": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/alabama_9e10fd4c-267a-40a5-a0e7-cd6076ce8699.png",
+            "link": "shopify:\/\/collections\/university-of-alabama"
+          }
+        },
         "logo_CYkezF": {
           "type": "logo",
           "settings": {
@@ -103,6 +110,20 @@
             "link": ""
           }
         },
+        "e1058adb-13f1-4ecf-ab8e-79a348810d2e": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/MCH.png",
+            "link": ""
+          }
+        },
+        "d182e8ab-05e7-4b26-a5a9-4395f61ea46a": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/FLA_4090bcc7-bdc8-4d85-9179-46f76299db0b.png",
+            "link": ""
+          }
+        },
         "f9e60bf3-4871-454e-9a5e-c8b4f383d608": {
           "type": "logo",
           "settings": {
@@ -110,18 +131,18 @@
             "link": "shopify:\/\/collections\/university-of-wisconsin"
           }
         },
+        "838a195b-8ca3-45a2-bfde-b2d018a8444e": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/IOW.png",
+            "link": ""
+          }
+        },
         "924daf84-e23c-485d-9bd6-f155dd13b246": {
           "type": "logo",
           "settings": {
             "logo": "shopify:\/\/shop_images\/penn_state_d7c24fce-1ad1-4358-bd08-e35cd385c3b5.png",
             "link": "shopify:\/\/collections\/penn-state"
-          }
-        },
-        "9609e586-a4c3-496f-a2b1-fa77e64d96fb": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/alabama_9e10fd4c-267a-40a5-a0e7-cd6076ce8699.png",
-            "link": "shopify:\/\/collections\/university-of-alabama"
           }
         },
         "548f0d69-75d3-4c36-b6ca-67784975b425": {
@@ -166,38 +187,10 @@
             "link": "shopify:\/\/collections\/university-of-illinois"
           }
         },
-        "11ad5e6b-f040-4332-bab2-b92a7e82ff2e": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/pitt_61f5c075-d8b1-48e0-bc07-a19bb8d4b628.png",
-            "link": "https:\/\/www.hypeandvice.com\/collections\/university-of-pittsburgh"
-          }
-        },
         "6cdc1f5e-fc4e-4c64-8535-21bdde045b2d": {
           "type": "logo",
           "settings": {
             "logo": "shopify:\/\/shop_images\/ARS.png",
-            "link": ""
-          }
-        },
-        "d182e8ab-05e7-4b26-a5a9-4395f61ea46a": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/FLA_4090bcc7-bdc8-4d85-9179-46f76299db0b.png",
-            "link": ""
-          }
-        },
-        "838a195b-8ca3-45a2-bfde-b2d018a8444e": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/IOW.png",
-            "link": ""
-          }
-        },
-        "e1058adb-13f1-4ecf-ab8e-79a348810d2e": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/MCH.png",
             "link": ""
           }
         },
@@ -235,24 +228,23 @@
         "b78e97be-1093-4054-94ab-988811ffc6a5",
         "5511dc15-28d6-4b28-8637-c45496fe7e1d",
         "80d1af82-56c1-4768-a7b7-ead10c8e7368",
+        "9609e586-a4c3-496f-a2b1-fa77e64d96fb",
         "logo_CYkezF",
         "e5fd48d2-189c-4172-b6aa-8894a3110cfe",
         "97ec09d3-9f24-4d79-9ae9-d1fb99e2ec6d",
         "97101234-a231-474f-bb65-8357ead0a1a9",
+        "e1058adb-13f1-4ecf-ab8e-79a348810d2e",
+        "d182e8ab-05e7-4b26-a5a9-4395f61ea46a",
         "f9e60bf3-4871-454e-9a5e-c8b4f383d608",
+        "838a195b-8ca3-45a2-bfde-b2d018a8444e",
         "924daf84-e23c-485d-9bd6-f155dd13b246",
-        "9609e586-a4c3-496f-a2b1-fa77e64d96fb",
         "548f0d69-75d3-4c36-b6ca-67784975b425",
         "09a963ca-495e-4410-b6bf-c1693a35020b",
         "063708cd-d4f7-4ad0-9117-d40a5c3b84ba",
         "34b27da8-8574-4201-aba3-0e5be8340955",
         "1650653968a9456b00-0",
         "1650653968a9456b00-2",
-        "11ad5e6b-f040-4332-bab2-b92a7e82ff2e",
         "6cdc1f5e-fc4e-4c64-8535-21bdde045b2d",
-        "d182e8ab-05e7-4b26-a5a9-4395f61ea46a",
-        "838a195b-8ca3-45a2-bfde-b2d018a8444e",
-        "e1058adb-13f1-4ecf-ab8e-79a348810d2e",
         "af385551-8f83-4e93-bc7f-4e6e79afd9ef",
         "logo_V3i3e9",
         "logo_FUebmk",
