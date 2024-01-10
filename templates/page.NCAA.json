@@ -110,20 +110,6 @@
             "link": "shopify:\/\/collections\/auburn-university"
           }
         },
-        "aadfd721-e4ac-46c2-a691-5b42dd0fce7e": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/georgetown_b289766f-88af-4fe7-8a07-59c34f9c6730.png",
-            "link": "shopify:\/\/collections\/georgetown-university"
-          }
-        },
-        "1b95eec4-cc55-4d31-98d1-fb5af64c2b7d": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/uva_1f0048c3-69c9-4d34-88ee-d48e1bb45e22.png",
-            "link": "shopify:\/\/collections\/university-of-virginia"
-          }
-        },
         "b3d40c9e-a2dd-4bd7-b8de-67292b308e07": {
           "type": "logo",
           "settings": {
@@ -166,13 +152,6 @@
             "link": "shopify:\/\/collections\/university-of-south-carolina"
           }
         },
-        "c48216d1-7c5f-4006-a605-01029f41cd20": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/texasam_192f3a6d-a037-432e-8367-993ae8f12a91.png",
-            "link": "shopify:\/\/collections\/texas-a-m"
-          }
-        },
         "1650653968a9456b00-0": {
           "type": "logo",
           "settings": {
@@ -185,13 +164,6 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/wsu.png",
             "link": "shopify:\/\/collections\/washington-state-university"
-          }
-        },
-        "12e631a0-5b8f-4177-b9c8-774d14e65c0a": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/nebraska.png",
-            "link": "shopify:\/\/collections\/university-of-nebraska"
           }
         },
         "ef7fc3a0-affe-475e-ba42-ba2ccfd4b0dd": {
@@ -317,18 +289,14 @@
         "924daf84-e23c-485d-9bd6-f155dd13b246",
         "9609e586-a4c3-496f-a2b1-fa77e64d96fb",
         "548f0d69-75d3-4c36-b6ca-67784975b425",
-        "aadfd721-e4ac-46c2-a691-5b42dd0fce7e",
-        "1b95eec4-cc55-4d31-98d1-fb5af64c2b7d",
         "b3d40c9e-a2dd-4bd7-b8de-67292b308e07",
         "09a963ca-495e-4410-b6bf-c1693a35020b",
         "063708cd-d4f7-4ad0-9117-d40a5c3b84ba",
         "08172272-6b41-4e64-9281-09e592eb1288",
         "e5b28543-2b37-4785-8604-892065e4647a",
         "34b27da8-8574-4201-aba3-0e5be8340955",
-        "c48216d1-7c5f-4006-a605-01029f41cd20",
         "1650653968a9456b00-0",
         "809306bd-e4b2-4a95-a924-af3718e5c6ea",
-        "12e631a0-5b8f-4177-b9c8-774d14e65c0a",
         "ef7fc3a0-affe-475e-ba42-ba2ccfd4b0dd",
         "2741aef3-7e1d-4ead-bae1-bec1e107841d",
         "1650653968a9456b00-3",
