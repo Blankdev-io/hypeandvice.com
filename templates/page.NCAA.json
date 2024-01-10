@@ -235,6 +235,13 @@
             "logo": "shopify:\/\/shop_images\/ARS.png",
             "link": ""
           }
+        },
+        "97101234-a231-474f-bb65-8357ead0a1a9": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/ARZ.png",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -264,7 +271,8 @@
         "1650653968a9456b00-1",
         "1650653968a9456b00-2",
         "11ad5e6b-f040-4332-bab2-b92a7e82ff2e",
-        "6cdc1f5e-fc4e-4c64-8535-21bdde045b2d"
+        "6cdc1f5e-fc4e-4c64-8535-21bdde045b2d",
+        "97101234-a231-474f-bb65-8357ead0a1a9"
       ],
       "settings": {
         "reveal_on_scroll": true,
