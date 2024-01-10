@@ -49,6 +49,10 @@
   .category__item-info p {
     font-size: 24px;
   } 
+
+  .list-collections__item-list.category-list {
+    display: flex !important;
+  }
 </style>
 
 <section class="section {% unless blends_with_background %}section--flush{% endunless %}">
@@ -67,7 +71,7 @@
       {%- endif -%}
 
       {%- capture section_content -%}
-        <div class="list-collections__item-list">
+        <div class="list-collections__item-list category-list">
           {%- for block in section.blocks -%}
             {%- capture collection_content -%}
               {%- if block.settings.subheading != blank -%}
