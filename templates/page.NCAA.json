@@ -159,13 +159,6 @@
             "link": "shopify:\/\/collections\/university-of-tennessee"
           }
         },
-        "809306bd-e4b2-4a95-a924-af3718e5c6ea": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/wsu.png",
-            "link": "shopify:\/\/collections\/washington-state-university"
-          }
-        },
         "ef7fc3a0-affe-475e-ba42-ba2ccfd4b0dd": {
           "type": "logo",
           "settings": {
@@ -296,7 +289,6 @@
         "e5b28543-2b37-4785-8604-892065e4647a",
         "34b27da8-8574-4201-aba3-0e5be8340955",
         "1650653968a9456b00-0",
-        "809306bd-e4b2-4a95-a924-af3718e5c6ea",
         "ef7fc3a0-affe-475e-ba42-ba2ccfd4b0dd",
         "2741aef3-7e1d-4ead-bae1-bec1e107841d",
         "1650653968a9456b00-3",
