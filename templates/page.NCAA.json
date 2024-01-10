@@ -270,6 +270,13 @@
             "logo": "shopify:\/\/shop_images\/MCH.png",
             "link": ""
           }
+        },
+        "e5fd48d2-189c-4172-b6aa-8894a3110cfe": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/MIA_b03c1a15-04b9-4717-80fd-5c7df09d42be.png",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -304,7 +311,8 @@
         "d182e8ab-05e7-4b26-a5a9-4395f61ea46a",
         "97ec09d3-9f24-4d79-9ae9-d1fb99e2ec6d",
         "838a195b-8ca3-45a2-bfde-b2d018a8444e",
-        "e1058adb-13f1-4ecf-ab8e-79a348810d2e"
+        "e1058adb-13f1-4ecf-ab8e-79a348810d2e",
+        "e5fd48d2-189c-4172-b6aa-8894a3110cfe"
       ],
       "settings": {
         "reveal_on_scroll": true,
