@@ -68,6 +68,20 @@
             "link": "shopify:\/\/collections\/university-of-california-los-angeles-ucla"
           }
         },
+        "80d1af82-56c1-4768-a7b7-ead10c8e7368": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/COL_879d1e52-c1e3-4081-bea8-5822359dd460.png",
+            "link": ""
+          }
+        },
+        "logo_CYkezF": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/FSU_7b33fdfd-2fbc-419c-aaa9-0042964e92d7.png",
+            "link": ""
+          }
+        },
         "f9e60bf3-4871-454e-9a5e-c8b4f383d608": {
           "type": "logo",
           "settings": {
@@ -236,13 +250,6 @@
             "link": ""
           }
         },
-        "80d1af82-56c1-4768-a7b7-ead10c8e7368": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/COL_879d1e52-c1e3-4081-bea8-5822359dd460.png",
-            "link": ""
-          }
-        },
         "d182e8ab-05e7-4b26-a5a9-4395f61ea46a": {
           "type": "logo",
           "settings": {
@@ -298,18 +305,14 @@
             "logo": "shopify:\/\/shop_images\/SOC.png",
             "link": ""
           }
-        },
-        "logo_CYkezF": {
-          "type": "logo",
-          "settings": {
-            "link": ""
-          }
         }
       },
       "block_order": [
         "ba493069-d771-4892-8711-918b8318839d",
         "b78e97be-1093-4054-94ab-988811ffc6a5",
         "5511dc15-28d6-4b28-8637-c45496fe7e1d",
+        "80d1af82-56c1-4768-a7b7-ead10c8e7368",
+        "logo_CYkezF",
         "f9e60bf3-4871-454e-9a5e-c8b4f383d608",
         "924daf84-e23c-485d-9bd6-f155dd13b246",
         "9609e586-a4c3-496f-a2b1-fa77e64d96fb",
@@ -334,7 +337,6 @@
         "11ad5e6b-f040-4332-bab2-b92a7e82ff2e",
         "6cdc1f5e-fc4e-4c64-8535-21bdde045b2d",
         "97101234-a231-474f-bb65-8357ead0a1a9",
-        "80d1af82-56c1-4768-a7b7-ead10c8e7368",
         "d182e8ab-05e7-4b26-a5a9-4395f61ea46a",
         "97ec09d3-9f24-4d79-9ae9-d1fb99e2ec6d",
         "838a195b-8ca3-45a2-bfde-b2d018a8444e",
@@ -342,8 +344,7 @@
         "e5fd48d2-189c-4172-b6aa-8894a3110cfe",
         "af385551-8f83-4e93-bc7f-4e6e79afd9ef",
         "logo_V3i3e9",
-        "logo_FUebmk",
-        "logo_CYkezF"
+        "logo_FUebmk"
       ],
       "settings": {
         "reveal_on_scroll": true,
