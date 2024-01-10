@@ -181,6 +181,15 @@
         </div>
       {%- endcapture -%}
 
+      <div class="mobile2columngrid">
+        <collection-list {% if section.settings.reveal_on_scroll %}reveal-on-scroll{% endif %} class="list-collections list-collections--{{ section.settings.layout }}">
+          <div class="container">
+            {{- section_content -}}
+          </div>
+        </collection-list>
+      </div>
+
+      <div class="desktop5itemcarousel">
         <collection-list scrollable {% if section.settings.reveal_on_scroll %}reveal-on-scroll{% endif %} class="list-collections list-collections--carousel list-collection--category">
           <scrollable-content class="list-collections__scroller hide-scrollbar">
             {{- section_content -}}
@@ -198,6 +207,7 @@
             </button>
           </prev-next-buttons>
         </collection-list>
+      </div>
     </div>
   </div>
 </section>
