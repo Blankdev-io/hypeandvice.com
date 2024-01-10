@@ -960,36 +960,42 @@
         "logo_6xrFWN": {
           "type": "logo",
           "settings": {
+            "logo": "shopify:\/\/shop_images\/SEC_a60632a7-493a-49c3-808c-d920a4e786a9.png",
             "link": ""
           }
         },
         "logo_HHTxPr": {
           "type": "logo",
           "settings": {
+            "logo": "shopify:\/\/shop_images\/PAC12.png",
             "link": ""
           }
         },
         "logo_PpkDXk": {
           "type": "logo",
           "settings": {
+            "logo": "shopify:\/\/shop_images\/HBCU.png",
             "link": ""
           }
         },
         "logo_tXY7Gw": {
           "type": "logo",
           "settings": {
+            "logo": "shopify:\/\/shop_images\/BIG10.png",
             "link": ""
           }
         },
         "logo_nPDw8J": {
           "type": "logo",
           "settings": {
+            "logo": "shopify:\/\/shop_images\/BIG_12_95efe9fe-e9a4-4b71-9275-abe52496bc0c.png",
             "link": ""
           }
         },
         "logo_BWjfbD": {
           "type": "logo",
           "settings": {
+            "logo": "shopify:\/\/shop_images\/ACC.png",
             "link": ""
           }
         }
