@@ -125,7 +125,6 @@
             <button
               is="toggle-button"
               class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %}"
-              {% if link.title contains 'Sale' %}style="color: red; font-weight: bold;"{% endif %}
               aria-controls="mobile-menu-{{ forloop.index }}"
               aria-expanded="false">
               {{- link.title -}}
@@ -170,6 +169,7 @@
                             is="toggle-button"
                             class="mobile-nav__link"
                             aria-controls="mobile-menu-{{ forloop.parentloop.index }}-{{ forloop.index }}"
+                            {% if link.title contains 'Sale' %}style="color: red; font-weight: bold;"{% endif %}
                             aria-expanded="false">
                             {{- sub_link.title -}}
                             <span class="animated-plus"></span>
