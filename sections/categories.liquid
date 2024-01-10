@@ -53,6 +53,10 @@
   .list-collections__item-list.category-list {
     display: flex !important;
   }
+
+  .list-collections--carousel.list-collection--category {
+    width: 20%;
+  }
 </style>
 
 <section class="section {% unless blends_with_background %}section--flush{% endunless %}">
@@ -171,7 +175,7 @@
         </div>
       {%- endcapture -%}
 
-        <collection-list scrollable {% if section.settings.reveal_on_scroll %}reveal-on-scroll{% endif %} class="list-collections list-collections--carousel">
+        <collection-list scrollable {% if section.settings.reveal_on_scroll %}reveal-on-scroll{% endif %} class="list-collections list-collections--carousel list-collection--category">
           <scrollable-content class="list-collections__scroller hide-scrollbar">
             {{- section_content -}}
           </scrollable-content>
