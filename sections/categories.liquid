@@ -38,8 +38,6 @@
 
       --heading-color: {{ text_color_rgb }};
       --text-color: {{ text_color_rgb }};
-      --section-block-overlay: {{ block.settings.overlay_color.red }}, {{ block.settings.overlay_color.green }}, {{ block.settings.overlay_color.blue }};
-      --section-block-overlay-opacity: {{ block.settings.overlay_opacity | divided_by: 100.0 }};
     }
   {%- endfor -%}
 </style>
@@ -231,22 +229,6 @@
           "id": "text_color",
           "label": "Text",
           "default": "rgba(0,0,0,0)"
-        },
-        {
-          "type": "color",
-          "id": "overlay_color",
-          "label": "Overlay",
-          "default": "#000000"
-        },
-        {
-          "type": "range",
-          "id": "overlay_opacity",
-          "label": "Overlay opacity",
-          "min": 0,
-          "max": 100,
-          "step": 1,
-          "unit": "%",
-          "default": 30
         }
       ],
      "limit": 5
