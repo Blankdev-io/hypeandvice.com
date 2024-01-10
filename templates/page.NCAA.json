@@ -47,6 +47,20 @@
     "165065396872bf5f8b": {
       "type": "logo-list",
       "blocks": {
+        "ba493069-d771-4892-8711-918b8318839d": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/michigan_6abf4b10-b0ac-4997-9e03-f675c38568cc.png",
+            "link": "https:\/\/www.hypeandvice.com\/collections\/university-of-michigan"
+          }
+        },
+        "b78e97be-1093-4054-94ab-988811ffc6a5": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/osu.png",
+            "link": "https:\/\/www.hypeandvice.com\/collections\/ohio-state-university-osu"
+          }
+        },
         "5511dc15-28d6-4b28-8637-c45496fe7e1d": {
           "type": "logo",
           "settings": {
@@ -115,20 +129,6 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/notre-dame.png",
             "link": "shopify:\/\/collections\/university-of-notre-dame"
-          }
-        },
-        "b78e97be-1093-4054-94ab-988811ffc6a5": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/osu.png",
-            "link": "https:\/\/www.hypeandvice.com\/collections\/ohio-state-university-osu"
-          }
-        },
-        "ba493069-d771-4892-8711-918b8318839d": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/michigan_6abf4b10-b0ac-4997-9e03-f675c38568cc.png",
-            "link": "https:\/\/www.hypeandvice.com\/collections\/university-of-michigan"
           }
         },
         "08172272-6b41-4e64-9281-09e592eb1288": {
@@ -238,6 +238,8 @@
         }
       },
       "block_order": [
+        "ba493069-d771-4892-8711-918b8318839d",
+        "b78e97be-1093-4054-94ab-988811ffc6a5",
         "5511dc15-28d6-4b28-8637-c45496fe7e1d",
         "f9e60bf3-4871-454e-9a5e-c8b4f383d608",
         "924daf84-e23c-485d-9bd6-f155dd13b246",
@@ -248,8 +250,6 @@
         "b3d40c9e-a2dd-4bd7-b8de-67292b308e07",
         "09a963ca-495e-4410-b6bf-c1693a35020b",
         "063708cd-d4f7-4ad0-9117-d40a5c3b84ba",
-        "b78e97be-1093-4054-94ab-988811ffc6a5",
-        "ba493069-d771-4892-8711-918b8318839d",
         "08172272-6b41-4e64-9281-09e592eb1288",
         "e5b28543-2b37-4785-8604-892065e4647a",
         "34b27da8-8574-4201-aba3-0e5be8340955",
