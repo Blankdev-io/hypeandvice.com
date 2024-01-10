@@ -284,6 +284,13 @@
             "logo": "shopify:\/\/shop_images\/PUR.png",
             "link": ""
           }
+        },
+        "logo_V3i3e9": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/SDS.png",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -320,7 +327,8 @@
         "838a195b-8ca3-45a2-bfde-b2d018a8444e",
         "e1058adb-13f1-4ecf-ab8e-79a348810d2e",
         "e5fd48d2-189c-4172-b6aa-8894a3110cfe",
-        "af385551-8f83-4e93-bc7f-4e6e79afd9ef"
+        "af385551-8f83-4e93-bc7f-4e6e79afd9ef",
+        "logo_V3i3e9"
       ],
       "settings": {
         "reveal_on_scroll": true,
