@@ -209,20 +209,6 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
       </linearGradient>
     </svg>
 
-    <a href="#main" class="visually-hidden skip-to-content">{{ 'general.accessibility.skip_to_content' | t }}</a>
-    <loading-bar class="loading-bar"></loading-bar>
-
-    {%- if request.page_type != 'gift_card' and request.page_type != 'password' -%}
-      {%- section 'announcement-bar' -%}
-      <!--   FSB app announcement bar   -->
-      <div id="fsb_placeholder"></div>
-      <style>
-		#fsb_background {
-         z-index: 10 !important; 
-        }
-      </style>
-      <!--   End FSB app announcement bar   -->
-
       {% assign league = '' %}
       {% if template contains 'collection' %}
         {% assign league = collection.metafields.custom.league %}
@@ -300,6 +286,20 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
           <a href="/pages/mls" class="league-tab" style="{% if league == 'MLS' %} background-color: white;{% else %} background-color: transparent;{% endif %}"><img class="league-tab-image" src="https://cdn.shopify.com/s/files/1/0061/4167/3590/files/1938px-MLS_crest_logo_RGB_gradient_svg.png?v=1704220388" alt="MLS Logo"></a>
         </div>
       </div>
+
+    <a href="#main" class="visually-hidden skip-to-content">{{ 'general.accessibility.skip_to_content' | t }}</a>
+    <loading-bar class="loading-bar"></loading-bar>
+
+    {%- if request.page_type != 'gift_card' and request.page_type != 'password' -%}
+      {%- section 'announcement-bar' -%}
+      <!--   FSB app announcement bar   -->
+      <div id="fsb_placeholder"></div>
+      <style>
+		#fsb_background {
+         z-index: 10 !important; 
+        }
+      </style>
+      <!--   End FSB app announcement bar   -->
           
       {%- section 'popup' -%}
       {%- section 'header' -%}
