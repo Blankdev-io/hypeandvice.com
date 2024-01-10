@@ -1040,6 +1040,91 @@
         "cycle_speed": 5,
         "background": "rgba(0,0,0,0)"
       }
+    },
+    "categories_yBHGEC": {
+      "type": "categories",
+      "blocks": {
+        "collection_BUWHHW": {
+          "type": "collection",
+          "settings": {
+            "collection": "university-of-southern-california",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_TUCyMp": {
+          "type": "collection",
+          "settings": {
+            "collection": "alabama-a-m-university",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_cAcgyb": {
+          "type": "collection",
+          "settings": {
+            "collection": "appalachian-state-university",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_M4kbWB": {
+          "type": "collection",
+          "settings": {
+            "collection": "arizona-state-university",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_CAdw7m": {
+          "type": "collection",
+          "settings": {
+            "collection": "atlanta-hawks",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_BUWHHW",
+        "collection_TUCyMp",
+        "collection_cAcgyb",
+        "collection_M4kbWB",
+        "collection_CAdw7m"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "layout": "grid",
+        "subheading": "Subheading",
+        "title": "Collection list",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
@@ -1055,6 +1140,7 @@
     "1650006254940409c8",
     "164923770607431a63",
     "16487231743e468afb",
-    "165090673528cafdbe"
+    "165090673528cafdbe",
+    "categories_yBHGEC"
   ]
 }
