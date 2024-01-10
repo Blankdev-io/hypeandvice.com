@@ -44,6 +44,90 @@
         "background": "#100404"
       }
     },
+    "categories_yBHGEC": {
+      "type": "categories",
+      "blocks": {
+        "collection_BUWHHW": {
+          "type": "collection",
+          "settings": {
+            "collection": "university-of-southern-california",
+            "subheading": "",
+            "title": "Tops",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_TUCyMp": {
+          "type": "collection",
+          "settings": {
+            "collection": "alabama-a-m-university",
+            "subheading": "",
+            "title": "Bottoms",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_cAcgyb": {
+          "type": "collection",
+          "settings": {
+            "collection": "appalachian-state-university",
+            "subheading": "",
+            "title": "Outerwear",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_M4kbWB": {
+          "type": "collection",
+          "settings": {
+            "collection": "arizona-state-university",
+            "subheading": "",
+            "title": "Lounge",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_CAdw7m": {
+          "type": "collection",
+          "settings": {
+            "collection": "atlanta-hawks",
+            "subheading": "",
+            "title": "Sale",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_BUWHHW",
+        "collection_TUCyMp",
+        "collection_cAcgyb",
+        "collection_M4kbWB",
+        "collection_CAdw7m"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "subheading": "",
+        "title": "SHOP BY CATEGORY",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "165065396872bf5f8b": {
       "type": "logo-list",
       "blocks": {
@@ -1040,95 +1124,11 @@
         "cycle_speed": 5,
         "background": "rgba(0,0,0,0)"
       }
-    },
-    "categories_yBHGEC": {
-      "type": "categories",
-      "blocks": {
-        "collection_BUWHHW": {
-          "type": "collection",
-          "settings": {
-            "collection": "university-of-southern-california",
-            "subheading": "",
-            "title": "Tops",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_TUCyMp": {
-          "type": "collection",
-          "settings": {
-            "collection": "alabama-a-m-university",
-            "subheading": "",
-            "title": "Bottoms",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_cAcgyb": {
-          "type": "collection",
-          "settings": {
-            "collection": "appalachian-state-university",
-            "subheading": "",
-            "title": "Outerwear",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_M4kbWB": {
-          "type": "collection",
-          "settings": {
-            "collection": "arizona-state-university",
-            "subheading": "",
-            "title": "Lounge",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_CAdw7m": {
-          "type": "collection",
-          "settings": {
-            "collection": "atlanta-hawks",
-            "subheading": "",
-            "title": "Sale",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        }
-      },
-      "block_order": [
-        "collection_BUWHHW",
-        "collection_TUCyMp",
-        "collection_cAcgyb",
-        "collection_M4kbWB",
-        "collection_CAdw7m"
-      ],
-      "settings": {
-        "reveal_on_scroll": false,
-        "layout": "carousel",
-        "subheading": "",
-        "title": "SHOP BY CATEGORY",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
     }
   },
   "order": [
     "165065000576ab84e7",
+    "categories_yBHGEC",
     "165065396872bf5f8b",
     "2cd6223b-dc18-4eda-91cc-768082b54a6a",
     "16492381491d455b02",
@@ -1140,7 +1140,6 @@
     "1650006254940409c8",
     "164923770607431a63",
     "16487231743e468afb",
-    "165090673528cafdbe",
-    "categories_yBHGEC"
+    "165090673528cafdbe"
   ]
 }
