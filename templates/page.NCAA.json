@@ -82,6 +82,27 @@
             "link": ""
           }
         },
+        "e5fd48d2-189c-4172-b6aa-8894a3110cfe": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/MIA_b03c1a15-04b9-4717-80fd-5c7df09d42be.png",
+            "link": ""
+          }
+        },
+        "97ec09d3-9f24-4d79-9ae9-d1fb99e2ec6d": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/INU.png",
+            "link": ""
+          }
+        },
+        "97101234-a231-474f-bb65-8357ead0a1a9": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/ARZ.png",
+            "link": ""
+          }
+        },
         "f9e60bf3-4871-454e-9a5e-c8b4f383d608": {
           "type": "logo",
           "settings": {
@@ -110,13 +131,6 @@
             "link": "shopify:\/\/collections\/auburn-university"
           }
         },
-        "b3d40c9e-a2dd-4bd7-b8de-67292b308e07": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/uoklahoma.png",
-            "link": "shopify:\/\/collections\/university-of-oklahoma"
-          }
-        },
         "09a963ca-495e-4410-b6bf-c1693a35020b": {
           "type": "logo",
           "settings": {
@@ -131,20 +145,6 @@
             "link": "shopify:\/\/collections\/university-of-notre-dame"
           }
         },
-        "08172272-6b41-4e64-9281-09e592eb1288": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/ole-miss.png",
-            "link": "shopify:\/\/collections\/university-of-mississippi-ole-miss"
-          }
-        },
-        "e5b28543-2b37-4785-8604-892065e4647a": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/arkansas.png",
-            "link": "shopify:\/\/collections\/university-of-arkansas-fayetteville"
-          }
-        },
         "34b27da8-8574-4201-aba3-0e5be8340955": {
           "type": "logo",
           "settings": {
@@ -157,34 +157,6 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/tennessee.png",
             "link": "shopify:\/\/collections\/university-of-tennessee"
-          }
-        },
-        "ef7fc3a0-affe-475e-ba42-ba2ccfd4b0dd": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/oklahoma.png",
-            "link": "shopify:\/\/collections\/oklahoma-state-university"
-          }
-        },
-        "2741aef3-7e1d-4ead-bae1-bec1e107841d": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/rutgers_2ad95bc2-a8f5-4cda-aec3-d30688c52e1d.png",
-            "link": "https:\/\/www.hypeandvice.com\/collections\/rutgers-university"
-          }
-        },
-        "1650653968a9456b00-3": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/cincinnati.png",
-            "link": "shopify:\/\/collections\/university-of-cincinnati"
-          }
-        },
-        "1650653968a9456b00-1": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/mississippi-state.png",
-            "link": "shopify:\/\/collections\/mississippi-state-university"
           }
         },
         "1650653968a9456b00-2": {
@@ -208,24 +180,10 @@
             "link": ""
           }
         },
-        "97101234-a231-474f-bb65-8357ead0a1a9": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/ARZ.png",
-            "link": ""
-          }
-        },
         "d182e8ab-05e7-4b26-a5a9-4395f61ea46a": {
           "type": "logo",
           "settings": {
             "logo": "shopify:\/\/shop_images\/FLA_4090bcc7-bdc8-4d85-9179-46f76299db0b.png",
-            "link": ""
-          }
-        },
-        "97ec09d3-9f24-4d79-9ae9-d1fb99e2ec6d": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/INU.png",
             "link": ""
           }
         },
@@ -240,13 +198,6 @@
           "type": "logo",
           "settings": {
             "logo": "shopify:\/\/shop_images\/MCH.png",
-            "link": ""
-          }
-        },
-        "e5fd48d2-189c-4172-b6aa-8894a3110cfe": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/MIA_b03c1a15-04b9-4717-80fd-5c7df09d42be.png",
             "link": ""
           }
         },
@@ -270,6 +221,13 @@
             "logo": "shopify:\/\/shop_images\/SOC.png",
             "link": ""
           }
+        },
+        "logo_R9WrDp": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/WAS.png",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -278,33 +236,27 @@
         "5511dc15-28d6-4b28-8637-c45496fe7e1d",
         "80d1af82-56c1-4768-a7b7-ead10c8e7368",
         "logo_CYkezF",
+        "e5fd48d2-189c-4172-b6aa-8894a3110cfe",
+        "97ec09d3-9f24-4d79-9ae9-d1fb99e2ec6d",
+        "97101234-a231-474f-bb65-8357ead0a1a9",
         "f9e60bf3-4871-454e-9a5e-c8b4f383d608",
         "924daf84-e23c-485d-9bd6-f155dd13b246",
         "9609e586-a4c3-496f-a2b1-fa77e64d96fb",
         "548f0d69-75d3-4c36-b6ca-67784975b425",
-        "b3d40c9e-a2dd-4bd7-b8de-67292b308e07",
         "09a963ca-495e-4410-b6bf-c1693a35020b",
         "063708cd-d4f7-4ad0-9117-d40a5c3b84ba",
-        "08172272-6b41-4e64-9281-09e592eb1288",
-        "e5b28543-2b37-4785-8604-892065e4647a",
         "34b27da8-8574-4201-aba3-0e5be8340955",
         "1650653968a9456b00-0",
-        "ef7fc3a0-affe-475e-ba42-ba2ccfd4b0dd",
-        "2741aef3-7e1d-4ead-bae1-bec1e107841d",
-        "1650653968a9456b00-3",
-        "1650653968a9456b00-1",
         "1650653968a9456b00-2",
         "11ad5e6b-f040-4332-bab2-b92a7e82ff2e",
         "6cdc1f5e-fc4e-4c64-8535-21bdde045b2d",
-        "97101234-a231-474f-bb65-8357ead0a1a9",
         "d182e8ab-05e7-4b26-a5a9-4395f61ea46a",
-        "97ec09d3-9f24-4d79-9ae9-d1fb99e2ec6d",
         "838a195b-8ca3-45a2-bfde-b2d018a8444e",
         "e1058adb-13f1-4ecf-ab8e-79a348810d2e",
-        "e5fd48d2-189c-4172-b6aa-8894a3110cfe",
         "af385551-8f83-4e93-bc7f-4e6e79afd9ef",
         "logo_V3i3e9",
-        "logo_FUebmk"
+        "logo_FUebmk",
+        "logo_R9WrDp"
       ],
       "settings": {
         "reveal_on_scroll": true,
