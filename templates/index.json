@@ -280,16 +280,6 @@
         "logo_background": "rgba(0,0,0,0)"
       }
     },
-    "2cd6223b-dc18-4eda-91cc-768082b54a6a": {
-      "type": "slideshow",
-      "settings": {
-        "section_height": "auto",
-        "transition_type": "fade",
-        "autoplay": true,
-        "cycle_speed": 4,
-        "background": "rgba(0,0,0,0)"
-      }
-    },
     "16492381491d455b02": {
       "type": "collection-list",
       "blocks": {
@@ -1040,12 +1030,45 @@
         "cycle_speed": 5,
         "background": "rgba(0,0,0,0)"
       }
+    },
+    "e68a7f45-233b-4581-a940-ffaeebf99dcf": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14976837091433__e68a7f45-233b-4581-a940-ffaeebf99dcf-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7617B644-5153-4FE5-BD59-058B970448F1.jpg",
+            "split_image": "shopify:\/\/shop_images\/27CD2939-F2D0-4C8E-813C-5B48FBB28C6C.jpg",
+            "text_position": "middle_center",
+            "subheading": "CONGRATULATIONS TO THE",
+            "title": "2023 NATIONAL CHAMPIONS",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/collections\/university-of-michigan",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--14976837091433__e68a7f45-233b-4581-a940-ffaeebf99dcf-image-1"
+      ],
+      "settings": {
+        "section_height": "medium",
+        "transition_type": "fade",
+        "autoplay": true,
+        "cycle_speed": 4,
+        "background": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
     "165065000576ab84e7",
     "165065396872bf5f8b",
-    "2cd6223b-dc18-4eda-91cc-768082b54a6a",
     "16492381491d455b02",
     "2612faf2-8324-468d-8706-b0d50055d1a4",
     "16506544520a12bd2c",
@@ -1055,6 +1078,7 @@
     "1650006254940409c8",
     "164923770607431a63",
     "16487231743e468afb",
-    "165090673528cafdbe"
+    "165090673528cafdbe",
+    "e68a7f45-233b-4581-a940-ffaeebf99dcf"
   ]
 }
