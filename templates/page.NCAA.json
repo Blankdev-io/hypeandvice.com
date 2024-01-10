@@ -273,8 +273,8 @@
         "button_text": "",
         "button_link": "",
         "stack_logos": false,
-        "background": "#f1f1f1",
-        "text_color": "#ffffff",
+        "background": "#ffffff",
+        "text_color": "#000000",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)",
         "logo_background": "rgba(0,0,0,0)"
