@@ -194,13 +194,6 @@
             "link": "shopify:\/\/collections\/oklahoma-state-university"
           }
         },
-        "475a1ae9-0261-4710-af0d-38ec2834a8eb": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/northwestern_6c235d35-c96b-4550-99b3-93c82f5b4534.png",
-            "link": "shopify:\/\/collections\/northwestern-university"
-          }
-        },
         "2741aef3-7e1d-4ead-bae1-bec1e107841d": {
           "type": "logo",
           "settings": {
@@ -235,6 +228,13 @@
             "logo": "shopify:\/\/shop_images\/pitt_61f5c075-d8b1-48e0-bc07-a19bb8d4b628.png",
             "link": "https:\/\/www.hypeandvice.com\/collections\/university-of-pittsburgh"
           }
+        },
+        "6cdc1f5e-fc4e-4c64-8535-21bdde045b2d": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/ARS.png",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -259,12 +259,12 @@
         "12e631a0-5b8f-4177-b9c8-774d14e65c0a",
         "93ae87ea-7c94-4c30-9746-ac3ce6609055",
         "ef7fc3a0-affe-475e-ba42-ba2ccfd4b0dd",
-        "475a1ae9-0261-4710-af0d-38ec2834a8eb",
         "2741aef3-7e1d-4ead-bae1-bec1e107841d",
         "1650653968a9456b00-3",
         "1650653968a9456b00-1",
         "1650653968a9456b00-2",
-        "11ad5e6b-f040-4332-bab2-b92a7e82ff2e"
+        "11ad5e6b-f040-4332-bab2-b92a7e82ff2e",
+        "6cdc1f5e-fc4e-4c64-8535-21bdde045b2d"
       ],
       "settings": {
         "reveal_on_scroll": true,
