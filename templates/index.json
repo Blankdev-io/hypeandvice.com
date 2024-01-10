@@ -1119,9 +1119,9 @@
       ],
       "settings": {
         "reveal_on_scroll": false,
-        "layout": "grid",
-        "subheading": "Subheading",
-        "title": "Collection list",
+        "layout": "carousel",
+        "subheading": "",
+        "title": "SHOP BY CATEGORY",
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }

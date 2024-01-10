@@ -291,6 +291,19 @@
             "logo": "shopify:\/\/shop_images\/SDS.png",
             "link": ""
           }
+        },
+        "logo_FUebmk": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/SOC.png",
+            "link": ""
+          }
+        },
+        "logo_CYkezF": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -328,7 +341,9 @@
         "e1058adb-13f1-4ecf-ab8e-79a348810d2e",
         "e5fd48d2-189c-4172-b6aa-8894a3110cfe",
         "af385551-8f83-4e93-bc7f-4e6e79afd9ef",
-        "logo_V3i3e9"
+        "logo_V3i3e9",
+        "logo_FUebmk",
+        "logo_CYkezF"
       ],
       "settings": {
         "reveal_on_scroll": true,
