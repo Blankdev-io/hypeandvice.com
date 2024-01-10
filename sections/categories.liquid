@@ -40,6 +40,10 @@
       --text-color: {{ text_color_rgb }};
     }
   {%- endfor -%}
+
+  .category__item-info {
+  
+} 
 </style>
 
 <section class="section {% unless blends_with_background %}section--flush{% endunless %}">
@@ -149,7 +153,7 @@
               </div>
 
               {%- if collection_content != blank -%}
-                <div class="list-collections__item-info text-container">
+                <div class="category__item-info text-container">
                   {{- collection_content -}}
                 </div>
               {%- endif -%}
