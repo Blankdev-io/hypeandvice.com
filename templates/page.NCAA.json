@@ -180,13 +180,6 @@
             "link": "shopify:\/\/collections\/university-of-nebraska"
           }
         },
-        "93ae87ea-7c94-4c30-9746-ac3ce6609055": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/georgiatech.png",
-            "link": "shopify:\/\/collections\/georgia-tech"
-          }
-        },
         "ef7fc3a0-affe-475e-ba42-ba2ccfd4b0dd": {
           "type": "logo",
           "settings": {
@@ -242,6 +235,19 @@
             "logo": "shopify:\/\/shop_images\/ARZ.png",
             "link": ""
           }
+        },
+        "80d1af82-56c1-4768-a7b7-ead10c8e7368": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/COL_879d1e52-c1e3-4081-bea8-5822359dd460.png",
+            "link": ""
+          }
+        },
+        "d182e8ab-05e7-4b26-a5a9-4395f61ea46a": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -264,7 +270,6 @@
         "1650653968a9456b00-0",
         "809306bd-e4b2-4a95-a924-af3718e5c6ea",
         "12e631a0-5b8f-4177-b9c8-774d14e65c0a",
-        "93ae87ea-7c94-4c30-9746-ac3ce6609055",
         "ef7fc3a0-affe-475e-ba42-ba2ccfd4b0dd",
         "2741aef3-7e1d-4ead-bae1-bec1e107841d",
         "1650653968a9456b00-3",
@@ -272,7 +277,9 @@
         "1650653968a9456b00-2",
         "11ad5e6b-f040-4332-bab2-b92a7e82ff2e",
         "6cdc1f5e-fc4e-4c64-8535-21bdde045b2d",
-        "97101234-a231-474f-bb65-8357ead0a1a9"
+        "97101234-a231-474f-bb65-8357ead0a1a9",
+        "80d1af82-56c1-4768-a7b7-ead10c8e7368",
+        "d182e8ab-05e7-4b26-a5a9-4395f61ea46a"
       ],
       "settings": {
         "reveal_on_scroll": true,
