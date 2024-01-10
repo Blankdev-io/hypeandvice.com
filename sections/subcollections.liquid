@@ -89,6 +89,9 @@
                   <img class="list-collections__item-image" src="{{ collection.metafields.custom.subcollection_featured_image }}" alt="{{ collection.title | escape }}">
                 {%- elsif collection.image -%}
                   <img class="list-collections__item-image" src="{{ collection.featured_image | img_url: '500x' }}" alt="{{ collection.title | escape }}">
+                {% else %}
+                  {% assign first_product = collection.products.first %}
+                  <img class="list-collections__item-image" src="{{ first_product.featured_image | img_url: '500x' }}" alt="{{ collection.title | escape }}">
                 {%- endif -%}
               </div>
             <div class="list-collections__item-info text-container text-container-background">
