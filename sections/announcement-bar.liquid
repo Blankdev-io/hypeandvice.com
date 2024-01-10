@@ -15,7 +15,7 @@
       position: -webkit-sticky;
       position: sticky;
     {%- else -%}
-      position: static;
+      position: static; /*changed from relative to static when the header was moved above the announcement bar*/
     {%- endif -%}
 
     top: 0;
@@ -31,7 +31,7 @@
         position: -webkit-sticky;
         position: sticky;
       {%- else -%}
-        position: relative;
+        position: static; /*changed from relative to static when the header was moved above the announcement bar*/
       {%- endif -%}
     }
   }
