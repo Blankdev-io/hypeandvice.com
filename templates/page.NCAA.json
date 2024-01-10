@@ -68,13 +68,6 @@
             "link": "shopify:\/\/collections\/university-of-california-los-angeles-ucla"
           }
         },
-        "80d1af82-56c1-4768-a7b7-ead10c8e7368": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/COL_879d1e52-c1e3-4081-bea8-5822359dd460.png",
-            "link": ""
-          }
-        },
         "9609e586-a4c3-496f-a2b1-fa77e64d96fb": {
           "type": "logo",
           "settings": {
@@ -89,10 +82,24 @@
             "link": ""
           }
         },
+        "d182e8ab-05e7-4b26-a5a9-4395f61ea46a": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/FLA_4090bcc7-bdc8-4d85-9179-46f76299db0b.png",
+            "link": ""
+          }
+        },
         "e5fd48d2-189c-4172-b6aa-8894a3110cfe": {
           "type": "logo",
           "settings": {
             "logo": "shopify:\/\/shop_images\/MIA_b03c1a15-04b9-4717-80fd-5c7df09d42be.png",
+            "link": ""
+          }
+        },
+        "80d1af82-56c1-4768-a7b7-ead10c8e7368": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/COL_879d1e52-c1e3-4081-bea8-5822359dd460.png",
             "link": ""
           }
         },
@@ -110,17 +117,17 @@
             "link": ""
           }
         },
+        "6cdc1f5e-fc4e-4c64-8535-21bdde045b2d": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/ARS.png",
+            "link": ""
+          }
+        },
         "e1058adb-13f1-4ecf-ab8e-79a348810d2e": {
           "type": "logo",
           "settings": {
             "logo": "shopify:\/\/shop_images\/MCH.png",
-            "link": ""
-          }
-        },
-        "d182e8ab-05e7-4b26-a5a9-4395f61ea46a": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/FLA_4090bcc7-bdc8-4d85-9179-46f76299db0b.png",
             "link": ""
           }
         },
@@ -187,13 +194,6 @@
             "link": "shopify:\/\/collections\/university-of-illinois"
           }
         },
-        "6cdc1f5e-fc4e-4c64-8535-21bdde045b2d": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/ARS.png",
-            "link": ""
-          }
-        },
         "af385551-8f83-4e93-bc7f-4e6e79afd9ef": {
           "type": "logo",
           "settings": {
@@ -227,14 +227,15 @@
         "ba493069-d771-4892-8711-918b8318839d",
         "b78e97be-1093-4054-94ab-988811ffc6a5",
         "5511dc15-28d6-4b28-8637-c45496fe7e1d",
-        "80d1af82-56c1-4768-a7b7-ead10c8e7368",
         "9609e586-a4c3-496f-a2b1-fa77e64d96fb",
         "logo_CYkezF",
+        "d182e8ab-05e7-4b26-a5a9-4395f61ea46a",
         "e5fd48d2-189c-4172-b6aa-8894a3110cfe",
+        "80d1af82-56c1-4768-a7b7-ead10c8e7368",
         "97ec09d3-9f24-4d79-9ae9-d1fb99e2ec6d",
         "97101234-a231-474f-bb65-8357ead0a1a9",
+        "6cdc1f5e-fc4e-4c64-8535-21bdde045b2d",
         "e1058adb-13f1-4ecf-ab8e-79a348810d2e",
-        "d182e8ab-05e7-4b26-a5a9-4395f61ea46a",
         "f9e60bf3-4871-454e-9a5e-c8b4f383d608",
         "838a195b-8ca3-45a2-bfde-b2d018a8444e",
         "924daf84-e23c-485d-9bd6-f155dd13b246",
@@ -244,7 +245,6 @@
         "34b27da8-8574-4201-aba3-0e5be8340955",
         "1650653968a9456b00-0",
         "1650653968a9456b00-2",
-        "6cdc1f5e-fc4e-4c64-8535-21bdde045b2d",
         "af385551-8f83-4e93-bc7f-4e6e79afd9ef",
         "logo_V3i3e9",
         "logo_FUebmk",
