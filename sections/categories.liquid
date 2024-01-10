@@ -26,10 +26,6 @@
     --prev-next-button-color: var(--section-background);
 
     --section-background: {{ section_background.red }}, {{ section_background.green }}, {{ section_background.blue }};
-
-    {%- if section.settings.layout == 'collage' -%}
-      --section-collage-column: {{ section.blocks.size | at_most: 2 }};
-    {%- endif -%}
   }
 
   {%- for block in section.blocks -%}
@@ -137,26 +133,11 @@
                 {%- assign collection_image = block.settings.image | default: collection.featured_image -%}
 
                 {%- if collection_image != blank -%}
-                  {%- case section.settings.layout -%}
-                    {%- when 'grid' -%}
-                      {%- capture image_sizes -%}(max-width: 740px) calc(100vw - 48px), (max-width: 999px) calc(50vw - 60px), 480px{%- endcapture -%}
-
-                    {%- when 'carousel' -%}
-                      {%- capture image_sizes -%}(max-width: 740px) 80vw, (max-width: 999px) 60vw, 425px{%- endcapture -%}
-
-                    {%- when 'collage' -%}
-                      {%- capture image_sizes -%}(max-width: 740px) calc(100vw - 24px * 2), 660px{%- endcapture -%}
-                  {%- endcase -%}
-
-                  {%- if section.settings.layout == 'grid' and collection_image.aspect_ratio > 2.5 -%}
-                    {%- assign height_constraint = 800 | at_most: collection_image.height -%}
-                    <img class="list-collections__item-image" {% if section.settings.reveal_on_scroll %}reveal{% endif %} loading="lazy" sizes="{{ image_sizes }}" {% render 'image-attributes', image: collection_image, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400', height_constraint: height_constraint, crop: 'center' %}>
-                  {%- else -%}
+                  {%- capture image_sizes -%}(max-width: 740px) 80vw, (max-width: 999px) 60vw, 425px{%- endcapture -%}
                     {% if forloop.index == 1 %}
                     <img class="list-collections__item-image" src="{{ block.settings.image | img_url: '500x' }}">
                     {% else %}
                     <img class="list-collections__item-image" {% if section.settings.reveal_on_scroll %}reveal{% endif %} loading="lazy" sizes="{{ image_sizes }}" {% render 'image-attributes', image: collection_image, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800' %}>
-                    {% endif %}  
                 {%- endif -%}
                 {%- else -%}
                   {%- capture collection_image -%}collection-{% cycle '1', '2', '3', '4', '5', '6' %}{%- endcapture -%}
@@ -179,13 +160,6 @@
         </div>
       {%- endcapture -%}
 
-      {%- if section.settings.layout == 'grid' or section.settings.layout == 'collage' -%}
-        <collection-list {% if section.settings.reveal_on_scroll %}reveal-on-scroll{% endif %} class="list-collections list-collections--{{ section.settings.layout }}">
-          <div class="container">
-            {{- section_content -}}
-          </div>
-        </collection-list>
-      {%- elsif section.settings.layout == 'carousel' -%}
         <collection-list scrollable {% if section.settings.reveal_on_scroll %}reveal-on-scroll{% endif %} class="list-collections list-collections--carousel">
           <scrollable-content class="list-collections__scroller hide-scrollbar">
             {{- section_content -}}
@@ -203,7 +177,6 @@
             </button>
           </prev-next-buttons>
         </collection-list>
-      {%- endif -%}
     </div>
   </div>
 </section>
