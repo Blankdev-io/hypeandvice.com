@@ -239,6 +239,11 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
       {% endif %}
 
       <style>
+      .league-background {
+        background-color: #f4f4f4;
+        width: 100%;
+      }
+        
       .league-tab-container {
         display: flex;
         height: 50px;
@@ -286,12 +291,14 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
         }
       }
       </style>
-          
-      <div class="league-tab-container">
-        <a href="/collections/hype-and-vice" class="league-tab league-tab-HnV" style="{% if league == blank %} background-color: white;{% else %} background-color: transparent;{% endif %}"><img class="league-tab-image" src="https://cdn.shopify.com/s/files/1/0061/4167/3590/files/1704909735-trimmy-hv-mark-flag-06_copy.png?v=1704909753" alt="Hype and Vice Logo"></a>
-        <a href="/pages/ncaa" class="league-tab" style="{% if league == 'NCAA' %} background-color: white;{% else %} background-color: transparent;{% endif %}"><img class="league-tab-image" src="https://cdn.shopify.com/s/files/1/0061/4167/3590/files/1704220066-trimmy-ncaa-4-logo-png-transparent.png?v=1704220389" alt="NCAA Logo"></a>
-        <a href="/pages/nba" class="league-tab" style="{% if league == 'NBA' %} background-color: white;{% else %} background-color: transparent;{% endif %}"><img class="league-tab-image" src="https://cdn.shopify.com/s/files/1/0061/4167/3590/files/NBA-logo-png.png?v=1704909152" alt="NBA Logo"></a>
-        <a href="/pages/mls" class="league-tab" style="{% if league == 'MLS' %} background-color: white;{% else %} background-color: transparent;{% endif %}"><img class="league-tab-image" src="https://cdn.shopify.com/s/files/1/0061/4167/3590/files/1938px-MLS_crest_logo_RGB_gradient_svg.png?v=1704220388" alt="MLS Logo"></a>
+
+      <div class="league-background">
+        <div class="league-tab-container">
+          <a href="/collections/hype-and-vice" class="league-tab league-tab-HnV" style="{% if league == blank %} background-color: white;{% else %} background-color: transparent;{% endif %}"><img class="league-tab-image" src="https://cdn.shopify.com/s/files/1/0061/4167/3590/files/1704909735-trimmy-hv-mark-flag-06_copy.png?v=1704909753" alt="Hype and Vice Logo"></a>
+          <a href="/pages/ncaa" class="league-tab" style="{% if league == 'NCAA' %} background-color: white;{% else %} background-color: transparent;{% endif %}"><img class="league-tab-image" src="https://cdn.shopify.com/s/files/1/0061/4167/3590/files/1704220066-trimmy-ncaa-4-logo-png-transparent.png?v=1704220389" alt="NCAA Logo"></a>
+          <a href="/pages/nba" class="league-tab" style="{% if league == 'NBA' %} background-color: white;{% else %} background-color: transparent;{% endif %}"><img class="league-tab-image" src="https://cdn.shopify.com/s/files/1/0061/4167/3590/files/NBA-logo-png.png?v=1704909152" alt="NBA Logo"></a>
+          <a href="/pages/mls" class="league-tab" style="{% if league == 'MLS' %} background-color: white;{% else %} background-color: transparent;{% endif %}"><img class="league-tab-image" src="https://cdn.shopify.com/s/files/1/0061/4167/3590/files/1938px-MLS_crest_logo_RGB_gradient_svg.png?v=1704220388" alt="MLS Logo"></a>
+        </div>
       </div>
           
       {%- section 'popup' -%}
