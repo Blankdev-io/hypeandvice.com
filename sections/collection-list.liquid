@@ -70,11 +70,11 @@
               {% if block.settings.below_text %}
 
                 {%- if block.settings.title != blank -%}
-                  <p class="heading {% if settings.heading_text_transform == 'uppercase' %}h4{% else %}h3{% endif %}" {% if section.settings.reveal_on_scroll %}reveal{% endif %}>{{ block.settings.title | escape }}</p>
+                  <p class="heading below-text-header{% if settings.heading_text_transform == 'uppercase' %}h4{% else %}h3{% endif %}" {% if section.settings.reveal_on_scroll %}reveal{% endif %}>{{ block.settings.title | escape }}</p>
                 {%- endif -%}
                 
                 {%- if block.settings.subheading != blank -%}
-                  <p class="heading heading--small" {% if section.settings.reveal_on_scroll %}reveal{% endif %}>{{ block.settings.subheading | escape }}</p>
+                  <p class="heading heading--small below-text-subheader" {% if section.settings.reveal_on_scroll %}reveal{% endif %}>{{ block.settings.subheading | escape }}</p>
                 {%- endif -%}
   
               {% else %}
