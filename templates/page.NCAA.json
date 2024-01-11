@@ -1,5 +1,79 @@
 {
   "sections": {
+    "categories_KDmjHe": {
+      "type": "categories",
+      "blocks": {
+        "collection_RFLjaG": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "TEST",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#000000"
+          }
+        },
+        "collection_fBAXTJ": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "TEST",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#000000"
+          }
+        },
+        "collection_imHYYj": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "TEST",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#000000"
+          }
+        },
+        "collection_VXV8ht": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "TEST",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#000000"
+          }
+        },
+        "collection_m3Cwax": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "TEST",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "collection_RFLjaG",
+        "collection_fBAXTJ",
+        "collection_imHYYj",
+        "collection_VXV8ht",
+        "collection_m3Cwax"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "subheading": "Subheading",
+        "title": "Collection list",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "165065000576ab84e7": {
       "type": "slideshow-meroxio",
       "blocks": {
@@ -284,6 +358,7 @@
             "image": "shopify:\/\/shop_images\/90BECC61-6AC1-4FFF-9437-9BE54F9212F5.jpg",
             "subheading": "COLLEGE JERSEYS",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/collections\/college-jerseys",
             "text_color": "rgba(0,0,0,0)",
@@ -298,6 +373,7 @@
             "image": "shopify:\/\/shop_images\/HVWB25AL2-2FILM_eabca3e9-22fa-4044-9568-d82cab08441a.jpg",
             "subheading": "Color Block Sweats",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/collections\/color-block-sweats",
             "text_color": "rgba(0,0,0,0)",
@@ -312,6 +388,7 @@
             "image": "shopify:\/\/shop_images\/D715BAA5-172B-45F1-B7D4-8EFF988DBEBE.jpg",
             "subheading": "Rugby Polo",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/collections\/rugby-polo",
             "text_color": "rgba(0,0,0,0)",
@@ -326,6 +403,7 @@
             "image": "shopify:\/\/shop_images\/USD16.jpg",
             "subheading": "Puffer Jacket",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/collections\/college-puffers",
             "text_color": "rgba(0,0,0,0)",
@@ -340,6 +418,7 @@
             "image": "shopify:\/\/shop_images\/HVWT34LMU2-2_08a5faa8-9c81-4671-b28c-08692a580d48.jpg",
             "subheading": "Cut Off Tank",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/collections\/cut-off-tank",
             "text_color": "rgba(0,0,0,0)",
@@ -354,6 +433,7 @@
             "image": "shopify:\/\/shop_images\/HVWT21AUB1-1FILM_1aa11aa9-cca6-48c9-b781-27c240ba361e.jpg",
             "subheading": "MVP Top",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/collections\/mvp-tank",
             "text_color": "rgba(0,0,0,0)",
@@ -368,6 +448,7 @@
             "image": "shopify:\/\/shop_images\/HVWO21INU3-4FILM.jpg",
             "subheading": "Gameday Romper",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/collections\/gameday-romper",
             "text_color": "rgba(0,0,0,0)",
@@ -382,6 +463,7 @@
             "image": "shopify:\/\/shop_images\/ColorBlockPatchSweat-Group-2.jpg",
             "subheading": "Patched Pants",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/collections\/patched-pants",
             "text_color": "rgba(0,0,0,0)",
@@ -396,6 +478,7 @@
             "image": "shopify:\/\/shop_images\/HVWT98TTU2-1.jpg",
             "subheading": "Denim Corset",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
@@ -410,6 +493,7 @@
             "image": "shopify:\/\/shop_images\/TheAllStar-4.jpg",
             "subheading": "Bra Tank Top",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
@@ -424,6 +508,7 @@
             "image": "shopify:\/\/shop_images\/HVWB16SOC2-2_1.jpg",
             "subheading": "Ring It Top",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/collections\/ring-it-top",
             "text_color": "rgba(0,0,0,0)",
@@ -438,6 +523,7 @@
             "image": "shopify:\/\/shop_images\/HVWT80AL4-2FILM_73ba33c7-0c3f-4fb0-8f49-b13d8992a56b.jpg",
             "subheading": "Scoop Neck Top",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/collections\/scoop-neck-crop-top",
             "text_color": "rgba(0,0,0,0)",
@@ -452,6 +538,7 @@
             "image": "shopify:\/\/shop_images\/0227DBB0-47D6-4765-B7BA-BC8818494D73.jpg",
             "subheading": "Tube Top",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/collections\/college-tube-tops",
             "text_color": "rgba(0,0,0,0)",
@@ -466,6 +553,7 @@
             "image": "shopify:\/\/shop_images\/HVWT36INU2-2_84bd191a-20d8-4ae9-8d51-f91026eef77a.jpg",
             "subheading": "Cali Tee",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/collections\/cali-tee",
             "text_color": "rgba(0,0,0,0)",
@@ -480,6 +568,7 @@
             "image": "shopify:\/\/shop_images\/HVWT77MCH5-2_1.jpg",
             "subheading": "HOMERUN TEE",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/collections\/homerun-tee",
             "text_color": "rgba(0,0,0,0)",
@@ -494,6 +583,7 @@
             "image": "shopify:\/\/shop_images\/HVWB40SOC4-2_bf58dc71-c547-4b77-b72e-307262064bc6.jpg",
             "subheading": "ACE SET",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/collections\/ace-set",
             "text_color": "rgba(0,0,0,0)",
@@ -508,6 +598,7 @@
             "image": "shopify:\/\/shop_images\/HVWT32AUB1-2FILM_8b82911b-8e7b-41ab-a276-8f7e5e968868.jpg",
             "subheading": "Senior Top",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "https:\/\/www.hypeandvice.com\/collections\/senior-top",
             "text_color": "rgba(0,0,0,0)",
@@ -522,6 +613,7 @@
             "image": "shopify:\/\/shop_images\/127A3180-Edit_1.jpg",
             "subheading": "Chloe Vest",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/collections\/chloe-vest",
             "text_color": "rgba(0,0,0,0)",
@@ -536,6 +628,7 @@
             "image": "shopify:\/\/shop_images\/IMG_3276_3.jpg",
             "subheading": "Grand Slam Set",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/collections\/grand-slam-set",
             "text_color": "rgba(0,0,0,0)",
@@ -551,6 +644,7 @@
             "image": "shopify:\/\/shop_images\/FullSizeRender_2.jpg",
             "subheading": "",
             "title": "",
+            "below_text": false,
             "link_text": "Track Shorts",
             "link_url": "https:\/\/www.hypeandvice.com\/products\/mto-track-shorts",
             "text_color": "rgba(0,0,0,0)",
@@ -584,6 +678,7 @@
       "settings": {
         "reveal_on_scroll": false,
         "layout": "carousel",
+        "two_columns": false,
         "subheading": "Styles everyone is loving this season 💘",
         "title": "SHOP BY STYLE",
         "background": "#ffffff",
@@ -653,6 +748,7 @@
             "image": "shopify:\/\/shop_images\/127A2101-Edit_17763ed0-bf15-4452-9ff4-e19ce2e6507b.jpg",
             "subheading": "",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "https:\/\/www.hypeandvice.com\/collections\/university-of-michigan",
             "text_color": "rgba(0,0,0,0)",
@@ -668,6 +764,7 @@
             "image": "shopify:\/\/shop_images\/HVWB19NYU6-HVWT77NYU-Lifestyle-10.jpg",
             "subheading": "",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "https:\/\/www.hypeandvice.com\/collections\/new-york-university-nyu",
             "text_color": "rgba(0,0,0,0)",
@@ -682,6 +779,7 @@
             "image": "shopify:\/\/shop_images\/HVWT2HAR10-Lifestyle-5.jpg",
             "subheading": "",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "https:\/\/www.hypeandvice.com\/products\/mto-harvard-ace-cardigan",
             "text_color": "rgba(0,0,0,0)",
@@ -696,6 +794,7 @@
             "image": "shopify:\/\/shop_images\/HVWT88CU2-HVWT80CU-5.jpg",
             "subheading": "",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "https:\/\/www.hypeandvice.com\/collections\/cornell-university",
             "text_color": "rgba(0,0,0,0)",
@@ -710,6 +809,7 @@
             "image": "shopify:\/\/shop_images\/127A3503-Edit.jpg",
             "subheading": "",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "https:\/\/www.hypeandvice.com\/products\/usc-gameday-top",
             "text_color": "rgba(0,0,0,0)",
@@ -724,6 +824,7 @@
             "image": "shopify:\/\/shop_images\/HVWT34HOW9-2_5eb3db75-1c97-42ff-ad43-0846a6fdb30a.jpg",
             "subheading": "",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/products\/mto-howard-cut-off-tank",
             "text_color": "rgba(0,0,0,0)",
@@ -738,6 +839,7 @@
             "image": "shopify:\/\/shop_images\/HVWT2VAN6-Lifesty-7.jpg",
             "subheading": "",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "https:\/\/www.hypeandvice.com\/collections\/vanderbilt-university",
             "text_color": "rgba(0,0,0,0)",
@@ -752,6 +854,7 @@
             "image": "shopify:\/\/shop_images\/HVWT81SDS2-Campaign-2_2fd2be08-e8bb-44e3-bae4-6c87b3055384.jpg",
             "subheading": "",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "https:\/\/www.hypeandvice.com\/products\/mto-sdsu-slam-dunk-top",
             "text_color": "rgba(0,0,0,0)",
@@ -766,6 +869,7 @@
             "image": "shopify:\/\/shop_images\/HVWT77UCH1-Lifestyle-2_77cb2ba3-df3e-4b93-bdc7-a2b31c11a08d.jpg",
             "subheading": "",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "https:\/\/www.hypeandvice.com\/collections\/university-of-chicago",
             "text_color": "rgba(0,0,0,0)",
@@ -780,6 +884,7 @@
             "image": "shopify:\/\/shop_images\/ASU-ScoopNeck-ForGrain-OnModel-2_1.jpg",
             "subheading": "",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "https:\/\/www.hypeandvice.com\/collections\/arizona-state-university",
             "text_color": "rgba(0,0,0,0)",
@@ -794,6 +899,7 @@
             "image": "shopify:\/\/shop_images\/HVWT81HAR1-Lifest-5psd.jpg",
             "subheading": "",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "https:\/\/www.hypeandvice.com\/products\/mto-harvard-slam-dunk-top",
             "text_color": "rgba(0,0,0,0)",
@@ -808,6 +914,7 @@
             "image": "shopify:\/\/shop_images\/HVWT80SOC4-Campaign-1_1.jpg",
             "subheading": "",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "https:\/\/www.hypeandvice.com\/products\/mto-usc-track-shorts",
             "text_color": "rgba(0,0,0,0)",
@@ -822,6 +929,7 @@
             "image": "shopify:\/\/shop_images\/HVWS26MIA1-Campaign-Group-2_8ba35dac-77e1-4481-bb73-f2befc1f55f8.jpg",
             "subheading": "",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "https:\/\/www.hypeandvice.com\/collections\/university-of-miami",
             "text_color": "rgba(0,0,0,0)",
@@ -849,6 +957,7 @@
       "settings": {
         "reveal_on_scroll": false,
         "layout": "carousel",
+        "two_columns": false,
         "subheading": "",
         "title": "make school cool 🏁",
         "background": "rgba(0,0,0,0)",
@@ -1095,6 +1204,7 @@
     }
   },
   "order": [
+    "categories_KDmjHe",
     "165065000576ab84e7",
     "165065396872bf5f8b",
     "2cd6223b-dc18-4eda-91cc-768082b54a6a",
