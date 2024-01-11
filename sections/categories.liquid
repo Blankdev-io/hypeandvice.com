@@ -87,6 +87,10 @@
     border-radius: 0;
     transition: none;
   }
+
+  .list-collections__item-image.image-height {
+    height: 350px !important;
+  }
   
   @media screen and (max-width: 750px) {
     .category__item-info p {
@@ -196,9 +200,9 @@
                 {%- if collection_image != blank -%}
                   {%- capture image_sizes -%}(max-width: 740px) 80vw, (max-width: 999px) 60vw, 425px{%- endcapture -%}
                     {% if forloop.index == 1 %}
-                    <img class="list-collections__item-image" src="{{ block.settings.image | img_url: '500x' }}">
+                    <img class="list-collections__item-image image-height" src="{{ block.settings.image | img_url: '500x' }}">
                     {% else %}
-                    <img class="list-collections__item-image" {% if section.settings.reveal_on_scroll %}reveal{% endif %} loading="lazy" sizes="{{ image_sizes }}" {% render 'image-attributes', image: collection_image, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800' %}>
+                    <img class="list-collections__item-image image-height" {% if section.settings.reveal_on_scroll %}reveal{% endif %} loading="lazy" sizes="{{ image_sizes }}" {% render 'image-attributes', image: collection_image, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800' %}>
                 {%- endif -%}
                 {%- else -%}
                   {%- capture collection_image -%}collection-{% cycle '1', '2', '3', '4', '5', '6' %}{%- endcapture -%}
