@@ -15236,6 +15236,10 @@ shopify-payment-terms {
       padding: 0 !important;
       margin: 0 !important;
     }
+
+    .list-collections__item-list.grid-2-columns {
+      grid-template-columns: repeat(auto-fit, calc(50% - var(--container-gutter)));
+    }
   }
 
   @media screen and (min-width: 750px) {
@@ -15246,6 +15250,10 @@ shopify-payment-terms {
     .list-collections__item-image.image-height {
       height: 26.39vw;
       max-height: 380px
+    }
+
+    .list-collections__item-list.grid-2-columns {
+      grid-template-columns: repeat(auto-fit, calc(50% - var(--container-gutter) / 2));
     }
   }
 
@@ -15260,7 +15268,3 @@ shopify-payment-terms {
       gap: 10px !important;
     }
   }
-
-.list-collections__item-list.grid-2-columns {
-  grid-template-columns: repeat(auto-fit, calc(50% - var(--container-gutter))) !important;
-}
