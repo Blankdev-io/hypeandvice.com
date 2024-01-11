@@ -2965,3 +2965,85 @@ details-disclosure > details {
 #shopify-section-header {
   top: -1px !important;
 }
+
+/* USED FOR 'collection-list' CHANGES AND SECTIONS BASED ON IT LIKE 'categories' */
+
+  .category__item-info {
+    background: white !important;
+    padding: 10px 0;
+  } 
+  
+  .category__item-info p {
+    font-size: 24px;
+  } 
+
+  .list-collections__item-list.category-list {
+    display: flex !important;
+  }
+
+  .list-collections__item.category-collections__item {
+    width: 20% !important;
+  }
+
+  .list-collections__prev-next {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  .my-nav-prev, .my-nav-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .my-nav-prev {
+    left: 0;
+  }
+  
+  .my-nav-next {
+    right: 0;
+  }
+
+  .prev-next-button.prev-next-button-styles {
+    background: none;
+    color: inherit;
+    border: none;
+    border-radius: 0;
+    transition: none;
+  }
+  
+  @media screen and (max-width: 750px) {
+    .list-collections--carousel.list-collection--category .list-collections__item-list {
+      width: 242% !important;
+    }
+
+    .list-collections__item-image.image-height {
+      height: 60vw;
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    .my-nav-prev, .my-nav-next {
+      display: none;
+    }
+
+    .list-collections__item-image.image-height {
+      height: 26.39vw;
+      max-height: 380px
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .category__item-info p {
+      font-size: 16px;
+    } 
+  }
+
+  @media screen and (min-width: 750px) and (max-width: 1440px) {
+    .list-collections__item-list.category-list {
+      gap: 10px !important;
+    }
+  }
