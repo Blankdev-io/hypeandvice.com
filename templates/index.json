@@ -123,6 +123,121 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
+    "2cd6223b-dc18-4eda-91cc-768082b54a6a": {
+      "type": "slideshow",
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "fade",
+        "autoplay": true,
+        "cycle_speed": 4,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "collection_list_D6rqbx": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_UhPUCJ": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/MIC-T98-O18-3_2_23ff5874-521d-462f-812f-4ab8522c4866.jpg",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_JTC6HX": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_MzqGPq": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_9gryHi": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_UhPUCJ",
+        "collection_JTC6HX",
+        "collection_MzqGPq",
+        "collection_9gryHi"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "layout": "collage",
+        "subheading": "",
+        "title": "FEATURED SHOPS",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "slideshow_m63Lfr": {
+      "type": "slideshow",
+      "blocks": {
+        "image_t6gE9q": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/UCLAGROUP-10_2_91a3f3d3-8b3a-402a-89df-6014d7cdfa4c.jpg",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "NEW ARRIVALS",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "image_t6gE9q"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
     "165065396872bf5f8b": {
       "type": "logo-list",
       "blocks": {
@@ -348,130 +463,15 @@
       "settings": {
         "reveal_on_scroll": true,
         "subheading": "",
-        "title": "NEW NEW NEW",
+        "title": "SHOP BY LEAGUE",
         "button_text": "",
         "button_link": "",
         "stack_logos": false,
-        "background": "#f1f1f1",
-        "text_color": "#ffffff",
+        "background": "#ffffff",
+        "text_color": "#000000",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)",
         "logo_background": "rgba(0,0,0,0)"
-      }
-    },
-    "2cd6223b-dc18-4eda-91cc-768082b54a6a": {
-      "type": "slideshow",
-      "settings": {
-        "section_height": "auto",
-        "transition_type": "fade",
-        "autoplay": true,
-        "cycle_speed": 4,
-        "background": "rgba(0,0,0,0)"
-      }
-    },
-    "collection_list_D6rqbx": {
-      "type": "collection-list",
-      "blocks": {
-        "collection_UhPUCJ": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/MIC-T98-O18-3_2_23ff5874-521d-462f-812f-4ab8522c4866.jpg",
-            "subheading": "",
-            "title": "",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_JTC6HX": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_MzqGPq": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_9gryHi": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        }
-      },
-      "block_order": [
-        "collection_UhPUCJ",
-        "collection_JTC6HX",
-        "collection_MzqGPq",
-        "collection_9gryHi"
-      ],
-      "settings": {
-        "reveal_on_scroll": false,
-        "layout": "collage",
-        "subheading": "",
-        "title": "FEATURED SHOPS",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
-    "slideshow_m63Lfr": {
-      "type": "slideshow",
-      "blocks": {
-        "image_t6gE9q": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/UCLAGROUP-10_2_91a3f3d3-8b3a-402a-89df-6014d7cdfa4c.jpg",
-            "text_position": "middle_center",
-            "subheading": "",
-            "title": "",
-            "button_1_text": "NEW ARRIVALS",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        }
-      },
-      "block_order": [
-        "image_t6gE9q"
-      ],
-      "settings": {
-        "section_height": "auto",
-        "transition_type": "sweep",
-        "autoplay": true,
-        "cycle_speed": 5,
-        "background": "rgba(0,0,0,0)"
       }
     },
     "16492381491d455b02": {
@@ -1229,10 +1229,10 @@
   "order": [
     "165065000576ab84e7",
     "categories_yBHGEC",
-    "165065396872bf5f8b",
     "2cd6223b-dc18-4eda-91cc-768082b54a6a",
     "collection_list_D6rqbx",
     "slideshow_m63Lfr",
+    "165065396872bf5f8b",
     "16492381491d455b02",
     "2612faf2-8324-468d-8706-b0d50055d1a4",
     "16506544520a12bd2c",
