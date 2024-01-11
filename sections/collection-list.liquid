@@ -168,12 +168,13 @@
                   {%- endif -%}
                 {%- endif -%}
               </div>
-
+            {% unless block.settings.below_text %}
               {%- if collection_content != blank -%}
                 <div class="list-collections__item-info text-container">
                   {{- collection_content -}}
                 </div>
               {%- endif -%}
+            {% endunless %}
             </a>
           {%- endfor -%}
         </div>
