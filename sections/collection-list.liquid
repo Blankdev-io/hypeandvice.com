@@ -64,7 +64,7 @@
       {%- endif -%}
 
       {%- capture section_content -%}
-        <div class="list-collections__item-list">
+        <div class="list-collections__item-list{% if section.settings.two_columns %} grid-2-columns{% endif %}">
           {%- for block in section.blocks -%}
             {%- capture collection_content -%}
               {%- if block.settings.subheading != blank -%}
