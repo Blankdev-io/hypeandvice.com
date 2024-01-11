@@ -57,6 +57,28 @@
   .list-collections__item.category-collections__item {
     width: 20% !important;
   }
+
+  .list-collections__prev-next {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  .my-nav-prev, .my-nav-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .my-nav-prev {
+    left: 0;
+  }
+  
+  .my-nav-next {
+    right: 0;
+  }
   
   @media screen and (max-width: 750px) {
     .category__item-info p {
@@ -191,12 +213,12 @@
           </scrollable-content>
 
           <prev-next-buttons class="list-collections__prev-next prev-next-buttons">
-            <button class="list-collections__arrow prev-next-button prev-next-button--prev">
+            <button class="list-collections__arrow prev-next-button prev-next-button--prev my-nav-prev">
               <span class="visually-hidden">{{ 'general.accessibility.previous' | t }}</span>
               {%- include 'icon' with 'nav-arrow-left', block: true, direction_aware: true -%}
             </button>
 
-            <button class="list-collections__arrow prev-next-button prev-next-button--next">
+            <button class="list-collections__arrow prev-next-button prev-next-button--next my-nav-next">
               <span class="visually-hidden">{{ 'general.accessibility.next' | t }}</span>
               {%- include 'icon' with 'nav-arrow-right', block: true, direction_aware: true -%}
             </button>
