@@ -244,221 +244,29 @@
         "5511dc15-28d6-4b28-8637-c45496fe7e1d": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/ucla.png",
+            "logo": "shopify:\/\/shop_images\/NCAA.png",
             "link": "shopify:\/\/collections\/university-of-california-los-angeles-ucla"
           }
         },
         "f9e60bf3-4871-454e-9a5e-c8b4f383d608": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/wisconsin.png",
+            "logo": "shopify:\/\/shop_images\/NBA.png",
             "link": "shopify:\/\/collections\/university-of-wisconsin"
           }
         },
         "924daf84-e23c-485d-9bd6-f155dd13b246": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/penn_state_d7c24fce-1ad1-4358-bd08-e35cd385c3b5.png",
+            "logo": "shopify:\/\/shop_images\/MLS.png",
             "link": "shopify:\/\/collections\/penn-state"
-          }
-        },
-        "9609e586-a4c3-496f-a2b1-fa77e64d96fb": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/alabama_9e10fd4c-267a-40a5-a0e7-cd6076ce8699.png",
-            "link": "shopify:\/\/collections\/university-of-alabama"
-          }
-        },
-        "548f0d69-75d3-4c36-b6ca-67784975b425": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/auburn-university.png",
-            "link": "shopify:\/\/collections\/auburn-university"
-          }
-        },
-        "aadfd721-e4ac-46c2-a691-5b42dd0fce7e": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/georgetown_b289766f-88af-4fe7-8a07-59c34f9c6730.png",
-            "link": "shopify:\/\/collections\/georgetown-university"
-          }
-        },
-        "1b95eec4-cc55-4d31-98d1-fb5af64c2b7d": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/uva_1f0048c3-69c9-4d34-88ee-d48e1bb45e22.png",
-            "link": "shopify:\/\/collections\/university-of-virginia"
-          }
-        },
-        "b3d40c9e-a2dd-4bd7-b8de-67292b308e07": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/uoklahoma.png",
-            "link": "shopify:\/\/collections\/university-of-oklahoma"
-          }
-        },
-        "09a963ca-495e-4410-b6bf-c1693a35020b": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/texas_4048157f-2410-4593-bb72-d276ba864018.png",
-            "link": "shopify:\/\/collections\/university-of-texas-at-austin-1"
-          }
-        },
-        "063708cd-d4f7-4ad0-9117-d40a5c3b84ba": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/notre-dame.png",
-            "link": "shopify:\/\/collections\/university-of-notre-dame"
-          }
-        },
-        "b78e97be-1093-4054-94ab-988811ffc6a5": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/osu.png",
-            "link": "https:\/\/www.hypeandvice.com\/collections\/ohio-state-university-osu"
-          }
-        },
-        "ba493069-d771-4892-8711-918b8318839d": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/michigan_6abf4b10-b0ac-4997-9e03-f675c38568cc.png",
-            "link": "https:\/\/www.hypeandvice.com\/collections\/university-of-michigan"
-          }
-        },
-        "08172272-6b41-4e64-9281-09e592eb1288": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/ole-miss.png",
-            "link": "shopify:\/\/collections\/university-of-mississippi-ole-miss"
-          }
-        },
-        "e5b28543-2b37-4785-8604-892065e4647a": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/arkansas.png",
-            "link": "shopify:\/\/collections\/university-of-arkansas-fayetteville"
-          }
-        },
-        "34b27da8-8574-4201-aba3-0e5be8340955": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/south-carolina_fcb1e13b-31d1-4ef5-8f20-dda60e42ca89.png",
-            "link": "shopify:\/\/collections\/university-of-south-carolina"
-          }
-        },
-        "c48216d1-7c5f-4006-a605-01029f41cd20": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/texasam_192f3a6d-a037-432e-8367-993ae8f12a91.png",
-            "link": "shopify:\/\/collections\/texas-a-m"
-          }
-        },
-        "1650653968a9456b00-0": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/tennessee.png",
-            "link": "shopify:\/\/collections\/university-of-tennessee"
-          }
-        },
-        "809306bd-e4b2-4a95-a924-af3718e5c6ea": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/wsu.png",
-            "link": "shopify:\/\/collections\/washington-state-university"
-          }
-        },
-        "12e631a0-5b8f-4177-b9c8-774d14e65c0a": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/nebraska.png",
-            "link": "shopify:\/\/collections\/university-of-nebraska"
-          }
-        },
-        "93ae87ea-7c94-4c30-9746-ac3ce6609055": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/georgiatech.png",
-            "link": "shopify:\/\/collections\/georgia-tech"
-          }
-        },
-        "ef7fc3a0-affe-475e-ba42-ba2ccfd4b0dd": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/oklahoma.png",
-            "link": "shopify:\/\/collections\/oklahoma-state-university"
-          }
-        },
-        "475a1ae9-0261-4710-af0d-38ec2834a8eb": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/northwestern_6c235d35-c96b-4550-99b3-93c82f5b4534.png",
-            "link": "shopify:\/\/collections\/northwestern-university"
-          }
-        },
-        "2741aef3-7e1d-4ead-bae1-bec1e107841d": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/rutgers_2ad95bc2-a8f5-4cda-aec3-d30688c52e1d.png",
-            "link": "https:\/\/www.hypeandvice.com\/collections\/rutgers-university"
-          }
-        },
-        "1650653968a9456b00-3": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/cincinnati.png",
-            "link": "shopify:\/\/collections\/university-of-cincinnati"
-          }
-        },
-        "1650653968a9456b00-1": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/mississippi-state.png",
-            "link": "shopify:\/\/collections\/mississippi-state-university"
-          }
-        },
-        "1650653968a9456b00-2": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/illinois_820b81d3-c33e-4d63-adce-bc7494db3175.png",
-            "link": "shopify:\/\/collections\/university-of-illinois"
-          }
-        },
-        "11ad5e6b-f040-4332-bab2-b92a7e82ff2e": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/pitt_61f5c075-d8b1-48e0-bc07-a19bb8d4b628.png",
-            "link": "https:\/\/www.hypeandvice.com\/collections\/university-of-pittsburgh"
           }
         }
       },
       "block_order": [
         "5511dc15-28d6-4b28-8637-c45496fe7e1d",
         "f9e60bf3-4871-454e-9a5e-c8b4f383d608",
-        "924daf84-e23c-485d-9bd6-f155dd13b246",
-        "9609e586-a4c3-496f-a2b1-fa77e64d96fb",
-        "548f0d69-75d3-4c36-b6ca-67784975b425",
-        "aadfd721-e4ac-46c2-a691-5b42dd0fce7e",
-        "1b95eec4-cc55-4d31-98d1-fb5af64c2b7d",
-        "b3d40c9e-a2dd-4bd7-b8de-67292b308e07",
-        "09a963ca-495e-4410-b6bf-c1693a35020b",
-        "063708cd-d4f7-4ad0-9117-d40a5c3b84ba",
-        "b78e97be-1093-4054-94ab-988811ffc6a5",
-        "ba493069-d771-4892-8711-918b8318839d",
-        "08172272-6b41-4e64-9281-09e592eb1288",
-        "e5b28543-2b37-4785-8604-892065e4647a",
-        "34b27da8-8574-4201-aba3-0e5be8340955",
-        "c48216d1-7c5f-4006-a605-01029f41cd20",
-        "1650653968a9456b00-0",
-        "809306bd-e4b2-4a95-a924-af3718e5c6ea",
-        "12e631a0-5b8f-4177-b9c8-774d14e65c0a",
-        "93ae87ea-7c94-4c30-9746-ac3ce6609055",
-        "ef7fc3a0-affe-475e-ba42-ba2ccfd4b0dd",
-        "475a1ae9-0261-4710-af0d-38ec2834a8eb",
-        "2741aef3-7e1d-4ead-bae1-bec1e107841d",
-        "1650653968a9456b00-3",
-        "1650653968a9456b00-1",
-        "1650653968a9456b00-2",
-        "11ad5e6b-f040-4332-bab2-b92a7e82ff2e"
+        "924daf84-e23c-485d-9bd6-f155dd13b246"
       ],
       "settings": {
         "reveal_on_scroll": true,
