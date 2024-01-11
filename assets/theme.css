@@ -15259,6 +15259,15 @@ shopify-payment-terms {
     .list-collections__item-list.category-list {
       gap: 10px !important;
     }
+
+    .list-collections--grid .list-collections__item-list .grid-2-columns {
+      grid-auto-columns: auto;
+      grid-template-columns: none;
+      grid-auto-flow: row;
+      width: auto;
+      min-width: auto;
+      padding: 0;
+    }
   }
 
 .list-collections__item-list.grid-2-columns {
