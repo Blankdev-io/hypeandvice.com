@@ -15260,7 +15260,7 @@ shopify-payment-terms {
       gap: 10px !important;
     }
 
-    .list-collections--grid .list-collections__item-list .grid-2-columns {
+    .list-collections--grid .list-collections__item-list.grid-2-columns {
       grid-auto-columns: auto;
       grid-template-columns: none;
       grid-auto-flow: row;
