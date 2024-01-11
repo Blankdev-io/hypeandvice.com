@@ -369,6 +369,77 @@
         "background": "rgba(0,0,0,0)"
       }
     },
+    "collection_list_D6rqbx": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_UhPUCJ": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_JTC6HX": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_MzqGPq": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_9gryHi": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_UhPUCJ",
+        "collection_JTC6HX",
+        "collection_MzqGPq",
+        "collection_9gryHi"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "layout": "collage",
+        "subheading": "",
+        "title": "FEATURED SHOPS",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "16492381491d455b02": {
       "type": "collection-list",
       "blocks": {
@@ -1126,6 +1197,7 @@
     "categories_yBHGEC",
     "165065396872bf5f8b",
     "2cd6223b-dc18-4eda-91cc-768082b54a6a",
+    "collection_list_D6rqbx",
     "16492381491d455b02",
     "2612faf2-8324-468d-8706-b0d50055d1a4",
     "16506544520a12bd2c",
