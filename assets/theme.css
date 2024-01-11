@@ -15238,7 +15238,7 @@ shopify-payment-terms {
     }
 
     .list-collections__item-list.grid-2-columns {
-      grid-template-columns: repeat(auto-fit, calc(50% - var(--container-gutter)));
+      grid-template-columns: repeat(auto-fit, calc(50% - var(--container-gutter) / 2));
     }
   }
 
