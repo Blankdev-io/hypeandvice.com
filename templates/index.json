@@ -155,12 +155,12 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "subheading": "",
-            "title": "",
-            "below_text": false,
+            "subheading": "SHOP BASKETBALL",
+            "title": "NBA",
+            "below_text": true,
             "link_text": "",
             "link_url": "",
-            "text_color": "rgba(0,0,0,0)",
+            "text_color": "#000000",
             "overlay_color": "#000000",
             "overlay_opacity": 30
           }
