@@ -15273,3 +15273,11 @@ shopify-payment-terms {
 .list-collections__item-list.grid-2-columns {
   grid-template-columns: repeat(auto-fit, calc(50% - var(--container-gutter) / 2)) !important;
 }
+
+.below-text-header {
+  text-align: left !important;
+}
+
+.below-text-subheader {
+  text-align: left !important;
+}
