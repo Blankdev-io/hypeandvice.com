@@ -15187,6 +15187,7 @@ shopify-payment-terms {
 
   .list-collections__item-list.category-list {
     display: flex !important;
+    min-width: max-content !important;
   }
 
   .list-collections__item.category-collections__item {
@@ -15239,9 +15240,7 @@ shopify-payment-terms {
   }
 
   @media screen and (min-width: 750px) {
-    .my-nav-prev, .my-nav-next {
-      display: none;
-    }
+
 
     .list-collections__item-image.image-height {
       height: 26.39vw;
