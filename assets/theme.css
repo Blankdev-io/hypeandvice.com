@@ -15281,3 +15281,7 @@ shopify-payment-terms {
   text-align: left !important;
   margin: 0 !important;
 }
+
+.prev-next-buttons.prev-next-no-right {
+  right: 0;
+}
