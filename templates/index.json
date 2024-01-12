@@ -274,7 +274,7 @@
         "924daf84-e23c-485d-9bd6-f155dd13b246"
       ],
       "settings": {
-        "reveal_on_scroll": true,
+        "reveal_on_scroll": false,
         "subheading": "",
         "title": "SHOP BY LEAGUE",
         "button_text": "",
