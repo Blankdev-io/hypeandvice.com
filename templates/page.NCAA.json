@@ -741,7 +741,7 @@
         "logo_BWjfbD"
       ],
       "settings": {
-        "reveal_on_scroll": true,
+        "reveal_on_scroll": false,
         "subheading": "",
         "title": "FEATURED",
         "button_text": "",
