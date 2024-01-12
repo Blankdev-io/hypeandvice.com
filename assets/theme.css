@@ -15215,7 +15215,11 @@ shopify-payment-terms {
   .my-nav-next {
     right: 0;
   }
-  
+
+  .prev-next-button.prev-next-button-styles {
+    background: lightgray;
+  }
+
   @media screen and (max-width: 750px) {
     .list-collections--carousel.list-collection--category .list-collections__item-list {
       width: 242% !important;
