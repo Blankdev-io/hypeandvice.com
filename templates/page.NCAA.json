@@ -1,79 +1,5 @@
 {
   "sections": {
-    "categories_KDmjHe": {
-      "type": "categories",
-      "blocks": {
-        "collection_RFLjaG": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "TEST",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "#000000"
-          }
-        },
-        "collection_fBAXTJ": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "TEST",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "#000000"
-          }
-        },
-        "collection_imHYYj": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "TEST",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "#000000"
-          }
-        },
-        "collection_VXV8ht": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "TEST",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "#000000"
-          }
-        },
-        "collection_m3Cwax": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "TEST",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "collection_RFLjaG",
-        "collection_fBAXTJ",
-        "collection_imHYYj",
-        "collection_VXV8ht",
-        "collection_m3Cwax"
-      ],
-      "settings": {
-        "reveal_on_scroll": false,
-        "subheading": "Subheading",
-        "title": "Collection list",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
     "165065000576ab84e7": {
       "type": "slideshow-meroxio",
       "blocks": {
@@ -336,6 +262,80 @@
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)",
         "logo_background": "rgba(0,0,0,0)"
+      }
+    },
+    "categories_KDmjHe": {
+      "type": "categories",
+      "blocks": {
+        "collection_RFLjaG": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "TEST",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#000000"
+          }
+        },
+        "collection_fBAXTJ": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "TEST",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#000000"
+          }
+        },
+        "collection_imHYYj": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "TEST",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#000000"
+          }
+        },
+        "collection_VXV8ht": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "TEST",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#000000"
+          }
+        },
+        "collection_m3Cwax": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "TEST",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "collection_RFLjaG",
+        "collection_fBAXTJ",
+        "collection_imHYYj",
+        "collection_VXV8ht",
+        "collection_m3Cwax"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "subheading": "Styles everyone is loving this season 💘",
+        "title": "SHOP BY STYLE",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
       }
     },
     "2cd6223b-dc18-4eda-91cc-768082b54a6a": {
@@ -1204,9 +1204,9 @@
     }
   },
   "order": [
-    "categories_KDmjHe",
     "165065000576ab84e7",
     "165065396872bf5f8b",
+    "categories_KDmjHe",
     "2cd6223b-dc18-4eda-91cc-768082b54a6a",
     "16492381491d455b02",
     "2612faf2-8324-468d-8706-b0d50055d1a4",
