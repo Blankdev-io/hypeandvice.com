@@ -15215,14 +15215,6 @@ shopify-payment-terms {
   .my-nav-next {
     right: 0;
   }
-
-  .prev-next-button.prev-next-button-styles {
-    background: none;
-    color: inherit;
-    border: none;
-    border-radius: 0;
-    transition: none;
-  }
   
   @media screen and (max-width: 750px) {
     .list-collections--carousel.list-collection--category .list-collections__item-list {
@@ -15236,6 +15228,14 @@ shopify-payment-terms {
     .container.no-padding {
       padding: 0 !important;
       margin: 0 !important;
+    }
+
+    .prev-next-button.prev-next-button-styles {
+      background: none;
+      color: inherit;
+      border: none;
+      border-radius: 0;
+      transition: none;
     }
   }
 
