@@ -516,12 +516,6 @@
         "settings": {
         }
       },
-      "16216491870256628967": {
-        "type": "shopify:\/\/apps\/bss-product-labels-badges\/blocks\/bss-pl-config-data\/91bfe765-b604-49a1-805e-3599fa600b24",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "15683396631634586217": {
         "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": false,
@@ -532,12 +526,6 @@
           "button_horizontal_position": "bottom_left",
           "button_vertical_position": "lowest",
           "greeting_message": "👋 Hi! Message us if you have questions, or give an idea of what you’re looking for. We’re happy to make recommendations :)"
-        }
-      },
-      "15216558432548357557": {
-        "type": "shopify:\/\/apps\/deco-product-labels-badges\/blocks\/deco-pl\/fd2caeda-48fd-4076-b5f9-8dfada7253f1",
-        "disabled": false,
-        "settings": {
         }
       }
     }
