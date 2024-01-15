@@ -79,28 +79,28 @@
           "type": "logo",
           "settings": {
             "logo": "shopify:\/\/shop_images\/FSU_7b33fdfd-2fbc-419c-aaa9-0042964e92d7.png",
-            "link": ""
+            "link": "shopify:\/\/collections\/florida-state-university"
           }
         },
         "97101234-a231-474f-bb65-8357ead0a1a9": {
           "type": "logo",
           "settings": {
             "logo": "shopify:\/\/shop_images\/ARZ.png",
-            "link": ""
+            "link": "shopify:\/\/collections\/university-of-arizona"
           }
         },
         "d182e8ab-05e7-4b26-a5a9-4395f61ea46a": {
           "type": "logo",
           "settings": {
             "logo": "shopify:\/\/shop_images\/FLA_4090bcc7-bdc8-4d85-9179-46f76299db0b.png",
-            "link": ""
+            "link": "shopify:\/\/collections\/university-of-florida-uf"
           }
         },
         "e5fd48d2-189c-4172-b6aa-8894a3110cfe": {
           "type": "logo",
           "settings": {
             "logo": "shopify:\/\/shop_images\/MIA_b03c1a15-04b9-4717-80fd-5c7df09d42be.png",
-            "link": ""
+            "link": "shopify:\/\/collections\/university-of-miami"
           }
         },
         "80d1af82-56c1-4768-a7b7-ead10c8e7368": {
@@ -414,6 +414,9 @@
           "settings": {
             "collection": "university-of-michigan",
             "image": "shopify:\/\/shop_images\/127A2101-Edit_17763ed0-bf15-4452-9ff4-e19ce2e6507b.jpg",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
             "subheading": "",
             "title": "",
             "below_text": false,
@@ -430,6 +433,9 @@
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/HVWB19NYU6-HVWT77NYU-Lifestyle-10.jpg",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
             "subheading": "",
             "title": "",
             "below_text": false,
@@ -445,6 +451,9 @@
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/HVWT2HAR10-Lifestyle-5.jpg",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
             "subheading": "",
             "title": "",
             "below_text": false,
@@ -460,6 +469,9 @@
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/HVWT88CU2-HVWT80CU-5.jpg",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
             "subheading": "",
             "title": "",
             "below_text": false,
@@ -475,6 +487,9 @@
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/127A3503-Edit.jpg",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
             "subheading": "",
             "title": "",
             "below_text": false,
@@ -490,6 +505,9 @@
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/HVWT34HOW9-2_5eb3db75-1c97-42ff-ad43-0846a6fdb30a.jpg",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
             "subheading": "",
             "title": "",
             "below_text": false,
@@ -505,6 +523,9 @@
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/HVWT2VAN6-Lifesty-7.jpg",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
             "subheading": "",
             "title": "",
             "below_text": false,
@@ -520,6 +541,9 @@
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/HVWT81SDS2-Campaign-2_2fd2be08-e8bb-44e3-bae4-6c87b3055384.jpg",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
             "subheading": "",
             "title": "",
             "below_text": false,
@@ -535,6 +559,9 @@
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/HVWT77UCH1-Lifestyle-2_77cb2ba3-df3e-4b93-bdc7-a2b31c11a08d.jpg",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
             "subheading": "",
             "title": "",
             "below_text": false,
@@ -550,6 +577,9 @@
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/ASU-ScoopNeck-ForGrain-OnModel-2_1.jpg",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
             "subheading": "",
             "title": "",
             "below_text": false,
@@ -565,6 +595,9 @@
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/HVWT81HAR1-Lifest-5psd.jpg",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
             "subheading": "",
             "title": "",
             "below_text": false,
@@ -580,6 +613,9 @@
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/HVWT80SOC4-Campaign-1_1.jpg",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
             "subheading": "",
             "title": "",
             "below_text": false,
@@ -595,6 +631,9 @@
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/HVWS26MIA1-Campaign-Group-2_8ba35dac-77e1-4481-bb73-f2befc1f55f8.jpg",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
             "subheading": "",
             "title": "",
             "below_text": false,
