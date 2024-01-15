@@ -7,6 +7,10 @@
     --text-color: {{ settings.footer_text_color.red }}, {{ settings.footer_text_color.green }}, {{ settings.footer_text_color.blue }};
     --border-color: {{ border_color.red }}, {{ border_color.green }}, {{ border_color.blue }};
   }
+
+  .footer__logo {
+    width: 50px;
+  }
 </style>
 
 <footer class="footer {% if settings.footer_background == settings.background %}footer--bordered{% endif %}">
@@ -24,6 +28,12 @@
               {%- when 'text' -%}
                 {%- if block.settings.title != blank -%}
                   <p class="footer__item-title heading heading--small">{{ block.settings.title | escape }}</p>
+                {%- endif -%}
+
+                {%- if block.settings.content != blank -%}
+                  <div class="footer__item-content">
+                    {{- block.settings.content -}}
+                  </div>
                 {%- endif -%}
 
                 <div class="footer-logo-container">
@@ -47,12 +57,6 @@
                      <img loading="lazy" sizes="{{ block.settings.logo5_width }}px" class="footer__logo" {% render 'image-attributes', image: block.settings.logo5, sizes: '100, 200, 300, 400, 500, 600' %}>
                   {% endif %}
                 </div>
-
-                {%- if block.settings.content != blank -%}
-                  <div class="footer__item-content">
-                    {{- block.settings.content -}}
-                  </div>
-                {%- endif -%}
 
               {%- when 'links' -%}
                 {%- assign menu = block.settings.menu -%}
