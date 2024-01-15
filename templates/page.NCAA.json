@@ -198,28 +198,28 @@
           "type": "logo",
           "settings": {
             "logo": "shopify:\/\/shop_images\/PUR.png",
-            "link": ""
+            "link": "shopify:\/\/collections\/purdue"
           }
         },
         "logo_V3i3e9": {
           "type": "logo",
           "settings": {
             "logo": "shopify:\/\/shop_images\/SDS.png",
-            "link": ""
+            "link": "shopify:\/\/collections\/san-diego-state-university"
           }
         },
         "logo_FUebmk": {
           "type": "logo",
           "settings": {
             "logo": "shopify:\/\/shop_images\/SOC.png",
-            "link": ""
+            "link": "shopify:\/\/collections\/university-of-southern-california"
           }
         },
         "logo_R9WrDp": {
           "type": "logo",
           "settings": {
             "logo": "shopify:\/\/shop_images\/WAS.png",
-            "link": ""
+            "link": "shopify:\/\/collections\/university-of-washington"
           }
         }
       },
