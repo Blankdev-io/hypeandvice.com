@@ -168,10 +168,10 @@
                   }
 
                   @media screen and (min-width: 750px) {
-                    height: {{ block.settings.custom_height_size }}px !important;
+                    .custom-height-{{ block.id }} {
+                      height: {{ block.settings.custom_height_size }}px !important;
                     }
                   }
-                    
                   </style>
                   
                   {%- if section.settings.layout == 'grid' and collection_image.aspect_ratio > 2.5 -%}
