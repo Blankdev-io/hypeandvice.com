@@ -164,12 +164,12 @@
 
                   {%- if section.settings.layout == 'grid' and collection_image.aspect_ratio > 2.5 -%}
                     {%- assign height_constraint = 800 | at_most: collection_image.height -%}
-                    <img class="list-collections__item-image" {% if section.settings.reveal_on_scroll %}reveal{% endif %} loading="lazy" sizes="{{ image_sizes }}" {% render 'image-attributes', image: collection_image, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400', height_constraint: height_constraint, crop: 'center' %}>
+                    <img class="list-collections__item-image" {% if section.settings.reveal_on_scroll %}reveal{% endif %} loading="lazy" sizes="{{ image_sizes }}" {% render 'image-attributes', image: collection_image, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400', height_constraint: height_constraint, crop: 'center' %} {% if block.settings.custom_height %} style="height: {{ block.settings.custom_height_size }}px;"{% endif %}>
                   {%- else -%}
                     {% if forloop.index == 1 %}
-                    <img class="list-collections__item-image" src="{{ block.settings.image | img_url: '500x' }}">
+                    <img class="list-collections__item-image" src="{{ block.settings.image | img_url: '500x' }}" {% if block.settings.custom_height %} style="height: {{ block.settings.custom_height_size }}px;"{% endif %}>
                     {% else %}
-                    <img class="list-collections__item-image" {% if section.settings.reveal_on_scroll %}reveal{% endif %} loading="lazy" sizes="{{ image_sizes }}" {% render 'image-attributes', image: collection_image, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800' %}>
+                    <img class="list-collections__item-image" {% if section.settings.reveal_on_scroll %}reveal{% endif %} loading="lazy" sizes="{{ image_sizes }}" {% render 'image-attributes', image: collection_image, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800' %} {% if block.settings.custom_height %} style="height: {{ block.settings.custom_height_size }}px;"{% endif %}>
                     {% endif %}  
                 {%- endif -%}
                 {%- else -%}
@@ -241,6 +241,22 @@
           "id": "image",
           "label": "Image",
           "info": "Grid and carousel modes: 1100 x 1400px .jpg recommended / Collage mode: 1320 x 1480px .jpg recommended (highlighted image) and 1320 x 700px .jpg recommended (normal image)"
+        },
+        {
+          "type": "checkbox",
+          "id": "custom_height",
+          "label": "Enable Custom Height",
+          "default": false
+        },
+        {
+          "type": "range",
+          "id": "custom_height_size",
+          "label": "Custom Height Size (in pixels)",
+          "min": 100,
+          "max": 1000,
+          "step": 10,
+          "default": 500,
+          "unit": "px"
         },
         {
           "type": "text",
