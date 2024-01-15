@@ -26,6 +26,28 @@
                   <p class="footer__item-title heading heading--small">{{ block.settings.title | escape }}</p>
                 {%- endif -%}
 
+                <div class="footer-logo-container">
+                  {% if block.settings.logo1 != blank %}
+                     <img loading="lazy" sizes="{{ block.settings.logo1_width }}px" class="footer__logo" {% render 'image-attributes', image: block.settings.logo1, sizes: '100, 200, 300, 400, 500, 600' %}>
+                  {% endif %}
+
+                  {% if block.settings.logo2 != blank %}
+                     <img loading="lazy" sizes="{{ block.settings.logo2_width }}px" class="footer__logo" {% render 'image-attributes', image: block.settings.logo2, sizes: '100, 200, 300, 400, 500, 600' %}>
+                  {% endif %}
+
+                  {% if block.settings.logo3 != blank %}
+                     <img loading="lazy" sizes="{{ block.settings.logo3_width }}px" class="footer__logo" {% render 'image-attributes', image: block.settings.logo3, sizes: '100, 200, 300, 400, 500, 600' %}>
+                  {% endif %}
+
+                  {% if block.settings.logo4 != blank %}
+                     <img loading="lazy" sizes="{{ block.settings.logo4_width }}px" class="footer__logo" {% render 'image-attributes', image: block.settings.logo4, sizes: '100, 200, 300, 400, 500, 600' %}>
+                  {% endif %}
+
+                  {% if block.settings.logo5 != blank %}
+                     <img loading="lazy" sizes="{{ block.settings.logo5_width }}px" class="footer__logo" {% render 'image-attributes', image: block.settings.logo5, sizes: '100, 200, 300, 400, 500, 600' %}>
+                  {% endif %}
+                </div>
+
                 {%- if block.settings.content != blank -%}
                   <div class="footer__item-content">
                     {{- block.settings.content -}}
