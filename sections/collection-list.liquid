@@ -162,14 +162,26 @@
                       {%- capture image_sizes -%}(max-width: 740px) calc(100vw - 24px * 2), 660px{%- endcapture -%}
                   {%- endcase -%}
 
+                  <style>
+                  .custom-height-{{ block.id }} {
+                    height: {{ block.settings.custom_height_size_mobile }}px !important;
+                  }
+
+                  @media screen and (min-width: 750px) {
+                    height: {{ block.settings.custom_height_size }}px !important;
+                    }
+                  }
+                    
+                  </style>
+                  
                   {%- if section.settings.layout == 'grid' and collection_image.aspect_ratio > 2.5 -%}
                     {%- assign height_constraint = 800 | at_most: collection_image.height -%}
-                    <img class="list-collections__item-image" {% if section.settings.reveal_on_scroll %}reveal{% endif %} loading="lazy" sizes="{{ image_sizes }}" {% render 'image-attributes', image: collection_image, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400', height_constraint: height_constraint, crop: 'center' %} {% if block.settings.custom_height %} style="height: {{ block.settings.custom_height_size }}px;"{% endif %}>
+                    <img class="list-collections__item-image{% if block.settings.custom_height %} custom-height-{{ block.id }}{% endif %}" {% if section.settings.reveal_on_scroll %}reveal{% endif %} loading="lazy" sizes="{{ image_sizes }}" {% render 'image-attributes', image: collection_image, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400', height_constraint: height_constraint, crop: 'center' %}>
                   {%- else -%}
                     {% if forloop.index == 1 %}
-                    <img class="list-collections__item-image" src="{{ block.settings.image | img_url: '500x' }}" {% if block.settings.custom_height %} style="height: {{ block.settings.custom_height_size }}px;"{% endif %}>
+                    <img class="list-collections__item-image{% if block.settings.custom_height %} custom-height-{{ block.id }}{% endif %}" src="{{ block.settings.image | img_url: '500x' }}">
                     {% else %}
-                    <img class="list-collections__item-image" {% if section.settings.reveal_on_scroll %}reveal{% endif %} loading="lazy" sizes="{{ image_sizes }}" {% render 'image-attributes', image: collection_image, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800' %} {% if block.settings.custom_height %} style="height: {{ block.settings.custom_height_size }}px;"{% endif %}>
+                    <img class="list-collections__item-image{% if block.settings.custom_height %} custom-height-{{ block.id }}{% endif %}" {% if section.settings.reveal_on_scroll %}reveal{% endif %} loading="lazy" sizes="{{ image_sizes }}" {% render 'image-attributes', image: collection_image, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800' %}>
                     {% endif %}  
                 {%- endif -%}
                 {%- else -%}
