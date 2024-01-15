@@ -51,14 +51,14 @@
           "type": "logo",
           "settings": {
             "logo": "shopify:\/\/shop_images\/michigan_6abf4b10-b0ac-4997-9e03-f675c38568cc.png",
-            "link": "https:\/\/www.hypeandvice.com\/collections\/university-of-michigan"
+            "link": "shopify:\/\/collections\/university-of-michigan"
           }
         },
         "b78e97be-1093-4054-94ab-988811ffc6a5": {
           "type": "logo",
           "settings": {
             "logo": "shopify:\/\/shop_images\/osu.png",
-            "link": "https:\/\/www.hypeandvice.com\/collections\/ohio-state-university-osu"
+            "link": "shopify:\/\/collections\/ohio-state-university-osu"
           }
         },
         "5511dc15-28d6-4b28-8637-c45496fe7e1d": {
@@ -107,28 +107,28 @@
           "type": "logo",
           "settings": {
             "logo": "shopify:\/\/shop_images\/COL_879d1e52-c1e3-4081-bea8-5822359dd460.png",
-            "link": ""
+            "link": "shopify:\/\/collections\/university-of-colorado-boulder"
           }
         },
         "97ec09d3-9f24-4d79-9ae9-d1fb99e2ec6d": {
           "type": "logo",
           "settings": {
             "logo": "shopify:\/\/shop_images\/INU.png",
-            "link": ""
+            "link": "shopify:\/\/collections\/indiana-university"
           }
         },
         "6cdc1f5e-fc4e-4c64-8535-21bdde045b2d": {
           "type": "logo",
           "settings": {
             "logo": "shopify:\/\/shop_images\/ARS.png",
-            "link": ""
+            "link": "shopify:\/\/collections\/arizona-state-university"
           }
         },
         "e1058adb-13f1-4ecf-ab8e-79a348810d2e": {
           "type": "logo",
           "settings": {
             "logo": "shopify:\/\/shop_images\/MCH.png",
-            "link": ""
+            "link": "shopify:\/\/collections\/michigan-state-university"
           }
         },
         "f9e60bf3-4871-454e-9a5e-c8b4f383d608": {
@@ -142,7 +142,7 @@
           "type": "logo",
           "settings": {
             "logo": "shopify:\/\/shop_images\/IOW.png",
-            "link": ""
+            "link": "shopify:\/\/collections\/university-of-iowa"
           }
         },
         "924daf84-e23c-485d-9bd6-f155dd13b246": {
