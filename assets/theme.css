@@ -15217,7 +15217,8 @@ shopify-payment-terms {
   }
 
   .prev-next-button.prev-next-button-styles {
-    background: lightgray;
+    background: transparent;
+    border: transparent;
   }
 
   @media screen and (max-width: 750px) {
