@@ -145,6 +145,12 @@
         "reveal_on_scroll": false,
         "subheading": "",
         "title": "SHOP BY CATEGORY",
+        "heading_font_desktop": 16,
+        "heading_font_mobile": 14,
+        "heading_font_family": "Zurich Extended",
+        "category_font_desktop": 16,
+        "category_font_mobile": 12,
+        "category_font_family": "Zurich Extended",
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
@@ -247,6 +253,14 @@
         "two_columns": true,
         "subheading": "",
         "title": "FEATURED SHOPS",
+        "custom_font": true,
+        "heading_font_desktop": 16,
+        "heading_font_mobile": 14,
+        "heading_font_family": "Zurich Extended",
+        "category_font_desktop": 12,
+        "category_font_mobile": 12,
+        "category_font_family": "Zurich Extended",
+        "category_margin": 2,
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
@@ -608,6 +622,14 @@
         "two_columns": false,
         "subheading": "",
         "title": "make school cool 🏁",
+        "custom_font": false,
+        "heading_font_desktop": 16,
+        "heading_font_mobile": 14,
+        "heading_font_family": "Zurich Extended",
+        "category_font_desktop": 16,
+        "category_font_mobile": 14,
+        "category_font_family": "Zurich Extended",
+        "category_margin": 10,
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
