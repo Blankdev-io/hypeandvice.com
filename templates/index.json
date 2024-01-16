@@ -130,30 +130,6 @@
             "link_url": "",
             "text_color": "#000000"
           }
-        },
-        "collection_VxY9Re": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/HVWB55AL001.jpg",
-            "subheading": "",
-            "title": "Test",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "#000000"
-          }
-        },
-        "collection_WnWFQe": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/HVWB55AL001.jpg",
-            "subheading": "",
-            "title": "Test",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "#000000"
-          }
         }
       },
       "block_order": [
@@ -163,9 +139,7 @@
         "collection_M4kbWB",
         "collection_GcgFJf",
         "collection_crLBn8",
-        "collection_CAdw7m",
-        "collection_VxY9Re",
-        "collection_WnWFQe"
+        "collection_CAdw7m"
       ],
       "settings": {
         "reveal_on_scroll": false,
