@@ -53,13 +53,13 @@
   }
 
   .collection-list-item-custom p {
-    font-size: {{ section.settings.category_font_desktop }}px !important;
-    font-family: "{{ section.settings.category_font_family }}", sans-serif !important;
+    font-size: {{ block.settings.category_font_desktop }}px !important;
+    font-family: "{{ block.settings.category_font_family }}", sans-serif !important;
   } 
   
   @media screen and (max-width: 1000px) {
     .collection-list-item-custom p {
-      font-size: {{ section.settings.category_font_mobile }}px !important;
+      font-size: {{ block.settings.category_font_mobile }}px !important;
     } 
 
     .collection-list-custom {
