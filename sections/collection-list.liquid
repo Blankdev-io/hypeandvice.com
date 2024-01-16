@@ -46,6 +46,26 @@
       --section-block-overlay-opacity: {{ block.settings.overlay_opacity | divided_by: 100.0 }};
     }
   {%- endfor -%}
+
+  .collection-list-custom{
+    font-size: {{ section.settings.heading_font_desktop }}px !important;
+    font-family: "{{ section.settings.heading_font_family }}", sans-serif !important;  
+  }
+
+  .collection-list-item-custom p {
+    font-size: {{ section.settings.category_font_desktop }}px !important;
+    font-family: "{{ section.settings.category_font_family }}", sans-serif !important;
+  } 
+  
+  @media screen and (max-width: 1000px) {
+    .collection-list-item-custom p {
+      font-size: {{ section.settings.category_font_mobile }}px !important;
+    } 
+
+    .collection-list-custom {
+      font-size: {{ section.settings.heading_font_mobile }}px !important;
+    }
+  }
 </style>
 
 <section class="section {% unless blends_with_background %}section--flush{% endunless %}">
@@ -58,7 +78,7 @@
           {%- endif -%}
 
           {%- if section.settings.title != blank -%}
-            <h3 class="heading h2">{{ section.settings.title | escape }}</h3>
+            <h3 class="heading h2{% if section.settings.custom_font %} collection-list-custom{% endif %}">{{ section.settings.title | escape }}</h3>
           {%- endif -%}
         </header>
       {%- endif -%}
@@ -196,7 +216,7 @@
               </div>
             
               {%- if collection_content != blank -%}
-                <div class="{% if block.settings.below_text %}category__item-info text-container{% else %}list-collections__item-info text-container{% endif %}">
+                <div class="{% if block.settings.below_text %}category__item-info{% if section.settings.custom_font %} collection-list-item-custom{% endif %} text-container{% else %}list-collections__item-info text-container{% endif %}">
                   {{- collection_content -}}
                 </div>
               {%- endif -%}
