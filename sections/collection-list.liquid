@@ -56,7 +56,11 @@
     font-size: {{ section.settings.category_font_desktop }}px !important;
     font-family: "{{ section.settings.category_font_family }}", sans-serif !important;
   } 
-  
+
+  .collection-list-item-custom p:first-of-type {
+    margin-bottom: {{ section.settings.category_padding }}px !important;
+  }
+
   @media screen and (max-width: 1000px) {
     .collection-list-item-custom p {
       font-size: {{ section.settings.category_font_mobile }}px !important;
