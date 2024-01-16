@@ -14,8 +14,7 @@
         "template--14800247914601__d817cfc1-c6e0-48b0-a01b-d0d9b9e3e2d0-image-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/379716159_280836371559976_7752434194550245406_n.jpg",
-            "split_image": "shopify:\/\/shop_images\/379381950_2992708767540287_6088491700829557619_n.jpg",
+            "image": "shopify:\/\/shop_images\/H_V_NBA_CONCEPT-2_HOMEPAGE-DESKTOP.jpg",
             "show_videos": false,
             "autoplay": true,
             "loop": true,
@@ -27,9 +26,9 @@
             "mobile_video_webm": "",
             "mobile_video_mp4": "",
             "text_position": "middle_center",
-            "subheading": "Support your favorite team",
-            "title": "NBA",
-            "button_1_text": "SHOP BY TEAM",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
             "button_1_link": "",
             "button_2_text": "",
             "button_2_link": "",
@@ -262,7 +261,7 @@
           "type": "logo",
           "settings": {
             "logo": "shopify:\/\/shop_images\/WIZ.png",
-            "link": ""
+            "link": "shopify:\/\/collections\/washington-wizards"
           }
         }
       },
@@ -319,8 +318,12 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
             "subheading": "",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
@@ -332,8 +335,12 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
             "subheading": "",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
@@ -345,8 +352,12 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
             "subheading": "",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
@@ -358,8 +369,12 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
             "subheading": "",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
@@ -371,8 +386,12 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
             "subheading": "",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
@@ -384,8 +403,12 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
             "subheading": "",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
@@ -405,6 +428,7 @@
       "settings": {
         "reveal_on_scroll": false,
         "layout": "grid",
+        "two_columns": false,
         "subheading": "Styles everyone is loving this season 💘",
         "title": "SHOP BY STYLE",
         "background": "rgba(0,0,0,0)",
