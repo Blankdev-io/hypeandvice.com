@@ -14,7 +14,7 @@
         "template--14800247914601__d817cfc1-c6e0-48b0-a01b-d0d9b9e3e2d0-image-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/H_V_NBA_CONCEPT-2_HOMEPAGE-DESKTOP.jpg",
+            "image": "shopify:\/\/shop_images\/H_V_NBA_HOMEPAGE-DESKTOP_3000x1500px_1.jpg",
             "show_videos": false,
             "autoplay": true,
             "loop": true,
@@ -431,6 +431,14 @@
         "two_columns": false,
         "subheading": "Styles everyone is loving this season 💘",
         "title": "SHOP BY STYLE",
+        "custom_font": false,
+        "heading_font_desktop": 16,
+        "heading_font_mobile": 14,
+        "heading_font_family": "Zurich Extended",
+        "category_font_desktop": 16,
+        "category_font_mobile": 14,
+        "category_font_family": "Zurich Extended",
+        "category_margin": 10,
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
