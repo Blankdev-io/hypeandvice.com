@@ -58,7 +58,7 @@
   } 
 
   .collection-list-item-custom p:first-of-type {
-    margin-bottom: {{ section.settings.category_padding }}px !important;
+    margin-bottom: {{ section.settings.category_margin }}px !important;
   }
 
   @media screen and (max-width: 1000px) {
@@ -499,8 +499,8 @@
     },
     {
       "type": "range",
-      "id": "category_padding",
-      "label": "Padding Between Heading and Subheading",
+      "id": "category_margin",
+      "label": "Margin Between Heading and Subheading",
       "min": 1,
       "max": 50,
       "step": 1,
