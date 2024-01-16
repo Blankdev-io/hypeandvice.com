@@ -297,6 +297,7 @@
         "b68e61ae-744a-4908-98b1-91402840a993",
         "59ebf1af-eae5-4d81-a36b-3ab9c4d6d91a"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "subheading": "",
@@ -425,6 +426,7 @@
         "template--14800247914601__cd1d8d7e-d094-4191-970d-574c4ff4bf16-collection-5",
         "template--14800247914601__cd1d8d7e-d094-4191-970d-574c4ff4bf16-collection-6"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "layout": "grid",
@@ -469,6 +471,7 @@
       "block_order": [
         "template--14800247914601__86ec8265-4fa4-4932-81fc-86b8dfe27f85-image-2"
       ],
+      "disabled": true,
       "settings": {
         "section_height": "medium",
         "transition_type": "fade",
@@ -513,6 +516,7 @@
       "block_order": [
         "template--14800247914601__13ad5cf8-e725-4b4f-947f-b5a6bddcab18-image-1"
       ],
+      "disabled": true,
       "settings": {
         "section_height": "medium",
         "transition_type": "fade",
@@ -523,6 +527,7 @@
     },
     "7147b3bf-750f-48bb-b9d5-02eccc46b778": {
       "type": "custom-html",
+      "disabled": true,
       "settings": {
         "subheading": "Tag us on your pics to be featured & enter for a chance to win a $100 HV gift-card.",
         "title": "InstaShop ✨",
@@ -538,6 +543,7 @@
       "blocks": {
         "template--14800247914601__d96266ec-42a8-4b27-b5f0-f069f5066979-image-1": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/14310797_302187446826857_845709436_n.jpg",
             "show_videos": false,
@@ -568,6 +574,7 @@
       "block_order": [
         "template--14800247914601__d96266ec-42a8-4b27-b5f0-f069f5066979-image-1"
       ],
+      "disabled": true,
       "settings": {
         "section_height": "small",
         "transition_type": "fade",
