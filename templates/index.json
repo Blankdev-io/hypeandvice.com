@@ -148,7 +148,7 @@
         "heading_font_desktop": 16,
         "heading_font_mobile": 14,
         "heading_font_family": "Zurich Extended",
-        "category_font_desktop": 14,
+        "category_font_desktop": 12,
         "category_font_mobile": 12,
         "category_font_family": "ZurichBT",
         "background": "rgba(0,0,0,0)",
@@ -684,6 +684,7 @@
       "block_order": [
         "1654546546825ee9c7-0"
       ],
+      "disabled": true,
       "settings": {
         "section_height": "medium",
         "transition_type": "fade",
