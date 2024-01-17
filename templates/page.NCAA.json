@@ -364,6 +364,28 @@
             "link_url": "",
             "text_color": "#000000"
           }
+        },
+        "collection_9TRyr8": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#000000"
+          }
+        },
+        "collection_gC9q6X": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#000000"
+          }
         }
       },
       "block_order": [
@@ -371,7 +393,9 @@
         "collection_fBAXTJ",
         "collection_imHYYj",
         "collection_VXV8ht",
-        "collection_m3Cwax"
+        "collection_m3Cwax",
+        "collection_9TRyr8",
+        "collection_gC9q6X"
       ],
       "settings": {
         "reveal_on_scroll": false,
@@ -886,6 +910,7 @@
       "block_order": [
         "image_6YU3hK"
       ],
+      "disabled": true,
       "settings": {
         "section_height": "medium",
         "transition_type": "fade",
