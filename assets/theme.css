@@ -15272,6 +15272,7 @@ shopify-payment-terms {
       width: auto;
       min-width: auto;
       padding: 0;
+      gap: 15px !important;
     }
   }
 
