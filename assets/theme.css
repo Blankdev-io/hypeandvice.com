@@ -15306,7 +15306,7 @@ shopify-payment-terms {
 }
 
 .list-collections__prev-next.prev-next-buttons.categories-custom {
-  max-width: 100%;
+  width: 100%;
 }
 
 .list-collections__item-list.category-list {
