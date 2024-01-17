@@ -317,20 +317,6 @@
     "16492381491d455b02": {
       "type": "collection-list",
       "blocks": {
-        "collection_eqN3ed": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/C2CBAD3A-6746-40F3-A7DA-0C32DA5999CC.jpg",
-            "subheading": "BOXER SHORTS",
-            "title": "",
-            "link_text": "",
-            "link_url": "shopify:\/\/collections\/boxer-shorts",
-            "text_color": "rgba(0,0,0,0)",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
         "2d460212-53fd-4802-8d36-f722c01ea345": {
           "type": "collection",
           "settings": {
@@ -340,6 +326,20 @@
             "title": "",
             "link_text": "",
             "link_url": "shopify:\/\/collections\/college-jerseys",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_eqN3ed": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/C2CBAD3A-6746-40F3-A7DA-0C32DA5999CC.jpg",
+            "subheading": "BOXER SHORTS",
+            "title": "",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/boxer-shorts",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -585,8 +585,8 @@
         }
       },
       "block_order": [
-        "collection_eqN3ed",
         "2d460212-53fd-4802-8d36-f722c01ea345",
+        "collection_eqN3ed",
         "367cd815-1eda-4612-ad56-625c3c75669d",
         "164923814910707c7f-1",
         "ecf90d37-a849-4316-9452-f72e600e0939",
