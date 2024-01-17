@@ -15040,6 +15040,17 @@ shopify-payment-terms {
   font-family: "Recoleta-SemiBold";
   src: url("https://cdn.shopify.com/s/files/1/0061/4167/3590/files/Recoleta_SemiBold.otf?v=1668790087") format("opentype");
 }
+@font-face {
+    font-family: 'Zurich';
+    src: url('https://cdn.shopify.com/s/files/1/0061/4167/3590/files/ZurichBT.eot?v=1705512790');
+    src: url('https://cdn.shopify.com/s/files/1/0061/4167/3590/files/ZurichBT.eot?v=1705512790#iefix') format('embedded-opentype'),
+        url('https://cdn.shopify.com/s/files/1/0061/4167/3590/files/ZurichBT.woff2?v=1705512790') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0061/4167/3590/files/ZurichBT.woff?v=1705512790') format('woff'),
+        url('https://cdn.shopify.com/s/files/1/0061/4167/3590/files/ZurichBT.ttf?v=1705512867') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 .mt-4{
   margin-top:1.5rem;
