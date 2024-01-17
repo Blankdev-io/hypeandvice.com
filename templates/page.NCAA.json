@@ -375,14 +375,14 @@
       ],
       "settings": {
         "reveal_on_scroll": false,
-        "subheading": "Styles everyone is loving this season",
-        "title": "",
+        "subheading": "",
+        "title": "STYLES EVERYONE IS LOVING THIS SEASON",
         "heading_font_desktop": 16,
         "heading_font_mobile": 14,
-        "heading_font_family": "Armata",
-        "category_font_desktop": 16,
-        "category_font_mobile": 14,
-        "category_font_family": "Zurich Extended",
+        "heading_font_family": "Zurich Extended",
+        "category_font_desktop": 12,
+        "category_font_mobile": 12,
+        "category_font_family": "ZurichBT",
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
