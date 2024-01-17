@@ -723,50 +723,6 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
-    "165454654631be36fe": {
-      "type": "slideshow-meroxio",
-      "blocks": {
-        "1654546546825ee9c7-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/5822CE41-6147-4839-ABF3-16060EBFDA1A.jpg",
-            "split_image": "shopify:\/\/shop_images\/115DD56E-8ED7-44BD-955F-A401256DA6AD.jpg",
-            "show_videos": false,
-            "autoplay": true,
-            "loop": true,
-            "muted": true,
-            "video_webm": "",
-            "video_mp4": "",
-            "split_video_webm": "",
-            "split_video_mp4": "",
-            "mobile_video_webm": "",
-            "mobile_video_mp4": "",
-            "text_position": "bottom_left",
-            "subheading": "",
-            "title": "TOP SELLERS",
-            "button_1_text": "SHOP NOW!",
-            "button_1_link": "shopify:\/\/collections\/best-selling-collection",
-            "button_2_text": "",
-            "button_2_link": "shopify:\/\/collections\/best-selling-collection",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "1654546546825ee9c7-0"
-      ],
-      "settings": {
-        "section_height": "medium",
-        "transition_type": "fade",
-        "autoplay": false,
-        "cycle_speed": 4,
-        "background": "rgba(0,0,0,0)"
-      }
-    },
     "logo_list_ymKc4R": {
       "type": "logo-list",
       "blocks": {
@@ -837,6 +793,50 @@
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)",
         "logo_background": "rgba(0,0,0,0)"
+      }
+    },
+    "165454654631be36fe": {
+      "type": "slideshow-meroxio",
+      "blocks": {
+        "1654546546825ee9c7-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5822CE41-6147-4839-ABF3-16060EBFDA1A.jpg",
+            "split_image": "shopify:\/\/shop_images\/115DD56E-8ED7-44BD-955F-A401256DA6AD.jpg",
+            "show_videos": false,
+            "autoplay": true,
+            "loop": true,
+            "muted": true,
+            "video_webm": "",
+            "video_mp4": "",
+            "split_video_webm": "",
+            "split_video_mp4": "",
+            "mobile_video_webm": "",
+            "mobile_video_mp4": "",
+            "text_position": "bottom_left",
+            "subheading": "",
+            "title": "TOP SELLERS",
+            "button_1_text": "SHOP NOW!",
+            "button_1_link": "shopify:\/\/collections\/best-selling-collection",
+            "button_2_text": "",
+            "button_2_link": "shopify:\/\/collections\/best-selling-collection",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "1654546546825ee9c7-0"
+      ],
+      "settings": {
+        "section_height": "medium",
+        "transition_type": "fade",
+        "autoplay": false,
+        "cycle_speed": 4,
+        "background": "rgba(0,0,0,0)"
       }
     },
     "1650006254940409c8": {
@@ -1000,8 +1000,8 @@
     "16506544520a12bd2c",
     "1655412672f035473e",
     "165065640506142d5c",
-    "165454654631be36fe",
     "logo_list_ymKc4R",
+    "165454654631be36fe",
     "1650006254940409c8",
     "slideshow_fA4KxQ",
     "164923770607431a63",
