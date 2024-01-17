@@ -53,7 +53,7 @@
             "collection": "",
             "image": "shopify:\/\/shop_images\/HVWT98TTU2-1_f9a103b2-b428-46c9-b3c4-1ad5a162d7ad.jpg",
             "subheading": "",
-            "title": "Tops",
+            "title": "TOPS",
             "link_text": "",
             "link_url": "",
             "text_color": "#000000"
@@ -65,7 +65,7 @@
             "collection": "alabama-a-m-university",
             "image": "shopify:\/\/shop_images\/FF14FE10-CCD2-4140-A9B5-1FEE4C944225.jpg",
             "subheading": "",
-            "title": "Bottoms",
+            "title": "BOTTOMS",
             "link_text": "",
             "link_url": "",
             "text_color": "#000000"
@@ -77,7 +77,7 @@
             "collection": "appalachian-state-university",
             "image": "shopify:\/\/shop_images\/HVWJ3LSU3-5_2.jpg",
             "subheading": "",
-            "title": "Outerwear",
+            "title": "OUTERWEAR",
             "link_text": "",
             "link_url": "",
             "text_color": "#000000"
@@ -89,7 +89,7 @@
             "collection": "arizona-state-university",
             "image": "shopify:\/\/shop_images\/MIC_MIA_SET-2.jpg",
             "subheading": "",
-            "title": "Lounge",
+            "title": "LOUNGE",
             "link_text": "",
             "link_url": "",
             "text_color": "#000000"
@@ -101,7 +101,7 @@
             "collection": "",
             "image": "shopify:\/\/shop_images\/HVWO21INU3-4FILM_1.jpg",
             "subheading": "",
-            "title": "Rompers",
+            "title": "ROMPERS",
             "link_text": "",
             "link_url": "",
             "text_color": "#000000"
@@ -113,7 +113,7 @@
             "collection": "",
             "image": "shopify:\/\/shop_images\/127A0249_11f16a0a-9015-493a-ab72-2a69b9f548fc.jpg",
             "subheading": "",
-            "title": "Sweats",
+            "title": "SWEATS",
             "link_text": "",
             "link_url": "",
             "text_color": "#000000"
@@ -125,7 +125,7 @@
             "collection": "atlanta-hawks",
             "image": "shopify:\/\/shop_images\/HVWT95GSO1-Front_800x_756823c8-7067-4b10-a84b-4f4be6b59d22.webp",
             "subheading": "",
-            "title": "Sale",
+            "title": "SALE",
             "link_text": "",
             "link_url": "",
             "text_color": "#000000"
@@ -148,9 +148,9 @@
         "heading_font_desktop": 16,
         "heading_font_mobile": 14,
         "heading_font_family": "Zurich Extended",
-        "category_font_desktop": 16,
+        "category_font_desktop": 14,
         "category_font_mobile": 12,
-        "category_font_family": "Armata",
+        "category_font_family": "ZurichBT",
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
