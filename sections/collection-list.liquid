@@ -47,26 +47,26 @@
     }
   {%- endfor -%}
 
-  .collection-list-custom {
+  .collection-list-custom-{{ section.id }} {
     font-size: {{ section.settings.heading_font_desktop }}px !important;
     font-family: "{{ section.settings.heading_font_family }}", sans-serif !important;  
   }
 
-  .collection-list-item-custom p {
+  .collection-list-item-custom-{{ section.id }} p {
     font-size: {{ section.settings.category_font_desktop }}px !important;
     font-family: "{{ section.settings.category_font_family }}", sans-serif !important;
   } 
 
-  .collection-list-item-custom p:first-of-type {
+  .collection-list-item-custom-{{ section.id }} p:first-of-type {
     margin-bottom: {{ section.settings.category_margin }}px !important;
   }
 
   @media screen and (max-width: 1000px) {
-    .collection-list-item-custom p {
+    .collection-list-item-custom-{{ section.id }} p {
       font-size: {{ section.settings.category_font_mobile }}px !important;
     } 
 
-    .collection-list-custom {
+    .collection-list-custom-{{ section.id }} {
       font-size: {{ section.settings.heading_font_mobile }}px !important;
     }
   }
@@ -82,7 +82,7 @@
           {%- endif -%}
 
           {%- if section.settings.title != blank -%}
-            <h3 class="heading h2{% if section.settings.custom_font %} collection-list-custom{% endif %}">{{ section.settings.title | escape }}</h3>
+            <h3 class="heading h2{% if section.settings.custom_font %} collection-list-custom-{{ section.id }}{% endif %}">{{ section.settings.title | escape }}</h3>
           {%- endif -%}
         </header>
       {%- endif -%}
@@ -220,7 +220,7 @@
               </div>
             
               {%- if collection_content != blank -%}
-                <div class="{% if block.settings.below_text %}category__item-info{% if section.settings.custom_font %} collection-list-item-custom{% endif %} text-container{% else %}list-collections__item-info text-container{% endif %}">
+                <div class="{% if block.settings.below_text %}category__item-info{% if section.settings.custom_font %} collection-list-item-custom-{{ section.id }}{% endif %} text-container{% else %}list-collections__item-info text-container{% endif %}">
                   {{- collection_content -}}
                 </div>
               {%- endif -%}
