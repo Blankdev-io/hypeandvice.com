@@ -15309,4 +15309,9 @@ shopify-payment-terms {
   max-width: 100%;
 }
 
+.list-collections__item-list.category-list {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /* END OF CHANGES TO THE CATEGORIES CAROUSEL TO LIMIT ITS WIDTH */
