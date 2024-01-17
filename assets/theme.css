@@ -15292,3 +15292,21 @@ shopify-payment-terms {
 .prev-next-buttons.prev-next-no-right {
   right: 0;
 }
+
+/* CHANGES TO THE CATEGORIES CAROUSEL TO LIMIT ITS WIDTH */
+
+.list-collections.list-collections--carousel.list-collection--category {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.list-collections__scroller.categories-custom.hide-scrollbar.is-scrollable {
+  max-width: 90%;
+  margin: auto;
+}
+
+.list-collections__prev-next.prev-next-buttons.categories-custom {
+  max-width: 100%;
+}
+
+/* END OF CHANGES TO THE CATEGORIES CAROUSEL TO LIMIT ITS WIDTH */
