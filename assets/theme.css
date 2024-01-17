@@ -15272,12 +15272,12 @@ shopify-payment-terms {
       width: auto;
       min-width: auto;
       padding: 0;
-      gap: 15px !important;
     }
   }
 
 .list-collections__item-list.grid-2-columns {
   grid-template-columns: repeat(auto-fit, calc(50% - var(--container-gutter) / 2)) !important;
+  gap: 15px !important;
 }
 
 .below-text-header {
