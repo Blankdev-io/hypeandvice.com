@@ -158,49 +158,38 @@
           {%- endunless -%}
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    var allVariants = {{ product.variants | json }};
+  document.addEventListener('DOMContentLoaded', function() {
+    // Function to check and update variant availability
+    function updateVariantAvailability() {
+      const productVariants = {{ product.variants | json }};
+      const variantSelectors = document.querySelectorAll('.product-form__option-selector input');
 
-    function checkAvailability() {
-        document.querySelectorAll('.product-form__option-selector input[type="radio"]').forEach(function(input) {
-            var selectedOptions = getSelectedOptions();
-            var variant = findVariant(allVariants, selectedOptions);
-            
-            if (variant && !variant.available) {
-                // Mark this option as unavailable
-                input.closest('.block-swatch, .variant-swatch, .color-swatch').classList.add('is-disabled');
-            } else {
-                // Remove the unavailable marking
-                input.closest('.block-swatch, .variant-swatch, .color-swatch').classList.remove('is-disabled');
-            }
-        });
-    }
+      variantSelectors.forEach((selector) => {
+        const optionIndex = selector.getAttribute('name').replace('option', '');
+        const optionValue = selector.value;
 
-    function getSelectedOptions() {
-        var selectedOptions = [];
-        document.querySelectorAll('.product-form__option-selector input[type="radio"]:checked').forEach(function(input) {
-            selectedOptions.push(input.value);
+        const isAvailable = productVariants.some(variant => {
+          return variant.options[parseInt(optionIndex) - 1] === optionValue && variant.available;
         });
-        return selectedOptions;
-    }
 
-    function findVariant(variants, selectedOptions) {
-        return variants.find(function(variant) {
-            return selectedOptions.every(function(option) {
-                return variant.options.includes(option);
-            });
-        });
+        if (!isAvailable) {
+          selector.parentElement.classList.add('is-disabled');
+        } else {
+          selector.parentElement.classList.remove('is-disabled');
+        }
+      });
     }
 
     // Initial check
-    checkAvailability();
+    updateVariantAvailability();
 
-    // Add event listeners
-    document.querySelectorAll('.product-form__option-selector input[type="radio"]').forEach(function(input) {
-        input.addEventListener('change', checkAvailability);
+    // Event listener for when variant options change
+    document.querySelectorAll('.product-form__option-selector input').forEach((input) => {
+      input.addEventListener('change', updateVariantAvailability);
     });
-});
+  });
 </script>
+
        
 
         {%- comment -%}
