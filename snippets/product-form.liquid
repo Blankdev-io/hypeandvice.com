@@ -160,47 +160,41 @@
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     var variants = {{ product.variants | json }};
-    
-    function checkAvailability() {
-        var selectedOptions = {};
+    var selectors = document.querySelectorAll('.product-form__option-selector select, .product-form__option-selector input');
 
-        // Collect the current selected options
-        document.querySelectorAll('.product-form__option-selector select, .product-form__option-selector input:checked').forEach(function(input) {
-            selectedOptions[input.name] = input.value;
+    // Function to update the availability of the variant options
+    function updateVariantOptions() {
+        // Get currently selected options
+        var selectedOptions = Array.from(selectors).map(selector => selector.value).filter(Boolean);
+
+        // Determine available variants based on selected options
+        var availableVariants = variants.filter(variant => {
+            return selectedOptions.every((option, index) => {
+                return variant.options[index] === option || variant.options[index] === undefined;
+            });
         });
 
-        // Iterate over each variant to update its availability
-        variants.forEach(function(variant) {
-            var isAvailable = variant.available;
-            var variantOptionMatch = true;
-
-            variant.options.forEach(function(option, index) {
-                var optionName = 'option' + (index + 1);
-                if (selectedOptions[optionName] && selectedOptions[optionName] !== option) {
-                    variantOptionMatch = false;
+        // Disable or enable options based on available variants
+        selectors.forEach((selector, index) => {
+            Array.from(selector.options).forEach(option => {
+                var isOptionAvailable = availableVariants.some(variant => variant.options[index] === option.value);
+                option.disabled = !isOptionAvailable;
+                if (!isOptionAvailable) {
+                    option.classList.add('is-disabled');
+                } else {
+                    option.classList.remove('is-disabled');
                 }
             });
-
-            // Apply or remove the 'is-disabled' class based on availability
-            if (!variantOptionMatch || isAvailable) {
-                document.querySelectorAll(`[data-variant-id="${variant.id}"]`).forEach(function(el) {
-                    el.classList.remove('is-disabled');
-                });
-            } else {
-                document.querySelectorAll(`[data-variant-id="${variant.id}"]`).forEach(function(el) {
-                    el.classList.add('is-disabled');
-                });
-            }
         });
     }
 
-    // Set up event listeners on variant selectors
-    document.querySelectorAll('.product-form__option-selector select, .product-form__option-selector input').forEach(function(selector) {
-        selector.addEventListener('change', checkAvailability);
+    // Attach event listeners to variant selectors
+    selectors.forEach(selector => {
+        selector.addEventListener('change', updateVariantOptions);
     });
 
-    // Initial check
-    checkAvailability();
+    // Initial update
+    updateVariantOptions();
 });
 
 </script>
