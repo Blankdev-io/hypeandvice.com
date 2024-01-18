@@ -159,39 +159,42 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    // Function to update variant availability
-    function updateVariantAvailability() {
+    // Function to check if a variant combination is available
+    function isVariantCombinationAvailable(variantCombination) {
         // Get all variants of the product
         var variants = {{ product.variants | json }};
 
-        // Iterate over each variant
-        variants.forEach(function(variant) {
-            // Create a selector for this variant based on its options
-            var variantSelector = variant.options.map(function(option, index) {
-                return `[name="option${index + 1}"][value="${option}"]`;
-            }).join('');
+        // Check if any variant matches the combination and is available
+        return variants.some(function(variant) {
+            return variant.title === variantCombination && variant.available;
+        });
+    }
 
-            // Find elements that match this variant
-            var variantElements = document.querySelectorAll(variantSelector);
+    // Function to update the variants display
+    function updateVariantsDisplay() {
+        // Find all variant option selectors
+        var variantSelectors = document.querySelectorAll('.product-form__option-selector input, .product-form__option-selector select');
 
-            // If the variant is not available, add the 'is-disabled' class
-            if (!variant.available) {
-                variantElements.forEach(function(element) {
-                    var parentSwatch = element.closest('.block-swatch, .color-swatch, .variant-swatch');
-                    if (parentSwatch) {
-                        parentSwatch.classList.add('is-disabled');
-                    }
-                });
+        // Iterate through each selector
+        variantSelectors.forEach(function(selector) {
+            // Get the current variant combination
+            var currentCombination = Array.from(variantSelectors).map(function(input) {
+                return input.value;
+            }).join(' / ');
+
+            // If the current combination is not available, disable this option
+            if (!isVariantCombinationAvailable(currentCombination)) {
+                selector.closest('.block-swatch, .color-swatch, .variant-swatch').classList.add('is-disabled');
             }
         });
     }
 
-    // Call the function to update variant availability
-    updateVariantAvailability();
+    // Call the function to update variants display
+    updateVariantsDisplay();
 
-    // Optional: If your store updates variants dynamically (e.g., with AJAX), call this function when the variant changes
-    // document.addEventListener('variantChanged', function() {
-    //     updateVariantAvailability();
+    // Optional: If the variants are dynamically updated (e.g., AJAX), call updateVariantsDisplay after updates
+    // document.addEventListener('variantsUpdated', function() {
+    //     updateVariantsDisplay();
     // });
 });
 
