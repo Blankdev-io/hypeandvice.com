@@ -1361,6 +1361,9 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
           return media
         }
       },
+    mounted() {
+  this.checkVariantAvailability(); // Initial check for availability
+},
       delimiters:['%{', '}%'],
       created: async function () {
         // this.getCurrentMedia()
