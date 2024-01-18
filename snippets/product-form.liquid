@@ -161,29 +161,33 @@
   document.addEventListener('DOMContentLoaded', function() {
     const productVariants = {{ product.variants | json }};
     
-    // Function to get currently selected options, excluding the one for the given index
-    function getSelectedOptions(excludeIndex) {
-      return Array.from(document.querySelectorAll('.product-form__option-selector'))
-        .map((selector, index) => excludeIndex === index ? null : selector.querySelector('input:checked')?.value)
-        .filter(value => value !== null);
+    // Function to get the index of an option by its name
+    function getOptionIndex(optionName) {
+      const optionTemplate = document.querySelector('.product-form__option-selector input[name="' + optionName + '"]');
+      return parseInt(optionTemplate.name.replace('option', '')) - 1;
     }
 
-    // Function to check if any available variant includes the given option value
-    function isOptionAvailable(optionValue, optionIndex) {
-      const selectedOptions = getSelectedOptions(optionIndex);
-      return productVariants.some(variant => {
-        const variantOptions = variant.title.split(' / ');
-        if (!variant.available) return false;
-        variantOptions[optionIndex] = optionValue;
-        return selectedOptions.every((opt, idx) => idx === optionIndex || variantOptions[idx] === opt);
-      });
+    // Function to create a variant key from the current selections
+    function createVariantKey(currentSelections) {
+      return currentSelections.map(opt => opt || '').join(' / ');
+    }
+
+    // Function to check if a variant with the given key is available
+    function isVariantAvailable(variantKey) {
+      return productVariants.some(variant => variant.title === variantKey && variant.available);
     }
 
     // Function to update variant availability
     function updateVariantAvailability() {
-      document.querySelectorAll('.product-form__option-selector').forEach((selector, index) => {
+      const currentSelections = Array.from(document.querySelectorAll('.product-form__option-selector input:checked')).map(input => input.value);
+      
+      document.querySelectorAll('.product-form__option-selector').forEach((selector, optionTypeIndex) => {
         selector.querySelectorAll('input').forEach((input) => {
-          if (!isOptionAvailable(input.value, index)) {
+          let tempSelections = [...currentSelections];
+          tempSelections[optionTypeIndex] = input.value;
+          const variantKey = createVariantKey(tempSelections);
+
+          if (!isVariantAvailable(variantKey)) {
             input.parentElement.classList.add('is-disabled');
           } else {
             input.parentElement.classList.remove('is-disabled');
@@ -192,15 +196,22 @@
       });
     }
 
-    // Initial check
-    updateVariantAvailability();
-
     // Event listener for when variant options change
     document.querySelectorAll('.product-form__option-selector input').forEach((input) => {
-      input.addEventListener('change', updateVariantAvailability);
+      input.addEventListener('change', function() {
+        // Reset disabled state before checking again
+        document.querySelectorAll('.product-form__option-selector input').forEach(i => {
+          i.parentElement.classList.remove('is-disabled');
+        });
+        updateVariantAvailability();
+      });
     });
+
+    // Initial check
+    updateVariantAvailability();
   });
 </script>
+
 
         {%- comment -%}
         ----------------------------------------------------------------------------------------------------------------
