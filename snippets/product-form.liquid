@@ -174,10 +174,10 @@
             
                         if (!isAvailable) {
                             // Apply the unavailable styling or indicator to the option
-                            option.closest('.block-swatch, .variant-swatch, .color-swatch').classList.add('unavailable');
+                            option.closest('.block-swatch, .variant-swatch, .color-swatch').classList.add('is-disabled');
                         } else {
                             // Remove the unavailable styling or indicator from the option
-                            option.closest('.block-swatch, .variant-swatch, .color-swatch').classList.remove('unavailable');
+                            option.closest('.block-swatch, .variant-swatch, .color-swatch').classList.remove('is-disabled');
                         }
                     });
                 }
