@@ -159,44 +159,59 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    // Fetch all variants and their availability
     var variants = {{ product.variants | json }};
-    var variantOptions = document.querySelectorAll('.product-form__option-selector input, .product-form__option-selector select');
+    var options = document.querySelectorAll('.product-form__option-selector select, .product-form__option-selector input');
 
-    // Function to check if any variant with a specific option is available
-    function isOptionAvailable(optionIndex, optionValue) {
-        return variants.some(function(variant) {
-            return variant.options[optionIndex] === optionValue && variant.available;
-        });
-    }
+    function updateVariantAvailability() {
+        // Build the current selection
+        var currentSelection = Array.from(options).map(function(option) {
+            return option.tagName.toLowerCase() === 'select' ? option.value : option.checked ? option.value : null;
+        }).filter(Boolean).join(' / ');
 
-    // Update the display of each variant option
-    function updateVariantOptionsDisplay() {
-        variantOptions.forEach(function(option, index) {
-            if (option.tagName.toLowerCase() === 'select') {
-                // Handle <select> elements
-                Array.from(option.options).forEach(function(opt) {
-                    if (!isOptionAvailable(index, opt.value)) {
-                        opt.classList.add('is-disabled');
-                    }
+        // Check and update availability for each option
+        options.forEach(function(option, index) {
+            var optionType = option.tagName.toLowerCase();
+            var optionValues = optionType === 'select' ? Array.from(option.options) : [option];
+
+            optionValues.forEach(function(opt) {
+                var testSelection = [...currentSelection.split(' / ')];
+                testSelection[index] = opt.value;
+                var testCombination = testSelection.join(' / ');
+
+                var isAvailable = variants.some(function(variant) {
+                    return variant.title === testCombination && variant.available;
                 });
-            } else {
-                // Handle <input> elements (like radio buttons)
-                if (!isOptionAvailable(index, option.value)) {
-                    var parentElement = option.closest('.block-swatch, .color-swatch, .variant-swatch');
-                    if (parentElement) {
-                        parentElement.classList.add('is-disabled');
+
+                if (!isAvailable) {
+                    if (optionType === 'select') {
+                        opt.classList.add('is-disabled');
+                    } else {
+                        var parentElement = option.closest('.block-swatch, .color-swatch, .variant-swatch');
+                        if (parentElement) {
+                            parentElement.classList.add('is-disabled');
+                        }
+                    }
+                } else {
+                    if (optionType === 'select') {
+                        opt.classList.remove('is-disabled');
+                    } else {
+                        var parentElement = option.closest('.block-swatch, .color-swatch, .variant-swatch');
+                        if (parentElement) {
+                            parentElement.classList.remove('is-disabled');
+                        }
                     }
                 }
-            }
+            });
         });
     }
 
-    // Call the function initially
-    updateVariantOptionsDisplay();
+    // Update variant availability whenever an option changes
+    options.forEach(function(option) {
+        option.addEventListener('change', updateVariantAvailability);
+    });
 
-    // Optional: If your store updates variants dynamically, call this function when variants are updated.
-    // Add event listeners as necessary for your specific setup.
+    // Initial update
+    updateVariantAvailability();
 });
 
 </script>
