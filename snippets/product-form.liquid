@@ -160,25 +160,26 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const productVariants = {{ product.variants | json }};
+    
+    // Function to get currently selected options
+    function getSelectedOptions() {
+      return Array.from(document.querySelectorAll('.product-form__option-selector input:checked')).map(input => input.value);
+    }
 
-    // Function to check if a variant combination is available
-    function isVariantAvailable(options) {
-      const variantKey = options.join(' / ');
+    // Function to check if changing one option leads to an available variant
+    function isOptionAvailable(optionValue, optionIndex) {
+      const currentOptions = getSelectedOptions();
+      currentOptions[optionIndex] = optionValue;
+      const variantKey = currentOptions.join(' / ');
+
       return productVariants.some(variant => variant.title === variantKey && variant.available);
     }
 
     // Function to update variant availability
     function updateVariantAvailability() {
-      const optionSelectors = document.querySelectorAll('.product-form__option-selector');
-      const currentSelectedOptions = Array.from(optionSelectors).map(selector => selector.querySelector('input:checked')?.value || '');
-
-      optionSelectors.forEach((selector, index) => {
-        const inputs = selector.querySelectorAll('input');
-        inputs.forEach((input) => {
-          let testOptions = [...currentSelectedOptions];
-          testOptions[index] = input.value;
-
-          if (!isVariantAvailable(testOptions)) {
+      document.querySelectorAll('.product-form__option-selector').forEach((selector, index) => {
+        selector.querySelectorAll('input').forEach((input) => {
+          if (!isOptionAvailable(input.value, index)) {
             input.parentElement.classList.add('is-disabled');
           } else {
             input.parentElement.classList.remove('is-disabled');
@@ -187,15 +188,16 @@
       });
     }
 
+    // Initial check
+    updateVariantAvailability();
+
     // Event listener for when variant options change
     document.querySelectorAll('.product-form__option-selector input').forEach((input) => {
       input.addEventListener('change', updateVariantAvailability);
     });
-
-    // Initial check
-    updateVariantAvailability();
   });
 </script>
+
 
 
 
