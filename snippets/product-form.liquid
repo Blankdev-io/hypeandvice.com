@@ -67,7 +67,6 @@
               {{ block.shopify_attributes }} 
               v-for="(option, index) in options"
             >
-  
                 {%- assign option_downcase = option.name | downcase -%}
                 {%- capture option_id -%}option-{{ section.id }}-{{ template.suffix }}-{{ product.id }}-{{ forloop.index }}{%- endcapture -%}
 
@@ -198,53 +197,47 @@
 
             <script>
       document.addEventListener('DOMContentLoaded', function() {
+        var variants = {{ product.variants | json }};
+        var form = document.getElementById('product-form-{{section.id}}-${product.id}');
+
         function updateVariantAvailability() {
-          var selectedOptions = {};
-          document.querySelectorAll('.product-form__variants [type="radio"]:checked').forEach(function(input) {
-            selectedOptions[input.name] = input.value;
+          var selectedOptions = Array.from(form.querySelectorAll('input[type=radio]:checked')).map(function(input) {
+            return input.value;
           });
 
-          var availableVariants = {{ product.variants | json }};
-          availableVariants.forEach(function(variant) {
-            var isAvailable = true;
-            for (var key in selectedOptions) {
-              if (selectedOptions[key] != variant[key]) {
-                isAvailable = false;
-                break;
+          variants.forEach(function(variant) {
+            if (!variant.available) {
+              var variantOptionsMatch = true;
+              variant.options.forEach(function(option, index) {
+                if (selectedOptions[index] !== option) {
+                  variantOptionsMatch = false;
+                }
+              });
+
+              if (variantOptionsMatch) {
+                form.querySelectorAll('input[type=radio]').forEach(function(input) {
+                  if (!selectedOptions.includes(input.value)) {
+                    input.disabled = true;
+                  }
+                });
               }
             }
-            var variantInputs = document.querySelectorAll('.product-form__variants [value="' + variant.title + '"]');
-            variantInputs.forEach(function(input) {
-              var label = document.querySelector('label[for="' + input.id + '"]');
-              if (label) {
-                if (isAvailable) {
-                  label.classList.remove('unavailable');
-                } else {
-                  label.classList.add('unavailable');
-                }
-              }
-            });
           });
         }
 
-        // Bind event listeners
-        document.querySelectorAll('.product-form__variants [type="radio"]').forEach(function(input) {
-          input.addEventListener('change', updateVariantAvailability);
-        });
-
-        // Initial update
+        form.addEventListener('change', updateVariantAvailability);
         updateVariantAvailability();
       });
     </script>
 
 <style>
-  .unavailable {
-    /* Style for unavailable variants */
+  input[type=radio]:disabled + label {
+    /* Style for disabled variants */
     opacity: 0.5;
     pointer-events: none;
   }
 </style>
-        
+
         {%- comment -%}
         ----------------------------------------------------------------------------------------------------------------
         LINE ITEM PROPERTY
