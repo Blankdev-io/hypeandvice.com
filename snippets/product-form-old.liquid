@@ -499,3 +499,47 @@ IMPLEMENTATION NOTE: if during the iteration of the options we have found an opt
               
   })
 </script>
+
+{% comment %} 
+  NEW SCRIPT ADDED TO SHOW UNAVAILABLE VARIANTS
+{% endcomment %}
+
+{% assign json_variants = product.variants | map: 'id' | to_json %}
+<script>
+  var jsonVariants = {{ json_variants }};
+  var unavailableVariants = {};
+
+  document.addEventListener('DOMContentLoaded', function() {
+    updateUnavailableVariants();
+  });
+
+  function updateUnavailableVariants() {
+    jsonVariants.forEach(function(variantId) {
+      var variant = Shopify.variants.find(function(v) { return v.id === variantId; });
+      if (!variant.available) {
+        unavailableVariants[variantId] = true;
+      }
+    });
+    markUnavailableVariants();
+  }
+
+  function markUnavailableVariants() {
+    document.querySelectorAll('.variant-swatch__radio, .color-swatch__radio, .block-swatch__radio, .combo-box__option-item').forEach(function(el) {
+      var variantId = parseInt(el.value);
+      if (unavailableVariants[variantId]) {
+        el.parentElement.classList.add('unavailable');
+      } else {
+        el.parentElement.classList.remove('unavailable');
+      }
+    });
+  }
+</script>
+
+<!-- Your existing product-variants code goes here -->
+
+<style>
+  .unavailable {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+</style>
