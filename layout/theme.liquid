@@ -694,37 +694,26 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
         }
       },
       methods: {
-        checkVariantAvailability() {
-    const colorOption = this.options.find(option => option.name == "Color");
-    const sizeOption = this.options.find(option => option.name == "Size");
+ checkVariantAvailability() {
+    const colorSwatches = document.getElementsByClassName('color-swatch');
+    const sizeOptions = document.getElementsByClassName('size-option');
 
-    if (!colorOption || !sizeOption) {
-      console.warn("Color or Size options not found");
-      return;
+    // Check availability for color swatches
+    for (const colorSwatch of colorSwatches) {
+      const colorValue = colorSwatch.getAttribute("value");
+      let isColorAvailable = this.variants.some(variant => 
+        variant.option1 === colorValue && variant.available);
+
+      colorSwatch.classList.toggle("is-disabled", !isColorAvailable);
     }
 
-    const swatchesColor = document.getElementsByClassName('color-swatch');
+    // Check availability for size options
+    for (const sizeOption of sizeOptions) {
+      const sizeValue = sizeOption.getAttribute("value");
+      let isSizeAvailable = this.variants.some(variant => 
+        variant.option2 === sizeValue && variant.available);
 
-    for (const swatchColor of swatchesColor) {
-      const colorValue = swatchColor.getAttribute("value");
-
-      let isColorAvailable = false;
-
-      for (const size of sizeOption.values) {
-        const variant = this.variants.find(variant => 
-          variant.option1 === colorValue && variant.option2 === size && variant.available);
-
-        if (variant) {
-          isColorAvailable = true;
-          break;
-        }
-      }
-
-      if (!isColorAvailable) {
-        swatchColor.classList.add("is-disabled");
-      } else {
-        swatchColor.classList.remove("is-disabled");
-      }
+      sizeOption.classList.toggle("is-disabled", !isSizeAvailable);
     }
   },
         
@@ -788,7 +777,8 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
           // console.log(swatchesFind)
           this.changeVariant()
 
-              this.checkVariantAvailability(); // Call this function whenever the size changes
+                  this.checkVariantAvailability();
+
 
         },
         formatPrice(value) {
@@ -799,7 +789,7 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
           if(option.position == 2){
             // this.variant_selection.option2 = selected_value
             this.$store.commit('setVariantSelectionOp2', selected_value)
-            this.checkVariantAvailability(); // Call this function whenever the color changes
+            this.checkVariantAvailability();
           }
           if(option.position == 1){
             // this.variant_selection.option1 = selected_value
