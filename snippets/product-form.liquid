@@ -52,13 +52,22 @@
         VARIANT PICKER BLOCK TYPE
         ----------------------------------------------------------------------------------------------------------------
         {%- endcomment -%}
-        {%- when 'variant_picker' -%} <div class="sa-variant-picker"></div> 
+        {%- when 'variant_picker' -%}
+          <div class="sa-variant-picker"></div>
           {%- unless product.has_only_default_variant or block.settings.hide_sold_out_variants and product.available == false -%}
             {%- assign size_chart_page = block.settings.size_chart_page -%}
             {%- assign found_size_option = false -%}
-
-            <product-variants :handle="product.handle" :form-id="`product-form-{{section.id}}-${product.id}`" {% if update_url %}update-url{% endif %} {% if block.settings.hide_sold_out_variants %}hide-sold-out-variants{% endif %} class="product-form__variants" {{ block.shopify_attributes }} v-for="(option, index) in options">
-
+          
+            <product-variants 
+              :handle="product.handle" 
+              :form-id="`product-form-{{section.id}}-${product.id}`" 
+              {% if update_url %}update-url{% endif %} 
+              {% if block.settings.hide_sold_out_variants %}hide-sold-out-variants{% endif %} 
+              class="product-form__variants" 
+              {{ block.shopify_attributes }} 
+              v-for="(option, index) in options"
+            >
+  
                 {%- assign option_downcase = option.name | downcase -%}
                 {%- capture option_id -%}option-{{ section.id }}-{{ template.suffix }}-{{ product.id }}-{{ forloop.index }}{%- endcapture -%}
 
@@ -184,9 +193,57 @@
                         </button>
                       </div> {% endcomment %}
                 </div>
-            </product-variants>
-          {%- endunless -%}
+ <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        function updateVariantAvailability() {
+          var selectedOptions = {};
+          document.querySelectorAll('.product-form__variants [type="radio"]:checked').forEach(function(input) {
+            selectedOptions[input.name] = input.value;
+          });
 
+          var availableVariants = {{ product.variants | json }};
+          availableVariants.forEach(function(variant) {
+            var isAvailable = true;
+            for (var key in selectedOptions) {
+              if (selectedOptions[key] != variant[key]) {
+                isAvailable = false;
+                break;
+              }
+            }
+            var variantInputs = document.querySelectorAll('.product-form__variants [value="' + variant.title + '"]');
+            variantInputs.forEach(function(input) {
+              var label = document.querySelector('label[for="' + input.id + '"]');
+              if (label) {
+                if (isAvailable) {
+                  label.classList.remove('unavailable');
+                } else {
+                  label.classList.add('unavailable');
+                }
+              }
+            });
+          });
+        }
+
+        // Bind event listeners
+        document.querySelectorAll('.product-form__variants [type="radio"]').forEach(function(input) {
+          input.addEventListener('change', updateVariantAvailability);
+        });
+
+        // Initial update
+        updateVariantAvailability();
+      });
+    </script>
+  </product-variants>
+{%- endunless -%}
+
+<style>
+  .unavailable {
+    /* Style for unavailable variants */
+    opacity: 0.5;
+    pointer-events: none;
+  }
+</style>
+        
         {%- comment -%}
         ----------------------------------------------------------------------------------------------------------------
         LINE ITEM PROPERTY
