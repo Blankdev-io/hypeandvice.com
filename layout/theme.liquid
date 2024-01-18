@@ -848,13 +848,36 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
             swiffyslider.slideTo(sliderElement2, img2.getAttribute('index-r'))
           }
         },
-          isVariantAvailable(color, size) {
-    // Search through the product.variants to find a match where both color and size match
-    // and the variant is available. Return true if such a variant is found, else return false.
-    return this.product.variants.some(variant => 
-      variant.option1 === color && variant.option2 === size && variant.available
-    );
+        checkVariantAvailability() {
+    // Assuming 'variants' array has all possible combinations
+    this.variants.forEach(variant => {
+      // Determine if the variant is available
+      const isAvailable = this.isVariantAvailable(variant);
+
+      // Find the corresponding DOM element for this variant
+      // and add 'is-disabled' class if the variant is not available
+      // The logic here will depend on how your variants are rendered in the DOM
+      const variantElement = document.querySelector(`[data-variant-id="${variant.id}"]`);
+      if (variantElement) {
+        if (!isAvailable) {
+          variantElement.classList.add('is-disabled');
+        } else {
+          variantElement.classList.remove('is-disabled');
+        }
+      }
+    });
   },
+        isVariantAvailable(variant) {
+          // Logic to determine if the variant is available
+          // This could be a simple property check or a more complex logic
+          // depending on how your data is structured
+          return variant.available;
+        },
+        changeVariant() {
+          // ... existing logic ...
+          
+          this.checkVariantAvailability();
+        },
         changeProduct () {
           const changedProduct = this.products_tags.find( product => product.id == this.selected_college)
           var college = changedProduct.tags.find( tag => tag.includes('University') )
