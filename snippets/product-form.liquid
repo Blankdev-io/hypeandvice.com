@@ -193,7 +193,10 @@
                         </button>
                       </div> {% endcomment %}
                 </div>
- <script>
+            </product-variants>
+          {%- endunless -%}
+
+            <script>
       document.addEventListener('DOMContentLoaded', function() {
         function updateVariantAvailability() {
           var selectedOptions = {};
@@ -233,8 +236,6 @@
         updateVariantAvailability();
       });
     </script>
-  </product-variants>
-{%- endunless -%}
 
 <style>
   .unavailable {
