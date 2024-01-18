@@ -160,58 +160,47 @@
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     var variants = {{ product.variants | json }};
-    var options = document.querySelectorAll('.product-form__option-selector select, .product-form__option-selector input');
+    
+    function checkAvailability() {
+        var selectedOptions = {};
 
-    function updateVariantAvailability() {
-        // Build the current selection
-        var currentSelection = Array.from(options).map(function(option) {
-            return option.tagName.toLowerCase() === 'select' ? option.value : option.checked ? option.value : null;
-        }).filter(Boolean).join(' / ');
+        // Collect the current selected options
+        document.querySelectorAll('.product-form__option-selector select, .product-form__option-selector input:checked').forEach(function(input) {
+            selectedOptions[input.name] = input.value;
+        });
 
-        // Check and update availability for each option
-        options.forEach(function(option, index) {
-            var optionType = option.tagName.toLowerCase();
-            var optionValues = optionType === 'select' ? Array.from(option.options) : [option];
+        // Iterate over each variant to update its availability
+        variants.forEach(function(variant) {
+            var isAvailable = variant.available;
+            var variantOptionMatch = true;
 
-            optionValues.forEach(function(opt) {
-                var testSelection = [...currentSelection.split(' / ')];
-                testSelection[index] = opt.value;
-                var testCombination = testSelection.join(' / ');
-
-                var isAvailable = variants.some(function(variant) {
-                    return variant.title === testCombination && variant.available;
-                });
-
-                if (!isAvailable) {
-                    if (optionType === 'select') {
-                        opt.classList.add('is-disabled');
-                    } else {
-                        var parentElement = option.closest('.block-swatch, .color-swatch, .variant-swatch');
-                        if (parentElement) {
-                            parentElement.classList.add('is-disabled');
-                        }
-                    }
-                } else {
-                    if (optionType === 'select') {
-                        opt.classList.remove('is-disabled');
-                    } else {
-                        var parentElement = option.closest('.block-swatch, .color-swatch, .variant-swatch');
-                        if (parentElement) {
-                            parentElement.classList.remove('is-disabled');
-                        }
-                    }
+            variant.options.forEach(function(option, index) {
+                var optionName = 'option' + (index + 1);
+                if (selectedOptions[optionName] && selectedOptions[optionName] !== option) {
+                    variantOptionMatch = false;
                 }
             });
+
+            // Apply or remove the 'is-disabled' class based on availability
+            if (!variantOptionMatch || isAvailable) {
+                document.querySelectorAll(`[data-variant-id="${variant.id}"]`).forEach(function(el) {
+                    el.classList.remove('is-disabled');
+                });
+            } else {
+                document.querySelectorAll(`[data-variant-id="${variant.id}"]`).forEach(function(el) {
+                    el.classList.add('is-disabled');
+                });
+            }
         });
     }
 
-    // Update variant availability whenever an option changes
-    options.forEach(function(option) {
-        option.addEventListener('change', updateVariantAvailability);
+    // Set up event listeners on variant selectors
+    document.querySelectorAll('.product-form__option-selector select, .product-form__option-selector input').forEach(function(selector) {
+        selector.addEventListener('change', checkAvailability);
     });
 
-    // Initial update
-    updateVariantAvailability();
+    // Initial check
+    checkAvailability();
 });
 
 </script>
