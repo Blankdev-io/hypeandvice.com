@@ -694,6 +694,14 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
         }
       },
       methods: {
+        isVariantAvailable(option1, option2) {
+          // Assuming variants is an array of variant objects
+          const variant = this.variants.find(variant => 
+            variant.option1 === option1 && variant.option2 === option2
+          );
+          return variant && variant.available; // Return true if variant exists and is available
+        }
+        
         changeSize(selected_value, option) {
           const colorOption = this.options.find(option => option.name == "Color")
 
