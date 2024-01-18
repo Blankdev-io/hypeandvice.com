@@ -158,58 +158,44 @@
           {%- endunless -%}
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const productVariants = {{ product.variants | json }};
-    
-    // Function to get the index of an option by its name
-    function getOptionIndex(optionName) {
-      const optionTemplate = document.querySelector('.product-form__option-selector input[name="' + optionName + '"]');
-      return parseInt(optionTemplate.name.replace('option', '')) - 1;
+document.addEventListener("DOMContentLoaded", function() {
+    // Function to check if a variant is available
+    function isVariantAvailable(variant) {
+        return variant.available;
     }
 
-    // Function to create a variant key from the current selections
-    function createVariantKey(currentSelections) {
-      return currentSelections.map(opt => opt || '').join(' / ');
-    }
+    // Function to disable unavailable variants
+    function disableUnavailableVariants() {
+        // Get all variants of the product
+        var variants = {{ product.variants | json }};
+        
+        // Loop through each variant
+        variants.forEach(function(variant) {
+            // Construct the variant's option combination string
+            var variantOptions = variant.options.join(" / ");
 
-    // Function to check if a variant with the given key is available
-    function isVariantAvailable(variantKey) {
-      return productVariants.some(variant => variant.title === variantKey && variant.available);
-    }
-
-    // Function to update variant availability
-    function updateVariantAvailability() {
-      const currentSelections = Array.from(document.querySelectorAll('.product-form__option-selector input:checked')).map(input => input.value);
-      
-      document.querySelectorAll('.product-form__option-selector').forEach((selector, optionTypeIndex) => {
-        selector.querySelectorAll('input').forEach((input) => {
-          let tempSelections = [...currentSelections];
-          tempSelections[optionTypeIndex] = input.value;
-          const variantKey = createVariantKey(tempSelections);
-
-          if (!isVariantAvailable(variantKey)) {
-            input.parentElement.classList.add('is-disabled');
-          } else {
-            input.parentElement.classList.remove('is-disabled');
-          }
+            // Check if the variant is unavailable
+            if (!isVariantAvailable(variant)) {
+                // Find all elements that match the variant's options
+                var variantElements = document.querySelectorAll(`[data-variant-options="${variantOptions}"]`);
+                
+                // Add the 'is-disabled' class to each element
+                variantElements.forEach(function(element) {
+                    element.classList.add('is-disabled');
+                });
+            }
         });
-      });
     }
 
-    // Event listener for when variant options change
-    document.querySelectorAll('.product-form__option-selector input').forEach((input) => {
-      input.addEventListener('change', function() {
-        // Reset disabled state before checking again
-        document.querySelectorAll('.product-form__option-selector input').forEach(i => {
-          i.parentElement.classList.remove('is-disabled');
-        });
-        updateVariantAvailability();
-      });
-    });
+    // Initial call to disable unavailable variants
+    disableUnavailableVariants();
 
-    // Initial check
-    updateVariantAvailability();
-  });
+    // Optional: Add event listener if your site uses AJAX to update variants
+    // document.addEventListener('variantChange', function() {
+    //     disableUnavailableVariants();
+    // });
+});
+
 </script>
 
 
