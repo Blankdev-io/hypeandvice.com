@@ -158,43 +158,25 @@
           {%- endunless -%}
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    var variants = {{ product.variants | json }};
-    var selectors = document.querySelectorAll('.product-form__option-selector select, .product-form__option-selector input');
+document.addEventListener('DOMContentLoaded', function() {
+    const productVariants = {{ product.variants | json }};
+    const variantInputs = document.querySelectorAll('.block-swatch__radio, .color-swatch__radio');
 
-    // Function to update the availability of the variant options
-    function updateVariantOptions() {
-        // Get currently selected options
-        var selectedOptions = Array.from(selectors).map(selector => selector.value).filter(Boolean);
-
-        // Determine available variants based on selected options
-        var availableVariants = variants.filter(variant => {
-            return selectedOptions.every((option, index) => {
-                return variant.options[index] === option || variant.options[index] === undefined;
-            });
-        });
-
-        // Disable or enable options based on available variants
-        selectors.forEach((selector, index) => {
-            Array.from(selector.options).forEach(option => {
-                var isOptionAvailable = availableVariants.some(variant => variant.options[index] === option.value);
-                option.disabled = !isOptionAvailable;
-                if (!isOptionAvailable) {
-                    option.classList.add('is-disabled');
-                } else {
-                    option.classList.remove('is-disabled');
-                }
-            });
+    function isVariantAvailable(variantOptions) {
+        return productVariants.some(variant => {
+            return !variant.available || variant.options.every((option, index) => option === variantOptions[index]);
         });
     }
 
-    // Attach event listeners to variant selectors
-    selectors.forEach(selector => {
-        selector.addEventListener('change', updateVariantOptions);
-    });
+    variantInputs.forEach(input => {
+        const variantOption = input.value;
+        const variantNameParts = variantOption.split(' / ');
+        const isAvailable = isVariantAvailable(variantNameParts);
 
-    // Initial update
-    updateVariantOptions();
+        if (!isAvailable) {
+            input.parentElement.classList.add('is-disabled');
+        }
+    });
 });
 
 </script>
