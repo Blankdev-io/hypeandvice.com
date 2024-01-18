@@ -158,50 +158,41 @@
           {%- endunless -%}
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const productVariants = {{ product.variants | json }};
-    const optionSelectors = ['.block-swatch__radio', '.color-swatch__radio'];
-
-    function isVariantCombinationAvailable(options) {
-        return productVariants.some(variant => {
-            return variant.available && options.every((option, index) => option === variant.options[index]);
-        });
+document.addEventListener('DOMContentLoaded', function () {
+    // Assuming you have a function to check if a variant is available
+    function isVariantAvailable(variant) {
+        // Implement this function based on your product data
+        // Return true if variant is available, false otherwise
     }
 
     function updateVariantAvailability() {
-        const selectedOptions = optionSelectors.map(selector => {
-            const selectedInput = document.querySelector(`${selector}:checked`);
-            return selectedInput ? selectedInput.value : null;
-        });
-
-        productVariants.forEach(variant => {
-            const variantOptionsMatch = variant.options.every((option, index) => {
-                return !selectedOptions[index] || option === selectedOptions[index];
-            });
-
-            if (!variantOptionsMatch || !variant.available) {
-                optionSelectors.forEach((selector, index) => {
-                    const input = document.querySelector(`${selector}[value="${variant.options[index]}"]`);
-                    if (input && input.parentElement) {
-                        input.parentElement.classList.add('is-disabled');
-                    }
-                });
+        const variantElements = document.querySelectorAll('.color-swatch, .block-swatch');
+        variantElements.forEach(element => {
+            const variantValue = element.querySelector('input[type="radio"]').value;
+            if (!isVariantAvailable(variantValue)) {
+                element.classList.add('is-disabled');
+            } else {
+                element.classList.remove('is-disabled');
             }
         });
     }
 
-    // Run the initial update
+    // Call this function to initialize the variant availability
     updateVariantAvailability();
 
-    // Add event listeners to update availability when options are changed
-    optionSelectors.forEach(selector => {
-        document.querySelectorAll(selector).forEach(input => {
-            input.addEventListener('change', updateVariantAvailability);
+    // Add event listeners to variant selectors
+    const variantSelectors = document.querySelectorAll('.color-swatch__item, .block-swatch__item');
+    variantSelectors.forEach(selector => {
+        selector.addEventListener('click', function(event) {
+            // Update the selected variant here based on the clicked element
+            // For example, you can set the selected variant in a global variable
+            // Then, call the updateVariantAvailability function to refresh the UI
+            updateVariantAvailability();
         });
     });
 });
-
 </script>
+
 
 
         {%- comment -%}
