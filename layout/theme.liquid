@@ -848,12 +848,6 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
             swiffyslider.slideTo(sliderElement2, img2.getAttribute('index-r'))
           }
         },
-        isVariantUnavailable(optionValue, optionPosition) {
-          const foundVariant = this.variants.find(variant => 
-            variant[`option${optionPosition}`] === optionValue && variant.available
-          );
-          return !foundVariant;
-        },
         changeProduct () {
           const changedProduct = this.products_tags.find( product => product.id == this.selected_college)
           var college = changedProduct.tags.find( tag => tag.includes('University') )
