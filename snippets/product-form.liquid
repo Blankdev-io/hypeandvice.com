@@ -161,18 +161,22 @@
   document.addEventListener('DOMContentLoaded', function() {
     const productVariants = {{ product.variants | json }};
     
-    // Function to get currently selected options
-    function getSelectedOptions() {
-      return Array.from(document.querySelectorAll('.product-form__option-selector input:checked')).map(input => input.value);
+    // Function to get currently selected options, excluding the one for the given index
+    function getSelectedOptions(excludeIndex) {
+      return Array.from(document.querySelectorAll('.product-form__option-selector'))
+        .map((selector, index) => excludeIndex === index ? null : selector.querySelector('input:checked')?.value)
+        .filter(value => value !== null);
     }
 
-    // Function to check if changing one option leads to an available variant
+    // Function to check if any available variant includes the given option value
     function isOptionAvailable(optionValue, optionIndex) {
-      const currentOptions = getSelectedOptions();
-      currentOptions[optionIndex] = optionValue;
-      const variantKey = currentOptions.join(' / ');
-
-      return productVariants.some(variant => variant.title === variantKey && variant.available);
+      const selectedOptions = getSelectedOptions(optionIndex);
+      return productVariants.some(variant => {
+        const variantOptions = variant.title.split(' / ');
+        if (!variant.available) return false;
+        variantOptions[optionIndex] = optionValue;
+        return selectedOptions.every((opt, idx) => idx === optionIndex || variantOptions[idx] === opt);
+      });
     }
 
     // Function to update variant availability
@@ -197,11 +201,6 @@
     });
   });
 </script>
-
-
-
-
-       
 
         {%- comment -%}
         ----------------------------------------------------------------------------------------------------------------
