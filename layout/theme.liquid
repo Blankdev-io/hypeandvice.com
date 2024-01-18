@@ -848,12 +848,13 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
             swiffyslider.slideTo(sliderElement2, img2.getAttribute('index-r'))
           }
         },
-        isVariantAvailable(option1, option2) {
-          // Assuming variants is an array of variant objects
+        isVariantAvailable(selectedColor, selectedSize) {
+          // Find a variant that matches both the selected color and size
           const variant = this.variants.find(variant => 
-            variant.option1 === option1 && variant.option2 === option2
+            variant.option1 === selectedColor && variant.option2 === selectedSize
           );
-          return variant && variant.available; // Return true if variant exists and is available
+          // Return true if such a variant exists and is available
+          return variant && variant.available;
         },
         changeProduct () {
           const changedProduct = this.products_tags.find( product => product.id == this.selected_college)
