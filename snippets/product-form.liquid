@@ -160,22 +160,44 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const productVariants = {{ product.variants | json }};
-    const variantInputs = document.querySelectorAll('.block-swatch__radio, .color-swatch__radio');
+    const optionSelectors = ['.block-swatch__radio', '.color-swatch__radio'];
 
-    function isVariantAvailable(variantOptions) {
+    function isVariantCombinationAvailable(options) {
         return productVariants.some(variant => {
-            return !variant.available || variant.options.every((option, index) => option === variantOptions[index]);
+            return variant.available && options.every((option, index) => option === variant.options[index]);
         });
     }
 
-    variantInputs.forEach(input => {
-        const variantOption = input.value;
-        const variantNameParts = variantOption.split(' / ');
-        const isAvailable = isVariantAvailable(variantNameParts);
+    function updateVariantAvailability() {
+        const selectedOptions = optionSelectors.map(selector => {
+            const selectedInput = document.querySelector(`${selector}:checked`);
+            return selectedInput ? selectedInput.value : null;
+        });
 
-        if (!isAvailable) {
-            input.parentElement.classList.add('is-disabled');
-        }
+        productVariants.forEach(variant => {
+            const variantOptionsMatch = variant.options.every((option, index) => {
+                return !selectedOptions[index] || option === selectedOptions[index];
+            });
+
+            if (!variantOptionsMatch || !variant.available) {
+                optionSelectors.forEach((selector, index) => {
+                    const input = document.querySelector(`${selector}[value="${variant.options[index]}"]`);
+                    if (input && input.parentElement) {
+                        input.parentElement.classList.add('is-disabled');
+                    }
+                });
+            }
+        });
+    }
+
+    // Run the initial update
+    updateVariantAvailability();
+
+    // Add event listeners to update availability when options are changed
+    optionSelectors.forEach(selector => {
+        document.querySelectorAll(selector).forEach(input => {
+            input.addEventListener('change', updateVariantAvailability);
+        });
     });
 });
 
