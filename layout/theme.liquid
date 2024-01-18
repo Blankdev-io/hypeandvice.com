@@ -694,29 +694,6 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
         }
       },
       methods: {
- checkVariantAvailability() {
-    const colorSwatches = document.getElementsByClassName('color-swatch');
-    const sizeOptions = document.getElementsByClassName('block-swatch');
-
-    // Check availability for color swatches
-    for (const colorSwatch of colorSwatches) {
-      const colorValue = colorSwatch.getAttribute("value");
-      let isColorAvailable = this.variants.some(variant => 
-        variant.option1 === colorValue && variant.available);
-
-      colorSwatch.classList.toggle("is-disabled", !isColorAvailable);
-    }
-
-    // Check availability for size options
-    for (const sizeOption of sizeOptions) {
-      const sizeValue = sizeOption.getAttribute("value");
-      let isSizeAvailable = this.variants.some(variant => 
-        variant.option2 === sizeValue && variant.available);
-
-      sizeOption.classList.toggle("is-disabled", !isSizeAvailable);
-    }
-  },
-        
         changeSize(selected_value, option) {
           const colorOption = this.options.find(option => option.name == "Color")
 
@@ -776,10 +753,6 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
           }
           // console.log(swatchesFind)
           this.changeVariant()
-
-                  this.checkVariantAvailability();
-
-
         },
         formatPrice(value) {
             let val = (value/100).toFixed(2).replace(',', '.')
@@ -789,7 +762,6 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
           if(option.position == 2){
             // this.variant_selection.option2 = selected_value
             this.$store.commit('setVariantSelectionOp2', selected_value)
-            this.checkVariantAvailability();
           }
           if(option.position == 1){
             // this.variant_selection.option1 = selected_value
@@ -1361,9 +1333,6 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
           return media
         }
       },
-    mounted() {
-  this.checkVariantAvailability(); // Initial check for availability
-},
       delimiters:['%{', '}%'],
       created: async function () {
         // this.getCurrentMedia()
