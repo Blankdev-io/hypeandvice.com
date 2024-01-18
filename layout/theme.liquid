@@ -694,6 +694,40 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
         }
       },
       methods: {
+        checkVariantAvailability() {
+    const colorOption = this.options.find(option => option.name == "Color");
+    const sizeOption = this.options.find(option => option.name == "Size");
+
+    if (!colorOption || !sizeOption) {
+      console.warn("Color or Size options not found");
+      return;
+    }
+
+    const swatchesColor = document.getElementsByClassName('color-swatch');
+
+    for (const swatchColor of swatchesColor) {
+      const colorValue = swatchColor.getAttribute("value");
+
+      let isColorAvailable = false;
+
+      for (const size of sizeOption.values) {
+        const variant = this.variants.find(variant => 
+          variant.option1 === colorValue && variant.option2 === size && variant.available);
+
+        if (variant) {
+          isColorAvailable = true;
+          break;
+        }
+      }
+
+      if (!isColorAvailable) {
+        swatchColor.classList.add("is-disabled");
+      } else {
+        swatchColor.classList.remove("is-disabled");
+      }
+    }
+  },
+        
         changeSize(selected_value, option) {
           const colorOption = this.options.find(option => option.name == "Color")
 
@@ -753,6 +787,9 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
           }
           // console.log(swatchesFind)
           this.changeVariant()
+
+              this.checkVariantAvailability(); // Call this function whenever the size changes
+
         },
         formatPrice(value) {
             let val = (value/100).toFixed(2).replace(',', '.')
@@ -762,6 +799,7 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
           if(option.position == 2){
             // this.variant_selection.option2 = selected_value
             this.$store.commit('setVariantSelectionOp2', selected_value)
+            this.checkVariantAvailability(); // Call this function whenever the color changes
           }
           if(option.position == 1){
             // this.variant_selection.option1 = selected_value
