@@ -52,21 +52,13 @@
         VARIANT PICKER BLOCK TYPE
         ----------------------------------------------------------------------------------------------------------------
         {%- endcomment -%}
-        {%- when 'variant_picker' -%}
-          <div class="sa-variant-picker"></div>
+        {%- when 'variant_picker' -%} <div class="sa-variant-picker"></div> 
           {%- unless product.has_only_default_variant or block.settings.hide_sold_out_variants and product.available == false -%}
             {%- assign size_chart_page = block.settings.size_chart_page -%}
             {%- assign found_size_option = false -%}
-          
-            <product-variants 
-              :handle="product.handle" 
-              :form-id="`product-form-{{section.id}}-${product.id}`" 
-              {% if update_url %}update-url{% endif %} 
-              {% if block.settings.hide_sold_out_variants %}hide-sold-out-variants{% endif %} 
-              class="product-form__variants" 
-              {{ block.shopify_attributes }} 
-              v-for="(option, index) in options"
-            >
+
+            <product-variants :handle="product.handle" :form-id="`product-form-{{section.id}}-${product.id}`" {% if update_url %}update-url{% endif %} {% if block.settings.hide_sold_out_variants %}hide-sold-out-variants{% endif %} class="product-form__variants" {{ block.shopify_attributes }} v-for="(option, index) in options">
+
                 {%- assign option_downcase = option.name | downcase -%}
                 {%- capture option_id -%}option-{{ section.id }}-{{ template.suffix }}-{{ product.id }}-{{ forloop.index }}{%- endcapture -%}
 
@@ -153,7 +145,7 @@
                   <template v-if="option.name == 'Size'">
                     <div class="block-swatch-list">
                     <template v-for="(value, i) in option.values">
-                      <div class="block-swatch" >
+                      <div :class="{'is-disabled': variant_selection.available == false && variant_selection.option2 == value}" class="block-swatch" >
                         <input v-if="value == selected_variant.option1 || value == selected_variant.option2 || value == selected_variant.option3" class="block-swatch__radio visually-hidden" type="radio" :name="`option${option.position}`" :value="value" :form="`product-form-{{section.id}}-${product.id}`" :id="`option-{{ section.id }}-{{ template.suffix }}-${product.id}-${index}-${i}`" checked>
                         <input v-else class="block-swatch__radio visually-hidden" type="radio" :name="`option${option.position}`" :value="value" :form="`product-form-{{section.id}}-${product.id}`" :id="`option-{{ section.id }}-{{ template.suffix }}-${product.id}-${index}-${i}`">
                         <label  class="block-swatch__item" :for="`option-{{ section.id }}-{{ template.suffix }}-${product.id}-${index}-${i}`" v-on:click="changeSize(value, option)" v-html="value"></label>
@@ -194,49 +186,6 @@
                 </div>
             </product-variants>
           {%- endunless -%}
-
-            <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        var variants = {{ product.variants | json }};
-        var form = document.getElementById('product-form-{{section.id}}-${product.id}');
-
-        function updateVariantAvailability() {
-          var selectedOptions = Array.from(form.querySelectorAll('input[type=radio]:checked')).map(function(input) {
-            return input.value;
-          });
-
-          variants.forEach(function(variant) {
-            if (!variant.available) {
-              var variantOptionsMatch = true;
-              variant.options.forEach(function(option, index) {
-                if (selectedOptions[index] !== option) {
-                  variantOptionsMatch = false;
-                }
-              });
-
-              if (variantOptionsMatch) {
-                form.querySelectorAll('input[type=radio]').forEach(function(input) {
-                  if (!selectedOptions.includes(input.value)) {
-                    input.disabled = true;
-                  }
-                });
-              }
-            }
-          });
-        }
-
-        form.addEventListener('change', updateVariantAvailability);
-        updateVariantAvailability();
-      });
-    </script>
-
-<style>
-  input[type=radio]:disabled + label {
-    /* Style for disabled variants */
-    opacity: 0.5;
-    pointer-events: none;
-  }
-</style>
 
         {%- comment -%}
         ----------------------------------------------------------------------------------------------------------------
