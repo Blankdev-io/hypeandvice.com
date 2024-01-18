@@ -159,40 +159,39 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    // Function to check if a variant is available
-    function isVariantAvailable(variant) {
-        return variant.available;
-    }
-
-    // Function to disable unavailable variants
-    function disableUnavailableVariants() {
+    // Function to update variant availability
+    function updateVariantAvailability() {
         // Get all variants of the product
         var variants = {{ product.variants | json }};
-        
-        // Loop through each variant
-        variants.forEach(function(variant) {
-            // Construct the variant's option combination string
-            var variantOptions = variant.options.join(" / ");
 
-            // Check if the variant is unavailable
-            if (!isVariantAvailable(variant)) {
-                // Find all elements that match the variant's options
-                var variantElements = document.querySelectorAll(`[data-variant-options="${variantOptions}"]`);
-                
-                // Add the 'is-disabled' class to each element
+        // Iterate over each variant
+        variants.forEach(function(variant) {
+            // Create a selector for this variant based on its options
+            var variantSelector = variant.options.map(function(option, index) {
+                return `[name="option${index + 1}"][value="${option}"]`;
+            }).join('');
+
+            // Find elements that match this variant
+            var variantElements = document.querySelectorAll(variantSelector);
+
+            // If the variant is not available, add the 'is-disabled' class
+            if (!variant.available) {
                 variantElements.forEach(function(element) {
-                    element.classList.add('is-disabled');
+                    var parentSwatch = element.closest('.block-swatch, .color-swatch, .variant-swatch');
+                    if (parentSwatch) {
+                        parentSwatch.classList.add('is-disabled');
+                    }
                 });
             }
         });
     }
 
-    // Initial call to disable unavailable variants
-    disableUnavailableVariants();
+    // Call the function to update variant availability
+    updateVariantAvailability();
 
-    // Optional: Add event listener if your site uses AJAX to update variants
-    // document.addEventListener('variantChange', function() {
-    //     disableUnavailableVariants();
+    // Optional: If your store updates variants dynamically (e.g., with AJAX), call this function when the variant changes
+    // document.addEventListener('variantChanged', function() {
+    //     updateVariantAvailability();
     // });
 });
 
