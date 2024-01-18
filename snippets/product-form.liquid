@@ -157,6 +157,41 @@
             </product-variants>
           {%- endunless -%}
 
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                function updateVariantAvailability() {
+                    var productVariants = {{ product.variants | json }};
+                    var variantOptions = document.querySelectorAll('.product-form__option-selector input[type="radio"]');
+            
+                    variantOptions.forEach(function(option) {
+                        var matchingVariants = productVariants.filter(function(variant) {
+                            return variant.options.includes(option.value);
+                        });
+            
+                        var isAvailable = matchingVariants.some(function(variant) {
+                            return variant.available;
+                        });
+            
+                        if (!isAvailable) {
+                            // Apply the unavailable styling or indicator to the option
+                            option.closest('.block-swatch, .variant-swatch, .color-swatch').classList.add('unavailable');
+                        } else {
+                            // Remove the unavailable styling or indicator from the option
+                            option.closest('.block-swatch, .variant-swatch, .color-swatch').classList.remove('unavailable');
+                        }
+                    });
+                }
+            
+                updateVariantAvailability();
+            
+                // Add event listeners to update availability when variant changes
+                var variantSelectors = document.querySelectorAll('.product-form__option-selector input[type="radio"]');
+                variantSelectors.forEach(function(selector) {
+                    selector.addEventListener('change', updateVariantAvailability);
+                });
+            });
+            </script>            
+
         {%- comment -%}
         ----------------------------------------------------------------------------------------------------------------
         LINE ITEM PROPERTY
