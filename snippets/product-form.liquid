@@ -145,7 +145,7 @@
                   <template v-if="option.name == 'Size'">
                     <div class="block-swatch-list">
                     <template v-for="(value, i) in option.values">
-                      <div :class="{'is-disabled': variant_selection.available == false && variant_selection.option1 == value}" class="block-swatch" >
+                      <div :class="{'is-disabled': variant_selection.available == false && variant_selection.option2 == value}" class="block-swatch" >
                         <input v-if="value == selected_variant.option1 || value == selected_variant.option2 || value == selected_variant.option3" class="block-swatch__radio visually-hidden" type="radio" :name="`option${option.position}`" :value="value" :form="`product-form-{{section.id}}-${product.id}`" :id="`option-{{ section.id }}-{{ template.suffix }}-${product.id}-${index}-${i}`" checked>
                         <input v-else class="block-swatch__radio visually-hidden" type="radio" :name="`option${option.position}`" :value="value" :form="`product-form-{{section.id}}-${product.id}`" :id="`option-{{ section.id }}-{{ template.suffix }}-${product.id}-${index}-${i}`">
                         <label  class="block-swatch__item" :for="`option-{{ section.id }}-{{ template.suffix }}-${product.id}-${index}-${i}`" v-on:click="changeSize(value, option)" v-html="value"></label>
@@ -156,24 +156,6 @@
                 </div>
             </product-variants>
           {%- endunless -%}
-
-          <script>
-          new Vue({
-            el: '#product-form-{{section.id}}-${product.id}',
-            data: {
-              product: {{ product | json }},
-              // Other existing data properties...
-            },
-            methods: {
-              isVariantAvailable: function(optionValue, optionType) {
-                return this.product.variants.some(variant => {
-                  return variant[optionType.toLowerCase()] === optionValue && variant.available;
-                });
-              },
-              // Other existing methods...
-            }
-          });
-          </script>
 
         {%- comment -%}
         ----------------------------------------------------------------------------------------------------------------
