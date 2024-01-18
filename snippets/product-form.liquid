@@ -159,24 +159,36 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // Function to check and update variant availability
+    const productVariants = {{ product.variants | json }};
+    
+    // Function to form a variant key from selected options
+    function getCurrentVariantKey() {
+      const selectedOptions = Array.from(document.querySelectorAll('.product-form__option-selector input:checked')).map(input => input.value);
+      return selectedOptions.join(' / ');
+    }
+
+    // Function to check if a variant is available
+    function isVariantAvailable(variantKey) {
+      return productVariants.some(variant => variant.title === variantKey && variant.available);
+    }
+
+    // Function to update variant availability
     function updateVariantAvailability() {
-      const productVariants = {{ product.variants | json }};
-      const variantSelectors = document.querySelectorAll('.product-form__option-selector input');
+      document.querySelectorAll('.product-form__option-selector').forEach((selector) => {
+        const optionType = selector.querySelector('input').name.replace('option', '');
+        const inputs = selector.querySelectorAll('input');
 
-      variantSelectors.forEach((selector) => {
-        const optionIndex = selector.getAttribute('name').replace('option', '');
-        const optionValue = selector.value;
+        inputs.forEach((input) => {
+          const currentVariantKey = getCurrentVariantKey().split(' / ');
+          currentVariantKey[parseInt(optionType) - 1] = input.value;
+          const newVariantKey = currentVariantKey.join(' / ');
 
-        const isAvailable = productVariants.some(variant => {
-          return variant.options[parseInt(optionIndex) - 1] === optionValue && variant.available;
+          if (!isVariantAvailable(newVariantKey)) {
+            input.parentElement.classList.add('is-disabled');
+          } else {
+            input.parentElement.classList.remove('is-disabled');
+          }
         });
-
-        if (!isAvailable) {
-          selector.parentElement.classList.add('is-disabled');
-        } else {
-          selector.parentElement.classList.remove('is-disabled');
-        }
       });
     }
 
@@ -185,10 +197,17 @@
 
     // Event listener for when variant options change
     document.querySelectorAll('.product-form__option-selector input').forEach((input) => {
-      input.addEventListener('change', updateVariantAvailability);
+      input.addEventListener('change', function() {
+        // Reset disabled state before checking again
+        document.querySelectorAll('.product-form__option-selector').forEach(selector => {
+          selector.querySelectorAll('input').forEach(i => i.parentElement.classList.remove('is-disabled'));
+        });
+        updateVariantAvailability();
+      });
     });
   });
 </script>
+
 
        
 
