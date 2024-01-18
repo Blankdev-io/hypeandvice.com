@@ -504,6 +504,8 @@ IMPLEMENTATION NOTE: if during the iteration of the options we have found an opt
   NEW SCRIPT ADDED TO SHOW UNAVAILABLE VARIANTS
 {% endcomment %}
 
+TEST
+
 {% assign json_variants = product.variants | map: 'id' | to_json %}
 <script>
   var jsonVariants = {{ json_variants }};
