@@ -157,40 +157,51 @@
             </product-variants>
           {%- endunless -%}
 
-          <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                function updateVariantAvailability() {
-                    var productVariants = {{ product.variants | json }};
-                    var variantOptions = document.querySelectorAll('.product-form__option-selector input[type="radio"]');
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var allVariants = {{ product.variants | json }};
+
+    function checkAvailability() {
+        document.querySelectorAll('.product-form__option-selector input[type="radio"]').forEach(function(input) {
+            var selectedOptions = getSelectedOptions();
+            var variant = findVariant(allVariants, selectedOptions);
             
-                    variantOptions.forEach(function(option) {
-                        var matchingVariants = productVariants.filter(function(variant) {
-                            return variant.options.includes(option.value);
-                        });
-            
-                        var isAvailable = matchingVariants.some(function(variant) {
-                            return variant.available;
-                        });
-            
-                        if (!isAvailable) {
-                            // Apply the unavailable styling or indicator to the option
-                            option.closest('.block-swatch, .variant-swatch, .color-swatch').classList.add('is-disabled');
-                        } else {
-                            // Remove the unavailable styling or indicator from the option
-                            option.closest('.block-swatch, .variant-swatch, .color-swatch').classList.remove('is-disabled');
-                        }
-                    });
-                }
-            
-                updateVariantAvailability();
-            
-                // Add event listeners to update availability when variant changes
-                var variantSelectors = document.querySelectorAll('.product-form__option-selector input[type="radio"]');
-                variantSelectors.forEach(function(selector) {
-                    selector.addEventListener('change', updateVariantAvailability);
-                });
+            if (variant && !variant.available) {
+                // Mark this option as unavailable
+                input.closest('.block-swatch, .variant-swatch, .color-swatch').classList.add('is-disabled');
+            } else {
+                // Remove the unavailable marking
+                input.closest('.block-swatch, .variant-swatch, .color-swatch').classList.remove('is-disabled');
+            }
+        });
+    }
+
+    function getSelectedOptions() {
+        var selectedOptions = [];
+        document.querySelectorAll('.product-form__option-selector input[type="radio"]:checked').forEach(function(input) {
+            selectedOptions.push(input.value);
+        });
+        return selectedOptions;
+    }
+
+    function findVariant(variants, selectedOptions) {
+        return variants.find(function(variant) {
+            return selectedOptions.every(function(option) {
+                return variant.options.includes(option);
             });
-            </script>            
+        });
+    }
+
+    // Initial check
+    checkAvailability();
+
+    // Add event listeners
+    document.querySelectorAll('.product-form__option-selector input[type="radio"]').forEach(function(input) {
+        input.addEventListener('change', checkAvailability);
+    });
+});
+</script>
+       
 
         {%- comment -%}
         ----------------------------------------------------------------------------------------------------------------
