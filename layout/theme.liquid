@@ -623,7 +623,15 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
           selected_college: null,
           loading: false,
           chargedProducts: false
+          selectedColor: null,  // Initially null or set a default value
+          selectedSize: null,   // Initially null or set a default value
         }
+      },
+        created() {
+        // Initialization logic for your component
+        this.selectedColor = this.defaultColor; // Set the default color
+        this.selectedSize = this.defaultSize;   // Set the default size
+        // ... any other initialization code ...
       },
       computed : {
         product() {
@@ -1431,7 +1439,6 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
       name: 'Product Info',
       data() {
         return {
-
         }
       },
       computed: {
