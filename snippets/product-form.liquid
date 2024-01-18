@@ -127,7 +127,7 @@
                     <div class="color-swatch-list">
                       {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
                       <template v-for="(value, i) in option.values">
-<div v-for="(value, i) in option.values" 
+<div v-for="(value, i) in option.values" :key="`option-value-${i}`"
      :class="{'is-disabled': !variantAvailability[correspondingVariantId]}" 
      class="color-swatch">
             <input v-if="value == selected_variant.option1 || value == selected_variant.option2 || value == selected_variant.option3" class="color-swatch__radio visually-hidden" type="radio" name="`option${option.position}`" :id="`option-{{ section.id }}-{{ template.suffix }}-${product.id}-${index}-${i}`" :value="value" checked>
@@ -147,7 +147,7 @@
                   <template v-if="option.name == 'Size'">
                     <div class="block-swatch-list">
                     <template v-for="(value, i) in option.values">
-<div v-for="(value, i) in option.values" 
+<div v-for="(value, i) in option.values" :key="`option-value-${i}`"
      :class="{'is-disabled': !variantAvailability[correspondingVariantId]}" 
      class="block-swatch">
             <input v-if="value == selected_variant.option1 || value == selected_variant.option2 || value == selected_variant.option3" class="block-swatch__radio visually-hidden" type="radio" :name="`option${option.position}`" :value="value" :form="`product-form-{{section.id}}-${product.id}`" :id="`option-{{ section.id }}-{{ template.suffix }}-${product.id}-${index}-${i}`" checked>
