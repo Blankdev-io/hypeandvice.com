@@ -638,14 +638,6 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
         selected_variant_id() {
           return this.$store.state.selected_variant_id
         },
-        variantAvailability() {
-          const availabilityMap = {};
-          this.variants.forEach(variant => {
-            // Assuming each variant object has an 'id' and an 'available' property
-            availabilityMap[variant.id] = variant.available;
-          });
-          return availabilityMap;
-        },
         options() {
           let optionsFormated = []
           
