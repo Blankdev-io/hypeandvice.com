@@ -596,26 +596,6 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
   </script>
 
   <script>
-    export default {
-      name: 'Variant Combination',
-      computed: {
-        variants() {
-          return this.$store.state.variants;
-        }
-      },
-      methods: {
-        isCombinationUnavailable(option1Value, option2Value) {
-          return !this.variants.some(variant => 
-            variant.option1 === option1Value && 
-            variant.option2 === option2Value && 
-            variant.available
-          );
-        },
-      }
-    };
-    </script>
-
-  <script>
 
     const ProductFormOptions = {
       name: 'Product Form',
@@ -867,13 +847,6 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
             swiffyslider.slideTo(sliderElement, img.getAttribute('index-r'))
             swiffyslider.slideTo(sliderElement2, img2.getAttribute('index-r'))
           }
-        },
-        isVariantAvailable(option1, option2) {
-          // Assuming variants is an array of variant objects
-          const variant = this.variants.find(variant => 
-            variant.option1 === option1 && variant.option2 === option2
-          );
-          return variant && variant.available; // Return true if variant exists and is available
         },
         changeProduct () {
           const changedProduct = this.products_tags.find( product => product.id == this.selected_college)
