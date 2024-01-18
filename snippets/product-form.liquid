@@ -127,7 +127,7 @@
                     <div class="color-swatch-list">
                       {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
                       <template v-for="(value, i) in option.values">
-                        <div class="color-swatch {% if color_white_label == color_value_downcase %}color-swatch--white{% endif %}" :value="value">
+                        <div :class="{'is-disabled': variant_selection.available == false && variant_selection.option2 == value}" class="color-swatch {% if color_white_label == color_value_downcase %}color-swatch--white{% endif %}" :value="value">
                           <input v-if="value == selected_variant.option1 || value == selected_variant.option2 || value == selected_variant.option3" class="color-swatch__radio visually-hidden" type="radio" name="`option${option.position}`" :id="`option-{{ section.id }}-{{ template.suffix }}-${product.id}-${index}-${i}`" :value="value" checked>
                           <input v-else class="color-swatch__radio visually-hidden" type="radio" name="`option${option.position}`" :id="`option-{{ section.id }}-{{ template.suffix }}-${product.id}-${index}-${i}`" :value="value">
                           <template v-for="(color_value, index_color) in color_swatch_config">
@@ -145,7 +145,7 @@
                   <template v-if="option.name == 'Size'">
                     <div class="block-swatch-list">
                     <template v-for="(value, i) in option.values">
-                      <div class="block-swatch" >
+                      <div :class="{'is-disabled': variant_selection.available == false && variant_selection.option1 == value}" class="block-swatch" >
                         <input v-if="value == selected_variant.option1 || value == selected_variant.option2 || value == selected_variant.option3" class="block-swatch__radio visually-hidden" type="radio" :name="`option${option.position}`" :value="value" :form="`product-form-{{section.id}}-${product.id}`" :id="`option-{{ section.id }}-{{ template.suffix }}-${product.id}-${index}-${i}`" checked>
                         <input v-else class="block-swatch__radio visually-hidden" type="radio" :name="`option${option.position}`" :value="value" :form="`product-form-{{section.id}}-${product.id}`" :id="`option-{{ section.id }}-{{ template.suffix }}-${product.id}-${index}-${i}`">
                         <label  class="block-swatch__item" :for="`option-{{ section.id }}-{{ template.suffix }}-${product.id}-${index}-${i}`" v-on:click="changeSize(value, option)" v-html="value"></label>
@@ -156,44 +156,6 @@
                 </div>
             </product-variants>
           {%- endunless -%}
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    // Assuming you have a function to check if a variant is available
-    function isVariantAvailable(variant) {
-        // Implement this function based on your product data
-        // Return true if variant is available, false otherwise
-    }
-
-    function updateVariantAvailability() {
-        const variantElements = document.querySelectorAll('.color-swatch, .block-swatch');
-        variantElements.forEach(element => {
-            const variantValue = element.querySelector('input[type="radio"]').value;
-            if (!isVariantAvailable(variantValue)) {
-                element.classList.add('is-disabled');
-            } else {
-                element.classList.remove('is-disabled');
-            }
-        });
-    }
-
-    // Call this function to initialize the variant availability
-    updateVariantAvailability();
-
-    // Add event listeners to variant selectors
-    const variantSelectors = document.querySelectorAll('.color-swatch__item, .block-swatch__item');
-    variantSelectors.forEach(selector => {
-        selector.addEventListener('click', function(event) {
-            // Update the selected variant here based on the clicked element
-            // For example, you can set the selected variant in a global variable
-            // Then, call the updateVariantAvailability function to refresh the UI
-            updateVariantAvailability();
-        });
-    });
-});
-</script>
-
-
 
         {%- comment -%}
         ----------------------------------------------------------------------------------------------------------------
