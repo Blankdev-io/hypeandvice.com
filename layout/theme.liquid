@@ -619,6 +619,7 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
                 },
               {%- endfor -%}
           ],
+          unavailableVariants: window.unavailableVariants || [],
           selected_qty: 1,
           pageStatus: true,
           nameFormated: null,
@@ -758,6 +759,10 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
           }
           // console.log(swatchesFind)
           this.changeVariant()
+        },
+        isVariantUnavailable(color, size) {
+          const variantTitle = `${color} / ${size}`;
+          return this.unavailableVariants.includes(variantTitle);
         },
         formatPrice(value) {
             let val = (value/100).toFixed(2).replace(',', '.')
