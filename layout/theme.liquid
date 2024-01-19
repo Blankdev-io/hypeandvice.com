@@ -764,8 +764,9 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
           isVariantUnavailable(size) {
             const selectedColor = this.selectedColor;
             console.log('SELECTED COLOR',selectedColor)
-            console.log('SIZE',size)
             let variantTitle = `${size} / ${selectedColor}`;
+
+            console.log('size: ',size,'selectedcolor:', selectedColor,'variantTitle',variantTitle)
             return this.unavailableVariants.includes(variantTitle);
           },
           formatPrice(value) {
