@@ -760,8 +760,10 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
           // console.log(swatchesFind)
           this.changeVariant()
         },
-        isVariantUnavailable(color, size) {
-          const variantTitle = `${size} / ${color}`;
+        isVariantUnavailable(size) {
+          const selectedColor = this.selectedColor;
+          console.log('SELECTED COLOR',selectedColor) // Ensure this is the current selected color
+          let variantTitle = `${selectedColor} / ${size}`;
           return this.unavailableVariants.includes(variantTitle);
         },
         formatPrice(value) {
