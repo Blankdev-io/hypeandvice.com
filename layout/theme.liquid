@@ -761,6 +761,13 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
             // console.log(swatchesFind)
             this.changeVariant()
           },
+
+          setSelectedColorFromDOM() {
+            const colorElement = document.querySelector('.product-form__option-value');
+            if (colorElement) {
+              this.selectedColor = colorElement.textContent.trim();
+            }
+          },
           isVariantUnavailable(size) {
             const selectedColor = this.selectedColor;
             console.log('SELECTED COLOR',selectedColor)
@@ -1351,6 +1358,8 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
         },
         delimiters:['%{', '}%'],
         created: async function () {
+
+          this.setSelectedColorFromDOM();
   
            // Initialize selectedColor with the first available color
           const colorOption = this.options.find(option => option.name === 'Color');
