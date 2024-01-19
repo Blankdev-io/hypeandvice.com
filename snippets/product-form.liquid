@@ -4,7 +4,7 @@
 {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' | append: product.id -%}
 
                           {% for variant in product.variants %}
-                          <script>console.log('Variant: {{ variant }}')</script>
+                          <script>console.log('Variant: {{ variant.value }}')</script>
                           {% endfor %}
 
 {%- unless product.selected_or_first_available_variant.available -%}
