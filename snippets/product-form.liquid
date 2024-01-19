@@ -17,7 +17,8 @@
   {% endunless %}
 {% endfor %}
 
-{{unavailable_variants}}
+<!-- Debug: Output the array -->
+<p>Debug unavailable_variants: {{ unavailable_variants | join: ', ' }}</p>
 
 <script>console.log('{{ unavailable_variants }}')</script>
 
