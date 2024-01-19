@@ -22,8 +22,8 @@
 
 <script>
   let unavailableVariants = {{ unavailable_variants | json }};
-  console.log(unavailableVariants);
 </script>
+
 
 {%- unless product.selected_or_first_available_variant.available -%}
   <style>
