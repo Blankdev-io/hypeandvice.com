@@ -12,9 +12,11 @@
     {% if unavailable_variants != '' %}
       {% assign unavailable_variants = unavailable_variants | append: ',' %}
     {% endif %}
-    {% assign unavailable_variants = unavailable_variants | append: variant.title | json %}
+    {% assign variant_title_json = variant.title | json %}
+    {% assign unavailable_variants = unavailable_variants | append: variant_title_json %}
   {% endunless %}
 {% endfor %}
+
 
 
 <script>
