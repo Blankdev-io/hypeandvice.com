@@ -127,6 +127,9 @@
                     <div class="color-swatch-list">
                       {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
                       <template v-for="(value, i) in option.values">
+                          {% for variant in product.variants %}
+                          <script>console.log('{{ variant }}')</script>
+                          {% endfor %}
                         <div :class="{'is-disabled': variant_selection.available == false && variant_selection.option2 == value}" class="color-swatch {% if color_white_label == color_value_downcase %}color-swatch--white{% endif %}" :value="value">
                           <input v-if="value == selected_variant.option1 || value == selected_variant.option2 || value == selected_variant.option3" class="color-swatch__radio visually-hidden" type="radio" name="`option${option.position}`" :id="`option-{{ section.id }}-{{ template.suffix }}-${product.id}-${index}-${i}`" :value="value" checked>
                           <input v-else class="color-swatch__radio visually-hidden" type="radio" name="`option${option.position}`" :id="`option-{{ section.id }}-{{ template.suffix }}-${product.id}-${index}-${i}`" :value="value">
