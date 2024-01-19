@@ -1345,6 +1345,9 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
       },
       delimiters:['%{', '}%'],
       created: async function () {
+
+        console.log('Unavailable Variants:', this.unavailableVariants);
+        
         // this.getCurrentMedia()
         this.$store.commit('increment')
         
