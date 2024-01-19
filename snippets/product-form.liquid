@@ -179,24 +179,6 @@
             </product-variants>
           {%- endunless -%}
 
-          <script>
-          new Vue({
-            el: '#product-form-{{section.id}}-${product.id}',
-            data: {
-              product: {{ product | json }},
-              // Other existing data properties...
-            },
-            methods: {
-              isVariantAvailable: function(optionValue, optionType) {
-                return this.product.variants.some(variant => {
-                  return variant[optionType.toLowerCase()] === optionValue && variant.available;
-                });
-              },
-              // Other existing methods...
-            }
-          });
-          </script>
-
         {%- comment -%}
         ----------------------------------------------------------------------------------------------------------------
         LINE ITEM PROPERTY
