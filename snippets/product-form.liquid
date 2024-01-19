@@ -20,7 +20,10 @@
 <!-- Debug: Output the array -->
 <p>Debug unavailable_variants: {{ unavailable_variants | join: ', ' }}</p>
 
-<script>console.log('{{ unavailable_variants }}')</script>
+<script>
+  let unavailableVariants = {{ unavailable_variants | json }};
+  console.log(unavailableVariants);
+</script>
 
 {%- unless product.selected_or_first_available_variant.available -%}
   <style>
