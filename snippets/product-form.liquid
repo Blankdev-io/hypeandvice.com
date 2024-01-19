@@ -6,23 +6,20 @@
 {% assign unavailable_variants = '' | split: ',' %}
 
 
-{% assign unavailable_variants_array = '' %}
+{% assign unavailable_variants = '' %}
 {% for variant in product.variants %}
   {% unless variant.available %}
-    {% capture variant_json %}
-      {% if forloop.first != true and unavailable_variants_array != '' %}
-        ,
-      {% endif %}
-      "{{ variant.title | escape }}"
-    {% endcapture %}
-    {% assign unavailable_variants_array = unavailable_variants_array | append: variant_json %}
+    {% if unavailable_variants != '' %}
+      {% assign unavailable_variants = unavailable_variants | append: ',' %}
+    {% endif %}
+    {% assign unavailable_variants = unavailable_variants | append: variant.title | json %}
   {% endunless %}
 {% endfor %}
 
-<script>
-  window.unavailableVariants = [{% unless unavailable_variants_array == '' %}{{ unavailable_variants_array }}{% else %}''{% endunless %}];
-</script>
 
+<script>
+  window.unavailableVariants = [{{ unavailable_variants | json }}];
+</script>
 
 
 {%- unless product.selected_or_first_available_variant.available -%}
@@ -149,7 +146,7 @@
                     <div class="color-swatch-list">
                       {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
                       <template v-for="(value, i) in option.values">                       
-                        <div :class="{'is-disabled': variant_selection.available == false && variant_selection.option2 == value}" class="color-swatch {% if color_white_label == color_value_downcase %}color-swatch--white{% endif %}" :value="value">
+                        <div class="color-swatch {% if color_white_label == color_value_downcase %}color-swatch--white{% endif %}" :value="value">
                           <input v-if="value == selected_variant.option1 || value == selected_variant.option2 || value == selected_variant.option3" class="color-swatch__radio visually-hidden" type="radio" name="`option${option.position}`" :id="`option-{{ section.id }}-{{ template.suffix }}-${product.id}-${index}-${i}`" :value="value" checked>
                           <input v-else class="color-swatch__radio visually-hidden" type="radio" name="`option${option.position}`" :id="`option-{{ section.id }}-{{ template.suffix }}-${product.id}-${index}-${i}`" :value="value">
                           <template v-for="(color_value, index_color) in color_swatch_config">
