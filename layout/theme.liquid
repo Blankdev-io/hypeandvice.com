@@ -621,6 +621,7 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
           ],
           unavailableVariants: window.unavailableVariants || [],
           selected_qty: 1,
+          selectedColor: null,
           pageStatus: true,
           nameFormated: null,
           selected_media_occs: null,
@@ -762,7 +763,7 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
         },
         isVariantUnavailable(size) {
           const selectedColor = this.selectedColor;
-          console.log('SELECTED COLOR',selectedColor) // Ensure this is the current selected color
+          console.log('SELECTED COLOR',selectedColor)
           let variantTitle = `${selectedColor} / ${size}`;
           return this.unavailableVariants.includes(variantTitle);
         },
@@ -784,6 +785,7 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
             this.$store.commit('setVariantSelectionOp3', selected_value)
           }
           this.changeVariant()
+          this.selectedColor = selected_value;
         },
         changeVariant () {
           // this.loading = true
