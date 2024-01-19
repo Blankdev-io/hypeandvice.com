@@ -17,11 +17,8 @@
   {% endunless %}
 {% endfor %}
 
-<!-- Debug: Output the array -->
-<p>Debug unavailable_variants: {{ unavailable_variants | join: ', ' }}</p>
-
 <script>
-  let unavailableVariants = {{ unavailable_variants | json }};
+  window.unavailableVariants = {{ unavailable_variants | json }};
 </script>
 
 
