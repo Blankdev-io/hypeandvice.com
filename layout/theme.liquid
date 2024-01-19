@@ -1351,6 +1351,11 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
         delimiters:['%{', '}%'],
         created: async function () {
   
+           // Initialize selectedColor with the first available color
+          const colorOption = this.options.find(option => option.name === 'Color');
+          if (colorOption && colorOption.values.length > 0) {
+            this.selectedColor = colorOption.values[0];
+          }
           console.log('Unavailable Variants:', this.unavailableVariants);
           
           // this.getCurrentMedia()
