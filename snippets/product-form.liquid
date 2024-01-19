@@ -3,9 +3,19 @@
 {%- assign size_label_list = 'general.label.size' | t | replace: ', ', ',' | downcase | split: ',' -%}
 {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' | append: product.id -%}
 
-                          {% for variant in product.variants %}
-                          <script>console.log('Variant: {{ variant.title }}')</script>
-                          {% endfor %}
+{% assign unavailable_variants = '' | split: ',' %}
+
+
+{% for variant in product.variants %}
+  {% unless variant.available %}
+    {% capture variant_details %}
+      {{ unavailable_variants | join: ',' }}
+      {{- variant.title -}}
+    {% endcapture %}
+
+    {% assign unavailable_variants = variant_details | split: ',' %}
+  {% endunless %}
+{% endfor %}
 
 {%- unless product.selected_or_first_available_variant.available -%}
   <style>
