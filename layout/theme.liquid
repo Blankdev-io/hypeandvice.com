@@ -1350,6 +1350,18 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
       delimiters:['%{', '}%'],
       created: async function () {
 
+
+          // Wait for necessary data to be loaded
+        const productObtained = await this.getProductData('{{product.handle}}');
+        this.$store.commit('setProduct', productObtained);
+
+        // Assuming your product variant options are stored in the Vuex store
+        // and are now populated by the above commit
+        const colorOption = this.$store.state.options.find(option => option.name === 'Color');
+        if (colorOption && colorOption.values.length > 0) {
+          this.selectedColor = colorOption.values[0]; // Set to the first color value
+        }
+
         console.log('Unavailable Variants:', this.unavailableVariants);
         
         // this.getCurrentMedia()
