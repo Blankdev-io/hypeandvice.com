@@ -6,19 +6,22 @@
 {% assign unavailable_variants = '' | split: ',' %}
 
 
+{% assign unavailable_variants = '' %}
 {% for variant in product.variants %}
   {% unless variant.available %}
     {% capture variant_details %}
-      {{ unavailable_variants | join: ',' }}
-      {{- variant.title -}}
+      {{- unavailable_variants -}}
+      {{- variant.title | json -}}
+      {{- ',' unless forloop.last -}}
     {% endcapture %}
-
-    {% assign unavailable_variants = variant_details | split: ',' %}
+    
+    {% assign unavailable_variants = variant_details %}
   {% endunless %}
 {% endfor %}
 
+
 <script>
-  window.unavailableVariants = {{ unavailable_variants | json }};
+  window.unavailableVariants = [{{ unavailable_variants | json }}];
 </script>
 
 

@@ -424,11 +424,11 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
   
   {%- if request.page_type == 'product' -%}
 
-  <script>
-    let unavailableVariants = window.unavailableVariants || []; 
-
-    console.log(unavailableVariants)
-  </script>
+    <script>
+      let unavailableVariants = window.unavailableVariants || []; 
+      console.log(unavailableVariants); // This should now log an array of variant titles
+    </script>
+        
   <script>
     const store = Vuex.createStore({
       state () {
