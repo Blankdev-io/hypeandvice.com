@@ -426,7 +426,6 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
   
       <script>
         let unavailableVariants = window.unavailableVariants || []; 
-        console.log(unavailableVariants); // This should now log an array of variant titles
       </script>
           
     <script>
@@ -773,10 +772,7 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
           },
           isVariantUnavailable(size) {
             const selectedColor = this.selectedColor;
-            console.log('SELECTED COLOR',selectedColor)
             let variantTitle = `${size} / ${selectedColor}`;
-
-            console.log('size: ',size,' selectedcolor: ', selectedColor,' variantTitle: ',variantTitle)
             return this.unavailableVariants.includes(variantTitle);
           },
           formatPrice(value) {
@@ -897,7 +893,6 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
             const product_variants = document.getElementsByClassName('product-form__variants')
             for (const product_variant of product_variants) {
               product_variant.children[0].children[1].children[0].children[0].checked = true
-              console.log(product_variant.children[0].children[1].children[0].children[0])
               const sliderElement = document.getElementById('pgallery')
               const sliderElement2 = document.getElementById('pgallery_thumb')
               swiffyslider.slideTo(sliderElement, 0)
@@ -1039,7 +1034,6 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
               let currentDate = `${currentDay}-${currentMonth}-${currentYear}`;
   
               localStorage.setItem("products_date_upload", JSON.stringify(currentDate))
-              console.log('Date', currentDate)
             }
               
               // console.log(data)
@@ -1109,7 +1103,6 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
             // }
             
             
-            console.log('Recomendations Finded')
           },
           async getCollegeProducts(){
             var page = 1
@@ -1140,13 +1133,11 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
               else {
                 context.pageStatus = false
               }
-              console.log(`Page ${page} reviewed`)
               page++
             }
             this.chargedProducts = true
             loadingSpan.classList.add('selector-none')
             
-            console.log('Colleges Obtained')
           },
           async getProducts(){
             var cookieString = 'products=['
@@ -1220,7 +1211,6 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
               let currentDate = `${currentDay}-${currentMonth}-${currentYear}`;
   
               localStorage.setItem("products_date_upload", JSON.stringify(currentDate))
-              console.log('Date', currentDate)
             }
             // if (data.products.length >= 1000){
               let validProducts = []
@@ -1367,7 +1357,6 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
           if (colorOption && colorOption.values.length > 0) {
             this.selectedColor = colorOption.values[0];
           }
-          console.log('Unavailable Variants:', this.unavailableVariants);
           
           // this.getCurrentMedia()
           this.$store.commit('increment')
