@@ -700,6 +700,9 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
             return this.$store.getters.getColleges
           }
         },
+        mounted() {
+          this.setSelectedColorFromDOM();
+        },
         methods: {
           changeSize(selected_value, option) {
             const colorOption = this.options.find(option => option.name == "Color")
@@ -761,7 +764,7 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
             // console.log(swatchesFind)
             this.changeVariant()
           },
-
+          
           setSelectedColorFromDOM() {
             const colorElement = document.querySelector('.product-form__option-value');
             if (colorElement) {
@@ -1358,8 +1361,6 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
         },
         delimiters:['%{', '}%'],
         created: async function () {
-
-          this.setSelectedColorFromDOM();
   
            // Initialize selectedColor with the first available color
           const colorOption = this.options.find(option => option.name === 'Color');
