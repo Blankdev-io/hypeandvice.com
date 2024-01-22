@@ -148,7 +148,7 @@ Code that create the faceted search for the collection and search pages. It curr
                             </div>
                             {% endif %}
                           {% elsif filter.label == "Product type" and collection.metafields.custom.collections_recomended.value != blank %}
-                            {% if for_loop <= collection.metafields.custom.collections_recomended.lenght %}
+                            {% if for_loop < collection.metafields.custom.collections_recomended.lenght %}
                               {% for collection in collection.metafields.custom.collections_recomended.value %}
                                 <a href="{{ collection.url }}" class="checkbox-container">
                                   {% assign parts = collection.title | split: '-' %}
