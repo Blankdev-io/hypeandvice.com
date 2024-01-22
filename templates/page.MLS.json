@@ -294,6 +294,10 @@
         "reveal_on_scroll": false,
         "subheading": "",
         "title": "SHOP BY TEAM",
+        "custom_font": false,
+        "heading_font_desktop": 16,
+        "heading_font_mobile": 14,
+        "heading_font_family": "Zurich Extended",
         "button_text": "",
         "button_link": "",
         "stack_logos": false,
@@ -573,6 +577,24 @@
         "cycle_speed": 5,
         "background": "rgba(0,0,0,0)"
       }
+    },
+    "17059547218ef27925": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_JhTW9B": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "WMjr9K"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_JhTW9B"
+      ],
+      "settings": {
+        "include_horizontal_margins": false,
+        "include_vertical_margins": false
+      }
     }
   },
   "order": [
@@ -583,6 +605,7 @@
     "86ec8265-4fa4-4932-81fc-86b8dfe27f85",
     "13ad5cf8-e725-4b4f-947f-b5a6bddcab18",
     "7147b3bf-750f-48bb-b9d5-02eccc46b778",
-    "d96266ec-42a8-4b27-b5f0-f069f5066979"
+    "d96266ec-42a8-4b27-b5f0-f069f5066979",
+    "17059547218ef27925"
   ]
 }
