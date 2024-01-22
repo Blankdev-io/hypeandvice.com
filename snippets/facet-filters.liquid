@@ -147,19 +147,22 @@ Code that create the faceted search for the collection and search pages. It curr
                             </div>
                             {% endif %}
                           {% elsif filter.label == "Product type" and collection.metafields.custom.collections_recomended.value != blank %}
-                            {% for collection in collection.metafields.custom.collections_recomended.value %}
-                              <a href="{{ collection.url }}" class="checkbox-container">
-                                {% assign parts = collection.title | split: '-' %}
-                                {% if parts.size > 2 %}
-                                  {% assign parts1 = parts[1] | strip %}
-                                  {% assign parts2 = parts[2] | strip %}
-                                  {% assign last_part = parts1 | append: '-' | append: parts2 %}
-                                {% else %}
-                                  {% assign last_part = parts | last %}
-                                {% endif %}
-                                {{ last_part | escape }}
-                              </a>
-                            {% endfor %}
+                            {% if for_loop_done %}
+                              {% for collection in collection.metafields.custom.collections_recomended.value %}
+                                <a href="{{ collection.url }}" class="checkbox-container">
+                                  {% assign parts = collection.title | split: '-' %}
+                                  {% if parts.size > 2 %}
+                                    {% assign parts1 = parts[1] | strip %}
+                                    {% assign parts2 = parts[2] | strip %}
+                                    {% assign last_part = parts1 | append: '-' | append: parts2 %}
+                                  {% else %}
+                                    {% assign last_part = parts | last %}
+                                  {% endif %}
+                                  {{ last_part | escape }}
+                                </a>
+                              {% endfor %}
+                              {% assign for_loop_done = true %}
+                            {% endif %}
                           {% else %}
                           <div class="checkbox-container">
                             <input class="checkbox" type="checkbox" name="{{ filter_value.param_name }}" id="{{ filter_value.param_name | escape }}-{{ forloop.index }}" value="{{ filter_value.value | escape }}" {% if filter_value.active %}checked="checked"{% endif %} {% if filter_value.count == 0 %}disabled{% endif %}>
