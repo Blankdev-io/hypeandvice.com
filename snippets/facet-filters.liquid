@@ -138,7 +138,6 @@ Code that create the faceted search for the collection and search pages. It curr
                           {%- endfor -%}
                         </div>
                       {% elsif collection.metafields.custom.collections_recomended.value != blank %}
-                        TRUE
                         {% for collection in collection.metafields.custom.collections_recomended.value %}
                           <div class="checkbox-container">
                             <input class="checkbox" type="checkbox" name="{{ collection.title | escape }}" id="{{ collection.title | escape }}-{{ forloop.index }}" value="{{ collection.title | escape }}" {% if filter_value.active %}checked="checked"{% endif %} {% if filter_value.count == 0 %}disabled{% endif %}>
