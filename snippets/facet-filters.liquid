@@ -149,8 +149,6 @@ Code that create the faceted search for the collection and search pages. It curr
                           {% elsif filter.label == "Product type" and collection.metafields.custom.collections_recomended.value != blank %}
                             {% for collection in collection.metafields.custom.collections_recomended.value %}
                               <a href="{{ collection.url }}" class="checkbox-container">
-                                <input class="checkbox hidden" type="checkbox" name="{{ collection.title | escape }}" id="{{ collection.title | escape }}-{{ forloop.index }}" value="{{ filter_value.value | escape }}" {% if filter_value.active %}checked="checked"{% endif %} {% if filter_value.count == 0 %}disabled{% endif %}>
-                                <label for="{{ collection.title | escape }}-{{ forloop.index }}">
                                 {% assign parts = collection.title | split: '-' %}
                                 {% if parts.size > 2 %}
                                   {% assign parts1 = parts[1] | strip %}
@@ -160,7 +158,6 @@ Code that create the faceted search for the collection and search pages. It curr
                                   {% assign last_part = parts | last %}
                                 {% endif %}
                                 {{ last_part | escape }}
-                                </label>
                               </a>
                             {% endfor %}
                           {% else %}
