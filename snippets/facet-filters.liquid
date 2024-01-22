@@ -8,6 +8,7 @@ Code that create the faceted search for the collection and search pages. It curr
 {%- assign color_label_list = 'general.label.color' | t | replace: ', ', ',' | downcase | split: ',' -%}
 {%- assign color_white_label = 'general.label.white' | t | downcase -%}
 {%- assign size_label_list = 'general.label.size' | t | replace: ', ', ',' | downcase | split: ',' -%}
+{% assign for_loop_done = false %}
 
 {%- assign active_filters_count = 0 -%}
 
@@ -149,7 +150,7 @@ Code that create the faceted search for the collection and search pages. It curr
                           {% elsif filter.label == "Product type" and collection.metafields.custom.collections_recomended.value != blank %}
                             {% if for_loop_done %}
                               {% for collection in collection.metafields.custom.collections_recomended.value %}
-                                {% assign for_loop_done = false %}
+                                
                                 <a href="{{ collection.url }}" class="checkbox-container">
                                   {% assign parts = collection.title | split: '-' %}
                                   {% if parts.size > 2 %}
