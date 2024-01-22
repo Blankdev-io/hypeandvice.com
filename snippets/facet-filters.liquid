@@ -137,19 +137,6 @@ Code that create the faceted search for the collection and search pages. It curr
                             </div>
                           {%- endfor -%}
                         </div>
-                      {% elsif collection.metafields.custom.collections_recomended.value != blank %}
-                        {% for collection in collection.metafields.custom.collections_recomended.value %}
-                          <div class="checkbox-container">
-                            <input class="checkbox" type="checkbox" name="{{ collection.title | escape }}" id="{{ collection.title | escape }}-{{ forloop.index }}" value="{{ collection.title | escape }}" {% if filter_value.active %}checked="checked"{% endif %} {% if filter_value.count == 0 %}disabled{% endif %}>
-                            <label for="{{ collection.title | escape }}-{{ forloop.index }}">{{ collection.title | escape }} ({{ filter_value.count}})&lrm;</label>
-                          </div>
-                        {% endfor %}
-                        {%- for filter_value in filter.values -%}
-                          <div class="checkbox-container">
-                            <input class="checkbox" type="checkbox" name="{{ filter_value.param_name }}" id="{{ filter_value.param_name | escape }}-{{ forloop.index }}" value="{{ filter_value.value | escape }}" {% if filter_value.active %}checked="checked"{% endif %} {% if filter_value.count == 0 %}disabled{% endif %}>
-                            <label for="{{ filter_value.param_name | escape }}-{{ forloop.index }}">{{ filter_value.label }} ({{ filter_value.count}})&lrm;</label>
-                          </div>
-                        {%- endfor -%}
                       {%- else -%}
                         {%- for filter_value in filter.values -%}
                           {% if filter.label == "League" %}
@@ -160,11 +147,11 @@ Code that create the faceted search for the collection and search pages. It curr
                             </div>
                             {% endif %}
                           {% else %}
-                            <div class="checkbox-container">
-                              <input class="checkbox" type="checkbox" name="{{ filter_value.param_name }}" id="{{ filter_value.param_name | escape }}-{{ forloop.index }}" value="{{ filter_value.value | escape }}" {% if filter_value.active %}checked="checked"{% endif %} {% if filter_value.count == 0 %}disabled{% endif %}>
-                              <label for="{{ filter_value.param_name | escape }}-{{ forloop.index }}">{{ filter_value.label }} ({{ filter_value.count}})&lrm;</label>
-                            </div>
-                            {% endif %}
+                          <div class="checkbox-container">
+                            <input class="checkbox" type="checkbox" name="{{ filter_value.param_name }}" id="{{ filter_value.param_name | escape }}-{{ forloop.index }}" value="{{ filter_value.value | escape }}" {% if filter_value.active %}checked="checked"{% endif %} {% if filter_value.count == 0 %}disabled{% endif %}>
+                            <label for="{{ filter_value.param_name | escape }}-{{ forloop.index }}">{{ filter_value.label }} ({{ filter_value.count}})&lrm;</label>
+                          </div>
+                        {% endif %}
                         {%- endfor -%}
                       {%- endif -%}
 
