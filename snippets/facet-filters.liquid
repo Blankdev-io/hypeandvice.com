@@ -146,7 +146,7 @@ Code that create the faceted search for the collection and search pages. It curr
                               <label for="{{ filter_value.param_name | escape }}-{{ forloop.index }}">{{ filter_value.label }} ({{ filter_value.count}})&lrm;</label>
                             </div>
                             {% endif %}
-                          {% elsif filter.label == "Product Type" and collection.metafields.custom.collections_recomended.value != blank %}
+                          {% elsif filter.label == "Product type" and collection.metafields.custom.collections_recomended.value != blank %}
                           {% else %}
                           <div class="checkbox-container">
                             <input class="checkbox" type="checkbox" name="{{ filter_value.param_name }}" id="{{ filter_value.param_name | escape }}-{{ forloop.index }}" value="{{ filter_value.value | escape }}" {% if filter_value.active %}checked="checked"{% endif %} {% if filter_value.count == 0 %}disabled{% endif %}>
