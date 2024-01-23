@@ -15,6 +15,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/H_V_MLS_HOMEPAGE-DESKTOP_3000x1500px.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/H_V_MLS_HOMEPAGE-MOBILE_1000x1400px.jpg",
             "show_videos": false,
             "autoplay": true,
             "loop": true,
@@ -43,12 +44,37 @@
       "block_order": [
         "template--14800247914601__d817cfc1-c6e0-48b0-a01b-d0d9b9e3e2d0-image-1"
       ],
+      "custom_css": [
+        ".slideshow.slideshow--large {z-index: -1; position: relative;}"
+      ],
       "settings": {
         "section_height": "large",
         "transition_type": "fade",
         "autoplay": false,
         "cycle_speed": 4,
         "background": "rgba(0,0,0,0)"
+      }
+    },
+    "17059547218ef27925": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_JhTW9B": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "WMjr9K"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_JhTW9B"
+      ],
+      "custom_css": [
+        ".klaviyo-form-WMjr9K {margin-top: -15% !important; z-index: 9999 !important;}",
+        ".klaviyo-form {background-color: transparent !important;}"
+      ],
+      "settings": {
+        "include_horizontal_margins": false,
+        "include_vertical_margins": false
       }
     },
     "07980d83-3c05-400f-853c-606cc903b083": {
@@ -577,35 +603,17 @@
         "cycle_speed": 5,
         "background": "rgba(0,0,0,0)"
       }
-    },
-    "17059547218ef27925": {
-      "type": "apps",
-      "blocks": {
-        "klaviyo_email_marketing_sms_form_embed_block_JhTW9B": {
-          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
-          "settings": {
-            "formId": "WMjr9K"
-          }
-        }
-      },
-      "block_order": [
-        "klaviyo_email_marketing_sms_form_embed_block_JhTW9B"
-      ],
-      "settings": {
-        "include_horizontal_margins": false,
-        "include_vertical_margins": false
-      }
     }
   },
   "order": [
     "main",
     "d817cfc1-c6e0-48b0-a01b-d0d9b9e3e2d0",
+    "17059547218ef27925",
     "07980d83-3c05-400f-853c-606cc903b083",
     "cd1d8d7e-d094-4191-970d-574c4ff4bf16",
     "86ec8265-4fa4-4932-81fc-86b8dfe27f85",
     "13ad5cf8-e725-4b4f-947f-b5a6bddcab18",
     "7147b3bf-750f-48bb-b9d5-02eccc46b778",
-    "d96266ec-42a8-4b27-b5f0-f069f5066979",
-    "17059547218ef27925"
+    "d96266ec-42a8-4b27-b5f0-f069f5066979"
   ]
 }
