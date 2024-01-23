@@ -15,6 +15,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/H_V_NBA_HOMEPAGE-DESKTOP_3000x1500px_1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/H_V_NBA_HOMEPAGE-MOBILE_1000x1400px.jpg",
             "show_videos": false,
             "autoplay": true,
             "loop": true,
