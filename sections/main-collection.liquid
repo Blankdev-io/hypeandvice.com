@@ -166,6 +166,11 @@
               </button>
             {%- endif -%}
 
+            {% if collection.metafields.custom.h1_heading != blank %}
+              <h1 class="heading h1">
+                {{ collection.metafields.custom.h1_heading }}
+              </h1>
+            {% endif %}
             <span class="product-facet__meta-bar-item product-facet__meta-bar-item--count" role="status">{{ 'collection.general.products_count' | t: count: collection.products_count }}</span>
 
             {%- if section.settings.show_sort_by -%}
