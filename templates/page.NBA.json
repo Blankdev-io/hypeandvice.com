@@ -51,6 +51,28 @@
         "background": "rgba(0,0,0,0)"
       }
     },
+    "17059540137baf06c7": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_AAkwhE": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "WMjr9K"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_AAkwhE"
+      ],
+      "custom_css": [
+        ".klaviyo-form-WMjr9K {margin-top: -20% !important; z-index: 9999 !important;}",
+        ".klaviyo-form {background-color: transparent !important;}"
+      ],
+      "settings": {
+        "include_horizontal_margins": false,
+        "include_vertical_margins": false
+      }
+    },
     "07980d83-3c05-400f-853c-606cc903b083": {
       "type": "logo-list",
       "blocks": {
@@ -586,35 +608,17 @@
         "cycle_speed": 5,
         "background": "rgba(0,0,0,0)"
       }
-    },
-    "17059540137baf06c7": {
-      "type": "apps",
-      "blocks": {
-        "klaviyo_email_marketing_sms_form_embed_block_AAkwhE": {
-          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
-          "settings": {
-            "formId": "WMjr9K"
-          }
-        }
-      },
-      "block_order": [
-        "klaviyo_email_marketing_sms_form_embed_block_AAkwhE"
-      ],
-      "settings": {
-        "include_horizontal_margins": false,
-        "include_vertical_margins": false
-      }
     }
   },
   "order": [
     "main",
     "d817cfc1-c6e0-48b0-a01b-d0d9b9e3e2d0",
+    "17059540137baf06c7",
     "07980d83-3c05-400f-853c-606cc903b083",
     "cd1d8d7e-d094-4191-970d-574c4ff4bf16",
     "86ec8265-4fa4-4932-81fc-86b8dfe27f85",
     "13ad5cf8-e725-4b4f-947f-b5a6bddcab18",
     "7147b3bf-750f-48bb-b9d5-02eccc46b778",
-    "d96266ec-42a8-4b27-b5f0-f069f5066979",
-    "17059540137baf06c7"
+    "d96266ec-42a8-4b27-b5f0-f069f5066979"
   ]
 }
