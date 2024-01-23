@@ -43,6 +43,9 @@
       "block_order": [
         "template--14800247914601__d817cfc1-c6e0-48b0-a01b-d0d9b9e3e2d0-image-1"
       ],
+      "custom_css": [
+        ".slideshow.slideshow--large {z-index: -1; position: relative;}"
+      ],
       "settings": {
         "section_height": "large",
         "transition_type": "fade",
