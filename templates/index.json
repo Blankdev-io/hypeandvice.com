@@ -150,7 +150,7 @@
         "heading_font_family": "Zurich Extended",
         "category_font_desktop": 12,
         "category_font_mobile": 12,
-        "category_font_family": "ZurichBT",
+        "category_font_family": "Quantico-Bold",
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
@@ -231,7 +231,7 @@
             "custom_height_size": 500,
             "custom_height_size_mobile": 250,
             "subheading": "",
-            "title": "HYPE & VICE - BLANKS",
+            "title": "HYPE AND VICE - BLANKS",
             "below_text": true,
             "link_text": "",
             "link_url": "",
@@ -259,7 +259,7 @@
         "heading_font_family": "Zurich Extended",
         "category_font_desktop": 12,
         "category_font_mobile": 12,
-        "category_font_family": "ZurichBT",
+        "category_font_family": "Quantico-Bold",
         "category_margin": 2,
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
