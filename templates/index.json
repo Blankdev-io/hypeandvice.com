@@ -264,39 +264,6 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
-    "slideshow_m63Lfr": {
-      "type": "slideshow",
-      "blocks": {
-        "image_t6gE9q": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/UCLAGROUP-10_2_91a3f3d3-8b3a-402a-89df-6014d7cdfa4c.jpg",
-            "text_position": "middle_center",
-            "subheading": "",
-            "title": "",
-            "button_1_text": "NEW ARRIVALS",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "image_t6gE9q"
-      ],
-      "settings": {
-        "section_height": "auto",
-        "transition_type": "fade",
-        "autoplay": false,
-        "cycle_speed": 5,
-        "background": "rgba(0,0,0,0)"
-      }
-    },
     "165065396872bf5f8b": {
       "type": "logo-list",
       "blocks": {
@@ -343,6 +310,39 @@
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)",
         "logo_background": "rgba(0,0,0,0)"
+      }
+    },
+    "slideshow_m63Lfr": {
+      "type": "slideshow",
+      "blocks": {
+        "image_t6gE9q": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/UCLAGROUP-10_2_91a3f3d3-8b3a-402a-89df-6014d7cdfa4c.jpg",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "NEW ARRIVALS",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_t6gE9q"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "fade",
+        "autoplay": false,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
       }
     },
     "16506544520a12bd2c": {
@@ -814,8 +814,8 @@
     "categories_yBHGEC",
     "2cd6223b-dc18-4eda-91cc-768082b54a6a",
     "collection_list_D6rqbx",
-    "slideshow_m63Lfr",
     "165065396872bf5f8b",
+    "slideshow_m63Lfr",
     "16506544520a12bd2c",
     "1655412672f035473e",
     "165065640506142d5c",
