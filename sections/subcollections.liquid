@@ -19,46 +19,13 @@
     pointer-events: none;
   }
 </style>
-
   
   {% if collection.metafields.custom.seo_text != blank %}
-    <div id="seoTextJson" style="display: none;">
-        {{ collection.metafields.custom.seo_text | metafield_tag }}
-
-    </div>
-    
     <div id="seoText">
+      {{ collection.metafields.custom.seo_text | metafield_tag }}
       <div class="overlay"></div>
     </div>
   {% endif %}
-
-
-<script>
-  function renderRichText(jsonData) {
-    let htmlContent = '';
-    jsonData.children.forEach(block => {
-        if (block.type === 'paragraph') {
-            let paragraphContent = '';
-            block.children.forEach(paragraphBlock => {
-                if (paragraphBlock.type === 'text') {
-                    paragraphContent += paragraphBlock.value;
-                }
-                // You can add more conditions here if there are other types
-            });
-            htmlContent += `<p>${paragraphContent}</p>`;
-        }
-        // You can add more conditions here for other block types
-    });
-    return htmlContent;
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    const seoTextJson = document.getElementById('seoTextJson').innerText;
-    const seoTextData = JSON.parse(seoTextJson);
-    const seoTextHtml = renderRichText(seoTextData);
-    document.getElementById('seoText').innerHTML = seoTextHtml;
-});
-</script>
   
 {% else %}
 
