@@ -23,11 +23,7 @@
   
   {% if collection.metafields.custom.seo_text != blank %}
     <div id="seoTextJson" style="display: none;">
-        {% assign rich_text = collection.metafields.custom.seo_text | json %}
-{% assign text_parts = rich_text.children | map: 'children' | map: 'value' %}
-{% for part in text_parts %}
-  {{ part }}
-{% endfor %}
+        {{ collection.metafields.custom.seo_text }}
     </div>
     
     <div id="seoText">
