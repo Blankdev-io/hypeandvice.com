@@ -9019,14 +9019,11 @@ input:checked + .popover__choice-label::after,
 }
 
 .footer__item-list {
-  /*display: grid;
+  display: grid;
   grid-gap: 40px;
   gap: 40px;
   grid-template-columns: 1fr 1fr;
-  justify-content: space-between;*/
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  justify-content: space-between;
 }
 
 .footer__item {
