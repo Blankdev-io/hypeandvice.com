@@ -10,15 +10,12 @@
     margin-bottom: 50px;
   }
 
-  #seoText::after {
-    content: '';
-    position: absolute;
+  .overlay {
+    position: sticky;
     bottom: 0;
-    left: 0;
-    right: 0;
     height: 30px;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
-    pointer-events: none; 
+    pointer-events: none;
   }
 </style>
 
@@ -28,7 +25,9 @@
         {{ collection.metafields.custom.seo_text }}
     </div>
     
-    <div id="seoText"></div>
+    <div id="seoText">
+      <div class="overlay"></div>
+    </div>
   {% endif %}
 
 
