@@ -32,23 +32,23 @@
     --section-background: {{ section_background.red }}, {{ section_background.green }}, {{ section_background.blue }};
   }
 
-  .custom-html-custom-{{ section.id }} {
+  .custom-html-heading-{{ section.id }} {
     font-size: {{ section.settings.heading_font_desktop }}px !important;
     font-family: "{{ section.settings.heading_font_family }}", sans-serif !important;  
   }
 
-  .custom-html-item-custom-{{ section.id }} p {
-    font-size: {{ section.settings.category_font_desktop }}px !important;
-    font-family: "{{ section.settings.category_font_family }}", sans-serif !important;
-  } 
+  .custom-html-subheading-{{ section.id }} {
+    font-size: {{ section.settings.subheading_font_desktop }}px !important;
+    font-family: "{{ section.settings.subheading_font_family }}", sans-serif !important;  
+  }
 
   @media screen and (max-width: 1000px) {
-    .custom-html-item-custom-{{ section.id }} p {
-      font-size: {{ section.settings.category_font_mobile }}px !important;
-    } 
-
-    .custom-html-custom-{{ section.id }} {
+    .custom-html-heading-{{ section.id }} {
       font-size: {{ section.settings.heading_font_mobile }}px !important;
+    }
+
+    .custom-html-subheading-{{ section.id }} {
+      font-size: {{ section.settings.subheading_font_mobile }}px !important;
     }
   }
 </style>
@@ -64,7 +64,7 @@
             {%- endif -%}
 
             {%- if section.settings.title != blank -%}
-              <h3 class="heading h2">{{ section.settings.title | escape }}</h3>
+              <h3 class="heading h2 custom-html-custom-{{ section.id }}">{{ section.settings.title | escape }}</h3>
             {%- endif -%}
           </header>
         {%- endif -%}
@@ -89,6 +89,52 @@
       "id": "subheading",
       "label": "Subheading",
       "default": "Your subheading"
+    },
+    {
+      "type": "range",
+      "id": "subheading_font_desktop",
+      "label": "Subeading Desktop Font Size",
+      "min": 12,
+      "max": 80,
+      "step": 1,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "subheading_font_mobile",
+      "label": "Subeading Mobile Font Size",
+      "min": 12,
+      "max": 80,
+      "step": 1,
+      "default": 14
+    },
+    {
+      "type": "select",
+      "id": "subheading_font_family",
+      "label": "Subeading Font Family",
+      "default": "Zurich Extended",
+      "options": [
+        {
+          "value": "Zurich Extended",
+          "label": "Zurich Extended"
+        },
+        {
+          "value": "ZurichBT",
+          "label": "ZurichBT"
+        },
+        {
+          "value": "Armata",
+          "label": "Armata"
+        },
+        {
+          "value": "Quantico-Bold",
+          "label": "Quantico-Bold"
+        },
+        {
+          "value": "Recoleta-SemiBold",
+          "label": "Recoleta-SemiBold"
+        }
+      ]
     },
     {
       "type": "text",
