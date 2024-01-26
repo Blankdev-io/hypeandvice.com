@@ -1,3 +1,19 @@
+{% if section.settings.seo_text %}
+  <style>
+    .seo-container {
+      width: 100%;       /* Container takes full width of the parent */
+      height: 200px;     /* Fixed height of 200px */
+      overflow-y: auto;  /* Enables vertical scrollbar if content overflows */
+      border: 1px solid #000; /* Optional: adds a border for visual reference */
+  }
+  </style>
+  
+  {% if collection.metafields.custom.seo_text != blank %}
+    <div class="seo-container">
+        {{ collection.metafields.custom.seo_text }}
+    </div>
+  {% endif %}
+{% else %}
 {%- if section.settings.background != settings.background and section.settings.background != 'rgba(0,0,0,0)' -%}
   {%- assign blends_with_background = false -%}
 {%- else -%}
@@ -131,7 +147,7 @@
   </div>
   
 </section>
-
+{% endif %}
 
 {% schema %}
 {
@@ -140,9 +156,8 @@
   "settings": [
     {
       "type": "checkbox",
-      "id": "reveal_on_scroll",
-      "label": "Reveal on scroll",
-      "info": "Show animation when section becomes visible.",
+      "id": "seo_text",
+      "label": "Display SEO text box instead of subcollection",
       "default": false
     },
     {
