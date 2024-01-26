@@ -23,7 +23,7 @@
   
   {% if collection.metafields.custom.seo_text != blank %}
     <div id="seoTextJson" style="display: none;">
-        {{ product.metafields.custom.additional_product_description | metafield_tag }}
+        {{ collection.metafields.custom.seo_text | metafield_tag }}
 
     </div>
     
