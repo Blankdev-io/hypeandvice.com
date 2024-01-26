@@ -15296,7 +15296,7 @@ shopify-payment-terms {
 /* CHANGES TO THE CATEGORIES CAROUSEL TO LIMIT ITS WIDTH */
 
 .list-collections.list-collections--carousel.list-collection--category {
-  max-width: 1440px;
+  max-width: 1666px;
   margin: auto;
 }
 
