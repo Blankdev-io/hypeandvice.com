@@ -10929,6 +10929,10 @@ input:checked + .popover__choice-label::after,
     grid-auto-columns: 140px;
   }
 
+  .logo-list__list.center-logos {
+    grid-auto-columns: auto !important;
+  }
+
   .logo-list--grid {
     padding-left: var(--container-gutter);
     padding-right: var(--container-gutter); /* We add extra internal spacing on pocket */
