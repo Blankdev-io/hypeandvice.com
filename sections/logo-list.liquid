@@ -71,7 +71,7 @@
       </header>
 
       {%- capture section_content -%}
-        <div class="logo-list__list">
+        <div class="logo-list__list{% if section.blocks.size <= 3 %} center-logos{% endif %}">
           {%- for block in section.blocks -%}
             {%- capture logo_content -%}
               {%- if block.settings.logo != blank -%}
