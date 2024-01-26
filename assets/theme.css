@@ -15280,8 +15280,8 @@ shopify-payment-terms {
   }
 
 .list-collections__item-list.grid-2-columns {
-  grid-template-columns: repeat(auto-fit, calc(50% - var(--container-gutter) / 2)) !important;
-  gap: 15px !important;
+  grid-template-columns: repeat(auto-fit,calc(50% - (15px) / 2))!important;
+  gap: 15px!important;
 }
 
 .below-text-header {
