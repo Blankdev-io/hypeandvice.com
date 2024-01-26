@@ -15300,6 +15300,10 @@ shopify-payment-terms {
   margin: auto;
 }
 
+.list-collections__item-list {
+  grid-gap: 29px;
+}
+
 .list-collections__scroller.categories-custom.hide-scrollbar.is-scrollable {
   max-width: 90%;
   margin: auto;
