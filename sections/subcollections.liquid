@@ -9,11 +9,47 @@
   </style>
   
   {% if collection.metafields.custom.seo_text != blank %}
-    <div class="seo-container">
+    <div id="seoTextJson" style="display: none;">
         {{ collection.metafields.custom.seo_text }}
     </div>
+    
+    <div id="seoText"></div>
   {% endif %}
+
+
+<script>
+  function renderRichText(jsonData) {
+    let htmlContent = '';
+    jsonData.children.forEach(block => {
+        if (block.type === 'paragraph') {
+            let paragraphContent = '';
+            block.children.forEach(paragraphBlock => {
+                if (paragraphBlock.type === 'text') {
+                    paragraphContent += paragraphBlock.value;
+                }
+                // You can add more conditions here if there are other types
+            });
+            htmlContent += `<p>${paragraphContent}</p>`;
+        }
+        // You can add more conditions here for other block types
+    });
+    return htmlContent;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const seoTextJson = document.getElementById('seoTextJson').innerText;
+    const seoTextData = JSON.parse(seoTextJson);
+    const seoTextHtml = renderRichText(seoTextData);
+    document.getElementById('seoText').innerHTML = seoTextHtml;
+});
+</script>
+  
 {% else %}
+
+
+
+
+  
 {%- if section.settings.background != settings.background and section.settings.background != 'rgba(0,0,0,0)' -%}
   {%- assign blends_with_background = false -%}
 {%- else -%}
