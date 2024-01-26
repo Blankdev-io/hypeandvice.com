@@ -15323,3 +15323,12 @@ shopify-payment-terms {
 }
 
 /* END OF CHANGES TO THE CATEGORIES CAROUSEL TO LIMIT ITS WIDTH */
+
+/* CHANGES TO THE MOBILE FOOTER */
+@media screen and (max-width: 750px) {
+  .footer__item-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
