@@ -109,12 +109,12 @@
         "collection_crLBn8": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "sweatpants",
             "image": "shopify:\/\/shop_images\/127A0249_11f16a0a-9015-493a-ab72-2a69b9f548fc.jpg",
             "subheading": "",
             "title": "",
             "link_text": "",
-            "link_url": "",
+            "link_url": "shopify:\/\/collections\/sweatpants",
             "text_color": "#000000"
           }
         },
