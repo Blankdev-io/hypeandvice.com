@@ -85,12 +85,12 @@
         "collection_M4kbWB": {
           "type": "collection",
           "settings": {
-            "collection": "arizona-state-university",
+            "collection": "ncaa-loungewear",
             "image": "shopify:\/\/shop_images\/TEST_2.4.jpg",
             "subheading": "",
             "title": "",
             "link_text": "",
-            "link_url": "",
+            "link_url": "shopify:\/\/collections\/ncaa-loungewear",
             "text_color": "#000000"
           }
         },
