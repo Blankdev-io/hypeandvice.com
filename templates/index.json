@@ -121,12 +121,12 @@
         "collection_CAdw7m": {
           "type": "collection",
           "settings": {
-            "collection": "atlanta-hawks",
+            "collection": "sale-1",
             "image": "shopify:\/\/shop_images\/HVWT95GSO1-Front_800x_756823c8-7067-4b10-a84b-4f4be6b59d22.webp",
             "subheading": "",
-            "title": "SALE",
+            "title": "",
             "link_text": "",
-            "link_url": "",
+            "link_url": "shopify:\/\/collections\/sale-1",
             "text_color": "#000000"
           }
         }
