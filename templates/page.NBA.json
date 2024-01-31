@@ -74,7 +74,8 @@
       ],
       "custom_css": [
         ".klaviyo-form-WMjr9K {margin-top: -17% !important; z-index: 9999 !important;}",
-        ".klaviyo-form {background-color: transparent !important;}"
+        ".klaviyo-form {background-color: transparent !important;}",
+        "@media screen and (max-width: 1000px) {.klaviyo-form-WMjr9K {margin-top: -50% !important; }}"
       ],
       "settings": {
         "include_horizontal_margins": false,
