@@ -14,8 +14,8 @@
         "template--14800247914601__d817cfc1-c6e0-48b0-a01b-d0d9b9e3e2d0-image-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/H_V_MLS_HOMEPAGE-DESKTOP_3000x1500px.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/H_V_MLS_HOMEPAGE-MOBILE_1000x1400px.jpg",
+            "image": "shopify:\/\/shop_images\/H_V_MLS_HOMEPAGE-DESKTOP_3000x1500px_v2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/H_V_MLS_HOMEPAGE-MOBILE_1000x1400px_v2.jpg",
             "show_videos": false,
             "autoplay": true,
             "loop": true,
@@ -552,7 +552,13 @@
       "disabled": true,
       "settings": {
         "subheading": "Tag us on your pics to be featured & enter for a chance to win a $100 HV gift-card.",
+        "subheading_font_desktop": 16,
+        "subheading_font_mobile": 14,
+        "subheading_font_family": "Zurich Extended",
         "title": "InstaShop ✨",
+        "heading_font_desktop": 16,
+        "heading_font_mobile": 14,
+        "heading_font_family": "Zurich Extended",
         "html": "<script src=\"\/\/foursixty.com\/media\/scripts\/fs.embed.v2.5.js\" data-feed-id=\"hype-and-vice\" data-theme=\"showcase_v2_5\" data-open-links-in-same-page=\"true\" data-category-filter=\"hvfeed\" data-page-size=\"8\"><\/script>\n<style>.fs-has-links::after { padding:5px 7.5px;background-color:#ffffff;color:rgba(0, 0, 0, 0.8);content:\"SHOP IT\"; } .fs-desktop .fs-entry-container { width:25% !important;padding-top:25% !important; } .fs-mobile .fs-entry-container { width:50% !important;padding-top:50% !important; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:quantico;font-style:normal;font-weight:normal;font-size:14px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:quantico;font-style:normal;font-weight:normal;font-size:14px; } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.8);margin:0px; } div.fs-entry-date { display:none; } div.fs-entry-title { display:none; } .fs-wrapper div.fs-timeline-entry { margin:3px; } <\/style>",
         "add_vertical_spacing": true,
         "background_type": "full_width",
