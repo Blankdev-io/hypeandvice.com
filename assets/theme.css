@@ -15055,6 +15055,13 @@ shopify-payment-terms {
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+  font-family: 'Zurich Ultra Black Extended BT';
+  src: url('https://cdn.shopify.com/s/files/1/0061/4167/3590/files/ZurichBT-UltraBlackExtended.woff2?v=1706729369') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 .mt-4{
   margin-top:1.5rem;
