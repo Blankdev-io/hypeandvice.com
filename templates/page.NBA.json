@@ -51,7 +51,7 @@
         "section_height": "large",
         "transition_type": "fade",
         "autoplay": false,
-        "cycle_speed": 4,
+        "cycle_speed": 5,
         "background": "rgba(0,0,0,0)"
       }
     },
@@ -69,7 +69,7 @@
         "klaviyo_email_marketing_sms_form_embed_block_AAkwhE"
       ],
       "custom_css": [
-        ".klaviyo-form-WMjr9K {margin-top: -15% !important; z-index: 9999 !important;}",
+        ".klaviyo-form-WMjr9K {margin-top: -20% !important; z-index: 9999 !important;}",
         ".klaviyo-form {background-color: transparent !important;}"
       ],
       "settings": {
