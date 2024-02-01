@@ -13082,15 +13082,6 @@ shopify-payment-terms {
     top: calc(var(--item-width) / var(--smallest-image-aspect-ratio) / 2 - 28px); /* 28px is half the height of the button */
   }
 
-  .list-collections__prev-next.product-list {
-    position: absolute;
-    pointer-events: none;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    top: calc(var(--item-width) / var(--smallest-image-aspect-ratio) / 2 - 28px); /* 28px is half the height of the button */
-  }
-
   .product-list__arrow {
     z-index: 1;
     opacity: 0;
@@ -15339,6 +15330,7 @@ shopify-payment-terms {
 .list-collections__prev-next.prev-next-buttons.categories-custom {
   width: 100%;
   display: block;
+  position: absolute;
 }
 
 .list-collections__item-list.category-list {
@@ -15365,4 +15357,14 @@ shopify-payment-terms {
     flex-wrap: wrap;
     gap: 40px;
   }
+}
+/* END OF CHANGES TO THE MOBILE FOOTER*/
+
+.list-collections__prev-next.product-list {
+  position: absolute;
+  pointer-events: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: 42%;
 }
