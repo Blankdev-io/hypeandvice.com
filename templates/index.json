@@ -937,6 +937,83 @@
         "cycle_speed": 5,
         "background": "rgba(0,0,0,0)"
       }
+    },
+    "product_list_PmJkHF": {
+      "type": "product-list",
+      "blocks": {
+        "product_JkmUxC": {
+          "type": "product",
+          "settings": {
+            "product": "alma-ace-cardigan"
+          }
+        },
+        "product_6hH6b9": {
+          "type": "product",
+          "settings": {
+            "product": "mto-alma-college-cali-tee"
+          }
+        },
+        "product_cNktzC": {
+          "type": "product",
+          "settings": {
+            "product": "mto-alma-college-rugby-top"
+          }
+        },
+        "product_pd4EXd": {
+          "type": "product",
+          "settings": {
+            "product": "mto-alma-college-track-shorts"
+          }
+        },
+        "product_JfxckU": {
+          "type": "product",
+          "settings": {
+            "product": "mto-alma-college-track-shorts"
+          }
+        },
+        "product_9PRmwr": {
+          "type": "product",
+          "settings": {
+            "product": "mto-alma-college-track-shorts"
+          }
+        },
+        "product_8C7npq": {
+          "type": "product",
+          "settings": {
+            "product": "mto-alma-college-track-shorts"
+          }
+        },
+        "product_8Dr8yi": {
+          "type": "product",
+          "settings": {
+            "product": "mto-alma-college-track-shorts"
+          }
+        },
+        "product_pHmxtb": {
+          "type": "product",
+          "settings": {
+            "product": "mto-alma-college-track-shorts"
+          }
+        }
+      },
+      "block_order": [
+        "product_JkmUxC",
+        "product_6hH6b9",
+        "product_cNktzC",
+        "product_pd4EXd",
+        "product_JfxckU",
+        "product_9PRmwr",
+        "product_8C7npq",
+        "product_8Dr8yi",
+        "product_pHmxtb"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "JUST IN",
+        "products_count": 20,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
@@ -954,6 +1031,7 @@
     "1650006254940409c8",
     "164923770607431a63",
     "16487231743e468afb",
-    "165090673528cafdbe"
+    "165090673528cafdbe",
+    "product_list_PmJkHF"
   ]
 }
