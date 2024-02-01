@@ -157,7 +157,7 @@
               </div>
             
               {%- if collection_content != blank -%}
-                <div class="{% if block.settings.below_text %}category__item-info{% if section.settings.custom_font %} collection-list-item-custom-{{ section.id }}{% endif %} text-container{% else %}list-collections__item-info text-container{% endif %}">
+                <div class="{% if section.settings.custom_font %}collection-list-item-custom-{{ section.id }} {% endif %}{% if block.settings.below_text %}category__item-info text-container{% else %}list-collections__item-info text-container{% endif %}">
                   {{- collection_content -}}
                 </div>
               {%- endif -%}
@@ -224,12 +224,12 @@
         {
           "type": "text",
           "id": "subheading",
-          "label": "Subheading"
+          "label": "League"
         },
         {
           "type": "text",
           "id": "title",
-          "label": "Heading"
+          "label": "Subheading"
         },
         {
           "type": "checkbox",
