@@ -41,6 +41,11 @@
     }
   {%- endfor -%}
 
+
+  .heading-category-container {
+    display: flex;
+  }
+
   .category__item-info p {
     font-size: {{ section.settings.category_font_desktop }}px;
     font-family: "{{ section.settings.category_font_family }}", sans-serif !important;
@@ -72,7 +77,7 @@
           {%- endif -%}
 
           {%- if section.settings.title != blank -%}
-            <h3 class="heading h2 category-heading">{{ section.settings.title | escape }}</h3>
+            <div class="heading-category-container"><h3 class="heading h2 category-heading">{{ section.settings.title | escape }}</h3><a href="/collections/all" class="shop-all-text">SHOP ALL</a></div>
           {%- endif -%}
         </header>
       {%- endif -%}
