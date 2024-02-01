@@ -257,6 +257,7 @@
         "collection_CJ6kVk",
         "collection_gwWRML"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "layout": "grid",
