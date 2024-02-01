@@ -10720,6 +10720,7 @@ input:checked + .popover__choice-label::after,
   width: auto !important;
   top: auto !important;
   bottom: 0 !important;
+  text-align: left !important;
 }
 
 @media screen and (min-width: 741px) {
