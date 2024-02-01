@@ -291,7 +291,7 @@
             "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/pages\/gamebae-blog",
-            "text_color": "#000000",
+            "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 30
           }
@@ -309,7 +309,7 @@
             "below_text": false,
             "link_text": "",
             "link_url": "",
-            "text_color": "#000000",
+            "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 30
           }
@@ -327,7 +327,7 @@
             "below_text": false,
             "link_text": "",
             "link_url": "",
-            "text_color": "#000000",
+            "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 30
           }
