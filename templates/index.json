@@ -290,7 +290,7 @@
             "title": "",
             "below_text": false,
             "link_text": "",
-            "link_url": "",
+            "link_url": "shopify:\/\/pages\/gamebae-blog",
             "text_color": "#000000",
             "overlay_color": "#000000",
             "overlay_opacity": 30
@@ -340,8 +340,6 @@
       ],
       "settings": {
         "reveal_on_scroll": false,
-        "layout": "grid",
-        "two_columns": false,
         "subheading": "",
         "title": "FEATURED SHOPS",
         "custom_font": true,
