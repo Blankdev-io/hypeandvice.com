@@ -26,10 +26,6 @@
     --prev-next-button-color: var(--section-background);
 
     --section-background: {{ section_background.red }}, {{ section_background.green }}, {{ section_background.blue }};
-
-    {%- if section.settings.layout == 'collage' -%}
-      --section-collage-column: {{ section.blocks.size | at_most: 2 }};
-    {%- endif -%}
   }
 
   {%- for block in section.blocks -%}
@@ -88,7 +84,7 @@
       {%- endif -%}
 
       {%- capture section_content -%}
-        <div class="list-collections__item-list{% if section.settings.two_columns %} grid-2-columns{% endif %}">
+        <div class="list-collections__item-list league-list">
           {%- for block in section.blocks -%}
             {%- capture collection_content -%}
               {% if block.settings.below_text %}
@@ -118,56 +114,6 @@
               {%- endif -%}
             {%- endcapture -%}
 
-            {%- if section.settings.layout == 'collage' -%}
-              {%- comment -%}
-              The logic is as follows:
-                - If we have a modulo 3 (3, 6, 9...) we highlight every modulo 3, and every 6 is shifted
-                - If we have a modulo 5 (5, 10, 15...) we highlight every modulo 5, and every 10 is shifted
-                - If we have a modulo 7 (7, 14, 21...) we highlight every modulo 7, and every 14 is shifted
-              {%- endcomment -%}
-
-              {%- assign is_highlighted = false -%}
-              {%- assign is_shifted = true -%}
-              {%- assign modulo_3 = section.blocks.size | modulo: 3 -%}
-              {%- assign modulo_5 = section.blocks.size | modulo: 5 -%}
-              {%- assign modulo_7 = section.blocks.size | modulo: 7 -%}
-
-              {%- if modulo_3 == 0 -%}
-                {%- assign index_modulo_3 = forloop.index | modulo: 3 -%}
-                {%- assign index_modulo_6 = forloop.index | modulo: 6 -%}
-
-                {%- if index_modulo_3 == 1 -%}
-                  {%- assign is_highlighted = true -%}
-                {%- endif -%}
-
-                {%- if index_modulo_6 == 1 -%}
-                  {%- assign is_shifted = false -%}
-                {%- endif -%}
-              {%- elsif modulo_5 == 0 -%}
-                {%- assign index_modulo_5 = forloop.index | modulo: 5 -%}
-                {%- assign index_modulo_10 = forloop.index | modulo: 10 -%}
-
-                {%- if index_modulo_5 == 1 -%}
-                  {%- assign is_highlighted = true -%}
-                {%- endif -%}
-
-                {%- if index_modulo_10 == 1 -%}
-                  {%- assign is_shifted = false -%}
-                {%- endif -%}
-              {%- elsif modulo_7 == 0 -%}
-                {%- assign index_modulo_7 = forloop.index | modulo: 7 -%}
-                {%- assign index_modulo_14 = forloop.index | modulo: 14 -%}
-
-                {%- if index_modulo_7 == 1 -%}
-                  {%- assign is_highlighted = true -%}
-                {%- endif -%}
-
-                {%- if index_modulo_14 == 1 -%}
-                  {%- assign is_shifted = false -%}
-                {%- endif -%}
-              {%- endif -%}
-            {%- endif -%}
-
             {%- assign collection = block.settings.collection -%}
 
             <a id="block-{{ section.id }}-{{ block.id }}" href="{{ block.settings.link_url | default: collection.url }}" class="list-collections__item {% if is_highlighted %}list-collections__item--highlight {% if is_shifted %}list-collections__item--shift{% endif %}{% endif %} {% unless block.settings.below_text %}has-overlay{% endunless %} image-zoom" {{ block.shopify_attributes }}>
@@ -175,16 +121,7 @@
                 {%- assign collection_image = block.settings.image | default: collection.featured_image -%}
 
                 {%- if collection_image != blank -%}
-                  {%- case section.settings.layout -%}
-                    {%- when 'grid' -%}
-                      {%- capture image_sizes -%}(max-width: 740px) calc(100vw - 48px), (max-width: 999px) calc(50vw - 60px), 480px{%- endcapture -%}
-
-                    {%- when 'carousel' -%}
-                      {%- capture image_sizes -%}(max-width: 740px) 80vw, (max-width: 999px) 60vw, 425px{%- endcapture -%}
-
-                    {%- when 'collage' -%}
-                      {%- capture image_sizes -%}(max-width: 740px) calc(100vw - 24px * 2), 660px{%- endcapture -%}
-                  {%- endcase -%}
+                  {%- capture image_sizes -%}(max-width: 740px) calc(100vw - 48px), (max-width: 999px) calc(50vw - 60px), 480px{%- endcapture -%}
 
                   <style>
                   .custom-height-{{ block.id }} {
@@ -198,7 +135,7 @@
                   }
                   </style>
                   
-                  {%- if section.settings.layout == 'grid' and collection_image.aspect_ratio > 2.5 -%}
+                  {%- if collection_image.aspect_ratio > 2.5 -%}
                     {%- assign height_constraint = 800 | at_most: collection_image.height -%}
                     <img class="list-collections__item-image{% if block.settings.custom_height %} custom-height-{{ block.id }}{% endif %}" {% if section.settings.reveal_on_scroll %}reveal{% endif %} loading="lazy" sizes="{{ image_sizes }}" {% render 'image-attributes', image: collection_image, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400', height_constraint: height_constraint, crop: 'center' %}>
                   {%- else -%}
@@ -357,7 +294,8 @@
           "unit": "%",
           "default": 30
         }
-      ]
+      ],
+    "limit": 3
     }
   ],
   "settings": [
@@ -366,33 +304,6 @@
       "id": "reveal_on_scroll",
       "label": "Reveal on scroll",
       "info": "Show animation when section becomes visible.",
-      "default": false
-    },
-    {
-      "type": "select",
-      "id": "layout",
-      "label": "Layout",
-      "info": "Collage mode only affects desktop, and will adapt based on number of items.",
-      "options": [
-        {
-          "value": "grid",
-          "label": "Grid"
-        },
-        {
-          "value": "collage",
-          "label": "Collage"
-        },
-        {
-          "value": "carousel",
-          "label": "Carousel"
-        }
-      ],
-      "default": "grid"
-    },
-    {
-      "type": "checkbox",
-      "id": "two_columns",
-      "label": "Display grid in 2 columns",
       "default": false
     },
     {

@@ -15329,6 +15329,10 @@ shopify-payment-terms {
   padding-right: 0;
 }
 
+.list-collections__item-list.league-list {
+  grid-gap: 0;
+}
+
 /* END OF CHANGES TO THE CATEGORIES CAROUSEL TO LIMIT ITS WIDTH */
 
 /* CHANGES TO THE MOBILE FOOTER */
