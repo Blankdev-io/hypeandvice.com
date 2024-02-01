@@ -15338,6 +15338,12 @@ shopify-payment-terms {
 
 .list-collections__item-list.league-list {
   grid-gap: 0;
+  grid-template-columns: repeat(auto-fit,calc(100% / 3)) !important;
+}
+
+.section__header.new-left-design {
+  max-width: 1500px !important;
+  text-align: left !important;
 }
 
 /* END OF CHANGES TO THE CATEGORIES CAROUSEL TO LIMIT ITS WIDTH */
