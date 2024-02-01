@@ -286,12 +286,12 @@
             "custom_height": true,
             "custom_height_size": 800,
             "custom_height_size_mobile": 200,
-            "subheading": "",
-            "title": "",
+            "subheading": "NCAA",
+            "title": "SHOP COLLEGES",
             "below_text": false,
             "link_text": "",
-            "link_url": "",
-            "text_color": "#000000",
+            "link_url": "shopify:\/\/pages\/gamebae-blog",
+            "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 30
           }
@@ -304,12 +304,12 @@
             "custom_height": true,
             "custom_height_size": 800,
             "custom_height_size_mobile": 200,
-            "subheading": "",
-            "title": "",
+            "subheading": "NBA",
+            "title": "SHOP BASKETBALL",
             "below_text": false,
             "link_text": "",
             "link_url": "",
-            "text_color": "#000000",
+            "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 30
           }
@@ -322,12 +322,12 @@
             "custom_height": true,
             "custom_height_size": 800,
             "custom_height_size_mobile": 200,
-            "subheading": "",
-            "title": "",
+            "subheading": "MLS",
+            "title": "SHOP SOCCER",
             "below_text": false,
             "link_text": "",
             "link_url": "",
-            "text_color": "#000000",
+            "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 30
           }
@@ -340,8 +340,6 @@
       ],
       "settings": {
         "reveal_on_scroll": false,
-        "layout": "grid",
-        "two_columns": false,
         "subheading": "",
         "title": "FEATURED SHOPS",
         "custom_font": true,
