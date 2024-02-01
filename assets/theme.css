@@ -15246,6 +15246,11 @@ shopify-payment-terms {
     border: transparent;
   }
 
+  .container.no-padding {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
   @media screen and (max-width: 750px) {
     .list-collections--carousel.list-collection--category .list-collections__item-list {
       width: 242% !important;
@@ -15358,7 +15363,14 @@ shopify-payment-terms {
     gap: 40px;
   }
 }
-/* END OF CHANGES TO THE MOBILE FOOTER*/
+/* END OF CHANGES TO THE MOBILE FOOTER */
+
+/* STYLES FOR THE LEAGUE LIST SECTION */
+@media screen and (max-width: 750px) {
+  .list-collections__item-list.league-list {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
 
 .list-collections__prev-next.product-list {
   position: absolute;
