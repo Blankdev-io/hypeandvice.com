@@ -286,7 +286,7 @@
             "image": "shopify:\/\/shop_images\/HVWS24CU1-7.jpg",
             "custom_height": true,
             "custom_height_size": 800,
-            "custom_height_size_mobile": 350,
+            "custom_height_size_mobile": 200,
             "subheading": "NCAA",
             "title": "SHOP COLLEGES",
             "below_text": false,
@@ -294,17 +294,17 @@
             "link_url": "shopify:\/\/pages\/gamebae-blog",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 30
           }
         },
         "collection_X3cnyr": {
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/422215702_1441228670144628_8569396623076225684_n.jpg",
+            "image": "shopify:\/\/shop_images\/127A3097.jpg",
             "custom_height": true,
             "custom_height_size": 800,
-            "custom_height_size_mobile": 350,
+            "custom_height_size_mobile": 200,
             "subheading": "NBA",
             "title": "SHOP BASKETBALL",
             "below_text": false,
@@ -312,7 +312,7 @@
             "link_url": "",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 30
           }
         },
         "collection_kn98fk": {
@@ -322,7 +322,7 @@
             "image": "shopify:\/\/shop_images\/TEST_2.1.jpg",
             "custom_height": true,
             "custom_height_size": 800,
-            "custom_height_size_mobile": 350,
+            "custom_height_size_mobile": 200,
             "subheading": "MLS",
             "title": "SHOP SOCCER",
             "below_text": false,
@@ -330,7 +330,7 @@
             "link_url": "",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 30
           }
         }
       },
@@ -344,7 +344,7 @@
         "subheading": "",
         "title": "FEATURED SHOPS",
         "custom_font": true,
-        "heading_font_desktop": 18,
+        "heading_font_desktop": 24,
         "heading_font_mobile": 14,
         "heading_font_family": "Zurich Extended",
         "category_font_desktop": 16,
