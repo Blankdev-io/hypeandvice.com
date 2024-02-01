@@ -15380,3 +15380,12 @@ shopify-payment-terms {
   width: 100%;
   top: 42%;
 }
+
+.heading-category-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shop-all-text {
+  text-decoration: underline;
+}

@@ -47,14 +47,14 @@
     <div class="section__color-wrapper">
       <div class="container {% unless blends_with_background %}vertical-breather{% endunless %}">
         {%- if section.settings.title != blank or section.settings.subheading != blank -%}
-          <header class="section__header">
+          <header class="section__header new-left-design">
             <div class="text-container">
               {%- if section.settings.subheading != blank -%}
                 <h2 class="heading heading--small">{{ section.settings.subheading }}</h2>
               {%- endif -%}
 
               {%- if section.settings.title != blank -%}
-                <h3 class="heading h3">{{ section.settings.title }}</h3>
+                <div class="heading-category-container"><h3 class="heading h3">{{ section.settings.title }}</h3><a href="/collections/all" class="shop-all-text">SHOP ALL</a></div>
               {%- endif -%}
             </div>
           </header>
