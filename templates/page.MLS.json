@@ -15,7 +15,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Landing_Page_MLS_V1_4629e9c7-8433-4c30-ae09-830a547cb0c8.png",
-            "mobile_image": "shopify:\/\/shop_images\/H_V_MLS_HOMEPAGE-MOBILE_1000x1400px_v2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/MLS_MOBILE_VERSION.png",
             "show_videos": false,
             "autoplay": true,
             "loop": true,
