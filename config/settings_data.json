@@ -305,6 +305,9 @@
           "ac15f1c9-f099-4420-afcb-da6f44207add",
           "53f6421a-3050-482f-ad7c-986eb1241a5e"
         ],
+        "custom_css": [
+          "#email_99713886 {max-width: 300px !important;}"
+        ],
         "settings": {
           "show_payment_icons": false,
           "show_country_selector": false,
