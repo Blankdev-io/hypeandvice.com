@@ -48,16 +48,38 @@
     --section-overlay-opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};
     {% endunless %}
   }
+
+  {%- assign image = section.settings.image -%}
+  {%- assign mobile_image = section.settings.mobile_image -%}
+  {%- assign image_aspect_ratio = image.aspect_ratio | default: 2.63 -%}
+  {%- assign mobile_image_aspect_ratio = mobile_image.aspect_ratio | default: 2.63 -%}
+
+  {% if section.settings.just_image %}
+  .just-image-banner-container {
+    --image-aspect-ratio: {{ image_aspect_ratio }} !important;
+  }
+
+  .just-image-banner {
+    padding-bottom: {{ 100.0 | divided_by: image_aspect_ratio }}% !important;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .just-image-banner-container {
+      --image-aspect-ratio: {{ mobile_image_aspect_ratio }} !important;
+    }
+
+    .just-image-banner {
+      padding-bottom: {{ 100.0 | divided_by: mobile_image_aspect_ratio }}% !important;
+    }
+  }
+  {% endif %}
 </style>
 
 <section class="section {% unless is_boxed %}section--flush{% endunless %}">
   <div {% if is_boxed %}class="container"{% endif %}>
-    {%- assign image = section.settings.image -%}
-    {%- assign mobile_image = section.settings.mobile_image -%}
-    {%- assign image_aspect_ratio = image.aspect_ratio | default: 2.63 -%}
 
-    <image-with-text-overlay {% if section.settings.reveal_on_scroll %}reveal-on-scroll{% endif %} class="image-overlay image-overlay--{{ section.settings.section_height }}" {% if section.settings.section_height == 'auto' %}style="--image-aspect-ratio: {{ image_aspect_ratio }}"{% endif %}>
-      <div class="image-overlay__image-wrapper" {% if section.settings.section_height == 'auto' %}style="padding-bottom: {{ 100.0 | divided_by: image_aspect_ratio }}%"{% endif %}>
+    <image-with-text-overlay {% if section.settings.reveal_on_scroll %}reveal-on-scroll{% endif %} class="image-overlay image-overlay--{{ section.settings.section_height }}{% if section.settings.just_image %} just-image-banner-container{% endif %}" {% unless section.settings.just_image %}{% if section.settings.section_height == 'auto' %}style="--image-aspect-ratio: {{ image_aspect_ratio }}"{% endif %}{% endunless %}>
+      <div class="image-overlay__image-wrapper{% if section.settings.just_image %} just-image-banner{% endif %}" {% unless section.settings.just_image %}{% if section.settings.section_height == 'auto' %}style="padding-bottom: {{ 100.0 | divided_by: image_aspect_ratio }}%"{% endif %}{% endunless %}>
         {%- if image != blank -%}
           <picture>
             <source media="(max-width: 740px)" {% render 'image-attributes', image: image, sizes: '400,500,600,700,800,900,1000', height_constraint: 800, crop: 'center', ignore_src: true %}>
