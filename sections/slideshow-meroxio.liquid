@@ -62,6 +62,14 @@
       --section-blocks-overlay-color: {{ block.settings.overlay_color.red }}, {{ block.settings.overlay_color.green }}, {{ block.settings.overlay_color.blue }};
       --section-blocks-overlay-opacity: {{ block.settings.overlay_opacity | divided_by: 100.0 }};
     }
+
+    {% if block.settings.klaviyo %}
+      .kl-private-reset-css-Xuajs1 form {
+        padding: 0px 0px 60px 0px !important;
+        margin-top: calc((60 / 1440) * 100vw);  
+      }
+    {% endif %}
+
   {%- endfor -%}
 </style>
 
