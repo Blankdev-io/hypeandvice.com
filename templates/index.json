@@ -491,6 +491,7 @@
       "block_order": [
         "image_t6gE9q"
       ],
+      "disabled": true,
       "settings": {
         "section_height": "auto",
         "transition_type": "fade",
