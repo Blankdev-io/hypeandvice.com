@@ -211,6 +211,10 @@
               </h3>
             {%- endif -%}
 
+            {% if block.settings.klaviyo != blank %}
+              <div class="klaviyo-form-{{ block.settings.klaviyo }}"></div>
+            {% endif %}
+
             {%- capture buttons -%}
               {%- if block.settings.button_1_text != blank -%}
                 <a href="{{ block.settings.button_1_link }}" class="button button--primary button-{{ block.id }}">{{ block.settings.button_1_text | escape }}</a>
@@ -235,7 +239,7 @@
           {%- endcapture -%}
 
           {%- if section_content != blank -%}
-            <div class="container">
+            <div class="container{% if block.settings.klaviyo != blank %} no-padding{% endif %}">
               {%- assign text_alignment = block.settings.text_position | split: '_' | first -%}
               {%- assign text_position = block.settings.text_position | split: '_' | last -%}
 
@@ -741,6 +745,11 @@
           "step": 1,
           "unit": "%",
           "default": 30
+        },
+        {
+          "type": "text",
+          "id": "klaviyo",
+          "label": "Klaviyo Form ID"
         }
       ]
     }
