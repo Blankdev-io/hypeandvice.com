@@ -15389,3 +15389,7 @@ shopify-payment-terms {
 .shop-all-text {
   text-decoration: underline;
 }
+
+:root {
+  --max-margin-top: -475px;
+}
