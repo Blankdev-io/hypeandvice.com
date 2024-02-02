@@ -412,16 +412,22 @@
             "product": "iowa-state-university-basketball-top"
           }
         },
+        "product_cNktzC": {
+          "type": "product",
+          "settings": {
+            "product": "mto-university-of-tennessee-boxer-short"
+          }
+        },
         "product_6hH6b9": {
           "type": "product",
           "settings": {
             "product": "university-of-california-los-angeles-football-top2"
           }
         },
-        "product_cNktzC": {
+        "product_8C7npq": {
           "type": "product",
           "settings": {
-            "product": "mto-university-of-tennessee-boxer-short"
+            "product": "mto-indiana-university-boxer-short"
           }
         },
         "product_pd4EXd": {
@@ -441,36 +447,16 @@
           "settings": {
             "product": "purdue-university-hometown-button-down"
           }
-        },
-        "product_8C7npq": {
-          "type": "product",
-          "settings": {
-            "product": "mto-indiana-university-boxer-short"
-          }
-        },
-        "product_8Dr8yi": {
-          "type": "product",
-          "settings": {
-            "product": "mto-alma-college-senior-top"
-          }
-        },
-        "product_pHmxtb": {
-          "type": "product",
-          "settings": {
-            "product": "mto-arizona-ace-short"
-          }
         }
       },
       "block_order": [
         "product_JkmUxC",
-        "product_6hH6b9",
         "product_cNktzC",
+        "product_6hH6b9",
+        "product_8C7npq",
         "product_pd4EXd",
         "product_JfxckU",
-        "product_9PRmwr",
-        "product_8C7npq",
-        "product_8Dr8yi",
-        "product_pHmxtb"
+        "product_9PRmwr"
       ],
       "settings": {
         "subheading": "",
