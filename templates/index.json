@@ -412,12 +412,6 @@
             "product": "iowa-state-university-basketball-top"
           }
         },
-        "product_cNktzC": {
-          "type": "product",
-          "settings": {
-            "product": "mto-university-of-tennessee-boxer-short"
-          }
-        },
         "product_6hH6b9": {
           "type": "product",
           "settings": {
@@ -442,6 +436,12 @@
             "product": "purdue-university-hometown-button-down"
           }
         },
+        "product_cNktzC": {
+          "type": "product",
+          "settings": {
+            "product": "mto-university-of-tennessee-boxer-short"
+          }
+        },
         "product_JfxckU": {
           "type": "product",
           "settings": {
@@ -451,11 +451,11 @@
       },
       "block_order": [
         "product_JkmUxC",
-        "product_cNktzC",
         "product_6hH6b9",
         "product_8C7npq",
         "product_pd4EXd",
         "product_9PRmwr",
+        "product_cNktzC",
         "product_JfxckU"
       ],
       "settings": {
