@@ -80,7 +80,7 @@
         "klaviyo_email_marketing_sms_form_embed_block_AAkwhE"
       ],
       "custom_css": [
-        ".klaviyo-form-WMjr9K {margin-top: -17% !important; z-index: 9999 !important;}",
+        ".klaviyo-form-WMjr9K {margin-top: calc(-21vw) !important; z-index: 9999 !important;}",
         ".klaviyo-form {background-color: transparent !important;}",
         "@media screen and (max-width: 1000px) {.klaviyo-form-WMjr9K {margin-top: -47% !important; }}"
       ],
