@@ -1006,6 +1006,7 @@
       "type": "image-with-text-overlay",
       "settings": {
         "reveal_on_scroll": true,
+        "just_image": true,
         "section_height": "auto",
         "image": "shopify:\/\/shop_images\/image_2024-02-02_122345519-transformed.png",
         "subheading": "Subheading",
