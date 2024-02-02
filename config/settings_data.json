@@ -306,7 +306,8 @@
           "53f6421a-3050-482f-ad7c-986eb1241a5e"
         ],
         "custom_css": [
-          ".kl-private-reset-css-Xuajs1 form {margin: 0px auto 0px 0px !important;}"
+          ".kl-private-reset-css-Xuajs1 form {margin: 0px auto 0px 0px !important;}",
+          ".kl-private-reset-css-Xuajs1 input {margin-left: auto;}"
         ],
         "settings": {
           "show_payment_icons": false,
