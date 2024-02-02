@@ -294,6 +294,20 @@
     "16492381491d455b02": {
       "type": "collection-list",
       "blocks": {
+        "collection_WFamNb": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/HVWT110SOC2-7.jpg",
+            "subheading": "RETRO TANK",
+            "title": "",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/retro-tank",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
         "2d460212-53fd-4802-8d36-f722c01ea345": {
           "type": "collection",
           "settings": {
@@ -562,6 +576,7 @@
         }
       },
       "block_order": [
+        "collection_WFamNb",
         "2d460212-53fd-4802-8d36-f722c01ea345",
         "collection_eqN3ed",
         "367cd815-1eda-4612-ad56-625c3c75669d",
