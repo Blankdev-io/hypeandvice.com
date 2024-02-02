@@ -1001,6 +1001,28 @@
         "cycle_speed": 5,
         "background": "rgba(0,0,0,0)"
       }
+    },
+    "image_with_text_overlay_c363GC": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "reveal_on_scroll": true,
+        "section_height": "auto",
+        "image": "shopify:\/\/shop_images\/image_2024-02-02_122345519-transformed.png",
+        "subheading": "Subheading",
+        "title": "Image with text overlay",
+        "content": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "link_style": "link",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "middle_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
     }
   },
   "order": [
@@ -1019,6 +1041,7 @@
     "1650006254940409c8",
     "164923770607431a63",
     "16487231743e468afb",
-    "165090673528cafdbe"
+    "165090673528cafdbe",
+    "image_with_text_overlay_c363GC"
   ]
 }
