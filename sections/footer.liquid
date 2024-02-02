@@ -23,6 +23,7 @@
 
 <footer class="footer {% if settings.footer_background == settings.background %}footer--bordered{% endif %}">
   <div class="container">
+    {% if block.settings.html != blank %}{{ block.settings.html }}{% endif %}
     <div class="footer__inner">
       <div class="footer__item-list">
         {%- for block in section.blocks -%}
@@ -339,6 +340,18 @@
           "unit": "px",
           "label": "Image width",
           "default": 150
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "name": "HTML",
+      "settings": [
+        {
+          "type": "text",
+          "id": "html",
+          "label": "HTML",
+          "default": "HTML goes here"
         }
       ]
     },
