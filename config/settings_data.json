@@ -261,6 +261,12 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "html_tw89Xw": {
+            "type": "html",
+            "settings": {
+              "html": "<div class=\"klaviyo-form-WHMY66\"><\/div>"
+            }
+          },
           "text": {
             "type": "text",
             "settings": {
@@ -293,6 +299,7 @@
           }
         },
         "block_order": [
+          "html_tw89Xw",
           "text",
           "links",
           "ac15f1c9-f099-4420-afcb-da6f44207add",
