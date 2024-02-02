@@ -23,7 +23,9 @@
 
 <footer class="footer {% if settings.footer_background == settings.background %}footer--bordered{% endif %}">
   <div class="container">
+    {%- for block in section.blocks -%}
     {% if block.settings.html != blank %}{{ block.settings.html }}{% endif %}
+    {% endfor %}
     <div class="footer__inner">
       <div class="footer__item-list">
         {%- for block in section.blocks -%}
