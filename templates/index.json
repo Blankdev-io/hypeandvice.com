@@ -436,16 +436,16 @@
             "product": "university-of-iowa-basketball-top"
           }
         },
-        "product_JfxckU": {
-          "type": "product",
-          "settings": {
-            "product": "florida-state-university-baseball-top"
-          }
-        },
         "product_9PRmwr": {
           "type": "product",
           "settings": {
             "product": "purdue-university-hometown-button-down"
+          }
+        },
+        "product_JfxckU": {
+          "type": "product",
+          "settings": {
+            "product": "florida-state-university-baseball-top"
           }
         }
       },
@@ -455,8 +455,8 @@
         "product_6hH6b9",
         "product_8C7npq",
         "product_pd4EXd",
-        "product_JfxckU",
-        "product_9PRmwr"
+        "product_9PRmwr",
+        "product_JfxckU"
       ],
       "settings": {
         "subheading": "",
