@@ -319,7 +319,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/TEST_2.1.jpg",
+            "image": "shopify:\/\/shop_images\/Kalena_01-2210263.jpg",
             "custom_height": true,
             "custom_height_size": 800,
             "custom_height_size_mobile": 200,
@@ -330,7 +330,7 @@
             "link_url": "",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         }
       },
