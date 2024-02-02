@@ -403,6 +403,83 @@
         "logo_background": "rgba(0,0,0,0)"
       }
     },
+    "product_list_PmJkHF": {
+      "type": "product-list",
+      "blocks": {
+        "product_JkmUxC": {
+          "type": "product",
+          "settings": {
+            "product": "iowa-state-university-basketball-top"
+          }
+        },
+        "product_6hH6b9": {
+          "type": "product",
+          "settings": {
+            "product": "mto-alma-college-cali-tee"
+          }
+        },
+        "product_cNktzC": {
+          "type": "product",
+          "settings": {
+            "product": "mto-alma-college-rugby-top"
+          }
+        },
+        "product_pd4EXd": {
+          "type": "product",
+          "settings": {
+            "product": "mto-alma-college-track-shorts"
+          }
+        },
+        "product_JfxckU": {
+          "type": "product",
+          "settings": {
+            "product": "mto-arizona-era-crewneck"
+          }
+        },
+        "product_9PRmwr": {
+          "type": "product",
+          "settings": {
+            "product": "mto-alma-college-rookie-sweats"
+          }
+        },
+        "product_8C7npq": {
+          "type": "product",
+          "settings": {
+            "product": "mto-arizona-mia-zip-sweater"
+          }
+        },
+        "product_8Dr8yi": {
+          "type": "product",
+          "settings": {
+            "product": "mto-alma-college-senior-top"
+          }
+        },
+        "product_pHmxtb": {
+          "type": "product",
+          "settings": {
+            "product": "mto-arizona-ace-short"
+          }
+        }
+      },
+      "block_order": [
+        "product_JkmUxC",
+        "product_6hH6b9",
+        "product_cNktzC",
+        "product_pd4EXd",
+        "product_JfxckU",
+        "product_9PRmwr",
+        "product_8C7npq",
+        "product_8Dr8yi",
+        "product_pHmxtb"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "JUST IN",
+        "products_count": 20,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "slideshow_m63Lfr": {
       "type": "slideshow",
       "blocks": {
@@ -937,83 +1014,6 @@
         "cycle_speed": 5,
         "background": "rgba(0,0,0,0)"
       }
-    },
-    "product_list_PmJkHF": {
-      "type": "product-list",
-      "blocks": {
-        "product_JkmUxC": {
-          "type": "product",
-          "settings": {
-            "product": "alma-ace-cardigan"
-          }
-        },
-        "product_6hH6b9": {
-          "type": "product",
-          "settings": {
-            "product": "mto-alma-college-cali-tee"
-          }
-        },
-        "product_cNktzC": {
-          "type": "product",
-          "settings": {
-            "product": "mto-alma-college-rugby-top"
-          }
-        },
-        "product_pd4EXd": {
-          "type": "product",
-          "settings": {
-            "product": "mto-alma-college-track-shorts"
-          }
-        },
-        "product_JfxckU": {
-          "type": "product",
-          "settings": {
-            "product": "mto-arizona-era-crewneck"
-          }
-        },
-        "product_9PRmwr": {
-          "type": "product",
-          "settings": {
-            "product": "mto-alma-college-rookie-sweats"
-          }
-        },
-        "product_8C7npq": {
-          "type": "product",
-          "settings": {
-            "product": "mto-arizona-mia-zip-sweater"
-          }
-        },
-        "product_8Dr8yi": {
-          "type": "product",
-          "settings": {
-            "product": "mto-alma-college-senior-top"
-          }
-        },
-        "product_pHmxtb": {
-          "type": "product",
-          "settings": {
-            "product": "mto-arizona-ace-short"
-          }
-        }
-      },
-      "block_order": [
-        "product_JkmUxC",
-        "product_6hH6b9",
-        "product_cNktzC",
-        "product_pd4EXd",
-        "product_JfxckU",
-        "product_9PRmwr",
-        "product_8C7npq",
-        "product_8Dr8yi",
-        "product_pHmxtb"
-      ],
-      "settings": {
-        "subheading": "",
-        "title": "JUST IN",
-        "products_count": 20,
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
     }
   },
   "order": [
@@ -1023,6 +1023,7 @@
     "collection_list_D6rqbx",
     "league_list_W4k6xn",
     "165065396872bf5f8b",
+    "product_list_PmJkHF",
     "slideshow_m63Lfr",
     "16506544520a12bd2c",
     "1655412672f035473e",
@@ -1031,7 +1032,6 @@
     "1650006254940409c8",
     "164923770607431a63",
     "16487231743e468afb",
-    "165090673528cafdbe",
-    "product_list_PmJkHF"
+    "165090673528cafdbe"
   ]
 }
