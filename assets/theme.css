@@ -15327,10 +15327,11 @@ shopify-payment-terms {
   grid-gap: 29px;
 }
 
+/*
 .list-collections__scroller.categories-custom.hide-scrollbar.is-scrollable {
   max-width: 91.5%;
   margin: auto;
-}
+}*/
 
 .list-collections__prev-next.prev-next-buttons.categories-custom {
   width: 100%;
@@ -15386,6 +15387,7 @@ shopify-payment-terms {
 
 .shop-all-text {
   text-decoration: underline;
+  color: C2C2C2 !important;
 }
 
 :root {
