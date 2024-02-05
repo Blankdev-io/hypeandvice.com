@@ -39,7 +39,8 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#282828",
-            "overlay_opacity": 0
+            "overlay_opacity": 0,
+            "klaviyo": ""
           }
         }
       },
@@ -61,7 +62,7 @@
           "type": "collection",
           "settings": {
             "collection": "tops-1",
-            "image": "shopify:\/\/shop_images\/TTU_CORSET_b080f0ec-adaa-4339-beed-03eade87820b.png",
+            "image": "shopify:\/\/shop_images\/Tops_Landing_V1.png",
             "subheading": "",
             "title": "TOPS",
             "link_text": "",
@@ -842,7 +843,8 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 0,
+            "klaviyo": ""
           }
         }
       },
@@ -898,7 +900,8 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 0,
+            "klaviyo": ""
           }
         }
       },
@@ -987,7 +990,8 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 0,
+            "klaviyo": ""
           }
         }
       },
