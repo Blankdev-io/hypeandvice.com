@@ -6,8 +6,7 @@
         "16506500057f8bc64d-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/0423004_0423004-R1-035-16.jpg",
-            "split_image": "shopify:\/\/shop_images\/0423004_0423004-R1-039-18.jpg",
+            "image": "shopify:\/\/shop_images\/Galentines_e11ff9e6-4715-434f-8991-c2acdbd82db8.png",
             "show_videos": false,
             "autoplay": true,
             "loop": true,
@@ -23,7 +22,7 @@
             "subheading_font_family": "Zurich Extended",
             "subheading_font_desktop": 24,
             "subheading_font_mobile": 24,
-            "title": "KNOCKOUT THE NEW YEAR",
+            "title": "",
             "heading_font_family": "Zurich Extended",
             "heading_font_desktop": 24,
             "heading_font_mobile": 24,
@@ -40,7 +39,8 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#282828",
-            "overlay_opacity": 0
+            "overlay_opacity": 0,
+            "klaviyo": ""
           }
         }
       },
@@ -774,7 +774,8 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 0,
+            "klaviyo": ""
           }
         }
       },
@@ -901,7 +902,8 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 0,
+            "klaviyo": ""
           }
         }
       },
@@ -1025,7 +1027,8 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 0,
+            "klaviyo": ""
           }
         }
       },
