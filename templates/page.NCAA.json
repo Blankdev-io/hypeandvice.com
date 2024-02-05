@@ -264,7 +264,7 @@
         "logo_R9WrDp"
       ],
       "settings": {
-        "reveal_on_scroll": true,
+        "reveal_on_scroll": false,
         "subheading": "",
         "title": "BEST SELLERS",
         "custom_font": true,
@@ -1006,6 +1006,9 @@
       "settings": {
         "subheading": "",
         "title": "Recently viewed",
+        "heading_font_family": "Zurich Extended",
+        "heading_font_desktop": 24,
+        "heading_font_mobile": 24,
         "products_count": 4,
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
