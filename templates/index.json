@@ -356,54 +356,6 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
-    "165065396872bf5f8b": {
-      "type": "logo-list",
-      "blocks": {
-        "5511dc15-28d6-4b28-8637-c45496fe7e1d": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/NCAA.png",
-            "link": "shopify:\/\/collections\/university-of-california-los-angeles-ucla"
-          }
-        },
-        "f9e60bf3-4871-454e-9a5e-c8b4f383d608": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/NBA.png",
-            "link": "shopify:\/\/collections\/university-of-wisconsin"
-          }
-        },
-        "924daf84-e23c-485d-9bd6-f155dd13b246": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/MLS.png",
-            "link": "shopify:\/\/collections\/penn-state"
-          }
-        }
-      },
-      "block_order": [
-        "5511dc15-28d6-4b28-8637-c45496fe7e1d",
-        "f9e60bf3-4871-454e-9a5e-c8b4f383d608",
-        "924daf84-e23c-485d-9bd6-f155dd13b246"
-      ],
-      "settings": {
-        "reveal_on_scroll": false,
-        "subheading": "",
-        "title": "SHOP BY LEAGUE",
-        "custom_font": true,
-        "heading_font_desktop": 16,
-        "heading_font_mobile": 14,
-        "heading_font_family": "Zurich Extended",
-        "button_text": "",
-        "button_link": "",
-        "stack_logos": false,
-        "background": "#ffffff",
-        "text_color": "#000000",
-        "button_background": "rgba(0,0,0,0)",
-        "button_text_color": "rgba(0,0,0,0)",
-        "logo_background": "rgba(0,0,0,0)"
-      }
-    },
     "product_list_PmJkHF": {
       "type": "product-list",
       "blocks": {
@@ -465,6 +417,54 @@
         "products_count": 20,
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "165065396872bf5f8b": {
+      "type": "logo-list",
+      "blocks": {
+        "5511dc15-28d6-4b28-8637-c45496fe7e1d": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/NCAA.png",
+            "link": "shopify:\/\/collections\/university-of-california-los-angeles-ucla"
+          }
+        },
+        "f9e60bf3-4871-454e-9a5e-c8b4f383d608": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/NBA.png",
+            "link": "shopify:\/\/collections\/university-of-wisconsin"
+          }
+        },
+        "924daf84-e23c-485d-9bd6-f155dd13b246": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/MLS.png",
+            "link": "shopify:\/\/collections\/penn-state"
+          }
+        }
+      },
+      "block_order": [
+        "5511dc15-28d6-4b28-8637-c45496fe7e1d",
+        "f9e60bf3-4871-454e-9a5e-c8b4f383d608",
+        "924daf84-e23c-485d-9bd6-f155dd13b246"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "subheading": "",
+        "title": "SHOP BY LEAGUE",
+        "custom_font": true,
+        "heading_font_desktop": 16,
+        "heading_font_mobile": 14,
+        "heading_font_family": "Zurich Extended",
+        "button_text": "",
+        "button_link": "",
+        "stack_logos": false,
+        "background": "#ffffff",
+        "text_color": "#000000",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "logo_background": "rgba(0,0,0,0)"
       }
     },
     "slideshow_m63Lfr": {
@@ -1037,8 +1037,8 @@
     "2cd6223b-dc18-4eda-91cc-768082b54a6a",
     "collection_list_D6rqbx",
     "league_list_W4k6xn",
-    "165065396872bf5f8b",
     "product_list_PmJkHF",
+    "165065396872bf5f8b",
     "slideshow_m63Lfr",
     "16506544520a12bd2c",
     "1655412672f035473e",
