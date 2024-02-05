@@ -101,7 +101,7 @@
                     </button>
                     <div id="productDescription" class="product-description" style="display: none;">
                       {%- for link in menu.links -%}
-                        <li class="linklist__item">
+                        <li class="linklist__item" style="list-style-type: none;">
                           <a href="{{ link.url }}" class="link--faded">{{ link.title }}</a>
                         </li>
                       {%- endfor -%}
