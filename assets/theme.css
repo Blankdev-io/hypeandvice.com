@@ -15361,6 +15361,7 @@ shopify-payment-terms {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    grid-template-columns: 1fr !important;
   }
 }
 /* END OF CHANGES TO THE MOBILE FOOTER */
