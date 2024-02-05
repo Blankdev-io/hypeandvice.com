@@ -1,3 +1,5 @@
+{%- assign dropdown_counter = 0 -%}
+
 <style>
   #shopify-section-{{ section.id }} .footer {
     {%- assign border_color = settings.footer_background | color_mix: settings.footer_text_color, 85 -%}
@@ -71,6 +73,7 @@
 
               {%- when 'links' -%}
                 {%- assign menu = block.settings.menu -%}
+                {%- assign dropdown_counter = dropdown_counter | plus: 1 -%}
 
                 {%- if menu != blank -%}
                 <div class="hidden-pocket">
@@ -90,7 +93,7 @@
 
                 {%- if menu != blank -%}
                   <div class="description-dropdown hidden-lap-and-up">
-                    <button id="Toggle-{{ menu.title | strip | downcase }}" class="description-toggle">
+                    <button id="Toggle-{{ dropdown_counter }}" class="description-toggle">
                       {{ menu.title }}
                       <svg id="downArrow" width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: inline;">
                         <path d="M19 3L11 11L3 3" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -289,7 +292,7 @@
 
 
 <script>
-  document.getElementById("Toggle-support").addEventListener("click", function() {
+  document.getElementById("Toggle-1").addEventListener("click", function() {
     var description = document.getElementById("productDescription");
     var downArrow = document.getElementById("downArrow");
     var upArrow = document.getElementById("upArrow");
@@ -305,7 +308,7 @@
     }
   });
 
-  document.getElementById("Toggle-quicklinks").addEventListener("click", function() {
+  document.getElementById("Toggle-2").addEventListener("click", function() {
     var description = document.getElementById("productDescription");
     var downArrow = document.getElementById("downArrow");
     var upArrow = document.getElementById("upArrow");
