@@ -10696,7 +10696,7 @@ input:checked + .popover__choice-label::after,
 }
 
 .list-collections__item-image {
-  min-height: 120px; /* Ensure enough space for text */
+  min-height: 46.5vw;
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -15318,10 +15318,10 @@ shopify-payment-terms {
 
 /* CHANGES TO THE CATEGORIES CAROUSEL TO LIMIT ITS WIDTH */
 
-.list-collections.list-collections--carousel.list-collection--category {
+/*.list-collections.list-collections--carousel.list-collection--category {
   max-width: 1666px;
   margin: auto;
-}
+}*/
 
 .list-collections__item-list {
   grid-gap: 29px;
