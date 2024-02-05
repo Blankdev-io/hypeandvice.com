@@ -716,10 +716,10 @@
       "type": "recently-viewed-products",
       "settings": {
         "subheading": "",
-        "title": "Recently viewed",
+        "title": "Recently Viewed",
         "heading_font_family": "Zurich Extended",
-        "heading_font_desktop": 24,
-        "heading_font_mobile": 24,
+        "heading_font_desktop": 16,
+        "heading_font_mobile": 14,
         "products_count": 4,
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
