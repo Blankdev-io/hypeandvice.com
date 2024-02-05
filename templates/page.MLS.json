@@ -14,8 +14,8 @@
         "template--14800247914601__d817cfc1-c6e0-48b0-a01b-d0d9b9e3e2d0-image-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Landing_Page_MLS_V1_4629e9c7-8433-4c30-ae09-830a547cb0c8.png",
-            "mobile_image": "shopify:\/\/shop_images\/MLS_MOBILE_V2.png",
+            "image": "shopify:\/\/shop_images\/Join_the_List_MLS_V1.png",
+            "mobile_image": "shopify:\/\/shop_images\/Coming_soon_MLS_Mobile.png",
             "show_videos": false,
             "autoplay": true,
             "loop": true,
@@ -48,7 +48,8 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 0,
+            "klaviyo": ""
           }
         }
       },
@@ -553,7 +554,8 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 30,
+            "klaviyo": ""
           }
         }
       },
@@ -627,7 +629,8 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 30,
+            "klaviyo": ""
           }
         }
       },
