@@ -321,17 +321,18 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "image": "shopify:\/\/shop_images\/OUTERWEAR_V1.png",
             "custom_height": false,
             "custom_height_size": 500,
             "custom_height_size_mobile": 200,
             "subheading": "",
-            "title": "",
+            "title": "OUTERWEAR",
             "below_text": false,
             "link_text": "",
             "link_url": "",
-            "text_color": "#000000",
+            "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         }
       },
