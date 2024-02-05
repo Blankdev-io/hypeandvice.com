@@ -383,6 +383,7 @@
       "block_order": [
         "template--14401296793705__2612faf2-8324-468d-8706-b0d50055d1a4-16678596118958e80f-0"
       ],
+      "disabled": true,
       "settings": {
         "section_height": "medium",
         "transition_type": "fade",
@@ -470,6 +471,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "image": "shopify:\/\/shop_images\/HOMERUN_TEE.png",
             "subheading": "",
             "title": "",
             "link_text": "",
