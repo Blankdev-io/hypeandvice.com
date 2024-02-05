@@ -407,6 +407,18 @@
             "text_color": "#c2c2c2"
           }
         },
+        "collection_gC9q6X": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/HOMERUN_TEE.png",
+            "subheading": "HOMERUN TEE",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#c2c2c2"
+          }
+        },
         "collection_fBAXTJ": {
           "type": "collection",
           "settings": {
@@ -466,28 +478,16 @@
             "link_url": "",
             "text_color": "#c2c2c2"
           }
-        },
-        "collection_gC9q6X": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/HOMERUN_TEE.png",
-            "subheading": "HOMERUN TEE",
-            "title": "",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "#c2c2c2"
-          }
         }
       },
       "block_order": [
         "collection_RFLjaG",
+        "collection_gC9q6X",
         "collection_fBAXTJ",
         "collection_imHYYj",
         "collection_VXV8ht",
         "collection_m3Cwax",
-        "collection_9TRyr8",
-        "collection_gC9q6X"
+        "collection_9TRyr8"
       ],
       "settings": {
         "reveal_on_scroll": false,
