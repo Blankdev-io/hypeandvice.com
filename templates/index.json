@@ -166,16 +166,6 @@
         "text_color": "#000000"
       }
     },
-    "2cd6223b-dc18-4eda-91cc-768082b54a6a": {
-      "type": "slideshow",
-      "settings": {
-        "section_height": "auto",
-        "transition_type": "fade",
-        "autoplay": true,
-        "cycle_speed": 4,
-        "background": "rgba(0,0,0,0)"
-      }
-    },
     "collection_list_D6rqbx": {
       "type": "collection-list",
       "blocks": {
@@ -1058,7 +1048,6 @@
   "order": [
     "165065000576ab84e7",
     "categories_yBHGEC",
-    "2cd6223b-dc18-4eda-91cc-768082b54a6a",
     "collection_list_D6rqbx",
     "league_list_W4k6xn",
     "product_list_PmJkHF",
