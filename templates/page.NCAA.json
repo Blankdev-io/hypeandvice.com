@@ -419,6 +419,18 @@
             "text_color": "#c2c2c2"
           }
         },
+        "collection_bxgx8a": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/B96418C8-6CA4-4E9F-A88E-542B7A923488_800x_1d827dc9-c8d2-4d35-ae01-5689c070a350.jpg",
+            "subheading": "",
+            "title": "BOXER SHORTS",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#c2c2c2"
+          }
+        },
         "collection_gC9q6X": {
           "type": "collection",
           "settings": {
@@ -490,29 +502,18 @@
             "link_url": "",
             "text_color": "#c2c2c2"
           }
-        },
-        "collection_bxgx8a": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "BOXER SHORTS",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "#c2c2c2"
-          }
         }
       },
       "block_order": [
         "collection_n68GW3",
         "collection_RFLjaG",
+        "collection_bxgx8a",
         "collection_gC9q6X",
         "collection_fBAXTJ",
         "collection_imHYYj",
         "collection_VXV8ht",
         "collection_m3Cwax",
-        "collection_9TRyr8",
-        "collection_bxgx8a"
+        "collection_9TRyr8"
       ],
       "settings": {
         "reveal_on_scroll": false,
