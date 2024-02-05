@@ -73,7 +73,8 @@
                 {%- assign menu = block.settings.menu -%}
 
                 {%- if menu != blank -%}
-                  <p class="footer__item-title heading heading--small hidden-pocket">{{ menu.title }}</p>
+                <div class="hidden-pocket">
+                  <p class="footer__item-title heading heading--small">{{ menu.title }}</p>
 
                   <div class="footer__item-content">
                     <ul class="linklist list--unstyled" role="list">
@@ -84,6 +85,7 @@
                       {%- endfor -%}
                     </ul>
                   </div>
+                </div>
                 {%- endif -%}
 
                 {%- if menu != blank -%}
