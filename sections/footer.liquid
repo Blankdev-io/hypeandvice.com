@@ -95,8 +95,12 @@
                   <div class="description-dropdown hidden-lap-and-up">
                     <button id="Toggle-{{ dropdown_counter }}" class="description-toggle">
                       {{ menu.title }}
-                      <svg style="margin-left: 15px" id="downArrow-{{ dropdown_counter }}" fill="white" width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"/></svg>
-                      <svg style="margin-left: 15px" id="downArrow-{{ dropdown_counter }}" fill="white" width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 20l-11.245-14.374-11.219 14.374-.781-.619 12-15.381 12 15.391-.755.609z"/></svg>
+                      <svg id="downArrow-{{ dropdown_counter }}" width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; display: inline;">
+                        <path d="M19 3L11 11L3 3" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <svg id="upArrow-{{ dropdown_counter }}" width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; display: none;">
+                        <path d="M3 11L11 3L19 11" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
                     </button>
                     <div id="productDescription-{{ dropdown_counter }}" class="product-description" style="display: none;">
                       {%- for link in menu.links -%}
