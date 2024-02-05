@@ -15358,9 +15358,6 @@ shopify-payment-terms {
 /* CHANGES TO THE MOBILE FOOTER */
 @media screen and (max-width: 750px) {
   .footer__item-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
     grid-template-columns: 1fr !important;
   }
 }
