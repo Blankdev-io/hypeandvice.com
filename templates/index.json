@@ -41,6 +41,8 @@
             "button_text_color": "#000000",
             "overlay_color": "#282828",
             "overlay_opacity": 0,
+            "custom_separation": false,
+            "text_distance": 25,
             "klaviyo": ""
           }
         }
@@ -416,7 +418,7 @@
         "reveal_on_scroll": true,
         "just_image": true,
         "section_height": "auto",
-        "image": "shopify:\/\/shop_images\/image_2024-02-02_122345519-transformed.png",
+        "image": "shopify:\/\/shop_images\/H_V_NEW-MARKDOWNS_TOP-BANNER_CONCEPT-1_1920x120px.jpg",
         "mobile_image": "shopify:\/\/shop_images\/LANDING_PAGE_NBA_V3.png",
         "subheading": "Subheading",
         "title": "Image with text overlay",
@@ -758,6 +760,8 @@
             "button_text_color": "#000000",
             "overlay_color": "#000000",
             "overlay_opacity": 0,
+            "custom_separation": false,
+            "text_distance": 25,
             "klaviyo": ""
           }
         }
@@ -815,6 +819,8 @@
             "button_text_color": "#000000",
             "overlay_color": "#000000",
             "overlay_opacity": 0,
+            "custom_separation": false,
+            "text_distance": 25,
             "klaviyo": ""
           }
         }
@@ -1006,6 +1012,8 @@
             "button_text_color": "#000000",
             "overlay_color": "#000000",
             "overlay_opacity": 0,
+            "custom_separation": false,
+            "text_distance": 25,
             "klaviyo": ""
           }
         }
@@ -1027,7 +1035,7 @@
         "reveal_on_scroll": true,
         "just_image": true,
         "section_height": "auto",
-        "image": "shopify:\/\/shop_images\/image_2024-02-02_122345519-transformed.png",
+        "image": "shopify:\/\/shop_images\/H_V_MEET-OUR-COMMUNITY_TOP-BANNER_CONCEPT-2_1920x120px.jpg",
         "mobile_image": "shopify:\/\/shop_images\/LANDING_PAGE_NBA_V3.png",
         "subheading": "Subheading",
         "title": "Image with text overlay",
