@@ -490,6 +490,17 @@
             "link_url": "",
             "text_color": "#c2c2c2"
           }
+        },
+        "collection_bxgx8a": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "BOXER SHORTS",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#c2c2c2"
+          }
         }
       },
       "block_order": [
@@ -500,7 +511,8 @@
         "collection_imHYYj",
         "collection_VXV8ht",
         "collection_m3Cwax",
-        "collection_9TRyr8"
+        "collection_9TRyr8",
+        "collection_bxgx8a"
       ],
       "settings": {
         "reveal_on_scroll": false,
