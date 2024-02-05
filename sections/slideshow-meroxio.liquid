@@ -24,6 +24,15 @@
       font-size: {{ block.settings.button_font_desktop }}px !important;
       font-family: "{{ block.settings.button_font_family }}", sans-serif !important;
     }
+
+    .slideshow-meroxio-custom-distance-{{ block.id }} h2 {
+      margin-bottom: {{ block.settings.text_distance }} !important;
+    }
+
+    .slideshow-meroxio-custom-distance-{{ block.id }} h3 {
+      margin-top: {{ block.settings.text_distance }} !important;
+      margin-bottom: {{ block.settings.text_distance }} !important;
+    }
   
     @media screen and (max-width: 1000px) {
       .slideshow-heading-{{ block.id }} {
@@ -252,7 +261,7 @@
               {%- assign text_position = block.settings.text_position | split: '_' | last -%}
 
               <div class="slideshow__text-wrapper slideshow__text-wrapper--{{ text_alignment }} vertical-breather">
-                <div class="content-box content-box--medium content-box--text-{{ text_position }} content-box--{{ text_position }} text-container">
+                <div class="content-box content-box--medium content-box--text-{{ text_position }} content-box--{{ text_position }} text-container{% if block.settings.custom_separation %} slideshow-meroxio-custom-distance-{{ block.id }}{% endif %}">
                   {{- section_content -}}
                 </div>
               </div>
@@ -755,9 +764,42 @@
           "default": 30
         },
         {
+          "type": "checkbox",
+          "id": "custom_separation",
+          "label": "Custom separation between Header and Subheader",
+          "default": false
+        },
+        {
+          "type": "range",
+          "id": "text_distance",
+          "label": "Separation between Header and Subheader",
+          "min": 1,
+          "max": 99,
+          "step": 1,
+          "default": 25
+        },
+        {
           "type": "text",
           "id": "klaviyo",
           "label": "Klaviyo Form ID"
+        },
+        {
+          "type": "range",
+          "id": "klaviyo_margin_desktop",
+          "label": "Klaviyo Form Margin Top Desktop",
+          "min": 10,
+          "max": 100,
+          "step": 1,
+          "default": 20
+        },
+        {
+          "type": "range",
+          "id": "klaviyo_margin_mobile",
+          "label": "Klaviyo Form Margin Top Mobile",
+          "min": 10,
+          "max": 100,
+          "step": 1,
+          "default": 20
         }
       ]
     }
