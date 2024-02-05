@@ -15397,3 +15397,9 @@ shopify-payment-terms {
 .product-description li:first-child{
   padding-top: 12px;
 }
+
+.description-toggle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
