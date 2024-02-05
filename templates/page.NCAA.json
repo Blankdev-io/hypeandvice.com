@@ -400,10 +400,10 @@
             "collection": "",
             "image": "shopify:\/\/shop_images\/HVWT113UCL-HVWT114UCL-2_800x_1.webp",
             "subheading": "",
-            "title": "COLLEGE JERSEYS",
+            "title": "JERSEYS",
             "link_text": "",
             "link_url": "",
-            "text_color": "#000000"
+            "text_color": "#c2c2c2"
           }
         },
         "collection_fBAXTJ": {
@@ -415,7 +415,7 @@
             "title": "COLOR-BLOCK SWEATS",
             "link_text": "",
             "link_url": "",
-            "text_color": "#000000"
+            "text_color": "#c2c2c2"
           }
         },
         "collection_imHYYj": {
@@ -427,7 +427,7 @@
             "title": "RUBY POLO",
             "link_text": "",
             "link_url": "",
-            "text_color": "#000000"
+            "text_color": "#c2c2c2"
           }
         },
         "collection_VXV8ht": {
@@ -489,7 +489,7 @@
       "settings": {
         "reveal_on_scroll": false,
         "subheading": "",
-        "title": "STYLES EVERYONE IS LOVING THIS SEASON",
+        "title": "STYLES EVERYONE IS LOVING",
         "heading_font_desktop": 16,
         "heading_font_mobile": 14,
         "heading_font_family": "Zurich Extended",
