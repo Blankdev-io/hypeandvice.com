@@ -10696,7 +10696,7 @@ input:checked + .popover__choice-label::after,
 }
 
 .list-collections__item-image {
-  min-height: 46.5vw;
+  min-height: 35.5vw;
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
