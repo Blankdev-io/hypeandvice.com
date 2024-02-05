@@ -267,15 +267,11 @@
               "html": "<div class=\"klaviyo-form-WHMY66 hidden-pocket\"><\/div><div class=\"klaviyo-form-XFZx9n hidden-lap-and-up\"><\/div>"
             }
           },
-          "text": {
-            "type": "text",
+          "53f6421a-3050-482f-ad7c-986eb1241a5e": {
+            "type": "social_media",
             "settings": {
-              "title": "HYPE AND VICE",
-              "content": "<p>  Hype and Vice is officially licensed. When you buy from us, you’re guaranteed to receive high quality products that are NCAA approved. <\/p>",
-              "logo1": "shopify:\/\/shop_images\/Affinity-White_Reverse_ALP_Seal_compressed.png",
-              "logo2": "shopify:\/\/shop_images\/CLC_Logo_No_Tag_White.png",
-              "logo3": "shopify:\/\/shop_images\/Exemplar_Logo_White_PNG.png",
-              "logo4": "shopify:\/\/shop_images\/fanatics-licensing-management-logo-wht.png"
+              "title": "Follow us",
+              "content": "<p>Let's get social!<\/p>"
             }
           },
           "links": {
@@ -290,20 +286,24 @@
               "menu": "footer-1"
             }
           },
-          "53f6421a-3050-482f-ad7c-986eb1241a5e": {
-            "type": "social_media",
+          "text": {
+            "type": "text",
             "settings": {
-              "title": "Follow us",
-              "content": "<p>Let's get social!<\/p>"
+              "title": "HYPE AND VICE",
+              "content": "<p>  Hype and Vice is officially licensed. When you buy from us, you’re guaranteed to receive high quality products that are NCAA approved. <\/p>",
+              "logo1": "shopify:\/\/shop_images\/Affinity-White_Reverse_ALP_Seal_compressed.png",
+              "logo2": "shopify:\/\/shop_images\/CLC_Logo_No_Tag_White.png",
+              "logo3": "shopify:\/\/shop_images\/Exemplar_Logo_White_PNG.png",
+              "logo4": "shopify:\/\/shop_images\/fanatics-licensing-management-logo-wht.png"
             }
           }
         },
         "block_order": [
           "html_tw89Xw",
-          "text",
+          "53f6421a-3050-482f-ad7c-986eb1241a5e",
           "links",
           "ac15f1c9-f099-4420-afcb-da6f44207add",
-          "53f6421a-3050-482f-ad7c-986eb1241a5e"
+          "text"
         ],
         "custom_css": [
           "@media screen and (min-width: 1000px) {.kl-private-reset-css-Xuajs1 form {margin: 0px auto 0px 0px !important; } .kl-private-reset-css-Xuajs1 input {margin-left: auto; width: 300px; }}"
