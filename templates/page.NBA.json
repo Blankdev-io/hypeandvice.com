@@ -49,7 +49,11 @@
             "button_text_color": "#000000",
             "overlay_color": "#000000",
             "overlay_opacity": 0,
-            "klaviyo": "WMjr9K"
+            "custom_separation": true,
+            "text_distance": 5,
+            "klaviyo": "WMjr9K",
+            "klaviyo_margin_desktop": 20,
+            "klaviyo_margin_mobile": 20
           }
         }
       },
@@ -541,7 +545,11 @@
             "button_text_color": "#000000",
             "overlay_color": "#000000",
             "overlay_opacity": 30,
-            "klaviyo": ""
+            "custom_separation": false,
+            "text_distance": 25,
+            "klaviyo": "",
+            "klaviyo_margin_desktop": 20,
+            "klaviyo_margin_mobile": 20
           }
         }
       },
@@ -617,7 +625,11 @@
             "button_text_color": "#000000",
             "overlay_color": "#000000",
             "overlay_opacity": 30,
-            "klaviyo": ""
+            "custom_separation": false,
+            "text_distance": 25,
+            "klaviyo": "",
+            "klaviyo_margin_desktop": 20,
+            "klaviyo_margin_mobile": 20
           }
         }
       },
