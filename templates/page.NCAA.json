@@ -344,7 +344,7 @@
         "reveal_on_scroll": false,
         "subheading": "",
         "title": "",
-        "custom_font": false,
+        "custom_font": true,
         "heading_font_desktop": 12,
         "heading_font_mobile": 14,
         "heading_font_family": "Zurich Extended",
