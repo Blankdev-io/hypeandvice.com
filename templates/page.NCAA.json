@@ -6,7 +6,8 @@
         "16506500057f8bc64d-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Galentines_e11ff9e6-4715-434f-8991-c2acdbd82db8.png",
+            "image": "shopify:\/\/shop_images\/H_V_HOMEPAGE-BANNER_FEBRUARY-4_3000x1500px_v2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/H_V_HOMEPAGE-BANNER_FEBRUARY-4_1000x1400px_MOBILE.jpg",
             "show_videos": false,
             "autoplay": true,
             "loop": true,
@@ -17,7 +18,7 @@
             "split_video_mp4": "",
             "mobile_video_webm": "",
             "mobile_video_mp4": "",
-            "text_position": "middle_center",
+            "text_position": "bottom_center",
             "subheading": "",
             "subheading_font_family": "Zurich Extended",
             "subheading_font_desktop": 24,
