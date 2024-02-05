@@ -1021,6 +1021,7 @@
       "block_order": [
         "1650906735f7c90a38-0"
       ],
+      "disabled": true,
       "settings": {
         "section_height": "small",
         "transition_type": "fade",
