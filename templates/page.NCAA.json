@@ -40,6 +40,8 @@
             "button_text_color": "#000000",
             "overlay_color": "#282828",
             "overlay_opacity": 0,
+            "custom_separation": false,
+            "text_distance": 25,
             "klaviyo": ""
           }
         }
@@ -614,6 +616,8 @@
             "button_text_color": "#000000",
             "overlay_color": "#000000",
             "overlay_opacity": 0,
+            "custom_separation": false,
+            "text_distance": 25,
             "klaviyo": ""
           }
         }
@@ -699,6 +703,29 @@
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)",
         "logo_background": "rgba(0,0,0,0)"
+      }
+    },
+    "image_with_text_overlay_UjVfKQ": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "reveal_on_scroll": true,
+        "just_image": true,
+        "section_height": "auto",
+        "image": "shopify:\/\/shop_images\/H_V_NEW-MARKDOWNS_TOP-BANNER_CONCEPT-1_1920x120px.jpg",
+        "subheading": "Subheading",
+        "title": "Image with text overlay",
+        "content": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "link_style": "link",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "middle_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
       }
     },
     "1655412672f035473e": {
@@ -1025,6 +1052,8 @@
             "button_text_color": "#000000",
             "overlay_color": "#000000",
             "overlay_opacity": 0,
+            "custom_separation": false,
+            "text_distance": 25,
             "klaviyo": ""
           }
         }
@@ -1150,6 +1179,8 @@
             "button_text_color": "#000000",
             "overlay_color": "#000000",
             "overlay_opacity": 0,
+            "custom_separation": false,
+            "text_distance": 25,
             "klaviyo": ""
           }
         }
@@ -1176,6 +1207,7 @@
     "16506544520a12bd2c",
     "165454654631be36fe",
     "logo_list_ymKc4R",
+    "image_with_text_overlay_UjVfKQ",
     "1655412672f035473e",
     "165065640506142d5c",
     "1650006254940409c8",
