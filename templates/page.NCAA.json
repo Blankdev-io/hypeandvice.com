@@ -457,6 +457,18 @@
             "text_color": "#c2c2c2"
           }
         },
+        "collection_LzKD4w": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/Tops_Landing_V1.png",
+            "subheading": "",
+            "title": "DENIM CORSET",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#c2c2c2"
+          }
+        },
         "collection_imHYYj": {
           "type": "collection",
           "settings": {
@@ -512,6 +524,7 @@
         "collection_bxgx8a",
         "collection_gC9q6X",
         "collection_fBAXTJ",
+        "collection_LzKD4w",
         "collection_imHYYj",
         "collection_VXV8ht",
         "collection_m3Cwax",
