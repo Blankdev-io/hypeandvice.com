@@ -40,6 +40,17 @@
       --section-products-per-row: 4;
     }
   }
+
+  .custom-{{ section.id }} {
+    font-size: {{ section.settings.heading_font_desktop }}px !important;
+    font-family: "{{ section.settings.heading_font_family }}", sans-serif !important;  
+  }
+
+  @media screen and (max-width: 1000px) {
+    .custom-{{ section.id }} {
+      font-size: {{ section.settings.heading_font_mobile }}px !important;
+    } 
+  }
 </style>
 
 <recently-viewed-products section-id="{{ section.id }}" products-count="{{ section.settings.products_count | escape }}" {% if request.page_type == 'product' %}exclude-product-id="{{ product.id | escape }}"{% endif %} class="section {% unless blends_with_background %}section--flush{% endunless %}">
@@ -54,7 +65,7 @@
               {%- endif -%}
 
               {%- if section.settings.title != blank -%}
-                <div class="heading-category-container"><h3 class="heading h3">{{ section.settings.title }}</h3><a href="/collections/all" class="shop-all-text">SEE MORE</a></div>
+                <div class="heading-category-container"><h3 class="heading h3 custom-{{ section.id }}">{{ section.settings.title }}</h3><a href="/collections/all" class="shop-all-text">SEE MORE</a></div>
               {%- endif -%}
             </div>
           </header>
@@ -130,6 +141,56 @@
       "id": "title",
       "label": "Heading",
       "default": "Recently viewed"
+    },
+    {
+      "type": "select",
+      "id": "heading_font_family",
+      "label": "Heading Font Family",
+      "default": "Zurich Extended",
+      "options": [
+        {
+          "value": "Zurich Extended",
+          "label": "Zurich Extended"
+        },
+        {
+          "value": "ZurichBT",
+          "label": "ZurichBT"
+        },
+        {
+          "value": "Zurich Ultra Black Extended BT",
+          "label": "Zurich Ultra Black Extended BT"
+        },
+        {
+          "value": "Armata",
+          "label": "Armata"
+        },
+        {
+          "value": "Quantico-Bold",
+          "label": "Quantico-Bold"
+        },
+        {
+          "value": "Recoleta-SemiBold",
+          "label": "Recoleta-SemiBold"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "heading_font_desktop",
+      "label": "Heading Desktop Font Size",
+      "min": 12,
+      "max": 80,
+      "step": 1,
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "heading_font_mobile",
+      "label": "Heading Mobile Font Size",
+      "min": 12,
+      "max": 80,
+      "step": 1,
+      "default": 24
     },
     {
       "type": "range",
