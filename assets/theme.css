@@ -15391,3 +15391,7 @@ shopify-payment-terms {
 :root {
   --max-margin-top: -475px;
 }
+
+.product-description li:first-child{
+  margin-bottom: 20px;
+}
