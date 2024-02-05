@@ -395,6 +395,18 @@
     "categories_KDmjHe": {
       "type": "categories",
       "blocks": {
+        "collection_n68GW3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/HVWT110SOC2-7_06be2032-e89b-43f3-a2f8-dd2f07e2a3c0.jpg",
+            "subheading": "",
+            "title": "RETRO TANK",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#c2c2c2"
+          }
+        },
         "collection_RFLjaG": {
           "type": "collection",
           "settings": {
@@ -412,8 +424,8 @@
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/HOMERUN_TEE.png",
-            "subheading": "HOMERUN TEE",
-            "title": "",
+            "subheading": "",
+            "title": "HOMERUN TEE",
             "link_text": "",
             "link_url": "",
             "text_color": "#c2c2c2"
@@ -472,8 +484,8 @@
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/HVWT21AUB1-1FILM_800x_8f5c1cb0-1942-4e15-9fef-a0bcfce59462.webp",
-            "subheading": "MVP TOP",
-            "title": "",
+            "subheading": "",
+            "title": "MVP TOP",
             "link_text": "",
             "link_url": "",
             "text_color": "#c2c2c2"
@@ -481,6 +493,7 @@
         }
       },
       "block_order": [
+        "collection_n68GW3",
         "collection_RFLjaG",
         "collection_gC9q6X",
         "collection_fBAXTJ",
