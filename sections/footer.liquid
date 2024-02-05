@@ -73,15 +73,28 @@
                 {%- assign menu = block.settings.menu -%}
 
                 {%- if menu != blank -%}
+                  <p class="footer__item-title heading heading--small hidden-pocket">{{ menu.title }}</p>
 
-                  <div class="description-dropdown">
+                  <div class="footer__item-content">
+                    <ul class="linklist list--unstyled" role="list">
+                      {%- for link in menu.links -%}
+                        <li class="linklist__item">
+                          <a href="{{ link.url }}" class="link--faded">{{ link.title }}</a>
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  </div>
+                {%- endif -%}
+
+                {%- if menu != blank -%}
+                  <div class="description-dropdown hidden-lap-and-up">
                     <button id="descriptionToggle" class="description-toggle">
                       {{ menu.title }}
                       <svg id="downArrow" width="22" height="14" viewBox="0 0 22 14" fill="white" xmlns="http://www.w3.org/2000/svg" style="display: inline;">
-                        <path d="M19 3L11 11L3 3" stroke="#030000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19 3L11 11L3 3" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
                       <svg id="upArrow" width="22" height="14" viewBox="0 0 22 14" fill="white" xmlns="http://www.w3.org/2000/svg" style="display: none;">
-                        <path d="M3 11L11 3L19 11" stroke="#030000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3 11L11 3L19 11" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
                     </button>
                     <div id="productDescription" class="product-description" style="display: none;">
@@ -289,7 +302,6 @@
       upArrow.style.display = "none";
     }
   });
-  
 </script>
 
 {% schema %}
