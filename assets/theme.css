@@ -15403,3 +15403,13 @@ shopify-payment-terms {
   justify-content: space-between;
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .shop-all-text {
+    font-size: 12px;
+  }
+
+  .product-list-hide-arrows {
+    display: none !important;
+  }
+}
