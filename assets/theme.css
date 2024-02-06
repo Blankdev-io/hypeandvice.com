@@ -15350,7 +15350,8 @@ shopify-payment-terms {
 }
 
 .section__header.new-left-design {
-  max-width: 1500px !important;
+  min-width: 100% !important;
+  /*max-width: 1500px !important;*/
   text-align: left !important;
 }
 
