@@ -9,25 +9,8 @@ Code that create the faceted search for the collection and search pages. It curr
 {%- assign color_white_label = 'general.label.white' | t | downcase -%}
 {%- assign size_label_list = 'general.label.size' | t | replace: ', ', ',' | downcase | split: ',' -%}
 {% if collection.metafields.custom.collections_recomended.value != blank %}
-  {% assign sorted_collections = collection.metafields.custom.collections_recomended.value | sort %}
-  <script>// Assuming you have a JSON array of collection handles in your metafield
-  const collectionHandles = JSON.parse('{{ collection.metafields.custom.collections_recommended.value | escape }}');
-  
-  Promise.all(collectionHandles.map(handle =>
-    fetch(`/collections/${handle}.json`)
-      .then(response => response.json())
-  )).then(collectionDetails => {
-    // Now you have an array of collection details
-    const sortedCollections = collectionDetails.sort((a, b) => a.title.localeCompare(b.title));
-  
-    // Display your sorted collections here
-    sortedCollections.forEach(collection => {
-      console.log(collection.title); // Or append this data to your HTML
-    });
-  });
-  </script>
   {% assign for_loop = 0 %} 
-  {% for collection in sorted_collections %}
+  {% for collection in collection.metafields.custom.collections_recomended.value %}
     {% assign total_collection_count = total_collection_count | plus: 1 %}
   {% endfor %}
 {% endif %}
@@ -171,8 +154,8 @@ Code that create the faceted search for the collection and search pages. It curr
                             {% endif %}
                           {% elsif filter.label == "Product type" and collection.metafields.custom.collections_recomended.value != blank %}
                             {% if for_loop < total_collection_count %}
-                              {% for collection in sorted_collections %}
-                                <a href="{{ collection.url }}" class="checkbox-container">
+                              {% for collection in collection.metafields.custom.collections_recomended.value %}
+                                <a href="{{ collection.url }}" class="checkbox-container az-sorting">
                                   {% assign parts = collection.title | split: '-' %}
                                   {% if parts.size > 2 %}
                                     {% assign parts1 = parts[1] | strip %}
@@ -186,6 +169,27 @@ Code that create the faceted search for the collection and search pages. It curr
                                 {% assign for_loop = for_loop | plus: 1 %}
                               {% endfor %}
                             {% endif %}
+
+                            <script>
+                              document.addEventListener('DOMContentLoaded', function () {
+                                // Select the parent container of the <a> elements if they share a common parent
+                                // This example assumes a single common parent for simplicity
+                                const container = document.querySelector('#your-container-selector');
+                              
+                                // Grab all <a> elements with the class 'az-sorting'
+                                const links = Array.from(document.querySelectorAll('a.az-sorting'));
+                              
+                                // Sort the array of <a> elements alphabetically based on their text content
+                                links.sort((a, b) => a.textContent.localeCompare(b.textContent));
+                              
+                                // Clear the container before re-appending the sorted elements
+                                container.innerHTML = '';
+                              
+                                // Re-append the sorted <a> elements to their parent container
+                                links.forEach(link => container.appendChild(link));
+                              });                              
+                            </script>
+
                           {% else %}
                           <div class="checkbox-container">
                             <input class="checkbox" type="checkbox" name="{{ filter_value.param_name }}" id="{{ filter_value.param_name | escape }}-{{ forloop.index }}" value="{{ filter_value.value | escape }}" {% if filter_value.active %}checked="checked"{% endif %} {% if filter_value.count == 0 %}disabled{% endif %}>
