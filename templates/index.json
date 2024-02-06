@@ -314,30 +314,6 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
-    "image_with_text_overlay_c363GC": {
-      "type": "image-with-text-overlay",
-      "settings": {
-        "reveal_on_scroll": false,
-        "just_image": true,
-        "section_height": "auto",
-        "image": "shopify:\/\/shop_images\/H_V_NEW-MARKDOWNS_TOP-BANNER_CONCEPT-2_1920x120px_NEW.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/LANDING_PAGE_NBA_V3.png",
-        "subheading": "Subheading",
-        "title": "Image with text overlay",
-        "content": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
-        "button_text": "",
-        "button_link": "",
-        "link_style": "link",
-        "background_type": "full_width",
-        "text_width": "medium",
-        "text_position": "middle_center",
-        "text_color": "#ffffff",
-        "button_background": "#ffffff",
-        "button_text_color": "#000000",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
-      }
-    },
     "165065396872bf5f8b": {
       "type": "logo-list",
       "blocks": {
@@ -384,6 +360,30 @@
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)",
         "logo_background": "rgba(0,0,0,0)"
+      }
+    },
+    "image_with_text_overlay_c363GC": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "reveal_on_scroll": false,
+        "just_image": true,
+        "section_height": "auto",
+        "image": "shopify:\/\/shop_images\/H_V_NEW-MARKDOWNS_TOP-BANNER_CONCEPT-2_1920x120px_NEW.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/LANDING_PAGE_NBA_V3.png",
+        "subheading": "Subheading",
+        "title": "Image with text overlay",
+        "content": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "link_style": "link",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "middle_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
       }
     },
     "slideshow_m63Lfr": {
@@ -1066,8 +1066,8 @@
     "categories_yBHGEC",
     "league_list_W4k6xn",
     "product_list_PmJkHF",
-    "image_with_text_overlay_c363GC",
     "165065396872bf5f8b",
+    "image_with_text_overlay_c363GC",
     "slideshow_m63Lfr",
     "16506544520a12bd2c",
     "1655412672f035473e",
