@@ -709,7 +709,7 @@
     "image_with_text_overlay_UjVfKQ": {
       "type": "image-with-text-overlay",
       "settings": {
-        "reveal_on_scroll": true,
+        "reveal_on_scroll": false,
         "just_image": true,
         "section_height": "auto",
         "image": "shopify:\/\/shop_images\/H_V_NEW-MARKDOWNS_TOP-BANNER_CONCEPT-1_1920x120px.jpg",
