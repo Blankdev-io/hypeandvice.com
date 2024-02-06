@@ -170,6 +170,19 @@ Code that create the faceted search for the collection and search pages. It curr
                               {% endfor %}
                             {% endif %}
 
+                            <script>
+                              document.addEventListener('DOMContentLoaded', function () {
+                                const container = document.querySelector('#your-container-selector');
+                              
+                                const links = Array.from(document.querySelectorAll('a.az-sorting'));
+                              
+                                links.sort((a, b) => a.textContent.localeCompare(b.textContent));
+                              
+                                container.innerHTML = '';
+                              
+                                links.forEach(link => container.appendChild(link));
+                              });                              
+                            </script>
 
                           {% else %}
                           <div class="checkbox-container">
