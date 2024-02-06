@@ -190,24 +190,6 @@
             "overlay_opacity": 0
           }
         },
-        "collection_X3cnyr": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/127A3097.jpg",
-            "custom_height": true,
-            "custom_height_size": 800,
-            "custom_height_size_mobile": 500,
-            "subheading": "NBA",
-            "title": "",
-            "below_text": false,
-            "link_text": "",
-            "link_url": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
         "collection_kn98fk": {
           "type": "collection",
           "settings": {
@@ -225,12 +207,30 @@
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
+        },
+        "collection_X3cnyr": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/127A3097.jpg",
+            "custom_height": true,
+            "custom_height_size": 800,
+            "custom_height_size_mobile": 500,
+            "subheading": "NBA",
+            "title": "",
+            "below_text": false,
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
         }
       },
       "block_order": [
         "collection_LGCU9t",
-        "collection_X3cnyr",
-        "collection_kn98fk"
+        "collection_kn98fk",
+        "collection_X3cnyr"
       ],
       "settings": {
         "reveal_on_scroll": false,
