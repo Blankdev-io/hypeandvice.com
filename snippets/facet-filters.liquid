@@ -170,6 +170,25 @@ Code that create the faceted search for the collection and search pages. It curr
                               {% endfor %}
                             {% endif %}
 
+                            <script>
+                              document.addEventListener('DOMContentLoaded', function () {
+                                // Select the parent container of the <a> elements if they share a common parent
+                                // This example assumes a single common parent for simplicity
+                                const container = document.querySelector('#your-container-selector');
+                              
+                                // Grab all <a> elements with the class 'az-sorting'
+                                const links = Array.from(document.querySelectorAll('a.az-sorting'));
+                              
+                                // Sort the array of <a> elements alphabetically based on their text content
+                                links.sort((a, b) => a.textContent.localeCompare(b.textContent));
+                              
+                                // Clear the container before re-appending the sorted elements
+                                container.innerHTML = '';
+                              
+                                // Re-append the sorted <a> elements to their parent container
+                                links.forEach(link => container.appendChild(link));
+                              });                              
+                            </script>
 
                           {% else %}
                           <div class="checkbox-container">
