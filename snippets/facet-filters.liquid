@@ -10,7 +10,22 @@ Code that create the faceted search for the collection and search pages. It curr
 {%- assign size_label_list = 'general.label.size' | t | replace: ', ', ',' | downcase | split: ',' -%}
 {% if collection.metafields.custom.collections_recomended.value != blank %}
   {% assign sorted_collections = collection.metafields.custom.collections_recomended.value | sort %}
-  <script>console.log('COLLECTION ARRAY: {{ collection.metafields.custom.collections_recomended.value }}')</script>
+  <script>// Assuming you have a JSON array of collection handles in your metafield
+  const collectionHandles = JSON.parse('{{ collection.metafields.custom.collections_recommended.value | escape }}');
+  
+  Promise.all(collectionHandles.map(handle =>
+    fetch(`/collections/${handle}.json`)
+      .then(response => response.json())
+  )).then(collectionDetails => {
+    // Now you have an array of collection details
+    const sortedCollections = collectionDetails.sort((a, b) => a.title.localeCompare(b.title));
+  
+    // Display your sorted collections here
+    sortedCollections.forEach(collection => {
+      console.log(collection.title); // Or append this data to your HTML
+    });
+  });
+  </script>
   {% assign for_loop = 0 %} 
   {% for collection in sorted_collections %}
     {% assign total_collection_count = total_collection_count | plus: 1 %}
