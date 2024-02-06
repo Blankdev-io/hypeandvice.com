@@ -41,6 +41,24 @@
     }
   }
 
+  @media screen and (min-width: 1500px) {
+    #shopify-section-{{ section.id }} {
+      --section-products-per-row: 5;
+    }
+  }
+
+  @media screen and (min-width: 1800px) {
+    #shopify-section-{{ section.id }} {
+      --section-products-per-row: 6;
+    }
+  }
+
+  @media screen and (min-width: 2100px) {
+    #shopify-section-{{ section.id }} {
+      --section-products-per-row: 7;
+    }
+  }
+
   .custom-{{ section.id }} {
     font-size: {{ section.settings.heading_font_desktop }}px !important;
     font-family: "{{ section.settings.heading_font_family }}", sans-serif !important;  
