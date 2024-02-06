@@ -9,8 +9,10 @@ Code that create the faceted search for the collection and search pages. It curr
 {%- assign color_white_label = 'general.label.white' | t | downcase -%}
 {%- assign size_label_list = 'general.label.size' | t | replace: ', ', ',' | downcase | split: ',' -%}
 {% if collection.metafields.custom.collections_recomended.value != blank %}
+  {% assign collections_array = collection.metafields.custom.collections_recomended.value | split: ',' %}
+  {% assign sorted_collections = collections_array | sort %}
   {% assign for_loop = 0 %} 
-  {% for collection in collection.metafields.custom.collections_recomended.value %}
+  {% for collection in sorted_collections %}
     {% assign total_collection_count = total_collection_count | plus: 1 %}
   {% endfor %}
 {% endif %}
@@ -154,7 +156,7 @@ Code that create the faceted search for the collection and search pages. It curr
                             {% endif %}
                           {% elsif filter.label == "Product type" and collection.metafields.custom.collections_recomended.value != blank %}
                             {% if for_loop < total_collection_count %}
-                              {% for collection in collection.metafields.custom.collections_recomended.value %}
+                              {% for collection in sorted_collections %}
                                 <a href="{{ collection.url }}" class="checkbox-container">
                                   {% assign parts = collection.title | split: '-' %}
                                   {% if parts.size > 2 %}
