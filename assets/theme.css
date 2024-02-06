@@ -4198,9 +4198,9 @@ split-lines {
     transform: translateZ(0); /* Allow to promote on its own layer */
   }
 
-  .features--image-zoom .image-zoom:hover img {
-    transform: scale(1.03);
-  }
+  /*.features--image-zoom .image-zoom:hover img {
+    transform: scale(1.03); ANIMATION REMOVED BY REQUEST OF THE CLIENT
+  }*/
 }
 
 /**

@@ -3740,8 +3740,7 @@ window.onload = (() => {
       const prefersReducedMotion = MediaFeatures.prefersReducedMotion();
       const animation = new CustomAnimation(new ParallelEffect(this.items.map((item, index) => {
         return new SequenceEffect([
-          new CustomKeyframeEffect(item.querySelector(".list-collections__item-image-anim"), {
-            // ADDED "-anim" TO THE CLASS SELECTOR AS CLIENT REQUIRED ANIMATION TO BE REMOVED
+          new CustomKeyframeEffect(item.querySelector(".list-collections__item-image"), {
             opacity: [0, 1],
             transform: [`scale(${prefersReducedMotion ? 1 : 1.1})`, "scale(1)"]
           }, {
