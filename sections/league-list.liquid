@@ -161,7 +161,7 @@
               </div>
             
               {%- if collection_content != blank -%}
-                <div class="{% if section.settings.custom_font %}collection-list-item-custom-{{ section.id }} {% endif %}{% if block.settings.below_text %}category__item-info text-container{% else %}list-collections__item-info league-list text-container{% endif %}">
+                <div class="{% if section.settings.custom_font %}collection-list-item-custom-{{ section.id }} {% endif %}{% if block.settings.below_text %}category__item-info text-container{% else %}list-collections__item-info league-list{% if block.settings.league_top_text %}league_top_text{% endif %} text-container{% endif %}">
                   {{- collection_content -}}
                 </div>
               {%- endif -%}
@@ -224,6 +224,12 @@
           "step": 10,
           "default": 200,
           "unit": "px"
+        },
+        {
+          "type": "checkbox",
+          "id": "league_top_text",
+          "label": "Display text in the top left corner",
+          "default": false
         },
         {
           "type": "text",
