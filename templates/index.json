@@ -240,10 +240,10 @@
         "custom_font": true,
         "heading_font_desktop": 24,
         "heading_font_mobile": 16,
-        "heading_font_family": "Quantico-Bold",
+        "heading_font_family": "Zurich Extended",
         "category_font_desktop": 16,
         "category_font_mobile": 12,
-        "category_font_family": "Zurich Extended",
+        "category_font_family": "Quantico-Bold",
         "category_margin": 1,
         "background": "rgba(0,0,0,0)",
         "text_color": "#ffffff"
