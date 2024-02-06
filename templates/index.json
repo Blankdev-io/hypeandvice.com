@@ -369,6 +369,7 @@
       "settings": {
         "reveal_on_scroll": false,
         "just_image": true,
+        "banner_link": "",
         "section_height": "auto",
         "image": "shopify:\/\/shop_images\/H_V_NEW-MARKDOWNS_TOP-BANNER_CONCEPT-2_1920x120px_NEW.jpg",
         "mobile_image": "shopify:\/\/shop_images\/LANDING_PAGE_NBA_V3.png",
@@ -956,8 +957,8 @@
         "subheading_font_mobile": 12,
         "subheading_font_family": "Armata",
         "title": "InstaShop",
-        "heading_font_desktop": 30,
-        "heading_font_mobile": 20,
+        "heading_font_desktop": 18,
+        "heading_font_mobile": 14,
         "heading_font_family": "Zurich Extended",
         "html": "<script src=\"\/\/foursixty.com\/media\/scripts\/fs.embed.v2.5.js\" data-feed-id=\"hype-and-vice\" data-theme=\"showcase_v2_5\" data-open-links-in-same-page=\"true\" data-category-filter=\"hvfeed\" data-page-size=\"8\"><\/script>\n<style>.fs-has-links::after { padding:5px 7.5px;background-color:#ffffff;color:rgba(0, 0, 0, 0.8);content:\"SHOP IT\"; } .fs-desktop .fs-entry-container { width:25% !important;padding-top:25% !important; } .fs-mobile .fs-entry-container { width:50% !important;padding-top:50% !important; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:quantico;font-style:normal;font-weight:normal;font-size:14px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:quantico;font-style:normal;font-weight:normal;font-size:14px; } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.8);margin:0px; } div.fs-entry-date { display:none; } div.fs-entry-title { display:none; } .fs-wrapper div.fs-timeline-entry { margin:3px; } <\/style>",
         "add_vertical_spacing": true,
@@ -1046,6 +1047,7 @@
       "settings": {
         "reveal_on_scroll": false,
         "just_image": true,
+        "banner_link": "",
         "section_height": "auto",
         "image": "shopify:\/\/shop_images\/H_V_MEET-OUR-COMMUNITY_TOP-BANNER_CONCEPT-1_1920x120px_NEW.jpg",
         "mobile_image": "shopify:\/\/shop_images\/LANDING_PAGE_NBA_V3.png",
