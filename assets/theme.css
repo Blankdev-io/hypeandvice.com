@@ -10727,7 +10727,7 @@ input:checked + .popover__choice-label::after,
   text-align: left !important;
 }
 
-.list-collections__item-info.league-list.corner-text {
+.list-collections__item-info.league-list.league_top_text {
   width: auto!important;
   top: 25px!important;
   bottom: auto!important;
