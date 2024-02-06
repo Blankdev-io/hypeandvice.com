@@ -9,9 +9,8 @@ Code that create the faceted search for the collection and search pages. It curr
 {%- assign color_white_label = 'general.label.white' | t | downcase -%}
 {%- assign size_label_list = 'general.label.size' | t | replace: ', ', ',' | downcase | split: ',' -%}
 {% if collection.metafields.custom.collections_recomended.value != blank %}
-  {% assign collections_array = collection.metafields.custom.collections_recomended.value | split: ',' %}
-  <script>console.log('COLLECTION ARRAY: {{ collections_array }}')</script>
-  {% assign sorted_collections = collections_array | sort %}
+  {% assign sorted_collections = collection.metafields.custom.collections_recomended.value | sort %}
+  <script>console.log('COLLECTION ARRAY: {{ sorted_collections }}')</script>
   {% assign for_loop = 0 %} 
   {% for collection in sorted_collections %}
     {% assign total_collection_count = total_collection_count | plus: 1 %}
