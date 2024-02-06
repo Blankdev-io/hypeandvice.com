@@ -308,8 +308,8 @@
         "subheading": "",
         "title": "JUST IN",
         "heading_font_family": "Zurich Extended",
-        "heading_font_desktop": 18,
-        "heading_font_mobile": 14,
+        "heading_font_desktop": 24,
+        "heading_font_mobile": 16,
         "products_count": 20,
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
