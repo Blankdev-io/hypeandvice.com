@@ -48,6 +48,10 @@
         padding-right: {{ block.settings.button_lenght_mobile }}px !important;
         font-size: {{ block.settings.button_font_mobile }}px !important;
       }
+
+      .font-color-mobile-{{ block.id }} h2, .font-color-mobile-{{ block.id }} h3{
+        color: {{ block.settings.text_color_mobile }}
+      }
     }
 
     {%- assign text_position = block.settings.text_position | split: '_' | first -%}
@@ -77,7 +81,6 @@
         padding: 0 !important;
       }
     {% endif %}
-
   {%- endfor -%}
 </style>
 
@@ -260,7 +263,7 @@
               {%- assign text_position = block.settings.text_position | split: '_' | last -%}
 
               <div class="slideshow__text-wrapper slideshow__text-wrapper--{{ text_alignment }} vertical-breather">
-                <div class="content-box content-box--medium content-box--text-{{ text_position }} content-box--{{ text_position }} text-container{% if block.settings.custom_separation %} slideshow-meroxio-custom-distance-{{ block.id }}{% endif %}">
+                <div class="content-box font-color-mobile-{{ block.id }} content-box--medium content-box--text-{{ text_position }} content-box--{{ text_position }} text-container{% if block.settings.custom_separation %} slideshow-meroxio-custom-distance-{{ block.id }}{% endif %}">
                   {{- section_content -}}
                 </div>
               </div>
@@ -731,7 +734,13 @@
         {
           "type": "color",
           "id": "text_color",
-          "label": "Text",
+          "label": "Text Color Desktop",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color",
+          "id": "text_color_mobile",
+          "label": "Text Color Mobile",
           "default": "#ffffff"
         },
         {
