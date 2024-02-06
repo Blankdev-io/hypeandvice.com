@@ -3741,12 +3741,12 @@ window.onload = (() => {
       const animation = new CustomAnimation(new ParallelEffect(this.items.map((item, index) => {
         return new SequenceEffect([
           new CustomKeyframeEffect(item.querySelector(".list-collections__item-image"), {
-            opacity: [0, 1],
+            //opacity: [0, 1],
             //transform: [`scale(${prefersReducedMotion ? 1 : 1.1})`, "scale(1)"]
           }, {
-            duration: 250,
-            delay: prefersReducedMotion ? 0 : 150 * index,
-            easing: "cubic-bezier(0.65, 0, 0.35, 1)"
+            //duration: 250,
+            //delay: prefersReducedMotion ? 0 : 150 * index,
+            //easing: "cubic-bezier(0.65, 0, 0.35, 1)"
           }),
           new ParallelEffect(Array.from(item.querySelectorAll(".list-collections__item-info [reveal]")).map((textItem, subIndex) => {
             return new CustomKeyframeEffect(textItem, {
