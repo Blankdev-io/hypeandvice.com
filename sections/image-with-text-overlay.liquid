@@ -77,7 +77,9 @@
 
 <section class="section {% unless is_boxed %}section--flush{% endunless %}">
   <div {% if is_boxed %}class="container"{% endif %}>
-
+    {% if section.settings.banner_link != blank %}
+    <a href="{{ section.settings.banner_link }}">
+    {% endif %}
     <image-with-text-overlay {% if section.settings.reveal_on_scroll %}reveal-on-scroll{% endif %} class="image-overlay image-overlay--{{ section.settings.section_height }}{% if section.settings.just_image %} just-image-banner-container{% endif %}" {% unless section.settings.just_image %}{% if section.settings.section_height == 'auto' %}style="--image-aspect-ratio: {{ image_aspect_ratio }}"{% endif %}{% endunless %}>
       <div class="image-overlay__image-wrapper{% if section.settings.just_image %} just-image-banner{% endif %}" {% unless section.settings.just_image %}{% if section.settings.section_height == 'auto' %}style="padding-bottom: {{ 100.0 | divided_by: image_aspect_ratio }}%"{% endif %}{% endunless %}>
         {%- if image != blank -%}
@@ -144,6 +146,9 @@
         {{- section_content -}}
       </div>
     </image-with-text-overlay>
+    {% if section.settings.banner_link != blank %}
+    </a>
+    {% endif %}
   </div>
 </section>
 
@@ -165,6 +170,11 @@
       "label": "Image Banner",
       "info": "Enabling this will make this section only display an image for desktop and mobile, no text. It also enables the mobile image from appearing on small resolutions.",
       "default": false
+    },
+    {
+      "type": "url",
+      "id": "banner_link",
+      "label": "Banner Link"
     },
     {
       "type": "select",
