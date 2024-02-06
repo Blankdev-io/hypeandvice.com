@@ -3742,7 +3742,7 @@ window.onload = (() => {
         return new SequenceEffect([
           new CustomKeyframeEffect(item.querySelector(".list-collections__item-image"), {
             opacity: [0, 1],
-            transform: [`scale(${prefersReducedMotion ? 1 : 1.1})`, "scale(1)"]
+            //transform: [`scale(${prefersReducedMotion ? 1 : 1.1})`, "scale(1)"]
           }, {
             duration: 250,
             delay: prefersReducedMotion ? 0 : 150 * index,
