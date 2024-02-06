@@ -10,6 +10,7 @@ Code that create the faceted search for the collection and search pages. It curr
 {%- assign size_label_list = 'general.label.size' | t | replace: ', ', ',' | downcase | split: ',' -%}
 {% if collection.metafields.custom.collections_recomended.value != blank %}
   {% assign collections_array = collection.metafields.custom.collections_recomended.value | split: ',' %}
+  <script>console.log('{{ collections_array }}')</script>
   {% assign sorted_collections = collections_array | sort %}
   {% assign for_loop = 0 %} 
   {% for collection in sorted_collections %}
