@@ -293,6 +293,12 @@
           "settings": {
             "product": "florida-state-university-baseball-top"
           }
+        },
+        "product_JGq3KV": {
+          "type": "product",
+          "settings": {
+            "product": "mto-university-of-southern-california-retro-tank"
+          }
         }
       },
       "block_order": [
@@ -302,7 +308,8 @@
         "product_pd4EXd",
         "product_9PRmwr",
         "product_cNktzC",
-        "product_JfxckU"
+        "product_JfxckU",
+        "product_JGq3KV"
       ],
       "settings": {
         "subheading": "",
