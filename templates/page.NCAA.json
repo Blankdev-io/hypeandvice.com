@@ -37,6 +37,7 @@
             "button_2_text": "",
             "button_2_link": "",
             "text_color": "#ffffff",
+            "text_color_mobile": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#282828",
@@ -613,6 +614,7 @@
             "button_2_text": "",
             "button_2_link": "shopify:\/\/collections\/best-selling-collection",
             "text_color": "#ffffff",
+            "text_color_mobile": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
@@ -644,13 +646,6 @@
             "link": "shopify:\/\/collections\/sec-schools-apparel"
           }
         },
-        "logo_HHTxPr": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/PAC12.png",
-            "link": "shopify:\/\/collections\/pac-12-schools-apparel"
-          }
-        },
         "logo_PpkDXk": {
           "type": "logo",
           "settings": {
@@ -663,6 +658,13 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/BIG10.png",
             "link": "shopify:\/\/collections\/big-ten-schools-apparel"
+          }
+        },
+        "logo_HHTxPr": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/PAC12.png",
+            "link": "shopify:\/\/collections\/pac-12-schools-apparel"
           }
         },
         "logo_nPDw8J": {
@@ -682,9 +684,9 @@
       },
       "block_order": [
         "logo_6xrFWN",
-        "logo_HHTxPr",
         "logo_PpkDXk",
         "logo_tXY7Gw",
+        "logo_HHTxPr",
         "logo_nPDw8J",
         "logo_BWjfbD"
       ],
@@ -1006,7 +1008,7 @@
       "type": "recently-viewed-products",
       "settings": {
         "subheading": "",
-        "title": "Recently viewed",
+        "title": "RECENTLY VIEWED",
         "heading_font_family": "Zurich Extended",
         "heading_font_desktop": 24,
         "heading_font_mobile": 24,
@@ -1052,6 +1054,7 @@
             "button_2_text": "",
             "button_2_link": "",
             "text_color": "#ffffff",
+            "text_color_mobile": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
@@ -1112,7 +1115,7 @@
     "164923770607431a63": {
       "type": "custom-html",
       "settings": {
-        "subheading": "Tag us on your pics to be featured & enter for a chance to win a $100 HV gift-card.",
+        "subheading": "TAG US IN YOUR PICS TO BE FEATURED & A CHANCE TO WIN A $100 HV GIFT-CARD.",
         "subheading_font_desktop": 12,
         "subheading_font_mobile": 12,
         "subheading_font_family": "Armata",
@@ -1203,6 +1206,7 @@
             "button_2_text": "",
             "button_2_link": "",
             "text_color": "#ffffff",
+            "text_color_mobile": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
