@@ -538,8 +538,8 @@
         "reveal_on_scroll": false,
         "subheading": "",
         "title": "STYLES EVERYONE IS LOVING",
-        "heading_font_desktop": 18,
-        "heading_font_mobile": 14,
+        "heading_font_desktop": 24,
+        "heading_font_mobile": 16,
         "heading_font_family": "Zurich Extended",
         "category_font_desktop": 12,
         "category_font_mobile": 12,
@@ -713,6 +713,7 @@
       "settings": {
         "reveal_on_scroll": false,
         "just_image": true,
+        "banner_link": "",
         "section_height": "auto",
         "image": "shopify:\/\/shop_images\/H_V_NEW-MARKDOWNS_TOP-BANNER_CONCEPT-2_1920x120px_NEW.jpg",
         "subheading": "Subheading",
@@ -1135,6 +1136,7 @@
       "settings": {
         "reveal_on_scroll": false,
         "just_image": true,
+        "banner_link": "",
         "section_height": "auto",
         "image": "shopify:\/\/shop_images\/H_V_MEET-OUR-COMMUNITY_TOP-BANNER_CONCEPT-1_1920x120px_NEW.jpg",
         "subheading": "Subheading",
