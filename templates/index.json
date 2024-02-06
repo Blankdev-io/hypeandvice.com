@@ -37,6 +37,7 @@
             "button_2_text": "",
             "button_2_link": "",
             "text_color": "#ffffff",
+            "text_color_mobile": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#282828",
@@ -70,7 +71,7 @@
             "title": "TOPS",
             "link_text": "",
             "link_url": "shopify:\/\/collections\/tops-1",
-            "text_color": "#c2c2c2"
+            "text_color": "#000000"
           }
         },
         "collection_TUCyMp": {
@@ -162,7 +163,7 @@
         "heading_font_desktop": 16,
         "heading_font_mobile": 14,
         "heading_font_family": "Zurich Extended",
-        "category_font_desktop": 12,
+        "category_font_desktop": 16,
         "category_font_mobile": 12,
         "category_font_family": "Quantico-Bold",
         "background": "rgba(0,0,0,0)",
@@ -762,6 +763,7 @@
             "button_2_text": "",
             "button_2_link": "shopify:\/\/collections\/best-selling-collection",
             "text_color": "#ffffff",
+            "text_color_mobile": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
@@ -821,6 +823,7 @@
             "button_2_text": "",
             "button_2_link": "",
             "text_color": "#ffffff",
+            "text_color_mobile": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
@@ -1014,6 +1017,7 @@
             "button_2_text": "",
             "button_2_link": "",
             "text_color": "#ffffff",
+            "text_color_mobile": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
