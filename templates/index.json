@@ -252,10 +252,10 @@
     "product_list_PmJkHF": {
       "type": "product-list",
       "blocks": {
-        "product_JkmUxC": {
+        "product_JGq3KV": {
           "type": "product",
           "settings": {
-            "product": "iowa-state-university-basketball-top"
+            "product": "mto-university-of-southern-california-retro-tank"
           }
         },
         "product_6hH6b9": {
@@ -282,6 +282,12 @@
             "product": "purdue-university-hometown-button-down"
           }
         },
+        "product_JkmUxC": {
+          "type": "product",
+          "settings": {
+            "product": "iowa-state-university-basketball-top"
+          }
+        },
         "product_cNktzC": {
           "type": "product",
           "settings": {
@@ -296,11 +302,12 @@
         }
       },
       "block_order": [
-        "product_JkmUxC",
+        "product_JGq3KV",
         "product_6hH6b9",
         "product_8C7npq",
         "product_pd4EXd",
         "product_9PRmwr",
+        "product_JkmUxC",
         "product_cNktzC",
         "product_JfxckU"
       ],
