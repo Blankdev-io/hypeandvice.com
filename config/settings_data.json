@@ -244,7 +244,7 @@
           "logo": "shopify:\/\/shop_images\/logo.jpg",
           "logo_max_width": 225,
           "mobile_logo_max_width": 115,
-          "navigation_menu": "menu",
+          "navigation_menu": "main-menu",
           "navigation_menu_ncaa": "ncaa-menu",
           "navigation_menu_nba": "nba-menu",
           "navigation_menu_mls": "mls-menu",

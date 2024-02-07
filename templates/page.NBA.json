@@ -45,15 +45,14 @@
             "button_2_text": "",
             "button_2_link": "",
             "text_color": "#ffffff",
+            "text_color_mobile": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
             "overlay_opacity": 0,
             "custom_separation": true,
             "text_distance": 5,
-            "klaviyo": "WMjr9K",
-            "klaviyo_margin_desktop": 20,
-            "klaviyo_margin_mobile": 20
+            "klaviyo": "WMjr9K"
           }
         }
       },
@@ -317,9 +316,11 @@
         "b68e61ae-744a-4908-98b1-91402840a993",
         "59ebf1af-eae5-4d81-a36b-3ab9c4d6d91a"
       ],
-      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
+        "no_margins": true,
+        "shop_all_url": "",
+        "shop_all_text": "",
         "subheading": "",
         "title": "SHOP BY TEAM",
         "custom_font": false,
@@ -541,15 +542,14 @@
             "button_2_text": "",
             "button_2_link": "",
             "text_color": "#ffffff",
+            "text_color_mobile": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
             "overlay_opacity": 30,
             "custom_separation": false,
             "text_distance": 25,
-            "klaviyo": "",
-            "klaviyo_margin_desktop": 20,
-            "klaviyo_margin_mobile": 20
+            "klaviyo": ""
           }
         }
       },
@@ -621,15 +621,14 @@
             "button_2_text": "",
             "button_2_link": "",
             "text_color": "#ffffff",
+            "text_color_mobile": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
             "overlay_opacity": 30,
             "custom_separation": false,
             "text_distance": 25,
-            "klaviyo": "",
-            "klaviyo_margin_desktop": 20,
-            "klaviyo_margin_mobile": 20
+            "klaviyo": ""
           }
         }
       },
