@@ -391,7 +391,7 @@
         "button_text": "",
         "button_link": "shopify:\/\/collections\/sale-1",
         "link_style": "link",
-        "background_type": "boxed",
+        "background_type": "full_width",
         "text_width": "medium",
         "text_position": "middle_center",
         "text_color": "#ffffff",
