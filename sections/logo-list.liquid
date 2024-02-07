@@ -66,7 +66,7 @@
         {%- endif -%}
 
         {%- if section.settings.title != blank -%}
-          <div class="heading-category-container">
+          <div class="heading-category-container" {% if section.settings.title_center %}style="justify-content: center;"{% endif %}>
           <h3 class="heading h2{% if section.settings.custom_font %} logo-list-custom-{{ section.id }}{% endif %}">{{ section.settings.title | escape }}</h3>
           <a href="{{ section.settings.shop_all_url }}" class="shop-all-text">{{ section.settings.shop_all_text }}</a>
           </div>  
@@ -160,6 +160,12 @@
       "label": "No Margins",
       "info": "Removes horizontal margins.",
       "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "title_center",
+      "label": "Center Heading and Subheading",
+      "default": false
     },
     {
       "type": "url",
