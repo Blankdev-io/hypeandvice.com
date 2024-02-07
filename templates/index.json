@@ -355,6 +355,7 @@
         "f9e60bf3-4871-454e-9a5e-c8b4f383d608",
         "924daf84-e23c-485d-9bd6-f155dd13b246"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "shop_all_url": "\/pages\/our-schools",
