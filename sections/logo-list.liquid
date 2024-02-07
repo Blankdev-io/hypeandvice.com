@@ -66,11 +66,10 @@
         {%- endif -%}
 
         {%- if section.settings.title != blank -%}
+          <div class="heading-category-container">
           <h3 class="heading h2{% if section.settings.custom_font %} logo-list-custom-{{ section.id }}{% endif %}">{{ section.settings.title | escape }}</h3>
-        {%- endif -%}
-
-        {%- if section.settings.shop_all_text != blank -%}
-          <div class="heading-category-container"><h3 class="heading h3 custom-{{ section.id }}">{{ section.settings.title }}</h3><a href="{{ section.settings.shop_all_url }}" class="shop-all-text">{{ section.settings.shop_all_text }}</a></div>
+          <a href="{{ section.settings.shop_all_url }}" class="shop-all-text">{{ section.settings.shop_all_text }}</a>
+          </div>  
         {%- endif -%}
       </header>
 
