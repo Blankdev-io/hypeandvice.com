@@ -316,9 +316,11 @@
         "b68e61ae-744a-4908-98b1-91402840a993",
         "59ebf1af-eae5-4d81-a36b-3ab9c4d6d91a"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "no_margins": true,
+        "title_center": false,
         "shop_all_url": "",
         "shop_all_text": "",
         "subheading": "",
