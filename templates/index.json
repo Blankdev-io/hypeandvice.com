@@ -203,7 +203,7 @@
             "league_top_text": true,
             "subheading": "MLS",
             "title": "",
-            "below_text": true,
+            "below_text": false,
             "link_text": "",
             "link_url": "",
             "text_color": "#ffffff",
