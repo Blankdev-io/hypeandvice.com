@@ -267,7 +267,7 @@
       ],
       "settings": {
         "reveal_on_scroll": false,
-        "shop_all_url": "",
+        "shop_all_url": "shopify:\/\/pages\/our-schools",
         "shop_all_text": "MORE SCHOOLS",
         "subheading": "",
         "title": "",
