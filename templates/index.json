@@ -181,7 +181,7 @@
             "custom_height": true,
             "custom_height_size": 800,
             "custom_height_size_mobile": 500,
-            "league_top_text": true,
+            "league_top_text": false,
             "subheading": "NCAA",
             "title": "",
             "below_text": false,
