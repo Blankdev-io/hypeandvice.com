@@ -187,7 +187,7 @@
             "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/pages\/gamebae-blog",
-            "text_color": "#ffffff",
+            "text_color": "#f5f5f5",
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
@@ -203,10 +203,10 @@
             "league_top_text": true,
             "subheading": "MLS",
             "title": "",
-            "below_text": false,
+            "below_text": true,
             "link_text": "",
             "link_url": "",
-            "text_color": "#100404",
+            "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
