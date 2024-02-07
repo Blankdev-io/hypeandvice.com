@@ -187,7 +187,7 @@
             "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/pages\/gamebae-blog",
-            "text_color": "#f5f5f5",
+            "text_color": "#c2c2c2",
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
@@ -206,7 +206,7 @@
             "below_text": false,
             "link_text": "",
             "link_url": "",
-            "text_color": "#ffffff",
+            "text_color": "#c2c2c2",
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
@@ -225,7 +225,7 @@
             "below_text": false,
             "link_text": "",
             "link_url": "",
-            "text_color": "#ffffff",
+            "text_color": "#c2c2c2",
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
@@ -382,7 +382,7 @@
       "settings": {
         "reveal_on_scroll": false,
         "just_image": true,
-        "banner_link": "",
+        "banner_link": "shopify:\/\/collections\/sale-1",
         "section_height": "auto",
         "image": "shopify:\/\/shop_images\/H_V_NEW-MARKDOWNS_TOP-BANNER_CONCEPT-2_1920x120px_NEW.jpg",
         "mobile_image": "shopify:\/\/shop_images\/LANDING_PAGE_NBA_V3.png",
