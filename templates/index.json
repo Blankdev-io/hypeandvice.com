@@ -181,13 +181,13 @@
             "custom_height": true,
             "custom_height_size": 800,
             "custom_height_size_mobile": 500,
-            "league_top_text": false,
+            "league_top_text": true,
             "subheading": "NCAA",
             "title": "",
             "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/pages\/gamebae-blog",
-            "text_color": "#000000",
+            "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
@@ -200,13 +200,13 @@
             "custom_height": true,
             "custom_height_size": 800,
             "custom_height_size_mobile": 500,
-            "league_top_text": false,
+            "league_top_text": true,
             "subheading": "MLS",
             "title": "",
             "below_text": false,
             "link_text": "",
             "link_url": "",
-            "text_color": "#000000",
+            "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
@@ -219,13 +219,13 @@
             "custom_height": true,
             "custom_height_size": 800,
             "custom_height_size_mobile": 500,
-            "league_top_text": false,
+            "league_top_text": true,
             "subheading": "NBA",
             "title": "",
             "below_text": false,
             "link_text": "",
             "link_url": "",
-            "text_color": "#000000",
+            "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
