@@ -479,18 +479,6 @@
             "text_color": "#000000"
           }
         },
-        "collection_VXV8ht": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/IMG_0661_800x_1.webp",
-            "subheading": "",
-            "title": "PUFFERS",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "#000000"
-          }
-        },
         "collection_imHYYj": {
           "type": "collection",
           "settings": {
@@ -498,6 +486,18 @@
             "image": "shopify:\/\/shop_images\/RUGBY_POLO_V1.png",
             "subheading": "",
             "title": "RUBY POLO",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#000000"
+          }
+        },
+        "collection_VXV8ht": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/IMG_0661_800x_1.webp",
+            "subheading": "",
+            "title": "PUFFERS",
             "link_text": "",
             "link_url": "",
             "text_color": "#000000"
@@ -535,8 +535,8 @@
         "collection_m3Cwax",
         "collection_gC9q6X",
         "collection_fBAXTJ",
-        "collection_VXV8ht",
         "collection_imHYYj",
+        "collection_VXV8ht",
         "collection_LzKD4w",
         "collection_9TRyr8"
       ],
