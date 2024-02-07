@@ -1069,7 +1069,7 @@
         "button_text": "",
         "button_link": "shopify:\/\/pages\/changingthegame",
         "link_style": "link",
-        "background_type": "full_width",
+        "background_type": "boxed",
         "text_width": "medium",
         "text_position": "middle_center",
         "text_color": "#ffffff",
