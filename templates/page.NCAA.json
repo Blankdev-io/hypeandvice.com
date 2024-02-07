@@ -719,6 +719,7 @@
     },
     "image_with_text_overlay_UjVfKQ": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "just_image": true,
@@ -1142,6 +1143,7 @@
     },
     "image_with_text_overlay_4i7Tzj": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "just_image": true,
