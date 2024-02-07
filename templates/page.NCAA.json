@@ -443,6 +443,18 @@
             "text_color": "#000000"
           }
         },
+        "collection_m3Cwax": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/Aub_Cut_Off.png",
+            "subheading": "",
+            "title": "CUT OFF TANK",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#000000"
+          }
+        },
         "collection_gC9q6X": {
           "type": "collection",
           "settings": {
@@ -503,18 +515,6 @@
             "text_color": "#000000"
           }
         },
-        "collection_m3Cwax": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/Aub_Cut_Off.png",
-            "subheading": "",
-            "title": "CUT OFF TANK",
-            "link_text": "",
-            "link_url": "",
-            "text_color": "#000000"
-          }
-        },
         "collection_9TRyr8": {
           "type": "collection",
           "settings": {
@@ -532,12 +532,12 @@
         "collection_n68GW3",
         "collection_RFLjaG",
         "collection_bxgx8a",
+        "collection_m3Cwax",
         "collection_gC9q6X",
         "collection_fBAXTJ",
         "collection_VXV8ht",
         "collection_imHYYj",
         "collection_LzKD4w",
-        "collection_m3Cwax",
         "collection_9TRyr8"
       ],
       "settings": {
