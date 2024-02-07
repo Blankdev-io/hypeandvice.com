@@ -358,6 +358,7 @@
       "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
+        "no_margins": true,
         "shop_all_url": "\/pages\/our-schools",
         "shop_all_text": "MORE SCHOOLS",
         "subheading": "",
@@ -1059,7 +1060,7 @@
       "settings": {
         "reveal_on_scroll": false,
         "just_image": true,
-        "banner_link": "",
+        "banner_link": "shopify:\/\/pages\/changingthegame",
         "section_height": "auto",
         "image": "shopify:\/\/shop_images\/H_V_MEET-OUR-COMMUNITY_TOP-BANNER_CONCEPT-1_1920x120px_NEW.jpg",
         "mobile_image": "shopify:\/\/shop_images\/LANDING_PAGE_NBA_V3.png",
