@@ -10996,6 +10996,11 @@ input:checked + .popover__choice-label::after,
     margin-right: calc(56px + 32px); /* 56px is the width of arrows and 32px the extra space we add between arrows and logos */
   }
 
+  .logo-list--carousel.logo-list-no-margins .logo-list__prev-next + .logo-list__list {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
   .logo-list__arrow {
     opacity: 0;
     visibility: hidden;

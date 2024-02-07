@@ -112,7 +112,7 @@
       {%- else -%}
         <div class="scroller">
           <div class="scroller__inner">
-            <logo-list {% if section.settings.reveal_on_scroll %}reveal-on-scroll{% endif %} class="logo-list logo-list--carousel">
+            <logo-list {% if section.settings.reveal_on_scroll %}reveal-on-scroll{% endif %} class="logo-list logo-list--carousel{% if section.settings.no_margins %} logo-list-no-margins{% endif %}">
               {%- if section.blocks.size > 6 -%}
                 <prev-next-buttons class="logo-list__prev-next hidden-pocket">
                   <button class="logo-list__arrow prev-next-button prev-next-button--prev" disabled>
@@ -152,6 +152,13 @@
       "id": "reveal_on_scroll",
       "label": "Reveal on scroll",
       "info": "Show animation when section becomes visible.",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "no_margins",
+      "label": "No Margins",
+      "info": "Removes horizontal margins.",
       "default": true
     },
     {
