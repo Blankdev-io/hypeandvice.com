@@ -267,6 +267,7 @@
       ],
       "settings": {
         "reveal_on_scroll": false,
+        "no_margins": true,
         "shop_all_url": "shopify:\/\/pages\/our-schools",
         "shop_all_text": "200+ MORE",
         "subheading": "",
@@ -697,6 +698,7 @@
       ],
       "settings": {
         "reveal_on_scroll": false,
+        "no_margins": true,
         "shop_all_url": "",
         "shop_all_text": "",
         "subheading": "",
@@ -720,7 +722,7 @@
       "settings": {
         "reveal_on_scroll": false,
         "just_image": true,
-        "banner_link": "",
+        "banner_link": "shopify:\/\/collections\/sale",
         "section_height": "auto",
         "image": "shopify:\/\/shop_images\/H_V_NEW-MARKDOWNS_TOP-BANNER_CONCEPT-2_1920x120px_NEW.jpg",
         "subheading": "Subheading",
