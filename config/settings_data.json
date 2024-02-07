@@ -80,7 +80,7 @@
           "message-1"
         ],
         "settings": {
-          "announcement_bar_position": "sticky_mobile",
+          "announcement_bar_position": "non_sticky",
           "announcement_text_size": "small",
           "autoplay": true,
           "cycle_speed": 5,
@@ -155,117 +155,89 @@
                 "west-virginia-university",
                 "university-of-wisconsin",
                 "vanderbilt-university"
-              ],
-              "images_position": "right",
-              "image_1_heading": "",
-              "image_1_text": "",
-              "image_1_link": "",
-              "image_2_heading": "",
-              "image_2_text": "",
-              "image_2_link": "",
-              "image_3_heading": "",
-              "image_3_text": "",
-              "image_3_link": "",
-              "image_4_heading": "",
-              "image_4_text": "",
-              "image_4_link": "",
-              "image_5_heading": "",
-              "image_5_text": "",
-              "image_5_link": "",
-              "image_6_heading": "",
-              "image_6_text": "",
-              "image_6_link": ""
+              ]
             }
           },
-          "d24a15a2-2c8a-45e4-a356-3c5d50191b8c": {
-            "type": "mobile_mega_menu",
+          "25e3eae6-e8df-42b8-ac1d-c8e3812bdd22": {
+            "type": "nba_mega_menu",
             "settings": {
-              "mobile_menu_item": "Find Your School",
-              "mobile_collection_list": [
-                "university-of-alabama",
-                "university-of-arizona",
-                "arizona-state-university",
-                "university-of-arkansas-fayetteville",
-                "auburn-university",
-                "boise-state",
-                "university-of-california-berkeley",
-                "university-of-california-los-angeles-ucla",
-                "university-of-central-florida",
-                "university-of-cincinnati",
-                "university-of-colorado-boulder",
-                "u-conn",
-                "cornell-university",
-                "university-of-florida-uf",
-                "florida-state-university",
-                "university-of-georgia",
-                "harvard-university",
-                "howard-university",
-                "university-of-illinois",
-                "indiana-university",
-                "university-of-iowa",
-                "iowa-state-university",
-                "james-madison-university",
-                "university-of-kansas",
-                "university-of-kentucky",
-                "louisiana-state-university-lsu",
-                "university-of-maryland",
-                "university-of-miami",
-                "university-of-michigan",
-                "michigan-state-university",
-                "university-of-mississippi-ole-miss",
-                "university-of-notre-dame",
-                "ohio-state-university-osu",
-                "university-of-oregon",
-                "penn-state",
-                "university-of-pittsburgh",
-                "purdue",
-                "rutgers-university",
-                "san-diego-state-university",
-                "university-of-southern-california",
-                "university-of-south-carolina",
-                "stanford-university",
-                "syracuse-university-cute-apparel",
-                "university-of-tennessee",
-                "university-of-nebraska"
-              ],
-              "mobile_collection_list2": [
-                "university-of-texas-at-austin-1",
-                "texas-a-m",
-                "texas-christian-university",
-                "texas-tech",
-                "tulane-university",
-                "university-of-utah",
-                "university-of-washington",
-                "west-virginia-university",
-                "university-of-wisconsin",
-                "vanderbilt-university"
-              ],
-              "mobile_images_position": "right",
-              "mobile_items_length": 55,
-              "mobile_image_1_heading": "",
-              "mobile_image_1_text": "",
-              "mobile_image_1_link": "",
-              "mobile_image_2_heading": "",
-              "mobile_image_2_text": "",
-              "mobile_image_2_link": "",
-              "mobile_image_3_heading": "",
-              "mobile_image_3_text": "",
-              "mobile_image_3_link": "",
-              "mobile_image_4_heading": "",
-              "mobile_image_4_text": "",
-              "mobile_image_4_link": "",
-              "mobile_image_5_heading": "",
-              "mobile_image_5_text": "",
-              "mobile_image_5_link": "",
-              "mobile_image_6_heading": "",
-              "mobile_image_6_text": "",
-              "mobile_image_6_link": ""
+              "menu_item": "Find Your Team",
+              "collection_list": [
+                "atlanta-hawks",
+                "boston-celtics",
+                "brooklyn-nets",
+                "charlotte-hornets",
+                "chicago-bulls",
+                "cleveland-cavaliers",
+                "dallas-mavericks",
+                "denver-nuggets",
+                "detroit-pistons",
+                "golden-state-warriors",
+                "houston-rockets",
+                "indiana-pacers",
+                "los-angeles-clippers",
+                "los-angeles-lakers",
+                "memphis-grizzlies",
+                "miami-heat",
+                "milwaukee-bucks",
+                "minnesota-timberwolves",
+                "new-orleans-pelicans",
+                "new-york-knicks",
+                "oklahoma-city-thunder",
+                "orlando-magic",
+                "philadelphia-76ers",
+                "phoenix-suns",
+                "portland-trail-blazers",
+                "sacramento-kings",
+                "san-antonio-spurs",
+                "toronto-raptors",
+                "utah-jazz",
+                "washington-wizards"
+              ]
+            }
+          },
+          "ebf0f17f-ec41-4633-8d3a-900ce5c1f349": {
+            "type": "mls_mega_menu",
+            "settings": {
+              "menu_item": "Find Your Team",
+              "collection_list": [
+                "atlanta-united",
+                "austin-fc",
+                "charlotte-fc",
+                "chicago-fire-fc",
+                "fc-cincinnati",
+                "colorado-rapids",
+                "columbus-crew",
+                "d-c-united",
+                "fc-dallas",
+                "houston-dynamo-fc",
+                "sporting-kansas-city",
+                "la-galaxy",
+                "los-angeles-fc",
+                "inter-miami-cf",
+                "minnesota-united",
+                "cf-montreal",
+                "nashville-sc",
+                "new-england-revolution",
+                "new-york-red-bulls",
+                "new-york-city-fc",
+                "orlando-city",
+                "philadelphia-union",
+                "portland-timbers",
+                "real-salt-lake",
+                "san-jose-earthquakes",
+                "seattle-sounders-fc",
+                "st-louis-city-sc",
+                "toronto-fc",
+                "vancouver-whitecaps-fc"
+              ]
             }
           }
         },
         "block_order": [
           "2f8fdde7-f4c6-4891-a807-d35b26267ebc",
-          "d24a15a2-2c8a-45e4-a356-3c5d50191b8c"
+          "25e3eae6-e8df-42b8-ac1d-c8e3812bdd22",
+          "ebf0f17f-ec41-4633-8d3a-900ce5c1f349"
         ],
         "settings": {
           "enable_sticky_header": true,
@@ -273,7 +245,9 @@
           "logo_max_width": 225,
           "mobile_logo_max_width": 115,
           "navigation_menu": "menu",
-          "sidebar_navigation_menu": "",
+          "navigation_menu_ncaa": "ncaa-menu",
+          "navigation_menu_nba": "nba-menu",
+          "navigation_menu_mls": "mls-menu",
           "header_layout": "logo_left_navigation_center",
           "show_icons": true,
           "reduce_desktop_padding": false,
@@ -287,11 +261,17 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "text": {
-            "type": "text",
+          "html_tw89Xw": {
+            "type": "html",
             "settings": {
-              "title": "HYPE AND VICE",
-              "content": "<p>  Hype and Vice is officially licensed. When you buy from us, you’re guaranteed to receive high quality products that are NCAA approved. <\/p>"
+              "html": "<div class=\"klaviyo-form-WHMY66 hidden-pocket\"><\/div><div class=\"klaviyo-form-XFZx9n hidden-lap-and-up\"><\/div>"
+            }
+          },
+          "53f6421a-3050-482f-ad7c-986eb1241a5e": {
+            "type": "social_media",
+            "settings": {
+              "title": "Follow us",
+              "content": "<p>Let's get social!<\/p>"
             }
           },
           "links": {
@@ -306,19 +286,27 @@
               "menu": "footer-1"
             }
           },
-          "53f6421a-3050-482f-ad7c-986eb1241a5e": {
-            "type": "social_media",
+          "text": {
+            "type": "text",
             "settings": {
-              "title": "Follow us",
-              "content": "<p>Let's get social!<\/p>"
+              "title": "HYPE AND VICE",
+              "content": "<p>  Hype and Vice is officially licensed. When you buy from us, you’re guaranteed to receive high quality products that are NCAA approved. <\/p>",
+              "logo1": "shopify:\/\/shop_images\/Affinity-White_Reverse_ALP_Seal_compressed.png",
+              "logo2": "shopify:\/\/shop_images\/CLC_Logo_No_Tag_White.png",
+              "logo3": "shopify:\/\/shop_images\/Exemplar_Logo_White_PNG.png",
+              "logo4": "shopify:\/\/shop_images\/fanatics-licensing-management-logo-wht.png"
             }
           }
         },
         "block_order": [
-          "text",
+          "html_tw89Xw",
+          "53f6421a-3050-482f-ad7c-986eb1241a5e",
           "links",
           "ac15f1c9-f099-4420-afcb-da6f44207add",
-          "53f6421a-3050-482f-ad7c-986eb1241a5e"
+          "text"
+        ],
+        "custom_css": [
+          "@media screen and (min-width: 1000px) {.kl-private-reset-css-Xuajs1 form {margin: 0px auto 0px 0px !important; } .kl-private-reset-css-Xuajs1 input {margin-left: auto; width: 300px; }}"
         ],
         "settings": {
           "show_payment_icons": false,

@@ -1,3 +1,29 @@
+{% assign league = '' %}
+{% if template contains 'collection' %}
+  {% assign league = collection.metafields.custom.league %}
+{% elsif template contains 'product' %}
+  {% for tag in product.tags %}
+    {% if tag == 'NCAA' %}
+      {% assign league = 'NCAA' %}
+      {% break %}
+    {% elsif tag == 'NBA' %}
+      {% assign league = 'NBA' %}
+      {% break %}
+    {% elsif tag == 'MLS' %}
+      {% assign league = 'MLS' %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% elsif template contains 'page' %}
+  {% if page.title contains 'NCAA' %}
+    {% assign league = 'NCAA' %}
+  {% elsif page.title contains 'NBA' %}
+    {% assign league = 'NBA' %}
+  {% elsif page.title contains 'MLS' %}
+    {% assign league = 'MLS' %}
+  {% endif %}
+{% endif %}
+
 {%- comment -%}
   IMPLEMENTATION NOTE: the header in Focal is pretty complex as it allows a lot of different layouts. In order to make
   this code as efficient as possible and avoid as many reflows, we are using a lot of different CSS variables. If you
@@ -26,7 +52,7 @@
       position: relative;
     {%- endif -%}
 
-    top: {% if section.settings.enable_sticky_header %}calc(var(--enable-sticky-announcement-bar) * var(--announcement-bar-height, 0px)){% else %}0{% endif %};
+    top: -1px; {% comment %} Commented to fix an issue where header had a 1px gap above {% if section.settings.enable_sticky_header %}calc(var(--enable-sticky-announcement-bar) * var(--announcement-bar-height, 0px)){% else %}0{% endif %};{% endcomment %}
     z-index: 4;
   }
 
@@ -109,13 +135,25 @@
     }
   {%- endif -%}
 </style>
+
 <store-header
   {% if section.settings.enable_sticky_header %}sticky{% endif %}
   {% if request.page_type == 'index' and section.settings.enable_transparent_header %}transparent{% endif %}
   class="header {% if settings.background == settings.header_background %}header--bordered{% endif %} {% if request.page_type == 'index' and section.settings.enable_transparent_header %}header--transparent{% endif %}"
   role="banner">
-{%- assign menu = section.settings.navigation_menu -%}
 
+  {% assign menu = section.settings.navigation_menu %}
+  {% case league %}
+    {% when 'NCAA' %}
+      {% assign menu = section.settings.navigation_menu_ncaa %}
+    {% when 'NBA' %}
+      {% assign menu = section.settings.navigation_menu_nba %}
+    {% when 'MLS' %}
+      {% assign menu = section.settings.navigation_menu_mls %}
+    {% else %}
+      {% assign menu = section.settings.navigation_menu %}
+  {% endcase %}
+  
 <div class="container">
   <div class="header__wrapper">
     <!-- LEFT PART -->
@@ -454,7 +492,7 @@
       ------------------------------------------------------------------------------------
       MOBILE MENU DRAWER
       ------------------------------------------------------------------------------------
-    {%- endcomment -%}{%- assign menu = section.settings.sidebar_navigation_menu | default: section.settings.navigation_menu -%}{%- render 'mobile-menu', menu: menu -%}{%- comment -%}
+    {%- assign menu = section.settings.sidebar_navigation_menu | default: section.settings.navigation_menu -%}{%- endcomment -%}{%- render 'mobile-menu', menu: menu -%}{%- comment -%}
       ------------------------------------------------------------------------------------
       SEARCH DRAWER
       ------------------------------------------------------------------------------------
@@ -536,13 +574,23 @@
     }, {
       "type": "link_list",
       "id": "navigation_menu",
-      "label": "Menu",
+      "label": "Home Page Menu",
       "default": "main-menu"
     }, {
       "type": "link_list",
-      "id": "sidebar_navigation_menu",
-      "label": "Mobile menu",
-      "info": "Select a different menu for mobile sidebar. If none is set the main menu is used."
+      "id": "navigation_menu_ncaa",
+      "label": "NCAA Menu",
+      "default": "main-menu"
+    }, {
+      "type": "link_list",
+      "id": "navigation_menu_nba",
+      "label": "NBA Menu",
+      "default": "main-menu"
+    }, {
+      "type": "link_list",
+      "id": "navigation_menu_mls",
+      "label": "MLS Menu",
+      "default": "main-menu"
     }, {
       "type": "header",
       "content": "Desktop",
@@ -650,311 +698,40 @@
           "type": "collection_list",
           "id": "collection_list2",
           "label": "Collection List 2"
-        },
-        {
-          "type": "select",
-          "id": "images_position",
-          "label": "Images position",
-          "info": "When featuring 4 images or more, we recommend to not use any dropdown links to keep the navigation easy to use.",
-          "options": [
-            {
-              "value": "left",
-              "label": "Left"
-            }, {
-              "value": "right",
-              "label": "Right"
-            }
-          ],
-          "default": "right"
-        },
-        {
-          "type": "header",
-          "content": "Image 1"
-        }, {
-          "type": "image_picker",
-          "id": "image_1",
-          "label": "Image",
-          "info": "560 x 420px .jpg recommended"
-        }, {
-          "type": "text",
-          "id": "image_1_heading",
-          "label": "Heading"
-        }, {
-          "type": "text",
-          "id": "image_1_text",
-          "label": "Text"
-        }, {
-          "type": "url",
-          "id": "image_1_link",
-          "label": "Link"
-        }, {
-          "type": "header",
-          "content": "Image 2"
-        }, {
-          "type": "image_picker",
-          "id": "image_2",
-          "label": "Image",
-          "info": "560 x 420px .jpg recommended"
-        }, {
-          "type": "text",
-          "id": "image_2_heading",
-          "label": "Heading"
-        }, {
-          "type": "text",
-          "id": "image_2_text",
-          "label": "Text"
-        }, {
-          "type": "url",
-          "id": "image_2_link",
-          "label": "Link"
-        }, {
-          "type": "header",
-          "content": "Image 3"
-        }, {
-          "type": "image_picker",
-          "id": "image_3",
-          "label": "Image",
-          "info": "560 x 420px .jpg recommended"
-        }, {
-          "type": "text",
-          "id": "image_3_heading",
-          "label": "Heading"
-        }, {
-          "type": "text",
-          "id": "image_3_text",
-          "label": "Text"
-        }, {
-          "type": "url",
-          "id": "image_3_link",
-          "label": "Link"
-        }, {
-          "type": "header",
-          "content": "Image 4"
-        }, {
-          "type": "image_picker",
-          "id": "image_4",
-          "label": "Image",
-          "info": "560 x 420px .jpg recommended"
-        }, {
-          "type": "text",
-          "id": "image_4_heading",
-          "label": "Heading"
-        }, {
-          "type": "text",
-          "id": "image_4_text",
-          "label": "Text"
-        }, {
-          "type": "url",
-          "id": "image_4_link",
-          "label": "Link"
-        }, {
-          "type": "header",
-          "content": "Image 5"
-        }, {
-          "type": "image_picker",
-          "id": "image_5",
-          "label": "Image",
-          "info": "560 x 420px .jpg recommended"
-        }, {
-          "type": "text",
-          "id": "image_5_heading",
-          "label": "Heading"
-        }, {
-          "type": "text",
-          "id": "image_5_text",
-          "label": "Text"
-        }, {
-          "type": "url",
-          "id": "image_5_link",
-          "label": "Link"
-        }, {
-          "type": "header",
-          "content": "Image 6"
-        }, {
-          "type": "image_picker",
-          "id": "image_6",
-          "label": "Image",
-          "info": "560 x 420px .jpg recommended"
-        }, {
-          "type": "text",
-          "id": "image_6_heading",
-          "label": "Heading"
-        }, {
-          "type": "text",
-          "id": "image_6_text",
-          "label": "Text"
-        }, {
-          "type": "url",
-          "id": "image_6_link",
-          "label": "Link"
         }
       ]
     },
     {
-      "type": "mobile_mega_menu",
-      "name": "Mobile Mega menu",
+      "type": "nba_mega_menu",
+      "name": "NBA Mega menu",
       "settings": [
         {
           "type": "text",
-          "id": "mobile_menu_item",
+          "id": "menu_item",
           "label": "Menu item",
           "info": "Enter menu item to apply a mega menu dropdown. [Learn more](https://support.maestrooo.com/article/180-navigation-enabling-and-configuring-mega-navigation)."
         },
         {
           "type": "collection_list",
-          "id": "mobile_collection_list",
+          "id": "collection_list",
           "label": "Collection List"
+        }
+      ]
+    },
+    {
+      "type": "mls_mega_menu",
+      "name": "MLS Mega menu",
+      "settings": [
+        {
+          "type": "text",
+          "id": "menu_item",
+          "label": "Menu item",
+          "info": "Enter menu item to apply a mega menu dropdown. [Learn more](https://support.maestrooo.com/article/180-navigation-enabling-and-configuring-mega-navigation)."
         },
         {
           "type": "collection_list",
-          "id": "mobile_collection_list2",
-          "label": "Collection List 2"
-        },
-        {
-          "type": "select",
-          "id": "mobile_images_position",
-          "label": "Images position",
-          "info": "When featuring 4 images or more, we recommend to not use any dropdown links to keep the navigation easy to use.",
-          "options": [
-            {
-              "value": "left",
-              "label": "Left"
-            }, {
-              "value": "right",
-              "label": "Right"
-            }
-          ],
-          "default": "right"
-        },
-        {
-          "type": "range",
-          "id": "mobile_items_length",
-          "label": "Mobile Items Showed",
-          "min": 2,
-          "max": 55,
-          "step": 1,
-          "default": 10
-        },
-        {
-          "type": "header",
-          "content": "Image 1"
-        }, {
-          "type": "image_picker",
-          "id": "mobile_image_1",
-          "label": "Image",
-          "info": "560 x 420px .jpg recommended"
-        }, {
-          "type": "text",
-          "id": "mobile_image_1_heading",
-          "label": "Heading"
-        }, {
-          "type": "text",
-          "id": "mobile_image_1_text",
-          "label": "Text"
-        }, {
-          "type": "url",
-          "id": "mobile_image_1_link",
-          "label": "Link"
-        }, {
-          "type": "header",
-          "content": "Image 2"
-        }, {
-          "type": "image_picker",
-          "id": "mobile_image_2",
-          "label": "Image",
-          "info": "560 x 420px .jpg recommended"
-        }, {
-          "type": "text",
-          "id": "mobile_image_2_heading",
-          "label": "Heading"
-        }, {
-          "type": "text",
-          "id": "mobile_image_2_text",
-          "label": "Text"
-        }, {
-          "type": "url",
-          "id": "mobile_image_2_link",
-          "label": "Link"
-        }, {
-          "type": "header",
-          "content": "Image 3"
-        }, {
-          "type": "image_picker",
-          "id": "mobile_image_3",
-          "label": "Image",
-          "info": "560 x 420px .jpg recommended"
-        }, {
-          "type": "text",
-          "id": "mobile_image_3_heading",
-          "label": "Heading"
-        }, {
-          "type": "text",
-          "id": "mobile_image_3_text",
-          "label": "Text"
-        }, {
-          "type": "url",
-          "id": "mobile_image_3_link",
-          "label": "Link"
-        }, {
-          "type": "header",
-          "content": "Image 4"
-        }, {
-          "type": "image_picker",
-          "id": "mobile_image_4",
-          "label": "Image",
-          "info": "560 x 420px .jpg recommended"
-        }, {
-          "type": "text",
-          "id": "mobile_image_4_heading",
-          "label": "Heading"
-        }, {
-          "type": "text",
-          "id": "mobile_image_4_text",
-          "label": "Text"
-        }, {
-          "type": "url",
-          "id": "mobile_image_4_link",
-          "label": "Link"
-        }, {
-          "type": "header",
-          "content": "Image 5"
-        }, {
-          "type": "image_picker",
-          "id": "mobile_image_5",
-          "label": "Image",
-          "info": "560 x 420px .jpg recommended"
-        }, {
-          "type": "text",
-          "id": "mobile_image_5_heading",
-          "label": "Heading"
-        }, {
-          "type": "text",
-          "id": "mobile_image_5_text",
-          "label": "Text"
-        }, {
-          "type": "url",
-          "id": "mobile_image_5_link",
-          "label": "Link"
-        }, {
-          "type": "header",
-          "content": "Image 6"
-        }, {
-          "type": "image_picker",
-          "id": "mobile_image_6",
-          "label": "Image",
-          "info": "560 x 420px .jpg recommended"
-        }, {
-          "type": "text",
-          "id": "mobile_image_6_heading",
-          "label": "Heading"
-        }, {
-          "type": "text",
-          "id": "mobile_image_6_text",
-          "label": "Text"
-        }, {
-          "type": "url",
-          "id": "mobile_image_6_link",
-          "label": "Link"
+          "id": "collection_list",
+          "label": "Collection List"
         }
       ]
     }

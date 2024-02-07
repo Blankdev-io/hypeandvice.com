@@ -3,6 +3,28 @@
 {%- assign size_label_list = 'general.label.size' | t | replace: ', ', ',' | downcase | split: ',' -%}
 {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' | append: product.id -%}
 
+{% assign unavailable_variants = '' | split: ',' %}
+
+
+{% assign unavailable_variants_array = '' %}
+{% for variant in product.variants %}
+  {% unless variant.available %}
+    {% capture variant_json %}
+      {% if forloop.first != true and unavailable_variants_array != '' %}
+        ,
+      {% endif %}
+      "{{ variant.title | escape }}"
+    {% endcapture %}
+    {% assign unavailable_variants_array = unavailable_variants_array | append: variant_json %}
+  {% endunless %}
+{% endfor %}
+
+<script>
+  window.unavailableVariants = [{% unless unavailable_variants_array == '' %}{{ unavailable_variants_array }}{% else %}''{% endunless %}];
+</script>
+
+
+
 {%- unless product.selected_or_first_available_variant.available -%}
   <style>
     #shopify-section-{{ section.id }} .shopify-payment-button {
@@ -122,12 +144,12 @@
                         {%- endfor -%}
                       {%- endfor -%}
                     </div>
-                  </template>
+                  </template>                  
                   <template v-if="option.name == 'Color'">
                     <div class="color-swatch-list">
                       {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
-                      <template v-for="(value, i) in option.values">
-                        <div :class="{'is-disabled': variant_selection.available == false && variant_selection.option2 == value}" class="color-swatch {% if color_white_label == color_value_downcase %}color-swatch--white{% endif %}" :value="value">
+                      <template v-for="(value, i) in option.values">                       
+                        <div class="color-swatch {% if color_white_label == color_value_downcase %}color-swatch--white{% endif %}" :value="value">
                           <input v-if="value == selected_variant.option1 || value == selected_variant.option2 || value == selected_variant.option3" class="color-swatch__radio visually-hidden" type="radio" name="`option${option.position}`" :id="`option-{{ section.id }}-{{ template.suffix }}-${product.id}-${index}-${i}`" :value="value" checked>
                           <input v-else class="color-swatch__radio visually-hidden" type="radio" name="`option${option.position}`" :id="`option-{{ section.id }}-{{ template.suffix }}-${product.id}-${index}-${i}`" :value="value">
                           <template v-for="(color_value, index_color) in color_swatch_config">
@@ -144,8 +166,8 @@
                   </template>
                   <template v-if="option.name == 'Size'">
                     <div class="block-swatch-list">
-                    <template v-for="(value, i) in option.values">
-                      <div class="block-swatch" >
+                    <template v-for="(value, i) in option.values">                     
+                      <div :class="{ 'is-disabled': isVariantUnavailable(value), 'block-swatch': true }">
                         <input v-if="value == selected_variant.option1 || value == selected_variant.option2 || value == selected_variant.option3" class="block-swatch__radio visually-hidden" type="radio" :name="`option${option.position}`" :value="value" :form="`product-form-{{section.id}}-${product.id}`" :id="`option-{{ section.id }}-{{ template.suffix }}-${product.id}-${index}-${i}`" checked>
                         <input v-else class="block-swatch__radio visually-hidden" type="radio" :name="`option${option.position}`" :value="value" :form="`product-form-{{section.id}}-${product.id}`" :id="`option-{{ section.id }}-{{ template.suffix }}-${product.id}-${index}-${i}`">
                         <label  class="block-swatch__item" :for="`option-{{ section.id }}-{{ template.suffix }}-${product.id}-${index}-${i}`" v-on:click="changeSize(value, option)" v-html="value"></label>
@@ -153,36 +175,6 @@
                     </template>
                     </div>
                   </template>
-                      {% comment %} <div class="select-wrapper">
-                        <combo-box initial-focus-selector="[aria-selected='true']" id="{{ option_id }}-combo-box" class="combo-box">
-                          <span class="combo-box__overlay"></span>
-
-                          <header class="combo-box__header">
-                            <p class="combo-box__title heading h6">{{ option.name }}</p>
-
-                            <button type="button" class="combo-box__close-button tap-area" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
-                              {%- render 'icon' with 'close' -%}
-                            </button>
-                          </header>
-
-                          <div class="combo-box__option-list" role="listbox">
-                            {%- for value in option.values -%}
-                              <button type="button" role="option" class="combo-box__option-item" value="{{ value | escape }}" aria-selected="{% if value == option.selected_value %}true{% else %}false{% endif %}">{{ value }}</button>
-                            {%- endfor -%}
-                          </div>
-
-                          <select class="visually-hidden" name="option{{ option.position }}" form="{{ product_form_id }}" data-bind-value="{{ option_id }}-value" aria-label="{{ option.name | escape }}" v-model="variant_selection.option{{ option.position }}">
-                            {%- for value in option.values -%}
-                              <option value="{{ value | escape }}" {% if value == option.selected_value %}selected{% endif %}>{{ value }}</option>
-                            {%- endfor -%}
-                          </select>
-                        </combo-box>
-
-                        <button type="button" is="toggle-button" class="select" aria-expanded="false" aria-haspopup="listbox" aria-controls="{{ option_id }}-combo-box">
-                          <span id="{{ option_id }}-value" class="select__selected-value">{{ option.selected_value }}</span>
-                          {%- render 'icon' with 'chevron' -%}
-                        </button>
-                      </div> {% endcomment %}
                 </div>
             </product-variants>
           {%- endunless -%}

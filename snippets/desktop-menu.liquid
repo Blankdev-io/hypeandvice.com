@@ -1,3 +1,39 @@
+{% assign league = '' %}
+{% if template contains 'collection' %}
+  {% assign league = collection.metafields.custom.league %}
+{% elsif template contains 'product' %}
+  {% for tag in product.tags %}
+    {% if tag == 'NCAA' %}
+      {% assign league = 'NCAA' %}
+      {% break %}
+    {% elsif tag == 'NBA' %}
+      {% assign league = 'NBA' %}
+      {% break %}
+    {% elsif tag == 'MLS' %}
+      {% assign league = 'MLS' %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% elsif template contains 'page' %}
+  {% if page.title contains 'NCAA' %}
+    {% assign league = 'NCAA' %}
+  {% elsif page.title contains 'NBA' %}
+    {% assign league = 'NBA' %}
+  {% elsif page.title contains 'MLS' %}
+    {% assign league = 'MLS' %}
+  {% endif %}
+{% endif %}
+
+{% for block in section.blocks %}
+  {% if block.type == 'mega_menu' and league == 'NCAA' %}
+    {% assign mega_menu_block_league = block %}
+  {% elsif block.type == 'nba_mega_menu' and league == 'NBA' %}
+    {% assign mega_menu_block_league = block %}
+  {% elsif block.type == 'mls_mega_menu' and league == 'MLS' %}
+    {% assign mega_menu_block_league = block %}
+  {% endif %}
+{% endfor %}
+
 <desktop-navigation>
   <ul class="header__linklist list--unstyled {% unless bottom_navigation %}hidden-pocket hidden-lap{% endunless %}" role="list">
     {%- for link in menu.links -%}
@@ -9,7 +45,11 @@
         {%- assign menu_item_downcase = block.settings.menu_item | strip | downcase -%}
 
         {%- if menu_item_downcase == link_title_downcase -%}
-          {%- assign mega_menu_block = block -%}
+          {% if mega_menu_block_league %}
+            {% assign mega_menu_block = mega_menu_block_league %}
+          {% else %}
+            {%- assign mega_menu_block = block -%}
+          {% endif %}
           {%- break -%}
         {%- endif -%}
       {%- endfor -%}
@@ -18,6 +58,7 @@
         <a
           class="header__linklist-link link--animated"
           href="{{ link.url }}"
+          {% if link.title contains 'Sale' %}style="color: red; font-weight: bold;"{% endif %}
           {% if link.links.size > 0 or mega_menu_block != '' %}aria-controls="desktop-menu-{{ forloop.index }}"aria-expanded="false"{% endif %}>
           {{- link.title -}}
         </a>
@@ -76,14 +117,15 @@
                 {{ mega_menu_block.shopify_attributes }}>
                 <div class="container">
                   <div class="mega-menu__inner mega-menu__inner-collection">
-                    <div class="mega-menu__columns-wrapper menu-wrapper-image">
+                    <div class="mega-menu__columns-wrapper{% if league == 'NBA' or league == 'MLS' %}-league{% endif %} menu-wrapper-image{% if league == 'NBA' or league == 'MLS' %}-league{% endif %}">
                       {%- for collection in mega_menu_block.settings.collection_list -%}
-                        <div class="mega-menu__column menu-image">
+                        <div class="mega-menu__column menu-image{% if league == 'NBA' or league == 'MLS' %}-league{% endif %}">
                           <a href="{{ collection.url }}" class="mega-menu__title heading heading--small">
                             <img class="" src="{{ collection.metafields.custom.header_image | img_url: '400x' }}">
                           </a>
                         </div>
                       {% endfor %}
+              
                       {%- for collection in mega_menu_block.settings.collection_list2 -%}
                         <div class="mega-menu__column menu-image">
                           <a href="{{ collection.url }}" class="mega-menu__title heading heading--small">
@@ -94,7 +136,7 @@
 
                     </div>
                     <div class="show-more-container">
-                      <a href="{{ link.url }}" class="show-more-button button button--secondary">SHOW ALL SCHOOLS</button>
+                      <a href="{{ link.url }}" class="show-more-button button button--secondary">SHOW ALL {% if league == 'NCAA' %}SCHOOLS{% else %}TEAMS{% endif %}</a>
                     </div>
                   </div>
                 </div>

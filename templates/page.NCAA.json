@@ -1,0 +1,1266 @@
+{
+  "sections": {
+    "165065000576ab84e7": {
+      "type": "slideshow-meroxio",
+      "blocks": {
+        "16506500057f8bc64d-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/H_V_HOMEPAGE-BANNER_FEBRUARY-4_3000x1500px_v2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/H_V_HOMEPAGE-BANNER_FEBRUARY-4_1000x1400px_MOBILE.jpg",
+            "show_videos": false,
+            "autoplay": true,
+            "loop": true,
+            "muted": true,
+            "video_webm": "",
+            "video_mp4": "",
+            "split_video_webm": "",
+            "split_video_mp4": "",
+            "mobile_video_webm": "",
+            "mobile_video_mp4": "",
+            "text_position": "bottom_center",
+            "subheading": "",
+            "subheading_font_family": "Zurich Extended",
+            "subheading_font_desktop": 24,
+            "subheading_font_mobile": 24,
+            "title": "",
+            "heading_font_family": "Zurich Extended",
+            "heading_font_desktop": 24,
+            "heading_font_mobile": 24,
+            "button_1_text": "Find your school",
+            "button_lenght": 35,
+            "button_lenght_mobile": 25,
+            "button_font_family": "Armata",
+            "button_font_desktop": 12,
+            "button_font_mobile": 12,
+            "button_1_link": "https:\/\/www.hypeandvice.com\/pages\/our-schools",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "text_color_mobile": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#282828",
+            "overlay_opacity": 0,
+            "custom_separation": false,
+            "text_distance": 25,
+            "klaviyo": ""
+          }
+        }
+      },
+      "block_order": [
+        "16506500057f8bc64d-0"
+      ],
+      "settings": {
+        "section_height": "large",
+        "transition_type": "fade",
+        "autoplay": false,
+        "cycle_speed": 4,
+        "background": "#100404"
+      }
+    },
+    "165065396872bf5f8b": {
+      "type": "logo-list",
+      "blocks": {
+        "ba493069-d771-4892-8711-918b8318839d": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/michigan_6abf4b10-b0ac-4997-9e03-f675c38568cc.png",
+            "link": "shopify:\/\/collections\/university-of-michigan"
+          }
+        },
+        "b78e97be-1093-4054-94ab-988811ffc6a5": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/osu.png",
+            "link": "shopify:\/\/collections\/ohio-state-university-osu"
+          }
+        },
+        "5511dc15-28d6-4b28-8637-c45496fe7e1d": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/ucla.png",
+            "link": "shopify:\/\/collections\/university-of-california-los-angeles-ucla"
+          }
+        },
+        "9609e586-a4c3-496f-a2b1-fa77e64d96fb": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/alabama_9e10fd4c-267a-40a5-a0e7-cd6076ce8699.png",
+            "link": "shopify:\/\/collections\/university-of-alabama"
+          }
+        },
+        "logo_CYkezF": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/FSU_7b33fdfd-2fbc-419c-aaa9-0042964e92d7.png",
+            "link": "shopify:\/\/collections\/florida-state-university"
+          }
+        },
+        "97101234-a231-474f-bb65-8357ead0a1a9": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/ARZ.png",
+            "link": "shopify:\/\/collections\/university-of-arizona"
+          }
+        },
+        "d182e8ab-05e7-4b26-a5a9-4395f61ea46a": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/FLA_4090bcc7-bdc8-4d85-9179-46f76299db0b.png",
+            "link": "shopify:\/\/collections\/university-of-florida-uf"
+          }
+        },
+        "e5fd48d2-189c-4172-b6aa-8894a3110cfe": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/MIA_b03c1a15-04b9-4717-80fd-5c7df09d42be.png",
+            "link": "shopify:\/\/collections\/university-of-miami"
+          }
+        },
+        "80d1af82-56c1-4768-a7b7-ead10c8e7368": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/COL_879d1e52-c1e3-4081-bea8-5822359dd460.png",
+            "link": "shopify:\/\/collections\/university-of-colorado-boulder"
+          }
+        },
+        "97ec09d3-9f24-4d79-9ae9-d1fb99e2ec6d": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/INU.png",
+            "link": "shopify:\/\/collections\/indiana-university"
+          }
+        },
+        "6cdc1f5e-fc4e-4c64-8535-21bdde045b2d": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/ARS.png",
+            "link": "shopify:\/\/collections\/arizona-state-university"
+          }
+        },
+        "e1058adb-13f1-4ecf-ab8e-79a348810d2e": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/MCH.png",
+            "link": "shopify:\/\/collections\/michigan-state-university"
+          }
+        },
+        "f9e60bf3-4871-454e-9a5e-c8b4f383d608": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/wisconsin.png",
+            "link": "shopify:\/\/collections\/university-of-wisconsin"
+          }
+        },
+        "838a195b-8ca3-45a2-bfde-b2d018a8444e": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/IOW.png",
+            "link": "shopify:\/\/collections\/university-of-iowa"
+          }
+        },
+        "924daf84-e23c-485d-9bd6-f155dd13b246": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/penn_state_d7c24fce-1ad1-4358-bd08-e35cd385c3b5.png",
+            "link": "shopify:\/\/collections\/penn-state"
+          }
+        },
+        "548f0d69-75d3-4c36-b6ca-67784975b425": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/auburn-university.png",
+            "link": "shopify:\/\/collections\/auburn-university"
+          }
+        },
+        "09a963ca-495e-4410-b6bf-c1693a35020b": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/texas_4048157f-2410-4593-bb72-d276ba864018.png",
+            "link": "shopify:\/\/collections\/university-of-texas-at-austin-1"
+          }
+        },
+        "063708cd-d4f7-4ad0-9117-d40a5c3b84ba": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/notre-dame.png",
+            "link": "shopify:\/\/collections\/university-of-notre-dame"
+          }
+        },
+        "34b27da8-8574-4201-aba3-0e5be8340955": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/south-carolina_fcb1e13b-31d1-4ef5-8f20-dda60e42ca89.png",
+            "link": "shopify:\/\/collections\/university-of-south-carolina"
+          }
+        },
+        "1650653968a9456b00-0": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/tennessee.png",
+            "link": "shopify:\/\/collections\/university-of-tennessee"
+          }
+        },
+        "1650653968a9456b00-2": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/illinois_820b81d3-c33e-4d63-adce-bc7494db3175.png",
+            "link": "shopify:\/\/collections\/university-of-illinois"
+          }
+        },
+        "af385551-8f83-4e93-bc7f-4e6e79afd9ef": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/PUR.png",
+            "link": "shopify:\/\/collections\/purdue"
+          }
+        },
+        "logo_V3i3e9": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/SDS.png",
+            "link": "shopify:\/\/collections\/san-diego-state-university"
+          }
+        },
+        "logo_FUebmk": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/SOC.png",
+            "link": "shopify:\/\/collections\/university-of-southern-california"
+          }
+        },
+        "logo_R9WrDp": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/WAS.png",
+            "link": "shopify:\/\/collections\/university-of-washington"
+          }
+        }
+      },
+      "block_order": [
+        "ba493069-d771-4892-8711-918b8318839d",
+        "b78e97be-1093-4054-94ab-988811ffc6a5",
+        "5511dc15-28d6-4b28-8637-c45496fe7e1d",
+        "9609e586-a4c3-496f-a2b1-fa77e64d96fb",
+        "logo_CYkezF",
+        "97101234-a231-474f-bb65-8357ead0a1a9",
+        "d182e8ab-05e7-4b26-a5a9-4395f61ea46a",
+        "e5fd48d2-189c-4172-b6aa-8894a3110cfe",
+        "80d1af82-56c1-4768-a7b7-ead10c8e7368",
+        "97ec09d3-9f24-4d79-9ae9-d1fb99e2ec6d",
+        "6cdc1f5e-fc4e-4c64-8535-21bdde045b2d",
+        "e1058adb-13f1-4ecf-ab8e-79a348810d2e",
+        "f9e60bf3-4871-454e-9a5e-c8b4f383d608",
+        "838a195b-8ca3-45a2-bfde-b2d018a8444e",
+        "924daf84-e23c-485d-9bd6-f155dd13b246",
+        "548f0d69-75d3-4c36-b6ca-67784975b425",
+        "09a963ca-495e-4410-b6bf-c1693a35020b",
+        "063708cd-d4f7-4ad0-9117-d40a5c3b84ba",
+        "34b27da8-8574-4201-aba3-0e5be8340955",
+        "1650653968a9456b00-0",
+        "1650653968a9456b00-2",
+        "af385551-8f83-4e93-bc7f-4e6e79afd9ef",
+        "logo_V3i3e9",
+        "logo_FUebmk",
+        "logo_R9WrDp"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "no_margins": true,
+        "shop_all_url": "shopify:\/\/pages\/our-schools",
+        "shop_all_text": "200+ MORE",
+        "subheading": "",
+        "title": "SCHOOLS",
+        "custom_font": true,
+        "heading_font_desktop": 24,
+        "heading_font_mobile": 16,
+        "heading_font_family": "Zurich Extended",
+        "button_text": "",
+        "button_link": "",
+        "stack_logos": false,
+        "background": "#ffffff",
+        "text_color": "#000000",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "logo_background": "rgba(0,0,0,0)"
+      }
+    },
+    "league_list_hVNY6R": {
+      "type": "league-list",
+      "blocks": {
+        "collection_xppPYP": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/JERSEYS_V1.png",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
+            "league_top_text": false,
+            "subheading": "",
+            "title": "TOPS",
+            "below_text": false,
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#c2c2c2",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_Qyiiz9": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/BOTTOMS_V1.png",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
+            "league_top_text": false,
+            "subheading": "",
+            "title": "BOTTOMS",
+            "below_text": false,
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#c2c2c2",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_kKayya": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/OUTERWEAR_V2.png",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
+            "league_top_text": false,
+            "subheading": "",
+            "title": "OUTERWEAR",
+            "below_text": false,
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#c2c2c2",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "collection_xppPYP",
+        "collection_Qyiiz9",
+        "collection_kKayya"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "subheading": "",
+        "title": "",
+        "custom_font": true,
+        "heading_font_desktop": 12,
+        "heading_font_mobile": 12,
+        "heading_font_family": "Zurich Extended",
+        "category_font_desktop": 12,
+        "category_font_mobile": 14,
+        "category_font_family": "Zurich Extended",
+        "category_margin": 2,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "2612faf2-8324-468d-8706-b0d50055d1a4": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14401296793705__2612faf2-8324-468d-8706-b0d50055d1a4-16678596118958e80f-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/313337AA-8C0A-4601-AAA6-B6E8C9FCBFDC.jpg",
+            "split_image": "shopify:\/\/shop_images\/27CD2939-F2D0-4C8E-813C-5B48FBB28C6C.jpg",
+            "text_position": "middle_center",
+            "subheading": "CONGRATULATIONS TO THE",
+            "title": "2023 NATIONAL CHAMPIONS",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/collections\/university-of-michigan",
+            "button_2_text": "",
+            "button_2_link": "shopify:\/\/collections\/university-of-michigan",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 8
+          }
+        }
+      },
+      "block_order": [
+        "template--14401296793705__2612faf2-8324-468d-8706-b0d50055d1a4-16678596118958e80f-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_height": "medium",
+        "transition_type": "fade",
+        "autoplay": false,
+        "cycle_speed": 4,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "categories_KDmjHe": {
+      "type": "categories",
+      "blocks": {
+        "collection_n68GW3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/HVWT110SOC2-7_06be2032-e89b-43f3-a2f8-dd2f07e2a3c0.jpg",
+            "subheading": "",
+            "title": "RETRO TANK",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#000000"
+          }
+        },
+        "collection_RFLjaG": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/HVWT113UCL-HVWT114UCL-2_800x_1.webp",
+            "subheading": "",
+            "title": "JERSEYS",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#000000"
+          }
+        },
+        "collection_bxgx8a": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/B96418C8-6CA4-4E9F-A88E-542B7A923488_800x_1d827dc9-c8d2-4d35-ae01-5689c070a350.jpg",
+            "subheading": "",
+            "title": "BOXER SHORTS",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#000000"
+          }
+        },
+        "collection_m3Cwax": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/Cut_Off_V1.png",
+            "subheading": "",
+            "title": "CUT OFF TANK",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#000000"
+          }
+        },
+        "collection_gC9q6X": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/HOMERUN_TEE.png",
+            "subheading": "",
+            "title": "HOMERUN TEE",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#000000"
+          }
+        },
+        "collection_fBAXTJ": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/HVWB25AL2-1FILM_800x_1.webp",
+            "subheading": "",
+            "title": "COLOR-BLOCK SWEATS",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#000000"
+          }
+        },
+        "collection_imHYYj": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/RUGBY_POLO_V1.png",
+            "subheading": "",
+            "title": "RUBY POLO",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#000000"
+          }
+        },
+        "collection_VXV8ht": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/IMG_0661_800x_1.webp",
+            "subheading": "",
+            "title": "PUFFERS",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#000000"
+          }
+        },
+        "collection_LzKD4w": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/Tops_Landing_V1.png",
+            "subheading": "",
+            "title": "DENIM CORSET",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#000000"
+          }
+        },
+        "collection_9TRyr8": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/HVWT21AUB1-1FILM_800x_8f5c1cb0-1942-4e15-9fef-a0bcfce59462.webp",
+            "subheading": "",
+            "title": "MVP TOP",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "collection_n68GW3",
+        "collection_RFLjaG",
+        "collection_bxgx8a",
+        "collection_m3Cwax",
+        "collection_gC9q6X",
+        "collection_fBAXTJ",
+        "collection_imHYYj",
+        "collection_VXV8ht",
+        "collection_LzKD4w",
+        "collection_9TRyr8"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "subheading": "",
+        "title": "STYLES EVERYONE IS LOVING",
+        "heading_font_desktop": 24,
+        "heading_font_mobile": 16,
+        "heading_font_family": "Zurich Extended",
+        "category_font_desktop": 12,
+        "category_font_mobile": 12,
+        "category_font_family": "Quantico-Bold",
+        "background": "#ffffff",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "2cd6223b-dc18-4eda-91cc-768082b54a6a": {
+      "type": "slideshow",
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "fade",
+        "autoplay": true,
+        "cycle_speed": 4,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "16506544520a12bd2c": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "small",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "165454654631be36fe": {
+      "type": "slideshow-meroxio",
+      "blocks": {
+        "1654546546825ee9c7-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5822CE41-6147-4839-ABF3-16060EBFDA1A.jpg",
+            "split_image": "shopify:\/\/shop_images\/115DD56E-8ED7-44BD-955F-A401256DA6AD.jpg",
+            "show_videos": false,
+            "autoplay": true,
+            "loop": true,
+            "muted": true,
+            "video_webm": "",
+            "video_mp4": "",
+            "split_video_webm": "",
+            "split_video_mp4": "",
+            "mobile_video_webm": "",
+            "mobile_video_mp4": "",
+            "text_position": "bottom_left",
+            "subheading": "",
+            "subheading_font_family": "Zurich Extended",
+            "subheading_font_desktop": 24,
+            "subheading_font_mobile": 24,
+            "title": "TOP SELLERS",
+            "heading_font_family": "Zurich Extended",
+            "heading_font_desktop": 30,
+            "heading_font_mobile": 24,
+            "button_1_text": "SHOP NOW!",
+            "button_lenght": 30,
+            "button_lenght_mobile": 25,
+            "button_font_family": "Armata",
+            "button_font_desktop": 12,
+            "button_font_mobile": 12,
+            "button_1_link": "shopify:\/\/collections\/best-selling-collection",
+            "button_2_text": "",
+            "button_2_link": "shopify:\/\/collections\/best-selling-collection",
+            "text_color": "#ffffff",
+            "text_color_mobile": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "custom_separation": false,
+            "text_distance": 25,
+            "klaviyo": ""
+          }
+        }
+      },
+      "block_order": [
+        "1654546546825ee9c7-0"
+      ],
+      "settings": {
+        "section_height": "medium",
+        "transition_type": "fade",
+        "autoplay": false,
+        "cycle_speed": 4,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "logo_list_ymKc4R": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_6xrFWN": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/SEC_a60632a7-493a-49c3-808c-d920a4e786a9.png",
+            "link": "shopify:\/\/collections\/sec-schools-apparel"
+          }
+        },
+        "logo_PpkDXk": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/HBCU.png",
+            "link": "shopify:\/\/collections\/hbcus"
+          }
+        },
+        "logo_tXY7Gw": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/BIG10.png",
+            "link": "shopify:\/\/collections\/big-ten-schools-apparel"
+          }
+        },
+        "logo_HHTxPr": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/PAC12.png",
+            "link": "shopify:\/\/collections\/pac-12-schools-apparel"
+          }
+        },
+        "logo_nPDw8J": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/BIG_12_95efe9fe-e9a4-4b71-9275-abe52496bc0c.png",
+            "link": "shopify:\/\/collections\/big-12-schools-apparel"
+          }
+        },
+        "logo_BWjfbD": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/ACC.png",
+            "link": "shopify:\/\/collections\/acc-schools-apparel"
+          }
+        }
+      },
+      "block_order": [
+        "logo_6xrFWN",
+        "logo_PpkDXk",
+        "logo_tXY7Gw",
+        "logo_HHTxPr",
+        "logo_nPDw8J",
+        "logo_BWjfbD"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "no_margins": true,
+        "shop_all_url": "",
+        "shop_all_text": "",
+        "subheading": "",
+        "title": "FEATURED",
+        "custom_font": true,
+        "heading_font_desktop": 24,
+        "heading_font_mobile": 16,
+        "heading_font_family": "Zurich Extended",
+        "button_text": "",
+        "button_link": "",
+        "stack_logos": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "logo_background": "rgba(0,0,0,0)"
+      }
+    },
+    "image_with_text_overlay_UjVfKQ": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": false,
+        "just_image": true,
+        "banner_link": "shopify:\/\/collections\/sale",
+        "section_height": "auto",
+        "image": "shopify:\/\/shop_images\/H_V_NEW-MARKDOWNS_TOP-BANNER_CONCEPT-2_1920x120px_NEW.jpg",
+        "subheading": "Subheading",
+        "title": "Image with text overlay",
+        "content": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "link_style": "link",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "middle_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "1655412672f035473e": {
+      "type": "collection-list",
+      "blocks": {
+        "d8e58098-6acb-4bfa-bb40-43791829a1b3": {
+          "type": "collection",
+          "settings": {
+            "collection": "university-of-michigan",
+            "image": "shopify:\/\/shop_images\/127A2101-Edit_17763ed0-bf15-4452-9ff4-e19ce2e6507b.jpg",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
+            "subheading": "",
+            "title": "",
+            "below_text": false,
+            "link_text": "",
+            "link_url": "https:\/\/www.hypeandvice.com\/collections\/university-of-michigan",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "cc838b36-c8b2-40bd-96f4-4e76c1b51cf5": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/HVWB19NYU6-HVWT77NYU-Lifestyle-10.jpg",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
+            "subheading": "",
+            "title": "",
+            "below_text": false,
+            "link_text": "",
+            "link_url": "https:\/\/www.hypeandvice.com\/collections\/new-york-university-nyu",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "8a195f48-8520-45ac-8634-cd608241e67d": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/HVWT2HAR10-Lifestyle-5.jpg",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
+            "subheading": "",
+            "title": "",
+            "below_text": false,
+            "link_text": "",
+            "link_url": "https:\/\/www.hypeandvice.com\/products\/mto-harvard-ace-cardigan",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "fabae9aa-f765-4e4f-aea9-840aa3082f8d": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/HVWT88CU2-HVWT80CU-5.jpg",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
+            "subheading": "",
+            "title": "",
+            "below_text": false,
+            "link_text": "",
+            "link_url": "https:\/\/www.hypeandvice.com\/collections\/cornell-university",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "165541267275479523-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/127A3503-Edit.jpg",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
+            "subheading": "",
+            "title": "",
+            "below_text": false,
+            "link_text": "",
+            "link_url": "https:\/\/www.hypeandvice.com\/products\/usc-gameday-top",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "7f3bfceb-253d-47b2-9711-96492836056c": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/HVWT34HOW9-2_5eb3db75-1c97-42ff-ad43-0846a6fdb30a.jpg",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
+            "subheading": "",
+            "title": "",
+            "below_text": false,
+            "link_text": "",
+            "link_url": "shopify:\/\/products\/mto-howard-cut-off-tank",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "73af8fc2-ba02-4cdf-9d1f-bf8a66683374": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/HVWT2VAN6-Lifesty-7.jpg",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
+            "subheading": "",
+            "title": "",
+            "below_text": false,
+            "link_text": "",
+            "link_url": "https:\/\/www.hypeandvice.com\/collections\/vanderbilt-university",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "165541267275479523-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/HVWT81SDS2-Campaign-2_2fd2be08-e8bb-44e3-bae4-6c87b3055384.jpg",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
+            "subheading": "",
+            "title": "",
+            "below_text": false,
+            "link_text": "",
+            "link_url": "https:\/\/www.hypeandvice.com\/products\/mto-sdsu-slam-dunk-top",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "165541267275479523-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/HVWT77UCH1-Lifestyle-2_77cb2ba3-df3e-4b93-bdc7-a2b31c11a08d.jpg",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
+            "subheading": "",
+            "title": "",
+            "below_text": false,
+            "link_text": "",
+            "link_url": "https:\/\/www.hypeandvice.com\/collections\/university-of-chicago",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "165541267275479523-5": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/ASU-ScoopNeck-ForGrain-OnModel-2_1.jpg",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
+            "subheading": "",
+            "title": "",
+            "below_text": false,
+            "link_text": "",
+            "link_url": "https:\/\/www.hypeandvice.com\/collections\/arizona-state-university",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "165541267275479523-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/HVWT81HAR1-Lifest-5psd.jpg",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
+            "subheading": "",
+            "title": "",
+            "below_text": false,
+            "link_text": "",
+            "link_url": "https:\/\/www.hypeandvice.com\/products\/mto-harvard-slam-dunk-top",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "165541267275479523-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/HVWT80SOC4-Campaign-1_1.jpg",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
+            "subheading": "",
+            "title": "",
+            "below_text": false,
+            "link_text": "",
+            "link_url": "https:\/\/www.hypeandvice.com\/products\/mto-usc-track-shorts",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "279bc3d3-8d0a-48de-a926-96c5f48136a9": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/HVWS26MIA1-Campaign-Group-2_8ba35dac-77e1-4481-bb73-f2befc1f55f8.jpg",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
+            "subheading": "",
+            "title": "",
+            "below_text": false,
+            "link_text": "",
+            "link_url": "https:\/\/www.hypeandvice.com\/collections\/university-of-miami",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "d8e58098-6acb-4bfa-bb40-43791829a1b3",
+        "cc838b36-c8b2-40bd-96f4-4e76c1b51cf5",
+        "8a195f48-8520-45ac-8634-cd608241e67d",
+        "fabae9aa-f765-4e4f-aea9-840aa3082f8d",
+        "165541267275479523-1",
+        "7f3bfceb-253d-47b2-9711-96492836056c",
+        "73af8fc2-ba02-4cdf-9d1f-bf8a66683374",
+        "165541267275479523-0",
+        "165541267275479523-3",
+        "165541267275479523-5",
+        "165541267275479523-2",
+        "165541267275479523-4",
+        "279bc3d3-8d0a-48de-a926-96c5f48136a9"
+      ],
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": false,
+        "layout": "carousel",
+        "two_columns": false,
+        "subheading": "",
+        "title": "make school cool 🏁",
+        "custom_font": false,
+        "heading_font_desktop": 16,
+        "heading_font_mobile": 14,
+        "heading_font_family": "Zurich Extended",
+        "category_font_desktop": 16,
+        "category_font_mobile": 14,
+        "category_font_family": "Zurich Extended",
+        "category_margin": 10,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "165065640506142d5c": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "subheading": "",
+        "title": "RECENTLY VIEWED",
+        "heading_font_family": "Zurich Extended",
+        "heading_font_desktop": 24,
+        "heading_font_mobile": 16,
+        "products_count": 4,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1650006254940409c8": {
+      "type": "slideshow-meroxio",
+      "blocks": {
+        "194e413f-663b-4b8b-ae88-48570ca82278": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/H_V_CHLOE-VEST_DROP_1080x1080px_WEBSITE.gif",
+            "split_image": "shopify:\/\/shop_images\/127A3163-Edit.jpg",
+            "show_videos": false,
+            "autoplay": true,
+            "loop": true,
+            "muted": true,
+            "video_webm": "",
+            "video_mp4": "",
+            "split_video_webm": "",
+            "split_video_mp4": "",
+            "mobile_video_webm": "",
+            "mobile_video_mp4": "",
+            "text_position": "middle_center",
+            "subheading": "",
+            "subheading_font_family": "Zurich Extended",
+            "subheading_font_desktop": 24,
+            "subheading_font_mobile": 24,
+            "title": "",
+            "heading_font_family": "Zurich Extended",
+            "heading_font_desktop": 24,
+            "heading_font_mobile": 24,
+            "button_1_text": "",
+            "button_lenght": 35,
+            "button_lenght_mobile": 25,
+            "button_font_family": "Zurich Extended",
+            "button_font_desktop": 24,
+            "button_font_mobile": 24,
+            "button_1_link": "shopify:\/\/collections\/chloe-vest",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "text_color_mobile": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "custom_separation": false,
+            "text_distance": 25,
+            "klaviyo": ""
+          }
+        }
+      },
+      "block_order": [
+        "194e413f-663b-4b8b-ae88-48570ca82278"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_height": "medium",
+        "transition_type": "fade",
+        "autoplay": true,
+        "cycle_speed": 4,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "slideshow_fA4KxQ": {
+      "type": "slideshow",
+      "blocks": {
+        "image_6YU3hK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/H_V_MYSTERY-BOX_PEREPECTIVE-1_800x1200px_f6bad502-ca53-4899-b28a-b3a68a4286a8.jpg",
+            "split_image": "shopify:\/\/shop_images\/DD0A8E03-519D-47BA-A8E9-BFC58F72A441.jpg",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "Shop mystery boxes",
+            "button_1_link": "https:\/\/www.hypeandvice.com\/collections\/mystery-boxes",
+            "button_2_text": "",
+            "button_2_link": "https:\/\/www.hypeandvice.com\/collections\/mystery-boxes",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 8
+          }
+        }
+      },
+      "block_order": [
+        "image_6YU3hK"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_height": "medium",
+        "transition_type": "fade",
+        "autoplay": false,
+        "cycle_speed": 4,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "164923770607431a63": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "TAG US IN YOUR PICS TO BE FEATURED & A CHANCE TO WIN A $100 HV GIFT-CARD.",
+        "subheading_font_desktop": 12,
+        "subheading_font_mobile": 12,
+        "subheading_font_family": "Armata",
+        "title": "INSTA SHOP",
+        "heading_font_desktop": 24,
+        "heading_font_mobile": 16,
+        "heading_font_family": "Zurich Extended",
+        "html": "<script src=\"\/\/foursixty.com\/media\/scripts\/fs.slider.v2.5.js\" data-feed-id=\"hype-and-vice\" data-theme=\"slider_v2_5\" data-open-links-in-same-page=\"true\" data-connector-filter=\"40125,40126\" data-category-filter=\"#changingthegame\" data-cell-size=\"20%\"><\/script>\n<style>.fs-has-links::after { padding:5px 7.5px;background-color:#ffffff;color:rgba(0, 0, 0, 0.8);content:\"SHOP IT\"; } .fs-wrapper { height:auto; } .fs-slider_v2_5  .fs-entry-container { height:0 !important;width:20%!important;padding-top:20%!important; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:quantico;font-style:normal;font-weight:normal;font-size:12px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:quantico;font-style:normal;font-weight:bold;font-size:12px; } .fs-slider-next-button, .fs-slider-prev-button { opacity:1; } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.8);margin:0px; } div.fs-entry-date { display:none; } div.fs-entry-title { display:none; } .fs-slider_v2_5 .fs-wrapper div.fs-timeline-entry { margin:1px; } <\/style>",
+        "add_vertical_spacing": true,
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "image_with_text_overlay_4i7Tzj": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": false,
+        "just_image": true,
+        "banner_link": "shopify:\/\/pages\/changingthegame",
+        "section_height": "auto",
+        "image": "shopify:\/\/shop_images\/H_V_MEET-OUR-COMMUNITY_TOP-BANNER_CONCEPT-1_1920x120px_NEW.jpg",
+        "subheading": "Subheading",
+        "title": "Image with text overlay",
+        "content": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "link_style": "link",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "middle_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "16487231743e468afb": {
+      "type": "blog-posts",
+      "disabled": true,
+      "settings": {
+        "blog": "gamebae-blog",
+        "subheading": "",
+        "title": "Fashion Blog",
+        "articles_count": 3,
+        "stack_mobile": true,
+        "show_category": true,
+        "show_excerpt": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "165090673528cafdbe": {
+      "type": "slideshow-meroxio",
+      "blocks": {
+        "1650906735f7c90a38-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/collage_desktop_2160.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/collage_mobile_1080.jpg",
+            "show_videos": false,
+            "autoplay": true,
+            "loop": true,
+            "muted": true,
+            "video_webm": "",
+            "video_mp4": "",
+            "split_video_webm": "",
+            "split_video_mp4": "",
+            "mobile_video_webm": "",
+            "mobile_video_mp4": "",
+            "text_position": "middle_center",
+            "subheading": "",
+            "subheading_font_family": "Zurich Extended",
+            "subheading_font_desktop": 24,
+            "subheading_font_mobile": 24,
+            "title": "These are the years.",
+            "heading_font_family": "Zurich Extended",
+            "heading_font_desktop": 24,
+            "heading_font_mobile": 24,
+            "button_1_text": "Meet our community",
+            "button_lenght": 35,
+            "button_lenght_mobile": 25,
+            "button_font_family": "Zurich Extended",
+            "button_font_desktop": 24,
+            "button_font_mobile": 24,
+            "button_1_link": "https:\/\/www.hypeandvice.com\/pages\/changingthegame",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "text_color_mobile": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "custom_separation": false,
+            "text_distance": 25,
+            "klaviyo": ""
+          }
+        }
+      },
+      "block_order": [
+        "1650906735f7c90a38-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_height": "small",
+        "transition_type": "fade",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "165065000576ab84e7",
+    "165065396872bf5f8b",
+    "league_list_hVNY6R",
+    "2612faf2-8324-468d-8706-b0d50055d1a4",
+    "categories_KDmjHe",
+    "2cd6223b-dc18-4eda-91cc-768082b54a6a",
+    "16506544520a12bd2c",
+    "165454654631be36fe",
+    "logo_list_ymKc4R",
+    "image_with_text_overlay_UjVfKQ",
+    "1655412672f035473e",
+    "165065640506142d5c",
+    "1650006254940409c8",
+    "slideshow_fA4KxQ",
+    "164923770607431a63",
+    "image_with_text_overlay_4i7Tzj",
+    "16487231743e468afb",
+    "165090673528cafdbe"
+  ]
+}

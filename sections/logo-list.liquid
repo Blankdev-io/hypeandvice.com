@@ -44,23 +44,37 @@
     --section-logo-background: {{ section.settings.logo_background.red }} {{ section.settings.logo_background.green }} {{ section.settings.logo_background.blue }} / {{ section.settings.logo_background.alpha }};
     --section-logo-count: {{ section.blocks.size | default: 6 }};
   }
+
+    .logo-list-custom-{{ section.id }} {
+    font-size: {{ section.settings.heading_font_desktop }}px !important;
+    font-family: "{{ section.settings.heading_font_family }}", sans-serif !important;  
+  }
+
+  @media screen and (max-width: 1000px) {
+    .logo-list-custom-{{ section.id }} {
+      font-size: {{ section.settings.heading_font_mobile }}px !important;
+    }
+  }
 </style>
 
 <section class="section {% unless blends_with_background or is_boxed %}section--flush{% endunless %}">
   <div class="section__color-wrapper">
-    <div class="container {% unless blends_with_background %}vertical-breather{% endunless %}">
-      <header class="section__header text-container">
+    <div class="container container-full-width {% unless blends_with_background %}vertical-breather{% endunless %}">
+      <header class="section__header new-left-design text-container">
         {%- if section.settings.subheading != blank -%}
           <h2 class="heading heading--small">{{ section.settings.subheading | escape }}</h2>
         {%- endif -%}
 
         {%- if section.settings.title != blank -%}
-          <h3 class="heading h2">{{ section.settings.title | escape }}</h3>
+          <div class="heading-category-container">
+          <h3 class="heading h2{% if section.settings.custom_font %} logo-list-custom-{{ section.id }}{% endif %}">{{ section.settings.title | escape }}</h3>
+          <a href="{{ section.settings.shop_all_url }}" class="shop-all-text">{{ section.settings.shop_all_text }}</a>
+          </div>  
         {%- endif -%}
       </header>
 
       {%- capture section_content -%}
-        <div class="logo-list__list">
+        <div class="logo-list__list{% if section.blocks.size <= 3 %} center-logos{% endif %}">
           {%- for block in section.blocks -%}
             {%- capture logo_content -%}
               {%- if block.settings.logo != blank -%}
@@ -98,7 +112,7 @@
       {%- else -%}
         <div class="scroller">
           <div class="scroller__inner">
-            <logo-list {% if section.settings.reveal_on_scroll %}reveal-on-scroll{% endif %} class="logo-list logo-list--carousel">
+            <logo-list {% if section.settings.reveal_on_scroll %}reveal-on-scroll{% endif %} class="logo-list logo-list--carousel{% if section.settings.no_margins %} logo-list-no-margins{% endif %}">
               {%- if section.blocks.size > 6 -%}
                 <prev-next-buttons class="logo-list__prev-next hidden-pocket">
                   <button class="logo-list__arrow prev-next-button prev-next-button--prev" disabled>
@@ -141,6 +155,23 @@
       "default": true
     },
     {
+      "type": "checkbox",
+      "id": "no_margins",
+      "label": "No Margins",
+      "info": "Removes horizontal margins.",
+      "default": true
+    },
+    {
+      "type": "url",
+      "id": "shop_all_url",
+      "label": "Link"
+    },
+    {
+      "type": "text",
+      "id": "shop_all_text",
+      "label": "Link text"
+    },
+    {
       "type": "text",
       "id": "subheading",
       "label": "Subheading"
@@ -150,6 +181,62 @@
       "id": "title",
       "label": "Heading",
       "default": "Brands"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_font",
+      "label": "Custom settings for font size and font family",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "heading_font_desktop",
+      "label": "Heading Desktop Font Size",
+      "min": 12,
+      "max": 80,
+      "step": 1,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "heading_font_mobile",
+      "label": "Heading Mobile Font Size",
+      "min": 12,
+      "max": 80,
+      "step": 1,
+      "default": 14
+    },
+    {
+      "type": "select",
+      "id": "heading_font_family",
+      "label": "Heading Font Family",
+      "default": "Zurich Extended",
+      "options": [
+        {
+          "value": "Zurich Extended",
+          "label": "Zurich Extended"
+        },
+        {
+          "value": "ZurichBT",
+          "label": "ZurichBT"
+        },
+        {
+          "value": "Zurich Ultra Black Extended BT",
+          "label": "Zurich Ultra Black Extended BT"
+        },
+        {
+          "value": "Armata",
+          "label": "Armata"
+        },
+        {
+          "value": "Quantico-Bold",
+          "label": "Quantico-Bold"
+        },
+        {
+          "value": "Recoleta-SemiBold",
+          "label": "Recoleta-SemiBold"
+        }
+      ]
     },
     {
       "type": "text",

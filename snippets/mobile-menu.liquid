@@ -4,6 +4,42 @@
   {%- assign direction = 'rtl' -%}
 {%- endcase -%}
 
+{% assign league = '' %}
+{% if template contains 'collection' %}
+  {% assign league = collection.metafields.custom.league %}
+{% elsif template contains 'product' %}
+  {% for tag in product.tags %}
+    {% if tag == 'NCAA' %}
+      {% assign league = 'NCAA' %}
+      {% break %}
+    {% elsif tag == 'NBA' %}
+      {% assign league = 'NBA' %}
+      {% break %}
+    {% elsif tag == 'MLS' %}
+      {% assign league = 'MLS' %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% elsif template contains 'page' %}
+  {% if page.title contains 'NCAA' %}
+    {% assign league = 'NCAA' %}
+  {% elsif page.title contains 'NBA' %}
+    {% assign league = 'NBA' %}
+  {% elsif page.title contains 'MLS' %}
+    {% assign league = 'MLS' %}
+  {% endif %}
+{% endif %}
+
+{% for block in section.blocks %}
+  {% if block.type == 'mega_menu' and league == 'NCAA' %}
+    {% assign mega_menu_block_league = block %}
+  {% elsif block.type == 'nba_mega_menu' and league == 'NBA' %}
+    {% assign mega_menu_block_league = block %}
+  {% elsif block.type == 'mls_mega_menu' and league == 'MLS' %}
+    {% assign mega_menu_block_league = block %}
+  {% endif %}
+{% endfor %}
+
 <mobile-navigation
   append-body
   id="mobile-menu-drawer"
@@ -28,13 +64,17 @@
         {%- assign mega_menu_images = '' -%}
 
         {%- for block in section.blocks -%}
-          {%- assign menu_item_downcase = block.settings.mobile_menu_item | strip | downcase -%}
+          {%- assign menu_item_downcase = block.settings.menu_item | strip | downcase -%}
 
-          {%- if menu_item_downcase == link_title_downcase -%}
+        {%- if menu_item_downcase == link_title_downcase -%}
+          {% if mega_menu_block_league %}
+            {% assign mega_menu_block = mega_menu_block_league %}
+          {% else %}
             {%- assign mega_menu_block = block -%}
-            {%- break -%}
-          {%- endif -%}
-        {%- endfor -%}
+          {% endif %}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
 
         {%- if mega_menu_block != '' -%}
           {%- assign images_count = 0 -%}
@@ -92,12 +132,10 @@
             </button>
 
             <collapsible-content id="mobile-menu-{{ forloop.index }}" class="collapsible">
-              {% if mega_menu_block.settings.mobile_collection_list != blank %}
-                <a href="{{ link.url }}" class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %} show-more-button button button--secondary">SHOW ALL SCHOOLS</a>
-                {% assign index_collection = 0 %}
-                {% assign items_length = mega_menu_block.settings.mobile_items_length |  times: 1 %}
-                {%- for collection in mega_menu_block.settings.mobile_collection_list -%}
-                  {% if index_collection < items_length %}
+              {% if mega_menu_block.settings.collection_list != blank %}
+                <a href="{{ link.url }}" class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %} show-more-button button button--secondary">SHOW ALL {% if league == 'NCAA' %}SCHOOLS{% else %}TEAMS{% endif %}</a>
+
+                {%- for collection in mega_menu_block.settings.collection_list -%}
                     {% assign index_collection = index_collection | plus: 1 %}
                     <a href="{{ collection.url }}" class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %} mobile-images">
                       {% if collection.metafields.custom.header_image != blank %}
@@ -106,13 +144,9 @@
                         {{ collection.title }}
                       {% endif %}
                     </a>
-                  {% else %}
-                    {% break %}
-                  {% endif %}
                 {% endfor %}
 
-                {%- for collection in mega_menu_block.settings.mobile_collection_list2 -%}
-                  {% if index_collection < items_length %}
+                {%- for collection in mega_menu_block.settings.collection_list2 -%}
                     {% assign index_collection = index_collection | plus: 1 %}
                     <a href="{{ collection.url }}" class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %} mobile-images">
                       {% if collection.metafields.custom.header_image != blank %}
@@ -121,12 +155,9 @@
                         {{ collection.title }}
                       {% endif %}
                     </a>
-                  {% else %}
-                    {% break %}
-                  {% endif %}
                 {% endfor %}
 
-                <a href="{{ link.url }}" class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %} show-more-button button button--secondary">SHOW ALL SCHOOLS</a>
+                <a href="{{ link.url }}" class="mobile-nav__link heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %} show-more-button button button--secondary">SHOW ALL {% if league == 'NCAA' %}SCHOOLS{% else %}TEAMS{% endif %}</a>
                 
               {%- else -%}
                 {%- if link.links.size > 0 -%}
@@ -138,6 +169,7 @@
                             is="toggle-button"
                             class="mobile-nav__link"
                             aria-controls="mobile-menu-{{ forloop.parentloop.index }}-{{ forloop.index }}"
+                            {% if link.title contains 'Sale' %}style="color: red; font-weight: bold;"{% endif %}
                             aria-expanded="false">
                             {{- sub_link.title -}}
                             <span class="animated-plus"></span>

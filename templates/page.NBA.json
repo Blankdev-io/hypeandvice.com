@@ -14,8 +14,8 @@
         "template--14800247914601__d817cfc1-c6e0-48b0-a01b-d0d9b9e3e2d0-image-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/379716159_280836371559976_7752434194550245406_n.jpg",
-            "split_image": "shopify:\/\/shop_images\/379381950_2992708767540287_6088491700829557619_n.jpg",
+            "image": "shopify:\/\/shop_images\/Coming_Soon_Horizontal_NBA.png",
+            "mobile_image": "shopify:\/\/shop_images\/Coming_soon_NBA_mobile.png",
             "show_videos": false,
             "autoplay": true,
             "loop": true,
@@ -26,10 +26,21 @@
             "split_video_mp4": "",
             "mobile_video_webm": "",
             "mobile_video_mp4": "",
-            "text_position": "middle_center",
-            "subheading": "Support your favorite team",
-            "title": "NBA",
-            "button_1_text": "SHOP BY TEAM",
+            "text_position": "bottom_center",
+            "subheading": "COMING SOON",
+            "subheading_font_family": "Zurich Ultra Black Extended BT",
+            "subheading_font_desktop": 35,
+            "subheading_font_mobile": 30,
+            "title": "JOIN THE LIST",
+            "heading_font_family": "Zurich Extended",
+            "heading_font_desktop": 18,
+            "heading_font_mobile": 18,
+            "button_1_text": "",
+            "button_lenght": 35,
+            "button_lenght_mobile": 25,
+            "button_font_family": "Zurich Extended",
+            "button_font_desktop": 24,
+            "button_font_mobile": 24,
             "button_1_link": "",
             "button_2_text": "",
             "button_2_link": "",
@@ -37,18 +48,26 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0,
+            "custom_separation": true,
+            "text_distance": 5,
+            "klaviyo": "WMjr9K",
+            "klaviyo_margin_desktop": 20,
+            "klaviyo_margin_mobile": 20
           }
         }
       },
       "block_order": [
         "template--14800247914601__d817cfc1-c6e0-48b0-a01b-d0d9b9e3e2d0-image-1"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "section_height": "large",
         "transition_type": "fade",
         "autoplay": false,
-        "cycle_speed": 4,
+        "cycle_speed": 5,
         "background": "rgba(0,0,0,0)"
       }
     },
@@ -58,37 +77,211 @@
         "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-1": {
           "type": "logo",
           "settings": {
-            "link": ""
+            "logo": "shopify:\/\/shop_images\/HKS_d6ff2a21-b0d2-41f0-ad77-81fc6c64c3a2.png",
+            "link": "shopify:\/\/collections\/atlanta-hawks"
           }
         },
         "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-2": {
           "type": "logo",
           "settings": {
-            "link": ""
+            "logo": "shopify:\/\/shop_images\/CEL.png",
+            "link": "shopify:\/\/collections\/boston-celtics"
           }
         },
         "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-3": {
           "type": "logo",
           "settings": {
-            "link": ""
+            "logo": "shopify:\/\/shop_images\/NTS.png",
+            "link": "shopify:\/\/collections\/brooklyn-nets"
           }
         },
         "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-4": {
           "type": "logo",
           "settings": {
-            "link": ""
+            "logo": "shopify:\/\/shop_images\/HNT.png",
+            "link": "shopify:\/\/collections\/charlotte-hornets"
           }
         },
         "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-5": {
           "type": "logo",
           "settings": {
-            "link": ""
+            "logo": "shopify:\/\/shop_images\/BLS.png",
+            "link": "shopify:\/\/collections\/chicago-bulls"
           }
         },
         "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-6": {
           "type": "logo",
           "settings": {
-            "link": ""
+            "logo": "shopify:\/\/shop_images\/CAV.png",
+            "link": "shopify:\/\/collections\/cleveland-cavaliers"
+          }
+        },
+        "60c35fc9-3b94-45aa-9dd8-4756faee611e": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/MVR.png",
+            "link": "shopify:\/\/collections\/dallas-mavericks"
+          }
+        },
+        "9487ced5-afac-483c-8054-734c993c6852": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/NGT.png",
+            "link": "shopify:\/\/collections\/denver-nuggets"
+          }
+        },
+        "24bdb134-42e8-440a-91da-5b0eb159a29a": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/PIS.png",
+            "link": "shopify:\/\/collections\/detroit-pistons"
+          }
+        },
+        "5c34d369-5a2d-41c0-a6a2-1df26f04e407": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/WRS.png",
+            "link": "shopify:\/\/collections\/golden-state-warriors"
+          }
+        },
+        "b831f7b8-0f9b-4313-a00d-b837a3396981": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/RKT.png",
+            "link": "shopify:\/\/collections\/houston-rockets"
+          }
+        },
+        "0d94e334-d4dd-4315-aac8-ee8576ec3e03": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/PAC.png",
+            "link": "shopify:\/\/collections\/indiana-pacers"
+          }
+        },
+        "f76823f0-c904-4c4c-baf8-b5393f66e7a8": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/CLP.png",
+            "link": "shopify:\/\/collections\/los-angeles-clippers"
+          }
+        },
+        "dc0106df-bb4d-4f36-9284-b4cefd98791f": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/LAK.png",
+            "link": "shopify:\/\/collections\/los-angeles-lakers"
+          }
+        },
+        "dd39cd53-dba4-4592-9d03-0dc72bfafc74": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/GRZ_49eb49f0-1f66-4951-a96a-cea6d0a47614.png",
+            "link": "shopify:\/\/collections\/memphis-grizzlies"
+          }
+        },
+        "a4cd2e22-6fba-4ca3-87a6-0725940a10a2": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/HEA.png",
+            "link": "shopify:\/\/collections\/miami-heat"
+          }
+        },
+        "fcb4d984-670b-44f0-81ff-0d02902f7626": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/BKS.png",
+            "link": "shopify:\/\/collections\/milwaukee-bucks"
+          }
+        },
+        "f041d70b-9382-4477-8ddc-8f92e2108713": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/TRW.png",
+            "link": "shopify:\/\/collections\/minnesota-timberwolves"
+          }
+        },
+        "deb313f0-b0d7-4a46-aa32-46288b94994d": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/PEL.png",
+            "link": "shopify:\/\/collections\/new-orleans-pelicans"
+          }
+        },
+        "3bfa8c4a-cb5e-4f5f-aac8-298ac1f0000b": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/KNS.png",
+            "link": "shopify:\/\/collections\/new-york-knicks"
+          }
+        },
+        "3407b722-c5e7-40c5-ba1b-149f1eec2271": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/THU.png",
+            "link": "shopify:\/\/collections\/oklahoma-city-thunder"
+          }
+        },
+        "e378019e-7e14-4503-aff6-9534eb2a8eec": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/MGC.png",
+            "link": "shopify:\/\/collections\/orlando-magic"
+          }
+        },
+        "e1f2ffc3-005c-4834-af4b-bf7e616bd656": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/PHI_6f27c2c0-55c9-444a-9762-88bb32f21b25.png",
+            "link": "shopify:\/\/collections\/philadelphia-76ers"
+          }
+        },
+        "f42633c8-28b0-4bcc-b87c-46866a280391": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/SUN.png",
+            "link": "shopify:\/\/collections\/phoenix-suns"
+          }
+        },
+        "f5019177-925d-4470-a644-74fcfa33294f": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/TBL_35b7ddc9-0a0d-449a-9802-972f4440fe67.png",
+            "link": "shopify:\/\/collections\/portland-trail-blazers"
+          }
+        },
+        "4eaadb0c-4fe6-4985-91bc-a05ca4a34632": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/KGS.png",
+            "link": "shopify:\/\/collections\/sacramento-kings"
+          }
+        },
+        "7b29d206-0520-4060-bab9-c695f06541ef": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/SPU.png",
+            "link": "shopify:\/\/collections\/san-antonio-spurs"
+          }
+        },
+        "1d22efa8-7070-4c00-89ac-8307ce3a8e9a": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/RPT.png",
+            "link": "shopify:\/\/collections\/toronto-raptors"
+          }
+        },
+        "b68e61ae-744a-4908-98b1-91402840a993": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/JAZ.png",
+            "link": "shopify:\/\/collections\/utah-jazz"
+          }
+        },
+        "59ebf1af-eae5-4d81-a36b-3ab9c4d6d91a": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/WIZ.png",
+            "link": "shopify:\/\/collections\/washington-wizards"
           }
         }
       },
@@ -98,15 +291,44 @@
         "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-3",
         "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-4",
         "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-5",
-        "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-6"
+        "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-6",
+        "60c35fc9-3b94-45aa-9dd8-4756faee611e",
+        "9487ced5-afac-483c-8054-734c993c6852",
+        "24bdb134-42e8-440a-91da-5b0eb159a29a",
+        "5c34d369-5a2d-41c0-a6a2-1df26f04e407",
+        "b831f7b8-0f9b-4313-a00d-b837a3396981",
+        "0d94e334-d4dd-4315-aac8-ee8576ec3e03",
+        "f76823f0-c904-4c4c-baf8-b5393f66e7a8",
+        "dc0106df-bb4d-4f36-9284-b4cefd98791f",
+        "dd39cd53-dba4-4592-9d03-0dc72bfafc74",
+        "a4cd2e22-6fba-4ca3-87a6-0725940a10a2",
+        "fcb4d984-670b-44f0-81ff-0d02902f7626",
+        "f041d70b-9382-4477-8ddc-8f92e2108713",
+        "deb313f0-b0d7-4a46-aa32-46288b94994d",
+        "3bfa8c4a-cb5e-4f5f-aac8-298ac1f0000b",
+        "3407b722-c5e7-40c5-ba1b-149f1eec2271",
+        "e378019e-7e14-4503-aff6-9534eb2a8eec",
+        "e1f2ffc3-005c-4834-af4b-bf7e616bd656",
+        "f42633c8-28b0-4bcc-b87c-46866a280391",
+        "f5019177-925d-4470-a644-74fcfa33294f",
+        "4eaadb0c-4fe6-4985-91bc-a05ca4a34632",
+        "7b29d206-0520-4060-bab9-c695f06541ef",
+        "1d22efa8-7070-4c00-89ac-8307ce3a8e9a",
+        "b68e61ae-744a-4908-98b1-91402840a993",
+        "59ebf1af-eae5-4d81-a36b-3ab9c4d6d91a"
       ],
+      "disabled": true,
       "settings": {
-        "reveal_on_scroll": true,
+        "reveal_on_scroll": false,
         "subheading": "",
-        "title": "NEW NEW NEW",
+        "title": "SHOP BY TEAM",
+        "custom_font": false,
+        "heading_font_desktop": 16,
+        "heading_font_mobile": 14,
+        "heading_font_family": "Zurich Extended",
         "button_text": "",
         "button_link": "",
-        "stack_logos": true,
+        "stack_logos": false,
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
@@ -121,8 +343,12 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
             "subheading": "",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
@@ -134,8 +360,12 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
             "subheading": "",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
@@ -147,8 +377,12 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
             "subheading": "",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
@@ -160,8 +394,12 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
             "subheading": "",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
@@ -173,8 +411,12 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
             "subheading": "",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
@@ -186,8 +428,12 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
             "subheading": "",
             "title": "",
+            "below_text": false,
             "link_text": "",
             "link_url": "",
             "text_color": "rgba(0,0,0,0)",
@@ -204,11 +450,21 @@
         "template--14800247914601__cd1d8d7e-d094-4191-970d-574c4ff4bf16-collection-5",
         "template--14800247914601__cd1d8d7e-d094-4191-970d-574c4ff4bf16-collection-6"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "layout": "grid",
+        "two_columns": false,
         "subheading": "Styles everyone is loving this season 💘",
         "title": "SHOP BY STYLE",
+        "custom_font": false,
+        "heading_font_desktop": 16,
+        "heading_font_mobile": 14,
+        "heading_font_family": "Zurich Extended",
+        "category_font_desktop": 16,
+        "category_font_mobile": 14,
+        "category_font_family": "Zurich Extended",
+        "category_margin": 10,
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
@@ -239,6 +495,7 @@
       "block_order": [
         "template--14800247914601__86ec8265-4fa4-4932-81fc-86b8dfe27f85-image-2"
       ],
+      "disabled": true,
       "settings": {
         "section_height": "medium",
         "transition_type": "fade",
@@ -267,8 +524,19 @@
             "mobile_video_mp4": "",
             "text_position": "bottom_left",
             "subheading": "",
+            "subheading_font_family": "Zurich Extended",
+            "subheading_font_desktop": 24,
+            "subheading_font_mobile": 14,
             "title": "TOP SELLERS",
+            "heading_font_family": "Zurich Extended",
+            "heading_font_desktop": 24,
+            "heading_font_mobile": 24,
             "button_1_text": "SHOP NOW!",
+            "button_lenght": 35,
+            "button_lenght_mobile": 25,
+            "button_font_family": "Zurich Extended",
+            "button_font_desktop": 24,
+            "button_font_mobile": 24,
             "button_1_link": "",
             "button_2_text": "",
             "button_2_link": "",
@@ -276,13 +544,19 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 30,
+            "custom_separation": false,
+            "text_distance": 25,
+            "klaviyo": "",
+            "klaviyo_margin_desktop": 20,
+            "klaviyo_margin_mobile": 20
           }
         }
       },
       "block_order": [
         "template--14800247914601__13ad5cf8-e725-4b4f-947f-b5a6bddcab18-image-1"
       ],
+      "disabled": true,
       "settings": {
         "section_height": "medium",
         "transition_type": "fade",
@@ -293,9 +567,16 @@
     },
     "7147b3bf-750f-48bb-b9d5-02eccc46b778": {
       "type": "custom-html",
+      "disabled": true,
       "settings": {
         "subheading": "Tag us on your pics to be featured & enter for a chance to win a $100 HV gift-card.",
+        "subheading_font_desktop": 16,
+        "subheading_font_mobile": 14,
+        "subheading_font_family": "Zurich Extended",
         "title": "InstaShop ✨",
+        "heading_font_desktop": 16,
+        "heading_font_mobile": 14,
+        "heading_font_family": "Zurich Extended",
         "html": "<script src=\"\/\/foursixty.com\/media\/scripts\/fs.embed.v2.5.js\" data-feed-id=\"hype-and-vice\" data-theme=\"showcase_v2_5\" data-open-links-in-same-page=\"true\" data-category-filter=\"hvfeed\" data-page-size=\"8\"><\/script>\n<style>.fs-has-links::after { padding:5px 7.5px;background-color:#ffffff;color:rgba(0, 0, 0, 0.8);content:\"SHOP IT\"; } .fs-desktop .fs-entry-container { width:25% !important;padding-top:25% !important; } .fs-mobile .fs-entry-container { width:50% !important;padding-top:50% !important; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:quantico;font-style:normal;font-weight:normal;font-size:14px; } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:quantico;font-style:normal;font-weight:normal;font-size:14px; } .fs-wrapper div.fs-text-container * { color:#ffffff; } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.8);margin:0px; } div.fs-entry-date { display:none; } div.fs-entry-title { display:none; } .fs-wrapper div.fs-timeline-entry { margin:3px; } <\/style>",
         "add_vertical_spacing": true,
         "background_type": "full_width",
@@ -308,6 +589,7 @@
       "blocks": {
         "template--14800247914601__d96266ec-42a8-4b27-b5f0-f069f5066979-image-1": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/14310797_302187446826857_845709436_n.jpg",
             "show_videos": false,
@@ -322,8 +604,19 @@
             "mobile_video_mp4": "",
             "text_position": "middle_center",
             "subheading": "",
+            "subheading_font_family": "Zurich Extended",
+            "subheading_font_desktop": 24,
+            "subheading_font_mobile": 14,
             "title": "These are the years.",
+            "heading_font_family": "Zurich Extended",
+            "heading_font_desktop": 24,
+            "heading_font_mobile": 24,
             "button_1_text": "Meet our community",
+            "button_lenght": 35,
+            "button_lenght_mobile": 25,
+            "button_font_family": "Zurich Extended",
+            "button_font_desktop": 24,
+            "button_font_mobile": 24,
             "button_1_link": "",
             "button_2_text": "",
             "button_2_link": "",
@@ -331,13 +624,19 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 30,
+            "custom_separation": false,
+            "text_distance": 25,
+            "klaviyo": "",
+            "klaviyo_margin_desktop": 20,
+            "klaviyo_margin_mobile": 20
           }
         }
       },
       "block_order": [
         "template--14800247914601__d96266ec-42a8-4b27-b5f0-f069f5066979-image-1"
       ],
+      "disabled": true,
       "settings": {
         "section_height": "small",
         "transition_type": "fade",

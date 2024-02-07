@@ -26,10 +26,6 @@
     --prev-next-button-color: var(--section-background);
 
     --section-background: {{ section_background.red }}, {{ section_background.green }}, {{ section_background.blue }};
-
-    {%- if section.settings.layout == 'collage' -%}
-      --section-collage-column: {{ section.blocks.size | at_most: 2 }};
-    {%- endif -%}
   }
 
   {%- for block in section.blocks -%}
@@ -42,31 +38,25 @@
 
       --heading-color: {{ text_color_rgb }};
       --text-color: {{ text_color_rgb }};
-      --section-block-overlay: {{ block.settings.overlay_color.red }}, {{ block.settings.overlay_color.green }}, {{ block.settings.overlay_color.blue }};
-      --section-block-overlay-opacity: {{ block.settings.overlay_opacity | divided_by: 100.0 }};
     }
   {%- endfor -%}
 
-  .collection-list-custom-{{ section.id }} {
-    font-size: {{ section.settings.heading_font_desktop }}px !important;
-    font-family: "{{ section.settings.heading_font_family }}", sans-serif !important;  
-  }
-
-  .collection-list-item-custom-{{ section.id }} p {
-    font-size: {{ section.settings.category_font_desktop }}px !important;
+  .category__item-info p {
+    font-size: {{ section.settings.category_font_desktop }}px;
     font-family: "{{ section.settings.category_font_family }}", sans-serif !important;
   } 
 
-  .collection-list-item-custom-{{ section.id }} p:first-of-type {
-    margin-bottom: {{ section.settings.category_margin }}px !important;
+  .category-heading {
+    font-size: {{ section.settings.heading_font_desktop }}px !important;
+    font-family: "{{ section.settings.heading_font_family }}", sans-serif !important;
   }
-
+  
   @media screen and (max-width: 1000px) {
-    .collection-list-item-custom-{{ section.id }} p {
-      font-size: {{ section.settings.category_font_mobile }}px !important;
+    .category__item-info p {
+      font-size: {{ section.settings.category_font_mobile }}px;
     } 
 
-    .collection-list-custom-{{ section.id }} {
+    .category-heading {
       font-size: {{ section.settings.heading_font_mobile }}px !important;
     }
   }
@@ -76,43 +66,29 @@
   <div class="section__color-wrapper">
     <div class="{% unless blends_with_background %}vertical-breather{% endunless %}">
       {%- if section.settings.subheading != blank or section.settings.title != blank -%}
-        <header class="section__header container text-container">
+        <header class="section__header new-left-design container text-container">
           {%- if section.settings.subheading != blank -%}
             <h2 class="heading heading--small">{{ section.settings.subheading | escape }}</h2>
           {%- endif -%}
 
           {%- if section.settings.title != blank -%}
-            <h3 class="heading h2{% if section.settings.custom_font %} collection-list-custom-{{ section.id }}{% endif %}">{{ section.settings.title | escape }}</h3>
+            <div class="heading-category-container"><h3 class="heading h2 category-heading">{{ section.settings.title | escape }}</h3><a href="/collections/all" class="shop-all-text">SHOP ALL</a></div>
           {%- endif -%}
         </header>
       {%- endif -%}
 
       {%- capture section_content -%}
-        <div class="list-collections__item-list{% if section.settings.two_columns %} grid-2-columns{% endif %}">
+        <div class="list-collections__item-list category-list">
           {%- for block in section.blocks -%}
             {%- capture collection_content -%}
-              {% if block.settings.below_text %}
+              {%- if block.settings.subheading != blank -%}
+                <p class="heading heading--small" {% if section.settings.reveal_on_scroll %}reveal{% endif %}>{{ block.settings.subheading | escape }}</p>
+              {%- endif -%}
 
-                {%- if block.settings.title != blank -%}
-                  <p class="heading below-text-header {% if settings.heading_text_transform == 'uppercase' %}h4{% else %}h3{% endif %}" {% if section.settings.reveal_on_scroll %}reveal{% endif %}>{{ block.settings.title | escape }}</p>
-                {%- endif -%}
-                
-                {%- if block.settings.subheading != blank -%}
-                  <p class="heading heading--small below-text-subheader" {% if section.settings.reveal_on_scroll %}reveal{% endif %}>{{ block.settings.subheading | escape }}</p>
-                {%- endif -%}
-  
-              {% else %}
-              
-                {%- if block.settings.subheading != blank -%}
-                  <p class="heading heading--small" {% if section.settings.reveal_on_scroll %}reveal{% endif %}>{{ block.settings.subheading | escape }}</p>
-                {%- endif -%}
-  
-                {%- if block.settings.title != blank -%}
-                  <p class="heading {% if settings.heading_text_transform == 'uppercase' %}h4{% else %}h3{% endif %}" {% if section.settings.reveal_on_scroll %}reveal{% endif %}>{{ block.settings.title | escape }}</p>
-                {%- endif -%}
-                
-              {% endif %}
-                
+              {%- if block.settings.title != blank -%}
+                <p class="heading {% if settings.heading_text_transform == 'uppercase' %}h4{% else %}h3{% endif %}" {% if section.settings.reveal_on_scroll %}reveal{% endif %}>{{ block.settings.title | escape }}</p>
+              {%- endif -%}
+
               {%- if block.settings.link_text != blank -%}
                 <span class="heading heading--small link" {% if section.settings.reveal_on_scroll %}reveal{% endif %}>{{ block.settings.link_text | escape }}</span>
               {%- endif -%}
@@ -170,43 +146,16 @@
 
             {%- assign collection = block.settings.collection -%}
 
-            <a id="block-{{ section.id }}-{{ block.id }}" href="{{ block.settings.link_url | default: collection.url }}" class="list-collections__item {% if is_highlighted %}list-collections__item--highlight {% if is_shifted %}list-collections__item--shift{% endif %}{% endif %} {% unless block.settings.below_text %}has-overlay{% endunless %} image-zoom" {{ block.shopify_attributes }}>
+            <a id="block-{{ section.id }}-{{ block.id }}" href="{{ block.settings.link_url | default: collection.url }}" class="list-collections__item category-collections__item {% if is_highlighted %}list-collections__item--highlight {% if is_shifted %}list-collections__item--shift{% endif %}{% endif %} image-zoom" {{ block.shopify_attributes }}>
               <div class="list-collections__item-image-wrapper">
                 {%- assign collection_image = block.settings.image | default: collection.featured_image -%}
 
                 {%- if collection_image != blank -%}
-                  {%- case section.settings.layout -%}
-                    {%- when 'grid' -%}
-                      {%- capture image_sizes -%}(max-width: 740px) calc(100vw - 48px), (max-width: 999px) calc(50vw - 60px), 480px{%- endcapture -%}
-
-                    {%- when 'carousel' -%}
-                      {%- capture image_sizes -%}(max-width: 740px) 80vw, (max-width: 999px) 60vw, 425px{%- endcapture -%}
-
-                    {%- when 'collage' -%}
-                      {%- capture image_sizes -%}(max-width: 740px) calc(100vw - 24px * 2), 660px{%- endcapture -%}
-                  {%- endcase -%}
-
-                  <style>
-                  .custom-height-{{ block.id }} {
-                    height: {{ block.settings.custom_height_size_mobile }}px !important;
-                  }
-
-                  @media screen and (min-width: 750px) {
-                    .custom-height-{{ block.id }} {
-                      height: {{ block.settings.custom_height_size }}px !important;
-                    }
-                  }
-                  </style>
-                  
-                  {%- if section.settings.layout == 'grid' and collection_image.aspect_ratio > 2.5 -%}
-                    {%- assign height_constraint = 800 | at_most: collection_image.height -%}
-                    <img class="list-collections__item-image{% if block.settings.custom_height %} custom-height-{{ block.id }}{% endif %}" {% if section.settings.reveal_on_scroll %}reveal{% endif %} loading="lazy" sizes="{{ image_sizes }}" {% render 'image-attributes', image: collection_image, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400', height_constraint: height_constraint, crop: 'center' %}>
-                  {%- else -%}
+                  {%- capture image_sizes -%}(max-width: 740px) 80vw, (max-width: 999px) 60vw, 425px{%- endcapture -%}
                     {% if forloop.index == 1 %}
-                    <img class="list-collections__item-image{% if block.settings.custom_height %} custom-height-{{ block.id }}{% endif %}" src="{{ block.settings.image | img_url: 'master' }}">
+                    <img class="list-collections__item-image image-height" src="{{ block.settings.image | img_url: '500x' }}">
                     {% else %}
-                    <img class="list-collections__item-image{% if block.settings.custom_height %} custom-height-{{ block.id }}{% endif %}" {% if section.settings.reveal_on_scroll %}reveal{% endif %} loading="lazy" sizes="{{ image_sizes }}" {% render 'image-attributes', image: collection_image, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800' %}>
-                    {% endif %}  
+                    <img class="list-collections__item-image image-height" {% if section.settings.reveal_on_scroll %}reveal{% endif %} loading="lazy" sizes="{{ image_sizes }}" {% render 'image-attributes', image: collection_image, sizes: '200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800' %}>
                 {%- endif -%}
                 {%- else -%}
                   {%- capture collection_image -%}collection-{% cycle '1', '2', '3', '4', '5', '6' %}{%- endcapture -%}
@@ -218,9 +167,9 @@
                   {%- endif -%}
                 {%- endif -%}
               </div>
-            
+
               {%- if collection_content != blank -%}
-                <div class="{% if block.settings.below_text %}category__item-info{% if section.settings.custom_font %} collection-list-item-custom-{{ section.id }}{% endif %} text-container{% else %}list-collections__item-info text-container{% endif %}">
+                <div class="category__item-info text-container">
                   {{- collection_content -}}
                 </div>
               {%- endif -%}
@@ -229,38 +178,34 @@
         </div>
       {%- endcapture -%}
 
-      {%- if section.settings.layout == 'grid' or section.settings.layout == 'collage' -%}
-        <collection-list {% if section.settings.reveal_on_scroll %}reveal-on-scroll{% endif %} class="list-collections list-collections--{{ section.settings.layout }}">
-          <div class="container{% if section.settings.two_columns %} no-padding{% endif %}">
-            {{- section_content -}}
-          </div>
-        </collection-list>
-      {%- elsif section.settings.layout == 'carousel' -%}
-        <collection-list scrollable {% if section.settings.reveal_on_scroll %}reveal-on-scroll{% endif %} class="list-collections list-collections--carousel">
-          <scrollable-content class="list-collections__scroller hide-scrollbar">
+        <collection-list scrollable {% if section.settings.reveal_on_scroll %}reveal-on-scroll{% endif %} class="list-collections list-collections--carousel list-collection--category">
+          <scrollable-content class="list-collections__scroller categories-custom hide-scrollbar">
             {{- section_content -}}
           </scrollable-content>
 
-          <prev-next-buttons class="list-collections__prev-next prev-next-buttons hidden-pocket">
-            <button class="list-collections__arrow prev-next-button prev-next-button--prev">
+          <prev-next-buttons class="list-collections__prev-next prev-next-buttons categories-custom">
+            <button class="list-collections__arrow prev-next-button prev-next-button-styles prev-next-button--prev my-nav-prev">
               <span class="visually-hidden">{{ 'general.accessibility.previous' | t }}</span>
-              {%- include 'icon' with 'nav-arrow-left', block: true, direction_aware: true -%}
+              <svg style="animation: none;" width="35" height="35" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="m13.789 7.155c.141-.108.3-.157.456-.157.389 0 .755.306.755.749v8.501c0 .445-.367.75-.755.75-.157 0-.316-.05-.457-.159-1.554-1.203-4.199-3.252-5.498-4.258-.184-.142-.29-.36-.29-.592 0-.23.107-.449.291-.591 1.299-1.002 3.945-3.044 5.498-4.243z"/>
+              </svg>
             </button>
-
-            <button class="list-collections__arrow prev-next-button prev-next-button--next">
+            
+            <button class="list-collections__arrow prev-next-button prev-next-button-styles prev-next-button--next my-nav-next">
               <span class="visually-hidden">{{ 'general.accessibility.next' | t }}</span>
-              {%- include 'icon' with 'nav-arrow-right', block: true, direction_aware: true -%}
+              <svg style="animation: none;" width="35" height="35" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="m10.211 7.155c-.141-.108-.3-.157-.456-.157-.389 0-.755.306-.755.749v8.501c0 .445.367.75.755.75.157 0 .316-.05.457-.159 1.554-1.203 4.199-3.252 5.498-4.258.184-.142.29-.36.29-.592 0-.23-.107-.449-.291-.591-1.299-1.002-3.945-3.044-5.498-4.243z"/>
+              </svg>
             </button>
           </prev-next-buttons>
         </collection-list>
-      {%- endif -%}
+      </div>
     </div>
-  </div>
 </section>
 
 {% schema %}
 {
-  "name": "Collection list",
+  "name": "Categories",
   "class": "shopify-section--collection-list",
   "blocks": [
     {
@@ -276,33 +221,7 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image",
-          "info": "Grid and carousel modes: 1100 x 1400px .jpg recommended / Collage mode: 1320 x 1480px .jpg recommended (highlighted image) and 1320 x 700px .jpg recommended (normal image)"
-        },
-        {
-          "type": "checkbox",
-          "id": "custom_height",
-          "label": "Enable Custom Height",
-          "default": false
-        },
-        {
-          "type": "range",
-          "id": "custom_height_size",
-          "label": "Custom Height Size Desktop (in pixels)",
-          "min": 100,
-          "max": 1000,
-          "step": 10,
-          "default": 500,
-          "unit": "px"
-        },
-        {
-          "type": "range",
-          "id": "custom_height_size_mobile",
-          "label": "Custom Height Size Mobile (in pixels)",
-          "min": 100,
-          "max": 500,
-          "step": 10,
-          "default": 200,
-          "unit": "px"
+          "info": "1100 x 1400px .jpg recommended"
         },
         {
           "type": "text",
@@ -313,12 +232,6 @@
           "type": "text",
           "id": "title",
           "label": "Heading"
-        },
-        {
-          "type": "checkbox",
-          "id": "below_text",
-          "label": "Display Heading and Subheading below",
-          "default": false
         },
         {
           "type": "text",
@@ -340,24 +253,9 @@
           "id": "text_color",
           "label": "Text",
           "default": "#000000"
-        },
-        {
-          "type": "color",
-          "id": "overlay_color",
-          "label": "Overlay",
-          "default": "#000000"
-        },
-        {
-          "type": "range",
-          "id": "overlay_opacity",
-          "label": "Overlay opacity",
-          "min": 0,
-          "max": 100,
-          "step": 1,
-          "unit": "%",
-          "default": 30
         }
-      ]
+      ],
+     "limit": 10
     }
   ],
   "settings": [
@@ -366,33 +264,6 @@
       "id": "reveal_on_scroll",
       "label": "Reveal on scroll",
       "info": "Show animation when section becomes visible.",
-      "default": false
-    },
-    {
-      "type": "select",
-      "id": "layout",
-      "label": "Layout",
-      "info": "Collage mode only affects desktop, and will adapt based on number of items.",
-      "options": [
-        {
-          "value": "grid",
-          "label": "Grid"
-        },
-        {
-          "value": "collage",
-          "label": "Collage"
-        },
-        {
-          "value": "carousel",
-          "label": "Carousel"
-        }
-      ],
-      "default": "grid"
-    },
-    {
-      "type": "checkbox",
-      "id": "two_columns",
-      "label": "Display grid in 2 columns",
       "default": false
     },
     {
@@ -406,12 +277,6 @@
       "id": "title",
       "label": "Heading",
       "default": "Collection list"
-    },
-    {
-      "type": "checkbox",
-      "id": "custom_font",
-      "label": "Custom settings for font size and font family",
-      "default": false
     },
     {
       "type": "range",
@@ -466,7 +331,7 @@
     {
       "type": "range",
       "id": "category_font_desktop",
-      "label": "Desktop Font Size For Each Block",
+      "label": "Category Desktop Font Size",
       "min": 12,
       "max": 40,
       "step": 1,
@@ -475,7 +340,7 @@
     {
       "type": "range",
       "id": "category_font_mobile",
-      "label": "Mobile Font Size For Each Block",
+      "label": "Category Mobile Font Size",
       "min": 12,
       "max": 40,
       "step": 1,
@@ -484,7 +349,7 @@
     {
       "type": "select",
       "id": "category_font_family",
-      "label": "Font Family For Each Block",
+      "label": "Category Font Family",
       "default": "Zurich Extended",
       "options": [
         {
@@ -510,15 +375,6 @@
       ]
     },
     {
-      "type": "range",
-      "id": "category_margin",
-      "label": "Margin Between Heading and Subheading",
-      "min": 1,
-      "max": 50,
-      "step": 1,
-      "default": 10
-    },
-    {
       "type": "header",
       "content": "Colors"
     },
@@ -537,11 +393,8 @@
   ],
   "presets": [
     {
-      "name": "Collection list",
+      "name": "Categories",
       "blocks": [
-        {
-          "type": "collection"
-        },
         {
           "type": "collection"
         },

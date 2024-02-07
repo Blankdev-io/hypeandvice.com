@@ -8,6 +8,12 @@ Code that create the faceted search for the collection and search pages. It curr
 {%- assign color_label_list = 'general.label.color' | t | replace: ', ', ',' | downcase | split: ',' -%}
 {%- assign color_white_label = 'general.label.white' | t | downcase -%}
 {%- assign size_label_list = 'general.label.size' | t | replace: ', ', ',' | downcase | split: ',' -%}
+{% if collection.metafields.custom.collections_recomended.value != blank %}
+  {% assign for_loop = 0 %} 
+  {% for collection in collection.metafields.custom.collections_recomended.value %}
+    {% assign total_collection_count = total_collection_count | plus: 1 %}
+  {% endfor %}
+{% endif %}
 
 {%- assign active_filters_count = 0 -%}
 
@@ -146,6 +152,38 @@ Code that create the faceted search for the collection and search pages. It curr
                               <label for="{{ filter_value.param_name | escape }}-{{ forloop.index }}">{{ filter_value.label }} ({{ filter_value.count}})&lrm;</label>
                             </div>
                             {% endif %}
+                          {% elsif filter.label == "Product type" and collection.metafields.custom.collections_recomended.value != blank %}
+                            {% if for_loop < total_collection_count %}
+                              {% for collection in collection.metafields.custom.collections_recomended.value %}
+                                <a href="{{ collection.url }}" class="checkbox-container az-sorting">
+                                  {% assign parts = collection.title | split: '-' %}
+                                  {% if parts.size > 2 %}
+                                    {% assign parts1 = parts[1] | strip %}
+                                    {% assign parts2 = parts[2] | strip %}
+                                    {% assign last_part = parts1 | append: '-' | append: parts2 %}
+                                  {% else %}
+                                    {% assign last_part = parts | last %}
+                                  {% endif %}
+                                  {{ last_part | escape }}
+                                </a>
+                                {% assign for_loop = for_loop | plus: 1 %}
+                              {% endfor %}
+                            {% endif %}
+
+                            <script>
+                              document.addEventListener('DOMContentLoaded', function () {
+                                const container = document.querySelector('.collapsible__content');
+                              
+                                const links = Array.from(document.querySelectorAll('a.az-sorting'));
+                              
+                                links.sort((a, b) => a.textContent.localeCompare(b.textContent));
+                              
+                                container.innerHTML = '';
+                              
+                                links.forEach(link => container.appendChild(link));
+                              });                              
+                            </script>
+
                           {% else %}
                           <div class="checkbox-container">
                             <input class="checkbox" type="checkbox" name="{{ filter_value.param_name }}" id="{{ filter_value.param_name | escape }}-{{ forloop.index }}" value="{{ filter_value.value | escape }}" {% if filter_value.active %}checked="checked"{% endif %} {% if filter_value.count == 0 %}disabled{% endif %}>

@@ -2961,3 +2961,7 @@ details-disclosure > details {
 .capitalize {
   text-transform: capitalize;
 }
+
+#shopify-section-header {
+  top: -1px !important;
+}

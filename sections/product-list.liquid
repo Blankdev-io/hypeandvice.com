@@ -41,6 +41,24 @@
     }
   }
 
+  @media screen and (min-width: 1500px) {
+    #shopify-section-{{ section.id }} {
+      --section-products-per-row: 5;
+    }
+  }
+
+  @media screen and (min-width: 1800px) {
+    #shopify-section-{{ section.id }} {
+      --section-products-per-row: 6;
+    }
+  }
+
+  @media screen and (min-width: 2100px) {
+    #shopify-section-{{ section.id }} {
+      --section-products-per-row: 7;
+    }
+  }
+
   .custom-{{ section.id }} {
     font-size: {{ section.settings.heading_font_desktop }}px !important;
     font-family: "{{ section.settings.heading_font_family }}", sans-serif !important;  
@@ -58,14 +76,14 @@
     <div class="section__color-wrapper">
       <div class="container {% unless blends_with_background %}vertical-breather{% endunless %}">
         {%- if section.settings.title != blank or section.settings.subheading != blank -%}
-          <header class="section__header">
+          <header class="section__header new-left-design">
             <div class="text-container">
               {%- if section.settings.subheading != blank -%}
                 <h2 class="heading heading--small">{{ section.settings.subheading }}</h2>
               {%- endif -%}
 
               {%- if section.settings.title != blank -%}
-                <h3 class="heading h3 custom-{{ section.id }}">{{ section.settings.title }}</h3>
+                <div class="heading-category-container"><h3 class="heading h3 custom-{{ section.id }}">{{ section.settings.title }}</h3><a href="/collections/all" class="shop-all-text">SEE MORE</a></div>
               {%- endif -%}
             </div>
           </header>
@@ -76,40 +94,30 @@
 
           <div class="scroller">
             <div class="product-list__inner product-list__inner--scroller hide-scrollbar">
-              {%- comment -%}
-                NOTE: we are doing an inner for loop to preserve the order (from most recently seen to oldest one), as search.results, out of the box,
-                will order by title, which is not really desirable.
-              {%- endcomment -%}
+              {%- for block in section.blocks -%}
+                  {% assign product = all_products[block.settings.product] %} 
+                  {%- assign smallest_image_aspect_ratio = smallest_image_aspect_ratio | at_least: product.featured_media.aspect_ratio -%}
 
-              {%- assign parsed_terms = search.terms | split: ' OR ' -%}
-
-              {%- for parsed_term in parsed_terms -%}
-                {%- assign id = parsed_term | split: 'id:' | last | times: 1 -%}
-
-                {%- for product in search.results -%}
-                  {%- if product.id == id -%}
-                    {%- assign smallest_image_aspect_ratio = smallest_image_aspect_ratio | at_least: product.featured_media.aspect_ratio -%}
-
-                    {%- capture sizes_attribute -%}(max-width: 740px) 75vw, min({{ 100.0 | divided_by: 4 | ceil }}vw, {{ 1520.0 | divided_by: 4 | ceil }}px){%- endcapture -%}
-                    {%- render 'product-item', product: product, sizes_attribute: sizes_attribute, reveal: settings.stagger_products_apparition -%}
-
-                    {%- break -%}
-                  {%- endif -%}
-                {%- endfor -%}
+                  {%- capture sizes_attribute -%}(max-width: 740px) 75vw, min({{ 100.0 | divided_by: 4 | ceil }}vw, {{ 1520.0 | divided_by: 4 | ceil }}px){%- endcapture -%}
+                  {%- render 'product-item', product: product, sizes_attribute: sizes_attribute, reveal: settings.stagger_products_apparition -%}
               {%- endfor -%}
             </div>
           </div>
 
           {%- if search.results_count > 4 -%}
-            <prev-next-buttons class="product-list__prev-next hidden-pocket" style="--smallest-image-aspect-ratio: {{ smallest_image_aspect_ratio }}">
-              <button class="product-list__arrow prev-next-button prev-next-button--prev" disabled data-action="prev">
+            <prev-next-buttons class="list-collections__prev-next product-list prev-next-buttons categories-custom">
+              <button class="list-collections__arrow prev-next-button prev-next-button-styles prev-next-button--prev my-nav-prev">
                 <span class="visually-hidden">{{ 'general.accessibility.previous' | t }}</span>
-                {%- include 'icon' with 'nav-arrow-left', block: true, direction_aware: true -%}
+                <svg style="animation: none;" width="35" height="35" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m13.789 7.155c.141-.108.3-.157.456-.157.389 0 .755.306.755.749v8.501c0 .445-.367.75-.755.75-.157 0-.316-.05-.457-.159-1.554-1.203-4.199-3.252-5.498-4.258-.184-.142-.29-.36-.29-.592 0-.23.107-.449.291-.591 1.299-1.002 3.945-3.044 5.498-4.243z"></path>
+                </svg>
               </button>
-
-              <button class="product-list__arrow prev-next-button prev-next-button--next" data-action="next">
+              
+              <button class="list-collections__arrow prev-next-button prev-next-button-styles prev-next-button--next my-nav-next product-list-hide-arrows">
                 <span class="visually-hidden">{{ 'general.accessibility.next' | t }}</span>
-                {%- include 'icon' with 'nav-arrow-right', block: true, direction_aware: true -%}
+                <svg style="animation: none;" width="35" height="35" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m10.211 7.155c-.141-.108-.3-.157-.456-.157-.389 0-.755.306-.755.749v8.501c0 .445.367.75.755.75.157 0 .316-.05.457-.159 1.554-1.203 4.199-3.252 5.498-4.258.184-.142.29-.36.29-.592 0-.23-.107-.449-.291-.591-1.299-1.002-3.945-3.044-5.498-4.243z"></path>
+                </svg>
               </button>
             </prev-next-buttons>
           {%- endif -%}
@@ -121,8 +129,21 @@
 
 {% schema %}
 {
-  "name": "Recently viewed products",
+  "name": "Product List",
   "class": "shopify-section--recently-viewed-products",
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Select a Product"
+        }
+      ]
+    }
+  ],
   "settings": [
     {
       "type": "paragraph",
@@ -216,7 +237,7 @@
   ],
   "presets": [
     {
-      "name": "Recently viewed products"
+      "name": "Product List"
     }
   ]
 }

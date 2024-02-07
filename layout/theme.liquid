@@ -9,1157 +9,1083 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
 
 <!doctype html>
 
-{%- assign direction = 'ltr' -%}
-{%- case request.locale.iso_code -%}
-  {%- when 'ar' or 'arc' or 'dv' or 'fa' or 'ha' or 'he' or 'kwh' or 'ks' or 'ku' or 'ps' or 'ur' or 'yi' -%}
-    {%- assign direction = 'rtl' -%}
-{%- endcase -%}
-
-<html class="no-js" lang="{{ request.locale.iso_code }}" dir="{{ direction }}">
-  <head>
-{% include 'kiwiSizing' %}
-{% include "starapps-core" %}
-
-
-    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.47/dist/vue.global.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vuex@4.1.0/dist/vuex.global.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
-    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
-    
-     
-
-    {%- if request.page_type == 'product' -%}
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    {% endif %}
-    <script>
-    !function (w, d, t) {
-      w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
-
-      ttq.load('CAUQQ7JC77U8TPI43TRG');
-      ttq.page();
-    }(window, document, 'ttq');
-  </script>
-    
-    <script>
+  {%- assign direction = 'ltr' -%}
+  {%- case request.locale.iso_code -%}
+    {%- when 'ar' or 'arc' or 'dv' or 'fa' or 'ha' or 'he' or 'kwh' or 'ks' or 'ku' or 'ps' or 'ur' or 'yi' -%}
+      {%- assign direction = 'rtl' -%}
+  {%- endcase -%}
+  
+  <html class="no-js" lang="{{ request.locale.iso_code }}" dir="{{ direction }}">
+    <head>
+  {% include 'kiwiSizing' %}
+  {% include "starapps-core" %}
+  
+  
+      <script src="https://cdn.jsdelivr.net/npm/vue@3.2.47/dist/vue.global.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vuex@4.1.0/dist/vuex.global.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+      <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+      
+       
+  
+      {%- if request.page_type == 'product' -%}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+      {% endif %}
+      <script>
       !function (w, d, t) {
         w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
-
-        ttq.load('CA6M3KRC77U5IG2U4SNG');
+  
+        ttq.load('CAUQQ7JC77U8TPI43TRG');
         ttq.page();
       }(window, document, 'ttq');
     </script>
-
-    {% render 'pre-header' %}
-    {% render 'yett' %}
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="theme-color" content="{{ settings.header_background }}">
-
-    <title>{% if page_title == blank %}{{ shop.name }}{% else %}{{ page_title }}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% endif %}</title>
-
-    {%- if page_description -%}
-      <meta name="description" content="{{ page_description | escape }}">
-    {%- endif -%}
-
-    <link rel="canonical" href="{{ canonical_url }}">
-
-    {%- if settings.favicon -%}
-      <link rel="shortcut icon" href="{{ settings.favicon | img_url: '96x96' }}" type="image/png">
-    {%- endif -%}
-
-    {%- comment -%}Few prefech to increase performance on commonly used third-parties{%- endcomment -%}
-    <link rel="preconnect" href="https://cdn.shopify.com">
-    <link rel="dns-prefetch" href="https://productreviews.shopifycdn.com">
-    <link rel="dns-prefetch" href="https://www.google-analytics.com">
-
-    {%- unless settings.heading_font.system? and settings.text_font.system? -%}
-      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
-    {%- endunless -%}
-
-    {%- comment -%}Preload important resources{%- endcomment -%}
-    <link rel="preload" as="style" href="{{ 'theme.css' | asset_url }}">
-    <link rel="preload" as="script" href="{{ 'vendor.js' | asset_url }}">
-    <link rel="preload" as="script" href="{{ 'theme.js' | asset_url }}">
-
-    {%- comment -%}
-      IMPLEMENTATION NOTE: for improving performance, Focal tries to preload images on known pages (such as blog page,
-      product or collection pages). In order to keep a main JS file size minimal, the theme also lazyloads non-essential
-      libraries (such as PhotoSwipe or Flickity) and only loads them on demand.
-    {%- endcomment -%}
-    {%- if request.page_type == 'product' -%}
-      {%- assign selected_media = product.selected_variant.featured_media | default: product.featured_media -%}
-
-      <link rel="preload" as="fetch" href="{{ product.url }}.js" crossorigin>
-      <link rel="preload" as="image" imagesizes="(max-width: 999px) calc(100vw - 48px), 640px" imagesrcset="{% render 'image-attributes', image: selected_media, sizes: '400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800', sizes_only: true %}">
-
-      {%- if product.media.size > 1 -%}
-        <link rel="preload" as="script" href="{{ 'flickity.js' | asset_url }}">
-      {%- endif -%}
-    {%- elsif request.page_type == 'collection' and collection.image -%}
-      <link rel="preload" as="image" media="(max-width: 740px)" imagesizes="100vw" imagesrcset="{% render 'image-attributes', image: collection.image, sizes: '400,500,600,700,800,900,1000', height_constraint: 600, crop: 'center', sizes_only: true %}">
-      <link rel="preload" as="image" media="(min-width: 741px)" imagesizes="100vw" imagesrcset="{% render 'image-attributes', image: collection.image, sizes: '600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600', sizes_only: true %}">
-    {%- endif -%}
-
-    {% render 'social-meta-tags' %}
-    {% render 'microdata-schema' %}
-    {% render 'css-variables', direction: direction %}
-    {% render 'js-variables', direction: direction %}
-
-    <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
-
-    <script src="{{ 'vendor.js' | asset_url }}" defer></script>
-    <script src="{{ 'theme.js' | asset_url }}" defer></script>
-    <script src="{{ 'custom.js' | asset_url }}" defer></script>
-
-    {{ content_for_header }}
-    
-    <script> 
-      // ---------------------------------------------------------------------------
-      // Money format handler
-      // ---------------------------------------------------------------------------
-      {% assign amount_format = '{{amount}}' %}
-      Shopify.money_format = "${{amount_format}}";
-      Shopify.formatMoney = function(cents, format) {
-        if (typeof cents == 'string') { cents = cents.replace('.',''); }
-        var value = '';
-        var placeholderRegex = /\{\{\s*(\w+)\s*\}\}/;
-        var formatString = (format || this.money_format);
       
-        function defaultOption(opt, def) {
-           return (typeof opt == 'undefined' ? def : opt);
-        }
-      
-        function formatWithDelimiters(number, precision, thousands, decimal) {
-          precision = defaultOption(precision, 2);
-          thousands = defaultOption(thousands, ',');
-          decimal   = defaultOption(decimal, '.');
-      
-          if (isNaN(number) || number == null) { return 0; }
-      
-          number = (number/100.0).toFixed(precision);
-      
-          var parts   = number.split('.'),
-              dollars = parts[0].replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1' + thousands),
-              cents   = parts[1] ? (decimal + parts[1]) : '';
-      
-          return dollars + cents;
-        }
-      
-        switch(formatString.match(placeholderRegex)[1]) {
-          case 'amount':
-            value = formatWithDelimiters(cents, 2);
-            break;
-          case 'amount_no_decimals':
-            value = formatWithDelimiters(cents, 0);
-            break;
-          case 'amount_with_comma_separator':
-            value = formatWithDelimiters(cents, 2, '.', ',');
-            break;
-          case 'amount_no_decimals_with_comma_separator':
-            value = formatWithDelimiters(cents, 0, '.', ',');
-            break;
-        }
-      
-        return formatString.replace(placeholderRegex, value);
-      };
-    </script>
-
-
-  {% render 'shogun-head' %}
-    
-    <!-- Global site tag (gtag.js) - Google Ads: 666966344 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-666966344"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-666966344');
-</script>
-
-{% render 'sca-aff-refer-customer' %}
-
-                  {% include 'bss-product-labels-configs' %}
-                      {% include 'scm-product-label-head' %}
-
-    <style>
-      .template-name {
-        display: none;
-      }
-    </style>
-</head>
-    {% if request.page_type == 'product' %}         
-    <style>
-    </style>
-    {% endif %}
+      <script>
+        !function (w, d, t) {
+          w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
   
-  {%- assign feature_classes = '' -%}
-
-  {%- if settings.show_image_zoom -%}
-    {% assign feature_classes = feature_classes | append: ' features--image-zoom' %}
-  {%- endif -%}
-
-  <body class="no-focus-outline {{ feature_classes }}" data-instant-allow-query-string>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    {%- comment -%}Common SVG definitions that we are re-using in several places{%- endcomment -%}
-    <svg class="visually-hidden">
-      <linearGradient id="rating-star-gradient-half">
-        <stop offset="50%" stop-color="rgb(var(--product-star-rating))" />
-        <stop offset="50%" stop-color="rgb(var(--product-star-rating))" stop-opacity="0.4" />
-      </linearGradient>
-    </svg>
-
-    <a href="#main" class="visually-hidden skip-to-content">{{ 'general.accessibility.skip_to_content' | t }}</a>
-    <loading-bar class="loading-bar"></loading-bar>
-
-    {%- if request.page_type != 'gift_card' and request.page_type != 'password' -%}
-      {%- section 'announcement-bar' -%}
-      <!--   FSB app announcement bar   -->
-      <div id="fsb_placeholder"></div>
+          ttq.load('CA6M3KRC77U5IG2U4SNG');
+          ttq.page();
+        }(window, document, 'ttq');
+      </script>
+  
+      {% render 'pre-header' %}
+      {% render 'yett' %}
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0">
+      <meta name="theme-color" content="{{ settings.header_background }}">
+  
+      <title>{% if page_title == blank %}{{ shop.name }}{% else %}{{ page_title }}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% endif %}</title>
+  
+      {%- if page_description -%}
+        <meta name="description" content="{{ page_description | escape }}">
+      {%- endif -%}
+  
+      <link rel="canonical" href="{{ canonical_url }}">
+  
+      {%- if settings.favicon -%}
+        <link rel="shortcut icon" href="{{ settings.favicon | img_url: '96x96' }}" type="image/png">
+      {%- endif -%}
+  
+      {%- comment -%}Few prefech to increase performance on commonly used third-parties{%- endcomment -%}
+      <link rel="preconnect" href="https://cdn.shopify.com">
+      <link rel="dns-prefetch" href="https://productreviews.shopifycdn.com">
+      <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  
+      {%- unless settings.heading_font.system? and settings.text_font.system? -%}
+        <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+      {%- endunless -%}
+  
+      {%- comment -%}Preload important resources{%- endcomment -%}
+      <link rel="preload" as="style" href="{{ 'theme.css' | asset_url }}">
+      <link rel="preload" as="script" href="{{ 'vendor.js' | asset_url }}">
+      <link rel="preload" as="script" href="{{ 'theme.js' | asset_url }}">
+  
+      {%- comment -%}
+        IMPLEMENTATION NOTE: for improving performance, Focal tries to preload images on known pages (such as blog page,
+        product or collection pages). In order to keep a main JS file size minimal, the theme also lazyloads non-essential
+        libraries (such as PhotoSwipe or Flickity) and only loads them on demand.
+      {%- endcomment -%}
+      {%- if request.page_type == 'product' -%}
+        {%- assign selected_media = product.selected_variant.featured_media | default: product.featured_media -%}
+  
+        <link rel="preload" as="fetch" href="{{ product.url }}.js" crossorigin>
+        <link rel="preload" as="image" imagesizes="(max-width: 999px) calc(100vw - 48px), 640px" imagesrcset="{% render 'image-attributes', image: selected_media, sizes: '400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800', sizes_only: true %}">
+  
+        {%- if product.media.size > 1 -%}
+          <link rel="preload" as="script" href="{{ 'flickity.js' | asset_url }}">
+        {%- endif -%}
+      {%- elsif request.page_type == 'collection' and collection.image -%}
+        <link rel="preload" as="image" media="(max-width: 740px)" imagesizes="100vw" imagesrcset="{% render 'image-attributes', image: collection.image, sizes: '400,500,600,700,800,900,1000', height_constraint: 600, crop: 'center', sizes_only: true %}">
+        <link rel="preload" as="image" media="(min-width: 741px)" imagesizes="100vw" imagesrcset="{% render 'image-attributes', image: collection.image, sizes: '600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600', sizes_only: true %}">
+      {%- endif -%}
+  
+      {% render 'social-meta-tags' %}
+      {% render 'microdata-schema' %}
+      {% render 'css-variables', direction: direction %}
+      {% render 'js-variables', direction: direction %}
+  
+      <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
+  
+      <script src="{{ 'vendor.js' | asset_url }}" defer></script>
+      <script src="{{ 'theme.js' | asset_url }}" defer></script>
+      <script src="{{ 'custom.js' | asset_url }}" defer></script>
+      
+      {{ content_for_header }}
+      
+      <script> 
+        // ---------------------------------------------------------------------------
+        // Money format handler
+        // ---------------------------------------------------------------------------
+        {% assign amount_format = '{{amount}}' %}
+        Shopify.money_format = "${{amount_format}}";
+        Shopify.formatMoney = function(cents, format) {
+          if (typeof cents == 'string') { cents = cents.replace('.',''); }
+          var value = '';
+          var placeholderRegex = /\{\{\s*(\w+)\s*\}\}/;
+          var formatString = (format || this.money_format);
+        
+          function defaultOption(opt, def) {
+             return (typeof opt == 'undefined' ? def : opt);
+          }
+        
+          function formatWithDelimiters(number, precision, thousands, decimal) {
+            precision = defaultOption(precision, 2);
+            thousands = defaultOption(thousands, ',');
+            decimal   = defaultOption(decimal, '.');
+        
+            if (isNaN(number) || number == null) { return 0; }
+        
+            number = (number/100.0).toFixed(precision);
+        
+            var parts   = number.split('.'),
+                dollars = parts[0].replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1' + thousands),
+                cents   = parts[1] ? (decimal + parts[1]) : '';
+        
+            return dollars + cents;
+          }
+        
+          switch(formatString.match(placeholderRegex)[1]) {
+            case 'amount':
+              value = formatWithDelimiters(cents, 2);
+              break;
+            case 'amount_no_decimals':
+              value = formatWithDelimiters(cents, 0);
+              break;
+            case 'amount_with_comma_separator':
+              value = formatWithDelimiters(cents, 2, '.', ',');
+              break;
+            case 'amount_no_decimals_with_comma_separator':
+              value = formatWithDelimiters(cents, 0, '.', ',');
+              break;
+          }
+        
+          return formatString.replace(placeholderRegex, value);
+        };
+      </script>
+  
+  
+    {% render 'shogun-head' %}
+      
+      <!-- Global site tag (gtag.js) - Google Ads: 666966344 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-666966344"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'AW-666966344');
+  </script>
+  
+  {% render 'sca-aff-refer-customer' %}
+  
+                    {% include 'bss-product-labels-configs' %}
+                        {% include 'scm-product-label-head' %}
+  
       <style>
-		#fsb_background {
-         z-index: 10 !important; 
+        .template-name {
+          display: none;
         }
       </style>
-      <!--   End FSB app announcement bar   -->
-      {%- section 'popup' -%}
-      {%- section 'header' -%}
+  </head>
+      {% if request.page_type == 'product' %}         
+      <style>
+      </style>
+      {% endif %}
     
-  {%- if request.page_type == 'product' -%}
-    <div id="product-page">
-      <div>
-  {%- endif -%}
-      {%- unless settings.cart_type == 'page' or request.page_type == 'cart' -%}
-        {%- section 'mini-cart' -%}
-      {%- endunless -%}
+    {%- assign feature_classes = '' -%}
+  
+    {%- if settings.show_image_zoom -%}
+      {% assign feature_classes = feature_classes | append: ' features--image-zoom' %}
     {%- endif -%}
-        <div id="main" role="main" class="anchor">
-          {%- comment -%}
-          IMPLEMENTATION NOTE: on collection and search page, the theme was designed to show on mobile the filter bar and/or sort
-            by at the very top of the page. However, due to the fact that sections are isolated, I had to move the code
-            here. Then, the collection section, based on the selected settings, will eventually hide those elements in CSS
-          {%- endcomment -%}
-          {%- if request.page_type == 'collection' or request.page_type == 'search' -%}
-            {%- assign active_filters_count = 0 -%}
-
-            {%- if request.page_type == 'collection' -%}
-              {%- assign filters = collection.filters -%}
-            {%- else -%}
-              {%- assign filters = search.filters -%}
-            {%- endif -%}
-
-            {%- for filter in filters -%}
-              {%- if filter.type == 'list' -%}
-                {%- assign active_filters_count = active_filters_count | plus: filter.active_values.size -%}
-              {%- elsif filter.type == 'price_range' and filter.min_value.value or filter.max_value.value -%}
-                {%- assign active_filters_count = active_filters_count | plus: 1 -%}
-              {%- endif -%}
-            {%- endfor -%}
-
-            {%- assign is_toolbar_collapsed = false -%}
-
-            {%- if request.page_type == 'search' and search.results.first.object_type != 'product' -%}
-              {%- assign is_toolbar_collapsed = true -%}
-            {%- endif -%}
-
-            <div id="mobile-facet-toolbar" class="mobile-toolbar {% if is_toolbar_collapsed %}is-collapsed{% endif %} hidden-lap-and-up">
-              <button is="toggle-button" class="mobile-toolbar__item mobile-toolbar__item--filters {% if active_filters_count > 0 %}has-filters{% endif %}" aria-expanded="false" aria-controls="facet-filters" style="display: none">
-                {%- render 'icon' with 'filters' -%}
-                <span class="mobile-toolbar__item-label">{{- 'collection.general.filters' | t -}}</span>
-              </button>
-
-              <button is="toggle-button" class="mobile-toolbar__item mobile-toolbar__item--sort" aria-expanded="false" aria-controls="sort-by-popover" style="display: none">
-                <span class="mobile-toolbar__item-label">{{- 'collection.general.sort_by' | t -}}</span>
-                {%- render 'icon' with 'chevron' -%}
-              </button>
-            </div>
-          {%- endif -%}
+  
+    <body class="no-focus-outline {{ feature_classes }}" data-instant-allow-query-string>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      {%- comment -%}Common SVG definitions that we are re-using in several places{%- endcomment -%}
+      <svg class="visually-hidden">
+        <linearGradient id="rating-star-gradient-half">
+          <stop offset="50%" stop-color="rgb(var(--product-star-rating))" />
+          <stop offset="50%" stop-color="rgb(var(--product-star-rating))" stop-opacity="0.4" />
+        </linearGradient>
+      </svg>
+  
+      <a href="#main" class="visually-hidden skip-to-content">{{ 'general.accessibility.skip_to_content' | t }}</a>
+      <loading-bar class="loading-bar"></loading-bar>
+  
+      {%- if request.page_type != 'gift_card' and request.page_type != 'password' -%}
+        
+        {% assign league = '' %}
+        {% if template contains 'collection' %}
+          {% assign league = collection.metafields.custom.league %}
+        {% elsif template contains 'product' %}
+          {% assign league = product.metafields.custom.league %}
+        {% elsif template contains 'page' %}
+          {% if page.title contains 'NCAA' %}
+            {% assign league = 'NCAA' %}
+          {% elsif page.title contains 'NBA' %}
+            {% assign league = 'NBA' %}
+          {% elsif page.title contains 'MLS' %}
+            {% assign league = 'MLS' %}
+          {% endif %}
+        {% endif %}
+  
+        <style>
+        .league-background {
+          background-color: #f4f4f4;
+          width: 100%;
+        }
           
-              {{ content_for_layout }}
+        .league-tab-container {
+          display: flex;
+          height: 50px;
+          display: flex;
+          background-color: #f4f4f4;
+          max-width: var(--container-max-width);
+          margin: auto;
+        }
+  
+        .league-tab {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: 800;
+          padding: 0 10px;
+        }
+  
+        .league-tab-image {
+          max-height: 30px;
+          max-width: 50px;
+        }
+  
+        .league-tab-image.NCAA-logo {
+          max-width: 70px;
+        }
+  
+        .league-tab-text {
+          font-family: 'Armata';
+        }
+  
+        @media screen and (min-width: 750px) {
+          .league-tab {
+            padding: 0 50px;
+          }
+  
+          .league-tab-HnV {
+            width: 300px;
+          }
+        }
+  
+        @media screen and (max-width: 750px) {
+          .league-tab {
+            width: 26.66666667%;
+          }
+  
+          .league-tab-HnV {
+            width: 20%;
+          }
+  
+          .league-tab-image.HnV-logo {
+            max-width: 30px;
+          }
 
-          {%- unless request.page_type == 'index' or request.page_type == 'password' or request.page_type == 'gift_card' -%}
-            {%- section 'static-text-with-icons' -%}
-            {%- section 'static-newsletter' -%}
-          {%- endunless -%}
+          .league-tab-image.NCAA-logo {
+            max-width: 55px;
+          }
+
+          .league-tab-image.NBA-logo {
+            max-width: 40px;
+          }
+        }
+        </style>
+  
+        <div class="league-background">
+          <div class="league-tab-container">
+            <a href="/" class="league-tab league-tab-HnV" style="{% if league == blank %} background-color: white;{% else %} background-color: transparent;{% endif %}"><img class="league-tab-image HnV-logo" src="https://cdn.shopify.com/s/files/1/0061/4167/3590/files/1704909735-trimmy-hv-mark-flag-06_copy.png?v=1704909753" alt="Hype and Vice Logo"></a>
+            <a href="/pages/ncaa" class="league-tab" style="{% if league == 'NCAA' %} background-color: white;{% else %} background-color: transparent;{% endif %}"><img class="league-tab-image NCAA-logo" src="https://cdn.shopify.com/s/files/1/0061/4167/3590/files/1704220066-trimmy-ncaa-4-logo-png-transparent.png?v=1704220389" alt="NCAA Logo"></a>
+            <a href="/pages/nba" class="league-tab" style="{% if league == 'NBA' %} background-color: white;{% else %} background-color: transparent;{% endif %}"><img class="league-tab-image NBA-logo" src="https://cdn.shopify.com/s/files/1/0061/4167/3590/files/NBA-logo-png.png?v=1704909152" alt="NBA Logo"></a>
+            <a href="/pages/mls" class="league-tab" style="{% if league == 'MLS' %} background-color: white;{% else %} background-color: transparent;{% endif %}"><img class="league-tab-image MLS-logo" src="https://cdn.shopify.com/s/files/1/0061/4167/3590/files/1938px-MLS_crest_logo_RGB_gradient_svg.png?v=1704220388" alt="MLS Logo"></a>
+          </div>
         </div>
-  {%- if request.page_type == 'product' -%}
-      </div>
-    </div>
-  {%- endif -%}
-
-    {%- if request.page_type != 'gift_card' and request.page_type != 'password' -%}
-      {%- section 'footer' -%}
+            
+        {%- section 'popup' -%}
+        {%- section 'header' -%}
+  
+        {%- section 'announcement-bar' -%}
+        <!--   FSB app announcement bar   -->
+        <div id="fsb_placeholder"></div>
+        <style>
+      #fsb_background {
+           z-index: 1 !important; 
+          }
+          #fsb_background {
+            z-index: 1 !important; 
+          }
+        </style>
+        <!--   End FSB app announcement bar   -->
+      
+    {%- if request.page_type == 'product' -%}
+      <div id="product-page">
+        <div>
     {%- endif -%}
+        {%- unless settings.cart_type == 'page' or request.page_type == 'cart' -%}
+          {%- section 'mini-cart' -%}
+        {%- endunless -%}
+      {%- endif -%}
+          <div id="main" role="main" class="anchor">
+            {%- comment -%}
+            IMPLEMENTATION NOTE: on collection and search page, the theme was designed to show on mobile the filter bar and/or sort
+              by at the very top of the page. However, due to the fact that sections are isolated, I had to move the code
+              here. Then, the collection section, based on the selected settings, will eventually hide those elements in CSS
+            {%- endcomment -%}
+            {%- if request.page_type == 'collection' or request.page_type == 'search' -%}
+              {%- assign active_filters_count = 0 -%}
+  
+              {%- if request.page_type == 'collection' -%}
+                {%- assign filters = collection.filters -%}
+              {%- else -%}
+                {%- assign filters = search.filters -%}
+              {%- endif -%}
+  
+              {%- for filter in filters -%}
+                {%- if filter.type == 'list' -%}
+                  {%- assign active_filters_count = active_filters_count | plus: filter.active_values.size -%}
+                {%- elsif filter.type == 'price_range' and filter.min_value.value or filter.max_value.value -%}
+                  {%- assign active_filters_count = active_filters_count | plus: 1 -%}
+                {%- endif -%}
+              {%- endfor -%}
+  
+              {%- assign is_toolbar_collapsed = false -%}
+  
+              {%- if request.page_type == 'search' and search.results.first.object_type != 'product' -%}
+                {%- assign is_toolbar_collapsed = true -%}
+              {%- endif -%}
+  
+              <div id="mobile-facet-toolbar" class="mobile-toolbar {% if is_toolbar_collapsed %}is-collapsed{% endif %} hidden-lap-and-up">
+                <button is="toggle-button" class="mobile-toolbar__item mobile-toolbar__item--filters {% if active_filters_count > 0 %}has-filters{% endif %}" aria-expanded="false" aria-controls="facet-filters" style="display: none">
+                  {%- render 'icon' with 'filters' -%}
+                  <span class="mobile-toolbar__item-label">{{- 'collection.general.filters' | t -}}</span>
+                </button>
+  
+                <button is="toggle-button" class="mobile-toolbar__item mobile-toolbar__item--sort" aria-expanded="false" aria-controls="sort-by-popover" style="display: none">
+                  <span class="mobile-toolbar__item-label">{{- 'collection.general.sort_by' | t -}}</span>
+                  {%- render 'icon' with 'chevron' -%}
+                </button>
+              </div>
+            {%- endif -%}
+            
+                {{ content_for_layout }}
+  
+            {%- unless request.page_type == 'index' or request.page_type == 'password' or request.page_type == 'gift_card' -%}
+              {%- section 'static-text-with-icons' -%}
+              {%- section 'static-newsletter' -%}
+            {%- endunless -%}
+          </div>
+    {%- if request.page_type == 'product' -%}
+        </div>
+      </div>
+    {%- endif -%}
+  
+      {%- if request.page_type != 'gift_card' and request.page_type != 'password' -%}
+        {%- section 'footer' -%}
+      {%- endif -%}
+      
+      {%- if request.page_type == 'product' -%}
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+      {%- endif -%}
+      
+      
+  
+  
+      <script>
+      var isReplaced = false;       
+      function MeroxIO_Function(){
+        if(!isReplaced){
+          window.yett.unblock();
+          console.log("apps lazyloaded successfully");
+          isReplaced=true;
+        }
+      }    
+      document.addEventListener("click", MeroxIO_Function);
+      document.addEventListener("scroll", MeroxIO_Function);
+      document.addEventListener("touchstart", MeroxIO_Function);
+      document.addEventListener("mousemove", MeroxIO_Function);
+  </script>
+      
+      <script>
+        ttq.track('ViewContent')
+      </script>
+      {%- if request.page_type != 'cart' -%}
+        <script>
+        const quick_buy_recomendations = document.getElementById('recomendations-header')
+        quick_buy_recomendations.addEventListener("click", openCart);
+        function openCart(e) {
+          console.log('hola')
+          document.getElementById("mini-cart").setAttribute('open', true);
+        }
+      {%- endif -%}
+    </script>
+    {% render 'preorder-now' %}
+      
+      
+    <script>var check_edd_data_from_liquid = '1';</script>{% render 'edd_read_data_from_liquid' %}{% if content_for_header contains 'product_label' %}{% include 'bss-product-label-js' %}{% include 'bss-label-style-css' %}{% include 'bss-product-label-fonts' %}{% endif %}
     
     {%- if request.page_type == 'product' -%}
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    {%- endif -%}
-    
-    
-
-
-    <script>
-    var isReplaced = false;       
-    function MeroxIO_Function(){
-      if(!isReplaced){
-        window.yett.unblock();
-        console.log("apps lazyloaded successfully");
-        isReplaced=true;
-      }
-    }    
-    document.addEventListener("click", MeroxIO_Function);
-    document.addEventListener("scroll", MeroxIO_Function);
-    document.addEventListener("touchstart", MeroxIO_Function);
-    document.addEventListener("mousemove", MeroxIO_Function);
-</script>
-    
-    <script>
-      ttq.track('ViewContent')
-    </script>
-    {%- if request.page_type != 'cart' -%}
-      <script>
-      const quick_buy_recomendations = document.getElementById('recomendations-header')
-      quick_buy_recomendations.addEventListener("click", openCart);
-      function openCart(e) {
-        console.log('hola')
-        document.getElementById("mini-cart").setAttribute('open', true);
-      }
-    {%- endif -%}
-  </script>
-  {% render 'preorder-now' %}
-    
-    
-  <script>var check_edd_data_from_liquid = '1';</script>{% render 'edd_read_data_from_liquid' %}{% if content_for_header contains 'product_label' %}{% include 'bss-product-label-js' %}{% include 'bss-label-style-css' %}{% include 'bss-product-label-fonts' %}{% endif %}
   
-  {%- if request.page_type == 'product' -%}
-
-  <script>
-    const store = Vuex.createStore({
-      state () {
-        return {
-          count: 0,
-          product: {{ product | json }},
-          variants: {{ product.variants  | json }},
-          selected_variant: {{ product.selected_or_first_available_variant  | json }},
-          selected_variant_id: {{ product.selected_or_first_available_variant.id }} ,
-          {%- if collection -%}collection: {{ collection | json }},{%- endif -%}
-          options: {{ product.options_with_values | json }},
-          variant_selection: {
-            option1: "{{product.options_with_values[0].selected_value}}",
-            option2: "{{product.options_with_values[1].selected_value}}",
-            option3: "{{product.options_with_values[2].selected_value}}",
-            available: {{ product.selected_or_first_available_variant.available }}
-          },
-          allProducts: [],
-          products_tags: [],
-          products_recomendations: [],
-          selected_college_name: null,
-          searchName: null,
-          selected_media:
-            {{ product.media[0] | json }}
-        }
-      },
-      getters: {
-        current_media(state) {
+      <script>
+        let unavailableVariants = window.unavailableVariants || []; 
+      </script>
           
-          // if(this.variant_selection.option2 != ""){ 
-          // var array = []
-          //   if (this.selected_variant.featured_image){
-          //     array[0] = this.selected_variant.featured_image
-          //   } else {
-          //     array = this.product.media
-          //   }
-          // return array
-          // } else {
-            // for (media of this.product.media) {
-            //   const array = []
-            //   if(media.alt) {
-            //     array.push
-            //   }
-            // }
-            return state.product.media
-          // }
-          
-        },
-        buttonText (state) {
-          let text = null
-          const bisTrigger = document.querySelectorAll('[id="BIS_trigger"]')[1]
-          const bisTriggerMobile = document.getElementsByClassName('BIS_trigger')[0]
-          if( state.variant_selection.available ){
-            if(bisTrigger) {
-              bisTrigger.style.display = 'none'
-              bisTriggerMobile.style.display = 'none'
-            }
-            text = 'Add to Cart'
+    <script>
+      const store = Vuex.createStore({
+        state () {
+          return {
+            count: 0,
+            product: {{ product | json }},
+            variants: {{ product.variants  | json }},
+            selected_variant: {{ product.selected_or_first_available_variant  | json }},
+            selected_variant_id: {{ product.selected_or_first_available_variant.id }} ,
+            {%- if collection -%}collection: {{ collection | json }},{%- endif -%}
+            options: {{ product.options_with_values | json }},
+            variant_selection: {
+              option1: "{{product.options_with_values[0].selected_value}}",
+              option2: "{{product.options_with_values[1].selected_value}}",
+              option3: "{{product.options_with_values[2].selected_value}}",
+              available: {{ product.selected_or_first_available_variant.available }}
+            },
+            allProducts: [],
+            products_tags: [],
+            products_recomendations: [],
+            selected_college_name: null,
+            searchName: null,
+            selected_media:
+              {{ product.media[0] | json }}
           }
-          else {
-            if(bisTrigger) {
-              bisTrigger.style.display = 'inline-block'
-              bisTriggerMobile.style.display = 'block'
-            }
+        },
+        getters: {
+          current_media(state) {
             
-            text = 'Sold Out'
-          }
-          console.log(window.innerWidth)
-          return text
-        },
-        getVariant(state) {
-          return state.variants.find((variant) => variant.option1 == state.variant_selection.option1 && variant.option2 == state.variant_selection.option2)
-        },
-        getColleges(state) {
-          let tags = []
-          for (const product of state.products_tags) {
-            const tag = product.tags.find( tag => tag.includes('University') )
-            if (tag) {
-              tags.push({ college_name: tag, college_id: product.id })
-            } else {
-              const tag = product.tags.find( tag => tag.includes('College') )
+            // if(this.variant_selection.option2 != ""){ 
+            // var array = []
+            //   if (this.selected_variant.featured_image){
+            //     array[0] = this.selected_variant.featured_image
+            //   } else {
+            //     array = this.product.media
+            //   }
+            // return array
+            // } else {
+              // for (media of this.product.media) {
+              //   const array = []
+              //   if(media.alt) {
+              //     array.push
+              //   }
+              // }
+              return state.product.media
+            // }
+            
+          },
+          buttonText (state) {
+            let text = null
+            const bisTrigger = document.querySelectorAll('[id="BIS_trigger"]')[1]
+            const bisTriggerMobile = document.getElementsByClassName('BIS_trigger')[0]
+            if( state.variant_selection.available ){
+              if(bisTrigger) {
+                bisTrigger.style.display = 'none'
+                bisTriggerMobile.style.display = 'none'
+              }
+              text = 'Add to Cart'
+            }
+            else {
+              if(bisTrigger) {
+                bisTrigger.style.display = 'inline-block'
+                bisTriggerMobile.style.display = 'block'
+              }
+              
+              text = 'Sold Out'
+            }
+            console.log(window.innerWidth)
+            return text
+          },
+          getVariant(state) {
+            return state.variants.find((variant) => variant.option1 == state.variant_selection.option1 && variant.option2 == state.variant_selection.option2)
+          },
+          getColleges(state) {
+            let tags = []
+            for (const product of state.products_tags) {
+              const tag = product.tags.find( tag => tag.includes('University') )
               if (tag) {
                 tags.push({ college_name: tag, college_id: product.id })
               } else {
-                const tag = product.tags.find( tag => tag.includes('Product Default') )
+                const tag = product.tags.find( tag => tag.includes('College') )
                 if (tag) {
                   tags.push({ college_name: tag, college_id: product.id })
+                } else {
+                  const tag = product.tags.find( tag => tag.includes('Product Default') )
+                  if (tag) {
+                    tags.push({ college_name: tag, college_id: product.id })
+                  }
                 }
               }
             }
+            
+            tags.sort((a, b) => a.college_name.localeCompare(b.college_name))
+            return tags
+          },
+          formatedPrice(state) { 
+            return Shopify.formatMoney(state.selected_variant.price)
+          },
+          formatedPriceCompare(state) { 
+            return Shopify.formatMoney(state.selected_variant.compare_at_price)
           }
-          
-          tags.sort((a, b) => a.college_name.localeCompare(b.college_name))
-          return tags
         },
-        formatedPrice(state) { 
-          return Shopify.formatMoney(state.selected_variant.price)
-        },
-        formatedPriceCompare(state) { 
-          return Shopify.formatMoney(state.selected_variant.compare_at_price)
+        mutations: {
+          increment (state) {
+            state.count++
+          },
+          setProduct(state, product) {
+            state.product = product
+          },
+          setVariants(state, variants) {
+            state.variants = variants
+          },
+          setSelectedVariant(state, selected_variant) {
+            state.selected_variant = selected_variant
+            state.selected_variant_id = selected_variant.id
+          },
+          setSelectedVariantImage(state, featured_image) {
+            state.selected_variant.featured_image = featured_image
+          },
+          setSelectedMedia(state, selected_media) {
+            state.selected_media = selected_media
+          },
+          setOptions(state, options) {
+            state.options = options
+          },
+          setVariantSelection(state, variant_selection) {
+            state.variant_selection = variant_selection
+          },
+          setVariantSelectionOp1(state, option1) {
+            state.variant_selection.option1 = option1
+          },
+          setVariantSelectionOp2(state, option2) {
+            state.variant_selection.option2 = option2
+          },
+          setVariantSelectionOp3(state, option3) {
+            state.variant_selection.option3 = option3
+          },
+          setVariantSelectionAvailable(state, available) {
+            state.variant_selection.available = available
+          },
+          setProductsTagsEmpty(state) {
+            state.products_tags = []
+          },
+          pushProductTags(state, product) {
+            state.products_tags.push(product)
+          },
+          setProductsRecomendationsEmpty(state) {
+            state.products_recomendations = []
+          },
+          setProductsRecomendations(state, products_recomendations) {
+            state.products_recomendations = products_recomendations
+          },
+          pushProductsRecomendations(state, product_recomendation) {
+            state.products_recomendations.push(product_recomendation)
+          },
+          setSelectedCollegeName(state, selected_college_name) {
+            state.selected_college_name = selected_college_name
+          },
+          setSearchName(state, searchName) {
+            state.searchName = searchName
+          },
+          setProductMedia(state, media) {
+            state.product.media = []
+            state.product.media = media
+          }
         }
-      },
-      mutations: {
-        increment (state) {
-          state.count++
-        },
-        setProduct(state, product) {
-          state.product = product
-        },
-        setVariants(state, variants) {
-          state.variants = variants
-        },
-        setSelectedVariant(state, selected_variant) {
-          state.selected_variant = selected_variant
-          state.selected_variant_id = selected_variant.id
-        },
-        setSelectedVariantImage(state, featured_image) {
-          state.selected_variant.featured_image = featured_image
-        },
-        setSelectedMedia(state, selected_media) {
-          state.selected_media = selected_media
-        },
-        setOptions(state, options) {
-          state.options = options
-        },
-        setVariantSelection(state, variant_selection) {
-          state.variant_selection = variant_selection
-        },
-        setVariantSelectionOp1(state, option1) {
-          state.variant_selection.option1 = option1
-        },
-        setVariantSelectionOp2(state, option2) {
-          state.variant_selection.option2 = option2
-        },
-        setVariantSelectionOp3(state, option3) {
-          state.variant_selection.option3 = option3
-        },
-        setVariantSelectionAvailable(state, available) {
-          state.variant_selection.available = available
-        },
-        setProductsTagsEmpty(state) {
-          state.products_tags = []
-        },
-        pushProductTags(state, product) {
-          state.products_tags.push(product)
-        },
-        setProductsRecomendationsEmpty(state) {
-          state.products_recomendations = []
-        },
-        setProductsRecomendations(state, products_recomendations) {
-          state.products_recomendations = products_recomendations
-        },
-        pushProductsRecomendations(state, product_recomendation) {
-          state.products_recomendations.push(product_recomendation)
-        },
-        setSelectedCollegeName(state, selected_college_name) {
-          state.selected_college_name = selected_college_name
-        },
-        setSearchName(state, searchName) {
-          state.searchName = searchName
-        },
-        setProductMedia(state, media) {
-          state.product.media = []
-          state.product.media = media
-        }
-      }
-    })
-
-    
-  </script>
-
-  <script>
-
-    const ProductFormOptions = {
-      name: 'Product Form',
-      data() {
-        return {
-          color_swatch_config: [ 
-            {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
-              {%- for color_swatch_item in color_swatch_config -%}
-                {%- assign color_swatch_parts = color_swatch_item | split: ':' -%}
-                {%- assign color_swatch_name = color_swatch_parts.first | downcase | strip -%}
+      })
   
-                {%- assign color_swatch_value = color_swatch_parts.last | strip -%}
-                { name: "{{color_swatch_name}}",
-                  value: "{{color_swatch_value}}",
-                  image: "{{images[color_swatch_value] | img_url: '72x72'}}"  
-                },
-              {%- endfor -%}
-          ],
-          selected_qty: 1,
-          pageStatus: true,
-          nameFormated: null,
-          selected_media_occs: null,
-          selected_img_position: 1,
-          haveCollection: false,
-          selected_college: null,
-          loading: false,
-          chargedProducts: false
-        }
-      },
-      computed : {
-        product() {
-          return this.$store.state.product
+      
+    </script>
+  
+    <script>
+  
+      const ProductFormOptions = {
+        name: 'Product Form',
+        data() {
+          return {
+            color_swatch_config: [ 
+              {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
+                {%- for color_swatch_item in color_swatch_config -%}
+                  {%- assign color_swatch_parts = color_swatch_item | split: ':' -%}
+                  {%- assign color_swatch_name = color_swatch_parts.first | downcase | strip -%}
+    
+                  {%- assign color_swatch_value = color_swatch_parts.last | strip -%}
+                  { name: "{{color_swatch_name}}",
+                    value: "{{color_swatch_value}}",
+                    image: "{{images[color_swatch_value] | img_url: '72x72'}}"  
+                  },
+                {%- endfor -%}
+            ],
+            unavailableVariants: window.unavailableVariants || [],
+            selected_qty: 1,
+            selectedColor: null,
+            pageStatus: true,
+            nameFormated: null,
+            selected_media_occs: null,
+            selected_img_position: 1,
+            haveCollection: false,
+            selected_college: null,
+            loading: false,
+            chargedProducts: false
+          }
         },
-        variants() {
-          return this.$store.state.variants
-        },
-        selected_variant() {
-          return this.$store.state.selected_variant
-        },
-        selected_variant_id() {
-          return this.$store.state.selected_variant_id
-        },
-        options() {
-          let optionsFormated = []
-          
-          for (const option of this.$store.state.options) {
-            let index = 0
-            if(option.name == 'Color'){
-              index = 0 
-            } else if(option.name == 'Size'){
-              index = 1
-            } else if(option.name == 'Title'){
-              index = 1
-            } else if(option.name == 'Image'){
-              index = 2
+        computed : {
+          product() {
+            return this.$store.state.product
+          },
+          variants() {
+            return this.$store.state.variants
+          },
+          selected_variant() {
+            return this.$store.state.selected_variant
+          },
+          selected_variant_id() {
+            return this.$store.state.selected_variant_id
+          },
+          options() {
+            let optionsFormated = []
+            
+            for (const option of this.$store.state.options) {
+              let index = 0
+              if(option.name == 'Color'){
+                index = 0 
+              } else if(option.name == 'Size'){
+                index = 1
+              } else if(option.name == 'Title'){
+                index = 1
+              } else if(option.name == 'Image'){
+                index = 2
+              }
+              optionsFormated[index] = option
             }
-            optionsFormated[index] = option
-          }
-          // console.log(optionsFormated)
-          for (let index = 0; index < optionsFormated.length; index++) {
-            if (optionsFormated[index] == undefined) {
-              optionsFormated.splice(index,1)
+            // console.log(optionsFormated)
+            for (let index = 0; index < optionsFormated.length; index++) {
+              if (optionsFormated[index] == undefined) {
+                optionsFormated.splice(index,1)
+              }
             }
+            return optionsFormated
+          },
+          variant_selection() {
+            return this.$store.state.variant_selection
+          },
+          allProducts() {
+            return this.$store.state.allProducts
+          },
+          products_tags() {
+            return this.$store.state.products_tags
+          },
+          searchName() {
+            return this.$store.state.searchName
+          },
+          selected_college_name() {
+            return this.$store.state.selected_college_name
+          },
+          selected_media() {
+            return this.$store.state.selected_media
+          },
+          current_media() {
+            return this.$store.getters.current_media
+          },
+          buttonText () {
+            return this.$store.getters.buttonText
+          },
+          getVariant() {
+            return this.$store.getters.getVariant
+          },
+          getColleges() {
+            return this.$store.getters.getColleges
           }
-          return optionsFormated
         },
-        variant_selection() {
-          return this.$store.state.variant_selection
+        mounted() {
+          this.setSelectedColorFromDOM();
         },
-        allProducts() {
-          return this.$store.state.allProducts
-        },
-        products_tags() {
-          return this.$store.state.products_tags
-        },
-        searchName() {
-          return this.$store.state.searchName
-        },
-        selected_college_name() {
-          return this.$store.state.selected_college_name
-        },
-        selected_media() {
-          return this.$store.state.selected_media
-        },
-        current_media() {
-          return this.$store.getters.current_media
-        },
-        buttonText () {
-          return this.$store.getters.buttonText
-        },
-        getVariant() {
-          return this.$store.getters.getVariant
-        },
-        getColleges() {
-          return this.$store.getters.getColleges
-        }
-      },
-      methods: {
-        changeSize(selected_value, option) {
-          const colorOption = this.options.find(option => option.name == "Color")
-
-          const swatchesColor = document.getElementsByClassName('color-swatch')
-          // console.log(option.position)
-
-          for (const swatchColor of swatchesColor) {
-            swatchColor.classList.remove("color-swatch-d-none")
-          }
-          
-          let posibleVariants = null
-          if(option.position == 1){
-            // this.variant_selection.option1 = selected_value
-            this.$store.commit('setVariantSelectionOp1', selected_value)
-            posibleVariants = this.variants.filter(variant => variant.option1 == this.variant_selection.option1)
-          }
-          if(option.position == 2){
-            // this.variant_selection.option2 = selected_value
-            this.$store.commit('setVariantSelectionOp2', selected_value)
-            posibleVariants = this.variants.filter(variant => variant.option2 == this.variant_selection.option2)
-          }
-          if(option.position == 3){
-            // this.variant_selection.option2 = selected_value
-            this.$store.commit('setVariantSelectionOp3', selected_value)
-            posibleVariants = this.variants.filter(variant => variant.option2 == this.variant_selection.option2)
-          }
-
-          for (const swatch of swatchesColor) {
-            let swatchFind = null
+        methods: {
+          changeSize(selected_value, option) {
+            const colorOption = this.options.find(option => option.name == "Color")
+  
+            const swatchesColor = document.getElementsByClassName('color-swatch')
+            // console.log(option.position)
+  
+            for (const swatchColor of swatchesColor) {
+              swatchColor.classList.remove("color-swatch-d-none")
+            }
+            
+            let posibleVariants = null
             if(option.position == 1){
-              if(colorOption.position == 2) {
-                swatchFind = posibleVariants.find(variant => variant.option2 == swatch.getAttribute("value"))
-              }
-              if(colorOption.position == 3) {
-                swatchFind = posibleVariants.find(variant => variant.option3 == swatch.getAttribute("value"))
-              }
+              // this.variant_selection.option1 = selected_value
+              this.$store.commit('setVariantSelectionOp1', selected_value)
+              posibleVariants = this.variants.filter(variant => variant.option1 == this.variant_selection.option1)
             }
             if(option.position == 2){
-              if(colorOption.position == 1) {
-                swatchFind = posibleVariants.find(variant => variant.option1 == swatch.getAttribute("value"))
-              }
-              if(colorOption.position == 3) {
-                swatchFind = posibleVariants.find(variant => variant.option3 == swatch.getAttribute("value"))
-              }
+              // this.variant_selection.option2 = selected_value
+              this.$store.commit('setVariantSelectionOp2', selected_value)
+              posibleVariants = this.variants.filter(variant => variant.option2 == this.variant_selection.option2)
             }
             if(option.position == 3){
-              if(colorOption.position == 1) {
-                swatchFind = posibleVariants.find(variant => variant.option1 == swatch.getAttribute("value"))
-              }
-              if(colorOption.position == 2) {
-                swatchFind = posibleVariants.find(variant => variant.option2 == swatch.getAttribute("value"))
-              }
+              // this.variant_selection.option2 = selected_value
+              this.$store.commit('setVariantSelectionOp3', selected_value)
+              posibleVariants = this.variants.filter(variant => variant.option2 == this.variant_selection.option2)
             }
-            if( !swatchFind ){
-              swatch.classList.add("color-swatch-d-none")
-            }
-          }
-          // console.log(swatchesFind)
-          this.changeVariant()
-        },
-        formatPrice(value) {
-            let val = (value/100).toFixed(2).replace(',', '.')
-            return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
-        },
-        changeColor(selected_value, option) {
-          if(option.position == 2){
-            // this.variant_selection.option2 = selected_value
-            this.$store.commit('setVariantSelectionOp2', selected_value)
-          }
-          if(option.position == 1){
-            // this.variant_selection.option1 = selected_value
-            this.$store.commit('setVariantSelectionOp1', selected_value)
-          }
-          if(option.position == 3){
-            // this.variant_selection.option1 = selected_value
-            this.$store.commit('setVariantSelectionOp3', selected_value)
-          }
-          this.changeVariant()
-        },
-        changeVariant () {
-          // this.loading = true
-          const beforePosition = this.selected_img_position
-          var variant = null
-          if(this.variant_selection.option2) {
-            variant = this.variants.find((variant) => variant.option1 == this.variant_selection.option1 && variant.option2 == this.variant_selection.option2)
-            if(variant) {
-
-            } else {
-              var colorSelected = this.options[1].values.find(color => color == this.variant_selection.option2)
-              let index = 0
-              for (const color of this.options[1].values) {
-                if (color != colorSelected) {
-                  this.variant_selection.option2 = color
-                  break
-                } else {
-                  
+  
+            for (const swatch of swatchesColor) {
+              let swatchFind = null
+              if(option.position == 1){
+                if(colorOption.position == 2) {
+                  swatchFind = posibleVariants.find(variant => variant.option2 == swatch.getAttribute("value"))
                 }
-                index++
+                if(colorOption.position == 3) {
+                  swatchFind = posibleVariants.find(variant => variant.option3 == swatch.getAttribute("value"))
+                }
               }
-              variant = this.variants.find((variant) => variant.option1 == this.variant_selection.option1 && variant.option2 == this.variant_selection.option2)
+              if(option.position == 2){
+                if(colorOption.position == 1) {
+                  swatchFind = posibleVariants.find(variant => variant.option1 == swatch.getAttribute("value"))
+                }
+                if(colorOption.position == 3) {
+                  swatchFind = posibleVariants.find(variant => variant.option3 == swatch.getAttribute("value"))
+                }
+              }
+              if(option.position == 3){
+                if(colorOption.position == 1) {
+                  swatchFind = posibleVariants.find(variant => variant.option1 == swatch.getAttribute("value"))
+                }
+                if(colorOption.position == 2) {
+                  swatchFind = posibleVariants.find(variant => variant.option2 == swatch.getAttribute("value"))
+                }
+              }
+              if( !swatchFind ){
+                swatch.classList.add("color-swatch-d-none")
+              }
             }
-          } else {
-            variant = this.variants.find((variant) => variant.option1 == this.variant_selection.option1)
-          }
-
-          this.$store.commit('setSelectedVariant', variant)
-          // this.selected_variant = variant
-          // this.selected_variant_id = variant.id
-          this.$forceUpdate();
+            // console.log(swatchesFind)
+            this.changeVariant()
+          },
           
-          this.updateHistoryState(variant)
-          
-          this.$forceUpdate();
-          
-          // this.variant_selection.available = this.selected_variant.available
-          this.$store.commit('setVariantSelectionAvailable', this.selected_variant.available)
-          
-          this.$forceUpdate();
-
-          var mediaChangedFeatured = null
-
-          if(this.selected_variant.featured_image){
-            mediaChangedFeatured = this.changeUrlToProduct(this.selected_variant.featured_image)
-          } else{
-            mediaChangedFeatured = this.changeUrlToProduct(this.product.media.images[0])
-          }
-          // this.selected_variant.featured_image = mediaChangedFeatured
-          this.$store.commit('setSelectedVariantImage', mediaChangedFeatured)
-          
-          this.$forceUpdate();
-
-          // this.selected_media = this.selected_variant.featured_image
-          this.$store.commit('setSelectedMedia', mediaChangedFeatured)
-          
-          this.selected_media_occs = this.current_media.length
-
-          this.$forceUpdate();
-          const vm = this
-          setTimeout(() => {
-            vm.loading = false
-          }, 3000)
-          this.$forceUpdate();
-          const img_child = document.querySelectorAll(`[src="${this.selected_variant.featured_image.src}"]`)[0]
-          const img_child2 = document.querySelectorAll(`[src="${this.selected_variant.featured_image.src}"]`)[1]
-          const sliderElement = document.getElementById('pgallery')
-          const sliderElement2 = document.getElementById('pgallery_thumb')
-          console.log(this.selected_variant.featured_image)
-          if(img_child) {
-            const img = img_child.parentElement
-            const img2 = img_child2.parentElement
-            swiffyslider.slideTo(sliderElement, img.getAttribute('index-r'))
-            swiffyslider.slideTo(sliderElement2, img2.getAttribute('index-r'))
-          }
-        },
-        changeProduct () {
-          const changedProduct = this.products_tags.find( product => product.id == this.selected_college)
-          var college = changedProduct.tags.find( tag => tag.includes('University') )
-          if( college ) {
-            // this.selected_college_name = college
-            this.$store.commit('setSelectedCollegeName', college)
-          } else {
-            college = changedProduct.tags.find( tag => tag.includes('College') )
+          setSelectedColorFromDOM() {
+            const colorElement = document.querySelector('.product-form__option-value');
+            if (colorElement) {
+              this.selectedColor = colorElement.textContent.trim();
+            }
+          },
+          isVariantUnavailable(size) {
+            const selectedColor = this.selectedColor;
+            let variantTitle = `${size} / ${selectedColor}`;
+            return this.unavailableVariants.includes(variantTitle);
+          },
+          formatPrice(value) {
+              let val = (value/100).toFixed(2).replace(',', '.')
+              return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+          },
+          changeColor(selected_value, option) {
+            if(option.position == 2){
+              // this.variant_selection.option2 = selected_value
+              this.$store.commit('setVariantSelectionOp2', selected_value)
+            }
+            if(option.position == 1){
+              // this.variant_selection.option1 = selected_value
+              this.$store.commit('setVariantSelectionOp1', selected_value)
+            }
+            if(option.position == 3){
+              // this.variant_selection.option1 = selected_value
+              this.$store.commit('setVariantSelectionOp3', selected_value)
+            }
+            this.changeVariant()
+            this.selectedColor = selected_value;
+          },
+          changeVariant () {
+            // this.loading = true
+            const beforePosition = this.selected_img_position
+            var variant = null
+            if(this.variant_selection.option2) {
+              variant = this.variants.find((variant) => variant.option1 == this.variant_selection.option1 && variant.option2 == this.variant_selection.option2)
+              if(variant) {
+  
+              } else {
+                var colorSelected = this.options[1].values.find(color => color == this.variant_selection.option2)
+                let index = 0
+                for (const color of this.options[1].values) {
+                  if (color != colorSelected) {
+                    this.variant_selection.option2 = color
+                    break
+                  } else {
+                    
+                  }
+                  index++
+                }
+                variant = this.variants.find((variant) => variant.option1 == this.variant_selection.option1 && variant.option2 == this.variant_selection.option2)
+              }
+            } else {
+              variant = this.variants.find((variant) => variant.option1 == this.variant_selection.option1)
+            }
+  
+            this.$store.commit('setSelectedVariant', variant)
+            // this.selected_variant = variant
+            // this.selected_variant_id = variant.id
+            this.$forceUpdate();
+            
+            this.updateHistoryState(variant)
+            
+            this.$forceUpdate();
+            
+            // this.variant_selection.available = this.selected_variant.available
+            this.$store.commit('setVariantSelectionAvailable', this.selected_variant.available)
+            
+            this.$forceUpdate();
+  
+            var mediaChangedFeatured = null
+  
+            if(this.selected_variant.featured_image){
+              mediaChangedFeatured = this.changeUrlToProduct(this.selected_variant.featured_image)
+            } else{
+              mediaChangedFeatured = this.changeUrlToProduct(this.product.media.images[0])
+            }
+            // this.selected_variant.featured_image = mediaChangedFeatured
+            this.$store.commit('setSelectedVariantImage', mediaChangedFeatured)
+            
+            this.$forceUpdate();
+  
+            // this.selected_media = this.selected_variant.featured_image
+            this.$store.commit('setSelectedMedia', mediaChangedFeatured)
+            
+            this.selected_media_occs = this.current_media.length
+  
+            this.$forceUpdate();
+            const vm = this
+            setTimeout(() => {
+              vm.loading = false
+            }, 3000)
+            this.$forceUpdate();
+            const img_child = document.querySelectorAll(`[src="${this.selected_variant.featured_image.src}"]`)[0]
+            const img_child2 = document.querySelectorAll(`[src="${this.selected_variant.featured_image.src}"]`)[1]
+            const sliderElement = document.getElementById('pgallery')
+            const sliderElement2 = document.getElementById('pgallery_thumb')
+            console.log(this.selected_variant.featured_image)
+            if(img_child) {
+              const img = img_child.parentElement
+              const img2 = img_child2.parentElement
+              swiffyslider.slideTo(sliderElement, img.getAttribute('index-r'))
+              swiffyslider.slideTo(sliderElement2, img2.getAttribute('index-r'))
+            }
+          },
+          changeProduct () {
+            const changedProduct = this.products_tags.find( product => product.id == this.selected_college)
+            var college = changedProduct.tags.find( tag => tag.includes('University') )
             if( college ) {
               // this.selected_college_name = college
               this.$store.commit('setSelectedCollegeName', college)
             } else {
-              college = changedProduct.tags.find( tag => tag.includes('Product Default') )
+              college = changedProduct.tags.find( tag => tag.includes('College') )
               if( college ) {
                 // this.selected_college_name = college
                 this.$store.commit('setSelectedCollegeName', college)
+              } else {
+                college = changedProduct.tags.find( tag => tag.includes('Product Default') )
+                if( college ) {
+                  // this.selected_college_name = college
+                  this.$store.commit('setSelectedCollegeName', college)
+                }
               }
             }
-          }
-          this.getProduct(changedProduct.handle)
-          const product_variants = document.getElementsByClassName('product-form__variants')
-          for (const product_variant of product_variants) {
-            product_variant.children[0].children[1].children[0].children[0].checked = true
-            console.log(product_variant.children[0].children[1].children[0].children[0])
-            const sliderElement = document.getElementById('pgallery')
-            const sliderElement2 = document.getElementById('pgallery_thumb')
-            swiffyslider.slideTo(sliderElement, 0)
-            swiffyslider.slideTo(sliderElement2, 0)
-          }
-          
-        },
-        filterRecomendations(product) {
-          if(this.selected_college_name == 'Product Default'){
-            return product.tags.find(tag => tag == this.searchName)
-          } else {
-            return product.tags.find(tag => tag == this.selected_college_name)
-          }
-        },
-        reduceQty(){
-          if(this.selected_qty > 1){
-            this.selected_qty--
-          }
-        },
-        plusQty(){
-          this.selected_qty++
-        },
-        async getProductData(handle) {
-          const e = this
-          const response = await fetch(`/products/${handle}.js`)
-          if(response.status == 404) {
-            return null
-          } else {
-            const data = await response.json()
-            return data
-          }
-        },
-        async getProduct(handle) {
-          const e = this
-          let productRecomendationsCompleted = []
-          let productRecomendations = []
-          $.getJSON(`/products/${handle}.js`, function(productObtained) {
-            let index = 0
-            for (const media of productObtained.media) {
-              var mediaChanged = e.changeUrlToProduct(media)
-              productObtained.media[index] = mediaChanged
-              index++
+            this.getProduct(changedProduct.handle)
+            const product_variants = document.getElementsByClassName('product-form__variants')
+            for (const product_variant of product_variants) {
+              product_variant.children[0].children[1].children[0].children[0].checked = true
+              const sliderElement = document.getElementById('pgallery')
+              const sliderElement2 = document.getElementById('pgallery_thumb')
+              swiffyslider.slideTo(sliderElement, 0)
+              swiffyslider.slideTo(sliderElement2, 0)
             }
-            // e.product = productObtained
-            e.$store.commit('setProduct', productObtained)
-            // e.options = productObtained.options
-            e.$store.commit('setOptions', productObtained.options)
-            // e.variants = productObtained.variants
-            e.$store.commit('setVariants', productObtained.variants)
             
-            // e.variant_selection.option1 = productObtained.variants[0].option1
-            e.$store.commit('setVariantSelectionOp1', productObtained.variants[0].option1)
-            if(productObtained.variants[0].option2){
-              // e.variant_selection.option2 = productObtained.variants[0].option2
-              e.$store.commit('setVariantSelectionOp2', productObtained.variants[0].option2)
+          },
+          filterRecomendations(product) {
+            if(this.selected_college_name == 'Product Default'){
+              return product.tags.find(tag => tag == this.searchName)
             } else {
-              // e.variant_selection.option2 = ""
-              e.$store.commit('setVariantSelectionOp2', "")
+              return product.tags.find(tag => tag == this.selected_college_name)
             }
-            if(productObtained.variants[0].option2){
-              // e.variant_selection.option3 = productObtained.variants[0].option3
-              e.$store.commit('setVariantSelectionOp3', productObtained.variants[0].option3)
+          },
+          reduceQty(){
+            if(this.selected_qty > 1){
+              this.selected_qty--
+            }
+          },
+          plusQty(){
+            this.selected_qty++
+          },
+          async getProductData(handle) {
+            const e = this
+            const response = await fetch(`/products/${handle}.js`)
+            if(response.status == 404) {
+              return null
             } else {
-              // e.variant_selection.option3 = ""
-              e.$store.commit('setVariantSelectionOp3', "")
+              const data = await response.json()
+              return data
             }
-            
-            e.changeVariant()
-            e.updateHistoryStateProduct()
-            document.title = `${productObtained.title} | ${productObtained.type} | Hype & Vice College Apparel`;
-          })
-          let count = 0
-          this.getRecomendationProducts()
-        },
-        async getRecomendationProducts() {
-          var page = 1
-          var productsHolder = []
-          let indexProducts = 0
-          let continueSearching = true
-          var context = this
-          let count = 0
-          let productRecomendations = []
-          let products = []
-          context.$store.commit('setProductsRecomendationsEmpty')
-
-          // while (continueSearching) {
-            // const response = await fetch(`/collections/all?view=json&page=${page}`)
-            // const data = await response.json();
-
-          const local_products = localStorage.getItem('products')
-          const products_parsed = JSON.parse(local_products)
-          const dateUpload = localStorage.getItem('products_date_upload')
-          const dateUploadParsed = JSON.parse(dateUpload)
-          const date = new Date();
-
-          const currentDay= String(date.getDate()).padStart(2, '0');
-
-          const currentMonth = String(date.getMonth()+1).padStart(2,"0");
-
-          const currentYear = date.getFullYear();
-
-          // we will display the date as DD-MM-YYYY 
-
-          const currentDate = `${currentDay}-${currentMonth}-${currentYear}`;
-
-          if(products_parsed && dateUploadParsed == currentDate){
-            products = products_parsed
-          } else {
-            try {
-              let [data1, data2, data3, data4, data5] = await Promise.all([
-                fetch(`/collections/all?view=json&page=${1}`),
-                fetch(`/collections/all?view=json&page=${2}`),
-                fetch(`/collections/all?view=json&page=${3}`),
-                fetch(`/collections/all?view=json&page=${4}`),
-                fetch(`/collections/all?view=json&page=${5}`)
-              ]);
-              const data1json = await data1.json()
-              const data2json = await data2.json()
-              const data3json = await data3.json()
-              const data4json = await data4.json()
-              const data5json = await data5.json()
-              products = [...data1json.products, ...data2json.products, ...data3json.products, ...data4json.products, ...data5json.products]
-              
-            }
-            catch(err) {
-              console.log(err);
-            };
-            localStorage.setItem("products", JSON.stringify(products))
-            const date = new Date();
-
-            let currentDay= String(date.getDate()).padStart(2, '0');
-
-            let currentMonth = String(date.getMonth()+1).padStart(2,"0");
-
-            let currentYear = date.getFullYear();
-
-            // we will display the date as DD-MM-YYYY 
-
-            let currentDate = `${currentDay}-${currentMonth}-${currentYear}`;
-
-            localStorage.setItem("products_date_upload", JSON.stringify(currentDate))
-            console.log('Date', currentDate)
-          }
-            
-            // console.log(data)
-            // const response = await fetch(`/collections/all/products.json?limit=250&page=${page}`)
-            // const data = await response.json();
-            for (const product of products) {
-              if(indexProducts < 4) {
-                productsHolder.push(product)
-                indexProducts++
-              }
-              if (count < 4){
-                const filtertagRecomendations = context.filterRecomendations(product)
-                if (filtertagRecomendations) {
-                  
-                  let index = 0
-                  const productData = await context.getProductData(product.handle)
-                  if(productData == null) {
-
-                  } else {
-                    count++
-                    for (const image of productData.images) {
-                      var mediaChanged = context.changeUrlToImg(image)
-                      productData.images[index] = mediaChanged
-                      index++
-                    }
-                    if(productData.featured_image) {
-                      var mediaChanged = context.changeUrlToImg(productData.featured_image)
-                      productData.featured_image = mediaChanged
-                    }
-                    if(productData.images.length > 0) {
-                      productRecomendations.push(productData)
-                      context.$store.commit('pushProductsRecomendations', productData)
-                    }
-                  }
-                }
-              }
-              // context.$store.commit('setProductsRecomendations', productRecomendations)
-              // context.products_recomendations.push(...productRecomendations)
-            }
-            if(count < 4) {
-              for (const product of productsHolder){
-                count++
-                let index = 0
-                const productData = await context.getProductData(product.handle)
-                for (const image of productData.images) {
-                  var mediaChanged = context.changeUrlToImg(image)
-                  productData.images[index] = mediaChanged
-                  index++
-                }
-                if(productData.featured_image) {
-                  var mediaChanged = context.changeUrlToImg(productData.featured_image)
-                  productData.featured_image = mediaChanged
-                }
-                if(productData.images.length > 0) {
-                  productRecomendations.push(productData)
-                  context.$store.commit('pushProductsRecomendations', productData)
-                }
-              }
-            }
-            // else {
-            //   context.pageStatus = false
-            //   continueSearching = false
-            //   break
-            // }
-            // page++
-            // console.log(`Page ${page} reviewed`)
-          // }
-          
-          
-          console.log('Recomendations Finded')
-        },
-        async getCollegeProducts(){
-          var page = 1
-          var context = this
-          let count = 0
-          
-          this.$store.commit('setProductsTagsEmpty')
-          context.$store.commit('pushProductTags', {handle: this.product.handle, id: this.product.id, tags: this.product.tags})
-          while (page < 18) {
-            const response = await fetch(`/collections/all?view=json&page=${page}`)
-            const data = await response.json();
-            if (data.products.length > 0){
-              let validProducts = []
-              let productRecomendations = []
-              let productRecomendationsCompleted = []
-              for (const product of data.products) {
-                const filtertag = product.tags.find(tag => tag == context.searchName)
-                cosnole.log(filtertag)
-                if (filtertag) {
-                  validProducts.push({handle: product.handle, id: product.id, tags: product.tags})
-                  if(product.id != context.product.id){
-                    context.$store.commit('pushProductTags', {handle: product.handle, id: product.id, tags: product.tags})
-                  }
-                }
-              }
-              // context.products_tags.push(...validProducts)
-            }
-            else {
-              context.pageStatus = false
-            }
-            console.log(`Page ${page} reviewed`)
-            page++
-          }
-          this.chargedProducts = true
-          loadingSpan.classList.add('selector-none')
-          
-          console.log('Colleges Obtained')
-        },
-        async getProducts(){
-          var cookieString = 'products=['
-          var cookieString2 = 'products=[];'
-          var page = 1
-          var productsHolder = []
-          let indexProducts = 0
-          let continueSearching = true
-          var context = this
-          let count = 0
-          let products = []
-          
-          this.$store.commit('setProductsTagsEmpty')
-          this.$store.commit('setProductsRecomendationsEmpty')
-          context.$store.commit('pushProductTags', {handle: this.product.handle, id: this.product.id, tags: this.product.tags})
-          
-          // while (continueSearching) {
-            
-            // const response = await fetch(`/collections/all?view=json&page=${page}`)
-            // const data = await response.json();
-          // if()
-          const local_products = localStorage.getItem('products')
-          const products_parsed = JSON.parse(local_products)
-          const dateUpload = localStorage.getItem('products_date_upload')
-          const dateUploadParsed = JSON.parse(dateUpload)
-          const date = new Date();
-
-          const currentDay= String(date.getDate()).padStart(2, '0');
-
-          const currentMonth = String(date.getMonth()+1).padStart(2,"0");
-
-          const currentYear = date.getFullYear();
-
-          // we will display the date as DD-MM-YYYY 
-
-          const currentDate = `${currentDay}-${currentMonth}-${currentYear}`;
-
-          if(products_parsed && dateUploadParsed == currentDate){
-            products = products_parsed
-          } else {
-            try {
-              let [data1, data2, data3, data4, data5] = await Promise.all([
-                fetch(`/collections/all?view=json&page=${1}`),
-                fetch(`/collections/all?view=json&page=${2}`),
-                fetch(`/collections/all?view=json&page=${3}`),
-                fetch(`/collections/all?view=json&page=${4}`),
-                fetch(`/collections/all?view=json&page=${5}`)
-              ]);
-              const data1json = await data1.json()
-              const data2json = await data2.json()
-              const data3json = await data3.json()
-              const data4json = await data4.json()
-              const data5json = await data5.json()
-              products = [...data1json.products, ...data2json.products, ...data3json.products, ...data4json.products, ...data5json.products]
-
-            }
-            catch(err) {
-              console.log(err);
-            };
-            localStorage.setItem("products", JSON.stringify(products))
-            const date = new Date();
-
-            let currentDay= String(date.getDate()).padStart(2, '0');
-
-            let currentMonth = String(date.getMonth()+1).padStart(2,"0");
-
-            let currentYear = date.getFullYear();
-
-            // we will display the date as DD-MM-YYYY 
-
-            let currentDate = `${currentDay}-${currentMonth}-${currentYear}`;
-
-            localStorage.setItem("products_date_upload", JSON.stringify(currentDate))
-            console.log('Date', currentDate)
-          }
-          // if (data.products.length >= 1000){
-            let validProducts = []
-            let productRecomendations = []
+          },
+          async getProduct(handle) {
+            const e = this
             let productRecomendationsCompleted = []
-
-            
-            
-            for (const product of products) {
-              const filtertag = product.tags.find(tag => tag == context.searchName)
-              if (filtertag) {
-                validProducts.push({handle: product.handle, id: product.id, tags: product.tags})
-                if(product.id != context.product.id){
-                  context.$store.commit('pushProductTags', {handle: product.handle, id: product.id, tags: product.tags})
-                }
+            let productRecomendations = []
+            $.getJSON(`/products/${handle}.js`, function(productObtained) {
+              let index = 0
+              for (const media of productObtained.media) {
+                var mediaChanged = e.changeUrlToProduct(media)
+                productObtained.media[index] = mediaChanged
+                index++
               }
-              if(count < 4) {
+              // e.product = productObtained
+              e.$store.commit('setProduct', productObtained)
+              // e.options = productObtained.options
+              e.$store.commit('setOptions', productObtained.options)
+              // e.variants = productObtained.variants
+              e.$store.commit('setVariants', productObtained.variants)
+              
+              // e.variant_selection.option1 = productObtained.variants[0].option1
+              e.$store.commit('setVariantSelectionOp1', productObtained.variants[0].option1)
+              if(productObtained.variants[0].option2){
+                // e.variant_selection.option2 = productObtained.variants[0].option2
+                e.$store.commit('setVariantSelectionOp2', productObtained.variants[0].option2)
+              } else {
+                // e.variant_selection.option2 = ""
+                e.$store.commit('setVariantSelectionOp2', "")
+              }
+              if(productObtained.variants[0].option2){
+                // e.variant_selection.option3 = productObtained.variants[0].option3
+                e.$store.commit('setVariantSelectionOp3', productObtained.variants[0].option3)
+              } else {
+                // e.variant_selection.option3 = ""
+                e.$store.commit('setVariantSelectionOp3', "")
+              }
+              
+              e.changeVariant()
+              e.updateHistoryStateProduct()
+              document.title = `${productObtained.title} | ${productObtained.type} | Hype & Vice College Apparel`;
+            })
+            let count = 0
+            this.getRecomendationProducts()
+          },
+          async getRecomendationProducts() {
+            var page = 1
+            var productsHolder = []
+            let indexProducts = 0
+            let continueSearching = true
+            var context = this
+            let count = 0
+            let productRecomendations = []
+            let products = []
+            context.$store.commit('setProductsRecomendationsEmpty')
+  
+            // while (continueSearching) {
+              // const response = await fetch(`/collections/all?view=json&page=${page}`)
+              // const data = await response.json();
+  
+            const local_products = localStorage.getItem('products')
+            const products_parsed = JSON.parse(local_products)
+            const dateUpload = localStorage.getItem('products_date_upload')
+            const dateUploadParsed = JSON.parse(dateUpload)
+            const date = new Date();
+  
+            const currentDay= String(date.getDate()).padStart(2, '0');
+  
+            const currentMonth = String(date.getMonth()+1).padStart(2,"0");
+  
+            const currentYear = date.getFullYear();
+  
+            // we will display the date as DD-MM-YYYY 
+  
+            const currentDate = `${currentDay}-${currentMonth}-${currentYear}`;
+  
+            if(products_parsed && dateUploadParsed == currentDate){
+              products = products_parsed
+            } else {
+              try {
+                let [data1, data2, data3, data4, data5] = await Promise.all([
+                  fetch(`/collections/all?view=json&page=${1}`),
+                  fetch(`/collections/all?view=json&page=${2}`),
+                  fetch(`/collections/all?view=json&page=${3}`),
+                  fetch(`/collections/all?view=json&page=${4}`),
+                  fetch(`/collections/all?view=json&page=${5}`)
+                ]);
+                const data1json = await data1.json()
+                const data2json = await data2.json()
+                const data3json = await data3.json()
+                const data4json = await data4.json()
+                const data5json = await data5.json()
+                products = [...data1json.products, ...data2json.products, ...data3json.products, ...data4json.products, ...data5json.products]
+                
+              }
+              catch(err) {
+                console.log(err);
+              };
+              localStorage.setItem("products", JSON.stringify(products))
+              const date = new Date();
+  
+              let currentDay= String(date.getDate()).padStart(2, '0');
+  
+              let currentMonth = String(date.getMonth()+1).padStart(2,"0");
+  
+              let currentYear = date.getFullYear();
+  
+              // we will display the date as DD-MM-YYYY 
+  
+              let currentDate = `${currentDay}-${currentMonth}-${currentYear}`;
+  
+              localStorage.setItem("products_date_upload", JSON.stringify(currentDate))
+            }
+              
+              // console.log(data)
+              // const response = await fetch(`/collections/all/products.json?limit=250&page=${page}`)
+              // const data = await response.json();
+              for (const product of products) {
                 if(indexProducts < 4) {
                   productsHolder.push(product)
                   indexProducts++
                 }
-                const filtertagRecomendations = context.filterRecomendations(product)
-                if (filtertagRecomendations) {
-                  let index = 0
-                  const productData = await context.getProductData(product.handle)
-                  if (productData == null) {
-
-                  } else {
-                    count++
-                    for (const image of productData.images) {
-                      var mediaChanged = context.changeUrlToImg(image)
-                      productData.images[index] = mediaChanged
-                      index++
-                    }
-                    if(productData.featured_image) {
-                      var mediaChanged = context.changeUrlToImg(productData.featured_image)
-                      productData.featured_image = mediaChanged
-                    }
-                    if(productData.images.length > 0) {
-                      context.$store.commit('pushProductsRecomendations', productData)
-                      productRecomendations.push(productData)
+                if (count < 4){
+                  const filtertagRecomendations = context.filterRecomendations(product)
+                  if (filtertagRecomendations) {
+                    
+                    let index = 0
+                    const productData = await context.getProductData(product.handle)
+                    if(productData == null) {
+  
+                    } else {
+                      count++
+                      for (const image of productData.images) {
+                        var mediaChanged = context.changeUrlToImg(image)
+                        productData.images[index] = mediaChanged
+                        index++
+                      }
+                      if(productData.featured_image) {
+                        var mediaChanged = context.changeUrlToImg(productData.featured_image)
+                        productData.featured_image = mediaChanged
+                      }
+                      if(productData.images.length > 0) {
+                        productRecomendations.push(productData)
+                        context.$store.commit('pushProductsRecomendations', productData)
+                      }
                     }
                   }
                 }
+                // context.$store.commit('setProductsRecomendations', productRecomendations)
+                // context.products_recomendations.push(...productRecomendations)
               }
-            }
-            
-            if(count < 4) {
-              for (const product of productsHolder){
-                let index = 0
-                const productData = await context.getProductData(product.handle)
-                if(productData == null) {
-
-                } else {
+              if(count < 4) {
+                for (const product of productsHolder){
                   count++
+                  let index = 0
+                  const productData = await context.getProductData(product.handle)
                   for (const image of productData.images) {
                     var mediaChanged = context.changeUrlToImg(image)
                     productData.images[index] = mediaChanged
@@ -1175,417 +1101,612 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
                   }
                 }
               }
-            }
-              
-              // context.products_tags.push(...validProducts)
-              // context.$store.commit('setProductsRecomendations', productRecomendations)
+              // else {
+              //   context.pageStatus = false
+              //   continueSearching = false
+              //   break
+              // }
+              // page++
+              // console.log(`Page ${page} reviewed`)
             // }
-            // else {
-            //   continueSearching = false
-            //   context.pageStatus = false
-            //   break
+            
+            
+          },
+          async getCollegeProducts(){
+            var page = 1
+            var context = this
+            let count = 0
+            
+            this.$store.commit('setProductsTagsEmpty')
+            context.$store.commit('pushProductTags', {handle: this.product.handle, id: this.product.id, tags: this.product.tags})
+            while (page < 18) {
+              const response = await fetch(`/collections/all?view=json&page=${page}`)
+              const data = await response.json();
+              if (data.products.length > 0){
+                let validProducts = []
+                let productRecomendations = []
+                let productRecomendationsCompleted = []
+                for (const product of data.products) {
+                  const filtertag = product.tags.find(tag => tag == context.searchName)
+                  cosnole.log(filtertag)
+                  if (filtertag) {
+                    validProducts.push({handle: product.handle, id: product.id, tags: product.tags})
+                    if(product.id != context.product.id){
+                      context.$store.commit('pushProductTags', {handle: product.handle, id: product.id, tags: product.tags})
+                    }
+                  }
+                }
+                // context.products_tags.push(...validProducts)
+              }
+              else {
+                context.pageStatus = false
+              }
+              page++
+            }
+            this.chargedProducts = true
+            loadingSpan.classList.add('selector-none')
+            
+          },
+          async getProducts(){
+            var cookieString = 'products=['
+            var cookieString2 = 'products=[];'
+            var page = 1
+            var productsHolder = []
+            let indexProducts = 0
+            let continueSearching = true
+            var context = this
+            let count = 0
+            let products = []
+            
+            this.$store.commit('setProductsTagsEmpty')
+            this.$store.commit('setProductsRecomendationsEmpty')
+            context.$store.commit('pushProductTags', {handle: this.product.handle, id: this.product.id, tags: this.product.tags})
+            
+            // while (continueSearching) {
+              
+              // const response = await fetch(`/collections/all?view=json&page=${page}`)
+              // const data = await response.json();
+            // if()
+            const local_products = localStorage.getItem('products')
+            const products_parsed = JSON.parse(local_products)
+            const dateUpload = localStorage.getItem('products_date_upload')
+            const dateUploadParsed = JSON.parse(dateUpload)
+            const date = new Date();
+  
+            const currentDay= String(date.getDate()).padStart(2, '0');
+  
+            const currentMonth = String(date.getMonth()+1).padStart(2,"0");
+  
+            const currentYear = date.getFullYear();
+  
+            // we will display the date as DD-MM-YYYY 
+  
+            const currentDate = `${currentDay}-${currentMonth}-${currentYear}`;
+  
+            if(products_parsed && dateUploadParsed == currentDate){
+              products = products_parsed
+            } else {
+              try {
+                let [data1, data2, data3, data4, data5] = await Promise.all([
+                  fetch(`/collections/all?view=json&page=${1}`),
+                  fetch(`/collections/all?view=json&page=${2}`),
+                  fetch(`/collections/all?view=json&page=${3}`),
+                  fetch(`/collections/all?view=json&page=${4}`),
+                  fetch(`/collections/all?view=json&page=${5}`)
+                ]);
+                const data1json = await data1.json()
+                const data2json = await data2.json()
+                const data3json = await data3.json()
+                const data4json = await data4.json()
+                const data5json = await data5.json()
+                products = [...data1json.products, ...data2json.products, ...data3json.products, ...data4json.products, ...data5json.products]
+  
+              }
+              catch(err) {
+                console.log(err);
+              };
+              localStorage.setItem("products", JSON.stringify(products))
+              const date = new Date();
+  
+              let currentDay= String(date.getDate()).padStart(2, '0');
+  
+              let currentMonth = String(date.getMonth()+1).padStart(2,"0");
+  
+              let currentYear = date.getFullYear();
+  
+              // we will display the date as DD-MM-YYYY 
+  
+              let currentDate = `${currentDay}-${currentMonth}-${currentYear}`;
+  
+              localStorage.setItem("products_date_upload", JSON.stringify(currentDate))
+            }
+            // if (data.products.length >= 1000){
+              let validProducts = []
+              let productRecomendations = []
+              let productRecomendationsCompleted = []
+  
+              
+              
+              for (const product of products) {
+                const filtertag = product.tags.find(tag => tag == context.searchName)
+                if (filtertag) {
+                  validProducts.push({handle: product.handle, id: product.id, tags: product.tags})
+                  if(product.id != context.product.id){
+                    context.$store.commit('pushProductTags', {handle: product.handle, id: product.id, tags: product.tags})
+                  }
+                }
+                if(count < 4) {
+                  if(indexProducts < 4) {
+                    productsHolder.push(product)
+                    indexProducts++
+                  }
+                  const filtertagRecomendations = context.filterRecomendations(product)
+                  if (filtertagRecomendations) {
+                    let index = 0
+                    const productData = await context.getProductData(product.handle)
+                    if (productData == null) {
+  
+                    } else {
+                      count++
+                      for (const image of productData.images) {
+                        var mediaChanged = context.changeUrlToImg(image)
+                        productData.images[index] = mediaChanged
+                        index++
+                      }
+                      if(productData.featured_image) {
+                        var mediaChanged = context.changeUrlToImg(productData.featured_image)
+                        productData.featured_image = mediaChanged
+                      }
+                      if(productData.images.length > 0) {
+                        context.$store.commit('pushProductsRecomendations', productData)
+                        productRecomendations.push(productData)
+                      }
+                    }
+                  }
+                }
+              }
+              
+              if(count < 4) {
+                for (const product of productsHolder){
+                  let index = 0
+                  const productData = await context.getProductData(product.handle)
+                  if(productData == null) {
+  
+                  } else {
+                    count++
+                    for (const image of productData.images) {
+                      var mediaChanged = context.changeUrlToImg(image)
+                      productData.images[index] = mediaChanged
+                      index++
+                    }
+                    if(productData.featured_image) {
+                      var mediaChanged = context.changeUrlToImg(productData.featured_image)
+                      productData.featured_image = mediaChanged
+                    }
+                    if(productData.images.length > 0) {
+                      productRecomendations.push(productData)
+                      context.$store.commit('pushProductsRecomendations', productData)
+                    }
+                  }
+                }
+              }
+                
+                // context.products_tags.push(...validProducts)
+                // context.$store.commit('setProductsRecomendations', productRecomendations)
+              // }
+              // else {
+              //   continueSearching = false
+              //   context.pageStatus = false
+              //   break
+              // }
+              // console.log(`Page ${page} reviewed`)
+              // page++
             // }
-            // console.log(`Page ${page} reviewed`)
-            // page++
-          // }
-          this.chargedProducts = true
-          
-          console.log('Colleges Obtained')
-        },
-        updateHistoryState(variant) {
-          if(!history.replaceState || !variant) {
-            return;
-          }
-
-          var newURL = window.location.protocol + '//' + window.location.host + window.location.pathname + '?variant=' + variant.id
-          window.history.replaceState({path: newURL}, '', newURL)
-        },
-        updateHistoryStateProduct() {
-          if(!history.replaceState || !this.selected_variant) {
-            return;
-          }
-          var location = window.location.pathname.split("/")
-          location[2] = this.product.handle
-          var locationJoined = location.join('/')
-          var newURL = window.location.protocol + '//' + window.location.host + locationJoined
-
-          
-          window.history.replaceState({path: newURL}, '', newURL)
-        },
-        changeUrlToImg(img) {
-          if(img) {
+            this.chargedProducts = true
             
-            if(img.includes('800x')) {
-              
-            } else {
-              const srcSplited = img.split('.jpg')
-              srcSplited[0] += '_800x.jpg'
-              img = srcSplited.join('')
+            console.log('Colleges Obtained')
+          },
+          updateHistoryState(variant) {
+            if(!history.replaceState || !variant) {
+              return;
             }
-          }
-          return img
-        },
-        changeUrlToProduct(media) {
-          if(media.src) {
-            
-            if(media.src.includes('800x')) {
-              
-            } else {
-    
-              const srcThumbSplited = media.src.split('.jpg')
-              const srcSplited = media.src.split('.jpg')
-              srcSplited[0] += '_800x.jpg'
-              srcThumbSplited[0] += '_55x.jpg'
-              media.src = srcSplited.join('')
-              media.srcThumb = srcThumbSplited.join('')
+  
+            var newURL = window.location.protocol + '//' + window.location.host + window.location.pathname + '?variant=' + variant.id
+            window.history.replaceState({path: newURL}, '', newURL)
+          },
+          updateHistoryStateProduct() {
+            if(!history.replaceState || !this.selected_variant) {
+              return;
             }
-          }
-          return media
-        }
-      },
-      delimiters:['%{', '}%'],
-      created: async function () {
-        // this.getCurrentMedia()
-        this.$store.commit('increment')
-        
-        this.loading = true
-        this.$store.commit('setSearchName', this.product.tags.find(tag => tag.includes('(P)')))
-
-        if(this.searchName) {
-          const nameFormatedSpaces = this.searchName.split('(P) ')[1]
-          this.nameFormated = nameFormatedSpaces.split(' ').join('-')
-        }
-        
-        this.selected_media_occs = this.current_media.length
-        let index = 0
-        const productObtained = await this.getProductData('{{product.handle}}')
-        // this.product = productObtained
-        const media_product = {{ product.media | json }}
-        this.$store.commit('setProduct', productObtained)
-        var mediaChangedArray = []
-        for (const media of media_product) {
-          var mediaChanged = this.changeUrlToProduct(media)
-          mediaChangedArray.push(mediaChanged)
-          // this.product.media[index] = mediaChanged
-          index++
-        }
-
-        this.$store.commit('setProductMedia', mediaChangedArray)
-        
-        
-        if(this.selected_variant.featured_image) {
-          var mediaChangedFeatured = this.changeUrlToProduct(this.selected_variant.featured_image)
-          // this.selected_media = mediaChangedFeatured
-          this.$store.commit('setSelectedMedia', mediaChangedFeatured)
-        } else {
-          
-          var mediaChangedFeatured = this.changeUrlToProduct(this.product.media[0])
-          // this.selected_media = mediaChangedFeatured
-          this.$store.commit('setSelectedMedia', mediaChangedFeatured)
-        }
-        if(this.searchName) {
-          
-          var collegeName = this.product.tags.find(tag => tag.includes('University'))
-
-          if ( collegeName ) {
-            // this.selected_college_name = collegeName
-            this.$store.commit('setSelectedCollegeName', collegeName)
-            this.selected_college = this.product.id
+            var location = window.location.pathname.split("/")
+            location[2] = this.product.handle
+            var locationJoined = location.join('/')
+            var newURL = window.location.protocol + '//' + window.location.host + locationJoined
+  
             
+            window.history.replaceState({path: newURL}, '', newURL)
+          },
+          changeUrlToImg(img) {
+            if(img) {
+              
+              if(img.includes('800x')) {
+                
+              } else {
+                const srcSplited = img.split('.jpg')
+                srcSplited[0] += '_800x.jpg'
+                img = srcSplited.join('')
+              }
+            }
+            return img
+          },
+          changeUrlToProduct(media) {
+            if(media.src) {
+              
+              if(media.src.includes('800x')) {
+                
+              } else {
+      
+                const srcThumbSplited = media.src.split('.jpg')
+                const srcSplited = media.src.split('.jpg')
+                srcSplited[0] += '_800x.jpg'
+                srcThumbSplited[0] += '_55x.jpg'
+                media.src = srcSplited.join('')
+                media.srcThumb = srcThumbSplited.join('')
+              }
+            }
+            return media
+          }
+        },
+        delimiters:['%{', '}%'],
+        created: async function () {
+  
+           // Initialize selectedColor with the first available color
+          const colorOption = this.options.find(option => option.name === 'Color');
+          if (colorOption && colorOption.values.length > 0) {
+            this.selectedColor = colorOption.values[0];
+          }
+          
+          // this.getCurrentMedia()
+          this.$store.commit('increment')
+          
+          this.loading = true
+          this.$store.commit('setSearchName', this.product.tags.find(tag => tag.includes('(P)')))
+  
+          if(this.searchName) {
+            const nameFormatedSpaces = this.searchName.split('(P) ')[1]
+            this.nameFormated = nameFormatedSpaces.split(' ').join('-')
+          }
+          
+          this.selected_media_occs = this.current_media.length
+          let index = 0
+          const productObtained = await this.getProductData('{{product.handle}}')
+          // this.product = productObtained
+          const media_product = {{ product.media | json }}
+          this.$store.commit('setProduct', productObtained)
+          var mediaChangedArray = []
+          for (const media of media_product) {
+            var mediaChanged = this.changeUrlToProduct(media)
+            mediaChangedArray.push(mediaChanged)
+            // this.product.media[index] = mediaChanged
+            index++
+          }
+  
+          this.$store.commit('setProductMedia', mediaChangedArray)
+          
+          
+          if(this.selected_variant.featured_image) {
+            var mediaChangedFeatured = this.changeUrlToProduct(this.selected_variant.featured_image)
+            // this.selected_media = mediaChangedFeatured
+            this.$store.commit('setSelectedMedia', mediaChangedFeatured)
           } else {
-            collegeName = this.product.tags.find(tag => tag.includes('College'))
+            
+            var mediaChangedFeatured = this.changeUrlToProduct(this.product.media[0])
+            // this.selected_media = mediaChangedFeatured
+            this.$store.commit('setSelectedMedia', mediaChangedFeatured)
+          }
+          if(this.searchName) {
+            
+            var collegeName = this.product.tags.find(tag => tag.includes('University'))
+  
             if ( collegeName ) {
               // this.selected_college_name = collegeName
               this.$store.commit('setSelectedCollegeName', collegeName)
               this.selected_college = this.product.id
               
             } else {
-              collegeName = this.product.tags.find(tag => tag.includes('Product Default'))
+              collegeName = this.product.tags.find(tag => tag.includes('College'))
               if ( collegeName ) {
-                
                 // this.selected_college_name = collegeName
                 this.$store.commit('setSelectedCollegeName', collegeName)
                 this.selected_college = this.product.id
-              } 
+                
+              } else {
+                collegeName = this.product.tags.find(tag => tag.includes('Product Default'))
+                if ( collegeName ) {
+                  
+                  // this.selected_college_name = collegeName
+                  this.$store.commit('setSelectedCollegeName', collegeName)
+                  this.selected_college = this.product.id
+                } 
+              }
+            }
+            if (collegeName) {
+              this.getProducts()
+              this.haveCollection = true
             }
           }
-          if (collegeName) {
-            this.getProducts()
-            this.haveCollection = true
+          this.loading = false
+        },
+        compilerOptions: {
+          isCustomElement: (tag) => ['popover-content', 'store-pickup', 'quantity-selector', 'product-meta', 'product-payment-terms', 'shopify-payment-terms', 'product-media', 'product-sticky-form', 'product-payment-container', 'product-variants', 'product-recommendations', 'collapsible-content', 'tabs-nav', 'scrollable-content', 'quick-buy-popover', 'line-item', 'line-item-quantity', 'quick-buy-drawer', 'product-list', 'product-item', 'free-shipping-bar', 'cart-drawer-recommendations', 'cart-drawer'].includes(tag),
+        }
+      }
+      const ProductForm = Vue.createApp(ProductFormOptions)
+      ProductForm.use(store)
+      ProductForm.mount('#product-form')
+  
+      const ProductInfoOptions = {
+        name: 'Product Info',
+        data() {
+          return {
+  
+          }
+        },
+        computed: {
+          product() {
+            return this.$store.state.product
+          },
+          selected_variant() {
+            return this.$store.state.selected_variant
+          },
+          variant_selection() {
+            return this.$store.state.variant_selection
+          },
+          selected_variant_id() {
+            return this.$store.state.selected_variant_id
+          },
+          formatedPrice() { 
+            return this.$store.getters.formatedPrice
+          },
+          formatedPriceCompare() { 
+            return this.$store.getters.formatedPriceCompare
+          }
+        },
+        methods: {
+          formatPrice(price) {
+            console.log(price)
+            return Shopify.formatMoney(price)
           }
         }
-        this.loading = false
-      },
-      compilerOptions: {
-        isCustomElement: (tag) => ['popover-content', 'store-pickup', 'quantity-selector', 'product-meta', 'product-payment-terms', 'shopify-payment-terms', 'product-media', 'product-sticky-form', 'product-payment-container', 'product-variants', 'product-recommendations', 'collapsible-content', 'tabs-nav', 'scrollable-content', 'quick-buy-popover', 'line-item', 'line-item-quantity', 'quick-buy-drawer', 'product-list', 'product-item', 'free-shipping-bar', 'cart-drawer-recommendations', 'cart-drawer'].includes(tag),
       }
-    }
-    const ProductForm = Vue.createApp(ProductFormOptions)
-    ProductForm.use(store)
-    ProductForm.mount('#product-form')
-
-    const ProductInfoOptions = {
-      name: 'Product Info',
-      data() {
-        return {
-
-        }
-      },
-      computed: {
-        product() {
-          return this.$store.state.product
+  
+      const ProductInfo = Vue.createApp(ProductInfoOptions)
+      ProductInfo.use(store)
+      ProductInfo.mount('#product-info')
+      
+      const ProductMediaOptions = {
+        name: 'Product Media',
+        data() {
+          return {
+  
+          }
         },
-        selected_variant() {
-          return this.$store.state.selected_variant
-        },
-        variant_selection() {
-          return this.$store.state.variant_selection
-        },
-        selected_variant_id() {
-          return this.$store.state.selected_variant_id
-        },
-        formatedPrice() { 
-          return this.$store.getters.formatedPrice
-        },
-        formatedPriceCompare() { 
-          return this.$store.getters.formatedPriceCompare
-        }
-      },
-      methods: {
-        formatPrice(price) {
-          console.log(price)
-          return Shopify.formatMoney(price)
+        computed: {
+          product() {
+            return this.$store.state.product
+          },
+          selected_variant() {
+            return this.$store.state.selected_variant
+          },
+          selected_variant_id() {
+            return this.$store.state.selected_variant_id
+          },
+          current_media() { 
+            return this.$store.getters.current_media
+          },
+          selected_media() { 
+            return this.$store.state.selected_media
+          }
         }
       }
-    }
-
-    const ProductInfo = Vue.createApp(ProductInfoOptions)
-    ProductInfo.use(store)
-    ProductInfo.mount('#product-info')
+  
+      const ProductMedia = Vue.createApp(ProductMediaOptions)
+      ProductMedia.use(store)
+      ProductMedia.mount('#product-media')
+      
+      const ProductStickyFormOptions = {
+        name: 'Product Sticky Form',
+        data() {
+          return {
+  
+          }
+        },
+        computed: {
+          product() {
+            return this.$store.state.product
+          },
+          buttonText() {
+            return this.$store.getters.buttonText
+          },
+          selected_variant() {
+            return this.$store.state.selected_variant
+          },
+          selected_variant_id() {
+            return this.$store.state.selected_variant_id
+          },
+          current_media() { 
+            return this.$store.getters.current_media
+          },
+          selected_media() { 
+            return this.$store.state.selected_media
+          }
+        }
+      }
+  
+      const ProductStickyForm = Vue.createApp(ProductStickyFormOptions)
+      ProductStickyForm.use(store)
+      ProductStickyForm.mount('#product-sticky-form')
+      
+      const StickyButtonOptions = {
+        name: 'Sticky Button',
+        data() {
+          return {
+  
+          }
+        },
+        computed: {
+          product() {
+            return this.$store.state.product
+          },
+          buttonText() {
+            return this.$store.getters.buttonText
+          },
+          selected_variant() {
+            return this.$store.state.selected_variant
+          },
+          selected_variant_id() {
+            return this.$store.state.selected_variant_id
+          }
+        }
+      }
+  
+      const StickyButton = Vue.createApp(StickyButtonOptions)
+      StickyButton.use(store)
+      StickyButton.mount('#sticky-button')
+      
+      const ProductRecomendationsOptions = {
+        name: 'Product Recomendations',
+        data() {
+          return {
+  
+          }
+        },
+        computed: {
+          products_recomendations() { 
+            return this.$store.state.products_recomendations
+          }
+        },
+        methods: {
+          formatPrice(price) {
+            return Shopify.formatMoney(price)
+          }
+        },
+        compilerOptions: {
+          isCustomElement: (tag) => ['popover-content', 'store-pickup', 'quantity-selector', 'product-meta', 'product-payment-terms', 'shopify-payment-terms', 'product-media', 'product-sticky-form', 'product-payment-container', 'product-variants', 'product-recommendations', 'collapsible-content', 'tabs-nav', 'scrollable-content', 'quick-buy-popover', 'line-item', 'line-item-quantity', 'quick-buy-drawer', 'product-list', 'product-item', 'free-shipping-bar', 'cart-drawer-recommendations', 'cart-drawer'].includes(tag),
+        }
+      }
+  
+      const ProductRecomendations = Vue.createApp(ProductRecomendationsOptions)
+      ProductRecomendations.use(store)
+      ProductRecomendations.mount('#product-recomedations')
+      
+      const QuickProductRecomendationsOptions = {
+        name: 'Quick Product Recomendations',
+        data() {
+          return {
+  
+          }
+        },
+        computed: {
+          products_recomendations() { 
+            return this.$store.state.products_recomendations
+          }
+        },
+        methods: {
+          formatPrice(price) {
+            return Shopify.formatMoney(price)
+          }
+        },
+        compilerOptions: {
+          isCustomElement: (tag) => ['popover-content', 'store-pickup', 'quantity-selector', 'product-meta', 'product-payment-terms', 'shopify-payment-terms', 'product-media', 'product-sticky-form', 'product-payment-container', 'product-variants', 'product-recommendations', 'collapsible-content', 'tabs-nav', 'scrollable-content', 'quick-buy-popover', 'line-item', 'line-item-quantity', 'quick-buy-drawer', 'product-list', 'product-item', 'free-shipping-bar', 'cart-drawer-recommendations', 'cart-drawer'].includes(tag),
+        }
+      }
+  
+      const QuickProductRecomendations = Vue.createApp(QuickProductRecomendationsOptions)
+      QuickProductRecomendations.use(store)
+      QuickProductRecomendations.mount('#quickbuy-recomendations-vue')
+      
+      const BreadcrumbOptions = {
+        name: 'Breadcrumb',
+        data() {
+          return {
+  
+          }
+        },
+        computed: {
+          product() { 
+            return this.$store.state.product
+          }
+        }
+      }
+  
+      const Breadcrumb = Vue.createApp(BreadcrumbOptions)
+      Breadcrumb.use(store)
+      Breadcrumb.mount('#breadcumb-item')
+  
+    </script>
+  
+    {%- endif -%}
+    <span class="hidden template-name">{{ template.name }}</span>
+    {% if template.name == 'collection' %}
     
-    const ProductMediaOptions = {
-      name: 'Product Media',
-      data() {
-        return {
-
-        }
-      },
-      computed: {
-        product() {
-          return this.$store.state.product
-        },
-        selected_variant() {
-          return this.$store.state.selected_variant
-        },
-        selected_variant_id() {
-          return this.$store.state.selected_variant_id
-        },
-        current_media() { 
-          return this.$store.getters.current_media
-        },
-        selected_media() { 
-          return this.$store.state.selected_media
-        }
-      }
-    }
-
-    const ProductMedia = Vue.createApp(ProductMediaOptions)
-    ProductMedia.use(store)
-    ProductMedia.mount('#product-media')
-    
-    const ProductStickyFormOptions = {
-      name: 'Product Sticky Form',
-      data() {
-        return {
-
-        }
-      },
-      computed: {
-        product() {
-          return this.$store.state.product
-        },
-        buttonText() {
-          return this.$store.getters.buttonText
-        },
-        selected_variant() {
-          return this.$store.state.selected_variant
-        },
-        selected_variant_id() {
-          return this.$store.state.selected_variant_id
-        },
-        current_media() { 
-          return this.$store.getters.current_media
-        },
-        selected_media() { 
-          return this.$store.state.selected_media
-        }
-      }
-    }
-
-    const ProductStickyForm = Vue.createApp(ProductStickyFormOptions)
-    ProductStickyForm.use(store)
-    ProductStickyForm.mount('#product-sticky-form')
-    
-    const StickyButtonOptions = {
-      name: 'Sticky Button',
-      data() {
-        return {
-
-        }
-      },
-      computed: {
-        product() {
-          return this.$store.state.product
-        },
-        buttonText() {
-          return this.$store.getters.buttonText
-        },
-        selected_variant() {
-          return this.$store.state.selected_variant
-        },
-        selected_variant_id() {
-          return this.$store.state.selected_variant_id
-        }
-      }
-    }
-
-    const StickyButton = Vue.createApp(StickyButtonOptions)
-    StickyButton.use(store)
-    StickyButton.mount('#sticky-button')
-    
-    const ProductRecomendationsOptions = {
-      name: 'Product Recomendations',
-      data() {
-        return {
-
-        }
-      },
-      computed: {
-        products_recomendations() { 
-          return this.$store.state.products_recomendations
-        }
-      },
-      methods: {
-        formatPrice(price) {
-          return Shopify.formatMoney(price)
-        }
-      },
-      compilerOptions: {
-        isCustomElement: (tag) => ['popover-content', 'store-pickup', 'quantity-selector', 'product-meta', 'product-payment-terms', 'shopify-payment-terms', 'product-media', 'product-sticky-form', 'product-payment-container', 'product-variants', 'product-recommendations', 'collapsible-content', 'tabs-nav', 'scrollable-content', 'quick-buy-popover', 'line-item', 'line-item-quantity', 'quick-buy-drawer', 'product-list', 'product-item', 'free-shipping-bar', 'cart-drawer-recommendations', 'cart-drawer'].includes(tag),
-      }
-    }
-
-    const ProductRecomendations = Vue.createApp(ProductRecomendationsOptions)
-    ProductRecomendations.use(store)
-    ProductRecomendations.mount('#product-recomedations')
-    
-    const QuickProductRecomendationsOptions = {
-      name: 'Quick Product Recomendations',
-      data() {
-        return {
-
-        }
-      },
-      computed: {
-        products_recomendations() { 
-          return this.$store.state.products_recomendations
-        }
-      },
-      methods: {
-        formatPrice(price) {
-          return Shopify.formatMoney(price)
-        }
-      },
-      compilerOptions: {
-        isCustomElement: (tag) => ['popover-content', 'store-pickup', 'quantity-selector', 'product-meta', 'product-payment-terms', 'shopify-payment-terms', 'product-media', 'product-sticky-form', 'product-payment-container', 'product-variants', 'product-recommendations', 'collapsible-content', 'tabs-nav', 'scrollable-content', 'quick-buy-popover', 'line-item', 'line-item-quantity', 'quick-buy-drawer', 'product-list', 'product-item', 'free-shipping-bar', 'cart-drawer-recommendations', 'cart-drawer'].includes(tag),
-      }
-    }
-
-    const QuickProductRecomendations = Vue.createApp(QuickProductRecomendationsOptions)
-    QuickProductRecomendations.use(store)
-    QuickProductRecomendations.mount('#quickbuy-recomendations-vue')
-    
-    const BreadcrumbOptions = {
-      name: 'Breadcrumb',
-      data() {
-        return {
-
-        }
-      },
-      computed: {
-        product() { 
-          return this.$store.state.product
-        }
-      }
-    }
-
-    const Breadcrumb = Vue.createApp(BreadcrumbOptions)
-    Breadcrumb.use(store)
-    Breadcrumb.mount('#breadcumb-item')
-
-  </script>
-
-  {%- endif -%}
-  <span class="hidden template-name">{{ template.name }}</span>
-  {% if template.name == 'collection' %}
+      
+      {% if collection.title contains "-" %}
+        {% assign collection_splited = collection.title | split: " - " %}
+        {% assign school_collection = collection_splited[0] %}
+        {% assign school_collection_formated = school_collection | downcase | split: " " | join: '-' %}
+        {% assign cloth_collection = collection_splited[1] %}
+        <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "{{ 'general.breadcrumb.home' | t }}",
+                "item": "https://www.hypeandvice.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "{{ school_collection }}",
+                "item": "https://www.hypeandvice.com{{ collections[school_collection_formated].url }}"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "{{ cloth_collection }}",
+                "item": "https://www.hypeandvice.com{{ collection.url }}"
+              }
+            ]
+          }
+        </script>
+      {% else %}
+        <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "{{ 'general.breadcrumb.home' | t }}",
+                "item": "https://www.hypeandvice.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "{{ collection.title }}",
+                "item": "https://www.hypeandvice.com{{ collection.url }}"
+              }
+            ]
+          }
+        </script>
+      {% endif %}
+    {%- endif -%}
+  
+    </body>
   
     
-    {% if collection.title contains "-" %}
-      {% assign collection_splited = collection.title | split: " - " %}
-      {% assign school_collection = collection_splited[0] %}
-      {% assign school_collection_formated = school_collection | downcase | split: " " | join: '-' %}
-      {% assign cloth_collection = collection_splited[1] %}
-      <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "{{ 'general.breadcrumb.home' | t }}",
-              "item": "https://www.hypeandvice.com"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "{{ school_collection }}",
-              "item": "https://www.hypeandvice.com{{ collections[school_collection_formated].url }}"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "{{ cloth_collection }}",
-              "item": "https://www.hypeandvice.com{{ collection.url }}"
-            }
-          ]
-        }
-      </script>
-    {% else %}
-      <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "{{ 'general.breadcrumb.home' | t }}",
-              "item": "https://www.hypeandvice.com"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "{{ collection.title }}",
-              "item": "https://www.hypeandvice.com{{ collection.url }}"
-            }
-          ]
-        }
-      </script>
-    {% endif %}
-  {%- endif -%}
-
-  </body>
-
-  
-</html>
+  </html>

@@ -1456,6 +1456,10 @@ p + .button-group,
   --container-outer-margin: 0px; /* Inside a container only the gutter remains as margin */
 }
 
+.container.container-full-width {
+  max-width: none !important;
+}
+
 .container--small {
   max-width: 930px;
 }
@@ -4194,9 +4198,9 @@ split-lines {
     transform: translateZ(0); /* Allow to promote on its own layer */
   }
 
-  .features--image-zoom .image-zoom:hover img {
-    transform: scale(1.03);
-  }
+  /*.features--image-zoom .image-zoom:hover img {
+    transform: scale(1.03); ANIMATION REMOVED BY REQUEST OF THE CLIENT
+  }*/
 }
 
 /**
@@ -5201,7 +5205,7 @@ select:focus,
   .content-box--small,
   .content-box--medium,
   .container--flush .content-box--large {
-    margin-left: 24px;
+    /*margin-left: 24px;*/
     margin-right: 24px;
   }
 
@@ -9125,10 +9129,10 @@ input:checked + .popover__choice-label::after,
 }
 
 @media screen and (min-width: 1000px) {
-  .footer {
+  /*.footer {
     padding-top: 72px;
     padding-bottom: 50px;
-  }
+  }*/
 
   .footer__item-list {
     grid-auto-flow: column;
@@ -9888,9 +9892,22 @@ input:checked + .popover__choice-label::after,
   /* gap: var(--mega-menu-column-gap); NOT YET FULLY SUPPORTED */
 }
 
+.mega-menu__columns-wrapper-league { 
+  display: flex;
+  flex-direction: column; 
+  align-content: flex-start;
+  flex-wrap: wrap;
+  height: 32vw;
+  margin: calc(-1 * var(--mega-menu-column-gap) / 2);
+}
+
 @media only screen and (min-width: 1694px) { 
   .mega-menu__columns-wrapper {
-    height: 590px; /* So all elements are displayed when resolution is higher than 1736px */
+    height: 590px;
+  }
+
+  .mega-menu__columns-wrapper-league { 
+    height: 500px;
   }
 }
 
@@ -10683,7 +10700,7 @@ input:checked + .popover__choice-label::after,
 }
 
 .list-collections__item-image {
-  min-height: 120px; /* Ensure enough space for text */
+  min-height: 35.5vw;
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -10701,6 +10718,20 @@ input:checked + .popover__choice-label::after,
   z-index: 1;
   padding-left: 24px;
   padding-right: 24px;
+}
+
+.list-collections__item-info.league-list {
+  width: auto !important;
+  top: auto !important;
+  bottom: 0 !important;
+  text-align: left !important;
+}
+
+.list-collections__item-info.league-list.league_top_text {
+  width: auto!important;
+  top: 25px!important;
+  bottom: auto!important;
+  text-align: left!important;
 }
 
 @media screen and (min-width: 741px) {
@@ -10916,6 +10947,10 @@ input:checked + .popover__choice-label::after,
     grid-auto-columns: 140px;
   }
 
+  .logo-list__list.center-logos {
+    grid-auto-columns: auto !important;
+  }
+
   .logo-list--grid {
     padding-left: var(--container-gutter);
     padding-right: var(--container-gutter); /* We add extra internal spacing on pocket */
@@ -10959,6 +10994,11 @@ input:checked + .popover__choice-label::after,
     overflow: hidden; /* We will scroll in JS */
     margin-left: calc(56px + 32px);
     margin-right: calc(56px + 32px); /* 56px is the width of arrows and 32px the extra space we add between arrows and logos */
+  }
+
+  .logo-list--carousel.logo-list-no-margins .logo-list__prev-next + .logo-list__list {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
   .logo-list__arrow {
@@ -15027,6 +15067,24 @@ shopify-payment-terms {
   font-family: "Recoleta-SemiBold";
   src: url("https://cdn.shopify.com/s/files/1/0061/4167/3590/files/Recoleta_SemiBold.otf?v=1668790087") format("opentype");
 }
+@font-face {
+    font-family: 'ZurichBT';
+    src: url('https://cdn.shopify.com/s/files/1/0061/4167/3590/files/ZurichBT.eot?v=1705512790');
+    src: url('https://cdn.shopify.com/s/files/1/0061/4167/3590/files/ZurichBT.eot?v=1705512790#iefix') format('embedded-opentype'),
+        url('https://cdn.shopify.com/s/files/1/0061/4167/3590/files/ZurichBT.woff2?v=1705512790') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0061/4167/3590/files/ZurichBT.woff?v=1705512790') format('woff'),
+        url('https://cdn.shopify.com/s/files/1/0061/4167/3590/files/ZurichBT.ttf?v=1705512867') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+  font-family: 'Zurich Ultra Black Extended BT';
+  src: url('https://cdn.shopify.com/s/files/1/0061/4167/3590/files/ZurichBT-UltraBlackExtended.woff2?v=1706729369') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 .mt-4{
   margin-top:1.5rem;
@@ -15119,7 +15177,6 @@ shopify-payment-terms {
   visibility: visible !important;
 }
 
-
 .show-more-button {
   display: block;
 }
@@ -15135,9 +15192,21 @@ shopify-payment-terms {
   margin: 0px;
   width: 20%;
 }
+
+.menu-image-league {
+  margin: 0px;
+  width: 25%;
+}
+
 .menu-wrapper-image {
   width: 100%;
   justify-content: center;
+  margin: 0px;
+}
+
+.menu-wrapper-image-league {
+  width: 100%;
+  justify-content: flex-start;
   margin: 0px;
 }
 
@@ -15147,5 +15216,217 @@ shopify-payment-terms {
   }
   .mobile-images {
     padding: 0px;
+  }
+}
+
+/* USED FOR 'collection-list' CHANGES AND SECTIONS BASED ON IT LIKE 'categories' */
+
+  .category__item-info {
+    background: white !important;
+    padding: 10px 0;
+  } 
+
+  .list-collections__item-list.category-list {
+    display: flex !important;
+    min-width: max-content !important;
+  }
+
+  .list-collections__item.category-collections__item {
+    width: 20% !important;
+  }
+
+  .list-collections__prev-next {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .my-nav-prev, .my-nav-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .my-nav-prev {
+    left: 0;
+  }
+  
+  .my-nav-next {
+    right: 0;
+  }
+
+  .prev-next-button.prev-next-button-styles {
+    background: transparent;
+    border: transparent;
+  }
+
+  .container.no-padding {
+    padding: 0 !important;
+    /*margin: 0 !important;*/
+  }
+
+  @media screen and (max-width: 750px) {
+    .list-collections--carousel.list-collection--category .list-collections__item-list {
+      width: 242% !important;
+    }
+
+    .list-collections__item-image.image-height {
+      height: 60vw;
+    }
+
+    .container.no-padding {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    .prev-next-button.prev-next-button-styles {
+      background: none;
+      color: inherit;
+      border: none;
+      border-radius: 0;
+      transition: none;
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+
+
+    .list-collections__item-image.image-height {
+      height: 26.39vw;
+      max-height: 380px
+    }
+  }
+
+  @media screen and (min-width: 750px) and (max-width: 1440px) {
+    .list-collections__item-list.category-list {
+      gap: 10px !important;
+    }
+
+    .list-collections--grid .list-collections__item-list.grid-2-columns {
+      grid-auto-columns: auto;
+      grid-template-columns: none;
+      grid-auto-flow: row;
+      width: auto;
+      min-width: auto;
+      padding: 0;
+    }
+  }
+
+.list-collections__item-list.grid-2-columns {
+  grid-template-columns: repeat(auto-fit,calc(50% - (15px) / 2))!important;
+  gap: 15px!important;
+}
+
+.below-text-header {
+  text-align: left !important;
+}
+
+.below-text-subheader {
+  text-align: left !important;
+  margin: 0 !important;
+}
+
+.prev-next-buttons.prev-next-no-right {
+  right: 0;
+}
+
+/* CHANGES TO THE CATEGORIES CAROUSEL TO LIMIT ITS WIDTH */
+
+/*.list-collections.list-collections--carousel.list-collection--category {
+  max-width: 1666px;
+  margin: auto;
+}*/
+
+.list-collections__item-list {
+  grid-gap: 29px;
+}
+
+/*
+.list-collections__scroller.categories-custom.hide-scrollbar.is-scrollable {
+  max-width: 91.5%;
+  margin: auto;
+}*/
+
+.list-collections__prev-next.prev-next-buttons.categories-custom {
+  width: 100%;
+  display: block;
+  position: absolute;
+}
+
+.list-collections__item-list.category-list {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.list-collections__item-list.league-list {
+  grid-gap: 0;
+  grid-template-columns: repeat(auto-fit,calc(100% / 3)) !important;
+}
+
+.section__header.new-left-design {
+  min-width: 100% !important;
+  /*max-width: 1500px !important;*/
+  text-align: left !important;
+}
+
+/* END OF CHANGES TO THE CATEGORIES CAROUSEL TO LIMIT ITS WIDTH */
+
+/* CHANGES TO THE MOBILE FOOTER */
+@media screen and (max-width: 750px) {
+  .footer__item-list {
+    grid-template-columns: 1fr !important;
+  }
+}
+/* END OF CHANGES TO THE MOBILE FOOTER */
+
+/* STYLES FOR THE LEAGUE LIST SECTION */
+@media screen and (max-width: 750px) {
+  .list-collections__item-list.league-list {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+
+.list-collections__prev-next.product-list {
+  position: absolute;
+  pointer-events: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: 42%;
+}
+
+.heading-category-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shop-all-text {
+  text-decoration: underline;
+  color: #C2C2C2 !important;
+}
+
+:root {
+  --max-margin-top: -475px;
+}
+
+.product-description li:first-child{
+  padding-top: 24px;
+}
+
+.description-toggle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .shop-all-text {
+    font-size: 10px;
+  }
+
+  .product-list-hide-arrows {
+    display: none !important;
   }
 }

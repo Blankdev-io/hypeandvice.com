@@ -1,3 +1,5 @@
+{%- assign dropdown_counter = 0 -%}
+
 <style>
   #shopify-section-{{ section.id }} .footer {
     {%- assign border_color = settings.footer_background | color_mix: settings.footer_text_color, 85 -%}
@@ -7,10 +9,29 @@
     --text-color: {{ settings.footer_text_color.red }}, {{ settings.footer_text_color.green }}, {{ settings.footer_text_color.blue }};
     --border-color: {{ border_color.red }}, {{ border_color.green }}, {{ border_color.blue }};
   }
+
+
+  .footer-logo-container {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-logo-container > img:first-of-type {
+    max-width: 50px;
+  }
+  
+  .footer__logo {
+    width: 70px;
+  }
 </style>
 
 <footer class="footer {% if settings.footer_background == settings.background %}footer--bordered{% endif %}">
   <div class="container">
+    {%- for block in section.blocks -%}
+    {% if block.settings.html != blank %}{{ block.settings.html }}{% endif %}
+    {% endfor %}
     <div class="footer__inner">
       <div class="footer__item-list">
         {%- for block in section.blocks -%}
@@ -32,10 +53,34 @@
                   </div>
                 {%- endif -%}
 
+                <div class="footer-logo-container">
+                  {% if block.settings.logo1 != blank %}
+                     <img loading="lazy" sizes="{{ block.settings.logo1_width }}px" class="footer__logo" {% render 'image-attributes', image: block.settings.logo1, sizes: '100, 200, 300, 400, 500, 600' %}>
+                  {% endif %}
+
+                  {% if block.settings.logo2 != blank %}
+                     <img loading="lazy" sizes="{{ block.settings.logo2_width }}px" class="footer__logo" {% render 'image-attributes', image: block.settings.logo2, sizes: '100, 200, 300, 400, 500, 600' %}>
+                  {% endif %}
+
+                  {% if block.settings.logo3 != blank %}
+                     <img loading="lazy" sizes="{{ block.settings.logo3_width }}px" class="footer__logo" {% render 'image-attributes', image: block.settings.logo3, sizes: '100, 200, 300, 400, 500, 600' %}>
+                  {% endif %}
+
+                  {% if block.settings.logo4 != blank %}
+                     <img loading="lazy" sizes="{{ block.settings.logo4_width }}px" class="footer__logo" {% render 'image-attributes', image: block.settings.logo4, sizes: '100, 200, 300, 400, 500, 600' %}>
+                  {% endif %}
+
+                  {% if block.settings.logo5 != blank %}
+                     <img loading="lazy" sizes="{{ block.settings.logo5_width }}px" class="footer__logo" {% render 'image-attributes', image: block.settings.logo5, sizes: '100, 200, 300, 400, 500, 600' %}>
+                  {% endif %}
+                </div>
+
               {%- when 'links' -%}
                 {%- assign menu = block.settings.menu -%}
+                {%- assign dropdown_counter = dropdown_counter | plus: 1 -%}
 
                 {%- if menu != blank -%}
+                <div class="hidden-pocket">
                   <p class="footer__item-title heading heading--small">{{ menu.title }}</p>
 
                   <div class="footer__item-content">
@@ -46,6 +91,28 @@
                         </li>
                       {%- endfor -%}
                     </ul>
+                  </div>
+                </div>
+                {%- endif -%}
+
+                {%- if menu != blank -%}
+                  <div class="description-dropdown hidden-lap-and-up">
+                    <button id="Toggle-{{ dropdown_counter }}" class="description-toggle">
+                      {{ menu.title }}
+                      <svg id="downArrow-{{ dropdown_counter }}" width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; display: inline;">
+                        <path d="M19 3L11 11L3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <svg id="upArrow-{{ dropdown_counter }}" width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; display: none;">
+                        <path d="M3 11L11 3L19 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <div id="productDescription-{{ dropdown_counter }}" class="product-description" style="display: none;">
+                      {%- for link in menu.links -%}
+                        <li class="linklist__item" style="list-style-type: none;">
+                          <a href="{{ link.url }}" class="link--faded">{{ link.title }}</a>
+                        </li>
+                      {%- endfor -%}
+                    </div>
                   </div>
                 {%- endif -%}
 
@@ -227,6 +294,41 @@
   </cookie-bar>
 {%- endif -%}
 
+
+<script>
+  document.getElementById("Toggle-1").addEventListener("click", function() {
+    var description = document.getElementById("productDescription-1");
+    var downArrow = document.getElementById("downArrow-1");
+    var upArrow = document.getElementById("upArrow-1");
+    
+    if (description.style.display === "none") {
+      description.style.display = "block";
+      downArrow.style.display = "none";
+      upArrow.style.display = "inline";
+    } else {
+      description.style.display = "none";
+      downArrow.style.display = "inline";
+      upArrow.style.display = "none";
+    }
+  });
+
+  document.getElementById("Toggle-2").addEventListener("click", function() {
+    var description = document.getElementById("productDescription-2");
+    var downArrow = document.getElementById("downArrow-2");
+    var upArrow = document.getElementById("upArrow-2");
+    
+    if (description.style.display === "none") {
+      description.style.display = "block";
+      downArrow.style.display = "none";
+      upArrow.style.display = "inline";
+    } else {
+      description.style.display = "none";
+      downArrow.style.display = "inline";
+      upArrow.style.display = "none";
+    }
+  });
+</script>
+
 {% schema %}
 {
   "name": "Footer",
@@ -309,6 +411,18 @@
       ]
     },
     {
+      "type": "html",
+      "name": "HTML",
+      "settings": [
+        {
+          "type": "text",
+          "id": "html",
+          "label": "HTML",
+          "default": "HTML goes here"
+        }
+      ]
+    },
+    {
       "type": "text",
       "name": "Text",
       "settings": [
@@ -323,6 +437,36 @@
           "id": "content",
           "label": "Content",
           "default": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.</p>"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo1",
+          "label": "Image",
+          "info": "300 x 300px .png recommended"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo2",
+          "label": "Image",
+          "info": "300 x 300px .png recommended"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo3",
+          "label": "Image",
+          "info": "300 x 300px .png recommended"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo4",
+          "label": "Image",
+          "info": "300 x 300px .png recommended"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo5",
+          "label": "Image",
+          "info": "300 x 300px .png recommended"
         }
       ]
     },

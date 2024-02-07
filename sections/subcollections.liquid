@@ -1,3 +1,35 @@
+{% if section.settings.seo_text %}
+<style>
+  #seoText {
+    max-width: 1440px;
+    height: 120px;
+    overflow-y: auto;
+    position: relative; 
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    width: 90vw;
+  }
+
+  .overlay {
+    position: sticky;
+    bottom: 0;
+    height: 30px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
+    pointer-events: none;
+  }
+</style>
+  
+  {% if collection.metafields.custom.seo_text != blank %}
+    <div id="seoText">
+      {{ collection.metafields.custom.seo_text | metafield_tag }}
+      <div class="overlay"></div>
+    </div>
+  {% endif %}
+  
+{% else %}
+  
 {%- if section.settings.background != settings.background and section.settings.background != 'rgba(0,0,0,0)' -%}
   {%- assign blends_with_background = false -%}
 {%- else -%}
@@ -89,6 +121,9 @@
                   <img class="list-collections__item-image" src="{{ collection.metafields.custom.subcollection_featured_image }}" alt="{{ collection.title | escape }}">
                 {%- elsif collection.image -%}
                   <img class="list-collections__item-image" src="{{ collection.featured_image | img_url: '500x' }}" alt="{{ collection.title | escape }}">
+                {% else %}
+                  {% assign first_product = collection.products.first %}
+                  <img class="list-collections__item-image" src="{{ first_product.featured_image | img_url: '500x' }}" alt="{{ collection.title | escape }}">
                 {%- endif -%}
               </div>
             <div class="list-collections__item-info text-container text-container-background">
@@ -128,7 +163,7 @@
   </div>
   
 </section>
-
+{% endif %}
 
 {% schema %}
 {
@@ -137,9 +172,8 @@
   "settings": [
     {
       "type": "checkbox",
-      "id": "reveal_on_scroll",
-      "label": "Reveal on scroll",
-      "info": "Show animation when section becomes visible.",
+      "id": "seo_text",
+      "label": "Display SEO text box instead of subcollection",
       "default": false
     },
     {
