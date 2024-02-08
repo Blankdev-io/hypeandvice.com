@@ -15,7 +15,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/MLS_COMING_SOON.png",
-            "mobile_image": "shopify:\/\/shop_images\/Coming_soon_MLS_Mobile.png",
+            "mobile_image": "shopify:\/\/shop_images\/MLS_MOBILE.png",
             "show_videos": false,
             "autoplay": true,
             "loop": true,
@@ -45,7 +45,7 @@
             "button_2_text": "",
             "button_2_link": "",
             "text_color": "#000000",
-            "text_color_mobile": "#ffffff",
+            "text_color_mobile": "#000000",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
