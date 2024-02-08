@@ -15269,10 +15269,6 @@ shopify-payment-terms {
   }
 
   @media screen and (max-width: 750px) {
-    .list-collections--carousel.list-collection--category .list-collections__item-list {
-      width: 242% !important;
-    }
-
     .list-collections__item-image.image-height {
       height: 60vw;
     }
