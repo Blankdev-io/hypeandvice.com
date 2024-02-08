@@ -74,7 +74,7 @@
 <recently-viewed-products section-id="{{ section.id }}" products-count="{{ section.settings.products_count | escape }}" {% if request.page_type == 'product' %}exclude-product-id="{{ product.id | escape }}"{% endif %} class="section {% unless blends_with_background %}section--flush{% endunless %}">
   {%- if request.page_type == 'search' and search.performed and search.results_count > 0 -%}
     <div class="section__color-wrapper">
-      <div class="container {% unless blends_with_background %}vertical-breather{% endunless %}">
+      <div class="container container-full-width {% unless blends_with_background %}vertical-breather{% endunless %}">
         {%- if section.settings.title != blank or section.settings.subheading != blank -%}
           <header class="section__header new-left-design">
             <div class="text-container">
