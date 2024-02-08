@@ -21,7 +21,7 @@
     {% endif %}
   {% endfor %}
 {% elsif template contains 'page' %}
-  {% if page.title contains 'NCAA' or page.title contains 'schools' %}
+  {% if page.title contains 'NCAA' or page.title contains 'school' %}
     {% assign league = 'NCAA' %}
   {% elsif page.title contains 'NBA' %}
     {% assign league = 'NBA' %}
