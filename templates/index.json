@@ -187,7 +187,7 @@
             "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/pages\/ncaa",
-            "text_color": "#ffffff",
+            "text_color": "#000000",
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
@@ -206,7 +206,7 @@
             "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/pages\/mls",
-            "text_color": "#ffffff",
+            "text_color": "#000000",
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
@@ -225,7 +225,7 @@
             "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/pages\/nba",
-            "text_color": "#ffffff",
+            "text_color": "#000000",
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
@@ -244,8 +244,8 @@
         "heading_font_desktop": 24,
         "heading_font_mobile": 16,
         "heading_font_family": "Zurich Extended",
-        "category_font_desktop": 18,
-        "category_font_mobile": 16,
+        "category_font_desktop": 22,
+        "category_font_mobile": 20,
         "category_font_family": "Quantico-Bold",
         "category_margin": 1,
         "background": "rgba(0,0,0,0)",
