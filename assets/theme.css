@@ -15229,7 +15229,6 @@ shopify-payment-terms {
   .list-collections__item-list.category-list {
     display: flex !important;
     width: max-content!important;
-    align-items: flex-start;
     padding-left: 0;
     padding-right: 0;
   }
