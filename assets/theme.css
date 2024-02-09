@@ -15272,7 +15272,7 @@ shopify-payment-terms {
 
   @media screen and (max-width: 750px) {
     .list-collections__item.category-collections__item {
-      width: 170px;
+      max-width: 170px;
     }
 
     .list-collections__item-image.image-height {
