@@ -15228,9 +15228,7 @@ shopify-payment-terms {
 
   .list-collections__item-list.category-list {
     display: flex !important;
-    width: max-content!important;
-    padding-left: 0;
-    padding-right: 0;
+    min-width: max-content !important;
   }
 
   .list-collections__item.category-collections__item {
@@ -15356,6 +15354,11 @@ shopify-payment-terms {
   width: 100%;
   display: block;
   position: absolute;
+}
+
+.list-collections__item-list.category-list {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .list-collections__item-list.league-list {
