@@ -15234,9 +15234,9 @@ shopify-payment-terms {
     padding-right: 0;
   }
 
-  .list-collections__item.category-collections__item {
+  /*.list-collections__item.category-collections__item {
     width: 20% !important;
-  }
+  }*/
 
   .list-collections__prev-next {
     position: absolute;
