@@ -304,7 +304,7 @@
             "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/collections\/tops",
-            "text_color": "#c2c2c2",
+            "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
@@ -323,7 +323,7 @@
             "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/collections\/bottoms",
-            "text_color": "#c2c2c2",
+            "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
@@ -342,7 +342,7 @@
             "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/collections\/outerwear",
-            "text_color": "#c2c2c2",
+            "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
