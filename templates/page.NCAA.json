@@ -302,6 +302,18 @@
             "text_color": "#000000"
           }
         },
+        "collection_VXV8ht": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/B7DDA8B2-D07E-42AD-B0AD-E1E017BE2C8F.jpg",
+            "subheading": "",
+            "title": "BASEBALL JERSEYS",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/baseball-jerseys",
+            "text_color": "#000000"
+          }
+        },
         "collection_RFLjaG": {
           "type": "collection",
           "settings": {
@@ -374,18 +386,6 @@
             "text_color": "#000000"
           }
         },
-        "collection_VXV8ht": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/IMG_0661_800x_1.webp",
-            "subheading": "",
-            "title": "PUFFERS",
-            "link_text": "",
-            "link_url": "shopify:\/\/collections\/college-puffers",
-            "text_color": "#000000"
-          }
-        },
         "collection_LzKD4w": {
           "type": "collection",
           "settings": {
@@ -413,13 +413,13 @@
       },
       "block_order": [
         "collection_n68GW3",
+        "collection_VXV8ht",
         "collection_RFLjaG",
         "collection_bxgx8a",
         "collection_m3Cwax",
         "collection_gC9q6X",
         "collection_fBAXTJ",
         "collection_imHYYj",
-        "collection_VXV8ht",
         "collection_LzKD4w",
         "collection_9TRyr8"
       ],
