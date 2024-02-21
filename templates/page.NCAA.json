@@ -287,88 +287,6 @@
         "logo_background": "rgba(0,0,0,0)"
       }
     },
-    "league_list_hVNY6R": {
-      "type": "league-list",
-      "blocks": {
-        "collection_xppPYP": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/JERSEYS_V1.png",
-            "custom_height": false,
-            "custom_height_size": 500,
-            "custom_height_size_mobile": 200,
-            "league_top_text": true,
-            "subheading": "",
-            "title": "TOPS",
-            "below_text": false,
-            "link_text": "",
-            "link_url": "shopify:\/\/collections\/tops",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "collection_Qyiiz9": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/BOTTOMS_V1.png",
-            "custom_height": false,
-            "custom_height_size": 500,
-            "custom_height_size_mobile": 200,
-            "league_top_text": true,
-            "subheading": "",
-            "title": "BOTTOMS",
-            "below_text": false,
-            "link_text": "",
-            "link_url": "shopify:\/\/collections\/bottoms",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "collection_kKayya": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/OUTERWEAR_V2.png",
-            "custom_height": false,
-            "custom_height_size": 500,
-            "custom_height_size_mobile": 200,
-            "league_top_text": true,
-            "subheading": "",
-            "title": "OUTERWEAR",
-            "below_text": false,
-            "link_text": "",
-            "link_url": "shopify:\/\/collections\/outerwear",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "collection_xppPYP",
-        "collection_Qyiiz9",
-        "collection_kKayya"
-      ],
-      "settings": {
-        "reveal_on_scroll": false,
-        "subheading": "",
-        "title": "",
-        "custom_font": true,
-        "heading_font_desktop": 16,
-        "heading_font_mobile": 12,
-        "heading_font_family": "Zurich Extended",
-        "category_font_desktop": 16,
-        "category_font_mobile": 16,
-        "category_font_family": "Zurich Extended",
-        "category_margin": 2,
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
     "categories_KDmjHe": {
       "type": "categories",
       "blocks": {
@@ -516,6 +434,88 @@
         "category_font_mobile": 12,
         "category_font_family": "Quantico-Bold",
         "background": "#ffffff",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "league_list_hVNY6R": {
+      "type": "league-list",
+      "blocks": {
+        "collection_xppPYP": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/JERSEYS_V1.png",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
+            "league_top_text": true,
+            "subheading": "",
+            "title": "TOPS",
+            "below_text": false,
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/tops",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_Qyiiz9": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/BOTTOMS_V1.png",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
+            "league_top_text": true,
+            "subheading": "",
+            "title": "BOTTOMS",
+            "below_text": false,
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/bottoms",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_kKayya": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/OUTERWEAR_V2.png",
+            "custom_height": false,
+            "custom_height_size": 500,
+            "custom_height_size_mobile": 200,
+            "league_top_text": true,
+            "subheading": "",
+            "title": "OUTERWEAR",
+            "below_text": false,
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/outerwear",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "collection_xppPYP",
+        "collection_Qyiiz9",
+        "collection_kKayya"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "subheading": "",
+        "title": "",
+        "custom_font": true,
+        "heading_font_desktop": 16,
+        "heading_font_mobile": 12,
+        "heading_font_family": "Zurich Extended",
+        "category_font_desktop": 16,
+        "category_font_mobile": 16,
+        "category_font_family": "Zurich Extended",
+        "category_margin": 2,
+        "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
     },
@@ -1212,8 +1212,8 @@
   "order": [
     "165065000576ab84e7",
     "165065396872bf5f8b",
-    "league_list_hVNY6R",
     "categories_KDmjHe",
+    "league_list_hVNY6R",
     "2cd6223b-dc18-4eda-91cc-768082b54a6a",
     "16506544520a12bd2c",
     "165454654631be36fe",
