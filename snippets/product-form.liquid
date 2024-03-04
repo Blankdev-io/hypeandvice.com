@@ -164,6 +164,24 @@
                       </template>
                     </div>
                   </template>
+
+                  {% comment %}
+                  ADDED 03/04/24 TO HANDLE PRODUCTS THAT ONLY HAVE ONE VARIANT (SIZE)
+                  {% endcomment %}
+                  
+                  {% if product.options.size == 1 and product.options.first == 'Size' %}
+                    <template v-if="option.name == 'Size'">
+                      <div class="block-swatch-list">
+                      <template v-for="(value, i) in option.values">                     
+                        <div :class="{ 'is-disabled': isSingleVariantUnavailable(value), 'block-swatch': true }">
+                          <input v-if="value == selected_variant.option1 || value == selected_variant.option2 || value == selected_variant.option3" class="block-swatch__radio visually-hidden" type="radio" :name="`option${option.position}`" :value="value" :form="`product-form-{{section.id}}-${product.id}`" :id="`option-{{ section.id }}-{{ template.suffix }}-${product.id}-${index}-${i}`" checked>
+                          <input v-else class="block-swatch__radio visually-hidden" type="radio" :name="`option${option.position}`" :value="value" :form="`product-form-{{section.id}}-${product.id}`" :id="`option-{{ section.id }}-{{ template.suffix }}-${product.id}-${index}-${i}`">
+                          <label  class="block-swatch__item" :for="`option-{{ section.id }}-{{ template.suffix }}-${product.id}-${index}-${i}`" v-on:click="changeSize(value, option)" v-html="value"></label>
+                        </div>
+                      </template>
+                      </div>
+                    </template>
+                  {% else %}
                   <template v-if="option.name == 'Size'">
                     <div class="block-swatch-list">
                     <template v-for="(value, i) in option.values">                     
@@ -175,6 +193,7 @@
                     </template>
                     </div>
                   </template>
+                  {% endif %} 
                 </div>
             </product-variants>
           {%- endunless -%}
