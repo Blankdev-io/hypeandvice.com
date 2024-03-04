@@ -794,6 +794,14 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
             let variantTitle = `${size} / ${selectedColor}`;
             return this.unavailableVariants.includes(variantTitle);
           },
+          // ADDED 03/04/24 TO HANDLE PRODUCTS WITH ONE VARIANT
+          isSingleVariantUnavailable(variantOptionValue) {
+            if (this.product.options.length === 1) {
+              const variant = this.variants.find(v => v.option1 === variantOptionValue);
+              return variant ? !variant.available : true;
+            }
+            return false;
+          },
           formatPrice(value) {
               let val = (value/100).toFixed(2).replace(',', '.')
               return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
