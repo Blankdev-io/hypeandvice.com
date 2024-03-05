@@ -520,94 +520,6 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
-    "2cd6223b-dc18-4eda-91cc-768082b54a6a": {
-      "type": "slideshow",
-      "settings": {
-        "section_height": "auto",
-        "transition_type": "fade",
-        "autoplay": true,
-        "cycle_speed": 4,
-        "background": "rgba(0,0,0,0)"
-      }
-    },
-    "16506544520a12bd2c": {
-      "type": "rich-text",
-      "disabled": true,
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "button_text": "",
-        "button_link": "",
-        "background_type": "full_width",
-        "text_width": "small",
-        "text_position": "center",
-        "text_alignment": "center",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)",
-        "button_background": "rgba(0,0,0,0)",
-        "button_text_color": "rgba(0,0,0,0)"
-      }
-    },
-    "165454654631be36fe": {
-      "type": "slideshow-meroxio",
-      "blocks": {
-        "1654546546825ee9c7-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/5822CE41-6147-4839-ABF3-16060EBFDA1A.jpg",
-            "split_image": "shopify:\/\/shop_images\/115DD56E-8ED7-44BD-955F-A401256DA6AD.jpg",
-            "show_videos": false,
-            "autoplay": true,
-            "loop": true,
-            "muted": true,
-            "video_webm": "",
-            "video_mp4": "",
-            "split_video_webm": "",
-            "split_video_mp4": "",
-            "mobile_video_webm": "",
-            "mobile_video_mp4": "",
-            "text_position": "bottom_left",
-            "subheading": "",
-            "subheading_font_family": "Zurich Extended",
-            "subheading_font_desktop": 24,
-            "subheading_font_mobile": 24,
-            "title": "TOP SELLERS",
-            "heading_font_family": "Zurich Extended",
-            "heading_font_desktop": 30,
-            "heading_font_mobile": 24,
-            "button_1_text": "SHOP NOW!",
-            "button_lenght": 30,
-            "button_lenght_mobile": 25,
-            "button_font_family": "Armata",
-            "button_font_desktop": 12,
-            "button_font_mobile": 12,
-            "button_1_link": "shopify:\/\/collections\/best-selling-collection",
-            "button_2_text": "",
-            "button_2_link": "shopify:\/\/collections\/best-selling-collection",
-            "text_color": "#ffffff",
-            "text_color_mobile": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "custom_separation": false,
-            "text_distance": 25,
-            "klaviyo": ""
-          }
-        }
-      },
-      "block_order": [
-        "1654546546825ee9c7-0"
-      ],
-      "settings": {
-        "section_height": "medium",
-        "transition_type": "fade",
-        "autoplay": false,
-        "cycle_speed": 4,
-        "background": "rgba(0,0,0,0)"
-      }
-    },
     "logo_list_ymKc4R": {
       "type": "logo-list",
       "blocks": {
@@ -682,6 +594,95 @@
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)",
         "logo_background": "rgba(0,0,0,0)"
+      }
+    },
+    "16506544520a12bd2c": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "small",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "2cd6223b-dc18-4eda-91cc-768082b54a6a": {
+      "type": "slideshow",
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "fade",
+        "autoplay": true,
+        "cycle_speed": 4,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "165454654631be36fe": {
+      "type": "slideshow-meroxio",
+      "blocks": {
+        "1654546546825ee9c7-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5822CE41-6147-4839-ABF3-16060EBFDA1A.jpg",
+            "split_image": "shopify:\/\/shop_images\/115DD56E-8ED7-44BD-955F-A401256DA6AD.jpg",
+            "show_videos": false,
+            "autoplay": true,
+            "loop": true,
+            "muted": true,
+            "video_webm": "",
+            "video_mp4": "",
+            "split_video_webm": "",
+            "split_video_mp4": "",
+            "mobile_video_webm": "",
+            "mobile_video_mp4": "",
+            "text_position": "bottom_left",
+            "subheading": "",
+            "subheading_font_family": "Zurich Extended",
+            "subheading_font_desktop": 24,
+            "subheading_font_mobile": 24,
+            "title": "TOP SELLERS",
+            "heading_font_family": "Zurich Extended",
+            "heading_font_desktop": 30,
+            "heading_font_mobile": 24,
+            "button_1_text": "SHOP NOW!",
+            "button_lenght": 30,
+            "button_lenght_mobile": 25,
+            "button_font_family": "Armata",
+            "button_font_desktop": 12,
+            "button_font_mobile": 12,
+            "button_1_link": "shopify:\/\/collections\/best-selling-collection",
+            "button_2_text": "",
+            "button_2_link": "shopify:\/\/collections\/best-selling-collection",
+            "text_color": "#ffffff",
+            "text_color_mobile": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "custom_separation": false,
+            "text_distance": 25,
+            "klaviyo": ""
+          }
+        }
+      },
+      "block_order": [
+        "1654546546825ee9c7-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_height": "medium",
+        "transition_type": "fade",
+        "autoplay": false,
+        "cycle_speed": 4,
+        "background": "rgba(0,0,0,0)"
       }
     },
     "image_with_text_overlay_UjVfKQ": {
@@ -995,101 +996,6 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
-    "1650006254940409c8": {
-      "type": "slideshow-meroxio",
-      "blocks": {
-        "194e413f-663b-4b8b-ae88-48570ca82278": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/H_V_CHLOE-VEST_DROP_1080x1080px_WEBSITE.gif",
-            "split_image": "shopify:\/\/shop_images\/127A3163-Edit.jpg",
-            "show_videos": false,
-            "autoplay": true,
-            "loop": true,
-            "muted": true,
-            "video_webm": "",
-            "video_mp4": "",
-            "split_video_webm": "",
-            "split_video_mp4": "",
-            "mobile_video_webm": "",
-            "mobile_video_mp4": "",
-            "text_position": "middle_center",
-            "subheading": "",
-            "subheading_font_family": "Zurich Extended",
-            "subheading_font_desktop": 24,
-            "subheading_font_mobile": 24,
-            "title": "",
-            "heading_font_family": "Zurich Extended",
-            "heading_font_desktop": 24,
-            "heading_font_mobile": 24,
-            "button_1_text": "",
-            "button_lenght": 35,
-            "button_lenght_mobile": 25,
-            "button_font_family": "Zurich Extended",
-            "button_font_desktop": 24,
-            "button_font_mobile": 24,
-            "button_1_link": "shopify:\/\/collections\/chloe-vest",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "text_color_mobile": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "custom_separation": false,
-            "text_distance": 25,
-            "klaviyo": ""
-          }
-        }
-      },
-      "block_order": [
-        "194e413f-663b-4b8b-ae88-48570ca82278"
-      ],
-      "disabled": true,
-      "settings": {
-        "section_height": "medium",
-        "transition_type": "fade",
-        "autoplay": true,
-        "cycle_speed": 4,
-        "background": "rgba(0,0,0,0)"
-      }
-    },
-    "slideshow_fA4KxQ": {
-      "type": "slideshow",
-      "blocks": {
-        "image_6YU3hK": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/H_V_MYSTERY-BOX_PEREPECTIVE-1_800x1200px_f6bad502-ca53-4899-b28a-b3a68a4286a8.jpg",
-            "split_image": "shopify:\/\/shop_images\/DD0A8E03-519D-47BA-A8E9-BFC58F72A441.jpg",
-            "text_position": "middle_center",
-            "subheading": "",
-            "title": "",
-            "button_1_text": "Shop mystery boxes",
-            "button_1_link": "https:\/\/www.hypeandvice.com\/collections\/mystery-boxes",
-            "button_2_text": "",
-            "button_2_link": "https:\/\/www.hypeandvice.com\/collections\/mystery-boxes",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 8
-          }
-        }
-      },
-      "block_order": [
-        "image_6YU3hK"
-      ],
-      "disabled": true,
-      "settings": {
-        "section_height": "medium",
-        "transition_type": "fade",
-        "autoplay": false,
-        "cycle_speed": 4,
-        "background": "rgba(0,0,0,0)"
-      }
-    },
     "164923770607431a63": {
       "type": "custom-html",
       "settings": {
@@ -1215,15 +1121,13 @@
     "165065396872bf5f8b",
     "categories_KDmjHe",
     "league_list_hVNY6R",
-    "2cd6223b-dc18-4eda-91cc-768082b54a6a",
-    "16506544520a12bd2c",
-    "165454654631be36fe",
     "logo_list_ymKc4R",
+    "16506544520a12bd2c",
+    "2cd6223b-dc18-4eda-91cc-768082b54a6a",
+    "165454654631be36fe",
     "image_with_text_overlay_UjVfKQ",
     "1655412672f035473e",
     "165065640506142d5c",
-    "1650006254940409c8",
-    "slideshow_fA4KxQ",
     "164923770607431a63",
     "image_with_text_overlay_4i7Tzj",
     "16487231743e468afb",
