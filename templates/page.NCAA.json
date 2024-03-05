@@ -327,6 +327,18 @@
             "text_color": "#000000"
           }
         },
+        "collection_9TRyr8": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/HVWT21AUB1-1FILM_800x_8f5c1cb0-1942-4e15-9fef-a0bcfce59462.webp",
+            "subheading": "",
+            "title": "MVP TOP",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/mvp-tank",
+            "text_color": "#000000"
+          }
+        },
         "collection_bxgx8a": {
           "type": "collection",
           "settings": {
@@ -363,18 +375,6 @@
             "text_color": "#000000"
           }
         },
-        "collection_fBAXTJ": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/HVWB25AL2-1FILM_800x_1.webp",
-            "subheading": "",
-            "title": "COLOR-BLOCK SWEATS",
-            "link_text": "",
-            "link_url": "shopify:\/\/collections\/color-block-sweats",
-            "text_color": "#000000"
-          }
-        },
         "collection_imHYYj": {
           "type": "collection",
           "settings": {
@@ -399,15 +399,15 @@
             "text_color": "#000000"
           }
         },
-        "collection_9TRyr8": {
+        "collection_fBAXTJ": {
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/HVWT21AUB1-1FILM_800x_8f5c1cb0-1942-4e15-9fef-a0bcfce59462.webp",
+            "image": "shopify:\/\/shop_images\/HVWB25AL2-1FILM_800x_1.webp",
             "subheading": "",
-            "title": "MVP TOP",
+            "title": "COLOR-BLOCK SWEATS",
             "link_text": "",
-            "link_url": "shopify:\/\/collections\/mvp-tank",
+            "link_url": "shopify:\/\/collections\/color-block-sweats",
             "text_color": "#000000"
           }
         }
@@ -416,13 +416,13 @@
         "collection_n68GW3",
         "collection_VXV8ht",
         "collection_RFLjaG",
+        "collection_9TRyr8",
         "collection_bxgx8a",
         "collection_m3Cwax",
         "collection_gC9q6X",
-        "collection_fBAXTJ",
         "collection_imHYYj",
         "collection_LzKD4w",
-        "collection_9TRyr8"
+        "collection_fBAXTJ"
       ],
       "settings": {
         "reveal_on_scroll": false,
