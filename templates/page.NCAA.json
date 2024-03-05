@@ -327,18 +327,6 @@
             "text_color": "#000000"
           }
         },
-        "collection_9TRyr8": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/HVWT21AUB1-1FILM_800x_8f5c1cb0-1942-4e15-9fef-a0bcfce59462.webp",
-            "subheading": "",
-            "title": "MVP TOP",
-            "link_text": "",
-            "link_url": "shopify:\/\/collections\/mvp-tank",
-            "text_color": "#000000"
-          }
-        },
         "collection_bxgx8a": {
           "type": "collection",
           "settings": {
@@ -348,6 +336,18 @@
             "title": "BOXER SHORTS",
             "link_text": "",
             "link_url": "shopify:\/\/collections\/boxer-shorts",
+            "text_color": "#000000"
+          }
+        },
+        "collection_9TRyr8": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/HVWT21AUB1-1FILM_800x_8f5c1cb0-1942-4e15-9fef-a0bcfce59462.webp",
+            "subheading": "",
+            "title": "MVP TOP",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/mvp-tank",
             "text_color": "#000000"
           }
         },
@@ -416,8 +416,8 @@
         "collection_n68GW3",
         "collection_VXV8ht",
         "collection_RFLjaG",
-        "collection_9TRyr8",
         "collection_bxgx8a",
+        "collection_9TRyr8",
         "collection_m3Cwax",
         "collection_gC9q6X",
         "collection_imHYYj",
