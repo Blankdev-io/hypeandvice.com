@@ -378,15 +378,15 @@
             "text_color": "#000000"
           }
         },
-        "collection_n68GW3": {
+        "collection_fBAXTJ": {
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/DENIM_CORSET_NBA_V3.png",
+            "image": "shopify:\/\/shop_images\/HOMERUN_TEE_V1.png",
             "subheading": "",
-            "title": "DENIM CORSET",
+            "title": "HOMERUN TEE",
             "link_text": "",
-            "link_url": "shopify:\/\/collections\/denim-corset",
+            "link_url": "shopify:\/\/collections\/color-block-sweats",
             "text_color": "#000000"
           }
         },
@@ -399,6 +399,18 @@
             "title": "RAGLAN ZIP UP",
             "link_text": "",
             "link_url": "shopify:\/\/collections\/mvp-tank",
+            "text_color": "#000000"
+          }
+        },
+        "collection_n68GW3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/DENIM_CORSET_NBA_V3.png",
+            "subheading": "",
+            "title": "DENIM CORSET",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/denim-corset",
             "text_color": "#000000"
           }
         },
@@ -426,18 +438,6 @@
             "text_color": "#000000"
           }
         },
-        "collection_fBAXTJ": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/HOMERUN_TEE_V1.png",
-            "subheading": "",
-            "title": "HOMERUN TEE",
-            "link_text": "",
-            "link_url": "shopify:\/\/collections\/color-block-sweats",
-            "text_color": "#000000"
-          }
-        },
         "collection_LzKD4w": {
           "type": "collection",
           "settings": {
@@ -456,11 +456,11 @@
         "collection_RFLjaG",
         "collection_m3Cwax",
         "collection_gC9q6X",
-        "collection_n68GW3",
+        "collection_fBAXTJ",
         "collection_9TRyr8",
+        "collection_n68GW3",
         "collection_imHYYj",
         "collection_bxgx8a",
-        "collection_fBAXTJ",
         "collection_LzKD4w"
       ],
       "settings": {
