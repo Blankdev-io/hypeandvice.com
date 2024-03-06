@@ -344,7 +344,7 @@
             "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/collections\/tops",
-            "text_color": "#ffffff",
+            "text_color": "#000000",
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
@@ -363,7 +363,7 @@
             "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/collections\/bottoms",
-            "text_color": "#ffffff",
+            "text_color": "#000000",
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
@@ -382,7 +382,7 @@
             "below_text": false,
             "link_text": "",
             "link_url": "shopify:\/\/collections\/outerwear",
-            "text_color": "#ffffff",
+            "text_color": "#000000",
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
@@ -717,6 +717,7 @@
     },
     "image_with_text_overlay_UjVfKQ": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "just_image": true,
@@ -1069,21 +1070,6 @@
         "overlay_opacity": 0
       }
     },
-    "16487231743e468afb": {
-      "type": "blog-posts",
-      "disabled": true,
-      "settings": {
-        "blog": "gamebae-blog",
-        "subheading": "",
-        "title": "Fashion Blog",
-        "articles_count": 3,
-        "stack_mobile": true,
-        "show_category": true,
-        "show_excerpt": false,
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
     "165090673528cafdbe": {
       "type": "slideshow-meroxio",
       "blocks": {
@@ -1159,7 +1145,6 @@
     "165065640506142d5c",
     "164923770607431a63",
     "image_with_text_overlay_4i7Tzj",
-    "16487231743e468afb",
     "165090673528cafdbe"
   ]
 }
