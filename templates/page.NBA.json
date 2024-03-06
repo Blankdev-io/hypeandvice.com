@@ -366,18 +366,6 @@
             "text_color": "#000000"
           }
         },
-        "collection_9TRyr8": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/RAGLAN_ZIP_UP.png",
-            "subheading": "",
-            "title": "RAGLAN ZIP UP",
-            "link_text": "",
-            "link_url": "shopify:\/\/collections\/mvp-tank",
-            "text_color": "#000000"
-          }
-        },
         "collection_gC9q6X": {
           "type": "collection",
           "settings": {
@@ -402,6 +390,18 @@
             "text_color": "#000000"
           }
         },
+        "collection_9TRyr8": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/RAGLAN_ZIP_UP.png",
+            "subheading": "",
+            "title": "RAGLAN ZIP UP",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/mvp-tank",
+            "text_color": "#000000"
+          }
+        },
         "collection_imHYYj": {
           "type": "collection",
           "settings": {
@@ -411,18 +411,6 @@
             "title": "RUGBY POLO",
             "link_text": "",
             "link_url": "shopify:\/\/collections\/rugby-polo",
-            "text_color": "#000000"
-          }
-        },
-        "collection_LzKD4w": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/Tops_Landing_V1.png",
-            "subheading": "",
-            "title": "DENIM CORSET",
-            "link_text": "",
-            "link_url": "shopify:\/\/collections\/denim-corset",
             "text_color": "#000000"
           }
         },
@@ -449,19 +437,31 @@
             "link_url": "shopify:\/\/collections\/color-block-sweats",
             "text_color": "#000000"
           }
+        },
+        "collection_LzKD4w": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/Tops_Landing_V1.png",
+            "subheading": "",
+            "title": "DENIM CORSET",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/denim-corset",
+            "text_color": "#000000"
+          }
         }
       },
       "block_order": [
         "collection_VXV8ht",
         "collection_m3Cwax",
         "collection_RFLjaG",
-        "collection_9TRyr8",
         "collection_gC9q6X",
         "collection_n68GW3",
+        "collection_9TRyr8",
         "collection_imHYYj",
-        "collection_LzKD4w",
         "collection_bxgx8a",
-        "collection_fBAXTJ"
+        "collection_fBAXTJ",
+        "collection_LzKD4w"
       ],
       "settings": {
         "reveal_on_scroll": false,
