@@ -330,18 +330,6 @@
     "categories_KDmjHe": {
       "type": "categories",
       "blocks": {
-        "collection_n68GW3": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/Tops_NBA.png",
-            "subheading": "",
-            "title": "DENIM CORSET",
-            "link_text": "",
-            "link_url": "shopify:\/\/collections\/denim-corset",
-            "text_color": "#000000"
-          }
-        },
         "collection_VXV8ht": {
           "type": "collection",
           "settings": {
@@ -351,6 +339,18 @@
             "title": "CUT OFF TANK",
             "link_text": "",
             "link_url": "shopify:\/\/collections\/baseball-jerseys",
+            "text_color": "#000000"
+          }
+        },
+        "collection_n68GW3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/Tops_NBA.png",
+            "subheading": "",
+            "title": "DENIM CORSET",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/denim-corset",
             "text_color": "#000000"
           }
         },
@@ -452,8 +452,8 @@
         }
       },
       "block_order": [
-        "collection_n68GW3",
         "collection_VXV8ht",
+        "collection_n68GW3",
         "collection_RFLjaG",
         "collection_bxgx8a",
         "collection_9TRyr8",
