@@ -342,6 +342,18 @@
             "text_color": "#000000"
           }
         },
+        "collection_m3Cwax": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/MVP_TANK_NBA.png",
+            "subheading": "",
+            "title": "MVP TANK",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/cut-off-tank",
+            "text_color": "#000000"
+          }
+        },
         "collection_n68GW3": {
           "type": "collection",
           "settings": {
@@ -351,18 +363,6 @@
             "title": "DENIM CORSET",
             "link_text": "",
             "link_url": "shopify:\/\/collections\/denim-corset",
-            "text_color": "#000000"
-          }
-        },
-        "collection_bxgx8a": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/GAMEDAY_ROMPER_NBA.png",
-            "subheading": "",
-            "title": "GAMEDAY ROMPER",
-            "link_text": "",
-            "link_url": "shopify:\/\/collections\/boxer-shorts",
             "text_color": "#000000"
           }
         },
@@ -387,18 +387,6 @@
             "title": "RAGLAN ZIP UP",
             "link_text": "",
             "link_url": "shopify:\/\/collections\/mvp-tank",
-            "text_color": "#000000"
-          }
-        },
-        "collection_m3Cwax": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/MVP_TANK_NBA.png",
-            "subheading": "",
-            "title": "MVP TANK",
-            "link_text": "",
-            "link_url": "shopify:\/\/collections\/cut-off-tank",
             "text_color": "#000000"
           }
         },
@@ -438,6 +426,18 @@
             "text_color": "#000000"
           }
         },
+        "collection_bxgx8a": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/GAMEDAY_ROMPER_NBA.png",
+            "subheading": "",
+            "title": "GAMEDAY ROMPER",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/boxer-shorts",
+            "text_color": "#000000"
+          }
+        },
         "collection_fBAXTJ": {
           "type": "collection",
           "settings": {
@@ -453,14 +453,14 @@
       },
       "block_order": [
         "collection_VXV8ht",
+        "collection_m3Cwax",
         "collection_n68GW3",
-        "collection_bxgx8a",
         "collection_RFLjaG",
         "collection_9TRyr8",
-        "collection_m3Cwax",
         "collection_gC9q6X",
         "collection_imHYYj",
         "collection_LzKD4w",
+        "collection_bxgx8a",
         "collection_fBAXTJ"
       ],
       "settings": {
