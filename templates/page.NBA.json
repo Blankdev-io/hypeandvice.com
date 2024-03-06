@@ -60,229 +60,270 @@
         "background": "#100404"
       }
     },
-    "165065396872bf5f8b": {
+    "07980d83-3c05-400f-853c-606cc903b083": {
       "type": "logo-list",
       "blocks": {
-        "ba493069-d771-4892-8711-918b8318839d": {
+        "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-1": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/michigan_6abf4b10-b0ac-4997-9e03-f675c38568cc.png",
-            "link": "shopify:\/\/collections\/university-of-michigan"
+            "logo": "shopify:\/\/shop_images\/HKS_d6ff2a21-b0d2-41f0-ad77-81fc6c64c3a2.png",
+            "link": "shopify:\/\/collections\/atlanta-hawks"
           }
         },
-        "b78e97be-1093-4054-94ab-988811ffc6a5": {
+        "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-2": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/osu.png",
-            "link": "shopify:\/\/collections\/ohio-state-university-osu"
+            "logo": "shopify:\/\/shop_images\/CEL.png",
+            "link": "shopify:\/\/collections\/boston-celtics"
           }
         },
-        "5511dc15-28d6-4b28-8637-c45496fe7e1d": {
+        "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-3": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/ucla.png",
-            "link": "shopify:\/\/collections\/university-of-california-los-angeles-ucla"
+            "logo": "shopify:\/\/shop_images\/NTS.png",
+            "link": "shopify:\/\/collections\/brooklyn-nets"
           }
         },
-        "9609e586-a4c3-496f-a2b1-fa77e64d96fb": {
+        "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-4": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/alabama_9e10fd4c-267a-40a5-a0e7-cd6076ce8699.png",
-            "link": "shopify:\/\/collections\/university-of-alabama"
+            "logo": "shopify:\/\/shop_images\/HNT.png",
+            "link": "shopify:\/\/collections\/charlotte-hornets"
           }
         },
-        "logo_CYkezF": {
+        "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-5": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/FSU_7b33fdfd-2fbc-419c-aaa9-0042964e92d7.png",
-            "link": "shopify:\/\/collections\/florida-state-university"
+            "logo": "shopify:\/\/shop_images\/BLS.png",
+            "link": "shopify:\/\/collections\/chicago-bulls"
           }
         },
-        "97101234-a231-474f-bb65-8357ead0a1a9": {
+        "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-6": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/ARZ.png",
-            "link": "shopify:\/\/collections\/university-of-arizona"
+            "logo": "shopify:\/\/shop_images\/CAV.png",
+            "link": "shopify:\/\/collections\/cleveland-cavaliers"
           }
         },
-        "d182e8ab-05e7-4b26-a5a9-4395f61ea46a": {
+        "60c35fc9-3b94-45aa-9dd8-4756faee611e": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/FLA_4090bcc7-bdc8-4d85-9179-46f76299db0b.png",
-            "link": "shopify:\/\/collections\/university-of-florida-uf"
+            "logo": "shopify:\/\/shop_images\/MVR.png",
+            "link": "shopify:\/\/collections\/dallas-mavericks"
           }
         },
-        "e5fd48d2-189c-4172-b6aa-8894a3110cfe": {
+        "9487ced5-afac-483c-8054-734c993c6852": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/MIA_b03c1a15-04b9-4717-80fd-5c7df09d42be.png",
-            "link": "shopify:\/\/collections\/university-of-miami"
+            "logo": "shopify:\/\/shop_images\/NGT.png",
+            "link": "shopify:\/\/collections\/denver-nuggets"
           }
         },
-        "80d1af82-56c1-4768-a7b7-ead10c8e7368": {
+        "24bdb134-42e8-440a-91da-5b0eb159a29a": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/COL_879d1e52-c1e3-4081-bea8-5822359dd460.png",
-            "link": "shopify:\/\/collections\/university-of-colorado-boulder"
+            "logo": "shopify:\/\/shop_images\/PIS.png",
+            "link": "shopify:\/\/collections\/detroit-pistons"
           }
         },
-        "97ec09d3-9f24-4d79-9ae9-d1fb99e2ec6d": {
+        "5c34d369-5a2d-41c0-a6a2-1df26f04e407": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/INU.png",
-            "link": "shopify:\/\/collections\/indiana-university"
+            "logo": "shopify:\/\/shop_images\/WRS.png",
+            "link": "shopify:\/\/collections\/golden-state-warriors"
           }
         },
-        "6cdc1f5e-fc4e-4c64-8535-21bdde045b2d": {
+        "b831f7b8-0f9b-4313-a00d-b837a3396981": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/ARS.png",
-            "link": "shopify:\/\/collections\/arizona-state-university"
+            "logo": "shopify:\/\/shop_images\/RKT.png",
+            "link": "shopify:\/\/collections\/houston-rockets"
           }
         },
-        "e1058adb-13f1-4ecf-ab8e-79a348810d2e": {
+        "0d94e334-d4dd-4315-aac8-ee8576ec3e03": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/MCH.png",
-            "link": "shopify:\/\/collections\/michigan-state-university"
+            "logo": "shopify:\/\/shop_images\/PAC.png",
+            "link": "shopify:\/\/collections\/indiana-pacers"
           }
         },
-        "f9e60bf3-4871-454e-9a5e-c8b4f383d608": {
+        "f76823f0-c904-4c4c-baf8-b5393f66e7a8": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/wisconsin.png",
-            "link": "shopify:\/\/collections\/university-of-wisconsin"
+            "logo": "shopify:\/\/shop_images\/CLP.png",
+            "link": "shopify:\/\/collections\/los-angeles-clippers"
           }
         },
-        "838a195b-8ca3-45a2-bfde-b2d018a8444e": {
+        "dc0106df-bb4d-4f36-9284-b4cefd98791f": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/IOW.png",
-            "link": "shopify:\/\/collections\/university-of-iowa"
+            "logo": "shopify:\/\/shop_images\/LAK.png",
+            "link": "shopify:\/\/collections\/los-angeles-lakers"
           }
         },
-        "924daf84-e23c-485d-9bd6-f155dd13b246": {
+        "dd39cd53-dba4-4592-9d03-0dc72bfafc74": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/penn_state_d7c24fce-1ad1-4358-bd08-e35cd385c3b5.png",
-            "link": "shopify:\/\/collections\/penn-state"
+            "logo": "shopify:\/\/shop_images\/GRZ_49eb49f0-1f66-4951-a96a-cea6d0a47614.png",
+            "link": "shopify:\/\/collections\/memphis-grizzlies"
           }
         },
-        "548f0d69-75d3-4c36-b6ca-67784975b425": {
+        "a4cd2e22-6fba-4ca3-87a6-0725940a10a2": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/auburn-university.png",
-            "link": "shopify:\/\/collections\/auburn-university"
+            "logo": "shopify:\/\/shop_images\/HEA.png",
+            "link": "shopify:\/\/collections\/miami-heat"
           }
         },
-        "09a963ca-495e-4410-b6bf-c1693a35020b": {
+        "fcb4d984-670b-44f0-81ff-0d02902f7626": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/texas_4048157f-2410-4593-bb72-d276ba864018.png",
-            "link": "shopify:\/\/collections\/university-of-texas-at-austin-1"
+            "logo": "shopify:\/\/shop_images\/BKS.png",
+            "link": "shopify:\/\/collections\/milwaukee-bucks"
           }
         },
-        "063708cd-d4f7-4ad0-9117-d40a5c3b84ba": {
+        "f041d70b-9382-4477-8ddc-8f92e2108713": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/notre-dame.png",
-            "link": "shopify:\/\/collections\/university-of-notre-dame"
+            "logo": "shopify:\/\/shop_images\/TRW.png",
+            "link": "shopify:\/\/collections\/minnesota-timberwolves"
           }
         },
-        "34b27da8-8574-4201-aba3-0e5be8340955": {
+        "deb313f0-b0d7-4a46-aa32-46288b94994d": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/south-carolina_fcb1e13b-31d1-4ef5-8f20-dda60e42ca89.png",
-            "link": "shopify:\/\/collections\/university-of-south-carolina"
+            "logo": "shopify:\/\/shop_images\/PEL.png",
+            "link": "shopify:\/\/collections\/new-orleans-pelicans"
           }
         },
-        "1650653968a9456b00-0": {
+        "3bfa8c4a-cb5e-4f5f-aac8-298ac1f0000b": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/tennessee.png",
-            "link": "shopify:\/\/collections\/university-of-tennessee"
+            "logo": "shopify:\/\/shop_images\/KNS.png",
+            "link": "shopify:\/\/collections\/new-york-knicks"
           }
         },
-        "1650653968a9456b00-2": {
+        "3407b722-c5e7-40c5-ba1b-149f1eec2271": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/illinois_820b81d3-c33e-4d63-adce-bc7494db3175.png",
-            "link": "shopify:\/\/collections\/university-of-illinois"
+            "logo": "shopify:\/\/shop_images\/THU.png",
+            "link": "shopify:\/\/collections\/oklahoma-city-thunder"
           }
         },
-        "af385551-8f83-4e93-bc7f-4e6e79afd9ef": {
+        "e378019e-7e14-4503-aff6-9534eb2a8eec": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/PUR.png",
-            "link": "shopify:\/\/collections\/purdue"
+            "logo": "shopify:\/\/shop_images\/MGC.png",
+            "link": "shopify:\/\/collections\/orlando-magic"
           }
         },
-        "logo_V3i3e9": {
+        "e1f2ffc3-005c-4834-af4b-bf7e616bd656": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/SDS.png",
-            "link": "shopify:\/\/collections\/san-diego-state-university"
+            "logo": "shopify:\/\/shop_images\/PHI_6f27c2c0-55c9-444a-9762-88bb32f21b25.png",
+            "link": "shopify:\/\/collections\/philadelphia-76ers"
           }
         },
-        "logo_FUebmk": {
+        "f42633c8-28b0-4bcc-b87c-46866a280391": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/SOC.png",
-            "link": "shopify:\/\/collections\/university-of-southern-california"
+            "logo": "shopify:\/\/shop_images\/SUN.png",
+            "link": "shopify:\/\/collections\/phoenix-suns"
           }
         },
-        "logo_R9WrDp": {
+        "f5019177-925d-4470-a644-74fcfa33294f": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/WAS.png",
-            "link": "shopify:\/\/collections\/university-of-washington"
+            "logo": "shopify:\/\/shop_images\/TBL_35b7ddc9-0a0d-449a-9802-972f4440fe67.png",
+            "link": "shopify:\/\/collections\/portland-trail-blazers"
+          }
+        },
+        "4eaadb0c-4fe6-4985-91bc-a05ca4a34632": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/KGS.png",
+            "link": "shopify:\/\/collections\/sacramento-kings"
+          }
+        },
+        "7b29d206-0520-4060-bab9-c695f06541ef": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/SPU.png",
+            "link": "shopify:\/\/collections\/san-antonio-spurs"
+          }
+        },
+        "1d22efa8-7070-4c00-89ac-8307ce3a8e9a": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/RPT.png",
+            "link": "shopify:\/\/collections\/toronto-raptors"
+          }
+        },
+        "b68e61ae-744a-4908-98b1-91402840a993": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/JAZ.png",
+            "link": "shopify:\/\/collections\/utah-jazz"
+          }
+        },
+        "59ebf1af-eae5-4d81-a36b-3ab9c4d6d91a": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/WIZ.png",
+            "link": "shopify:\/\/collections\/washington-wizards"
           }
         }
       },
       "block_order": [
-        "ba493069-d771-4892-8711-918b8318839d",
-        "b78e97be-1093-4054-94ab-988811ffc6a5",
-        "5511dc15-28d6-4b28-8637-c45496fe7e1d",
-        "9609e586-a4c3-496f-a2b1-fa77e64d96fb",
-        "logo_CYkezF",
-        "97101234-a231-474f-bb65-8357ead0a1a9",
-        "d182e8ab-05e7-4b26-a5a9-4395f61ea46a",
-        "e5fd48d2-189c-4172-b6aa-8894a3110cfe",
-        "80d1af82-56c1-4768-a7b7-ead10c8e7368",
-        "97ec09d3-9f24-4d79-9ae9-d1fb99e2ec6d",
-        "6cdc1f5e-fc4e-4c64-8535-21bdde045b2d",
-        "e1058adb-13f1-4ecf-ab8e-79a348810d2e",
-        "f9e60bf3-4871-454e-9a5e-c8b4f383d608",
-        "838a195b-8ca3-45a2-bfde-b2d018a8444e",
-        "924daf84-e23c-485d-9bd6-f155dd13b246",
-        "548f0d69-75d3-4c36-b6ca-67784975b425",
-        "09a963ca-495e-4410-b6bf-c1693a35020b",
-        "063708cd-d4f7-4ad0-9117-d40a5c3b84ba",
-        "34b27da8-8574-4201-aba3-0e5be8340955",
-        "1650653968a9456b00-0",
-        "1650653968a9456b00-2",
-        "af385551-8f83-4e93-bc7f-4e6e79afd9ef",
-        "logo_V3i3e9",
-        "logo_FUebmk",
-        "logo_R9WrDp"
+        "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-1",
+        "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-2",
+        "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-3",
+        "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-4",
+        "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-5",
+        "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-6",
+        "60c35fc9-3b94-45aa-9dd8-4756faee611e",
+        "9487ced5-afac-483c-8054-734c993c6852",
+        "24bdb134-42e8-440a-91da-5b0eb159a29a",
+        "5c34d369-5a2d-41c0-a6a2-1df26f04e407",
+        "b831f7b8-0f9b-4313-a00d-b837a3396981",
+        "0d94e334-d4dd-4315-aac8-ee8576ec3e03",
+        "f76823f0-c904-4c4c-baf8-b5393f66e7a8",
+        "dc0106df-bb4d-4f36-9284-b4cefd98791f",
+        "dd39cd53-dba4-4592-9d03-0dc72bfafc74",
+        "a4cd2e22-6fba-4ca3-87a6-0725940a10a2",
+        "fcb4d984-670b-44f0-81ff-0d02902f7626",
+        "f041d70b-9382-4477-8ddc-8f92e2108713",
+        "deb313f0-b0d7-4a46-aa32-46288b94994d",
+        "3bfa8c4a-cb5e-4f5f-aac8-298ac1f0000b",
+        "3407b722-c5e7-40c5-ba1b-149f1eec2271",
+        "e378019e-7e14-4503-aff6-9534eb2a8eec",
+        "e1f2ffc3-005c-4834-af4b-bf7e616bd656",
+        "f42633c8-28b0-4bcc-b87c-46866a280391",
+        "f5019177-925d-4470-a644-74fcfa33294f",
+        "4eaadb0c-4fe6-4985-91bc-a05ca4a34632",
+        "7b29d206-0520-4060-bab9-c695f06541ef",
+        "1d22efa8-7070-4c00-89ac-8307ce3a8e9a",
+        "b68e61ae-744a-4908-98b1-91402840a993",
+        "59ebf1af-eae5-4d81-a36b-3ab9c4d6d91a"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "no_margins": true,
         "title_center": false,
-        "shop_all_url": "shopify:\/\/pages\/our-schools",
-        "shop_all_text": "200+ MORE",
+        "shop_all_url": "",
+        "shop_all_text": "",
         "subheading": "",
-        "title": "SCHOOLS",
-        "custom_font": true,
-        "heading_font_desktop": 24,
-        "heading_font_mobile": 16,
+        "title": "SHOP BY TEAM",
+        "custom_font": false,
+        "heading_font_desktop": 16,
+        "heading_font_mobile": 14,
         "heading_font_family": "Zurich Extended",
         "button_text": "",
         "button_link": "",
         "stack_logos": false,
-        "background": "#ffffff",
-        "text_color": "#000000",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)",
         "logo_background": "rgba(0,0,0,0)"
@@ -1108,7 +1149,7 @@
   },
   "order": [
     "165065000576ab84e7",
-    "165065396872bf5f8b",
+    "07980d83-3c05-400f-853c-606cc903b083",
     "categories_KDmjHe",
     "league_list_hVNY6R",
     "logo_list_ymKc4R",
