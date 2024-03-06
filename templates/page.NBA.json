@@ -613,6 +613,7 @@
         "logo_nPDw8J",
         "logo_BWjfbD"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "no_margins": true,
