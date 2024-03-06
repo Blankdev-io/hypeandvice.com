@@ -110,18 +110,6 @@
             "text_color": "#000000"
           }
         },
-        "collection_GcgFJf": {
-          "type": "collection",
-          "settings": {
-            "collection": "gameday-romper",
-            "image": "shopify:\/\/shop_images\/HYPEVICEFINAL-700.png",
-            "subheading": "",
-            "title": "ROMPERS",
-            "link_text": "",
-            "link_url": "shopify:\/\/collections\/gameday-romper",
-            "text_color": "#000000"
-          }
-        },
         "collection_crLBn8": {
           "type": "collection",
           "settings": {
@@ -131,6 +119,18 @@
             "title": "SWEATS",
             "link_text": "",
             "link_url": "shopify:\/\/collections\/sweatpants",
+            "text_color": "#000000"
+          }
+        },
+        "collection_GcgFJf": {
+          "type": "collection",
+          "settings": {
+            "collection": "gameday-romper",
+            "image": "shopify:\/\/shop_images\/HYPEVICEFINAL-700.png",
+            "subheading": "",
+            "title": "ROMPERS",
+            "link_text": "",
+            "link_url": "shopify:\/\/collections\/gameday-romper",
             "text_color": "#000000"
           }
         },
@@ -152,8 +152,8 @@
         "collection_TUCyMp",
         "collection_cAcgyb",
         "collection_M4kbWB",
-        "collection_GcgFJf",
         "collection_crLBn8",
+        "collection_GcgFJf",
         "collection_CAdw7m"
       ],
       "settings": {
