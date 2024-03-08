@@ -135,9 +135,11 @@
                       {% endfor %}
 
                     </div>
+                    {% unless league == 'NCAA' %}
                     <div class="show-more-container">
                       <a href="{{ link.url }}" class="show-more-button button button--secondary">SHOW ALL {% if league == 'NCAA' %}SCHOOLS{% else %}TEAMS{% endif %}</a>
                     </div>
+                    {% endunless %}
                   </div>
                 </div>
               </div>
