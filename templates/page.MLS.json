@@ -297,6 +297,7 @@
         "be1ebbd6-9fcb-4679-9e45-2e8ceec48137",
         "9e34ba7b-5b6e-462e-9473-aeb683104db3"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "no_margins": true,
@@ -455,6 +456,7 @@
         "collection_LzKD4w",
         "collection_fBAXTJ"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "subheading": "",
@@ -535,6 +537,7 @@
         "collection_Qyiiz9",
         "collection_kKayya"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "subheading": "",
@@ -605,6 +608,7 @@
         "logo_nPDw8J",
         "logo_BWjfbD"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "no_margins": true,
@@ -708,6 +712,7 @@
     },
     "image_with_text_overlay_UjVfKQ": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "just_image": true,
@@ -1006,6 +1011,7 @@
     },
     "165065640506142d5c": {
       "type": "recently-viewed-products",
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "RECENTLY VIEWED",
@@ -1019,6 +1025,7 @@
     },
     "164923770607431a63": {
       "type": "custom-html",
+      "disabled": true,
       "settings": {
         "subheading": "TAG US IN YOUR PICS TO BE FEATURED & A CHANCE TO WIN A $100 HV GIFT-CARD.",
         "subheading_font_desktop": 12,
@@ -1037,6 +1044,7 @@
     },
     "image_with_text_overlay_4i7Tzj": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "just_image": true,
