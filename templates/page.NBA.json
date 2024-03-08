@@ -97,6 +97,13 @@
             "link": "shopify:\/\/collections\/chicago-bulls"
           }
         },
+        "a4cd2e22-6fba-4ca3-87a6-0725940a10a2": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/HEA.png",
+            "link": "shopify:\/\/collections\/miami-heat"
+          }
+        },
         "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-1": {
           "type": "logo",
           "settings": {
@@ -179,13 +186,6 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/GRZ_49eb49f0-1f66-4951-a96a-cea6d0a47614.png",
             "link": "shopify:\/\/collections\/memphis-grizzlies"
-          }
-        },
-        "a4cd2e22-6fba-4ca3-87a6-0725940a10a2": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/HEA.png",
-            "link": "shopify:\/\/collections\/miami-heat"
           }
         },
         "fcb4d984-670b-44f0-81ff-0d02902f7626": {
@@ -279,6 +279,7 @@
         "3bfa8c4a-cb5e-4f5f-aac8-298ac1f0000b",
         "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-2",
         "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-5",
+        "a4cd2e22-6fba-4ca3-87a6-0725940a10a2",
         "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-1",
         "f42633c8-28b0-4bcc-b87c-46866a280391",
         "template--14800247914601__07980d83-3c05-400f-853c-606cc903b083-logo-3",
@@ -291,7 +292,6 @@
         "0d94e334-d4dd-4315-aac8-ee8576ec3e03",
         "f76823f0-c904-4c4c-baf8-b5393f66e7a8",
         "dd39cd53-dba4-4592-9d03-0dc72bfafc74",
-        "a4cd2e22-6fba-4ca3-87a6-0725940a10a2",
         "fcb4d984-670b-44f0-81ff-0d02902f7626",
         "f041d70b-9382-4477-8ddc-8f92e2108713",
         "deb313f0-b0d7-4a46-aa32-46288b94994d",
