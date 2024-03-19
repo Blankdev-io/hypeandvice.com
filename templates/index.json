@@ -255,10 +255,10 @@
     "product_list_PmJkHF": {
       "type": "product-list",
       "blocks": {
-        "product_JGq3KV": {
+        "product_pd4EXd": {
           "type": "product",
           "settings": {
-            "product": "mto-university-of-southern-california-retro-tank"
+            "product": "mto-los-angeles-lakers-p-e-shorts"
           }
         },
         "product_8C7npq": {
@@ -273,10 +273,10 @@
             "product": "university-of-california-los-angeles-football-top2"
           }
         },
-        "product_pd4EXd": {
+        "product_JGq3KV": {
           "type": "product",
           "settings": {
-            "product": "mto-los-angeles-lakers-p-e-shorts"
+            "product": "mto-university-of-southern-california-retro-tank"
           }
         },
         "product_9PRmwr": {
@@ -305,10 +305,10 @@
         }
       },
       "block_order": [
-        "product_JGq3KV",
+        "product_pd4EXd",
         "product_8C7npq",
         "product_6hH6b9",
-        "product_pd4EXd",
+        "product_JGq3KV",
         "product_9PRmwr",
         "product_JkmUxC",
         "product_cNktzC",
