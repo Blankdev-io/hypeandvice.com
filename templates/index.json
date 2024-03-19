@@ -255,6 +255,12 @@
     "product_list_PmJkHF": {
       "type": "product-list",
       "blocks": {
+        "product_9PRmwr": {
+          "type": "product",
+          "settings": {
+            "product": "purdue-university-hometown-button-down"
+          }
+        },
         "product_pd4EXd": {
           "type": "product",
           "settings": {
@@ -273,22 +279,22 @@
             "product": "mto-golden-state-warriors-contouring-bodysuit"
           }
         },
-        "product_JfxckU": {
-          "type": "product",
-          "settings": {
-            "product": "mto-boston-celtics-bra-tank-top"
-          }
-        },
         "product_JGq3KV": {
           "type": "product",
           "settings": {
             "product": "mto-university-of-southern-california-retro-tank"
           }
         },
-        "product_9PRmwr": {
+        "product_JfxckU": {
           "type": "product",
           "settings": {
-            "product": "purdue-university-hometown-button-down"
+            "product": "mto-boston-celtics-bra-tank-top"
+          }
+        },
+        "product_RKpPHG": {
+          "type": "product",
+          "settings": {
+            "product": "university-of-kansas-knock-out-top"
           }
         },
         "product_JkmUxC": {
@@ -305,12 +311,13 @@
         }
       },
       "block_order": [
+        "product_9PRmwr",
         "product_pd4EXd",
         "product_6hH6b9",
         "product_8C7npq",
-        "product_JfxckU",
         "product_JGq3KV",
-        "product_9PRmwr",
+        "product_JfxckU",
+        "product_RKpPHG",
         "product_JkmUxC",
         "product_cNktzC"
       ],
