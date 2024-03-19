@@ -261,16 +261,22 @@
             "product": "mto-los-angeles-lakers-p-e-shorts"
           }
         },
+        "product_6hH6b9": {
+          "type": "product",
+          "settings": {
+            "product": "university-of-california-los-angeles-football-top2"
+          }
+        },
         "product_8C7npq": {
           "type": "product",
           "settings": {
             "product": "mto-golden-state-warriors-contouring-bodysuit"
           }
         },
-        "product_6hH6b9": {
+        "product_JfxckU": {
           "type": "product",
           "settings": {
-            "product": "university-of-california-los-angeles-football-top2"
+            "product": "mto-boston-celtics-bra-tank-top"
           }
         },
         "product_JGq3KV": {
@@ -296,23 +302,17 @@
           "settings": {
             "product": "mto-university-of-tennessee-boxer-short"
           }
-        },
-        "product_JfxckU": {
-          "type": "product",
-          "settings": {
-            "product": "mto-boston-celtics-bra-tank-top"
-          }
         }
       },
       "block_order": [
         "product_pd4EXd",
-        "product_8C7npq",
         "product_6hH6b9",
+        "product_8C7npq",
+        "product_JfxckU",
         "product_JGq3KV",
         "product_9PRmwr",
         "product_JkmUxC",
-        "product_cNktzC",
-        "product_JfxckU"
+        "product_cNktzC"
       ],
       "settings": {
         "subheading": "",
