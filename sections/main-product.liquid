@@ -367,16 +367,17 @@
 {
   "@context": "https://schema.org",
   "@type": "ProductGroup",
-  "name": "{{ product.title }}",
+  "name": "{{ product.title | escape }}",
   "description": "{{ product.description | escape }}",
   "image": "{{ product.featured_image | image_url: '800x' }}",
   "offers": {
     "@type": "Offer",
-    "availability": {% if product.available %}"https://schema.org/InStock"{% else %}"https://schema.org/OutOfStock"{% endif %},
+    "availability": "{% if product.available %}https://schema.org/InStock{% else %}https://schema.org/OutOfStock{% endif %}",
     "price": "{{ product.variants.first.price | money_without_currency }}",
     "priceCurrency": "{{ shop.currency }}"
   }
-  {% if product.metafields.stamped.reviews_count and product.metafields.stamped.reviews_count != "0" %},
+  {% if product.metafields.stamped.reviews_count and product.metafields.stamped.reviews_count != "0" %}
+  ,
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "{{ product.metafields.stamped.reviews_average | round: 2 }}",
@@ -384,10 +385,7 @@
   }
   {% endif %}
   ,
-  "variesBy": [
-    "https://schema.org/size",
-    "https://schema.org/color"
-  ]
+  "variesBy": ["size", "color"]
 }
 </script>
 
