@@ -123,9 +123,6 @@
                           <a href="{{ collection.url }}" class="mega-menu__title heading heading--small">
                             <img class="" src="{{ collection.metafields.custom.header_image | img_url: '400x' }}">
                           </a>
-                          <script>
-                            console.log('{{ forloop.index0 }}: {{ collection.title | escape }}')
-                          </script>
                         </div>
                       {% endfor %}
               
