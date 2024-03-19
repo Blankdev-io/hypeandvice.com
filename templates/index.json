@@ -261,22 +261,22 @@
             "product": "mto-university-of-southern-california-retro-tank"
           }
         },
-        "product_6hH6b9": {
-          "type": "product",
-          "settings": {
-            "product": "university-of-california-los-angeles-football-top2"
-          }
-        },
         "product_8C7npq": {
           "type": "product",
           "settings": {
             "product": "mto-golden-state-warriors-contouring-bodysuit"
           }
         },
+        "product_6hH6b9": {
+          "type": "product",
+          "settings": {
+            "product": "university-of-california-los-angeles-football-top2"
+          }
+        },
         "product_pd4EXd": {
           "type": "product",
           "settings": {
-            "product": "university-of-iowa-basketball-top"
+            "product": "mto-los-angeles-lakers-p-e-shorts"
           }
         },
         "product_9PRmwr": {
@@ -306,8 +306,8 @@
       },
       "block_order": [
         "product_JGq3KV",
-        "product_6hH6b9",
         "product_8C7npq",
+        "product_6hH6b9",
         "product_pd4EXd",
         "product_9PRmwr",
         "product_JkmUxC",
