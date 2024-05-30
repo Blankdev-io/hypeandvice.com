@@ -125,12 +125,12 @@
         "collection_GcgFJf": {
           "type": "collection",
           "settings": {
-            "collection": "gameday-romper",
+            "collection": "ncaa-gameday-romper",
             "image": "shopify:\/\/shop_images\/HYPEVICEFINAL-700.png",
             "subheading": "",
             "title": "ROMPERS",
             "link_text": "",
-            "link_url": "shopify:\/\/collections\/gameday-romper",
+            "link_url": "shopify:\/\/collections\/ncaa-gameday-romper",
             "text_color": "#000000"
           }
         },
