@@ -1,4 +1,4 @@
-{%- assign product = section.settings.product -%}{% render "estimated-delivery-days-homepage" | product:product %}
+{%- assign product = section.settings.product -%}{% render "estimated-delivery-days-homepage", product: product %}
 
 {%- if section.settings.background != settings.background and section.settings.background != 'rgba(0,0,0,0)' -%}
   {%- assign blends_with_background = false -%}
@@ -728,4 +728,13 @@
     }
   ]
 }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: '{% render "estimated-delivery-days-homepage" | product:product %}'
+  to: '{% render "estimated-delivery-days-homepage", product: product %}'
+  position: 49..114
+{%- endcomment -%}
